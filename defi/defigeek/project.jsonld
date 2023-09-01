@@ -1,0 +1,430 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/defigeek",
+    "@type": "chef:Project",
+    "chef:name": "defigeek",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken",
+            "@type": "chef:Contract",
+            "chef:contractName": "HumanStandardToken",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken",
+                    "evm:chainID": 1,
+                    "evm:address": "0x961dd84059505d59f82ce4fb87d3c09bec65301d"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "constant": true,
+            "@id": "0x06fdde03",
+            "chef:signature": "name()",
+            "@type": "chef:Function",
+            "chef:name": "name",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x095ea7b3",
+            "chef:signature": "approve(address,uint256)",
+            "@type": "chef:Function",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x18160ddd",
+            "chef:signature": "totalSupply()",
+            "@type": "chef:Function",
+            "chef:name": "totalSupply",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x23b872dd",
+            "chef:signature": "transferFrom(address,address,uint256)",
+            "@type": "chef:Function",
+            "chef:name": "transferFrom",
+            "chef:inputs": [
+                {
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x313ce567",
+            "chef:signature": "decimals()",
+            "@type": "chef:Function",
+            "chef:name": "decimals",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x54fd4d50",
+            "chef:signature": "version()",
+            "@type": "chef:Function",
+            "chef:name": "version",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x70a08231",
+            "chef:signature": "balanceOf(address)",
+            "@type": "chef:Function",
+            "chef:name": "balanceOf",
+            "chef:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "balance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x95d89b41",
+            "chef:signature": "symbol()",
+            "@type": "chef:Function",
+            "chef:name": "symbol",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xa9059cbb",
+            "chef:signature": "transfer(address,uint256)",
+            "@type": "chef:Function",
+            "chef:name": "transfer",
+            "chef:inputs": [
+                {
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xcae9ca51",
+            "chef:signature": "approveAndCall(address,uint256,bytes)",
+            "@type": "chef:Function",
+            "chef:name": "approveAndCall",
+            "chef:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_extraData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xdd62ed3e",
+            "chef:signature": "allowance(address,address)",
+            "@type": "chef:Function",
+            "chef:name": "allowance",
+            "chef:inputs": [
+                {
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "remaining",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xe823478a439bb67ab3f619681e4601c3257d68b4d9fa0167ece870fc3e0599ec",
+            "chef:signature": "0(uint256,string,uint8,string)",
+            "@type": "chef:Event",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "name": "_initialAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_tokenName",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "_decimalUnits",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "name": "_tokenSymbol",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "chef:signature": "Transfer(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Transfer",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "chef:signature": "Approval(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Approval",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "name": "_owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/defigeek/HumanStandardToken"
+                }
+            ]
+        }
+    ]
+}

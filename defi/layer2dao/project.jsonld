@@ -1,0 +1,1252 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/layer2dao",
+    "@type": "chef:Project",
+    "chef:name": "layer2dao",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken",
+            "@type": "chef:Contract",
+            "chef:contractName": "L2DAOToken",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken",
+                    "evm:chainID": 42161,
+                    "evm:address": "0x2cab3abfc1670d1a452df502e216a66883cdf079"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/layer2dao/GnosisSafeL2",
+            "@type": "chef:Contract",
+            "chef:contractName": "GnosisSafeL2",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/GnosisSafeL2",
+                    "evm:chainID": 42161,
+                    "evm:address": "0x5318f07a3a20a2f8bb0ddf14f1dd58c517a76508"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "chef:signature": "0(address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "DAOTreasuryAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/GnosisSafeL2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "chef:signature": "Approval(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Approval",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x47cee97cb7acd717b3c0aa1435d004cd5b3c8c57d70dbceb4e4458bbd60e39d4",
+            "chef:signature": "Claim(address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Claim",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "claimant",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3134e8a2e6d97e929a7e54011ea5485d7d196dd5f0ba4d4ef95803e8e3fc257f",
+            "chef:signature": "DelegateChanged(address,address,address)",
+            "@type": "chef:Event",
+            "chef:name": "DelegateChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromDelegate",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toDelegate",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724",
+            "chef:signature": "DelegateVotesChanged(address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "DelegateVotesChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegate",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "previousBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newBalance",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1b930366dfeaa7eb3b325021e4ae81e36527063452ee55b86c95f85b36f4c31c",
+            "chef:signature": "MerkleRootChanged(bytes32)",
+            "@type": "chef:Event",
+            "chef:name": "MerkleRootChanged",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "merkleRoot",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "chef:signature": "OwnershipTransferred(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipTransferred",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "chef:signature": "Transfer(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Transfer",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x3644e515",
+            "chef:signature": "DOMAIN_SEPARATOR()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "DOMAIN_SEPARATOR",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd62ed3e",
+            "chef:signature": "allowance(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "allowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "chef:signature": "approve(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "chef:signature": "balanceOf(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "balanceOf",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xf1127ed8",
+            "chef:signature": "checkpoints(address,uint32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "checkpoints",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "pos",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint32",
+                            "name": "fromBlock",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint224",
+                            "name": "votes",
+                            "type": "uint224"
+                        }
+                    ],
+                    "internalType": "struct ERC20Votes.Checkpoint",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x66deac47",
+            "chef:signature": "claimPeriodEnds()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "claimPeriodEnds",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x9a114cb2",
+            "chef:signature": "claimTokens(uint256,bytes32[])",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "claimTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes32[]",
+                    "name": "merkleProof",
+                    "type": "bytes32[]",
+                    "@type": "bytes32[]"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x313ce567",
+            "chef:signature": "decimals()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "decimals",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa457c2d7",
+            "chef:signature": "decreaseAllowance(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "decreaseAllowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c19a95c",
+            "chef:signature": "delegate(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "delegate",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "delegatee",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xc3cda520",
+            "chef:signature": "delegateBySig(address,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "delegateBySig",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "delegatee",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "expiry",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x587cde1e",
+            "chef:signature": "delegates(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "delegates",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x8e539e8c",
+            "chef:signature": "getPastTotalSupply(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getPastTotalSupply",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x3a46b1a8",
+            "chef:signature": "getPastVotes(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getPastVotes",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x9ab24eb0",
+            "chef:signature": "getVotes(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getVotes",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x73b2e80e",
+            "chef:signature": "hasClaimed(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "hasClaimed",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x39509351",
+            "chef:signature": "increaseAllowance(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "increaseAllowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x2eb4a7ab",
+            "chef:signature": "merkleRoot()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "merkleRoot",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "chef:signature": "name()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "name",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x7ecebe00",
+            "chef:signature": "nonces(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "nonces",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x6fcfff45",
+            "chef:signature": "numCheckpoints(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "numCheckpoints",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32",
+                    "@type": "uint32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "chef:signature": "owner()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "owner",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xd505accf",
+            "chef:signature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "permit",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "chef:signature": "renounceOwnership()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceOwnership",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x7cb64759",
+            "chef:signature": "setMerkleRoot(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setMerkleRoot",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "_merkleRoot",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f6ae201",
+            "chef:signature": "startVest(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "startVest",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenLockAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x01681a62",
+            "chef:signature": "sweep(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "sweep",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "dest",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "chef:signature": "symbol()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "symbol",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "chef:signature": "totalSupply()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalSupply",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9059cbb",
+            "chef:signature": "transfer(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transfer",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "chef:signature": "transferFrom(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferFrom",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "chef:signature": "transferOwnership(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferOwnership",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xd7acdb66",
+            "chef:signature": "vestStarted()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "vestStarted",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/layer2dao/L2DAOToken"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4608 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/celsius",
+    "@type": "chef:Project",
+    "chef:name": "celsius",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager",
+            "@type": "chef:Contract",
+            "chef:contractName": "AddressManager",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager",
+                    "evm:chainID": 1,
+                    "evm:address": "0x4859df02d1c7cd85c2a283708958aaa7728bad67"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager",
+                    "evm:chainID": 1,
+                    "evm:address": "0xfe4546fefe124f30788c4cc1bb9aa6907a7987f9"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1",
+            "@type": "chef:Contract",
+            "chef:contractName": "CollateralManagerV1",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x520da65f3b9b93a5bb6a1db911de40ae197aa639"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x9b436168dd080f1f95d1919258c64590263c0dae"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1",
+            "@type": "chef:Contract",
+            "chef:contractName": "WrappedTokenV1",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0x64875aaa68d1d5521666c67d692ee0b926b08b2f"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf9e293d5d793ddc1ae4f778761e0b3e4aa7cf2dd"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken",
+            "@type": "chef:Contract",
+            "chef:contractName": "CelsiusToken",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken",
+                    "evm:chainID": 1,
+                    "evm:address": "0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "anonymous": false,
+            "@id": "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f",
+            "chef:signature": "AdminChanged(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "AdminChanged",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "previousAdmin",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAdmin",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1cf3b03a6cf19fa2baba4df148e9dcabedea7f8a5c07840e207e5c089be95d3e",
+            "chef:signature": "BeaconUpgraded(address)",
+            "@type": "chef:Event",
+            "chef:name": "BeaconUpgraded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beacon",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "chef:signature": "OwnershipTransferred(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipTransferred",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+            "chef:signature": "Upgraded(address)",
+            "@type": "chef:Event",
+            "chef:name": "Upgraded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0xa12ed149",
+            "chef:signature": "addWalletAddress(uint8,string)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addWalletAddress",
+            "chef:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "string",
+                    "name": "addr",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0xc4d66de8",
+            "chef:signature": "initialize(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "initialize",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0xf56be7a8",
+            "chef:signature": "networkName(uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "networkName",
+            "chef:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "chef:signature": "owner()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "owner",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0xfda6122b",
+            "chef:signature": "removeWalletAddress(uint8,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeWalletAddress",
+            "chef:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "chef:signature": "renounceOwnership()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceOwnership",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "chef:signature": "transferOwnership(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferOwnership",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0x3659cfe6",
+            "chef:signature": "upgradeTo(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "upgradeTo",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f1ef286",
+            "chef:signature": "upgradeToAndCall(address,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "upgradeToAndCall",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0x51689c24",
+            "chef:signature": "walletAddresses(uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "walletAddresses",
+            "chef:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "network",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string[]",
+                    "name": "",
+                    "type": "string[]",
+                    "@type": "string[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0x4e937bd0",
+            "chef:signature": "walletAddressesMap(uint8,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "walletAddressesMap",
+            "chef:inputs": [
+                {
+                    "internalType": "enum AddressManager.Network",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/AddressManager"
+                }
+            ]
+        },
+        {
+            "@id": "0xff160c5b346850b54875889a5c2a96c51183608718ab1d81bc7aab8e2dff8395",
+            "chef:signature": "0(address,bytes)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "payable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_logic",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x223b98d94c41731cdd22de1620b8068f235f50059503fdbc0ffaee92d4f51deb",
+            "chef:signature": "0(string,string,address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "resFeed",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xaf6ebb6594c3be37f747a8a4692decee2e128c133145b92b98391af1e942bb52",
+            "chef:signature": "AddressAddedToBlacklist(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "AddressAddedToBlacklist",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xca6d1e885708b837a7647aeb7f4163ee4ca96058e08ac767be8d23c972c50270",
+            "chef:signature": "AddressAddedToWhitelist(address,uint8,address)",
+            "@type": "chef:Event",
+            "chef:name": "AddressAddedToWhitelist",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "whitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc5d633221a999da7b50bad97ddd6cff0c917455d8651123a6433642833252b7c",
+            "chef:signature": "AddressRemovedFromBlacklist(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "AddressRemovedFromBlacklist",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb50a30a0fa972f89fbb2b514d12b31f5a5d64f53603402de7939742cd8507f6e",
+            "chef:signature": "AddressRemovedFromWhitelist(address,uint8,address)",
+            "@type": "chef:Event",
+            "chef:name": "AddressRemovedFromWhitelist",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "whitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "chef:signature": "Approval(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Approval",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0254250bff2b56bce9719dfb6237446b9159bfbe2368f9dfe449d85da99b2be0",
+            "chef:signature": "BlacklistEnabledUpdated(address,bool)",
+            "@type": "chef:Event",
+            "chef:name": "BlacklistEnabledUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "updatedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x891e671759c21e48221125d0aa55b5574dc00b3e3225e40f6cb10dde820822ad",
+            "chef:signature": "BlacklisterAdded(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "BlacklisterAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBlacklister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc76ab32d91026761e52ef1016d8293a11dbb26424e34581575cefc484d10c6f3",
+            "chef:signature": "BlacklisterRemoved(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "BlacklisterRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBlacklister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbac40739b0d4ca32fa2d82fc91630465ba3eddd1598da6fca393b26fb63b9453",
+            "chef:signature": "Burn(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Burn",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "burner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x86515ebaad527298e98929c064c075f5a2604cc80afc0db29e73c01a36f8e98c",
+            "chef:signature": "BurnerAdded(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "BurnerAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBurner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x85222465e0d438163a28671b59fc9ebeb03bf39f880ddd36c8315da7512b31c0",
+            "chef:signature": "BurnerRemoved(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "BurnerRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBurner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xeeaed647dc622e55877c30943e5c1d4feb92d1b8cfcc88d974163e9787bde9af",
+            "chef:signature": "CodeAddressUpdated(address)",
+            "@type": "chef:Event",
+            "chef:name": "CodeAddressUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xab8530f87dc9b59234c4623bf917212bb2536d647574c8e7e5da92c2ede0c9f8",
+            "chef:signature": "Mint(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Mint",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "minter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3c091dafb1d99e4a4c333024492eac3b2cd8bf921a3dd547c937db33be307bb8",
+            "chef:signature": "MinterAdded(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "MinterAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedMinter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4b5ef9a786cf64a7d82ebcf2d5132667edc9faef4ac36260d9a9e52c526b6232",
+            "chef:signature": "MinterRemoved(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "MinterRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedMinter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x107a9fafffb7ac890f780879e423760c9ffea8dcee8045681f40f542aede2cb8",
+            "chef:signature": "OracleAddressUpdated(address)",
+            "@type": "chef:Event",
+            "chef:name": "OracleAddressUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb0353d563a9aa5231878c83727dc723a3cb8a38c2917f8ac2b777aa564c8a0d5",
+            "chef:signature": "OutboundWhitelistUpdated(address,uint8,uint8,bool,bool)",
+            "@type": "chef:Event",
+            "chef:name": "OutboundWhitelistUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "updatedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "sourceWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "destinationWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "from",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "to",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc82bdbbf677a2462f2a7e22e4ba9abd209496b69cd7b868b3b1d28f76e09a40a",
+            "chef:signature": "OwnerAdded(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnerAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe594d081b4382713733fe631966432c9cea5199afb2db5c3c1931f9f93003679",
+            "chef:signature": "OwnerRemoved(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnerRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258",
+            "chef:signature": "Paused(address)",
+            "@type": "chef:Event",
+            "chef:name": "Paused",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe0953c403a52f9dc1fef4202a8d33975c958b727bee0d7b5b328965ddad98d81",
+            "chef:signature": "PauserAdded(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "PauserAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedPauser",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb75903ade4a0fdb07d60c882c22c779e2e1c751883c37aecdcc92a8ec72b046e",
+            "chef:signature": "PauserRemoved(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "PauserRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedPauser",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb698e31a2abee5824d0d7bcfd2339aead7f9e9ae413fba50bf554ff3fa470b7b",
+            "chef:signature": "Revoke(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Revoke",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "revoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x64a989949bb484d2d275229a9d310b5d9dc273a560dd639c337aaf6f67fb73b6",
+            "chef:signature": "RevokeToAddress(address,address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "RevokeToAddress",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "revoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2b5f18afd9a7b21f41bf023b012b3d4c8a22a21b79fa425cd4494ecbe2970196",
+            "chef:signature": "RevokerAdded(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "RevokerAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedRevoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb6fe3ab11eb9ab1d9f1d41c8f42a5d72d10122099ba1548e4a6d1a4d8cefec4b",
+            "chef:signature": "RevokerRemoved(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "RevokerRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedRevoker",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "chef:signature": "Transfer(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Transfer",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa",
+            "chef:signature": "Unpaused(address)",
+            "@type": "chef:Event",
+            "chef:name": "Unpaused",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb535c5f7f150db8dbf22962fc390e7fa9026b9c29ffad714197bee4620572bd6",
+            "chef:signature": "WhitelistEnabledUpdated(address,bool)",
+            "@type": "chef:Event",
+            "chef:name": "WhitelistEnabledUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "updatedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5f36f4f5999f34947706fca376b955319b858573bf9d6bc59303c9a4cd80ced0",
+            "chef:signature": "WhitelisterAdded(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "WhitelisterAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedWhitelister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3ed21605dd544629fb45f2ccaedcc095ba1dbea540fb6eaf5493a7479856b0be",
+            "chef:signature": "WhitelisterRemoved(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "WhitelisterRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedWhitelister",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "removedBy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xba54b1ce",
+            "chef:signature": "FAILURE_BLACKLIST()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "FAILURE_BLACKLIST",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x611649c1",
+            "chef:signature": "FAILURE_BLACKLIST_MESSAGE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "FAILURE_BLACKLIST_MESSAGE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x1fb45ec0",
+            "chef:signature": "FAILURE_NON_WHITELIST()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "FAILURE_NON_WHITELIST",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xc8934462",
+            "chef:signature": "FAILURE_NON_WHITELIST_MESSAGE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "FAILURE_NON_WHITELIST_MESSAGE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3f713709",
+            "chef:signature": "FAILURE_PAUSED()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "FAILURE_PAUSED",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x489c1b25",
+            "chef:signature": "FAILURE_PAUSED_MESSAGE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "FAILURE_PAUSED_MESSAGE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0e969a05",
+            "chef:signature": "SUCCESS_CODE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "SUCCESS_CODE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xe7984d17",
+            "chef:signature": "SUCCESS_MESSAGE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "SUCCESS_MESSAGE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x97af6744",
+            "chef:signature": "UNKNOWN_ERROR()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "UNKNOWN_ERROR",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd4d208c",
+            "chef:signature": "_RETURN_VALUE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "_RETURN_VALUE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7bb06eea",
+            "chef:signature": "addBlacklister(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addBlacklister",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf44637ba",
+            "chef:signature": "addBurner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addBurner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x983b2d56",
+            "chef:signature": "addMinter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addMinter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7065cb48",
+            "chef:signature": "addOwner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addOwner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x82dc1ec4",
+            "chef:signature": "addPauser(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addPauser",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x961a66f6",
+            "chef:signature": "addRevoker(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addRevoker",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x44337ea1",
+            "chef:signature": "addToBlacklist(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addToBlacklist",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToAdd",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0263b858",
+            "chef:signature": "addToWhitelist(address,uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addToWhitelist",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToAdd",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "whitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xeaf9144a",
+            "chef:signature": "addWhitelister(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addWhitelister",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xea72d6ee",
+            "chef:signature": "addressBlacklists(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "addressBlacklists",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x92e6d68b",
+            "chef:signature": "addressWhitelists(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "addressWhitelists",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd62ed3e",
+            "chef:signature": "allowance(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "allowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "chef:signature": "approve(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "chef:signature": "balanceOf(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "balanceOf",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x9dc29fac",
+            "chef:signature": "burn(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "burn",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2c2b9ae",
+            "chef:signature": "checkBlacklistAllowed(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "checkBlacklistAllowed",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x9437e2fe",
+            "chef:signature": "checkWhitelistAllowed(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "checkWhitelistAllowed",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x313ce567",
+            "chef:signature": "decimals()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "decimals",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa457c2d7",
+            "chef:signature": "decreaseAllowance(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "decreaseAllowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd4ce1415",
+            "chef:signature": "detectTransferRestriction(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "detectTransferRestriction",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd9d98ce4",
+            "chef:signature": "flashFee(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "flashFee",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cffe9de",
+            "chef:signature": "flashLoan(address,address,uint256,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "flashLoan",
+            "chef:inputs": [
+                {
+                    "internalType": "contract IERC3156FlashBorrowerUpgradeable",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x940a1dc0",
+            "chef:signature": "flashMintFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "flashMintFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9468e7d",
+            "chef:signature": "flashMintFeeReceiver()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "flashMintFeeReceiver",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xabd108ba",
+            "chef:signature": "getLogicAddress()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getLogicAddress",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "logicAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x39509351",
+            "chef:signature": "increaseAllowance(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "increaseAllowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xca9aeada",
+            "chef:signature": "initialize(address,string,string,uint256,address,bool,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "initialize",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "initialSupply",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "resFeed",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "whitelistEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "flashMintEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x878dd332",
+            "chef:signature": "isBlacklistEnabled()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isBlacklistEnabled",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xb66cd56c",
+            "chef:signature": "isBlacklister(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isBlacklister",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x4334614a",
+            "chef:signature": "isBurner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isBurner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0e77a06f",
+            "chef:signature": "isFlashMintEnabled()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isFlashMintEnabled",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xaa271e1a",
+            "chef:signature": "isMinter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isMinter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f54bf6e",
+            "chef:signature": "isOwner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isOwner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x46fbf68e",
+            "chef:signature": "isPauser(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isPauser",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf6c4b01f",
+            "chef:signature": "isRevoker(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isRevoker",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x184d69ab",
+            "chef:signature": "isWhitelistEnabled()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isWhitelistEnabled",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7d0c269f",
+            "chef:signature": "isWhitelister(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isWhitelister",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x613255ab",
+            "chef:signature": "maxFlashLoan(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "maxFlashLoan",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x7f4ab1dd",
+            "chef:signature": "messageForTransferRestriction(uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "messageForTransferRestriction",
+            "chef:inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "restrictionCode",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x40c10f19",
+            "chef:signature": "mint(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "mint",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "chef:signature": "name()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "name",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xe9594508",
+            "chef:signature": "outboundWhitelistsEnabled(uint8,uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "outboundWhitelistsEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8456cb59",
+            "chef:signature": "pause()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "pause",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c975abb",
+            "chef:signature": "paused()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "paused",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x52d1902d",
+            "chef:signature": "proxiableUUID()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "proxiableUUID",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x0cd865ec",
+            "chef:signature": "recover(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "recover",
+            "chef:inputs": [
+                {
+                    "internalType": "contract IERC20Upgradeable",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x9fcf1007",
+            "chef:signature": "removeBlacklister(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeBlacklister",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x02846858",
+            "chef:signature": "removeBurner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeBurner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x537df3b6",
+            "chef:signature": "removeFromBlacklist(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeFromBlacklist",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToRemove",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8ab1d681",
+            "chef:signature": "removeFromWhitelist(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeFromWhitelist",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addressToRemove",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3092afd5",
+            "chef:signature": "removeMinter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeMinter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x173825d9",
+            "chef:signature": "removeOwner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeOwner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x6b2c0f55",
+            "chef:signature": "removePauser(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removePauser",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xc06f8b94",
+            "chef:signature": "removeRevoker(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeRevoker",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x82c3f79c",
+            "chef:signature": "removeWhitelister(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeWhitelister",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x11857106",
+            "chef:signature": "reserveFeed()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveFeed",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xeac449d9",
+            "chef:signature": "revoke(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "revoke",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xcc00551e",
+            "chef:signature": "revokeToAddress(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "revokeToAddress",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x1201cbd0",
+            "chef:signature": "setBlacklistEnabled(bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setBlacklistEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x56326a7b",
+            "chef:signature": "setFlashMintEnabled(bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFlashMintEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x1d2a0e3d",
+            "chef:signature": "setFlashMintFee(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFlashMintFee",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x044dc120",
+            "chef:signature": "setFlashMintFeeReceiver(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFlashMintFeeReceiver",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x052d9e7e",
+            "chef:signature": "setWhitelistEnabled(bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setWhitelistEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "chef:signature": "symbol()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "symbol",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "chef:signature": "totalSupply()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalSupply",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9059cbb",
+            "chef:signature": "transfer(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transfer",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "chef:signature": "transferFrom(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferFrom",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x3f4ba83a",
+            "chef:signature": "unpause()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "unpause",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x912a9885",
+            "chef:signature": "updateCodeAddress(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "updateCodeAddress",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf7023bb6",
+            "chef:signature": "updateOracleAddress(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "updateOracleAddress",
+            "chef:inputs": [
+                {
+                    "internalType": "contract AggregatorV3Interface",
+                    "name": "resFeed",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3973b596",
+            "chef:signature": "updateOutboundWhitelistEnabled(uint8,uint8,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "updateOutboundWhitelistEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "sourceWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "destinationWhitelist",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "newEnabledValue",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x3ccfd60b",
+            "chef:signature": "withdraw()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "withdraw",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x842b7379cc721f303b1651a900fcec0dac34ddb080ad5876df3be717f450ee33",
+            "chef:signature": "AddReserveVault(bytes32,address,address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "AddReserveVault",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "calculator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x75882868cbdb288204e73eec346dcf59d437f884acb337fd6a9a96a02f043ef1",
+            "chef:signature": "CreateReserve(bytes32,address,string,string)",
+            "@type": "chef:Event",
+            "chef:name": "CreateReserve",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x564abcbd57303a898130b89efaf9a05c5bfa6011b2304fb30eb9c5584c4b5af6",
+            "chef:signature": "DeleteReserve(bytes32,address,string,string)",
+            "@type": "chef:Event",
+            "chef:name": "DeleteReserve",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x88dd359ee67342ed6fabc07d184b1c622d718334624bdffcc2d00d5569aa4f85",
+            "chef:signature": "RemoveReserveVault(bytes32,address,address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "RemoveReserveVault",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "calculator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xbc375c13",
+            "chef:signature": "addReserveVault(bytes32,address,address,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addReserveVault",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "calculator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "numerator",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "denominator",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd5c9b115",
+            "chef:signature": "createReserve(string,string,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "createReserve",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xffdf8b84",
+            "chef:signature": "deleteReserve(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "deleteReserve",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xe9456017",
+            "chef:signature": "getReserveLength()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getReserveLength",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xd1af6d03",
+            "chef:signature": "getReserveValue(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "getReserveValue",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x97778f1e",
+            "chef:signature": "getReserveVault(bytes32,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getReserveVault",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "vault",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "calculator",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "numerator",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "denominator",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct CollateralManagerV1.Vault",
+                    "name": "",
+                    "type": "tuple",
+                    "@type": "tuple"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xea633af3",
+            "chef:signature": "getReserveVaults(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getReserveVaults",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "vault",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "calculator",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "numerator",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "denominator",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct CollateralManagerV1.Vault[]",
+                    "name": "",
+                    "type": "tuple[]",
+                    "@type": "tuple[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xc9b31bb4",
+            "chef:signature": "getReserveVaultsLength(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getReserveVaultsLength",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x6ea792f5",
+            "chef:signature": "removeReserveVault(bytes32,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeReserveVault",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "reserveId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x77733f2d",
+            "chef:signature": "reserveMap(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveMap",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8334278d",
+            "chef:signature": "reserves(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserves",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8d4e39ec",
+            "chef:signature": "vaultsMap(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "vaultsMap",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CollateralManagerV1"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x01502460",
+            "chef:signature": "freezeTransfers()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "freezeTransfers",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x13af4035",
+            "chef:signature": "setOwner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setOwner",
+            "chef:inputs": [
+                {
+                    "name": "_newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x31c420d4",
+            "chef:signature": "unfreezeTransfers()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "unfreezeTransfers",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x426a8493",
+            "chef:signature": "approve(address,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "name": "_spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_currentValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "_newValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6d1b229d",
+            "chef:signature": "burnTokens(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "burnTokens",
+            "chef:inputs": [
+                {
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xa3748f0a92719d6e7ce7f9c9c450772749c23429c6a57c2d47fcb44e96994886",
+            "chef:signature": "0(uint256)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "name": "_tokenCount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x615acbaede366d76a8b8cb2a9ada6a71495f0786513d71aa97aaf0c3910b78de",
+            "chef:signature": "Freeze()",
+            "@type": "chef:Event",
+            "chef:name": "Freeze",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2f05ba71d0df11bf5fa562a6569d70c4f80da84284badbe015ce1456063d0ded",
+            "chef:signature": "Unfreeze()",
+            "@type": "chef:Event",
+            "chef:name": "Unfreeze",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/CelsiusToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "chef:signature": "0(address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "contractLogic",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/celsius/WrappedTokenV1"
+                }
+            ]
+        }
+    ]
+}

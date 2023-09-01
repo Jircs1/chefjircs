@@ -1,0 +1,1830 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/dhedge",
+    "@type": "chef:Project",
+    "chef:name": "dhedge",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe",
+            "@type": "chef:Contract",
+            "chef:contractName": "GnosisSafe",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xb76e40277b79b78dfa954cbec863d0e4fd0656ca"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1",
+            "@type": "chef:Contract",
+            "chef:contractName": "DHedgeTokenV1",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1",
+                    "evm:chainID": 1,
+                    "evm:address": "0xca1207647ff814039530d7d35df0e1dd2e91fa84"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable",
+            "@type": "chef:Contract",
+            "chef:contractName": "AppProxyUpgradeable",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf8e912d8b4ae7a58ea6fbeb04b16a5f1aa23ae13"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "payable": false,
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "chef:signature": "0()",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9465fa0c962cc76958e6373a993326400c1c94f8be2fe3a952adfa7f60b2ea26",
+            "chef:signature": "AddedOwner(address)",
+            "@type": "chef:Event",
+            "chef:name": "AddedOwner",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf2a0eb156472d1440255b0d7c1e19cc07115d1051fe605b0dce69acfec884d9c",
+            "chef:signature": "ApproveHash(bytes32,address)",
+            "@type": "chef:Event",
+            "chef:name": "ApproveHash",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "approvedHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x75e41bc35ff1bf14d81d1d2f649c0084a0f974f9289c803ec9898eeec4c8d0b8",
+            "chef:signature": "ChangedMasterCopy(address)",
+            "@type": "chef:Event",
+            "chef:name": "ChangedMasterCopy",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "masterCopy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x610f7ff2b304ae8903c3de74c60c6ab1f7d6226b3f52c5161905bb5ad4039c93",
+            "chef:signature": "ChangedThreshold(uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ChangedThreshold",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xaab4fa2b463f581b2b32cb3b7e3b704b9ce37cc209b5fb4d77e593ace4054276",
+            "chef:signature": "DisabledModule(address)",
+            "@type": "chef:Event",
+            "chef:name": "DisabledModule",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract Module",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xecdf3a3effea5783a3c4c2140e677577666428d44ed9d474a0b3a4c9943f8440",
+            "chef:signature": "EnabledModule(address)",
+            "@type": "chef:Event",
+            "chef:name": "EnabledModule",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract Module",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x23428b18acfb3ea64b08dc0c1d296ea9c09702c09083ca5272e64d115b687d23",
+            "chef:signature": "ExecutionFailure(bytes32,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ExecutionFailure",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xacd2c8702804128fdb0db2bb49f6d127dd0181c13fd45dbfe16de0930e2bd375",
+            "chef:signature": "ExecutionFromModuleFailure(address)",
+            "@type": "chef:Event",
+            "chef:name": "ExecutionFromModuleFailure",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6895c13664aa4f67288b25d7a21d7aaa34916e355fb9b6fae0a139a9085becb8",
+            "chef:signature": "ExecutionFromModuleSuccess(address)",
+            "@type": "chef:Event",
+            "chef:name": "ExecutionFromModuleSuccess",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e",
+            "chef:signature": "ExecutionSuccess(bytes32,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ExecutionSuccess",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf8d49fc529812e9a7c5c50e69c20f0dccc0db8fa95c98bc58cc9a4f1c1299eaf",
+            "chef:signature": "RemovedOwner(address)",
+            "@type": "chef:Event",
+            "chef:name": "RemovedOwner",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe7f4675038f4f6034dfcbbb24c4dc08e4ebf10eb9d257d3d02c0f38d122ac6e4",
+            "chef:signature": "SignMsg(bytes32)",
+            "@type": "chef:Event",
+            "chef:name": "SignMsg",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa3f4df7e",
+            "chef:signature": "NAME()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "NAME",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xffa1ad74",
+            "chef:signature": "VERSION()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "VERSION",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x0d582f13",
+            "chef:signature": "addOwnerWithThreshold(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addOwnerWithThreshold",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xd4d9bdcd",
+            "chef:signature": "approveHash(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approveHash",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "hashToApprove",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x7d832974",
+            "chef:signature": "approvedHashes(address,bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "approvedHashes",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x7de7edef",
+            "chef:signature": "changeMasterCopy(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "changeMasterCopy",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_masterCopy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x694e80c3",
+            "chef:signature": "changeThreshold(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "changeThreshold",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe009cfde",
+            "chef:signature": "disableModule(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "disableModule",
+            "chef:inputs": [
+                {
+                    "internalType": "contract Module",
+                    "name": "prevModule",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "contract Module",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xf698da25",
+            "chef:signature": "domainSeparator()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "domainSeparator",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x610b5925",
+            "chef:signature": "enableModule(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "enableModule",
+            "chef:inputs": [
+                {
+                    "internalType": "contract Module",
+                    "name": "module",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe86637db",
+            "chef:signature": "encodeTransactionData(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "encodeTransactionData",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x6a761202",
+            "chef:signature": "execTransaction(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "execTransaction",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "signatures",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x468721a7",
+            "chef:signature": "execTransactionFromModule(address,uint256,bytes,uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "execTransactionFromModule",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x5229073f",
+            "chef:signature": "execTransactionFromModuleReturnData(address,uint256,bytes,uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "execTransactionFromModuleReturnData",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "returnData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x0a1028c4",
+            "chef:signature": "getMessageHash(bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getMessageHash",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "message",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xb2494df3",
+            "chef:signature": "getModules()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getModules",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xcc2f8452",
+            "chef:signature": "getModulesPaginated(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getModulesPaginated",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "start",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "pageSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "array",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "next",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xa0e67e2b",
+            "chef:signature": "getOwners()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getOwners",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xe75235b8",
+            "chef:signature": "getThreshold()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getThreshold",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd8d11f78",
+            "chef:signature": "getTransactionHash(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getTransactionHash",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "safeTxGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "baseGas",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "gasToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "refundReceiver",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x2f54bf6e",
+            "chef:signature": "isOwner(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isOwner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x20c13b0b",
+            "chef:signature": "isValidSignature(bytes,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "isValidSignature",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_signature",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xaffed0e0",
+            "chef:signature": "nonce()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "nonce",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf8dc5dd9",
+            "chef:signature": "removeOwner(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeOwner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xc4ca3a9c",
+            "chef:signature": "requiredTxGas(address,uint256,bytes,uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "requiredTxGas",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "enum Enum.Operation",
+                    "name": "operation",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf08a0323",
+            "chef:signature": "setFallbackHandler(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFallbackHandler",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xb63e800d",
+            "chef:signature": "setup(address[],uint256,address,bytes,address,address,uint256,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setup",
+            "chef:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "_owners",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_threshold",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "fallbackHandler",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "payment",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "paymentReceiver",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0x85a5affe",
+            "chef:signature": "signMessage(bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "signMessage",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x5ae6bd37",
+            "chef:signature": "signedMessages(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "signedMessages",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xe318b52b",
+            "chef:signature": "swapOwner(address,address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "swapOwner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "prevOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "oldOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "@id": "0xff160c5b346850b54875889a5c2a96c51183608718ab1d81bc7aab8e2dff8395",
+            "chef:signature": "0(address,bytes)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "payable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f",
+            "chef:signature": "AdminChanged(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "AdminChanged",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "previousAdmin",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newAdmin",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+            "chef:signature": "Upgraded(address)",
+            "@type": "chef:Event",
+            "chef:name": "Upgraded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0xf851a440",
+            "chef:signature": "admin()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "admin",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f283970",
+            "chef:signature": "changeAdmin(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "changeAdmin",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newAdmin",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c60da1b",
+            "chef:signature": "implementation()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "implementation",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable"
+                }
+            ]
+        },
+        {
+            "@id": "0x3659cfe6",
+            "chef:signature": "upgradeTo(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "upgradeTo",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f1ef286",
+            "chef:signature": "upgradeToAndCall(address,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "upgradeToAndCall",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/DHedgeTokenV1"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x4555d5c9",
+            "chef:signature": "proxyType()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "proxyType",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "proxyTypeId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x48a0c8dd",
+            "chef:signature": "isDepositable()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isDepositable",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x80afdea8",
+            "chef:signature": "appId()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "appId",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0xd4aae0c4",
+            "chef:signature": "kernel()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "kernel",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xbf4fe543753cc6c493a183b0a64971d07e57306cecbb29452026c57c0104b25f",
+            "chef:signature": "0(address,bytes32,bytes)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "name": "_kernel",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "_appId",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "name": "_initializePayload",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x15eeaa57c7bd188c1388020bcadc2c436ec60d647d36ef5b9eb3c742217ddee1",
+            "chef:signature": "ProxyDeposit(address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ProxyDeposit",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dhedge/AppProxyUpgradeable"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+name: Analytic Log Generation
+
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - .github/workflows/deploy.yml
+      - src/analytics
+  schedule:
+    - cron: '*/15 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PROJECT_ID: awesome-web3
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Authenticate GCP
+        uses: google-github-actions/setup-gcloud@v0
+        with:
+          service_account_key: ${{secrets.GCP_SERVICE_ACCOUNT_KEY }}
+          project_id: ${{env.PROJECT_ID}}
+
+#      - name: Set up Cloud SDK
+#        uses: google-github-actions/setup-gcloud@v1
+
+#      - name: Use gcloud CLI
+#        run: gcloud info    
+
+      - uses: actions/checkout@v2
+      - name: Install NodeJs
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Configure Git Client
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+      - name: Create Temp File
+        id: create-temp-file
+        env:
+          GOOGLE_SERVICE_KEY: ${{secrets.GCP_SERVICE_ACCOUNT_KEY}}
+        run: |
+          echo "${{secrets.DB00_CNF}}" > /tmp/.db00.cnf
+          echo "${{secrets.DB00_US_INDEXER_CNF}}" > /tmp/.db00-us-indexer.cnf
+          echo "$GOOGLE_SERVICE_KEY" > /tmp/colorfulnotion.json
+
+#      - name: Set GCLOUD Authentication
+#        run: gcloud auth activate-service-account --key-file="/tmp/colorfulnotion.json"
+
+      - name: Run Application
+        run: |-
+             cd src/
+             ./analytics generatelogs
+        env: 
+          PROJECT_ID: awesome-web3
+          CALADAN_DB: /tmp/.db00.cnf
+          CALADAN_DB_REPLICA: /tmp/.db00-us-indexer.cnf
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/colorfulnotion.json
+
+

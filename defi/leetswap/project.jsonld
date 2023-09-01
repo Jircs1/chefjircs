@@ -1,0 +1,4343 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/leetswap",
+    "@type": "chef:Project",
+    "chef:name": "leetswap",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory",
+            "@type": "chef:Contract",
+            "chef:contractName": "LeetSwapV2Factory",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory",
+                    "evm:chainID": 8453,
+                    "evm:address": "0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken",
+            "@type": "chef:Contract",
+            "chef:contractName": "LeetToken",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken",
+                    "evm:chainID": 8453,
+                    "evm:address": "0x987a758b221eabd262cae4fbb4d75c579275d8aa"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory",
+            "@type": "chef:Contract",
+            "chef:contractName": "UniswapV2Factory",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory",
+                    "evm:chainID": 8453,
+                    "evm:address": "0xa2899c776baaf9925d432f83c950d5054a6cf59c"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02",
+            "@type": "chef:Contract",
+            "chef:contractName": "UniswapV2Router02",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02",
+                    "evm:chainID": 8453,
+                    "evm:address": "0xd3ea3bc1f5a3f881bd6ce9761cba5a0833a5d737"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "chef:signature": "0()",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x065af08dd2da0d43126bef66fe5f70f702214a27123ab8e37de94cb5069f6523",
+            "chef:signature": "IdenticalAddress()",
+            "@type": "chef:Event",
+            "chef:name": "IdenticalAddress",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x3d77e8918c409ca95775f02f1e193cf4cadc894dcaaf95ebf5b8ae11cf9c2395",
+            "chef:signature": "PairExists()",
+            "@type": "chef:Event",
+            "chef:name": "PairExists",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x82b4290015f7ec7256ca2a6247d3c2a89c4865c0e791456df195f40ad0a81367",
+            "chef:signature": "Unauthorized()",
+            "@type": "chef:Event",
+            "chef:name": "Unauthorized",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xd92e233df2717d4a40030e20904abd27b68fcbeede117eaaccbbdac9618c8c73",
+            "chef:signature": "ZeroAddress()",
+            "@type": "chef:Event",
+            "chef:name": "ZeroAddress",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "chef:signature": "OwnershipTransferred(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipTransferred",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc4805696c66d7cf352fc1d6bb633ad5ee82f6cb577c453024b6e0eb8306c6fc9",
+            "chef:signature": "PairCreated(address,address,bool,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "PairCreated",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token0",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "pair",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x167a6f90",
+            "chef:signature": "acceptPauser()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "acceptPauser",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x1e3dd18b",
+            "chef:signature": "allPairs(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "allPairs",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x574f2ba3",
+            "chef:signature": "allPairsLength()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "allPairsLength",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x82dfdce4",
+            "chef:signature": "createPair(address,address,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "createPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenA",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenB",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xc9c65396",
+            "chef:signature": "createPair(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "createPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenA",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenB",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xeb13c4cf",
+            "chef:signature": "getInitializable()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getInitializable",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x6801cc30",
+            "chef:signature": "getPair(address,address,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenA",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenB",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xe6a43905",
+            "chef:signature": "getPair(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenA",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenB",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xe5e31b13",
+            "chef:signature": "isPair(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xb187bd26",
+            "chef:signature": "isPaused()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isPaused",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "chef:signature": "owner()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "owner",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x9aab9248",
+            "chef:signature": "pairCodeHash()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "pairCodeHash",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x9fd0506d",
+            "chef:signature": "pauser()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "pauser",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x9a7165e4",
+            "chef:signature": "pendingPauser()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "pendingPauser",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x68930637",
+            "chef:signature": "protocolFeesRecipient()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "protocolFeesRecipient",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xafda13e9",
+            "chef:signature": "protocolFeesShare()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "protocolFeesShare",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "chef:signature": "renounceOwnership()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceOwnership",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xbedb86fb",
+            "chef:signature": "setPause(bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setPause",
+            "chef:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "_state",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x2d88af4a",
+            "chef:signature": "setPauser(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setPauser",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pauser",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x7a72f06f",
+            "chef:signature": "setProtocolFeesRecipient(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setProtocolFeesRecipient",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_protocolFeesRecipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x288eb1a3",
+            "chef:signature": "setProtocolFeesShare(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setProtocolFeesShare",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_protocolFeesShare",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xe12ab559",
+            "chef:signature": "setTradingFees(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setTradingFees",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x40d1b27a",
+            "chef:signature": "setTradingFeesOracle(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setTradingFeesOracle",
+            "chef:inputs": [
+                {
+                    "internalType": "contract ITradingFeesOracle",
+                    "name": "_tradingFeesOracle",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cf73108",
+            "chef:signature": "tradingFees(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tradingFees",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "pair",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "fees",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0x064c1a77",
+            "chef:signature": "tradingFeesOracle()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tradingFeesOracle",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract ITradingFeesOracle",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "chef:signature": "transferOwnership(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferOwnership",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetSwapV2Factory"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "chef:signature": "0(address,address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_router",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_swapPairToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xa24a13a6c9c749fdebc1ced0c54b040f90ec2bad4921a2449a09961f99596abe",
+            "chef:signature": "ArrayLengthMismatch()",
+            "@type": "chef:Event",
+            "chef:name": "ArrayLengthMismatch",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xcd4e6167a0147beade9e7daca0e52cd42e992cd9c3dc1dd3ce8a2b6956f53601",
+            "chef:signature": "FeeTooHigh()",
+            "@type": "chef:Event",
+            "chef:name": "FeeTooHigh",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x768dc598040f8a15186549e30e61f63c67b0dcea435dcc58af3b3815a00be04a",
+            "chef:signature": "InvalidFeeRecipient()",
+            "@type": "chef:Event",
+            "chef:name": "InvalidFeeRecipient",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x24cd9f1ad924d3533612a9835539c6514ce819ab384def98d2a26ea04937bb77",
+            "chef:signature": "MaxWalletAmountTooLow()",
+            "@type": "chef:Event",
+            "chef:name": "MaxWalletAmountTooLow",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x79d1857af953814884301e6db197e8f5c0c65905541b57d26cda2d517ef2e1f2",
+            "chef:signature": "MaxWalletReached()",
+            "@type": "chef:Event",
+            "chef:name": "MaxWalletReached",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x819526c2ffffeb8195e1420936b3b844f72b464f5c5455afdb367d01198c71ea",
+            "chef:signature": "TimestampIsInThePast()",
+            "@type": "chef:Event",
+            "chef:name": "TimestampIsInThePast",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xd723eaba797865735ac5c95223a4d7ba041cd3909593b630e2239fd70772187c",
+            "chef:signature": "TradingAlreadyEnabled()",
+            "@type": "chef:Event",
+            "chef:name": "TradingAlreadyEnabled",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x12f1f92391eea4767da2afda61676415b172cae78829b407f80265b2aea7b323",
+            "chef:signature": "TradingNotEnabled()",
+            "@type": "chef:Event",
+            "chef:name": "TradingNotEnabled",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x90b8ec1877afffd816d05d9b13947f3ff18ec5851c38bad15ec2b710f92391b1",
+            "chef:signature": "TransferFailed()",
+            "@type": "chef:Event",
+            "chef:name": "TransferFailed",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe3da4d3a13a7d3ac8ea9148c4285574d2bee3f15c474073a168dc868351c1809",
+            "chef:signature": "AddressExcludedFromFees(address)",
+            "@type": "chef:Event",
+            "chef:name": "AddressExcludedFromFees",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x575f1ddbfda0dc04fc52273bb61713723c317a04c3f25438c2049dc898144fe2",
+            "chef:signature": "AddressIncludedInFees(address)",
+            "@type": "chef:Event",
+            "chef:name": "AddressIncludedInFees",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "chef:signature": "Approval(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Approval",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x28e297c7c282931a994191b735b01eaf17558295f761512a7047f4e1b8dc3b0b",
+            "chef:signature": "BuyFeeUpdated(uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "BuyFeeUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_previousFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcf85921c8feeebfed4beb9f6e58085e5056e01e65b727c3dad2da2d3f3bbb880",
+            "chef:signature": "LeetPairAdded(address)",
+            "@type": "chef:Event",
+            "chef:name": "LeetPairAdded",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd43da13451ec70800119deba6dfa609b6b7d6615f08b03256f9c3047fda4ef17",
+            "chef:signature": "LeetPairRemoved(address)",
+            "@type": "chef:Event",
+            "chef:name": "LeetPairRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5bafec153d96f8ef37761b64348732b41a6b477401d244a5070f9f82d689adce",
+            "chef:signature": "SellFeeUpdated(uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "SellFeeUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_previousFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "chef:signature": "Transfer(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Transfer",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x03fd2a45",
+            "chef:signature": "DEAD()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "DEAD",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xd73792a9",
+            "chef:signature": "FEE_DENOMINATOR()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "FEE_DENOMINATOR",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xbc063e1a",
+            "chef:signature": "MAX_FEE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "MAX_FEE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa415274b",
+            "chef:signature": "addLeetPair(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addLeetPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2ed5aa3",
+            "chef:signature": "airdropHolders(address[],uint256[])",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "airdropHolders",
+            "chef:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "wallets",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd62ed3e",
+            "chef:signature": "allowance(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "allowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "chef:signature": "approve(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "chef:signature": "balanceOf(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "balanceOf",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x7ae3ff47",
+            "chef:signature": "burnBuyFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "burnBuyFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x7e761377",
+            "chef:signature": "burnSellFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "burnSellFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x313ce567",
+            "chef:signature": "decimals()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "decimals",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa457c2d7",
+            "chef:signature": "decreaseAllowance(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "decreaseAllowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "subtractedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x8a8c523c",
+            "chef:signature": "enableTrading()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "enableTrading",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x437823ec",
+            "chef:signature": "excludeFromFee(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "excludeFromFee",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x5b700d91",
+            "chef:signature": "excludeFromMaxWallet(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "excludeFromMaxWallet",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x0c3cfdf6",
+            "chef:signature": "farmsBuyFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "farmsBuyFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x75ce383d",
+            "chef:signature": "farmsFeeRecipient()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "farmsFeeRecipient",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xe42fbb09",
+            "chef:signature": "farmsSellFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "farmsSellFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xea2f0b37",
+            "chef:signature": "includeInFee(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "includeInFee",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x3f33e909",
+            "chef:signature": "includeInMaxWallet(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "includeInMaxWallet",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x39509351",
+            "chef:signature": "increaseAllowance(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "increaseAllowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "addedValue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x115e6db6",
+            "chef:signature": "indirectSwapFeeEnabled()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "indirectSwapFeeEnabled",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x5342acb4",
+            "chef:signature": "isExcludedFromFee(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isExcludedFromFee",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x6dd3d39f",
+            "chef:signature": "isExcludedFromMaxWallet(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isExcludedFromMaxWallet",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xb6f45a5b",
+            "chef:signature": "isLeetPair(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isLeetPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "isPair",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x8e7e7019",
+            "chef:signature": "isSwappingFees()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isSwappingFees",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x1df30777",
+            "chef:signature": "maxSwapFeesAmount()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "maxSwapFeesAmount",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xaa4bde28",
+            "chef:signature": "maxWalletAmount()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "maxWalletAmount",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xd045a329",
+            "chef:signature": "maxWalletEnabled()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "maxWalletEnabled",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "chef:signature": "name()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "name",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xdb2f5479",
+            "chef:signature": "removeLeetPair(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeLeetPair",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x178d9b8e",
+            "chef:signature": "setBuyFees(uint256,uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setBuyFees",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_burnBuyFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_farmsBuyFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_stakingBuyFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_treasuryBuyFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x5dd321c0",
+            "chef:signature": "setFarmsFeeRecipient(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFarmsFeeRecipient",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xfe0aa5b8",
+            "chef:signature": "setIndirectSwapFeeEnabled(bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setIndirectSwapFeeEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "_indirectSwapFeeEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xec45587f",
+            "chef:signature": "setMaxSwapFeesAmount(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setMaxSwapFeesAmount",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_maxSwapFeesAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x27a14fc2",
+            "chef:signature": "setMaxWalletAmount(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setMaxWalletAmount",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa614ff75",
+            "chef:signature": "setMaxWalletEnabled(bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setMaxWalletEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "enabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x6c5b2855",
+            "chef:signature": "setSellFees(uint256,uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setSellFees",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_burnSellFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_farmsSellFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_stakingSellFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_treasurySellFee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x0bcbb28d",
+            "chef:signature": "setStakingFeeRecipient(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setStakingFeeRecipient",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x4bd369f4",
+            "chef:signature": "setSwapFeesAtAmount(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setSwapFeesAtAmount",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_swapFeesAtAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x7b693d71",
+            "chef:signature": "setSwapFeesRouter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setSwapFeesRouter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_swapFeesRouter",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xaebf1be4",
+            "chef:signature": "setSwapPairToken(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setSwapPairToken",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_swapPairToken",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x13414874",
+            "chef:signature": "setSwappingFeesEnabled(bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setSwappingFeesEnabled",
+            "chef:inputs": [
+                {
+                    "internalType": "bool",
+                    "name": "_swappingFeesEnabled",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x5802e403",
+            "chef:signature": "setTradingEnabledTimestamp(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setTradingEnabledTimestamp",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_timestamp",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x4b00d336",
+            "chef:signature": "setTreasuryFeeRecipient(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setTreasuryFeeRecipient",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x059d3f90",
+            "chef:signature": "stakingBuyFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "stakingBuyFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xb7d23e46",
+            "chef:signature": "stakingFeeRecipient()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "stakingFeeRecipient",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x1ff9e7e7",
+            "chef:signature": "stakingSellFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "stakingSellFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x73c4002d",
+            "chef:signature": "swapFeesAtAmount()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "swapFeesAtAmount",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xc5d2c7c1",
+            "chef:signature": "swapFeesRouter()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "swapFeesRouter",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract IUniswapV2Router02",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x633afd28",
+            "chef:signature": "swapPairToken()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "swapPairToken",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa85fa812",
+            "chef:signature": "swappingFeesEnabled()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "swappingFeesEnabled",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "chef:signature": "symbol()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "symbol",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x59b107b9",
+            "chef:signature": "totalBuyFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalBuyFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x9d9241ec",
+            "chef:signature": "totalSellFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalSellFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "chef:signature": "totalSupply()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalSupply",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x4ada218b",
+            "chef:signature": "tradingEnabled()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tradingEnabled",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x25b61703",
+            "chef:signature": "tradingEnabledTimestamp()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tradingEnabledTimestamp",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9059cbb",
+            "chef:signature": "transfer(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transfer",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "chef:signature": "transferFrom(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferFrom",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x2c10508c",
+            "chef:signature": "treasuryBuyFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "treasuryBuyFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x6f3cf01e",
+            "chef:signature": "treasuryFeeRecipient()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "treasuryFeeRecipient",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xed0d2137",
+            "chef:signature": "treasurySellFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "treasurySellFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0x7fa787ba",
+            "chef:signature": "withdrawStuckEth()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "withdrawStuckEth",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9853b3a",
+            "chef:signature": "withdrawStuckEth(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "withdrawStuckEth",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xbd61f0a6",
+            "chef:signature": "withdrawStuckTokens(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "withdrawStuckTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "@id": "0xcb963728",
+            "chef:signature": "withdrawStuckTokens(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "withdrawStuckTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/LeetToken"
+                }
+            ]
+        },
+        {
+            "payable": false,
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "chef:signature": "0(address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_feeToSetter",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0d3648bd0f6ba80134a33ba9275ac585d9d315f0ad8355cddefde31afa28d0e9",
+            "chef:signature": "PairCreated(address,address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "PairCreated",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token0",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token1",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "pair",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x017e7e58",
+            "chef:signature": "feeTo()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "feeTo",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "payable": false,
+            "@id": "0x094b7415",
+            "chef:signature": "feeToSetter()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "feeToSetter",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xf46901ed",
+            "chef:signature": "setFeeTo(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFeeTo",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_feeTo",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "payable": false,
+            "@id": "0xa2e74af6",
+            "chef:signature": "setFeeToSetter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFeeToSetter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_feeToSetter",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Factory"
+                }
+            ]
+        },
+        {
+            "@id": "0xad5c4648",
+            "chef:signature": "WETH()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "WETH",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xe8e33700",
+            "chef:signature": "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addLiquidity",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenA",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenB",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountADesired",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountBDesired",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountAMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountBMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountA",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountB",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xf305d719",
+            "chef:signature": "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "addLiquidityETH",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountTokenDesired",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountTokenMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETHMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountToken",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETH",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xc45a0155",
+            "chef:signature": "factory()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "factory",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x85f8c259",
+            "chef:signature": "getAmountIn(uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "getAmountIn",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reserveIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reserveOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x054d50d4",
+            "chef:signature": "getAmountOut(uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "getAmountOut",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reserveIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reserveOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x1f00ca74",
+            "chef:signature": "getAmountsIn(uint256,address[])",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getAmountsIn",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xd06ca61f",
+            "chef:signature": "getAmountsOut(uint256,address[])",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getAmountsOut",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xad615dec",
+            "chef:signature": "quote(uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "quote",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountA",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reserveA",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "reserveB",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountB",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xbaa2abde",
+            "chef:signature": "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeLiquidity",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenA",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenB",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountAMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountBMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountA",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountB",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x02751cec",
+            "chef:signature": "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeLiquidityETH",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountTokenMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETHMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountToken",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETH",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xaf2979eb",
+            "chef:signature": "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeLiquidityETHSupportingFeeOnTransferTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountTokenMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETHMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountETH",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xded9382a",
+            "chef:signature": "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeLiquidityETHWithPermit",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountTokenMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETHMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approveMax",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountToken",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETH",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x5b0d5984",
+            "chef:signature": "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountTokenMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountETHMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approveMax",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountETH",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x2195995c",
+            "chef:signature": "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeLiquidityWithPermit",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "tokenA",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "tokenB",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountAMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountBMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approveMax",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountA",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountB",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xfb3bdb41",
+            "chef:signature": "swapETHForExactTokens(uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "swapETHForExactTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x7ff36ab5",
+            "chef:signature": "swapExactETHForTokens(uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "swapExactETHForTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOutMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0xb6f9de95",
+            "chef:signature": "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "swapExactETHForTokensSupportingFeeOnTransferTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOutMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x18cbafe5",
+            "chef:signature": "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "swapExactTokensForETH",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountOutMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x791ac947",
+            "chef:signature": "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "swapExactTokensForETHSupportingFeeOnTransferTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountOutMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x38ed1739",
+            "chef:signature": "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "swapExactTokensForTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountOutMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c11d795",
+            "chef:signature": "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "swapExactTokensForTokensSupportingFeeOnTransferTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountOutMin",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x4a25d94a",
+            "chef:signature": "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "swapTokensForExactETH",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountInMax",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        },
+        {
+            "@id": "0x8803dbee",
+            "chef:signature": "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "swapTokensForExactTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amountInMax",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address[]",
+                    "name": "path",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/leetswap/UniswapV2Router02"
+                }
+            ]
+        }
+    ]
+}

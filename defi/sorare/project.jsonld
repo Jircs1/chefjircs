@@ -1,0 +1,2467 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/sorare",
+    "@type": "chef:Project",
+    "chef:name": "sorare",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy",
+            "@type": "chef:Contract",
+            "chef:contractName": "CallProxy",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy",
+                    "evm:chainID": 1,
+                    "evm:address": "0x2cabd63f6f28b493f33d13e34060f0959f3570ae"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens",
+            "@type": "chef:Contract",
+            "chef:contractName": "SorareTokens",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens",
+                    "evm:chainID": 1,
+                    "evm:address": "0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee",
+            "@type": "chef:Contract",
+            "chef:contractName": "Committee",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee",
+                    "evm:chainID": 1,
+                    "evm:address": "0x879cd57975d596004863d30c59d579ef78bbbe32"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/sorare/StarkExchange",
+            "@type": "chef:Contract",
+            "chef:contractName": "StarkExchange",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/StarkExchange",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf5c9f957705bea56a7e806943f98f7777b995826"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "@id": "0xa3748f0a92719d6e7ce7f9c9c450772749c23429c6a57c2d47fcb44e96994886",
+            "chef:signature": "0(uint256)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "upgradeActivationDelay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc13b75a5f14b69ebdc2431a5d475b3bff371abe251b5064144306fbd9c4de35c",
+            "chef:signature": "FinalizedImplementation(address)",
+            "@type": "chef:Event",
+            "chef:name": "FinalizedImplementation",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x723a7080d63c133cf338e44e00705cc1b7b2bde7e88d6218a8d62710a329ce1b",
+            "chef:signature": "ImplementationAdded(address,bytes,bool)",
+            "@type": "chef:Event",
+            "chef:name": "ImplementationAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe99b980b5259f200e4c1da973ff0251b6d9aaa144714c8773976ecd62b8ebe8d",
+            "chef:signature": "ImplementationRemoved(address,bytes,bool)",
+            "@type": "chef:Event",
+            "chef:name": "ImplementationRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xff14288d542bc1c1d15a652cb52af735f065c0c9d70b48e454a203c260733544",
+            "chef:signature": "ImplementationUpgraded(address,bytes)",
+            "@type": "chef:Event",
+            "chef:name": "ImplementationUpgraded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcfb473e6c03f9a29ddaf990e736fa3de5188a0bd85d684f5b6e164ebfbfff5d2",
+            "chef:signature": "LogNewGovernorAccepted(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogNewGovernorAccepted",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "acceptedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6166272c8d3f5f579082f2827532732f97195007983bb5b83ac12c56700b01a6",
+            "chef:signature": "LogNominatedGovernor(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogNominatedGovernor",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nominatedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7a8dc7dd7fffb43c4807438fa62729225156941e641fd877938f4edade3429f5",
+            "chef:signature": "LogNominationCancelled()",
+            "@type": "chef:Event",
+            "chef:name": "LogNominationCancelled",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd75f94825e770b8b512be8e74759e252ad00e102e38f50cce2f7c6f868a29599",
+            "chef:signature": "LogRemovedGovernor(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogRemovedGovernor",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "removedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x56f36dbf",
+            "chef:signature": "PROXY_GOVERNANCE_TAG()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "PROXY_GOVERNANCE_TAG",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xc5ab8453",
+            "chef:signature": "PROXY_VERSION()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "PROXY_VERSION",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x20cea94d",
+            "chef:signature": "UPGRADE_DELAY_SLOT()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "UPGRADE_DELAY_SLOT",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x5e3a97e7",
+            "chef:signature": "addImplementation(address,bytes,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addImplementation",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x72a44f07",
+            "chef:signature": "getUpgradeActivationDelay()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getUpgradeActivationDelay",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c60da1b",
+            "chef:signature": "implementation()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "implementation",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "_implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x439fab91",
+            "chef:signature": "initialize(bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "initialize",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        },
+        {
+            "@id": "0xe907fa3c",
+            "chef:signature": "isNotFinalized()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isNotFinalized",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "notFinal",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x6684b1d6",
+            "chef:signature": "proxyAcceptGovernance()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyAcceptGovernance",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xf9bcdde4",
+            "chef:signature": "proxyCancelNomination()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyCancelNomination",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0xb449ea5d",
+            "chef:signature": "proxyIsGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "proxyIsGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "testGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x8757653f",
+            "chef:signature": "proxyNominateNewGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyNominateNewGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x12f16e6d",
+            "chef:signature": "proxyRemoveGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyRemoveGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "governorForRemoval",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cef2e86",
+            "chef:signature": "removeImplementation(address,bytes,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeImplementation",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "removedImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x7147855d",
+            "chef:signature": "upgradeTo(address,bytes,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "upgradeTo",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/CallProxy"
+                }
+            ]
+        },
+        {
+            "@id": "0x517d5955ce3c06eaf11438c03b573c37bc6bb235d0463c05b34c209023925f19",
+            "chef:signature": "0(address,address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "sorareCardsAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "relayAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "chef:signature": "Approval(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Approval",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "approved",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31",
+            "chef:signature": "ApprovalForAll(address,address,bool)",
+            "@type": "chef:Event",
+            "chef:name": "ApprovalForAll",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "chef:signature": "OwnershipTransferred(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipTransferred",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "chef:signature": "RoleGranted(bytes32,address,address)",
+            "@type": "chef:Event",
+            "chef:name": "RoleGranted",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b",
+            "chef:signature": "RoleRevoked(bytes32,address,address)",
+            "@type": "chef:Event",
+            "chef:name": "RoleRevoked",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "chef:signature": "Transfer(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Transfer",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xa217fddf",
+            "chef:signature": "DEFAULT_ADMIN_ROLE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "DEFAULT_ADMIN_ROLE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xd5391393",
+            "chef:signature": "MINTER_ROLE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "MINTER_ROLE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x983b2d56",
+            "chef:signature": "addMinter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addMinter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "chef:signature": "approve(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "chef:signature": "balanceOf(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "balanceOf",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x6c0360eb",
+            "chef:signature": "baseURI()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "baseURI",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x309e11fc",
+            "chef:signature": "blockRelay()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "blockRelay",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x2850d20e",
+            "chef:signature": "createCardAndMintToken(uint256,uint16,uint8,uint16,bytes32,uint16,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "createCardAndMintToken",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "playerId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "season",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "scarcity",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "serialNumber",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "metadata",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "clubId",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x081812fc",
+            "chef:signature": "getApproved(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getApproved",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x9188d312",
+            "chef:signature": "getCard(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getCard",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "playerId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "season",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "scarcity",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "serialNumber",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "metadata",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "clubId",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x4a39d2b8",
+            "chef:signature": "getClub(uint16)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getClub",
+            "chef:inputs": [
+                {
+                    "internalType": "uint16",
+                    "name": "clubId",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "country",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "city",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "yearFounded",
+                    "type": "uint16",
+                    "@type": "uint16"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xe55ae4e8",
+            "chef:signature": "getPlayer(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getPlayer",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "playerId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "uint16",
+                    "name": "yearOfBirth",
+                    "type": "uint16",
+                    "@type": "uint16"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "monthOfBirth",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "dayOfBirth",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x32deedc6",
+            "chef:signature": "getRelayAddress()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getRelayAddress",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x248a9ca3",
+            "chef:signature": "getRoleAdmin(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getRoleAdmin",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x9010d07c",
+            "chef:signature": "getRoleMember(bytes32,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getRoleMember",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xca15c873",
+            "chef:signature": "getRoleMemberCount(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getRoleMemberCount",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f2ff15d",
+            "chef:signature": "grantRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "grantRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x91d14854",
+            "chef:signature": "hasRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "hasRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xe985e9c5",
+            "chef:signature": "isApprovedForAll(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isApprovedForAll",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xe5951e60",
+            "chef:signature": "migrateTokens(uint256[])",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "migrateTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xa140ae23",
+            "chef:signature": "mintToken(uint256,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "mintToken",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "cardId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "chef:signature": "name()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "name",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xd8787fde",
+            "chef:signature": "nextContract()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "nextContract",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract INextContract",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "chef:signature": "owner()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "owner",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x6352211e",
+            "chef:signature": "ownerOf(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "ownerOf",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x5f112c68",
+            "chef:signature": "renounceMinter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceMinter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "chef:signature": "renounceOwnership()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceOwnership",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x36568abe",
+            "chef:signature": "renounceRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xcfbd4885",
+            "chef:signature": "revokeMinter(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "revokeMinter",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xd547741f",
+            "chef:signature": "revokeRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "revokeRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x42842e0e",
+            "chef:signature": "safeTransferFrom(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "safeTransferFrom",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xb88d4fde",
+            "chef:signature": "safeTransferFrom(address,address,uint256,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "safeTransferFrom",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xa22cb465",
+            "chef:signature": "setApprovalForAll(address,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setApprovalForAll",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x53390100",
+            "chef:signature": "setNextContract(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setNextContract",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "nextContractAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x99e0dd7c",
+            "chef:signature": "setTokenURIPrefix(string)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setTokenURIPrefix",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "prefix",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x16b1b0c8",
+            "chef:signature": "sorareCards()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "sorareCards",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract ISorareCards",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ffc9a7",
+            "chef:signature": "supportsInterface(bytes4)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "supportsInterface",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "chef:signature": "symbol()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "symbol",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x4f6ccce7",
+            "chef:signature": "tokenByIndex(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tokenByIndex",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f745c59",
+            "chef:signature": "tokenOfOwnerByIndex(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tokenOfOwnerByIndex",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xc87b56dd",
+            "chef:signature": "tokenURI(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tokenURI",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x4d9c5e58",
+            "chef:signature": "tokensOfOwner(address,uint8,uint8)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "tokensOfOwner",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "page",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "rows",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "chef:signature": "totalSupply()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalSupply",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "chef:signature": "transferFrom(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferFrom",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "chef:signature": "transferOwnership(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferOwnership",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/SorareTokens"
+                }
+            ]
+        },
+        {
+            "@id": "0xe3125b5545de3133adbf51c219d0f25e8116cfa057bc4bf19cf2860bc4d24839",
+            "chef:signature": "0(address[],uint256)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "committeeMembers",
+                    "type": "address[]",
+                    "@type": "address[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "numSignaturesRequired",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xd6354e15",
+            "chef:signature": "hasRegisteredFact()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "hasRegisteredFact",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xeeb72866",
+            "chef:signature": "identify()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "identify",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xa230c524",
+            "chef:signature": "isMember(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isMember",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a938567",
+            "chef:signature": "isValid(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isValid",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "fact",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xce757d29",
+            "chef:signature": "signaturesRequired()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "signaturesRequired",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0x504f7f6f",
+            "chef:signature": "verifyAvailabilityProof(bytes32,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "verifyAvailabilityProof",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "claimHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "availabilityProofs",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/Committee"
+                }
+            ]
+        },
+        {
+            "@id": "0xffa1ad74",
+            "chef:signature": "VERSION()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "VERSION",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f9014b4",
+            "chef:signature": "getSubContract(bytes4)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getSubContract",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        },
+        {
+            "@id": "0xd4e878e8",
+            "chef:signature": "handlingContractId(bytes4)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "handlingContractId",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "id",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/sorare/StarkExchange"
+                }
+            ]
+        }
+    ]
+}

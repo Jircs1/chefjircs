@@ -1,0 +1,1746 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/"
+    },
+    "@type": "chef:Index",
+    "chef:recipes": [
+        {
+            "@type": "chef:Dataset",
+            "chef:project": "awesome-web3",
+            "chef:dataset": "dex",
+            "chef:table": "trades",
+            "chef:recipe": "/defi/dex/trades.jsonc"
+        }
+    ],
+    "chef:projects": [
+        {
+            "@id": "colorfulnotion/chef/bridges/across",
+            "@type": "chef:Project",
+            "chef:dataset": "bridges",
+            "chef:name": "across",
+            "chef:seed": "bridges/across/config.jsonc",
+            "chef:project": "bridges/across/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/bridges/cctp",
+            "@type": "chef:Project",
+            "chef:dataset": "bridges",
+            "chef:name": "cctp",
+            "chef:seed": "bridges/cctp/config.jsonc",
+            "chef:project": "bridges/cctp/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/bridges/celer",
+            "@type": "chef:Project",
+            "chef:dataset": "bridges",
+            "chef:name": "celer",
+            "chef:seed": "bridges/celer/config.jsonc",
+            "chef:project": "bridges/celer/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/bridges/hop",
+            "@type": "chef:Project",
+            "chef:dataset": "bridges",
+            "chef:name": "hop",
+            "chef:seed": "bridges/hop/config.jsonc",
+            "chef:project": "bridges/hop/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/bridges/multichain",
+            "@type": "chef:Project",
+            "chef:dataset": "bridges",
+            "chef:name": "multichain",
+            "chef:seed": "bridges/multichain/config.jsonc",
+            "chef:project": "bridges/multichain/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/bridges/wormhole",
+            "@type": "chef:Project",
+            "chef:dataset": "bridges",
+            "chef:name": "wormhole",
+            "chef:seed": "bridges/wormhole/config.jsonc",
+            "chef:project": "bridges/wormhole/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/binance",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "binance",
+            "chef:seed": "cex/binance/config.jsonc",
+            "chef:project": "cex/binance/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/bitfinex",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "bitfinex",
+            "chef:seed": "cex/bitfinex/config.jsonc",
+            "chef:project": "cex/bitfinex/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/bittrex",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "bittrex",
+            "chef:seed": "cex/bittrex/config.jsonc",
+            "chef:project": "cex/bittrex/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/coinbase",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "coinbase",
+            "chef:seed": "cex/coinbase/config.jsonc",
+            "chef:project": "cex/coinbase/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/cryptocom",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "cryptocom",
+            "chef:seed": "cex/cryptocom/config.jsonc",
+            "chef:project": "cex/cryptocom/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/ftx",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "ftx",
+            "chef:seed": "cex/ftx/config.jsonc",
+            "chef:project": "cex/ftx/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/gate",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "gate",
+            "chef:seed": "cex/gate/config.jsonc",
+            "chef:project": "cex/gate/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/gemini",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "gemini",
+            "chef:seed": "cex/gemini/config.jsonc",
+            "chef:project": "cex/gemini/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/huobi",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "huobi",
+            "chef:seed": "cex/huobi/config.jsonc",
+            "chef:project": "cex/huobi/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/kraken",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "kraken",
+            "chef:seed": "cex/kraken/config.jsonc",
+            "chef:project": "cex/kraken/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/cex/poloniex",
+            "@type": "chef:Project",
+            "chef:dataset": "cex",
+            "chef:name": "poloniex",
+            "chef:seed": "cex/poloniex/config.jsonc",
+            "chef:project": "cex/poloniex/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/data/chainlink",
+            "@type": "chef:Project",
+            "chef:dataset": "data",
+            "chef:name": "chainlink",
+            "chef:seed": "data/chainlink/config.jsonc",
+            "chef:project": "data/chainlink/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/data/graph",
+            "@type": "chef:Project",
+            "chef:dataset": "data",
+            "chef:name": "graph",
+            "chef:seed": "data/graph/config.jsonc",
+            "chef:project": "data/graph/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/data/keep",
+            "@type": "chef:Project",
+            "chef:dataset": "data",
+            "chef:name": "keep",
+            "chef:seed": "data/keep/config.jsonc",
+            "chef:project": "data/keep/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/0x",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "0x",
+            "chef:seed": "defi/0x/config.jsonc",
+            "chef:project": "defi/0x/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/1inch",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "1inch",
+            "chef:seed": "defi/1inch/config.jsonc",
+            "chef:project": "defi/1inch/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/aave",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "aave",
+            "chef:seed": "defi/aave/config.jsonc",
+            "chef:project": "defi/aave/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/aavegotchi",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "aavegotchi",
+            "chef:seed": "defi/aavegotchi/config.jsonc",
+            "chef:project": "defi/aavegotchi/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/abracadabra",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "abracadabra",
+            "chef:seed": "defi/abracadabra/config.jsonc",
+            "chef:project": "defi/abracadabra/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/agave",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "agave",
+            "chef:seed": "defi/agave/config.jsonc",
+            "chef:project": "defi/agave/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/aladdindao",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "aladdindao",
+            "chef:seed": "defi/aladdindao/config.jsonc",
+            "chef:project": "defi/aladdindao/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/alchemix",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "alchemix",
+            "chef:seed": "defi/alchemix/config.jsonc",
+            "chef:project": "defi/alchemix/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/ampleforth",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "ampleforth",
+            "chef:seed": "defi/ampleforth/config.jsonc",
+            "chef:project": "defi/ampleforth/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/angle",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "angle",
+            "chef:seed": "defi/angle/config.jsonc",
+            "chef:project": "defi/angle/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/apecoin",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "apecoin",
+            "chef:seed": "defi/apecoin/config.jsonc",
+            "chef:project": "defi/apecoin/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/api3",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "api3",
+            "chef:seed": "defi/api3/config.jsonc",
+            "chef:project": "defi/api3/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/aragon",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "aragon",
+            "chef:seed": "defi/aragon/config.jsonc",
+            "chef:project": "defi/aragon/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/armor",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "armor",
+            "chef:seed": "defi/armor/config.jsonc",
+            "chef:project": "defi/armor/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/arthswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "arthswap",
+            "chef:seed": "defi/arthswap/config.jsonc",
+            "chef:project": "defi/arthswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/aura",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "aura",
+            "chef:seed": "defi/aura/config.jsonc",
+            "chef:project": "defi/aura/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/authereum",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "authereum",
+            "chef:seed": "defi/authereum/config.jsonc",
+            "chef:project": "defi/authereum/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/badger",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "badger",
+            "chef:seed": "defi/badger/config.jsonc",
+            "chef:project": "defi/badger/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/balancer",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "balancer",
+            "chef:seed": "defi/balancer/config.jsonc",
+            "chef:project": "defi/balancer/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/bancor",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "bancor",
+            "chef:seed": "defi/bancor/config.jsonc",
+            "chef:project": "defi/bancor/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/bat",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "bat",
+            "chef:seed": "defi/bat/config.jsonc",
+            "chef:project": "defi/bat/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/beamswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "beamswap",
+            "chef:seed": "defi/beamswap/config.jsonc",
+            "chef:project": "defi/beamswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/bend",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "bend",
+            "chef:seed": "defi/bend/config.jsonc",
+            "chef:project": "defi/bend/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/bibliotheca",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "bibliotheca",
+            "chef:seed": "defi/bibliotheca/config.jsonc",
+            "chef:project": "defi/bibliotheca/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/bitdao",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "bitdao",
+            "chef:seed": "defi/bitdao/config.jsonc",
+            "chef:project": "defi/bitdao/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/botto",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "botto",
+            "chef:seed": "defi/botto/config.jsonc",
+            "chef:project": "defi/botto/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/bridge",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "bridge",
+            "chef:seed": "defi/bridge/config.jsonc",
+            "chef:project": "defi/bridge/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/cabin",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "cabin",
+            "chef:seed": "defi/cabin/config.jsonc",
+            "chef:project": "defi/cabin/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/celsius",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "celsius",
+            "chef:seed": "defi/celsius/config.jsonc",
+            "chef:project": "defi/celsius/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/city",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "city",
+            "chef:seed": "defi/city/config.jsonc",
+            "chef:project": "defi/city/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/code4rena",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "code4rena",
+            "chef:seed": "defi/code4rena/config.jsonc",
+            "chef:project": "defi/code4rena/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/compound",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "compound",
+            "chef:seed": "defi/compound/config.jsonc",
+            "chef:project": "defi/compound/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/conic",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "conic",
+            "chef:seed": "defi/conic/config.jsonc",
+            "chef:project": "defi/conic/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/convex",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "convex",
+            "chef:seed": "defi/convex/config.jsonc",
+            "chef:project": "defi/convex/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/cow",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "cow",
+            "chef:seed": "defi/cow/config.jsonc",
+            "chef:project": "defi/cow/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/cryptex",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "cryptex",
+            "chef:seed": "defi/cryptex/config.jsonc",
+            "chef:project": "defi/cryptex/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/cryptorelief",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "cryptorelief",
+            "chef:seed": "defi/cryptorelief/config.jsonc",
+            "chef:project": "defi/cryptorelief/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/cryptounicorns",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "cryptounicorns",
+            "chef:seed": "defi/cryptounicorns/config.jsonc",
+            "chef:project": "defi/cryptounicorns/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/curve",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "curve",
+            "chef:seed": "defi/curve/config.jsonc",
+            "chef:project": "defi/curve/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/cyphertrust",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "cyphertrust",
+            "chef:seed": "defi/cyphertrust/config.jsonc",
+            "chef:project": "defi/cyphertrust/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/darwinia",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "darwinia",
+            "chef:seed": "defi/darwinia/config.jsonc",
+            "chef:project": "defi/darwinia/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/decentral",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "decentral",
+            "chef:seed": "defi/decentral/config.jsonc",
+            "chef:project": "defi/decentral/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/defigeek",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "defigeek",
+            "chef:seed": "defi/defigeek/config.jsonc",
+            "chef:project": "defi/defigeek/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/deversifi",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "deversifi",
+            "chef:seed": "defi/deversifi/config.jsonc",
+            "chef:project": "defi/deversifi/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/dexe",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "dexe",
+            "chef:seed": "defi/dexe/config.jsonc",
+            "chef:project": "defi/dexe/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/dhedge",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "dhedge",
+            "chef:seed": "defi/dhedge/config.jsonc",
+            "chef:project": "defi/dhedge/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/doodles",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "doodles",
+            "chef:seed": "defi/doodles/config.jsonc",
+            "chef:project": "defi/doodles/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/dtravel",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "dtravel",
+            "chef:seed": "defi/dtravel/config.jsonc",
+            "chef:project": "defi/dtravel/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/dutchx",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "dutchx",
+            "chef:seed": "defi/dutchx/config.jsonc",
+            "chef:project": "defi/dutchx/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/dxdao",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "dxdao",
+            "chef:seed": "defi/dxdao/config.jsonc",
+            "chef:project": "defi/dxdao/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/dydx",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "dydx",
+            "chef:seed": "defi/dydx/config.jsonc",
+            "chef:project": "defi/dydx/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/enzyme",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "enzyme",
+            "chef:seed": "defi/enzyme/config.jsonc",
+            "chef:project": "defi/enzyme/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/ethereumfoundation",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "ethereumfoundation",
+            "chef:seed": "defi/ethereumfoundation/config.jsonc",
+            "chef:project": "defi/ethereumfoundation/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/euler",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "euler",
+            "chef:seed": "defi/euler/config.jsonc",
+            "chef:project": "defi/euler/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/evmos",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "evmos",
+            "chef:seed": "defi/evmos/config.jsonc",
+            "chef:project": "defi/evmos/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/fantom",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "fantom",
+            "chef:seed": "defi/fantom/config.jsonc",
+            "chef:project": "defi/fantom/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/fei",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "fei",
+            "chef:seed": "defi/fei/config.jsonc",
+            "chef:project": "defi/fei/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/fingerprints",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "fingerprints",
+            "chef:seed": "defi/fingerprints/config.jsonc",
+            "chef:project": "defi/fingerprints/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/frax",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "frax",
+            "chef:seed": "defi/frax/config.jsonc",
+            "chef:project": "defi/frax/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/gearbox",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "gearbox",
+            "chef:seed": "defi/gearbox/config.jsonc",
+            "chef:project": "defi/gearbox/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/gitcoin",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "gitcoin",
+            "chef:seed": "defi/gitcoin/config.jsonc",
+            "chef:project": "defi/gitcoin/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/giveth",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "giveth",
+            "chef:seed": "defi/giveth/config.jsonc",
+            "chef:project": "defi/giveth/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/globalcoinresearch",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "globalcoinresearch",
+            "chef:seed": "defi/globalcoinresearch/config.jsonc",
+            "chef:project": "defi/globalcoinresearch/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/gmx",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "gmx",
+            "chef:seed": "defi/gmx/config.jsonc",
+            "chef:project": "defi/gmx/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/goldfinch",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "goldfinch",
+            "chef:seed": "defi/goldfinch/config.jsonc",
+            "chef:project": "defi/goldfinch/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/hair",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "hair",
+            "chef:seed": "defi/hair/config.jsonc",
+            "chef:project": "defi/hair/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/hakka",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "hakka",
+            "chef:seed": "defi/hakka/config.jsonc",
+            "chef:project": "defi/hakka/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/hector",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "hector",
+            "chef:seed": "defi/hector/config.jsonc",
+            "chef:project": "defi/hector/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/hifi",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "hifi",
+            "chef:seed": "defi/hifi/config.jsonc",
+            "chef:project": "defi/hifi/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/hitbtc",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "hitbtc",
+            "chef:seed": "defi/hitbtc/config.jsonc",
+            "chef:project": "defi/hitbtc/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/hopr",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "hopr",
+            "chef:seed": "defi/hopr/config.jsonc",
+            "chef:project": "defi/hopr/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/human",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "human",
+            "chef:seed": "defi/human/config.jsonc",
+            "chef:project": "defi/human/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/idex",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "idex",
+            "chef:seed": "defi/idex/config.jsonc",
+            "chef:project": "defi/idex/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/idle",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "idle",
+            "chef:seed": "defi/idle/config.jsonc",
+            "chef:project": "defi/idle/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/illuvium",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "illuvium",
+            "chef:seed": "defi/illuvium/config.jsonc",
+            "chef:project": "defi/illuvium/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/index",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "index",
+            "chef:seed": "defi/index/config.jsonc",
+            "chef:project": "defi/index/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/instadapp",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "instadapp",
+            "chef:seed": "defi/instadapp/config.jsonc",
+            "chef:project": "defi/instadapp/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/inverse",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "inverse",
+            "chef:seed": "defi/inverse/config.jsonc",
+            "chef:project": "defi/inverse/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/jpegd",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "jpegd",
+            "chef:seed": "defi/jpegd/config.jsonc",
+            "chef:project": "defi/jpegd/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/juicebox",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "juicebox",
+            "chef:seed": "defi/juicebox/config.jsonc",
+            "chef:project": "defi/juicebox/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/kleros",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "kleros",
+            "chef:seed": "defi/kleros/config.jsonc",
+            "chef:project": "defi/kleros/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/klima",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "klima",
+            "chef:seed": "defi/klima/config.jsonc",
+            "chef:project": "defi/klima/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/kucoin",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "kucoin",
+            "chef:seed": "defi/kucoin/config.jsonc",
+            "chef:project": "defi/kucoin/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/kyber",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "kyber",
+            "chef:seed": "defi/kyber/config.jsonc",
+            "chef:project": "defi/kyber/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/kyberswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "kyberswap",
+            "chef:seed": "defi/kyberswap/config.jsonc",
+            "chef:project": "defi/kyberswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/layer2dao",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "layer2dao",
+            "chef:seed": "defi/layer2dao/config.jsonc",
+            "chef:project": "defi/layer2dao/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/leetswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "leetswap",
+            "chef:seed": "defi/leetswap/config.jsonc",
+            "chef:project": "defi/leetswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/liquity",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "liquity",
+            "chef:seed": "defi/liquity/config.jsonc",
+            "chef:project": "defi/liquity/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/lucidao",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "lucidao",
+            "chef:seed": "defi/lucidao/config.jsonc",
+            "chef:project": "defi/lucidao/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/maker",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "maker",
+            "chef:seed": "defi/maker/config.jsonc",
+            "chef:project": "defi/maker/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/mantra",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "mantra",
+            "chef:seed": "defi/mantra/config.jsonc",
+            "chef:project": "defi/mantra/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/meebits",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "meebits",
+            "chef:seed": "defi/meebits/config.jsonc",
+            "chef:project": "defi/meebits/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/meeds",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "meeds",
+            "chef:seed": "defi/meeds/config.jsonc",
+            "chef:project": "defi/meeds/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/merit",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "merit",
+            "chef:seed": "defi/merit/config.jsonc",
+            "chef:project": "defi/merit/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/metacartel",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "metacartel",
+            "chef:seed": "defi/metacartel/config.jsonc",
+            "chef:project": "defi/metacartel/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/metamask",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "metamask",
+            "chef:seed": "defi/metamask/config.jsonc",
+            "chef:project": "defi/metamask/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/metronome",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "metronome",
+            "chef:seed": "defi/metronome/config.jsonc",
+            "chef:project": "defi/metronome/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/mstable",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "mstable",
+            "chef:seed": "defi/mstable/config.jsonc",
+            "chef:project": "defi/mstable/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/mycelium",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "mycelium",
+            "chef:seed": "defi/mycelium/config.jsonc",
+            "chef:project": "defi/mycelium/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/nahmii",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "nahmii",
+            "chef:seed": "defi/nahmii/config.jsonc",
+            "chef:project": "defi/nahmii/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/nation3",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "nation3",
+            "chef:seed": "defi/nation3/config.jsonc",
+            "chef:project": "defi/nation3/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/nest",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "nest",
+            "chef:seed": "defi/nest/config.jsonc",
+            "chef:project": "defi/nest/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/neworder",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "neworder",
+            "chef:seed": "defi/neworder/config.jsonc",
+            "chef:project": "defi/neworder/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/nexusmutual",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "nexusmutual",
+            "chef:seed": "defi/nexusmutual/config.jsonc",
+            "chef:project": "defi/nexusmutual/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/nifty",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "nifty",
+            "chef:seed": "defi/nifty/config.jsonc",
+            "chef:project": "defi/nifty/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/notional",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "notional",
+            "chef:seed": "defi/notional/config.jsonc",
+            "chef:project": "defi/notional/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/olympus",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "olympus",
+            "chef:seed": "defi/olympus/config.jsonc",
+            "chef:project": "defi/olympus/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/olympusdao",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "olympusdao",
+            "chef:seed": "defi/olympusdao/config.jsonc",
+            "chef:project": "defi/olympusdao/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/onchainmonkey",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "onchainmonkey",
+            "chef:seed": "defi/onchainmonkey/config.jsonc",
+            "chef:project": "defi/onchainmonkey/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/ooki",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "ooki",
+            "chef:seed": "defi/ooki/config.jsonc",
+            "chef:project": "defi/ooki/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/orchid",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "orchid",
+            "chef:seed": "defi/orchid/config.jsonc",
+            "chef:project": "defi/orchid/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/origin",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "origin",
+            "chef:seed": "defi/origin/config.jsonc",
+            "chef:project": "defi/origin/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/paladin",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "paladin",
+            "chef:seed": "defi/paladin/config.jsonc",
+            "chef:project": "defi/paladin/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/pancake",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "pancake",
+            "chef:seed": "defi/pancake/config.jsonc",
+            "chef:project": "defi/pancake/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/pangolin",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "pangolin",
+            "chef:seed": "defi/pangolin/config.jsonc",
+            "chef:project": "defi/pangolin/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/paragons",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "paragons",
+            "chef:seed": "defi/paragons/config.jsonc",
+            "chef:project": "defi/paragons/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/paraswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "paraswap",
+            "chef:seed": "defi/paraswap/config.jsonc",
+            "chef:project": "defi/paraswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/party",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "party",
+            "chef:seed": "defi/party/config.jsonc",
+            "chef:project": "defi/party/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/pleasr",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "pleasr",
+            "chef:seed": "defi/pleasr/config.jsonc",
+            "chef:project": "defi/pleasr/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/polywrap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "polywrap",
+            "chef:seed": "defi/polywrap/config.jsonc",
+            "chef:project": "defi/polywrap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/pooltogether",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "pooltogether",
+            "chef:seed": "defi/pooltogether/config.jsonc",
+            "chef:project": "defi/pooltogether/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/popcorn",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "popcorn",
+            "chef:seed": "defi/popcorn/config.jsonc",
+            "chef:project": "defi/popcorn/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/premia",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "premia",
+            "chef:seed": "defi/premia/config.jsonc",
+            "chef:project": "defi/premia/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/prom",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "prom",
+            "chef:seed": "defi/prom/config.jsonc",
+            "chef:project": "defi/prom/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/qi",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "qi",
+            "chef:seed": "defi/qi/config.jsonc",
+            "chef:project": "defi/qi/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/radiant",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "radiant",
+            "chef:seed": "defi/radiant/config.jsonc",
+            "chef:project": "defi/radiant/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/radicle",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "radicle",
+            "chef:seed": "defi/radicle/config.jsonc",
+            "chef:project": "defi/radicle/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/rally",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "rally",
+            "chef:seed": "defi/rally/config.jsonc",
+            "chef:project": "defi/rally/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/rari",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "rari",
+            "chef:seed": "defi/rari/config.jsonc",
+            "chef:project": "defi/rari/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/redacted",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "redacted",
+            "chef:seed": "defi/redacted/config.jsonc",
+            "chef:project": "defi/redacted/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/reflexer",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "reflexer",
+            "chef:seed": "defi/reflexer/config.jsonc",
+            "chef:project": "defi/reflexer/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/researchhub",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "researchhub",
+            "chef:seed": "defi/researchhub/config.jsonc",
+            "chef:project": "defi/researchhub/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/reserve",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "reserve",
+            "chef:seed": "defi/reserve/config.jsonc",
+            "chef:project": "defi/reserve/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/rhino",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "rhino",
+            "chef:seed": "defi/rhino/config.jsonc",
+            "chef:project": "defi/rhino/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/ribbon",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "ribbon",
+            "chef:seed": "defi/ribbon/config.jsonc",
+            "chef:project": "defi/ribbon/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/rook",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "rook",
+            "chef:seed": "defi/rook/config.jsonc",
+            "chef:project": "defi/rook/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/saddle",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "saddle",
+            "chef:seed": "defi/saddle/config.jsonc",
+            "chef:project": "defi/saddle/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/sarcophagus",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "sarcophagus",
+            "chef:seed": "defi/sarcophagus/config.jsonc",
+            "chef:project": "defi/sarcophagus/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/scroll",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "scroll",
+            "chef:seed": "defi/scroll/config.jsonc",
+            "chef:project": "defi/scroll/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/seedclub",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "seedclub",
+            "chef:seed": "defi/seedclub/config.jsonc",
+            "chef:project": "defi/seedclub/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/shapeshift",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "shapeshift",
+            "chef:seed": "defi/shapeshift/config.jsonc",
+            "chef:project": "defi/shapeshift/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/silo",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "silo",
+            "chef:seed": "defi/silo/config.jsonc",
+            "chef:project": "defi/silo/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/sorare",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "sorare",
+            "chef:seed": "defi/sorare/config.jsonc",
+            "chef:project": "defi/sorare/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/sorbet",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "sorbet",
+            "chef:seed": "defi/sorbet/config.jsonc",
+            "chef:project": "defi/sorbet/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/spool",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "spool",
+            "chef:seed": "defi/spool/config.jsonc",
+            "chef:project": "defi/spool/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/squiggle",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "squiggle",
+            "chef:seed": "defi/squiggle/config.jsonc",
+            "chef:project": "defi/squiggle/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/ssv",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "ssv",
+            "chef:seed": "defi/ssv/config.jsonc",
+            "chef:project": "defi/ssv/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/staking",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "staking",
+            "chef:seed": "defi/staking/config.jsonc",
+            "chef:project": "defi/staking/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/stargate",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "stargate",
+            "chef:seed": "defi/stargate/config.jsonc",
+            "chef:project": "defi/stargate/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/stellaswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "stellaswap",
+            "chef:seed": "defi/stellaswap/config.jsonc",
+            "chef:project": "defi/stellaswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/streamity",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "streamity",
+            "chef:seed": "defi/streamity/config.jsonc",
+            "chef:project": "defi/streamity/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/sudoswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "sudoswap",
+            "chef:seed": "defi/sudoswap/config.jsonc",
+            "chef:project": "defi/sudoswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/sushiswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "sushiswap",
+            "chef:seed": "defi/sushiswap/config.jsonc",
+            "chef:project": "defi/sushiswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/swipeswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "swipeswap",
+            "chef:seed": "defi/swipeswap/config.jsonc",
+            "chef:project": "defi/swipeswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/synapse",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "synapse",
+            "chef:seed": "defi/synapse/config.jsonc",
+            "chef:project": "defi/synapse/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/synthetix",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "synthetix",
+            "chef:seed": "defi/synthetix/config.jsonc",
+            "chef:project": "defi/synthetix/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/tbtc",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "tbtc",
+            "chef:seed": "defi/tbtc/config.jsonc",
+            "chef:project": "defi/tbtc/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/tempus",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "tempus",
+            "chef:seed": "defi/tempus/config.jsonc",
+            "chef:project": "defi/tempus/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/threshold",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "threshold",
+            "chef:seed": "defi/threshold/config.jsonc",
+            "chef:project": "defi/threshold/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/tokenlon",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "tokenlon",
+            "chef:seed": "defi/tokenlon/config.jsonc",
+            "chef:project": "defi/tokenlon/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/tornado",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "tornado",
+            "chef:seed": "defi/tornado/config.jsonc",
+            "chef:project": "defi/tornado/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/treasure",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "treasure",
+            "chef:seed": "defi/treasure/config.jsonc",
+            "chef:project": "defi/treasure/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/tron",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "tron",
+            "chef:seed": "defi/tron/config.jsonc",
+            "chef:project": "defi/tron/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/uma",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "uma",
+            "chef:seed": "defi/uma/config.jsonc",
+            "chef:project": "defi/uma/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/umami",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "umami",
+            "chef:seed": "defi/umami/config.jsonc",
+            "chef:project": "defi/umami/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/uniswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "uniswap",
+            "chef:seed": "defi/uniswap/config.jsonc",
+            "chef:project": "defi/uniswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/unit",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "unit",
+            "chef:seed": "defi/unit/config.jsonc",
+            "chef:project": "defi/unit/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/vesper",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "vesper",
+            "chef:seed": "defi/vesper/config.jsonc",
+            "chef:project": "defi/vesper/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/vesta",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "vesta",
+            "chef:seed": "defi/vesta/config.jsonc",
+            "chef:project": "defi/vesta/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/vita",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "vita",
+            "chef:seed": "defi/vita/config.jsonc",
+            "chef:project": "defi/vita/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/wonderland",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "wonderland",
+            "chef:seed": "defi/wonderland/config.jsonc",
+            "chef:project": "defi/wonderland/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/yam",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "yam",
+            "chef:seed": "defi/yam/config.jsonc",
+            "chef:project": "defi/yam/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/yearn",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "yearn",
+            "chef:seed": "defi/yearn/config.jsonc",
+            "chef:project": "defi/yearn/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/zapper",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "zapper",
+            "chef:seed": "defi/zapper/config.jsonc",
+            "chef:project": "defi/zapper/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/zethr",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "zethr",
+            "chef:seed": "defi/zethr/config.jsonc",
+            "chef:project": "defi/zethr/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/zkswap",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "zkswap",
+            "chef:seed": "defi/zkswap/config.jsonc",
+            "chef:project": "defi/zkswap/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/defi/zora",
+            "@type": "chef:Project",
+            "chef:dataset": "defi",
+            "chef:name": "zora",
+            "chef:seed": "defi/zora/config.jsonc",
+            "chef:project": "defi/zora/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/ethereum/arbitrum",
+            "@type": "chef:Project",
+            "chef:dataset": "ethereum",
+            "chef:name": "arbitrum",
+            "chef:seed": "ethereum/arbitrum/config.jsonc",
+            "chef:project": "ethereum/arbitrum/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/ethereum/base",
+            "@type": "chef:Project",
+            "chef:dataset": "ethereum",
+            "chef:name": "base",
+            "chef:seed": "ethereum/base/config.jsonc",
+            "chef:project": "ethereum/base/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/ethereum/metis",
+            "@type": "chef:Project",
+            "chef:dataset": "ethereum",
+            "chef:name": "metis",
+            "chef:seed": "ethereum/metis/config.jsonc",
+            "chef:project": "ethereum/metis/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/ethereum/optimism",
+            "@type": "chef:Project",
+            "chef:dataset": "ethereum",
+            "chef:name": "optimism",
+            "chef:seed": "ethereum/optimism/config.jsonc",
+            "chef:project": "ethereum/optimism/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/ethereum/pgn",
+            "@type": "chef:Project",
+            "chef:dataset": "ethereum",
+            "chef:name": "pgn",
+            "chef:seed": "ethereum/pgn/config.jsonc",
+            "chef:project": "ethereum/pgn/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/ethereum/polygon",
+            "@type": "chef:Project",
+            "chef:dataset": "ethereum",
+            "chef:name": "polygon",
+            "chef:seed": "ethereum/polygon/config.jsonc",
+            "chef:project": "ethereum/polygon/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/ethereum/starknet",
+            "@type": "chef:Project",
+            "chef:dataset": "ethereum",
+            "chef:name": "starknet",
+            "chef:seed": "ethereum/starknet/config.jsonc",
+            "chef:project": "ethereum/starknet/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/gitcoin/allo",
+            "@type": "chef:Project",
+            "chef:dataset": "gitcoin",
+            "chef:name": "allo",
+            "chef:seed": "gitcoin/allo/config.jsonc",
+            "chef:project": "gitcoin/allo/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/naming/ens",
+            "@type": "chef:Project",
+            "chef:dataset": "naming",
+            "chef:name": "ens",
+            "chef:seed": "naming/ens/config.jsonc",
+            "chef:project": "naming/ens/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/blur",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "blur",
+            "chef:seed": "nft/blur/config.jsonc",
+            "chef:project": "nft/blur/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/cryptokitties",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "cryptokitties",
+            "chef:seed": "nft/cryptokitties/config.jsonc",
+            "chef:project": "nft/cryptokitties/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/decentraland",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "decentraland",
+            "chef:seed": "nft/decentraland/config.jsonc",
+            "chef:project": "nft/decentraland/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/looksrare",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "looksrare",
+            "chef:seed": "nft/looksrare/config.jsonc",
+            "chef:project": "nft/looksrare/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/nftx",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "nftx",
+            "chef:seed": "nft/nftx/config.jsonc",
+            "chef:project": "nft/nftx/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/nouns",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "nouns",
+            "chef:seed": "nft/nouns/config.jsonc",
+            "chef:project": "nft/nouns/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/opensea",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "opensea",
+            "chef:seed": "nft/opensea/config.jsonc",
+            "chef:project": "nft/opensea/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/rarible",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "rarible",
+            "chef:seed": "nft/rarible/config.jsonc",
+            "chef:project": "nft/rarible/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/nft/superrare",
+            "@type": "chef:Project",
+            "chef:dataset": "nft",
+            "chef:name": "superrare",
+            "chef:seed": "nft/superrare/config.jsonc",
+            "chef:project": "nft/superrare/project.jsonld"
+        },
+        {
+            "@id": "colorfulnotion/chef/staking/lido",
+            "@type": "chef:Project",
+            "chef:dataset": "staking",
+            "chef:name": "lido",
+            "chef:seed": "staking/lido/config.jsonc",
+            "chef:project": "staking/lido/project.jsonld"
+        }
+    ]
+}

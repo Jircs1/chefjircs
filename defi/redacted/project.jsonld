@@ -1,0 +1,3150 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/redacted",
+    "@type": "chef:Project",
+    "chef:name": "redacted",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury",
+            "@type": "chef:Contract",
+            "chef:contractName": "REDACTEDTreasury",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury",
+                    "evm:chainID": 1,
+                    "evm:address": "0x086c98855df3c78c6b481b6e1d47bef42e9ac36b"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/redacted/GnosisSafe",
+            "@type": "chef:Contract",
+            "chef:contractName": "GnosisSafe",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xa52fd396891e7a74b641a2cb1a6999fcf56b077e"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2",
+            "@type": "chef:Contract",
+            "chef:contractName": "BTRFLYV2",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc55126051b22ebb829d00368f4b12bde432de5da"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator",
+            "@type": "chef:Contract",
+            "chef:contractName": "REDACTEDBondingCalculator",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator",
+                    "evm:chainID": 1,
+                    "evm:address": "0xca1d53e40eab232deff03dc824410100bcccf2bc"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "@id": "0x2404a39adb72ca16ba21f2756aeaaee6d0eaca43f835c1100caba2d609b004b0",
+            "chef:signature": "0(address,address,address,address,address,uint256,uint256,uint256,uint256)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_BTRFLY",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_OHM",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_sOHM",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_CVX",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_CRV",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_OHMFloor",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_CVXFloor",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_CRVFloor",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_newBlocksNeededForQueue",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0dcacb7e392f3d6a216ed2660e3dcfd40b7793d33591db2ba185a6b8e44fc477",
+            "chef:signature": "ChangeActivated(uint8,address,bool)",
+            "@type": "chef:Event",
+            "chef:name": "ChangeActivated",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "enum REDACTEDTreasury.MANAGING",
+                    "name": "managing",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "activated",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "result",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0e4f2c4b5bc209d509bc3d49348c787fefadc66a79351b470599ac0f5be52eaf",
+            "chef:signature": "ChangeQueued(uint8,address)",
+            "@type": "chef:Event",
+            "chef:name": "ChangeQueued",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "enum REDACTEDTreasury.MANAGING",
+                    "name": "managing",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "queued",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7e1a939bed137a819b5d2979822c67f877689f7a863d5e4cb57cdca97b2977d6",
+            "chef:signature": "CreateDebt(address,address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "CreateDebt",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "debtor",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15",
+            "chef:signature": "Deposit(address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Deposit",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xaa151555690c956fc3ea32f106bb9f119b5237a061eaa8557cff3e51e3792c8d",
+            "chef:signature": "OwnershipPulled(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipPulled",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xea8258f2d9ddb679928cf34b78cf645b7feda9acc828e4dd82d014eaae270eba",
+            "chef:signature": "OwnershipPushed(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipPushed",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc6d98eecfc9c78ab62c89a82950079b54874749f1f6f24090f7acc758bc2f309",
+            "chef:signature": "RepayDebt(address,address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "RepayDebt",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "debtor",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xec691f09f6924b27932253f85caf99bacc30360cc0e50a1cc4d2acc246014466",
+            "chef:signature": "ReservesAudited(uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ReservesAudited",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "totalReserves",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2bb2640731848fe9820ba48dbc978c1fc9bbd5f11b948bfab05b7dee3378fd80",
+            "chef:signature": "ReservesManaged(address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ReservesManaged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x93bb8edd35984706eee1b92541281f7f62d33c01c5b2ec0929a113603bd21d66",
+            "chef:signature": "ReservesUpdated(uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ReservesUpdated",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "totalReserves",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xfa8ccab40e7da8146c2304cd0950334fd30a6ba093abe86261aa13911fed849c",
+            "chef:signature": "RewardsMinted(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "RewardsMinted",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x74af5e21416172c4018da0bd43190a10fbb3f7901101907929a85a069d9e4f94",
+            "chef:signature": "Simp(address,uint256,address)",
+            "@type": "chef:Event",
+            "chef:name": "Simp",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "niceGuy",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdf273cb619d95419a9cd0ec88123a0538c85064229baa6363788f743fff90deb",
+            "chef:signature": "Withdrawal(address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Withdrawal",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x3338cd46289b179104f17582d19068f0b9dacabfc55ef6e4e98f1df99d5165fb",
+            "chef:signature": "tokenValueSet(address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "tokenValueSet",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x22443c10",
+            "chef:signature": "BTRFLY()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "BTRFLY",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator"
+                }
+            ]
+        },
+        {
+            "@id": "0xfff9ee87",
+            "chef:signature": "LiquidityDepositorQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "LiquidityDepositorQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xab319c9a",
+            "chef:signature": "LiquidityManagerQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "LiquidityManagerQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f59c727",
+            "chef:signature": "LiquidityTokenQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "LiquidityTokenQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xb1bd38b0",
+            "chef:signature": "ReserveManagerQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "ReserveManagerQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x2b7ce500",
+            "chef:signature": "auditReserves()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "auditReserves",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xd07f390f",
+            "chef:signature": "blocksNeededForQueue()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "blocksNeededForQueue",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x1af4da70",
+            "chef:signature": "bondCalculator(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "bondCalculator",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x5bc42af5",
+            "chef:signature": "deactivateAndreMode()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "deactivateAndreMode",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x094a8651",
+            "chef:signature": "debtorBalance(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "debtorBalance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xcd85641a",
+            "chef:signature": "debtorQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "debtorQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x869871bf",
+            "chef:signature": "debtors(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "debtors",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xbc157ac1",
+            "chef:signature": "deposit(uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "deposit",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_profit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "send_",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x0c3513a8",
+            "chef:signature": "excessReserves()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "excessReserves",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x83f67ba4",
+            "chef:signature": "getFloor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getFloor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x12422d23",
+            "chef:signature": "incurDebt(uint256,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "incurDebt",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xee4e19a1",
+            "chef:signature": "isDebtor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isDebtor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xa1210a2d",
+            "chef:signature": "isLiquidityDepositor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isLiquidityDepositor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xdf89b344",
+            "chef:signature": "isLiquidityManager(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isLiquidityManager",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xa569e571",
+            "chef:signature": "isLiquidityToken(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isLiquidityToken",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x124154ca",
+            "chef:signature": "isReserveDepositor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isReserveDepositor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xebd83cd8",
+            "chef:signature": "isReserveManager(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isReserveManager",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x87d67dff",
+            "chef:signature": "isReserveSpender(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isReserveSpender",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x68c31dd5",
+            "chef:signature": "isReserveToken(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isReserveToken",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x4e83423c",
+            "chef:signature": "isRewardManager(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isRewardManager",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f6a7b57",
+            "chef:signature": "liquidityDepositors(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "liquidityDepositors",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a0502a",
+            "chef:signature": "liquidityManagers(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "liquidityManagers",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xfd1ec010",
+            "chef:signature": "liquidityTokens(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "liquidityTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x0b0eee30",
+            "chef:signature": "manage(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "manage",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x481c6a75",
+            "chef:signature": "manager()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "manager",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a20de92",
+            "chef:signature": "mintRewards(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "mintRewards",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x2a186a78",
+            "chef:signature": "nativeFloorPrice(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "nativeFloorPrice",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xec7ad1a2",
+            "chef:signature": "newBlocksNeededForQueue()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "newBlocksNeededForQueue",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x5a96ac0a",
+            "chef:signature": "pullManagement()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "pullManagement",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x46f68ee9",
+            "chef:signature": "pushManagement(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "pushManagement",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner_",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xe83afee3",
+            "chef:signature": "queue(uint8,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "queue",
+            "chef:inputs": [
+                {
+                    "internalType": "enum REDACTEDTreasury.MANAGING",
+                    "name": "_managing",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x089208d8",
+            "chef:signature": "renounceManagement()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceManagement",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x24793cea",
+            "chef:signature": "repayDebtWithBTRFLY(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "repayDebtWithBTRFLY",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xd796ffb8",
+            "chef:signature": "repayDebtWithReserve(uint256,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "repayDebtWithReserve",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x932cc8c3",
+            "chef:signature": "reserveDepositorQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveDepositorQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x6b5e40a7",
+            "chef:signature": "reserveDepositors(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveDepositors",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x0619aff1",
+            "chef:signature": "reserveManagers(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveManagers",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xc24ad43e",
+            "chef:signature": "reserveSpenderQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveSpenderQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x437f7912",
+            "chef:signature": "reserveSpenders(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveSpenders",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x788c6c01",
+            "chef:signature": "reserveTokenQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveTokenQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xd031370b",
+            "chef:signature": "reserveTokens(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "reserveTokens",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xfb939588",
+            "chef:signature": "rewardManagerQueue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "rewardManagerQueue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xb5b1d560",
+            "chef:signature": "rewardManagers(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "rewardManagers",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x9e5722f9",
+            "chef:signature": "sBTRFLY()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "sBTRFLY",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xc81d37dd",
+            "chef:signature": "sBTRFLYQueue()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "sBTRFLYQueue",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xc99c7d93",
+            "chef:signature": "setFloor(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setFloor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x441b9e3d",
+            "chef:signature": "simp(uint256,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "simp",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xfbfd393b",
+            "chef:signature": "toggle(uint8,address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "toggle",
+            "chef:inputs": [
+                {
+                    "internalType": "enum REDACTEDTreasury.MANAGING",
+                    "name": "_managing",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_address",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_calculator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xfc7b9c18",
+            "chef:signature": "totalDebt()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalDebt",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f840ddd",
+            "chef:signature": "totalReserves()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalReserves",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x1eec5a9a",
+            "chef:signature": "valueOf(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "valueOf",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "value_",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0x00f714ce",
+            "chef:signature": "withdraw(uint256,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "withdraw",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDTreasury"
+                }
+            ]
+        },
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "chef:signature": "0(address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_singleton",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/GnosisSafe"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator"
+                }
+            ]
+        },
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "chef:signature": "0()",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "chef:signature": "Approval(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Approval",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff",
+            "chef:signature": "RoleAdminChanged(bytes32,bytes32,bytes32)",
+            "@type": "chef:Event",
+            "chef:name": "RoleAdminChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "previousAdminRole",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "newAdminRole",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "chef:signature": "RoleGranted(bytes32,address,address)",
+            "@type": "chef:Event",
+            "chef:name": "RoleGranted",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b",
+            "chef:signature": "RoleRevoked(bytes32,address,address)",
+            "@type": "chef:Event",
+            "chef:name": "RoleRevoked",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "chef:signature": "Transfer(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Transfer",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0xa217fddf",
+            "chef:signature": "DEFAULT_ADMIN_ROLE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "DEFAULT_ADMIN_ROLE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x3644e515",
+            "chef:signature": "DOMAIN_SEPARATOR()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "DOMAIN_SEPARATOR",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0xd5391393",
+            "chef:signature": "MINTER_ROLE()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "MINTER_ROLE",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x30adf81f",
+            "chef:signature": "PERMIT_TYPEHASH()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "PERMIT_TYPEHASH",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0xdd62ed3e",
+            "chef:signature": "allowance(address,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "allowance",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x095ea7b3",
+            "chef:signature": "approve(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x70a08231",
+            "chef:signature": "balanceOf(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "balanceOf",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x42966c68",
+            "chef:signature": "burn(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "burn",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x313ce567",
+            "chef:signature": "decimals()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "decimals",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8",
+                    "@type": "uint8"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x248a9ca3",
+            "chef:signature": "getRoleAdmin(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getRoleAdmin",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x2f2ff15d",
+            "chef:signature": "grantRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "grantRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x91d14854",
+            "chef:signature": "hasRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "hasRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x40c10f19",
+            "chef:signature": "mint(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "mint",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x06fdde03",
+            "chef:signature": "name()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "name",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x7ecebe00",
+            "chef:signature": "nonces(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "nonces",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0xd505accf",
+            "chef:signature": "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "permit",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "v",
+                    "type": "uint8",
+                    "@type": "uint8"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "r",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "s",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x36568abe",
+            "chef:signature": "renounceRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0xd547741f",
+            "chef:signature": "revokeRole(bytes32,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "revokeRole",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x01ffc9a7",
+            "chef:signature": "supportsInterface(bytes4)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "supportsInterface",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x95d89b41",
+            "chef:signature": "symbol()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "symbol",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x18160ddd",
+            "chef:signature": "totalSupply()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "totalSupply",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0xa9059cbb",
+            "chef:signature": "transfer(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transfer",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x23b872dd",
+            "chef:signature": "transferFrom(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferFrom",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/BTRFLYV2"
+                }
+            ]
+        },
+        {
+            "@id": "0x490084ef",
+            "chef:signature": "getKValue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getKValue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "k_",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator"
+                }
+            ]
+        },
+        {
+            "@id": "0x68637549",
+            "chef:signature": "getTotalValue(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getTotalValue",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator"
+                }
+            ]
+        },
+        {
+            "@id": "0x32da80a3",
+            "chef:signature": "markdown(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "markdown",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator"
+                }
+            ]
+        },
+        {
+            "@id": "0x4249719f",
+            "chef:signature": "valuation(address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "valuation",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_pair",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount_",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/redacted/REDACTEDBondingCalculator"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,533 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/dex",
+    "@type": "chef:Project",
+    "chef:name": "dex",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature",
+            "@type": "chef:Contract",
+            "chef:contractName": "UniswapFeature",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature",
+                    "evm:chainID": 1,
+                    "evm:address": "0xe66b31678d6c16e9ebf358268a790b763c133750"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "@id": "0xfca1fbd252ca3a3155c4f509ff4215349d6fc81565cce96ed027b4d823dc7f64",
+            "chef:signature": "0(address,address,address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "contract IZeroEx",
+                    "name": "zeroEx",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "allowanceTarget",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address payable",
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x12de7cdcfa92c9e2744861bffda63417a4bc29e3c916f0d3e9655d684cc7acc6",
+            "chef:signature": "AllowanceTargetChanged(address)",
+            "@type": "chef:Event",
+            "chef:name": "AllowanceTargetChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "allowanceTarget",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x373c72efabe4ef3e552ff77838be729f3bc3d8c586df0012902d1baa2377fa1d",
+            "chef:signature": "BeneficiaryChanged(address)",
+            "@type": "chef:Event",
+            "chef:name": "BeneficiaryChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc161c67ca327eadedf1f0825c92841b42fcc2127c83d52d8849770c997f99620",
+            "chef:signature": "ImplementationOverrideSet(bytes4,address)",
+            "@type": "chef:Event",
+            "chef:name": "ImplementationOverrideSet",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes4",
+                    "name": "signature",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "chef:signature": "OwnershipTransferred(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipTransferred",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x058ec768b4d987625b47f998642d52a1ef938ff8445348c5653a5a7c15c9d792",
+            "chef:signature": "ZeroExChanged(address)",
+            "@type": "chef:Event",
+            "chef:name": "ZeroExChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "zeroEx",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xf7c3a33b",
+            "chef:signature": "getAllowanceTarget()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getAllowanceTarget",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x565a2e2c",
+            "chef:signature": "getBeneficiary()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getBeneficiary",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x972fdd26",
+            "chef:signature": "getFunctionImplementation(bytes4)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "getFunctionImplementation",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "signature",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "impl",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xb6016b77",
+            "chef:signature": "getZeroEx()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getZeroEx",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract IZeroEx",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xfe53d0b6",
+            "chef:signature": "optimalSwap(bytes,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "optimalSwap",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "msgData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "feeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "chef:signature": "owner()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "owner",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cf54026",
+            "chef:signature": "proxiedSwap(bytes,address,address,uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "proxiedSwap",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "msgData",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "address",
+                    "name": "feeToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "inputToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "inputAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "outputToken",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "chef:signature": "renounceOwnership()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceOwnership",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x8a14c759",
+            "chef:signature": "setAllowanceTarget(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setAllowanceTarget",
+            "chef:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "newAllowanceTarget",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0x1c31f710",
+            "chef:signature": "setBeneficiary(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setBeneficiary",
+            "chef:inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xfdf03fa1",
+            "chef:signature": "setImplementationOverride(bytes4,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setImplementationOverride",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "signature",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xf9143826",
+            "chef:signature": "setZeroEx(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setZeroEx",
+            "chef:inputs": [
+                {
+                    "internalType": "contract IZeroEx",
+                    "name": "newZeroEx",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "chef:signature": "transferOwnership(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferOwnership",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/dex/UniswapFeature"
+                }
+            ]
+        }
+    ]
+}

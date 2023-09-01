@@ -1,0 +1,843 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/ethereumfoundation",
+    "@type": "chef:Project",
+    "chef:name": "ethereumfoundation",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/EthDev",
+            "@type": "chef:Contract",
+            "chef:contractName": "EthDev",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/EthDev",
+                    "evm:chainID": 1,
+                    "evm:address": "0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress",
+            "@type": "chef:Contract",
+            "chef:contractName": "Congress",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress",
+                    "evm:chainID": 1,
+                    "evm:address": "0xfb6916095ca1df60bb79ce92ce3ea74c37c5d359"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "constant": true,
+            "@id": "0x013cf08b",
+            "chef:signature": "proposals(uint256)",
+            "@type": "chef:Function",
+            "chef:name": "proposals",
+            "chef:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "votingDeadline",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "executed",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "proposalPassed",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "numberOfVotes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "currentResult",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "proposalHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x237e9492",
+            "chef:signature": "executeProposal(uint256,bytes)",
+            "@type": "chef:Function",
+            "chef:name": "executeProposal",
+            "chef:inputs": [
+                {
+                    "name": "proposalNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "result",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x39106821",
+            "chef:signature": "memberId(address)",
+            "@type": "chef:Function",
+            "chef:name": "memberId",
+            "chef:inputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x400e3949",
+            "chef:signature": "numProposals()",
+            "@type": "chef:Function",
+            "chef:name": "numProposals",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x50c34878",
+            "chef:signature": "priceOfAUnicornInFinney()",
+            "@type": "chef:Function",
+            "chef:name": "priceOfAUnicornInFinney",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x522103fa",
+            "chef:signature": "changeUnicorn(uint256,address)",
+            "@type": "chef:Function",
+            "chef:name": "changeUnicorn",
+            "chef:inputs": [
+                {
+                    "name": "newUnicornPriceInFinney",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "newUnicornAddress",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x5daf08ca",
+            "chef:signature": "members(uint256)",
+            "@type": "chef:Function",
+            "chef:name": "members",
+            "chef:inputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "member",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "voteWeight",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "canAddProposals",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "memberSince",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x69bd3436",
+            "chef:signature": "debatingPeriodInMinutes()",
+            "@type": "chef:Function",
+            "chef:name": "debatingPeriodInMinutes",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x8160f0b5",
+            "chef:signature": "minimumQuorum()",
+            "@type": "chef:Function",
+            "chef:name": "minimumQuorum",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x824dbc9a",
+            "chef:signature": "changeMembership(address,uint256,bool,string)",
+            "@type": "chef:Function",
+            "chef:name": "changeMembership",
+            "chef:inputs": [
+                {
+                    "name": "targetMember",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "voteWeight",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "canAddProposals",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "memberName",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0x83876bc9",
+            "chef:signature": "newProposalInWei(address,uint256,string,bytes)",
+            "@type": "chef:Function",
+            "chef:name": "newProposalInWei",
+            "chef:inputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "weiAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "JobDescription",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0x8da5cb5b",
+            "chef:signature": "owner()",
+            "@type": "chef:Function",
+            "chef:name": "owner",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xaa02a90f",
+            "chef:signature": "majorityMargin()",
+            "@type": "chef:Function",
+            "chef:name": "majorityMargin",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xb7782455",
+            "chef:signature": "unicornAddress()",
+            "@type": "chef:Function",
+            "chef:name": "unicornAddress",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xb9f256cd",
+            "chef:signature": "newProposalInEther(address,uint256,string,bytes)",
+            "@type": "chef:Function",
+            "chef:name": "newProposalInEther",
+            "chef:inputs": [
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "etherAmount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "JobDescription",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xbcca1fd3",
+            "chef:signature": "changeVotingRules(uint256,uint256,int256)",
+            "@type": "chef:Function",
+            "chef:name": "changeVotingRules",
+            "chef:inputs": [
+                {
+                    "name": "minimumQuorumForProposals",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "minutesForDebate",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "marginOfVotesForMajority",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xd3c0715b",
+            "chef:signature": "vote(uint256,bool,string)",
+            "@type": "chef:Function",
+            "chef:name": "vote",
+            "chef:inputs": [
+                {
+                    "name": "proposalNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "supportsProposal",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "name": "justificationText",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "voteID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": true,
+            "@id": "0xeceb2945",
+            "chef:signature": "checkProposalCode(uint256,address,uint256,bytes)",
+            "@type": "chef:Function",
+            "chef:name": "checkProposalCode",
+            "chef:inputs": [
+                {
+                    "name": "proposalNumber",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "beneficiary",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "transactionBytecode",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "name": "codeChecksOut",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "constant": false,
+            "@id": "0xf2fde38b",
+            "chef:signature": "transferOwnership(address)",
+            "@type": "chef:Function",
+            "chef:name": "transferOwnership",
+            "chef:inputs": [
+                {
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "@id": "0x180a08bde25b03262fd4d22c3eb1b03358efbd0d6117b5cb6efc9671bd5818c8",
+            "chef:signature": "0(uint256,uint256,int256,address)",
+            "@type": "chef:Event",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "name": "minimumQuorumForProposals",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "minutesForDebate",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "name": "marginOfVotesForMajority",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "name": "congressLeader",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x646fec02522b41e7125cfc859a64fd4f4cefd5dc3b6237ca0abe251ded1fa881",
+            "chef:signature": "ProposalAdded(uint256,address,uint256,string)",
+            "@type": "chef:Event",
+            "chef:name": "ProposalAdded",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "description",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc34f869b7ff431b034b7b9aea9822dac189a685e0b015c7d1be3add3f89128e8",
+            "chef:signature": "Voted(uint256,bool,address,string)",
+            "@type": "chef:Event",
+            "chef:name": "Voted",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "position",
+                    "type": "bool",
+                    "@type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "name": "voter",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "justification",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd220b7272a8b6d0d7d6bcdace67b936a8f175e6d5c1b3ee438b72256b32ab3af",
+            "chef:signature": "ProposalTallied(uint256,int256,uint256,bool)",
+            "@type": "chef:Event",
+            "chef:name": "ProposalTallied",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "name": "proposalID",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "result",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "name": "quorum",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "active",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4cea7af04e7093442a4d8d039e7b517557c4787a8cf68f900473c9bf3abfae4c",
+            "chef:signature": "MembershipChanged(address)",
+            "@type": "chef:Event",
+            "chef:name": "MembershipChanged",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "name": "member",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xa439d3fa452be5e0e1e24a8145e715f4fd8b9c08c96a42fd82a855a85e5d57de",
+            "chef:signature": "ChangeOfRules(uint256,uint256,int256)",
+            "@type": "chef:Event",
+            "chef:name": "ChangeOfRules",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "name": "minimumQuorum",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "debatingPeriodInMinutes",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "majorityMargin",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/ethereumfoundation/Congress"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3403 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/ethereum/starknet",
+    "@type": "chef:Project",
+    "chef:name": "starknet",
+    "chef:dataset": "ethereum",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow",
+            "@type": "chef:Contract",
+            "chef:contractName": "L1Escrow",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow",
+                    "evm:chainID": 1,
+                    "evm:address": "0x0437465dfb5b79726e35f08559b0cbea55bb585c"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+            "@type": "chef:Contract",
+            "chef:contractName": "StarknetERC20Bridge",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0x283751a21eafbfcd52297820d27c1f1963d9b5b4"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0xbb3400f107804dfb482565ff1ec8d8ae66747605"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf6080d9fbeebcd44d89affbfd42f098cbff92816"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge",
+            "@type": "chef:Contract",
+            "chef:contractName": "L1DAIBridge",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0x659a00c33263d9254fed382de81349426c795bb6"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry",
+            "@type": "chef:Contract",
+            "chef:contractName": "MemoryPageFactRegistry",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry",
+                    "evm:chainID": 1,
+                    "evm:address": "0x96375087b2f6efc59e5e0dd5111b4d090ebfdd8b"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge",
+            "@type": "chef:Contract",
+            "chef:contractName": "StarknetEthBridge",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge",
+                    "evm:chainID": 1,
+                    "evm:address": "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet",
+            "@type": "chef:Contract",
+            "chef:contractName": "Starknet",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet",
+                    "evm:chainID": 1,
+                    "evm:address": "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "@id": "0x8d5004028f09180abc4210f60fbf14955ac50d24898f80bef2b1efe077e75bd6",
+            "chef:signature": "0()",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6e11fb1b7f119e3f2fa29896ef5fdf8b8a2d0d4df6fe90ba8668e7d8b2ffa25e",
+            "chef:signature": "Approve(address,address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "Approve",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x184450df2e323acec0ed3b5c7531b81f9b4cdef7914dfd4c0a4317416bb5251b",
+            "chef:signature": "Deny(address)",
+            "@type": "chef:Event",
+            "chef:name": "Deny",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdd0e34038ac38b2a1ce960229778ac48a8719bc900b6c4f8d0475c6e8b385a60",
+            "chef:signature": "Rely(address)",
+            "@type": "chef:Event",
+            "chef:name": "Rely",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe1f21c67",
+            "chef:signature": "approve(address,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "approve",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                }
+            ]
+        },
+        {
+            "@id": "0x9c52a7f1",
+            "chef:signature": "deny(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "deny",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x65fae35e",
+            "chef:signature": "rely(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "rely",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "usr",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xbf353dbb",
+            "chef:signature": "wards(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "wards",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1Escrow"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xa3748f0a92719d6e7ce7f9c9c450772749c23429c6a57c2d47fcb44e96994886",
+            "chef:signature": "0(uint256)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "upgradeActivationDelay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xc13b75a5f14b69ebdc2431a5d475b3bff371abe251b5064144306fbd9c4de35c",
+            "chef:signature": "FinalizedImplementation(address)",
+            "@type": "chef:Event",
+            "chef:name": "FinalizedImplementation",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x723a7080d63c133cf338e44e00705cc1b7b2bde7e88d6218a8d62710a329ce1b",
+            "chef:signature": "ImplementationAdded(address,bytes,bool)",
+            "@type": "chef:Event",
+            "chef:name": "ImplementationAdded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xe99b980b5259f200e4c1da973ff0251b6d9aaa144714c8773976ecd62b8ebe8d",
+            "chef:signature": "ImplementationRemoved(address,bytes,bool)",
+            "@type": "chef:Event",
+            "chef:name": "ImplementationRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xff14288d542bc1c1d15a652cb52af735f065c0c9d70b48e454a203c260733544",
+            "chef:signature": "ImplementationUpgraded(address,bytes)",
+            "@type": "chef:Event",
+            "chef:name": "ImplementationUpgraded",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "initializer",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xcfb473e6c03f9a29ddaf990e736fa3de5188a0bd85d684f5b6e164ebfbfff5d2",
+            "chef:signature": "LogNewGovernorAccepted(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogNewGovernorAccepted",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "acceptedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6166272c8d3f5f579082f2827532732f97195007983bb5b83ac12c56700b01a6",
+            "chef:signature": "LogNominatedGovernor(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogNominatedGovernor",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nominatedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7a8dc7dd7fffb43c4807438fa62729225156941e641fd877938f4edade3429f5",
+            "chef:signature": "LogNominationCancelled()",
+            "@type": "chef:Event",
+            "chef:name": "LogNominationCancelled",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd75f94825e770b8b512be8e74759e252ad00e102e38f50cce2f7c6f868a29599",
+            "chef:signature": "LogRemovedGovernor(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogRemovedGovernor",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "removedGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x56f36dbf",
+            "chef:signature": "PROXY_GOVERNANCE_TAG()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "PROXY_GOVERNANCE_TAG",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xc5ab8453",
+            "chef:signature": "PROXY_VERSION()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "PROXY_VERSION",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x20cea94d",
+            "chef:signature": "UPGRADE_DELAY_SLOT()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "UPGRADE_DELAY_SLOT",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5e3a97e7",
+            "chef:signature": "addImplementation(address,bytes,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "addImplementation",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x72a44f07",
+            "chef:signature": "getUpgradeActivationDelay()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "getUpgradeActivationDelay",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c60da1b",
+            "chef:signature": "implementation()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "implementation",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "_implementation",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x439fab91",
+            "chef:signature": "initialize(bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "initialize",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe907fa3c",
+            "chef:signature": "isNotFinalized()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isNotFinalized",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "notFinal",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x6684b1d6",
+            "chef:signature": "proxyAcceptGovernance()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyAcceptGovernance",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xf9bcdde4",
+            "chef:signature": "proxyCancelNomination()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyCancelNomination",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xb449ea5d",
+            "chef:signature": "proxyIsGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "proxyIsGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x8757653f",
+            "chef:signature": "proxyNominateNewGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyNominateNewGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x12f16e6d",
+            "chef:signature": "proxyRemoveGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "proxyRemoveGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "governorForRemoval",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5cef2e86",
+            "chef:signature": "removeImplementation(address,bytes,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeImplementation",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "removedImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x7147855d",
+            "chef:signature": "upgradeTo(address,bytes,bool)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "upgradeTo",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newImplementation",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "finalize",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetEthBridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/StarknetERC20Bridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5adaebf387789484ad7a9d39a3a21a522a5b51567b5bb3efc6d0263cb3703a33",
+            "chef:signature": "0(address,address,uint256,address,uint256)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_starkNet",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_dai",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_l2Dai",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_escrow",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_l2DaiBridge",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x1cdde67b72a90f19919ac732a437ac2f7a10fc128d28c2a6e525d89ce5cd9d3a",
+            "chef:signature": "Closed()",
+            "@type": "chef:Event",
+            "chef:name": "Closed",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x27342a36c014a937136f67690b80039f954cc7acd1d6a2f5bca3f3d3e7b94837",
+            "chef:signature": "LogCancelDeposit(uint256,address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogCancelDeposit",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6defc6f2eb7fe7d2a05d39d89d53405300c4dafb0e9cd1d6affeb7c02a9c3e54",
+            "chef:signature": "LogCeiling(uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogCeiling",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ceiling",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9dbb0e7dda3e09710ce75b801addc87cf9d9c6c581641b3275fca409ad086c62",
+            "chef:signature": "LogDeposit(address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogDeposit",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Sender",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdee288762e02cf1a2e99896626b9675625e9fa32cce23d9ee7d490763436eaa3",
+            "chef:signature": "LogForceWithdrawal(address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogForceWithdrawal",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2Sender",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x0abf56f125eb3b9ec6b166b22f262406810c29da2da4c902a6ee31694ae11a39",
+            "chef:signature": "LogMaxDeposit(uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogMaxDeposit",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "maxDeposit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb8b6bc18e48f410a36e8867df19f26eb867bad25616833b0ed9141f6d8933929",
+            "chef:signature": "LogStartDepositCancellation(uint256,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogStartDepositCancellation",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2Receipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e91",
+            "chef:signature": "LogWithdrawal(address,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogWithdrawal",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x6c6e4ae3",
+            "chef:signature": "cancelDeposit(uint256,uint256,address,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "cancelDeposit",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x753ed1bd",
+            "chef:signature": "ceiling()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "ceiling",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x43d726d6",
+            "chef:signature": "close()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "close",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xf4b9fa75",
+            "chef:signature": "dai()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "dai",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe2bbb158",
+            "chef:signature": "deposit(uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "deposit",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xe2fdcc17",
+            "chef:signature": "escrow()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "escrow",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xfd1275eb",
+            "chef:signature": "forceWithdrawal(uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "forceWithdrawal",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Sender",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x47535d7b",
+            "chef:signature": "isOpen()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isOpen",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x422e67f4",
+            "chef:signature": "l2Dai()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "l2Dai",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x5417908f",
+            "chef:signature": "l2DaiBridge()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "l2DaiBridge",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x6083e59a",
+            "chef:signature": "maxDeposit()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "maxDeposit",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x8f02cf97",
+            "chef:signature": "setCeiling(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setCeiling",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_ceiling",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0xbb371fdd",
+            "chef:signature": "setMaxDeposit(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setMaxDeposit",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_maxDeposit",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x0b43773e",
+            "chef:signature": "starkNet()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "starkNet",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x7c1c29ac",
+            "chef:signature": "startDepositCancellation(uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "startDepositCancellation",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "l2Recipient",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "@id": "0x00f714ce",
+            "chef:signature": "withdraw(uint256,address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "withdraw",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "l1Recipient",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/L1DAIBridge"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb8b9c39aeba1cfd98c38dfeebe11c2f7e02b334cbe9f05f22b442a5d9c1ea0c5",
+            "chef:signature": "LogMemoryPageFactContinuous(bytes32,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogMemoryPageFactContinuous",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x98fd0d40bd3e226c28fb29ff2d386bd8f9e19f2f8436441e6b854651d3b687b3",
+            "chef:signature": "LogMemoryPageFactRegular(bytes32,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogMemoryPageFactRegular",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0xd6354e15",
+            "chef:signature": "hasRegisteredFact()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "hasRegisteredFact",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x6a938567",
+            "chef:signature": "isValid(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isValid",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "fact",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x5578ceae",
+            "chef:signature": "registerContinuousMemoryPage(uint256,uint256[],uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "registerContinuousMemoryPage",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "startAddr",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "z",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "alpha",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
+                }
+            ]
+        },
+        {
+            "@id": "0x405a6362",
+            "chef:signature": "registerRegularMemoryPage(uint256[],uint256,uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "registerRegularMemoryPage",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "memoryPairs",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "z",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "alpha",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prime",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "factHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "memoryHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "prod",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/MemoryPageFactRegistry"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x393c6beb5756a944b2967f15f31ff671e312e945d7a84fd3bdcfd6b408b2dc79",
+            "chef:signature": "ConfigHashChanged(address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ConfigHashChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "changedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldConfigHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newConfigHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x7a06c571aa77f34d9706c51e5d8122b5595aebeaa34233bfe866f22befb973b1",
+            "chef:signature": "ConsumedMessageToL1(uint256,address,uint256[])",
+            "@type": "chef:Event",
+            "chef:name": "ConsumedMessageToL1",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fromAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9592d37825c744e33fa80c469683bbd04d336241bb600b574758efd182abe26a",
+            "chef:signature": "ConsumedMessageToL2(address,uint256,uint256,uint256[],uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ConsumedMessageToL2",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x6823b073d48d6e3a7d385eeb601452d680e74bb46afe3255a7d778f3a9b17681",
+            "chef:signature": "Finalized()",
+            "@type": "chef:Event",
+            "chef:name": "Finalized",
+            "chef:inputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x4264ac208b5fde633ccdd42e0f12c3d6d443a4f3779bbf886925b94665b63a22",
+            "chef:signature": "LogMessageToL1(uint256,address,uint256[])",
+            "@type": "chef:Event",
+            "chef:name": "LogMessageToL1",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fromAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xdb80dd488acf86d17c747445b0eabb5d57c541d3bd7b6b87af987858e5066b2b",
+            "chef:signature": "LogMessageToL2(address,uint256,uint256,uint256[],uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogMessageToL2",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x50a18c352ee1c02ffe058e15c2eb6e58be387c81e73cc1e17035286e54c19a57",
+            "chef:signature": "LogOperatorAdded(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogOperatorAdded",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xec5f6c3a91a1efb1f9a308bb33c6e9e66bf9090fad0732f127dfdbf516d0625d",
+            "chef:signature": "LogOperatorRemoved(address)",
+            "@type": "chef:Event",
+            "chef:name": "LogOperatorRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
+            "chef:signature": "LogStateTransitionFact(bytes32)",
+            "@type": "chef:Event",
+            "chef:name": "LogStateTransitionFact",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "stateTransitionFact",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xd342ddf7a308dec111745b00315c14b7efb2bdae570a6856e088ed0c65a3576c",
+            "chef:signature": "LogStateUpdate(uint256,int256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "LogStateUpdate",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "globalRoot",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "blockNumber",
+                    "type": "int256",
+                    "@type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8abd2ec2e0a10c82f5b60ea00455fa96c41fd144f225fcc52b8d83d94f803ed8",
+            "chef:signature": "MessageToL2Canceled(address,uint256,uint256,uint256[],uint256)",
+            "@type": "chef:Event",
+            "chef:name": "MessageToL2Canceled",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x2e00dccd686fd6823ec7dc3e125582aa82881b6ff5f6b5a73856e1ea8338a3be",
+            "chef:signature": "MessageToL2CancellationStarted(address,uint256,uint256,uint256[],uint256)",
+            "@type": "chef:Event",
+            "chef:name": "MessageToL2CancellationStarted",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromAddress",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x600a61c1b32ac42fb2fe76e8fc7582a98106668fc16dcd85567cd3937363e49b",
+            "chef:signature": "ProgramHashChanged(address,uint256,uint256)",
+            "@type": "chef:Event",
+            "chef:name": "ProgramHashChanged",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "changedBy",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldProgramHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newProgramHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x6170ff1b",
+            "chef:signature": "cancelL1ToL2Message(uint256,uint256,uint256[],uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "cancelL1ToL2Message",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xe1f1176d",
+            "chef:signature": "configHash()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "configHash",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x2c9dd5c0",
+            "chef:signature": "consumeMessageFromL2(uint256,uint256[])",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "consumeMessageFromL2",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "fromAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x4bb278f3",
+            "chef:signature": "finalize()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "finalize",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x54eccba4",
+            "chef:signature": "getMaxL1MsgFee()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "getMaxL1MsgFee",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xeeb72866",
+            "chef:signature": "identify()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "pure",
+            "chef:name": "identify",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x8d4e4083",
+            "chef:signature": "isFinalized()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isFinalized",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x33eeb147",
+            "chef:signature": "isFrozen()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isFrozen",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x6d70f7ae",
+            "chef:signature": "isOperator(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "isOperator",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x9be446bf",
+            "chef:signature": "l1ToL2MessageCancellations(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "l1ToL2MessageCancellations",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x018cccdf",
+            "chef:signature": "l1ToL2MessageNonce()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "l1ToL2MessageNonce",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x77c7d7a9",
+            "chef:signature": "l1ToL2Messages(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "l1ToL2Messages",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xa46efaf3",
+            "chef:signature": "l2ToL1Messages(bytes32)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "l2ToL1Messages",
+            "chef:inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x8303bd8a",
+            "chef:signature": "messageCancellationDelay()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "messageCancellationDelay",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x8a9bf090",
+            "chef:signature": "programHash()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "programHash",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x3682a450",
+            "chef:signature": "registerOperator(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "registerOperator",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOperator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x3e3aa6c5",
+            "chef:signature": "sendMessageToL2(uint256,uint256,uint256[])",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "sendMessageToL2",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x3d07b336",
+            "chef:signature": "setConfigHash(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setConfigHash",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "newConfigHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xc99d397f",
+            "chef:signature": "setMessageCancellationDelay(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setMessageCancellationDelay",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "delayInSeconds",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xe87e7332",
+            "chef:signature": "setProgramHash(uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setProgramHash",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "newProgramHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x946be3ed",
+            "chef:signature": "starknetAcceptGovernance()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "starknetAcceptGovernance",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0xe37fec25",
+            "chef:signature": "starknetCancelNomination()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "starknetCancelNomination",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x01a01590",
+            "chef:signature": "starknetIsGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "starknetIsGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x91a66a26",
+            "chef:signature": "starknetNominateNewGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "starknetNominateNewGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newGovernor",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x84f921cd",
+            "chef:signature": "starknetRemoveGovernor(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "starknetRemoveGovernor",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "governorForRemoval",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x7a98660b",
+            "chef:signature": "startL1ToL2MessageCancellation(uint256,uint256,uint256[],uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "startL1ToL2MessageCancellation",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "toAddress",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "selector",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "payload",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32",
+                    "@type": "bytes32"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x382d83e3",
+            "chef:signature": "stateBlockHash()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "stateBlockHash",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x35befa5d",
+            "chef:signature": "stateBlockNumber()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "stateBlockNumber",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "int256",
+                    "name": "",
+                    "type": "int256",
+                    "@type": "int256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x9588eca2",
+            "chef:signature": "stateRoot()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "stateRoot",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x96115bc2",
+            "chef:signature": "unregisterOperator(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "unregisterOperator",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "removedOperator",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        },
+        {
+            "@id": "0x77552641",
+            "chef:signature": "updateState(uint256[],uint256,uint256)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "updateState",
+            "chef:inputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "programOutput",
+                    "type": "uint256[]",
+                    "@type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "onchainDataHash",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "onchainDataSize",
+                    "type": "uint256",
+                    "@type": "uint256"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/ethereum/starknet/Starknet"
+                }
+            ]
+        }
+    ]
+}

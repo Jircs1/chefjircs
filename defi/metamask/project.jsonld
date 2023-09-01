@@ -1,0 +1,600 @@
+{
+    "@context": {
+        "@vocab": "http://colorfulnotion.com/vocab",
+        "chef": "http://colorfulnotion.com/chef/",
+        "evm": "http://colorfulnotion.com/"
+    },
+    "@id": "chef:awesome-web3/defi/metamask",
+    "@type": "chef:Project",
+    "chef:name": "metamask",
+    "chef:dataset": "defi",
+    "chef:contracts": [
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap",
+            "@type": "chef:Contract",
+            "chef:contractName": "MetaSwap",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap",
+                    "evm:chainID": 1,
+                    "evm:address": "0x881d40237659c251811cec9c364ef91dc08d300c"
+                }
+            ]
+        },
+        {
+            "@id": "colorfulnotion/awesome-web3/defi/metamask/GnosisSafe",
+            "@type": "chef:Contract",
+            "chef:contractName": "GnosisSafe",
+            "chef:Deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/GnosisSafe",
+                    "evm:chainID": 1,
+                    "evm:address": "0xf326e4de8f66a0bdc0970b79e0924e33c79f1915"
+                }
+            ]
+        }
+    ],
+    "chef:abi": [
+        {
+            "@id": "0xda0228cb326cf032e937292b47c232c8c9edd094cd6ef778005092121d3a2aeb",
+            "chef:signature": "0(address)",
+            "@type": "chef:Event",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "0",
+            "chef:inputs": [
+                {
+                    "internalType": "contract ICHI",
+                    "name": "_chi",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                },
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/GnosisSafe"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xb00061f7cc154fc23eb34671ab724fc7eb7b806abae871abae8f1eafce972135",
+            "chef:signature": "AdapterRemoved(string)",
+            "@type": "chef:Event",
+            "chef:name": "AdapterRemoved",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x779d768d36d59231b0853572f8ee1997a2a762b871abf2c81f18f4bf2af3c726",
+            "chef:signature": "AdapterSet(string,address,bytes4,bytes)",
+            "@type": "chef:Event",
+            "chef:name": "AdapterSet",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "chef:signature": "OwnershipTransferred(address,address)",
+            "@type": "chef:Event",
+            "chef:name": "OwnershipTransferred",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258",
+            "chef:signature": "Paused(address)",
+            "@type": "chef:Event",
+            "chef:name": "Paused",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0xbeee1e6e7fe307ddcf84b0a16137a4430ad5e2480fc4f4a8e250ab56ccd7630d",
+            "chef:signature": "Swap(string,address)",
+            "@type": "chef:Event",
+            "chef:name": "Swap",
+            "chef:inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "anonymous": false,
+            "@id": "0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa",
+            "chef:signature": "Unpaused(address)",
+            "@type": "chef:Event",
+            "chef:name": "Unpaused",
+            "chef:inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0xb5268389",
+            "chef:signature": "adapterRemoved(string)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "adapterRemoved",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0xb84f5d1e",
+            "chef:signature": "adapters(string)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "adapters",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0xc92aecc4",
+            "chef:signature": "chi()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "chi",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract ICHI",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x8da5cb5b",
+            "chef:signature": "owner()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "owner",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x558b7dd1",
+            "chef:signature": "pauseSwaps()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "pauseSwaps",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x5c975abb",
+            "chef:signature": "paused()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "paused",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool",
+                    "@type": "bool"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x3ef11fd7",
+            "chef:signature": "removeAdapter(string)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "removeAdapter",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x715018a6",
+            "chef:signature": "renounceOwnership()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "renounceOwnership",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x459a39fb",
+            "chef:signature": "setAdapter(string,address,bytes4,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "setAdapter",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4",
+                    "@type": "bytes4"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0xe8edc816",
+            "chef:signature": "spender()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "view",
+            "chef:name": "spender",
+            "chef:inputs": [],
+            "chef:outputs": [
+                {
+                    "internalType": "contract Spender",
+                    "name": "",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x5f575529",
+            "chef:signature": "swap(string,address,uint256,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "swap",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "contract IERC20",
+                    "name": "tokenFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x6b68764c",
+            "chef:signature": "swapUsingGasToken(string,address,uint256,bytes)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "payable",
+            "chef:name": "swapUsingGasToken",
+            "chef:inputs": [
+                {
+                    "internalType": "string",
+                    "name": "aggregatorId",
+                    "type": "string",
+                    "@type": "string"
+                },
+                {
+                    "internalType": "contract IERC20",
+                    "name": "tokenFrom",
+                    "type": "address",
+                    "@type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes",
+                    "@type": "bytes"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0xf2fde38b",
+            "chef:signature": "transferOwnership(address)",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "transferOwnership",
+            "chef:inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address",
+                    "@type": "address"
+                }
+            ],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        },
+        {
+            "@id": "0x9804a380",
+            "chef:signature": "unpauseSwaps()",
+            "@type": "chef:Function",
+            "evm:stateMutability": "nonpayable",
+            "chef:name": "unpauseSwaps",
+            "chef:inputs": [],
+            "chef:outputs": [],
+            "chef:deployments": [
+                {
+                    "@type": "chef:ContractDeployment",
+                    "@id": "colorfulnotion/awesome-web3/defi/metamask/MetaSwap"
+                }
+            ]
+        }
+    ]
+}

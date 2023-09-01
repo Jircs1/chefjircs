@@ -1,0 +1,28 @@
+{
+    "calls": [
+            "depositETH(uint32,bytes)",
+            "depositERC20(address,address,uint256,uint32,bytes)",
+            "depositERC20To(address,address,address,uint256,uint32,bytes)",
+            "relayMessage(address,address,bytes,uint256,(bytes32,(uint256,bytes32,uint256,uint256,bytes),(uint256,bytes32[]),bytes,bytes))",
+            "claim(uint256,address,uint256,bytes32[])",
+            "delegate(address)",
+            "bridgeERC20(address,address,uint256,uint32,bytes)",
+            "relayMessage(uint256,address,address,uint256,uint256,bytes)",
+            "depositETHTo(address,uint32,bytes)"
+     ],
+    "events": [
+            "SentMessage(address,address,bytes,uint256,uint256)",
+            "SentMessageExtension1(address,uint256)",
+            "ETHDepositInitiated(address,address,uint256,bytes)",
+            "ETHBridgeInitiated(address,address,uint256,bytes)",
+            "ERC20DepositInitiated(address,address,address,address,uint256,bytes)",
+            "ERC20BridgeInitiated(address,address,address,address,uint256,bytes)",
+            "RelayedMessage(bytes32)",
+            "ERC20WithdrawalFinalized(address,address,address,address,uint256,bytes)",
+            "ERC20BridgeFinalized(address,address,address,address,uint256,bytes)",
+            "ETHWithdrawalFinalized(address,address,uint256,bytes)",
+            "ETHBridgeFinalized(address,address,uint256,bytes)",
+            "AddressSet(string,address,address)",
+            "OwnershipTransferred(address,address)"
+     ]
+}

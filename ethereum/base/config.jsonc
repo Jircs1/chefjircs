@@ -1,0 +1,28 @@
+{
+    "calls": [
+            "depositTransaction(address,uint256,uint64,bool,bytes)",
+            "proveWithdrawalTransaction((uint256,address,address,uint256,uint256,bytes),uint256,(bytes32,bytes32,bytes32,bytes32),bytes[])",
+            "bridgeERC20(address,address,uint256,uint32,bytes)",
+            "sendMessage(address,bytes,uint32)",
+            "finalizeWithdrawalTransaction((uint256,address,address,uint256,uint256,bytes))",
+            "depositETH(uint32,bytes)",
+            "depositERC20(address,address,uint256,uint32,bytes)",
+            "donateETH()"
+    ],
+    "events": [
+            "TransactionDeposited(address,address,uint256,bytes)",
+            "SentMessage(address,address,bytes,uint256,uint256)",
+            "SentMessageExtension1(address,uint256)",
+            "WithdrawalProven(bytes32,address,address)",
+            "ETHDepositInitiated(address,address,uint256,bytes)",
+            "ETHBridgeInitiated(address,address,uint256,bytes)",
+            "AddressSet(string,address,address)",
+            "ERC20DepositInitiated(address,address,address,address,uint256,bytes)",
+            "OwnershipTransferred(address,address)",
+            "ERC20BridgeInitiated(address,address,address,address,uint256,bytes)",
+            "WithdrawalFinalized(bytes32,bool)",
+            "RelayedMessage(bytes32)",
+            "ETHWithdrawalFinalized(address,address,uint256,bytes)",
+            "ETHBridgeFinalized(address,address,uint256,bytes)"
+     ]
+}
