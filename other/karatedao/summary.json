@@ -1,0 +1,42 @@
+{
+    "logs": {
+        "Transfer(address,address,uint256)": 18050,
+        "Approval(address,address,uint256)": 360,
+        "RoleGranted(bytes32,address,address)": 53,
+        "NewMember(address,string,(address,string,bool))": 50,
+        "OwnershipTransferred(address,address)": 3,
+        "NewEventResult(address,string,uint256)": 2,
+        "Snapshot(uint256)": 2,
+        "NewFightEvent(uint256,(uint256,bool,uint256,string,string,string,bool,uint64,uint256))": 2,
+        "NewEventSnapshot(uint256,uint256,uint256)": 2,
+        "RoleRevoked(bytes32,address,address)": 1
+    },
+    "traces": {
+        "null": 130,
+        "transfer(address,uint256)": 12,
+        "balanceOf(address)": 10,
+        "transferFrom(address,address,uint256)": 8,
+        "approve(address,uint256)": 5,
+        "increaseAllowance(address,uint256)": 4,
+        "allowance(address,address)": 2
+    },
+    "transactions": {
+        "addMember(address,bytes32,string)": 40,
+        "transfer(address,uint256)": 37,
+        "claim(uint256[],uint64[],uint256[],(uint8,bytes32,bytes32)[])": 27,
+        "addMember(address,bytes32)": 12,
+        "approve(address,uint256)": 5,
+        "closeEvent(uint256,uint256,((uint8,bytes32,bytes32),string,uint64)[])": 4,
+        "increaseAllowance(address,uint256)": 4,
+        "setSnapshotIdToVoteBalances(uint256,uint256[])": 3,
+        "openEvent(uint256,string,address[],uint256,(uint8,bytes32,bytes32)[])": 2,
+        "grantRole(bytes32,address)": 2,
+        "createEventCard(uint256,string,address[])": 2,
+        "setMinEventJudgeCount(uint8)": 1,
+        "revokeRole(bytes32,address)": 1,
+        "addPools(uint256[])": 1,
+        "nativeTransfer": 1,
+        "setEventViewLink(uint256,string)": 1,
+        "setMinEventDelegateCount(uint8)": 1
+    }
+}

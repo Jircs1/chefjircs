@@ -1,5 +1,5 @@
 {
-    "features": {
+  "features": {
         "UniswapV2Pair": {
             "eventFactory": [
                 "UniswapV2Factory"
@@ -16,49 +16,5 @@
                 "UniversalRouter", "UniversalRouterV1_2"
             ]
         }
-    },
-    "calls": [
-            "swapExactETHForTokensSupportingFeeOnTransferTokens(uint256,address[],address,uint256)",
-            "swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
-            "swapETHForExactTokens(uint256,address[],address,uint256)",
-            "swapExactETHForTokens(uint256,address[],address,uint256)",
-            "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
-            "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
-            "swapExactTokensForTokensSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256)",
-            "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
-            "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
-            "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
-            "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
-            "removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
-            "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
-            "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
-            "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
-            "delegate(address)",
-            "removeLiquidityETHSupportingFeeOnTransferTokens(address,uint256,uint256,uint256,address,uint256)",
-            "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
-            "createPair(address,address)",
-            "claim(uint256,address,uint256,bytes32[])",
-            "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
-            "execute(bytes,bytes[],uint256)",
-          // Uniswapx
-          "reactorCallback(((address,address,uint256,uint256,address,bytes),(address,uint256,uint256),(address,uint256,address)[],bytes,bytes32)[],bytes)",
-          "reactorCallback(((address,address,uint256,uint256,address,bytes),(address,uint256,uint256),(address,uint256,address)[],bytes,bytes32)[],address,bytes)"
-    ],
-    "events": [
-            "Sync(uint112,uint112)",
-            "Swap(address,uint256,uint256,uint256,uint256,address)",
-            "PairCreated(address,address,address,uint256)",
-            "Swap(address,address,int256,int256,uint160,uint128,int24)",
-            "DelegateChanged(address,address,address)",
-            "DelegateVotesChanged(address,uint256,uint256)",
-            "PoolCreated(address,address,uint24,int24,address)",
-            "Burn(address,int24,int24,uint128,uint256,uint256)",
-            "Collect(address,address,int24,int24,uint128,uint128)",
-            "Mint(address,address,int24,int24,uint128,uint256,uint256)",
-            "Claimed(uint256,address,uint256)",
-            "Mint(address,uint256,uint256)",
-            "Burn(address,uint256,uint256,address)",
-            // Uniswapx
-            "Fill(bytes32,address,address,uint256)"
-    ]
+  }
 }

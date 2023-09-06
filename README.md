@@ -8,19 +8,19 @@ The JSON-LD ABIs enable us to:
 * visualize public Web3 visualizations 
 
 JSON-LD files are organized in 2 levels (e.g `defi/dex`) with a file naming convention of:
-* `config.jsonc` holds "seeds" for the Chef process, curated by data engineers
+* `seed.jsonc` holds "seeds" for the Chef process, curated by data engineers
 * `config.jsonld` holds JSON-LD ABI, programmatically generated
-* `logs.json` holds recent tallies of observed calls/logs, programmatically generated
+* `summary.json` holds recent tallies of observed calls/logs, programmatically generated
 
 At present, the output of the Chefs is in POC concept in a "awesome-web3" [Google BigQuery Public Dataset](https://cloud.google.com/bigquery/public-data) and contains the following datasets:
  * `caladan_evm` - full tables -- similar to "crypto_ethereum", except a SET of tables, one for each chain, e.g. Base being chain 8453 has `awesome-web3.caladan_evm.{blocks8453, transactions8453, logs8453, ...}`
  * `caladan_traces` - partitioned { hourly, daily } datasets of call data 
  * `caladan_logs` - partitioned { hourly, daily } datasets of log data
- * `{project}` -- _project-specific_ datasets built from the above partitioned tables **based on `config.jsonc` in this repo**
-   - `naming_ens` holds project tables for [ENS](https://ens.domains/) based on [`/naming/ens/config.jsonc`](/naming/ens/config.jsonc)
-   - `ethereum_optimism`  holds tables for [Optimism](https://www.optimism.io/)  based on [`/ethereum/optimism/config.jsonc`](/naming/ens/config.jsonc)
-   - `defi_uniswap`  holds tables for [Uniswap](https://app.uniswap.org/) based on [`/defi/dex/uniswap/swapv2/config.jsonc`](/defi/dex/uniswap/swapv2/config.jsonc)
-   - `defi_curve`  holds tables for [Curve](https://curve.fi/) based on [`/defi/dex/curve/config.jsonc`](/defi/dex/curve/config.jsonc)
+ * `{project}` -- _project-specific_ datasets built from the above partitioned tables **based on `seed.jsonc` in this repo**
+   - `naming_ens` holds project tables for [ENS](https://ens.domains/) based on [`/naming/ens/seed.jsonc`](/naming/ens/seed.jsonc)
+   - `ethereum_optimism`  holds tables for [Optimism](https://www.optimism.io/)  based on [`/ethereum/optimism/seed.jsonc`](/naming/ens/seed.jsonc)
+   - `defi_uniswap`  holds tables for [Uniswap](https://app.uniswap.org/) based on [`/defi/uniswap/seed.jsonc`](/defi/uniswap/seed.jsonc)
+   - `defi_curve`  holds tables for [Curve](https://curve.fi/) based on [`/defi/dex/curve/seed.jsonc`](/defi/dex/curve/seed.jsonc)
    - `gitcoin_allo`  holds tables for [GitCoin Allo](https://allo.gitcoin.co/) across multiple chains
 
 The JSON-LD ABIs contain "web3 semantics" features to:
@@ -46,8 +46,12 @@ The above design is intended to scale to any project in the Ethereum/EVM ecosyst
 ## Contributions
 
 New projects may be added via pull request by adding a directory with
-a "config.jsonc" (with comments).  The goal is to have addition of new
-config.jsonc programmatically generate new datasets within minutes of
+a "seed.jsonc" (jsonc=with comments) containing:
+
+* `seeds` - an array of seed deployment + factory addresses
+* `recipes` - an array of  ABI functions/event names that will have 1 or more tables generated
+
+The goal is to have chefs be able to quick and _programmatically_ generate new datasets within minutes of
 addition to this repo via Github Actions.
 
 A ChefTime DAO to build and project models is under design consideration for Fall 2023:

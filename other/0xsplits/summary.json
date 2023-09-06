@@ -1,0 +1,51 @@
+{
+    "logs": {
+        "ReceiveETH(address,uint256)": 93620,
+        "Withdrawal(address,uint256,address[],uint256[])": 6102,
+        "DistributeETH(address,uint256,address)": 3615,
+        "CreateSplit(address)": 2118,
+        "DistributeERC20(address,address,uint256,address)": 1418,
+        "UpdateSplit(address)": 352,
+        "Transfer(address,address,uint256)": 42,
+        "null": 33,
+        "InitiateControlTransfer(address,address)": 14,
+        "ControlTransfer(address,address,address)": 11,
+        "CancelControlTransfer(address)": 3,
+        "OwnershipTransferred(address,address)": 2,
+        "CreateRecoup(address)": 2,
+        "CreateWaterfallModule(address,address,address,address[],uint256[])": 1,
+        "CreateSwapper(address,(address,bool,address,address,address,uint32,((address,address),uint32)[]))": 1
+    },
+    "traces": {
+        "null": 20462,
+        "nativeTransfer": 181,
+        "transfer(address,uint256)": 107,
+        "withdraw(address,uint256,address[])": 72,
+        "sendETHToMain(uint256)": 40,
+        "sendERC20ToMain(address,uint256)": 40,
+        "distributeETH(address,address[],uint32[],uint32,address)": 36,
+        "createSplit(address[],uint32[],uint32,address)": 35,
+        "balanceOf(address)": 20,
+        "distributeERC20(address,address,address[],uint32[],uint32,address)": 20,
+        "updateSplit(address,address[],uint32[],uint32)": 6,
+        "onERC721Received(address,address,uint256,bytes)": 4,
+        "execCalls((address,uint256,bytes)[])": 2,
+        "createWaterfallModule(address,address,address[],uint256[])": 2,
+        "setBeneficiary(address)": 2,
+        "createSwapper((address,bool,address,address,(address,(address,bytes)),uint32,((address,address),uint32)[]))": 2,
+        "releaseFromVesting(uint256[])": 1
+    },
+    "transactions": {
+        "withdraw(address,uint256,address[])": 4057,
+        "createSplit(address[],uint32[],uint32,address)": 2025,
+        "distributeETH(address,address[],uint32[],uint32,address)": 1927,
+        "distributeERC20(address,address,address[],uint32[],uint32,address)": 676,
+        "updateSplit(address,address[],uint32[],uint32)": 316,
+        "transferControl(address,address)": 13,
+        "acceptControl(address)": 10,
+        "nativeTransfer": 7,
+        "createSwapper((address,bool,address,address,(address,(address,bytes)),uint32,((address,address),uint32)[]))": 2,
+        "createWaterfallModule(address,address,address[],uint256[])": 2,
+        "cancelControlTransfer(address)": 2
+    }
+}
