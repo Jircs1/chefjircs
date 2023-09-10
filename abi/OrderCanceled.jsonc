@@ -1,0 +1,30 @@
+{
+    "@id": "OrderCanceled",
+    "hex_signature": "0xcbfa7d191838ece7ba4783ca3a30afd316619b7f368094b57ee7ffde9a923db1",
+    "name": "OrderCanceled",
+    "signature": "OrderCanceled(address,bytes32,uint256)",
+    "numLogs": 23315,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "dex:trader",
+            "name": "trader",
+            "type": "address"
+        },
+        {
+            "@type": "1inch:orderId",
+            "name": "orderId",
+            "type": "bytes32"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "remaining",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "1inch": 23315,
+        "kyberswap": 246
+    }
+}

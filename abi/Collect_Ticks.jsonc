@@ -1,0 +1,50 @@
+{
+    "@id": "Collect_Ticks",
+    "hex_signature": "0x70935338e69775456a85ddef226c395fb668b63fa0115f5f20610b388e6ca9c0",
+    "name": "Collect",
+    "signature": "Collect(address,address,int24,int24,uint128,uint128)",
+    "numLogs": 111186,
+    "numProjects": 15,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "recipient",
+            "type": "address"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "bottomTick",
+            "type": "int24"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "topTick",
+            "type": "int24"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1",
+            "type": "uint128"
+        }
+    ],
+    "projects": {
+        "uniswap": 91787,
+        "dackieswap": 10495,
+        "sushiswap": 6442,
+        "pancakeswap": 2290,
+        "yumyum": 76,
+        "4 others": 70
+    }
+}

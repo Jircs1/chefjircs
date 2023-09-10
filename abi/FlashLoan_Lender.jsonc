@@ -1,0 +1,36 @@
+{
+    "@id": "FlashLoan_Lender",
+    "hex_signature": "0x0d7d75e01ab95780d3cd1c8ec0dd6c2ce19e3a20427eec8bf53283b6fb8e95f0",
+    "name": "FlashLoan",
+    "signature": "FlashLoan(address,address,uint256,uint256)",
+    "numLogs": 23985,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "balancer:lender",
+            "name": "lender",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "amountLoaned",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "amountRepayed",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "balancer": 22154,
+        "maker": 1831
+    }
+}

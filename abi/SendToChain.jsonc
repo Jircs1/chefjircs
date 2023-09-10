@@ -1,0 +1,28 @@
+{
+    "@id": "SendToChain",
+    "hex_signature": "0x664e26797cde1146ddfcb9a5d3f4de61179f9c11b2698599bb09e686f442172b",
+    "name": "SendToChain",
+    "signature": "SendToChain(uint16,bytes,uint256)",
+    "numLogs": 30205,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "stargate:chainID",
+            "name": "dstChainId",
+            "type": "uint16"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "bytes"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "qty",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 30205
+    }
+}

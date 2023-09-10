@@ -1,0 +1,45 @@
+{
+    "@id": "Swap_V2a",
+    "hex_signature": "0xb3e2773606abfd36b5bd91394b3a54d1398336c65005baf7bf7a05efeffaf75b",
+    "name": "Swap",
+    "signature": "Swap(address,address,uint256,uint256,uint256,uint256)",
+    "numLogs": 116499,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "inputCurrency",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "outputCurrency",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "inputAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "outputAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "fee",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:rate",
+            "name": "feeRate",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "projectswap": 116499
+    }
+}

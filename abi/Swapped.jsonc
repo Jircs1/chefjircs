@@ -1,0 +1,46 @@
+{
+    "@id": "Swapped",
+    "hex_signature": "0xd6d4f5681c246c9f42c203e287975af1601f8df8035a9251f79aab5c8f09e2f8",
+    "name": "Swapped",
+    "signature": "Swapped(address,address,address,address,uint256,uint256)",
+    "numLogs": 157244,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "srcToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "dstToken",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "dstReceiver",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "spentAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "returnAmount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "kyberswap": 156970,
+        "1inch": 274
+    }
+}

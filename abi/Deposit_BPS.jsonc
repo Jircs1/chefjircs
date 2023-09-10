@@ -1,0 +1,34 @@
+{
+    "@id": "Deposit_BPS",
+    "hex_signature": "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15",
+    "name": "Deposit",
+    "signature": "Deposit(address,uint256,uint256)",
+    "numLogs": 106769,
+    "numProjects": 42,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:bps",
+            "name": "feeBps",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "alien": 30339,
+        "pancakeswap": 27314,
+        "stargate": 20206,
+        "rocketswap": 8069,
+        "synthswap": 5351,
+        "24 others": 15441
+    }
+}

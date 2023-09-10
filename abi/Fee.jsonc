@@ -1,0 +1,45 @@
+{
+    "@id": "Fee",
+    "hex_signature": "0x4c39b7ce5f4f514f45cb6f82b171b8b0b7f2cbf488ad28e4eff451588e2f014b",
+    "name": "Fee",
+    "signature": "Fee(address,uint256,uint256,address[],uint256[],bool)",
+    "numLogs": 117524,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "totalAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "totalFee",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "recipients",
+            "type": "address[]"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amounts",
+            "type": "uint256[]"
+        },
+        {
+            "name": "isBps",
+            "type": "bool"
+        }
+    ],
+    "projects": {
+        "kyberswap": 117524
+    }
+}

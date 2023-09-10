@@ -1,0 +1,36 @@
+{
+    "@id": "CreditChainPath",
+    "hex_signature": "0xdbdd25248751feb2f3b66721dfdd11662a68bc155af3771e661aabec92fba814",
+    "name": "CreditChainPath",
+    "signature": "CreditChainPath(uint16,uint256,uint256,uint256)",
+    "numLogs": 550530,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "stargate:chainID",
+            "name": "chainId",
+            "type": "uint16"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "srcPoolId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "amountSD",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "idealBalance",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 549012,
+        "layerzero": 1518
+    }
+}

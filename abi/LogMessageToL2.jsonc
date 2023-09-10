@@ -1,0 +1,44 @@
+{
+    "@id": "LogMessageToL2",
+    "hex_signature": "0xdb80dd488acf86d17c747445b0eabb5d57c541d3bd7b6b87af987858e5066b2b",
+    "name": "LogMessageToL2",
+    "signature": "LogMessageToL2(address,uint256,uint256,uint256[],uint256,uint256)",
+    "numLogs": 476223,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "fromAddress",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "toAddress",
+            "type": "uint256"
+        },
+        {
+            "@type": "starknet:selector",
+            "name": "selector",
+            "type": "uint256"
+        },
+        {
+            "@type": "starknet:payload",
+            "name": "payload",
+            "type": "uint256[]"
+        },
+        {
+            "@type": "evm:nonce",
+            "name": "nonce",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "fee",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "starknet": 476223,
+        "dydx": 226
+    }
+}

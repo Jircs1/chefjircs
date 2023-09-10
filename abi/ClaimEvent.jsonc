@@ -1,0 +1,39 @@
+{
+    "@id": "ClaimEvent",
+    "hex_signature": "0x25308c93ceeed162da955b3f7ce3e3f93606579e40fb92029faa9efe27545983",
+    "name": "ClaimEvent",
+    "signature": "ClaimEvent(uint32,uint32,address,address,uint256)",
+    "numLogs": 15703,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "polygonzkevm:index",
+            "name": "index",
+            "type": "uint32"
+        },
+        {
+            "@type": "polygonzkevm:chainID",
+            "name": "originNetwork",
+            "type": "uint32"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "originAddress",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "destinationAddress",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "amount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "polygonzkevm": 15703
+    }
+}

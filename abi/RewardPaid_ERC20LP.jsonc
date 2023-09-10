@@ -1,0 +1,33 @@
+{
+    "@id": "RewardPaid_ERC20LP",
+    "hex_signature": "0xd6f2c8500df5b44f11e9e48b91ff9f1b9d81bc496d55570c2b1b75bf65243f51",
+    "name": "RewardPaid",
+    "signature": "RewardPaid(address,uint256,uint256)",
+    "numLogs": 9637,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "fees0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "fees1",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "baseswap": 5617,
+        "synthswap": 3896,
+        "aura": 100,
+        "convex": 24
+    }
+}

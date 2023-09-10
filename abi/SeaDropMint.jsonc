@@ -1,0 +1,53 @@
+{
+    "@id": "SeaDropMint",
+    "hex_signature": "0xe90cf9cc0a552cf52ea6ff74ece0f1c8ae8cc9ad630d3181f55ac43ca076b7d6",
+    "name": "SeaDropMint",
+    "signature": "SeaDropMint(address,address,address,address,uint256,uint256,uint256,uint256)",
+    "numLogs": 182169,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "erc721:token",
+            "name": "nftContract",
+            "type": "address"
+        },
+        {
+            "name": "minter",
+            "type": "address"
+        },
+        {
+            "name": "feeRecipient",
+            "type": "address"
+        },
+        {
+            "name": "payer",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:tokenAmount",
+            "@token": "$0",
+            "name": "quantityMinted",
+            "type": "uint256"
+        },
+        {
+            "@type": "opensea:unitMintPrice",
+            "name": "unitMintPrice",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:bps",
+            "name": "feeBps",
+            "type": "uint256"
+        },
+        {
+            "@type": "opensea:dropStageIndex",
+            "name": "dropStageIndex",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "dharma": 60723,
+        "opensea": 60723,
+        "vectorized": 60723
+    }
+}

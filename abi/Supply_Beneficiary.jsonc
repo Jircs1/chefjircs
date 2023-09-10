@@ -1,0 +1,40 @@
+{
+    "@id": "Supply_Beneficiary",
+    "hex_signature": "0x2b627736bca15cd5381dcf80b0bf11fd197d01a037c52b927a881a10fb73ba61",
+    "name": "Supply",
+    "signature": "Supply(address,address,address,uint256,uint16)",
+    "numLogs": 20131,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "reserve",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:beneficiary",
+            "name": "onBehalfOf",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "referral:referralCode",
+            "name": "referralCode",
+            "type": "uint16"
+        }
+    ],
+    "projects": {
+        "aave": 17464,
+        "para.space": 2667
+    }
+}

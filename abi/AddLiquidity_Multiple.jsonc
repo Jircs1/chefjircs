@@ -1,0 +1,44 @@
+{
+    "@id": "AddLiquidity_Multiple",
+    "hex_signature": "0x189c623b666b1b45b83d7178f39b8c087cb09774317ca2f53c2d3c3726f222a2",
+    "name": "AddLiquidity",
+    "signature": "AddLiquidity(address,uint256[],uint256[],uint256,uint256)",
+    "numLogs": 5606,
+    "numProjects": 5,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "provider",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "tokenAmounts",
+            "type": "uint256[]"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "fees",
+            "type": "uint256[]"
+        },
+        {
+            "@type": "dex:invariant",
+            "name": "invariant",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "lpTokenSupply",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "synapse": 4950,
+        "hop": 532,
+        "alien": 110,
+        "saddle": 12
+    }
+}

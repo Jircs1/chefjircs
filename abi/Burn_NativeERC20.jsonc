@@ -1,0 +1,41 @@
+{
+    "@id": "Burn_NativeERC20",
+    "hex_signature": "0x4cf25bc1d991c17529c25213d3cc0cda295eeaad5f13f361969b12ea48015f90",
+    "name": "Burn",
+    "signature": "Burn(address,address,uint256,uint256,uint256)",
+    "numLogs": 6797,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "dex:liquidity",
+            "name": "liquidity",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "amountETHOut",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amountTokenOut",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "aave": 18535,
+        "para.space": 5943,
+        "pendle": 853
+    }
+}

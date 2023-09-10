@@ -1,0 +1,51 @@
+{
+    "@id": "TokenExchange_PPS",
+    "hex_signature": "0x143f1f8e861fbdeddd5b46e844b7d3ac7b86a122f36e8c463859ee6811b1f29c",
+    "name": "TokenExchange",
+    "signature": "TokenExchange(address,uint256,uint256,uint256,uint256,uint256,uint256)",
+    "numLogs": 19772,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "dex:trader",
+            "name": "buyer",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "sold_id",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "tokens_sold",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "bought_id",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$3",
+            "name": "tokens_bought",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "fee",
+            "type": "uint256"
+        },
+        {
+            "@type": "opensea:packed_price_scale",
+            "name": "packed_price_scale",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "fiddyresearch": 19767
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "@id": "IncreaseLiquidity",
+    "hex_signature": "0x3067048beee31b25b2f1681f88dac838c8bba36af25bfb2b7cf7473a5847e35f",
+    "name": "IncreaseLiquidity",
+    "signature": "IncreaseLiquidity(uint256,uint128,uint256,uint256)",
+    "numLogs": 106730,
+    "numProjects": 10,
+    "inputs": [
+        {
+            "@type": "erc20:lookupid",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:liquidity",
+            "name": "liquidity",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "uniswap": 75512,
+        "dackieswap": 16122,
+        "sushiswap": 8457,
+        "throne": 3152,
+        "pancakeswap": 3031,
+        "2 others": 446
+    }
+}

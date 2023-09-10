@@ -1,0 +1,40 @@
+{
+    "@id": "PriceData",
+    "hex_signature": "0x23b9387f81fca646aac1dc4487ede045c65f5f7445482906565f01e05afdb3a8",
+    "name": "PriceData",
+    "signature": "PriceData(address,uint256,uint256,uint256,uint256)",
+    "numLogs": 70653,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "dex:price",
+            "name": "refPrice",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:price",
+            "name": "fastPrice",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:cumulativeRefDelta",
+            "name": "cumulativeRefDelta",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:cumulativeFastDelta",
+            "name": "cumulativeFastDelta",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "synthswap": 42615,
+        "baseswap": 17886,
+        "beamswap": 10152
+    }
+}

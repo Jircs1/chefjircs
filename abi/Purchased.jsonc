@@ -1,0 +1,39 @@
+{
+    "@id": "Purchased",
+    "hex_signature": "0xb362243af1e2070d7d5bf8d713f2e0fab64203f1b71462afbe20572909788c5e",
+    "name": "Purchased",
+    "signature": "Purchased(address,address,uint256,uint256,uint256)",
+    "numLogs": 54900,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:token",
+            "name": "minter",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:tokenID",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc721:tokenAmount",
+            "@token": "$1",
+            "name": "quantity",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "value",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "zora": 54900
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "@id": "TransferSentToL2",
+    "hex_signature": "0x0a0607688c86ec1775abcdbab7b33a3a35a6c9cde677c9be880150c231cc6b0b",
+    "name": "TransferSentToL2",
+    "signature": "TransferSentToL2(uint256,address,uint256,uint256,uint256,address,uint256)",
+    "numLogs": 36429,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "hop:chainID",
+            "name": "chainId",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "recipient",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "amountOutMin",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:timestamp",
+            "name": "deadline",
+            "type": "uint256"
+        },
+        {
+            "name": "relayer",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "relayerFee",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "hop": 36392,
+        "metamask": 37
+    }
+}

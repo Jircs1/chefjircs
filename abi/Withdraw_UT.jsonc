@@ -1,0 +1,34 @@
+{
+    "@id": "Withdraw_UT",
+    "hex_signature": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb",
+    "name": "Withdraw",
+    "signature": "Withdraw(address,address,uint256)",
+    "numLogs": 5053,
+    "numProjects": 19,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "amount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "compound": 2981,
+        "dharma": 637,
+        "opensea": 637,
+        "vectorized": 637,
+        "alchemix": 68,
+        "3 others": 61
+    }
+}

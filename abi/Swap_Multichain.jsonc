@@ -1,0 +1,58 @@
+{
+    "@id": "Swap_Multichain",
+    "hex_signature": "0x34660fc8af304464529f48a778e03d03e4d34bcd5f9b6f0cfbf3cd238c642f7f",
+    "name": "Swap",
+    "signature": "Swap(uint16,uint256,address,uint256,uint256,uint256,uint256,uint256)",
+    "numLogs": 276623,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "stargate:chainID",
+            "name": "chainId",
+            "type": "uint16"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "dstPoolId",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "amountSD",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "eqReward",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "eqFee",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "protocolFee",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "lpFee",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 276620
+    }
+}

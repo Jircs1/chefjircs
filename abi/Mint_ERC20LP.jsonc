@@ -1,0 +1,37 @@
+{
+    "@id": "Mint_ERC20LP",
+    "hex_signature": "0xb4c03061fb5b7fed76389d5af8f2e0ddb09f8c70d1333abbb62582835e10accb",
+    "name": "Mint",
+    "signature": "Mint(address,uint256,uint256,uint256)",
+    "numLogs": 23873,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "@type": "dex:share",
+            "name": "share",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 22363,
+        "pendle": 1491,
+        "solidly": 12
+    }
+}

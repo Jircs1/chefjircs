@@ -1,0 +1,43 @@
+{
+    "@id": "TokenExchange_256",
+    "hex_signature": "0xb2e76ae99761dc136e598d4a629bb347eccb9532a5f8bbd72e18467c3c34cc98",
+    "name": "TokenExchange",
+    "signature": "TokenExchange(address,uint256,uint256,uint256,uint256)",
+    "numLogs": 66220,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "dex:trader",
+            "name": "buyer",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "sold_id",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "tokens_sold",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "bought_id",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$3",
+            "name": "tokens_bought",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "curve": 66056,
+        "rkp3r": 163,
+        "yearn": 163,
+        "aladdindao": 129
+    }
+}

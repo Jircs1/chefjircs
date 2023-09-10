@@ -1,0 +1,42 @@
+{
+    "@id": "Harvest_PID",
+    "hex_signature": "0xd25759d838eb0a46600f8f327cce144e61d7caefbef27010fe31e2aab091704f",
+    "name": "Harvest",
+    "signature": "Harvest(address,address,uint256,uint256,uint256)",
+    "numLogs": 13089,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "pid",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "reward",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "dackieswap": 8989,
+        "throne": 3933,
+        "pancakeswap": 2509,
+        "beagle": 167
+    }
+}

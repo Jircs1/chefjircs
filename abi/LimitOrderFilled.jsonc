@@ -1,0 +1,71 @@
+{
+    "@id": "LimitOrderFilled",
+    "hex_signature": "0xab614d2b738543c0ea21f56347cf696a3a0c42a7cbec3212a5ca22a4dcff2124",
+    "name": "LimitOrderFilled",
+    "signature": "LimitOrderFilled(bytes32,address,address,address,address,address,uint128,uint128,uint128,uint256,bytes32)",
+    "numLogs": 9143,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "0x:orderHash",
+            "name": "orderHash",
+            "type": "bytes32"
+        },
+        {
+            "@type": "dex:maker",
+            "name": "maker",
+            "type": "address"
+        },
+        {
+            "@type": "dex:taker",
+            "name": "taker",
+            "type": "address"
+        },
+        {
+            "name": "feeRecipient",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "makerToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "takerToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$5",
+            "name": "takerTokenFilledAmount",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$4",
+            "name": "makerTokenFilledAmount",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$5",
+            "name": "takerTokenFeeFilledAmount",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "protocolFeePaid",
+            "type": "uint256"
+        },
+        {
+            "@type": "0x:pool",
+            "name": "pool",
+            "type": "bytes32"
+        }
+    ],
+    "projects": {
+        "0x": 9143
+    }
+}

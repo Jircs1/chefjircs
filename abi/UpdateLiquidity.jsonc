@@ -1,0 +1,46 @@
+{
+    "@id": "UpdateLiquidity",
+    "hex_signature": "0xee8f6362d59839b4b3c990d7e085a63a0fe2c58f4eff4a9a2b6de93a4c645ae3",
+    "name": "UpdateLiquidity",
+    "signature": "UpdateLiquidity(address,uint256,uint256,int128,int24,int24)",
+    "numLogs": 22360,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "pid",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:liquidity",
+            "name": "liquidity",
+            "type": "int128"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tickLower",
+            "type": "int24"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tickUpper",
+            "type": "int24"
+        }
+    ],
+    "projects": {
+        "dackieswap": 12888,
+        "throne": 5101,
+        "pancakeswap": 3985,
+        "beagle": 386
+    }
+}

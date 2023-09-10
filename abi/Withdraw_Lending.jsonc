@@ -1,0 +1,37 @@
+{
+    "@id": "Withdraw_Lending",
+    "hex_signature": "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7",
+    "name": "Withdraw",
+    "signature": "Withdraw(address,address,address,uint256)",
+    "numLogs": 25312,
+    "numProjects": 5,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "reserve",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "aave": 24606,
+        "para.space": 2144,
+        "lendingpool": 665,
+        "energon": 38
+    }
+}

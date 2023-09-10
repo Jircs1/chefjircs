@@ -1,0 +1,50 @@
+{
+    "@id": "OtcOrderFilled",
+    "hex_signature": "0xac75f773e3a92f1a02b12134d65e1f47f8a14eabe4eaf1e24624918e6a8b269f",
+    "name": "OtcOrderFilled",
+    "signature": "OtcOrderFilled(bytes32,address,address,address,address,uint128,uint128)",
+    "numLogs": 73210,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "0x:orderHash",
+            "name": "orderHash",
+            "type": "bytes32"
+        },
+        {
+            "@type": "dex:maker",
+            "name": "maker",
+            "type": "address"
+        },
+        {
+            "@type": "dex:taker",
+            "name": "taker",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "makerToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "takerToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$4",
+            "name": "makerTokenFilledAmount",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$5",
+            "name": "takerTokenFilledAmount",
+            "type": "uint128"
+        }
+    ],
+    "projects": {
+        "0x": 73210
+    }
+}

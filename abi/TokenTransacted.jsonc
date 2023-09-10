@@ -1,0 +1,44 @@
+{
+    "@id": "TokenTransacted",
+    "hex_signature": "0xf3574a20a6defd7fc26917e8013cdd578db5eaa4d9a3eb54f2bb0983ad8ab40d",
+    "name": "TokenTransacted",
+    "signature": "TokenTransacted(address,address,bytes32,address,uint256,address)",
+    "numLogs": 4669,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "msgSender",
+            "type": "address"
+        },
+        {
+            "name": "otherSigner",
+            "type": "address"
+        },
+        {
+            "name": "operation",
+            "type": "bytes32"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "toAddress",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$5",
+            "name": "value",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokenContractAddress",
+            "type": "address"
+        }
+    ],
+    "projects": {
+        "bitstamp": 4411,
+        "korbit": 233,
+        "triv": 21
+    }
+}

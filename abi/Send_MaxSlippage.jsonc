@@ -1,0 +1,53 @@
+{
+    "@id": "Send_MaxSlippage",
+    "hex_signature": "0x89d8051e597ab4178a863a5190407b98abfeff406aa8db90c59af76612e58f01",
+    "name": "Send",
+    "signature": "Send(bytes32,address,address,address,uint256,uint64,uint64,uint32)",
+    "numLogs": 22217,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "name": "transferId",
+            "type": "bytes32"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "receiver",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$3",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "celer:chainID",
+            "name": "dstChainId",
+            "type": "uint64"
+        },
+        {
+            "@type": "evm:nonce",
+            "name": "nonce",
+            "type": "uint64"
+        },
+        {
+            "@type": "dex:maxSlippage",
+            "name": "maxSlippage",
+            "type": "uint32"
+        }
+    ],
+    "projects": {
+        "celer": 22217
+    }
+}

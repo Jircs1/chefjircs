@@ -1,0 +1,39 @@
+{
+    "@id": "PoolBalanceChanged",
+    "hex_signature": "0xe5ce249087ce04f05a957192435400fd97868dba0e6a4b4c049abf8af80dae78",
+    "name": "PoolBalanceChanged",
+    "signature": "PoolBalanceChanged(bytes32,address,address[],int256[],uint256[])",
+    "numLogs": 17441,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "erc20:lookupid",
+            "name": "poolId",
+            "type": "bytes32"
+        },
+        {
+            "@type": "balancer:liquidityProvider",
+            "name": "liquidityProvider",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokens",
+            "type": "address[]"
+        },
+        {
+            "@type": "balancer:deltas",
+            "name": "deltas",
+            "type": "int256[]"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "protocolFeeAmounts",
+            "type": "uint256[]"
+        }
+    ],
+    "projects": {
+        "balancer": 17441
+    }
+}

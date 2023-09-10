@@ -1,0 +1,38 @@
+{
+    "@id": "WithdrawalRequested",
+    "hex_signature": "0xf0cb471f23fb74ea44b8252eb1881a2dca546288d9f6e90d1a0e82fe0ed342ab",
+    "name": "WithdrawalRequested",
+    "signature": "WithdrawalRequested(uint256,address,address,uint256,uint256)",
+    "numLogs": 6329,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "lido:requestId",
+            "name": "requestId",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "requestor",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "amountOfStETH",
+            "type": "uint256"
+        },
+        {
+            "@type": "lido:shares",
+            "name": "amountOfShares",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "lido": 6329
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "@id": "Deposit_DEX3",
+    "hex_signature": "0xb19157bff94fdd40c58c7d4a5d52e8eb8c2d570ca17b322b49a2bbbeedc82fbf",
+    "name": "Deposit",
+    "signature": "Deposit(address,uint256,uint256,uint256,int24,int24)",
+    "numLogs": 4233,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "pid",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:liquidity",
+            "name": "liquidity",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tickLower",
+            "type": "int24"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tickUpper",
+            "type": "int24"
+        }
+    ],
+    "projects": {
+        "dackieswap": 5243,
+        "throne": 2164,
+        "pancakeswap": 1872,
+        "beagle": 197
+    }
+}

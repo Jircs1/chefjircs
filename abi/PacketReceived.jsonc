@@ -1,0 +1,38 @@
+{
+    "@id": "PacketReceived",
+    "hex_signature": "0x2bd2d8a84b748439fd50d79a49502b4eb5faa25b864da6a9ab5c150704be9a4d",
+    "name": "PacketReceived",
+    "signature": "PacketReceived(uint16,bytes,address,uint64,bytes32)",
+    "numLogs": 776806,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "layerzero:chainID",
+            "name": "srcChainId",
+            "type": "uint16"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "srcAddress",
+            "type": "bytes"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "dstAddress",
+            "type": "address"
+        },
+        {
+            "@type": "evm:nonce",
+            "name": "nonce",
+            "type": "uint64"
+        },
+        {
+            "@type": "layerzero:payloadHash",
+            "name": "payloadHash",
+            "type": "bytes32"
+        }
+    ],
+    "projects": {
+        "layerzero": 776806
+    }
+}

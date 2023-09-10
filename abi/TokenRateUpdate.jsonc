@@ -1,0 +1,33 @@
+{
+    "@id": "TokenRateUpdate",
+    "hex_signature": "0x77f29993cf2c084e726f7e802da0719d6a0ade3e204badc7a3ffd57ecb768c24",
+    "name": "TokenRateUpdate",
+    "signature": "TokenRateUpdate(address,address,uint256,uint256)",
+    "numLogs": 30620,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "_token1",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "_token2",
+            "type": "address"
+        },
+        {
+            "@type": "bancor:rate",
+            "name": "_rateN",
+            "type": "uint256"
+        },
+        {
+            "@type": "bancor:rate",
+            "name": "_rateD",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "bancor": 30618
+    }
+}

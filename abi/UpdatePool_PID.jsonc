@@ -1,0 +1,37 @@
+{
+    "@id": "UpdatePool_PID",
+    "hex_signature": "0x3be3541fc42237d611b30329040bfa4569541d156560acdbbae57640d20b8f46",
+    "name": "UpdatePool",
+    "signature": "UpdatePool(uint256,uint256,uint256,uint256)",
+    "numLogs": 44984,
+    "numProjects": 5,
+    "inputs": [
+        {
+            "@type": "erc20:lookupid",
+            "name": "pid",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:timestamp",
+            "name": "lastRewardTimestamp",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$0",
+            "name": "lpSupply",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:accTokenPerShare",
+            "name": "accTokenPerShare",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "alien": 36521,
+        "synthswap": 8403,
+        "icecreamswap": 36,
+        "onepiece": 14
+    }
+}

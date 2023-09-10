@@ -1,0 +1,39 @@
+{
+    "@id": "Deposit_SG",
+    "hex_signature": "0xbe9cf0e939c614fad640a623a53ba0a807c8cb503c4c4c8dacabe27b86ff2dd5",
+    "name": "Deposit",
+    "signature": "Deposit(address,uint256,uint256,uint8,uint256)",
+    "numLogs": 6464,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "provider",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "value",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:timestamp",
+            "name": "locktime",
+            "type": "uint256"
+        },
+        {
+            "@type": "stargate:action",
+            "name": "action",
+            "type": "uint8"
+        },
+        {
+            "@type": "evm:timestamp",
+            "name": "ts",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 6464
+    }
+}

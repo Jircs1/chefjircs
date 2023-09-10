@@ -1,0 +1,45 @@
+{
+    "@id": "TokenExchange_128",
+    "hex_signature": "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140",
+    "name": "TokenExchange",
+    "signature": "TokenExchange(address,int128,uint256,int128,uint256)",
+    "numLogs": 59009,
+    "numProjects": 6,
+    "inputs": [
+        {
+            "@type": "dex:trader",
+            "name": "",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "sold_id",
+            "type": "int128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "name": "tokens_sold",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "bought_id",
+            "type": "int128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$3",
+            "name": "tokens_bought",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "curve": 57758,
+        "fiddyresearch": 889,
+        "yearn": 332,
+        "convex": 217,
+        "jpegd": 106,
+        "1 others": 29
+    }
+}

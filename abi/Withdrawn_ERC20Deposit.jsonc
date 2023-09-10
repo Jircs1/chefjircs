@@ -1,0 +1,34 @@
+{
+    "@id": "Withdrawn_ERC20Deposit",
+    "hex_signature": "0xe5df19de43c8c04fd192bc68e484b2593570925fbb6ad8c07ccafbc2aa5c37a1",
+    "name": "Withdrawn",
+    "signature": "Withdrawn(uint256,address,address,uint256)",
+    "numLogs": 9012,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "name": "depositId",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "receiver",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "amount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "merit": 8240,
+        "cryptounicorns": 772
+    }
+}

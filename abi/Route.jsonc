@@ -1,0 +1,51 @@
+{
+    "@id": "Route",
+    "hex_signature": "0x2db5ddd0b42bdbca0d69ea16f234a870a485854ae0d91f16643d6f317d8b8994",
+    "name": "Route",
+    "signature": "Route(address,address,address,address,uint256,uint256,uint256)",
+    "numLogs": 279728,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokenIn",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokenOut",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "amountIn",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$3",
+            "name": "amountOutMin",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$3",
+            "name": "amountOut",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "sushiswap": 279728
+    }
+}

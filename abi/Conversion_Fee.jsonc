@@ -1,0 +1,46 @@
+{
+    "@id": "Conversion_Fee",
+    "hex_signature": "0x276856b36cbc45526a0ba64f44611557a2a8b68662c5388e9fe6d72e86e1c8cb",
+    "name": "Conversion",
+    "signature": "Conversion(address,address,address,uint256,uint256,int256)",
+    "numLogs": 30942,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "_fromToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "_toToken",
+            "type": "address"
+        },
+        {
+            "@type": "dex:trader",
+            "name": "_trader",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "_amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "_return",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "_conversionFee",
+            "type": "int256"
+        }
+    ],
+    "projects": {
+        "bancor": 30938
+    }
+}

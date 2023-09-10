@@ -1,0 +1,47 @@
+{
+    "@id": "ERC20DepositInitiated",
+    "hex_signature": "0x718594027abd4eaed59f95162563e0cc6d0e8d5b86b1c7be8b1b0ac3343d0396",
+    "name": "ERC20DepositInitiated",
+    "signature": "ERC20DepositInitiated(address,address,address,address,uint256,bytes)",
+    "numLogs": 9618,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "l1Token",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "l2Token",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "name": "extraData",
+            "type": "bytes"
+        }
+    ],
+    "projects": {
+        "optimism": 4500,
+        "base": 3952,
+        "metis": 872,
+        "lido": 294,
+        "arbitrum": 212
+    }
+}

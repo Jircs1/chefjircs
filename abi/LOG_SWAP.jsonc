@@ -1,0 +1,45 @@
+{
+    "@id": "LOG_SWAP",
+    "hex_signature": "0x908fb5ee8f16c6bc9bc3690973819f32a4d4b10188134543c88706e0e1d43378",
+    "name": "LOG_SWAP",
+    "signature": "LOG_SWAP(address,address,address,uint256,uint256)",
+    "numLogs": 24213,
+    "numProjects": 6,
+    "inputs": [
+        {
+            "@type": "dex:trader",
+            "name": "caller",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokenIn",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokenOut",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "tokenAmountIn",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "tokenAmountOut",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "balancer": 22837,
+        "aave": 2994,
+        "powerpool": 698,
+        "cream": 635,
+        "ampleforth": 103,
+        "2 others": 42
+    }
+}

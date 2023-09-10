@@ -1,0 +1,41 @@
+{
+    "@id": "Mint_B",
+    "hex_signature": "0x458f5fa412d0f69b08dd84872b0215675cc67bc1d5b6fd93300a1c3878b86196",
+    "name": "Mint",
+    "signature": "Mint(address,address,uint256,uint256,uint256)",
+    "numLogs": 37884,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "caller",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:beneficiary",
+            "name": "onBehalfOf",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "value",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "balanceIncrease",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:index",
+            "name": "index",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "aave": 33294,
+        "para.space": 4588
+    }
+}

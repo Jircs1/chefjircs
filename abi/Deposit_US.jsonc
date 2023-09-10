@@ -1,0 +1,39 @@
+{
+    "@id": "Deposit_US",
+    "hex_signature": "0xdcbc1c05240f31ff3ad067ef1ee35ce4997762752e3a095284754544f4c709d7",
+    "name": "Deposit",
+    "signature": "Deposit(address,address,uint256,uint256)",
+    "numLogs": 4630,
+    "numProjects": 7,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "pid",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$2",
+            "name": "amount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "para.space": 2260,
+        "aura": 1274,
+        "bend": 984,
+        "conic": 549,
+        "fraxlend": 482,
+        "2 others": 92
+    }
+}

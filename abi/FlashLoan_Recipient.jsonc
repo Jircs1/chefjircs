@@ -1,0 +1,37 @@
+{
+    "@id": "FlashLoan_Recipient",
+    "hex_signature": "0x0d7d75e01ab95780d3cd1c8ec0dd6c2ce19e3a20427eec8bf53283b6fb8e95f0",
+    "name": "FlashLoan",
+    "signature": "FlashLoan(address,address,uint256,uint256)",
+    "numLogs": 23985,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "internalType": "contract IFlashLoanRecipient",
+            "name": "recipient",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "feeAmount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "balancer": 22154,
+        "maker": 1831
+    }
+}

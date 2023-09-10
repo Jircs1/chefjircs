@@ -1,0 +1,47 @@
+{
+    "@id": "Swap_V2b",
+    "hex_signature": "0xb3e2773606abfd36b5bd91394b3a54d1398336c65005baf7bf7a05efeffaf75b",
+    "name": "Swap",
+    "signature": "Swap(address,address,uint256,uint256,uint256,uint256)",
+    "numLogs": 116499,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0In",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1In",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0Out",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1Out",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "projectswap": 116499
+    }
+}

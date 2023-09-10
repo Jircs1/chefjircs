@@ -1,0 +1,41 @@
+{
+    "@id": "Collect_ERC721",
+    "hex_signature": "0x40d0efd1a53d60ecbf40971b9daf7dc90178c3aadc7aab1765632738fa8b8f01",
+    "name": "Collect",
+    "signature": "Collect(uint256,address,uint256,uint256)",
+    "numLogs": 86533,
+    "numProjects": 8,
+    "inputs": [
+        {
+            "@type": "erc721:tokenID",
+            "@token": null,
+            "name": "_tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "_recipient",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "_amount0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "_amount1",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "uniswap": 64811,
+        "dackieswap": 10434,
+        "sushiswap": 6370,
+        "pancakeswap": 2343,
+        "throne": 2339,
+        "2 others": 232
+    }
+}

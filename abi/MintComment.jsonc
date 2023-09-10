@@ -1,0 +1,40 @@
+{
+    "@id": "MintComment",
+    "hex_signature": "0xb9490aee663998179ad13f9e1c1eb6189c71ad1a9ec87f33ad2766f98d9a268a",
+    "name": "MintComment",
+    "signature": "MintComment(address,address,uint256,uint256,string)",
+    "numLogs": 7665,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:token",
+            "name": "tokenContract",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:tokenID",
+            "@token": "$1",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "quantity",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:comment",
+            "name": "comment",
+            "type": "string"
+        }
+    ],
+    "projects": {
+        "zora": 7665
+    }
+}

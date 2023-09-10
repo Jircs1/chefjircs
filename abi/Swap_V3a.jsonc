@@ -1,0 +1,66 @@
+{
+    "@id": "Swap_V3a",
+    "hex_signature": "0x19b47279256b2a23a1665c810c8d55a1758940ee09377d4f8d26497a3577dc83",
+    "name": "Swap",
+    "signature": "Swap(address,address,int256,int256,uint160,uint128,int24,uint128,uint128)",
+    "numLogs": 242874,
+    "numProjects": 5,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "recipient",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0",
+            "type": "int256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1",
+            "type": "int256"
+        },
+        {
+            "@type": "dex:sqrtPriceX96",
+            "name": "sqrtPriceX96",
+            "type": "uint160"
+        },
+        {
+            "@type": "dex:liquidity",
+            "name": "liquidity",
+            "type": "uint128"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tick",
+            "type": "int24"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "protocolFeesToken0",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "protocolFeesToken1",
+            "type": "uint128"
+        }
+    ],
+    "projects": {
+        "dackieswap": 171213,
+        "pancakeswap": 71596,
+        "beagle": 48,
+        "1inch": 12,
+        "kyberswap": 11
+    }
+}

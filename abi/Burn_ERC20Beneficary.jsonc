@@ -1,0 +1,39 @@
+{
+    "@id": "Burn_ERC20Beneficary",
+    "hex_signature": "0x5d624aa9c148153ab3446c1b154f660ee7701e549fe9b62dab7171b1c80e6fa2",
+    "name": "Burn",
+    "signature": "Burn(address,address,uint256,uint256)",
+    "numLogs": 4340,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "dex:sponsor",
+            "name": "sponsor",
+            "type": "address"
+        },
+        {
+            "@type": "dex:beneficiary",
+            "name": "onBehalfOf",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:timestamp",
+            "name": "timestamp",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "projectswap": 3921,
+        "smardex": 417,
+        "aave": 164,
+        "pendle": 39,
+        "bend": 12,
+        "1 others": 12
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "Swap_V2",
+    "hex_signature": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+    "name": "Swap",
+    "signature": "Swap(address,uint256,uint256,uint256,uint256,address)",
+    "numLogs": 16782453,
+    "numProjects": 163,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0In",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1In",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0Out",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1Out",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        }
+    ],
+    "projects": {
+        "uniswap": 14162611,
+        "kawaii": 600354,
+        "rocketswap": 596841,
+        "pancakeswap": 596368,
+        "sushiswap": 347249,
+        "121 others": 478882
+    }
+}

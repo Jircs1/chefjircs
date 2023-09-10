@@ -1,0 +1,45 @@
+{
+    "@id": "Conversion_Trader",
+    "hex_signature": "0x7154b38b5dd31bb3122436a96d4e09aba5b323ae1fd580025fab55074334c095",
+    "name": "Conversion",
+    "signature": "Conversion(address,address,address,uint256,uint256,address)",
+    "numLogs": 21934,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "_smartToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "_fromToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "_toToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "_fromAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "_toAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:trader",
+            "name": "_trader",
+            "type": "address"
+        }
+    ],
+    "projects": {
+        "bancor": 21934
+    }
+}

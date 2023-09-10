@@ -1,0 +1,44 @@
+{
+    "@id": "Refinance",
+    "hex_signature": "0x558a9295c62e9e1b12a21c8fe816f4816a2e0269a53157edbfa16017b11b9ac9",
+    "name": "Refinance",
+    "signature": "Refinance(uint256,address,address,uint256,uint256,uint256)",
+    "numLogs": 129758,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "blur:lienId",
+            "name": "lienId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc721:token",
+            "name": "collection",
+            "type": "address"
+        },
+        {
+            "@type": "blur:newLender",
+            "name": "newLender",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:tokenAmount",
+            "@token": "$1",
+            "name": "newAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "blur:rate",
+            "name": "newRate",
+            "type": "uint256"
+        },
+        {
+            "@type": "blur:duration",
+            "name": "newAuctionDuration",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "blur": 129758
+    }
+}

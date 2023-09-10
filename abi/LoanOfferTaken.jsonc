@@ -1,0 +1,60 @@
+{
+    "@id": "LoanOfferTaken",
+    "hex_signature": "0x06a333c2d6fe967ca967f7a35be2eb45e8caeb6cf05e16f55d42b91b5fe31255",
+    "name": "LoanOfferTaken",
+    "signature": "LoanOfferTaken(bytes32,uint256,address,address,address,uint256,uint256,uint256,uint256)",
+    "numLogs": 185501,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "blur:offerHash",
+            "name": "offerHash",
+            "type": "bytes32"
+        },
+        {
+            "@type": "blur:lienId",
+            "name": "lienId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc721:token",
+            "name": "collection",
+            "type": "address"
+        },
+        {
+            "@type": "lending:lender",
+            "name": "lender",
+            "type": "address"
+        },
+        {
+            "@type": "lending:borrower",
+            "name": "borrower",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "loanAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "blur:rate",
+            "name": "rate",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc721:tokenID",
+            "@token": "$2",
+            "name": "tokenId",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:duration",
+            "name": "auctionDuration",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "blur": 185501
+    }
+}

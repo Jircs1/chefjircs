@@ -1,0 +1,44 @@
+{
+    "@id": "RemoveLiquidityOne",
+    "hex_signature": "0x43fb02998f4e03da2e0e6fff53fdbf0c40a9f45f145dc377fc30615d7d7a8a64",
+    "name": "RemoveLiquidityOne",
+    "signature": "RemoveLiquidityOne(address,uint256,uint256,uint256,uint256)",
+    "numLogs": 5255,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "provider",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "lpTokenAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "lpTokenSupply",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "boughtId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$3",
+            "name": "tokensBought",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "synapse": 5030,
+        "hop": 150,
+        "saddle": 47,
+        "alchemix": 28
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "@id": "SendCredits",
+    "hex_signature": "0x6939f93e3f21cf1362eb17155b740277de5687dae9a83a85909fd71da95944e7",
+    "name": "SendCredits",
+    "signature": "SendCredits(uint16,uint256,uint256,uint256)",
+    "numLogs": 277539,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "stargate:chainID",
+            "name": "dstChainId",
+            "type": "uint16"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "name": "dstPoolId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "credits",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "idealBalance",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 277539
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "@id": "Sale",
+    "hex_signature": "0x4e26b0356a15833a75d497ecc40ebbb716b99466ed0dba9454f1fff451e25a90",
+    "name": "Sale",
+    "signature": "Sale(address,uint256,uint256,uint256)",
+    "numLogs": 407859,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:tokenAmount",
+            "@token": null,
+            "name": "quantity",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:price",
+            "name": "pricePerToken",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc721:tokenID",
+            "name": "firstPurchasedTokenId",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "zora": 392218,
+        "holograph": 15641
+    }
+}

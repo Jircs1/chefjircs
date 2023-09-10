@@ -1,0 +1,40 @@
+{
+    "@id": "Mint_NativeERC20",
+    "hex_signature": "0x458f5fa412d0f69b08dd84872b0215675cc67bc1d5b6fd93300a1c3878b86196",
+    "name": "Mint",
+    "signature": "Mint(address,address,uint256,uint256,uint256)",
+    "numLogs": 37884,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "amountETH",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amountToken",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:liquidity",
+            "name": "liquidity",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "aave": 33294,
+        "para.space": 4588
+    }
+}

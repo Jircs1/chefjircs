@@ -1,0 +1,34 @@
+{
+    "@id": "Send_Bytes32",
+    "hex_signature": "0xbe6ff12fec5087498d44bc85f1a83235a630944a1e2d5a7938afe810370a5867",
+    "name": "Send",
+    "signature": "Send(address,address,bytes32,uint256)",
+    "numLogs": 7538,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "from",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "bytes32"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amountLD",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "layerzero": 7538
+    }
+}

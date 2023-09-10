@@ -1,0 +1,51 @@
+{
+    "@id": "Sync_ERC20LPFictiveReserve",
+    "hex_signature": "0x2a368c7f33bb86e2d999940a3989d849031aff29b750f67947e6b8e8c3d2ffd6",
+    "name": "Sync",
+    "signature": "Sync(uint256,uint256,uint256,uint256,uint256,uint256)",
+    "numLogs": 11678,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "reserve0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "reserve1",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "fictiveReserve0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "fictiveReserve1",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:price",
+            "@token": "erc20lp:token0",
+            "name": "priceAverage0",
+            "type": "uint256"
+        },
+        {
+            "@type": "dex:price",
+            "@token": "erc20lp:token1",
+            "name": "priceAverage1",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "smardex": 11597,
+        "1inch": 3405,
+        "mooni": 81
+    }
+}

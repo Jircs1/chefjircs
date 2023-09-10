@@ -1,0 +1,31 @@
+{
+    "@id": "DelegatedPowerChanged",
+    "hex_signature": "0xa0a19463ee116110c9b282012d9b65cc5522dc38a9520340cbaf3142e550127f",
+    "name": "DelegatedPowerChanged",
+    "signature": "DelegatedPowerChanged(address,uint256,uint8)",
+    "numLogs": 137172,
+    "numProjects": 10,
+    "inputs": [
+        {
+            "@type": "delegation:delegator",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "aave:delegationtype",
+            "internalType": "enum IGovernancePowerDelegationERC20.DelegationType",
+            "name": "delegationType",
+            "type": "uint8"
+        }
+    ],
+    "projects": {
+        "aave": 101990,
+        "dydx": 35150
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "@id": "ETHDepositInitiated",
+    "hex_signature": "0x35d79ab81f2b2017e19afb5c5571778877782d7a8786f5907f93b0f4702f4f23",
+    "name": "ETHDepositInitiated",
+    "signature": "ETHDepositInitiated(address,address,uint256,bytes)",
+    "numLogs": 82224,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "_from",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "_to",
+            "type": "address"
+        },
+        {
+            "name": "_amount",
+            "@type": "evm:tokenAmount",
+            "type": "uint256"
+        },
+        {
+            "name": "_data",
+            "type": "bytes"
+        }
+    ],
+    "projects": {
+        "base": 68807,
+        "optimism": 18577,
+        "publicgoods": 13417
+    }
+}

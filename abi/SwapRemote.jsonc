@@ -1,0 +1,37 @@
+{
+    "@id": "SwapRemote",
+    "hex_signature": "0xfb2b592367452f1c437675bed47f5e1e6c25188c17d7ba01a12eb030bc41ccef",
+    "name": "SwapRemote",
+    "signature": "SwapRemote(address,uint256,uint256,uint256)",
+    "numLogs": 549622,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "amountSD",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "protocolFee",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "dstFee",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 548107,
+        "layerzero": 1515
+    }
+}

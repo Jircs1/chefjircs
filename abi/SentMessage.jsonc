@@ -1,0 +1,41 @@
+{
+    "@id": "SentMessage",
+    "hex_signature": "0xcb0f7ffd78f9aee47a248fae8db181db6eee833039123e026dcbff529522e52a",
+    "name": "SentMessage",
+    "signature": "SentMessage(address,address,bytes,uint256,uint256)",
+    "numLogs": 134267,
+    "numProjects": 6,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "target",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:data",
+            "name": "message",
+            "type": "bytes"
+        },
+        {
+            "@type": "evm:nonce",
+            "name": "messageNonce",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:gasLimit",
+            "name": "gasLimit",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "base": 75681,
+        "optimism": 45150,
+        "publicgoods": 13421,
+        "hop": 11
+    }
+}

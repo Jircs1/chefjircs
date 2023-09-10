@@ -1,0 +1,35 @@
+{
+    "@id": "Withdraw_ClaimedBalance",
+    "hex_signature": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
+    "name": "Withdraw",
+    "signature": "Withdraw(address,uint256,uint256)",
+    "numLogs": 39723,
+    "numProjects": 54,
+    "inputs": [
+        {
+            "@type": "transfer:to",
+            "name": "account",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "claimedAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "balance",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 8990,
+        "alien": 6477,
+        "pancakeswap": 4225,
+        "curve": 3159,
+        "looksrare": 2684,
+        "29 others": 14108
+    }
+}

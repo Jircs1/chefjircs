@@ -1,0 +1,39 @@
+{
+    "@id": "Deposit_Lending",
+    "hex_signature": "0xde6857219544bb5b7746f48ed30be6386fefc61b2f864cacf559893bf50fd951",
+    "name": "Deposit",
+    "signature": "Deposit(address,address,address,uint256,uint16)",
+    "numLogs": 11345,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "reserve",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "name": "onBehalfOf",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "referrer:referral",
+            "name": "referral",
+            "type": "uint16"
+        }
+    ],
+    "projects": {
+        "aave": 10792,
+        "lendingpool": 551
+    }
+}

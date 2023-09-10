@@ -1,0 +1,56 @@
+{
+    "@id": "Mint_DEX3",
+    "hex_signature": "0x7a53080ba414158be7ec69b987b5fb7d07dee101fe85488f0853ae16239d0bde",
+    "name": "Mint",
+    "signature": "Mint(address,address,int24,int24,uint128,uint256,uint256)",
+    "numLogs": 132458,
+    "numProjects": 17,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tickLower",
+            "type": "int24"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tickUpper",
+            "type": "int24"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$",
+            "name": "qty",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "qty0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "qty1",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "uniswap": 101858,
+        "dackieswap": 16162,
+        "sushiswap": 8505,
+        "pancakeswap": 2947,
+        "horizondex": 2667,
+        "6 others": 289
+    }
+}

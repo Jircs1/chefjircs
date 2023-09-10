@@ -1,0 +1,43 @@
+{
+    "@id": "Swap_PID",
+    "hex_signature": "0x2170c741c41531aec20e7c107c24eecfdd15e69c9bb0a8dd37b1840b9e0b207b",
+    "name": "Swap",
+    "signature": "Swap(bytes32,address,address,uint256,uint256)",
+    "numLogs": 90143,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "balancer:poolId",
+            "name": "poolId",
+            "type": "bytes32"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokenIn",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "tokenOut",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "amountIn",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "amountOut",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "balancer": 88682,
+        "baseswap": 1437,
+        "kyberswap": 30,
+        "1inch": 23
+    }
+}

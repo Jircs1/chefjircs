@@ -1,0 +1,43 @@
+{
+    "@id": "PoolCreated",
+    "hex_signature": "0x783cca1c0412dd0d695e784568c96da2e9c22ff989357a2e8b1d9b2b4e6b7118",
+    "name": "PoolCreated",
+    "signature": "PoolCreated(address,address,uint24,int24,address)",
+    "numLogs": 4530,
+    "numProjects": 10,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "token0",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "token1",
+            "type": "address"
+        },
+        {
+            "@type": "dex:feeTier",
+            "name": "fee",
+            "type": "uint24"
+        },
+        {
+            "@type": "dex:tickSpacing",
+            "name": "tickSpacing",
+            "type": "int24"
+        },
+        {
+            "@type": "erc20lp:token",
+            "name": "pool",
+            "type": "address"
+        }
+    ],
+    "projects": {
+        "uniswap": 3501,
+        "sushiswap": 740,
+        "dackieswap": 101,
+        "pancakeswap": 73,
+        "horizondex": 40,
+        "2 others": 59
+    }
+}

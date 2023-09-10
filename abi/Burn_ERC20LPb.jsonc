@@ -1,0 +1,40 @@
+{
+    "@id": "Burn_ERC20LPb",
+    "hex_signature": "0xdccd412f0b1252819cb1fd330b93224ca42612892bb3f4f789976e6d81936496",
+    "name": "Burn",
+    "signature": "Burn(address,uint256,uint256,address)",
+    "numLogs": 92014,
+    "numProjects": 100,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "to",
+            "type": "address"
+        }
+    ],
+    "projects": {
+        "uniswap": 55556,
+        "pancakeswap": 9850,
+        "kawaii": 5253,
+        "rocketswap": 4564,
+        "alien": 4374,
+        "43 others": 12270
+    }
+}

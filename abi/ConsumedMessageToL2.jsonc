@@ -1,0 +1,38 @@
+{
+    "@id": "ConsumedMessageToL2",
+    "hex_signature": "0x9592d37825c744e33fa80c469683bbd04d336241bb600b574758efd182abe26a",
+    "name": "ConsumedMessageToL2",
+    "signature": "ConsumedMessageToL2(address,uint256,uint256,uint256[],uint256)",
+    "numLogs": 76611,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "fromAddress",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "toAddress",
+            "type": "uint256"
+        },
+        {
+            "@type": "starknet:selector",
+            "name": "selector",
+            "type": "uint256"
+        },
+        {
+            "@type": "transfer:data",
+            "name": "payload",
+            "type": "uint256[]"
+        },
+        {
+            "@type": "evm:nonce",
+            "name": "nonce",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "starknet": 76611
+    }
+}

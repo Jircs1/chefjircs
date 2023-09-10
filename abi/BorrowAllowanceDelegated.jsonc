@@ -1,0 +1,37 @@
+{
+    "@id": "BorrowAllowanceDelegated",
+    "hex_signature": "0xda919360433220e13b51e8c211e490d148e61a3bd53de8c097194e458b97f3e1",
+    "name": "BorrowAllowanceDelegated",
+    "signature": "BorrowAllowanceDelegated(address,address,address,uint256)",
+    "numLogs": 4885,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "fromUser",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "toUser",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "asset",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "amount",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "aave": 3242,
+        "bend": 1398,
+        "lendingpool": 154,
+        "para.space": 91
+    }
+}

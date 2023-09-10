@@ -1,0 +1,49 @@
+{
+    "@id": "Relay",
+    "hex_signature": "0x79fa08de5149d912dce8e5e8da7a7c17ccdf23dd5d3bfe196802e6eb86347c7c",
+    "name": "Relay",
+    "signature": "Relay(bytes32,address,address,address,uint256,uint64,bytes32)",
+    "numLogs": 8463,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "celer:transferId",
+            "name": "transferId",
+            "type": "bytes32"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "receiver",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "token",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$3",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "celer:chainID",
+            "name": "srcChainId",
+            "type": "uint64"
+        },
+        {
+            "@type": "celer:transferId",
+            "name": "srcTransferId",
+            "type": "bytes32"
+        }
+    ],
+    "projects": {
+        "celer": 8463
+    }
+}

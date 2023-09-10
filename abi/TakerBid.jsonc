@@ -1,0 +1,84 @@
+{
+    "@id": "TakerBid",
+    "hex_signature": "0x3ee3de4684413690dee6fff1a0a4f92916a1b97d1c5a83cdf24671844306b2e3",
+    "name": "TakerBid",
+    "signature": "TakerBid((bytes32,uint256,bool),address,address,uint256,address,address,uint256[],uint256[],address[2],uint256[3])",
+    "numLogs": 13984,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "components": [
+                {
+                    "internalType": "bytes32",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "nonce",
+                    "internalType": "uint256",
+                    "name": "orderNonce",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isNonceInvalidated",
+                    "type": "bool"
+                }
+            ],
+            "internalType": "struct ILooksRareProtocol.NonceInvalidationParameters",
+            "name": "nonceInvalidationParameters",
+            "type": "tuple"
+        },
+        {
+            "@type": "opensea:bidUser",
+            "name": "bidUser",
+            "type": "address"
+        },
+        {
+            "@type": "opensea:bidRecipient",
+            "name": "bidRecipient",
+            "type": "address"
+        },
+        {
+            "@type": "opensea:strategyId",
+            "name": "strategyId",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "currency",
+            "type": "address"
+        },
+        {
+            "@type": "erc721:token",
+            "name": "collection",
+            "type": "address"
+        },
+        {
+            "@type": "opensea:itemId",
+            "name": "itemIds",
+            "type": "uint256[]"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$4",
+            "name": "amounts",
+            "type": "uint256[]"
+        },
+        {
+            "name": "feeRecipients",
+            "type": "address[2]"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$4",
+            "name": "feeAmounts",
+            "type": "uint256[3]"
+        }
+    ],
+    "projects": {
+        "dharma": 4661,
+        "opensea": 4661,
+        "vectorized": 4661
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "@id": "ReceiveFromChain",
+    "hex_signature": "0x831bc68226f8d1f734ffcca73602efc4eca13711402ba1d2cc05ee17bb54f631",
+    "name": "ReceiveFromChain",
+    "signature": "ReceiveFromChain(uint16,uint64,uint256)",
+    "numLogs": 58310,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "stargate:chainID",
+            "name": "srcChainId",
+            "type": "uint16"
+        },
+        {
+            "@type": "evm:nonce",
+            "name": "nonce",
+            "type": "uint64"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "qty",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "stargate": 58310,
+        "layerzero": 87
+    }
+}

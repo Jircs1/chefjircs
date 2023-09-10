@@ -1,0 +1,55 @@
+{
+    "@id": "Swap_V3",
+    "hex_signature": "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67",
+    "name": "Swap",
+    "signature": "Swap(address,address,int256,int256,uint160,uint128,int24)",
+    "numLogs": 4014408,
+    "numProjects": 20,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "recipient",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0",
+            "type": "int256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1",
+            "type": "int256"
+        },
+        {
+            "@type": "dex:sqrtPriceX96",
+            "name": "price",
+            "type": "uint160"
+        },
+        {
+            "@type": "dex:liquidity",
+            "name": "liquidity",
+            "type": "uint128"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "tick",
+            "type": "int24"
+        }
+    ],
+    "projects": {
+        "uniswap": 3657654,
+        "sushiswap": 314309,
+        "horizondex": 35979,
+        "yumyum": 1906,
+        "kyberswap": 1338,
+        "13 others": 3222
+    }
+}

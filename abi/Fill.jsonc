@@ -1,0 +1,73 @@
+{
+    "@id": "Fill",
+    "hex_signature": "0x0bcc4c97732e47d9946f229edb95f5b6323f601300e4690de719993f3c371129",
+    "name": "Fill",
+    "signature": "Fill(address,address,address,address,uint256,uint256,uint256,uint256,bytes32,bytes,bytes)",
+    "numLogs": 13888,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "makerAddress",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "feeRecipientAddress",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "takerAddress",
+            "type": "address"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "senderAddress",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "makerAssetFilledAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "takerAssetFilledAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "makerFeePaid",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "takerFeePaid",
+            "type": "uint256"
+        },
+        {
+            "@type": "0x:orderHash",
+            "name": "orderHash",
+            "type": "bytes32"
+        },
+        {
+            "@type": "0x:assetData",
+            "name": "makerAssetData",
+            "type": "bytes"
+        },
+        {
+            "@type": "0x:assetData",
+            "name": "takerAssetData",
+            "type": "bytes"
+        }
+    ],
+    "projects": {
+        "0x": 13888,
+        "tokenlon": 50
+    }
+}

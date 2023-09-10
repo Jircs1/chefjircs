@@ -1,0 +1,41 @@
+{
+    "@id": "TokenExchangeUnderlying",
+    "hex_signature": "0xd013ca23e77a65003c2c659c5442c00c805371b7fc1ebd4c206c41d1536bd90b",
+    "name": "TokenExchangeUnderlying",
+    "signature": "TokenExchangeUnderlying(address,int128,uint256,int128,uint256)",
+    "numLogs": 10689,
+    "numProjects": 3,
+    "inputs": [
+        {
+            "@type": "dex:trader",
+            "type": "address",
+            "name": "buyer"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "type": "int128",
+            "name": "sold_id"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$1",
+            "type": "uint256",
+            "name": "tokens_sold"
+        },
+        {
+            "@type": "erc20:lookupid",
+            "type": "int128",
+            "name": "bought_id"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "lookupid:$3",
+            "type": "uint256",
+            "name": "tokens_bought"
+        }
+    ],
+    "projects": {
+        "curve": 10666,
+        "inverse": 22
+    }
+}

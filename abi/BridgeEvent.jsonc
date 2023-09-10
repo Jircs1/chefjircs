@@ -1,0 +1,53 @@
+{
+    "@id": "BridgeEvent",
+    "hex_signature": "0x501781209a1f8899323b96b4ef08b168df93e0a90c673d1e4cce39366cb62f9b",
+    "name": "BridgeEvent",
+    "signature": "BridgeEvent(uint8,uint32,address,uint32,address,uint256,bytes,uint32)",
+    "numLogs": 88476,
+    "numProjects": 1,
+    "inputs": [
+        {
+            "@type": "polygonzkevm:leafType",
+            "name": "leafType",
+            "type": "uint8"
+        },
+        {
+            "@type": "polygonzkevm:chainID",
+            "name": "originNetwork",
+            "type": "uint32"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "originAddress",
+            "type": "address"
+        },
+        {
+            "@type": "polygonzkevm:chainID",
+            "name": "destinationNetwork",
+            "type": "uint32"
+        },
+        {
+            "@type": "transfer:to",
+            "name": "destinationAddress",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": null,
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "name": "metadata",
+            "type": "bytes"
+        },
+        {
+            "@type": "polygonzkevm:depositCount",
+            "name": "depositCount",
+            "type": "uint32"
+        }
+    ],
+    "projects": {
+        "polygonzkevm": 88476
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "@id": "Burn",
+    "hex_signature": "0x0c396cd989a39f4459b5fa1aed6a9a8dcdbc45908acfd67e028cd568da98982c",
+    "name": "Burn",
+    "signature": "Burn(address,int24,int24,uint128,uint256,uint256)",
+    "numLogs": 112620,
+    "numProjects": 17,
+    "inputs": [
+        {
+            "@type": "transfer:from",
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "bottomTick",
+            "type": "int24"
+        },
+        {
+            "@type": "dex:tick",
+            "name": "topTick",
+            "type": "int24"
+        },
+        {
+            "name": "liquidityAmount",
+            "type": "uint128"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token0",
+            "name": "amount0",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "erc20lp:token1",
+            "name": "amount1",
+            "type": "uint256"
+        }
+    ],
+    "projects": {
+        "uniswap": 91904,
+        "dackieswap": 10495,
+        "sushiswap": 6431,
+        "pancakeswap": 2290,
+        "horizondex": 1281,
+        "6 others": 193
+    }
+}

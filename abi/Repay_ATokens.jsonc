@@ -1,0 +1,40 @@
+{
+    "@id": "Repay_ATokens",
+    "hex_signature": "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+    "name": "Repay",
+    "signature": "Repay(address,address,address,uint256,bool)",
+    "numLogs": 9714,
+    "numProjects": 2,
+    "inputs": [
+        {
+            "@type": "erc20:token",
+            "name": "reserve",
+            "type": "address"
+        },
+        {
+            "@type": "lending:user",
+            "name": "user",
+            "type": "address"
+        },
+        {
+            "@type": "lending:repayer",
+            "name": "repayer",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$0",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "@type": "lending:useATokens",
+            "name": "useATokens",
+            "type": "bool"
+        }
+    ],
+    "projects": {
+        "aave": 6992,
+        "para.space": 2722
+    }
+}

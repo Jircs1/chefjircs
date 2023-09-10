@@ -1,0 +1,55 @@
+{
+    "@id": "MessageDelivered",
+    "hex_signature": "0x5e3c1311ea442664e8b1611bfabef659120ea7a0a2cfc0667700bebc69cbffe1",
+    "name": "MessageDelivered",
+    "signature": "MessageDelivered(uint256,bytes32,address,uint8,address,bytes32,uint256,uint64)",
+    "numLogs": 187549,
+    "numProjects": 4,
+    "inputs": [
+        {
+            "@type": "arbitrum:messageIndex",
+            "name": "messageIndex",
+            "type": "uint256"
+        },
+        {
+            "@type": "arbitrum:beforeInboxAcc",
+            "name": "beforeInboxAcc",
+            "type": "bytes32"
+        },
+        {
+            "@type": "arbitrum:inboxAddress",
+            "name": "inbox",
+            "type": "address"
+        },
+        {
+            "@type": "arbitrum:kind",
+            "name": "kind",
+            "type": "uint8"
+        },
+        {
+            "@type": "transfer:from",
+            "name": "sender",
+            "type": "address"
+        },
+        {
+            "@type": "arbitrum:messageDataHash",
+            "name": "messageDataHash",
+            "type": "bytes32"
+        },
+        {
+            "@type": "evm:tokenAmount",
+            "name": "baseFeeL1",
+            "type": "uint256"
+        },
+        {
+            "@type": "evm:timestamp",
+            "name": "timestamp",
+            "type": "uint64"
+        }
+    ],
+    "projects": {
+        "arbitrum": 187519,
+        "metamask": 16,
+        "hop": 13
+    }
+}
