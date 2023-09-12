@@ -9,7 +9,29 @@
         {
             "@type": "dydx:depositorEthKey",
             "name": "depositorEthKey",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "dydx": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 107846,
+                    "sampleAddress": "0x8e8bd01b5a9eb272cc3892a2e40e64a716aa2a40",
+                    "sampleTxHash": "0x000082c415d1c1adeccd77f0e0abfee33e1b52a9b11f7a662e1493f24e150966",
+                    "found": 3,
+                    "samples": 100
+                },
+                "deversifi": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1480,
+                    "sampleAddress": "0xed9d63a96c27f87b07115b56b2e3572827f21646",
+                    "sampleTxHash": "0x003a6287514910d3ae614106a059127542490b3cf854045fb493f788ae5faad6",
+                    "found": 1,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "dydx:starkKey",
@@ -42,5 +64,29 @@
     "projects": {
         "dydx": 45303,
         "deversifi": 8934
+    },
+    "contract_address": {
+        "features": {
+            "dydx": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 280588,
+                "sampleAddress": "0xf5c9f957705bea56a7e806943f98f7777b995826",
+                "sampleTxHash": "0x00003254f141a47d18f9df3f4fea0af2c10dfee5cdd4def4687c3df9725e3f26",
+                "found": 5,
+                "samples": 5
+            },
+            "deversifi": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 24354,
+                "sampleAddress": "0x5d22045daceab03b158031ecb7d9d06fad24609b",
+                "sampleTxHash": "0x00003522cc199f86fd1f506ebc41ced8e0f7d871ee87d22c5cec72978d774553",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

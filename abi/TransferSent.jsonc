@@ -18,7 +18,19 @@
         {
             "@type": "transfer:to",
             "name": "recipient",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "hop": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 734,
+                    "sampleAddress": "0x0e2384813199c1732be2b3f833e84d22da895a8e",
+                    "sampleTxHash": "0x06fe320879fa84026dffc2f80cf3435e7b42eae19d09e347da48d75369289b0f",
+                    "found": 0,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -56,5 +68,19 @@
     ],
     "projects": {
         "hop": 14362
+    },
+    "contract_address": {
+        "features": {
+            "hop": {
+                "is_erc20": 0.333333,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 9422,
+                "sampleAddress": "0x3666f603cc164936c1b87e207f36beba4ac5f18a",
+                "sampleTxHash": "0x00000045fa170d01c59944ed78fa03c8abbe7f83362b965a4a009e10e67e11d6",
+                "found": 3,
+                "samples": 3
+            }
+        }
     }
 }

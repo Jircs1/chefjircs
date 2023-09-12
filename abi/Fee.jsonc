@@ -9,7 +9,19 @@
         {
             "@type": "erc20:token",
             "name": "token",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "kyberswap": {
+                    "is_erc20": 0.99,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 327488,
+                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                    "sampleTxHash": "0x0000841675ceea9af7a4d1e564f0c5f48e1dd05fd98a68877e85f88ccbbfbedd",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -41,5 +53,19 @@
     ],
     "projects": {
         "kyberswap": 117524
+    },
+    "contract_address": {
+        "features": {
+            "kyberswap": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 328704,
+                "sampleAddress": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+                "sampleTxHash": "0x00005e63a072ccf09952e58e8cc45425bbcecf53e5eaf446eb5584b4b44b84d3",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

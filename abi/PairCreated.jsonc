@@ -9,17 +9,173 @@
         {
             "@type": "erc20:token",
             "name": "token0",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "uniswap": {
+                    "is_erc20": 0.949495,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 37179,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x00016ab29f6b3750b681873298d40bae019ea1be7ed9bbe89b29ea50bbb1f308",
+                    "found": 99,
+                    "samples": 100
+                },
+                "rocketswap": {
+                    "is_erc20": 0.96,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 8067,
+                    "sampleAddress": "0x4200000000000000000000000000000000000006",
+                    "sampleTxHash": "0x000a77db507328cea9e3af4051c8dfd8099973543ee7a7f6eea9bf2bc9248202",
+                    "found": 100,
+                    "samples": 100
+                },
+                "pancakeswap": {
+                    "is_erc20": 0.95,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1536,
+                    "sampleAddress": "0x4200000000000000000000000000000000000006",
+                    "sampleTxHash": "0x00461fd635f90c852575d209040d90aae53f38b0b899e002f4d67e92f9b049e1",
+                    "found": 100,
+                    "samples": 100
+                },
+                "sushiswap": {
+                    "is_erc20": 0.88,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.04,
+                    "numLogs": 343,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x00706ed2081996317ba93475b5f796049c859131d7a8a3d18c53b23add61ac89",
+                    "found": 100,
+                    "samples": 100
+                },
+                "cbswap": {
+                    "is_erc20": 0.95,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 128,
+                    "sampleAddress": "0x4200000000000000000000000000000000000006",
+                    "sampleTxHash": "0x0c33a207f19d5f3fdb337d59162bdee311d13a78dbfd82af6126805e14c6aae9",
+                    "found": 40,
+                    "samples": 40
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "token1",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "uniswap": {
+                    "is_erc20": 0.95,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.01,
+                    "numLogs": 109921,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x00017b42ac88501e68abe0d7c05248bfc969166b2017693892a73943e3b18a0f",
+                    "found": 100,
+                    "samples": 100
+                },
+                "rocketswap": {
+                    "is_erc20": 0.87,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 2852,
+                    "sampleAddress": "0x4200000000000000000000000000000000000006",
+                    "sampleTxHash": "0x001297b61cd69d74a3435b0e1073abbc31d5f2e0aff2de21fb2f4632883e335f",
+                    "found": 100,
+                    "samples": 100
+                },
+                "pancakeswap": {
+                    "is_erc20": 0.99,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 891,
+                    "sampleAddress": "0x4200000000000000000000000000000000000006",
+                    "sampleTxHash": "0x003d776166940f2047e512b7bd3267bf00bbd7d75b7ef23ec69e56d897fcf6f6",
+                    "found": 100,
+                    "samples": 100
+                },
+                "sushiswap": {
+                    "is_erc20": 0.84,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.02,
+                    "numLogs": 536,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x00af53270a4fdc8b7b17c2c04b5d7b5faf9e60cca8a5acf80bff013b81186aa8",
+                    "found": 100,
+                    "samples": 100
+                },
+                "cbswap": {
+                    "is_erc20": 0.943182,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 128,
+                    "sampleAddress": "0x4200000000000000000000000000000000000006",
+                    "sampleTxHash": "0x0130b8fbbd97e71cd04f1b8dd9e4a14257b9f7a537fd365a740ff0c4baba8311",
+                    "found": 88,
+                    "samples": 88
+                }
+            }
         },
         {
             "@type": "erc20lp:token",
             "name": "pair",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "cbswap": {
+                    "is_erc20": 1,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.8,
+                    "numLogs": 100,
+                    "sampleAddress": "0xefcd1700b46dff27423b00d0e79d6bfc902412aa",
+                    "sampleTxHash": "0xb6a5cf4cddb85e14966901db73814cd8c860d85770875619c95a4648ffd0cb62",
+                    "found": 100,
+                    "samples": 100
+                },
+                "pancakeswap": {
+                    "is_erc20": 1,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.94,
+                    "numLogs": 100,
+                    "sampleAddress": "0xc75a60c6d6b27012a5c1239cf53c55ebbb9a94da",
+                    "sampleTxHash": "0xaba616bce31ffedea5df4fb965a5d57eec8556b1e379d38a71954c7770b82b49",
+                    "found": 100,
+                    "samples": 100
+                },
+                "rocketswap": {
+                    "is_erc20": 1,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.84,
+                    "numLogs": 100,
+                    "sampleAddress": "0x4699dc60ff67e8342d6feecdb983e659d0ab6654",
+                    "sampleTxHash": "0x73933a2d2012f99773463310252fd40400dfd60e93510fb56564aeae37330faa",
+                    "found": 100,
+                    "samples": 100
+                },
+                "sushiswap": {
+                    "is_erc20": 1,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.94,
+                    "numLogs": 100,
+                    "sampleAddress": "0x730a6eaf63fb3065eec6ea9c27c9731fc4483764",
+                    "sampleTxHash": "0xba585a1ba188c7678194c0de13edc81e0513a167691aa6a8eb33ba39224bd7a6",
+                    "found": 100,
+                    "samples": 100
+                },
+                "uniswap": {
+                    "is_erc20": 1,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.93,
+                    "numLogs": 100,
+                    "sampleAddress": "0xc030b1d52c5a3778b799b1efe1dc8d4b9b351931",
+                    "sampleTxHash": "0x321138cb97700b5256bb0d44706da6fc519d69e709e6bea6d9fad8441413d55b",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "dex:liquidity",
@@ -34,5 +190,59 @@
         "sushiswap": 174,
         "cbswap": 130,
         "17 others": 586
+    },
+    "contract_address": {
+        "features": {
+            "uniswap": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 146951,
+                "sampleAddress": "0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f",
+                "sampleTxHash": "0x00016ab29f6b3750b681873298d40bae019ea1be7ed9bbe89b29ea50bbb1f308",
+                "found": 1,
+                "samples": 1
+            },
+            "rocketswap": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 10710,
+                "sampleAddress": "0x1b8128c3a1b7d20053d10763ff02466ca7ff99fc",
+                "sampleTxHash": "0x000a77db507328cea9e3af4051c8dfd8099973543ee7a7f6eea9bf2bc9248202",
+                "found": 1,
+                "samples": 1
+            },
+            "pancakeswap": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 2196,
+                "sampleAddress": "0xfda619b6d20975be80a10332cd39b9a4b0faa8bb",
+                "sampleTxHash": "0x003d776166940f2047e512b7bd3267bf00bbd7d75b7ef23ec69e56d897fcf6f6",
+                "found": 6,
+                "samples": 6
+            },
+            "sushiswap": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 676,
+                "sampleAddress": "0xc0aee478e3658e2610c5f7a4a2e1777ce9e4f2ac",
+                "sampleTxHash": "0x0042a060a54cde5571ac5f476da330783a6abe692ae24958df60ba5e725f66a2",
+                "found": 2,
+                "samples": 2
+            },
+            "cbswap": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 128,
+                "sampleAddress": "0x0a1c657b839a7fe9a976ffd4ac5a1a363de3ee69",
+                "sampleTxHash": "0x0130b8fbbd97e71cd04f1b8dd9e4a14257b9f7a537fd365a740ff0c4baba8311",
+                "found": 2,
+                "samples": 2
+            }
+        }
     }
 }

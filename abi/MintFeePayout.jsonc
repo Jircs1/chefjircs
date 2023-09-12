@@ -15,7 +15,29 @@
         {
             "@type": "transfer:to",
             "name": "mintFeeRecipient",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "zora": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1124049,
+                    "sampleAddress": "0xd1d1d4e36117ab794ec5d4c78cbd3a8904e691d0",
+                    "sampleTxHash": "0x00001d74fa073f24ab27d536d336d57433205fa1843ffb3c72b8006f68b2aacd",
+                    "found": 2,
+                    "samples": 2
+                },
+                "holograph": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 2073,
+                    "sampleAddress": "0xd3ab25452b0e97ec923536dd49287da6dd089050",
+                    "sampleTxHash": "0x0004f5d7eb5a2dab004b04782526f733856040037bceb52b8d15886a2e3bdebf",
+                    "found": 1,
+                    "samples": 1
+                }
+            }
         },
         {
             "name": "success",
@@ -25,5 +47,29 @@
     "projects": {
         "zora": 121787,
         "holograph": 9534
+    },
+    "contract_address": {
+        "features": {
+            "zora": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 1094414,
+                "sampleAddress": "0xd4307e0acd12cf46fd6cf93bc264f5d5d1598792",
+                "sampleTxHash": "0x00001d74fa073f24ab27d536d336d57433205fa1843ffb3c72b8006f68b2aacd",
+                "found": 100,
+                "samples": 100
+            },
+            "holograph": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 2073,
+                "sampleAddress": "0x31c6c0b8a23c65310d6ddea7ca99e3792cad2ac3",
+                "sampleTxHash": "0x0023fc854937028c9630b136744026cbf419092b7091b142f6ba4f91e534addb",
+                "found": 5,
+                "samples": 5
+            }
+        }
     }
 }

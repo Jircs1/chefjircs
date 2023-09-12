@@ -14,12 +14,36 @@
         {
             "@type": "transfer:to",
             "name": "owner",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "lido": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1457,
+                    "sampleAddress": "0x4a87ecdfb459eb36d25226d9ccd7ec4f684ab3fc",
+                    "sampleTxHash": "0x08d6ab1c91e367dd5a11ec915fd62748c664a984fcde8c1d1f328c0ca6790705",
+                    "found": 5,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "transfer:to",
             "name": "receiver",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "lido": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1457,
+                    "sampleAddress": "0x4a87ecdfb459eb36d25226d9ccd7ec4f684ab3fc",
+                    "sampleTxHash": "0x08d6ab1c91e367dd5a11ec915fd62748c664a984fcde8c1d1f328c0ca6790705",
+                    "found": 4,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "evm:tokenAmount",
@@ -29,5 +53,19 @@
     ],
     "projects": {
         "lido": 5551
+    },
+    "contract_address": {
+        "features": {
+            "lido": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 7261,
+                "sampleAddress": "0x889edc2edab5f40e902b864ad4d7ade8e412f9b1",
+                "sampleTxHash": "0x00154edb3940b9ca3211120b415c8d633609c075305b0792abc98d079fdf392f",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

@@ -14,12 +14,36 @@
         {
             "@type": "erc20:token",
             "name": "inputToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "0x": {
+                    "is_erc20": 0.98,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 145894,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x0000e745743050bdbf9be2ecdc0dc7fee589cb6b1ff0cdb7b95019f33adb0d75",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "outputToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "0x": {
+                    "is_erc20": 0.99,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 151701,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x0000447746062eede6910097754c5b6bd0f3be2282a042d69b8b0c951c9919c9",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -36,5 +60,19 @@
     ],
     "projects": {
         "0x": 38098
+    },
+    "contract_address": {
+        "features": {
+            "0x": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 172648,
+                "sampleAddress": "0x22f9dcf4647084d6c31b2765f6910cd85c178c18",
+                "sampleTxHash": "0x00000c3da110a39f4dc799ae645e7ea2210dabcd58a4c50ee054721cb9dc1fb5",
+                "found": 2,
+                "samples": 2
+            }
+        }
     }
 }

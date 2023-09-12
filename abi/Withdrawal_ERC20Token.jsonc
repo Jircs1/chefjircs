@@ -9,7 +9,19 @@
         {
             "@type": "erc20:token",
             "name": "token",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "maker": {
+                    "is_erc20": 0.01,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.04,
+                    "numLogs": 21137524,
+                    "sampleAddress": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                    "sampleTxHash": "0x00000326e8932dc86b0ec96efa4b4968e59cc7ec086514a33d92f0d945623587",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -25,5 +37,19 @@
         "metamask": 435,
         "pancakeswap": 411,
         "20 others": 1486
+    },
+    "contract_address": {
+        "features": {
+            "maker": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 23556782,
+                "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                "sampleTxHash": "0x00000326e8932dc86b0ec96efa4b4968e59cc7ec086514a33d92f0d945623587",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

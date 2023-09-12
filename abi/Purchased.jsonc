@@ -9,12 +9,36 @@
         {
             "@type": "transfer:to",
             "name": "sender",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "zora": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1494,
+                    "sampleAddress": "0x17cd072cbd45031efc21da538c783e0ed3b25dcc",
+                    "sampleTxHash": "0x034c14e2f6e6b7211c1764e2a05e70a6c26a219c93eff9f0a98728759262e8ba",
+                    "found": 12,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc721:token",
             "name": "minter",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "zora": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 82893,
+                    "sampleAddress": "0xff8b0f870ff56870dc5abd6cb3e6e89c8ba2e062",
+                    "sampleTxHash": "0x0000332446bd6d145168443b3b4d7ef28cd2439341dc778a71505460fa3c9bf8",
+                    "found": 14,
+                    "samples": 14
+                }
+            }
         },
         {
             "@type": "erc721:tokenID",
@@ -35,5 +59,19 @@
     ],
     "projects": {
         "zora": 54900
+    },
+    "contract_address": {
+        "features": {
+            "zora": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 82292,
+                "sampleAddress": "0xbd52c54ab5116b1d9326352f742e6544ffdeb2cb",
+                "sampleTxHash": "0x0000332446bd6d145168443b3b4d7ef28cd2439341dc778a71505460fa3c9bf8",
+                "found": 100,
+                "samples": 100
+            }
+        }
     }
 }

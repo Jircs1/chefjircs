@@ -9,7 +9,39 @@
         {
             "@type": "transfer:to",
             "name": "to",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "stargate": {
+                    "is_erc20": 0.259259,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1734,
+                    "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                    "sampleTxHash": "0x000c86fe4d89da7af903ada9e1818077dcf5b5d690641e264188f34204fc6864",
+                    "found": 27,
+                    "samples": 100
+                },
+                "pendle": {
+                    "is_erc20": 0.25,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1335,
+                    "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                    "sampleTxHash": "0x000c86fe4d89da7af903ada9e1818077dcf5b5d690641e264188f34204fc6864",
+                    "found": 4,
+                    "samples": 100
+                },
+                "solidly": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 34,
+                    "sampleAddress": "0x777034fef3ccbed74536ea1002faec9620deae0a",
+                    "sampleTxHash": "0x0b885809377d46e6e94f9d78cd93eaab5090b9697385557101d77d8c4f160056",
+                    "found": 1,
+                    "samples": 1
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -34,5 +66,39 @@
         "stargate": 22363,
         "pendle": 1491,
         "solidly": 12
+    },
+    "contract_address": {
+        "features": {
+            "stargate": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 35378,
+                "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
+                "sampleTxHash": "0x0007cc80d8513edbae8d9d778a993e397bd6d85d34a4348f1aa57c8faa3d91a8",
+                "found": 14,
+                "samples": 14
+            },
+            "pendle": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 3396,
+                "sampleAddress": "0x0e1c5509b503358ea1dac119c1d413e28cc4b303",
+                "sampleTxHash": "0x00085a84f34b7d260c620f54f410d8ed4ec0b08b61eb9653af4dc985e9072264",
+                "found": 31,
+                "samples": 31
+            },
+            "solidly": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 34,
+                "sampleAddress": "0x77780aa5e04e0eb5004767352748399d9d6eaee0",
+                "sampleTxHash": "0x0b885809377d46e6e94f9d78cd93eaab5090b9697385557101d77d8c4f160056",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

@@ -9,7 +9,59 @@
         {
             "@type": "transfer:from",
             "name": "user",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "aave": {
+                    "is_erc20": 0.0588235,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 19144,
+                    "sampleAddress": "0x777777c9898d384f785ee44acfe945efdff5f3e0",
+                    "sampleTxHash": "0x000a54ea60832324b3a946e4b71e716372b6bb5a283ddc5cbc0595ccc9122fb3",
+                    "found": 34,
+                    "samples": 100
+                },
+                "bend": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 8808,
+                    "sampleAddress": "0xed2ab4948ba6a909a7751dec4f34f303eb8c7236",
+                    "sampleTxHash": "0x01845cce625f17bda1b4a6472d29d61799f60323e3219f978975a71bf02b6c98",
+                    "found": 0,
+                    "samples": 100
+                },
+                "stargate": {
+                    "is_erc20": 0.133333,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1434,
+                    "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                    "sampleTxHash": "0x06dd08077b82af9361a03af6c11cdf0989962589307228c3d4aa7a94ec70927e",
+                    "found": 15,
+                    "samples": 100
+                },
+                "solv": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 421,
+                    "sampleAddress": "0x092314c3c7aab1f890facd3cec28cb3a4295d67d",
+                    "sampleTxHash": "0x0558b8f7d627bac3ff1a984ce1b43221cb6a4de9884f7edbd2e8d144c4451726",
+                    "found": 3,
+                    "samples": 100
+                },
+                "party": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 137,
+                    "sampleAddress": "0x9fa0d9d784e752b35c26ffb5592a24997ac9187f",
+                    "sampleTxHash": "0x01bc2fadaad2de9b056d05cf822c6fa9ea8b15773745adea4e88c886eb4cc4b7",
+                    "found": 21,
+                    "samples": 43
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -30,5 +82,59 @@
         "aave": 98,
         "solv": 83,
         "5 others": 290
+    },
+    "contract_address": {
+        "features": {
+            "aave": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 52726,
+                "sampleAddress": "0x619beb58998ed2278e08620f97007e1116d5d25b",
+                "sampleTxHash": "0x000199a4f5f0c778caa9a95395a8198045c78551dbaf3153ce94ad4524c0567c",
+                "found": 40,
+                "samples": 40
+            },
+            "bend": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 16881,
+                "sampleAddress": "0x87dde3a3f4b629e389ce5894c9a1f34a7eec5648",
+                "sampleTxHash": "0x0007a02282924636771c41fac6d12310a8b69a590b4e07aece6a5f7c6547f799",
+                "found": 2,
+                "samples": 2
+            },
+            "stargate": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 15646,
+                "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
+                "sampleTxHash": "0x000441c7514b2f05edbe6c1018464fbae8e35bbd822543c622bf1af40c5fdc4c",
+                "found": 13,
+                "samples": 13
+            },
+            "solv": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 515,
+                "sampleAddress": "0x4c5033ba078c79dc1d2775fb481dea53e145f61a",
+                "sampleTxHash": "0x001b54dd2f996e6b6734a2f0da57282cab8521e6dc77a955be342ad246a857d3",
+                "found": 18,
+                "samples": 18
+            },
+            "party": {
+                "is_erc20": 0.0333333,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 137,
+                "sampleAddress": "0x9b5a9e28e1b4d5e25711b955f5edb5e370c292ac",
+                "sampleTxHash": "0x01bc2fadaad2de9b056d05cf822c6fa9ea8b15773745adea4e88c886eb4cc4b7",
+                "found": 30,
+                "samples": 30
+            }
+        }
     }
 }

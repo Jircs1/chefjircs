@@ -19,7 +19,19 @@
         {
             "@type": "transfer:to",
             "name": "dstAddress",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "layerzero": {
+                    "is_erc20": 0.26,
+                    "is_erc721": 0.27,
+                    "is_erc20lp": 0,
+                    "numLogs": 976923,
+                    "sampleAddress": "0xaf54be5b6eec24d6bfacf1cce4eaf680a8239398",
+                    "sampleTxHash": "0x00000af4dce7e471dace87ad21133a76019fccecc7e085d77f1eff60e6abcea4",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "evm:nonce",
@@ -34,5 +46,19 @@
     ],
     "projects": {
         "layerzero": 776806
+    },
+    "contract_address": {
+        "features": {
+            "layerzero": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 979924,
+                "sampleAddress": "0x38de71124f7a447a01d67945a51edce9ff491251",
+                "sampleTxHash": "0x00000524efc05a04cc2160c93635c48b88e29762d0edade7922bd95d9ef80287",
+                "found": 3,
+                "samples": 3
+            }
+        }
     }
 }

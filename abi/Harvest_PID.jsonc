@@ -9,12 +9,76 @@
         {
             "@type": "transfer:from",
             "name": "sender",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "dackieswap": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 6076,
+                    "sampleAddress": "0x7e3b6f966f3666f77813db84dd352173749d24d8",
+                    "sampleTxHash": "0x00255e0720b3e2d236999b256d8b700893f1e36387270f31903024fc512eeb17",
+                    "found": 0,
+                    "samples": 100
+                },
+                "throne": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 3471,
+                    "sampleAddress": "0xb0ff4781a957bef29d2f3635a989f329e8c0b7d9",
+                    "sampleTxHash": "0x0016413db8109b0a8a3b63b356926b28f57efd4d98b54cddcdb52431657205a9",
+                    "found": 0,
+                    "samples": 100
+                },
+                "pancakeswap": {
+                    "is_erc20": 0.333333,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 2502,
+                    "sampleAddress": "0x4a87c130933adc493bf575a1b1b3f83d01c32890",
+                    "sampleTxHash": "0x00125e51785ceabecf4026bf19aae5e5e89bd5e07d892a3528cffe4aa43c820b",
+                    "found": 3,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "transfer:to",
             "name": "to",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "dackieswap": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 6076,
+                    "sampleAddress": "0x7e3b6f966f3666f77813db84dd352173749d24d8",
+                    "sampleTxHash": "0x00255e0720b3e2d236999b256d8b700893f1e36387270f31903024fc512eeb17",
+                    "found": 0,
+                    "samples": 100
+                },
+                "throne": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 3471,
+                    "sampleAddress": "0xb0ff4781a957bef29d2f3635a989f329e8c0b7d9",
+                    "sampleTxHash": "0x0016413db8109b0a8a3b63b356926b28f57efd4d98b54cddcdb52431657205a9",
+                    "found": 0,
+                    "samples": 100
+                },
+                "pancakeswap": {
+                    "is_erc20": 0.333333,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 2504,
+                    "sampleAddress": "0x4a87c130933adc493bf575a1b1b3f83d01c32890",
+                    "sampleTxHash": "0x00125e51785ceabecf4026bf19aae5e5e89bd5e07d892a3528cffe4aa43c820b",
+                    "found": 3,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:lookupid",
@@ -38,5 +102,39 @@
         "throne": 3933,
         "pancakeswap": 2509,
         "beagle": 167
+    },
+    "contract_address": {
+        "features": {
+            "dackieswap": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 8130,
+                "sampleAddress": "0xf2890e09d21a30873ab04aa6e790ae1d78d83b6d",
+                "sampleTxHash": "0x00077a650fec2517e6f81a4086ba78b9370e7f78db448cd597b68250f2ec544a",
+                "found": 1,
+                "samples": 1
+            },
+            "throne": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 4085,
+                "sampleAddress": "0xebe51588c0122ac0de68620f4db8d563fdf9937c",
+                "sampleTxHash": "0x0016413db8109b0a8a3b63b356926b28f57efd4d98b54cddcdb52431657205a9",
+                "found": 4,
+                "samples": 4
+            },
+            "pancakeswap": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 4014,
+                "sampleAddress": "0x556b9306565093c855aea9ae92a594704c2cd59e",
+                "sampleTxHash": "0x00125e51785ceabecf4026bf19aae5e5e89bd5e07d892a3528cffe4aa43c820b",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

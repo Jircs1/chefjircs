@@ -9,12 +9,36 @@
         {
             "@type": "transfer:from",
             "name": "from",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "lido": {
+                    "is_erc20": 0.0681818,
+                    "is_erc721": 0.0113636,
+                    "is_erc20lp": 0.0568182,
+                    "numLogs": 510211,
+                    "sampleAddress": "0x0000000000000000000000000000000000000000",
+                    "sampleTxHash": "0x00000b96d2dff505afa1dba7acac4ae7de92af918dd09ade2ec838ac24065787",
+                    "found": 88,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "transfer:to",
             "name": "to",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "lido": {
+                    "is_erc20": 0.0632911,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.0632911,
+                    "numLogs": 336587,
+                    "sampleAddress": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+                    "sampleTxHash": "0x0004f3a1f8bb1f7939b1770b707aa1402cfa4b465d2b9df0167d2bde60e84e29",
+                    "found": 79,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "lido:sharesValue",
@@ -24,5 +48,19 @@
     ],
     "projects": {
         "lido": 149786
+    },
+    "contract_address": {
+        "features": {
+            "lido": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 699640,
+                "sampleAddress": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+                "sampleTxHash": "0x00000b96d2dff505afa1dba7acac4ae7de92af918dd09ade2ec838ac24065787",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

@@ -9,12 +9,76 @@
         {
             "@type": "transfer:to",
             "name": "target",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "optimism": {
+                    "is_erc20": 0.0666667,
+                    "is_erc721": 0.0444444,
+                    "is_erc20lp": 0,
+                    "numLogs": 258408,
+                    "sampleAddress": "0x4200000000000000000000000000000000000010",
+                    "sampleTxHash": "0x000197e0b2de2f4268b26f52af15f4fbc26086b0688cef7e1ddbca093ccd77ef",
+                    "found": 45,
+                    "samples": 58
+                },
+                "base": {
+                    "is_erc20": 0.117647,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 68349,
+                    "sampleAddress": "0x4200000000000000000000000000000000000010",
+                    "sampleTxHash": "0x00049397f707a4932725bddc738583a1d32baeda82fc4aed5d245d90418f2a65",
+                    "found": 17,
+                    "samples": 17
+                },
+                "publicgoods": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 11013,
+                    "sampleAddress": "0x4200000000000000000000000000000000000010",
+                    "sampleTxHash": "0x0009724aa683d9eb6946298ade5ca81d2230080128e6e1e91bf6db8e6a3d2af3",
+                    "found": 2,
+                    "samples": 2
+                }
+            }
         },
         {
             "@type": "transfer:from",
             "name": "sender",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "optimism": {
+                    "is_erc20": 0.0273973,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 258408,
+                    "sampleAddress": "0x99c9fc46f92e8a1c0dec1b1747d010903e884be1",
+                    "sampleTxHash": "0x000197e0b2de2f4268b26f52af15f4fbc26086b0688cef7e1ddbca093ccd77ef",
+                    "found": 73,
+                    "samples": 78
+                },
+                "base": {
+                    "is_erc20": 0.117647,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 68349,
+                    "sampleAddress": "0x3154cf16ccdb4c6d922629664174b904d80f2c35",
+                    "sampleTxHash": "0x00049397f707a4932725bddc738583a1d32baeda82fc4aed5d245d90418f2a65",
+                    "found": 17,
+                    "samples": 19
+                },
+                "publicgoods": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 11013,
+                    "sampleAddress": "0xd0204b9527c1ba7bd765fa5ccd9355d38338272b",
+                    "sampleTxHash": "0x0009724aa683d9eb6946298ade5ca81d2230080128e6e1e91bf6db8e6a3d2af3",
+                    "found": 2,
+                    "samples": 2
+                }
+            }
         },
         {
             "@type": "transfer:data",
@@ -37,5 +101,39 @@
         "optimism": 45150,
         "publicgoods": 13421,
         "hop": 11
+    },
+    "contract_address": {
+        "features": {
+            "optimism": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 258408,
+                "sampleAddress": "0x25ace71c97b33cc4729cf772ae268934f7ab5fa1",
+                "sampleTxHash": "0x0000c7ae754131e36541a4c29634318e609c9b3e880a88b0b2b8facec7675f61",
+                "found": 1,
+                "samples": 1
+            },
+            "base": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 68349,
+                "sampleAddress": "0x866e82a600a1414e583f7f13623f1ac5d58b0afa",
+                "sampleTxHash": "0x00049397f707a4932725bddc738583a1d32baeda82fc4aed5d245d90418f2a65",
+                "found": 1,
+                "samples": 1
+            },
+            "publicgoods": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 11013,
+                "sampleAddress": "0x97baf688e5d0465e149d1d5b497ca99392a6760e",
+                "sampleTxHash": "0x0009724aa683d9eb6946298ade5ca81d2230080128e6e1e91bf6db8e6a3d2af3",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

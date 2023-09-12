@@ -14,22 +14,70 @@
         {
             "@type": "dex:maker",
             "name": "maker",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "0x": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 210246,
+                    "sampleAddress": "0xaf0b0000f0210d0f421f0009c72406703b50506b",
+                    "sampleTxHash": "0x000130ff391701dc1c12bc3640cda19d7fc762fd5a1d637819e7ddba4b7b437a",
+                    "found": 6,
+                    "samples": 23
+                }
+            }
         },
         {
             "@type": "dex:taker",
             "name": "taker",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "0x": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 129844,
+                    "sampleAddress": "0xe66b31678d6c16e9ebf358268a790b763c133750",
+                    "sampleTxHash": "0x00001e07525c02855755fc81a476d8e96ae72961190c3a83a2800558878e24f9",
+                    "found": 6,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "makerToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "0x": {
+                    "is_erc20": 0.975309,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 210246,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x00001e07525c02855755fc81a476d8e96ae72961190c3a83a2800558878e24f9",
+                    "found": 81,
+                    "samples": 81
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "takerToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "0x": {
+                    "is_erc20": 0.974359,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 210246,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x00023479adf35aad7b1d7a0b5cce2bf56a2af59c5b1db7db2017ad26123c5296",
+                    "found": 78,
+                    "samples": 78
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -46,5 +94,19 @@
     ],
     "projects": {
         "0x": 73210
+    },
+    "contract_address": {
+        "features": {
+            "0x": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 210246,
+                "sampleAddress": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
+                "sampleTxHash": "0x00001e07525c02855755fc81a476d8e96ae72961190c3a83a2800558878e24f9",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

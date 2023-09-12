@@ -14,12 +14,36 @@
         {
             "@type": "erc20:token",
             "name": "sourceToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "bancor": {
+                    "is_erc20": 0.975,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 60294,
+                    "sampleAddress": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
+                    "sampleTxHash": "0x000a7b28e8d490327dea4b0b26fa275ca3d119459c193c0b5eb252a22f019bbd",
+                    "found": 80,
+                    "samples": 80
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "targetToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "bancor": {
+                    "is_erc20": 0.974684,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 60294,
+                    "sampleAddress": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
+                    "sampleTxHash": "0x0001b13f9c879d500df3330caf2b365fc559918c50fe8433b023ecb44ff9ea83",
+                    "found": 79,
+                    "samples": 79
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -54,10 +78,36 @@
         {
             "@type": "dex:trader",
             "name": "trader",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "bancor": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 57785,
+                    "sampleAddress": "0x0000000000a84d1a9b0063a910315c7ffa9cd248",
+                    "sampleTxHash": "0x0007131aaa43887fc2b1ebe54eb17a500e2e8dbe3156a1b7dc2c8a52dc1c68a8",
+                    "found": 78,
+                    "samples": 100
+                }
+            }
         }
     ],
     "projects": {
         "bancor": 12174
+    },
+    "contract_address": {
+        "features": {
+            "bancor": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 60294,
+                "sampleAddress": "0xeef417e1d5cc832e619ae18d2f140de2999dd4fb",
+                "sampleTxHash": "0x0001b13f9c879d500df3330caf2b365fc559918c50fe8433b023ecb44ff9ea83",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

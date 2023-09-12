@@ -14,7 +14,19 @@
         {
             "@type": "transfer:to",
             "name": "toAddress",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "starknet": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 215973,
+                    "sampleAddress": "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419",
+                    "sampleTxHash": "0x0000634a3b479d43454c34d7e72be7efb1a7a1ee3bed7ec659c09a3391756e02",
+                    "found": 15,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "starknet:payload",
@@ -24,5 +36,19 @@
     ],
     "projects": {
         "starknet": 58483
+    },
+    "contract_address": {
+        "features": {
+            "starknet": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 216238,
+                "sampleAddress": "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4",
+                "sampleTxHash": "0x0000634a3b479d43454c34d7e72be7efb1a7a1ee3bed7ec659c09a3391756e02",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

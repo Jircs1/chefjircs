@@ -14,17 +14,53 @@
         {
             "@type": "transfer:from",
             "name": "sender",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "celer": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 24753,
+                    "sampleAddress": "0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae",
+                    "sampleTxHash": "0x0001a09ae9b7976370d10f5463d66d81684aa77469e41ee65484dde7d82f9583",
+                    "found": 12,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "transfer:to",
             "name": "receiver",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "celer": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 5142,
+                    "sampleAddress": "0xd54e4f8a55247487dd7c8c59f14ee5c0c2889477",
+                    "sampleTxHash": "0x00d79db8482fb29065eb8aefd59ed6ed879ff242b87fcf4728efad1da077a803",
+                    "found": 6,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "token",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "celer": {
+                    "is_erc20": 0.973684,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 61646,
+                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                    "sampleTxHash": "0x0001a09ae9b7976370d10f5463d66d81684aa77469e41ee65484dde7d82f9583",
+                    "found": 38,
+                    "samples": 38
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -45,5 +81,19 @@
     ],
     "projects": {
         "celer": 8463
+    },
+    "contract_address": {
+        "features": {
+            "celer": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 61646,
+                "sampleAddress": "0x5427fefa711eff984124bfbb1ab6fbf5e3da1820",
+                "sampleTxHash": "0x000001c51316b19b9014cef8087e7ccefb3e55ca05c3fef726a25dd5a2f06914",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

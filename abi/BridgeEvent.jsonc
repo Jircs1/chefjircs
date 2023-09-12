@@ -19,7 +19,19 @@
         {
             "@type": "transfer:from",
             "name": "originAddress",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "polygonzkevm": {
+                    "is_erc20": 0.885417,
+                    "is_erc721": 0.0104167,
+                    "is_erc20lp": 0,
+                    "numLogs": 119083,
+                    "sampleAddress": "0x0000000000000000000000000000000000000000",
+                    "sampleTxHash": "0x00003409c8c2e6cff8b9ab8ba14811105539c727e7f0638c6bee6570c7ee9c6b",
+                    "found": 96,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "polygonzkevm:chainID",
@@ -29,7 +41,19 @@
         {
             "@type": "transfer:to",
             "name": "destinationAddress",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "polygonzkevm": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 8732,
+                    "sampleAddress": "0x9af3049dd15616fd627a35563b5282bea5c32e20",
+                    "sampleTxHash": "0x000b02a7fdff5ce815dfa7f4cb8bb2e62a7cb80915a0099a33fa2fbf35aa1da7",
+                    "found": 1,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -49,5 +73,19 @@
     ],
     "projects": {
         "polygonzkevm": 88476
+    },
+    "contract_address": {
+        "features": {
+            "polygonzkevm": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 119140,
+                "sampleAddress": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+                "sampleTxHash": "0x00003409c8c2e6cff8b9ab8ba14811105539c727e7f0638c6bee6570c7ee9c6b",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

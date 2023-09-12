@@ -9,7 +9,19 @@
         {
             "@type": "transfer:from",
             "name": "from",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "stargate": {
+                    "is_erc20": 0.111111,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 778,
+                    "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                    "sampleTxHash": "0x06dd08077b82af9361a03af6c11cdf0989962589307228c3d4aa7a94ec70927e",
+                    "found": 18,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -26,10 +38,36 @@
         {
             "@type": "transfer:to",
             "name": "to",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "stargate": {
+                    "is_erc20": 0.15,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 713,
+                    "sampleAddress": "0x267a1d1cf03e7514254edde262d229d02ff56a7d",
+                    "sampleTxHash": "0x02565b30f13f4d84a9562b1fed27ca89408b8a75cb94bf2ba96f620173a494db",
+                    "found": 20,
+                    "samples": 100
+                }
+            }
         }
     ],
     "projects": {
         "stargate": 8544
+    },
+    "contract_address": {
+        "features": {
+            "stargate": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 7943,
+                "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
+                "sampleTxHash": "0x00063d62ca36a14fde9350e66743e4a8154bcfc92ef8b2d3851669f056591bee",
+                "found": 12,
+                "samples": 12
+            }
+        }
     }
 }

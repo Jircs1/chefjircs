@@ -9,7 +9,19 @@
         {
             "@type": "dex:minter",
             "name": "_owner",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "bueno": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1522,
+                    "sampleAddress": "0x46120a324bd326f110f336f463474b102682d553",
+                    "sampleTxHash": "0x02a16c4dadf0ddc00d61226c380f04e808b4deb549ae557a4424a5b50a5aa79e",
+                    "found": 0,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc721:tokenId",
@@ -26,5 +38,19 @@
     ],
     "projects": {
         "bueno": 4773
+    },
+    "contract_address": {
+        "features": {
+            "bueno": {
+                "is_erc20": 0,
+                "is_erc721": 0.01,
+                "is_erc20lp": 0,
+                "numLogs": 10586,
+                "sampleAddress": "0xb20e024da94fef84b5dbde3a639048952de58169",
+                "sampleTxHash": "0x001eb1f94d554333c9efe4cf9302f79e2bd432221e261bb131567afdd690dac8",
+                "found": 100,
+                "samples": 100
+            }
+        }
     }
 }

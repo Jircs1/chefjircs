@@ -9,7 +9,19 @@
         {
             "@type": "transfer:to",
             "name": "to",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "tornado": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 2285,
+                    "sampleAddress": "0x1206335fb66087032e628441192f60f075da9510",
+                    "sampleTxHash": "0x013896409eeef4befb5445fe4676a685840136478d8358e3356794c3a7024f13",
+                    "found": 1,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "tornado:nullifier",
@@ -19,7 +31,19 @@
         {
             "@type": "tornado:relayer",
             "name": "relayer",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "tornado": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 13530,
+                    "sampleAddress": "0xa0109274f53609f6be97ec5f3052c659ab80f012",
+                    "sampleTxHash": "0x002e321acc309cbf5c147f66a95a9bf814e652a3fabb57d24817e4d4859ce098",
+                    "found": 1,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "evm:tokenAmount",
@@ -29,5 +53,19 @@
     ],
     "projects": {
         "tornado": 4438
+    },
+    "contract_address": {
+        "features": {
+            "tornado": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 14006,
+                "sampleAddress": "0x47ce0c6ed5b0ce3d3a51fdb1c52dc66a7c3c2936",
+                "sampleTxHash": "0x002e321acc309cbf5c147f66a95a9bf814e652a3fabb57d24817e4d4859ce098",
+                "found": 12,
+                "samples": 12
+            }
+        }
     }
 }

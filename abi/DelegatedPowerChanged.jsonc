@@ -9,7 +9,29 @@
         {
             "@type": "delegation:delegator",
             "name": "user",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "aave": {
+                    "is_erc20": 0.173077,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.115385,
+                    "numLogs": 1020270,
+                    "sampleAddress": "0xc697051d1c6296c24ae3bcef39aca743861d9a81",
+                    "sampleTxHash": "0x000003d5b6ebf765e46f69afe24fe727e451291e3b46d2bcc673b7bafaffb4fd",
+                    "found": 52,
+                    "samples": 100
+                },
+                "dydx": {
+                    "is_erc20": 0.0909091,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0.136364,
+                    "numLogs": 473742,
+                    "sampleAddress": "0xd8de6af55f618a7bc69835d55ddc6582220c36c0",
+                    "sampleTxHash": "0x00010ab37f0d3c050eb0e5188c811b03e95fe08123f505497905f49e337758dd",
+                    "found": 44,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -27,5 +49,29 @@
     "projects": {
         "aave": 101990,
         "dydx": 35150
+    },
+    "contract_address": {
+        "features": {
+            "aave": {
+                "is_erc20": 0.666667,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 1806422,
+                "sampleAddress": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+                "sampleTxHash": "0x000003d5b6ebf765e46f69afe24fe727e451291e3b46d2bcc673b7bafaffb4fd",
+                "found": 3,
+                "samples": 3
+            },
+            "dydx": {
+                "is_erc20": 0.5,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 865588,
+                "sampleAddress": "0x92d6c1e31e14520e676a687f0a93788b716beff5",
+                "sampleTxHash": "0x000087453adbfbd77121b220b1d94105f3776f074a9e834fea92199e17be4bbb",
+                "found": 2,
+                "samples": 2
+            }
+        }
     }
 }

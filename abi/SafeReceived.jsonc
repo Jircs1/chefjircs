@@ -9,7 +9,19 @@
         {
             "@type": "transfer:from",
             "name": "sender",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "safe": {
+                    "is_erc20": 0.0208333,
+                    "is_erc721": 0.0208333,
+                    "is_erc20lp": 0,
+                    "numLogs": 1911843,
+                    "sampleAddress": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
+                    "sampleTxHash": "0x00000e4e40911b6232bcb9f29abb96c95637cb5118b7b8821672c8111d4749fa",
+                    "found": 96,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "evm:tokenAmount",
@@ -24,5 +36,19 @@
         "opensea": 91,
         "vectorized": 91,
         "5 others": 129
+    },
+    "contract_address": {
+        "features": {
+            "safe": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 1922203,
+                "sampleAddress": "0xf326e4de8f66a0bdc0970b79e0924e33c79f1915",
+                "sampleTxHash": "0x00000e4e40911b6232bcb9f29abb96c95637cb5118b7b8821672c8111d4749fa",
+                "found": 100,
+                "samples": 100
+            }
+        }
     }
 }

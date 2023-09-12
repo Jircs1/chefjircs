@@ -9,7 +9,29 @@
         {
             "@type": "dex:trader",
             "name": "trader",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "1inch": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 16700,
+                    "sampleAddress": "0x8262938c388438d4086e0f7e17d8b367a086092f",
+                    "sampleTxHash": "0x003354d93635508a3d2da2372ae38faed75d258cfe9f063ce3e641f56c24668b",
+                    "found": 0,
+                    "samples": 100
+                },
+                "kyberswap": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 521,
+                    "sampleAddress": "0x054d81e03e028bc391c75bf69b7547220ece8e07",
+                    "sampleTxHash": "0x001067a6661631a1373d7061c07e2670cbed1ceb96cb2d7d857673bc18b36268",
+                    "found": 0,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "1inch:orderId",
@@ -26,5 +48,29 @@
     "projects": {
         "1inch": 23315,
         "kyberswap": 246
+    },
+    "contract_address": {
+        "features": {
+            "1inch": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 71869,
+                "sampleAddress": "0x1111111254eeb25477b68fb85ed929f73a960582",
+                "sampleTxHash": "0x000288708508df9b66f6ff50ae182a84c8d2b1a92e843ee2d602df825dd43269",
+                "found": 2,
+                "samples": 2
+            },
+            "kyberswap": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 710,
+                "sampleAddress": "0x227b0c196ea8db17a665ea6824d972a64202e936",
+                "sampleTxHash": "0x0007cf3457ff09a990b3eb50b8969b75c6aa719ab5823b6225183b6f5615467f",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

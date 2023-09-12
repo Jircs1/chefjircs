@@ -9,7 +9,19 @@
         {
             "@type": "dydx:locker",
             "name": "locker",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "dydx": {
+                    "is_erc20": 0.333333,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 4507,
+                    "sampleAddress": "0x50084c51f6d7e9801b6a7bdba85822db985465fe",
+                    "sampleTxHash": "0x00a0a775883e088162081b99cab581ddd67dd2fe788554bf099cfa0203fe046c",
+                    "found": 3,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "evm:tokenAmount",
@@ -34,5 +46,19 @@
     ],
     "projects": {
         "dydx": 475313
+    },
+    "contract_address": {
+        "features": {
+            "dydx": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 741946,
+                "sampleAddress": "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419",
+                "sampleTxHash": "0x00002729c5f7ec56d8b335c5c0cadb51446bafb25b9869a1e4d7bd0b54866971",
+                "found": 4,
+                "samples": 4
+            }
+        }
     }
 }

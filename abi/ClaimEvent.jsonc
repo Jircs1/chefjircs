@@ -19,12 +19,36 @@
         {
             "@type": "transfer:from",
             "name": "originAddress",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "polygonzkevm": {
+                    "is_erc20": 0.894737,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 18868,
+                    "sampleAddress": "0x0000000000000000000000000000000000000000",
+                    "sampleTxHash": "0x0001641cdb9c184399c28a761c9ff24bb279df23f1f467f51d5f4a4d5cf60e0c",
+                    "found": 76,
+                    "samples": 81
+                }
+            }
         },
         {
             "@type": "transfer:to",
             "name": "destinationAddress",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "polygonzkevm": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 3777,
+                    "sampleAddress": "0x9af3049dd15616fd627a35563b5282bea5c32e20",
+                    "sampleTxHash": "0x0006df7aa1b9f59f1396d297f3adb0565a5d7de129b5d67cbba25d9235de499d",
+                    "found": 2,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -35,5 +59,19 @@
     ],
     "projects": {
         "polygonzkevm": 15703
+    },
+    "contract_address": {
+        "features": {
+            "polygonzkevm": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 18868,
+                "sampleAddress": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+                "sampleTxHash": "0x0001641cdb9c184399c28a761c9ff24bb279df23f1f467f51d5f4a4d5cf60e0c",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

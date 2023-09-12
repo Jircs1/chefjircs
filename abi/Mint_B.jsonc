@@ -9,12 +9,56 @@
         {
             "@type": "transfer:to",
             "name": "caller",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "aave": {
+                    "is_erc20": 0.0833333,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 33588,
+                    "sampleAddress": "0xd322a49006fc828f9b5b37ab215f99b4e5cab19c",
+                    "sampleTxHash": "0x0001784161a5024e9d98b910fad51419e0cbbcb7f9b07aa47e76cdf512fc04cd",
+                    "found": 36,
+                    "samples": 100
+                },
+                "para.space": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 27315,
+                    "sampleAddress": "0x65938015cbe24fde6d88b7b2d82b96f80a0e1ed5",
+                    "sampleTxHash": "0x005abdff17def9d6084437d575b5606232206cdc6eae86f1407cfd7370121a03",
+                    "found": 7,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "transfer:beneficiary",
             "name": "onBehalfOf",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "aave": {
+                    "is_erc20": 0.0526316,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 12218,
+                    "sampleAddress": "0x0000cd00001700b10049dfc947103e00e1c62683",
+                    "sampleTxHash": "0x007971d9798a3af12913ff885f926f3b46309b29b2d299cc59efd0e360f2ad5f",
+                    "found": 19,
+                    "samples": 100
+                },
+                "para.space": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 10088,
+                    "sampleAddress": "0x35bf94c72cd19da0f6875a6ebd6215f2d12ccd59",
+                    "sampleTxHash": "0x000fe07a3c3233e83a4e56d2a716abcafc919d62fe2719a6e6a81f6dc6a61907",
+                    "found": 0,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -37,5 +81,29 @@
     "projects": {
         "aave": 33294,
         "para.space": 4588
+    },
+    "contract_address": {
+        "features": {
+            "aave": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 66193,
+                "sampleAddress": "0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8",
+                "sampleTxHash": "0x0001784161a5024e9d98b910fad51419e0cbbcb7f9b07aa47e76cdf512fc04cd",
+                "found": 42,
+                "samples": 42
+            },
+            "para.space": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 38702,
+                "sampleAddress": "0xddde38696fbe5d11497d72d8801f651642d62353",
+                "sampleTxHash": "0x000d15b78d2b045e2931e654838f43bfb3eff2402c507b8963cb45c9941366fd",
+                "found": 27,
+                "samples": 27
+            }
+        }
     }
 }

@@ -9,7 +9,49 @@
         {
             "@type": "transfer:to",
             "name": "user",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "convex": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 9855,
+                    "sampleAddress": "0x93e85b8c3995b407fb2f1198d83f4e500242b3a2",
+                    "sampleTxHash": "0x00005835abcb46d9caf79831dd1249aab09df68d18cb8822649807f7abc7c352",
+                    "found": 7,
+                    "samples": 9
+                },
+                "baseswap": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 2519,
+                    "sampleAddress": "0xd814e1b7cc203ff6ca4358bf4aa3ce9771fedc68",
+                    "sampleTxHash": "0x00411d0f5f190060ccc503ebf00ddd611417756d3f549b8f76aff154553bf18c",
+                    "found": 0,
+                    "samples": 100
+                },
+                "synthswap": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 2049,
+                    "sampleAddress": "0xa5c9ea9c76c7b3310bb30c762e56557dd2b7c1d7",
+                    "sampleTxHash": "0x01d8be46d3d9019ba03bf9716a669fbeecb1703eaef70e2270f2dcee85435de1",
+                    "found": 0,
+                    "samples": 100
+                },
+                "aura": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 1196,
+                    "sampleAddress": "0x6a29cfd8a5f666a7d69da9437cd4c46616326815",
+                    "sampleTxHash": "0x0069022f3efc796adcd0e92e0052e623d6f8f7513f09b40c535e6f8f4b556567",
+                    "found": 4,
+                    "samples": 7
+                }
+            }
         },
         {
             "@type": "erc20:lookupid",
@@ -28,5 +70,49 @@
         "synthswap": 3896,
         "aura": 100,
         "convex": 24
+    },
+    "contract_address": {
+        "features": {
+            "convex": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 9855,
+                "sampleAddress": "0x5f465e9fcffc217c5849906216581a657cd60605",
+                "sampleTxHash": "0x00005835abcb46d9caf79831dd1249aab09df68d18cb8822649807f7abc7c352",
+                "found": 1,
+                "samples": 1
+            },
+            "baseswap": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 4011,
+                "sampleAddress": "0xcb9665e990027e115ccf22230b042e4e7eabfdb2",
+                "sampleTxHash": "0x00052fd68a7c7e78a174927f1829d5ee190d232067d8c55223e45044e43310c7",
+                "found": 5,
+                "samples": 5
+            },
+            "synthswap": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 3036,
+                "sampleAddress": "0xef153cb7bfc04c657cb7f582c7411556320098b9",
+                "sampleTxHash": "0x0008ce24e10310fd7bed7c8b6eadbd6d3275fb061e8ae2a005d3445b70c889de",
+                "found": 1,
+                "samples": 1
+            },
+            "aura": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 1196,
+                "sampleAddress": "0x1ab80f7fb46b25b7e0b2cfac23fc88ac37aaf4e9",
+                "sampleTxHash": "0x0003e287bf82faec9c469051c6332c74ad7477bf20467df2f23b8fa2cc7d2762",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

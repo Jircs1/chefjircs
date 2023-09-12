@@ -9,7 +9,59 @@
         {
             "@type": "delegation:delegated",
             "name": "delegate",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "ens": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 12219,
+                    "sampleAddress": "0x983110309620d911731ac0932219af06091b6744",
+                    "sampleTxHash": "0x002c0aa2ca0e1b3197d2f1a26519cf6d60bd8fbe50902ae32cdeb378e13483cf",
+                    "found": 3,
+                    "samples": 100
+                },
+                "hop": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 10017,
+                    "sampleAddress": "0xf4b0556b9b6f53e00a1fdd2b0478ce841991d8fa",
+                    "sampleTxHash": "0x0056b32ae5bf449b472856cde231f4598585286ec2cdbdc0999f9b6ce179b169",
+                    "found": 3,
+                    "samples": 100
+                },
+                "uniswap": {
+                    "is_erc20": 0.166667,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 6235,
+                    "sampleAddress": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+                    "sampleTxHash": "0x00544c5ab5f8d61573aa0aeba299842536bad21364df83af57417ab8fd07ea90",
+                    "found": 12,
+                    "samples": 100
+                },
+                "gitcoin": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 4673,
+                    "sampleAddress": "0x4be88f63f919324210ea3a2ccad4ff0734425f91",
+                    "sampleTxHash": "0x00cbdf04133512aed9e5ca000993973394f39996829179016f21afb4ac3b1139",
+                    "found": 2,
+                    "samples": 100
+                },
+                "bitdao": {
+                    "is_erc20": 0.25,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 4513,
+                    "sampleAddress": "0x853edd954dd508117cb957918378c976ac390d8e",
+                    "sampleTxHash": "0x0043f4388dc409e84ea71513979034896e558ee41a1bb354570e0649653da733",
+                    "found": 4,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -31,5 +83,59 @@
         "ens": 2119,
         "hop": 1027,
         "27 others": 4023
+    },
+    "contract_address": {
+        "features": {
+            "uniswap": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 35633,
+                "sampleAddress": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+                "sampleTxHash": "0x0003d8e6f1a022eabe09817b98e831fb943f706a6b813c7b7c70d3de50a37971",
+                "found": 1,
+                "samples": 1
+            },
+            "bitdao": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 20686,
+                "sampleAddress": "0x1a4b46696b2bb4794eb3d4c26f1c55f9170fa4c5",
+                "sampleTxHash": "0x000093717d8bdbb9c2f49a31555131486293a5fad1df7ea91a7d2b92b0386093",
+                "found": 1,
+                "samples": 1
+            },
+            "ens": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 20180,
+                "sampleAddress": "0xc18360217d8f7ab5e7c516566761ea12ce7f9d72",
+                "sampleTxHash": "0x00024a9c95d39de76f27c82da6da86644ccfc1013530d1455e20d47684898f50",
+                "found": 1,
+                "samples": 1
+            },
+            "gitcoin": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 17734,
+                "sampleAddress": "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f",
+                "sampleTxHash": "0x000379b4a685789b2cfc673bffc95dc85777d29475bf8472b9471f4b99254062",
+                "found": 1,
+                "samples": 1
+            },
+            "hop": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 13700,
+                "sampleAddress": "0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc",
+                "sampleTxHash": "0x000415407138d20f01e9f42f39fc78532093163a904c2c6c4c609e51b038dd0e",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

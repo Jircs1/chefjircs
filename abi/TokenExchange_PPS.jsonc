@@ -9,7 +9,19 @@
         {
             "@type": "dex:trader",
             "name": "buyer",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "fiddyresearch": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 14960,
+                    "sampleAddress": "0x99a58482bd75cbab83b27ec03ca68ff489b5788f",
+                    "sampleTxHash": "0x000eb7ce07e19ae97eee27209883f5ea815508cdf030c87e9f52b6b55e021b51",
+                    "found": 75,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:lookupid",
@@ -47,5 +59,19 @@
     ],
     "projects": {
         "fiddyresearch": 19767
+    },
+    "contract_address": {
+        "features": {
+            "fiddyresearch": {
+                "is_erc20": 1,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 14983,
+                "sampleAddress": "0x7f86bf177dd4f3494b841a37e810a34dd56c829b",
+                "sampleTxHash": "0x000526cac00fbb2ba15f4750e93b3a69fef7034c4ccc43a08ed624a560a4916d",
+                "found": 5,
+                "samples": 5
+            }
+        }
     }
 }

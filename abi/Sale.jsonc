@@ -9,7 +9,29 @@
         {
             "@type": "transfer:to",
             "name": "to",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "zora": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 8125,
+                    "sampleAddress": "0x17cd072cbd45031efc21da538c783e0ed3b25dcc",
+                    "sampleTxHash": "0x00b9de740625da815dcc9103bb00361312a8e48eb647fea3088bf953e92ebf3c",
+                    "found": 4,
+                    "samples": 100
+                },
+                "holograph": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 383,
+                    "sampleAddress": "0xd80f0d03579d1cae085ba34c3e909c33e710a52d",
+                    "sampleTxHash": "0x39663a51eb6a4eceeccf9bb72a8dfcdf2f2cc31354509ecb9f0a57165eaff913",
+                    "found": 0,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc721:tokenAmount",
@@ -31,5 +53,29 @@
     "projects": {
         "zora": 392218,
         "holograph": 15641
+    },
+    "contract_address": {
+        "features": {
+            "zora": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 1148482,
+                "sampleAddress": "0xd4307e0acd12cf46fd6cf93bc264f5d5d1598792",
+                "sampleTxHash": "0x0000ce36b065d111daaa46ece62dbe429f8dd115b21c726766452cb5ff6d002c",
+                "found": 100,
+                "samples": 100
+            },
+            "holograph": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 7416,
+                "sampleAddress": "0xd47f7d27e9e7835ad455dc3aec1b3b01abfbf715",
+                "sampleTxHash": "0x0017e01b8e3280baa65594e8c3022e9b032bc9446fef35659d78f3b830ad31f7",
+                "found": 20,
+                "samples": 20
+            }
+        }
     }
 }

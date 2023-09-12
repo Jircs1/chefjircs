@@ -9,22 +9,110 @@
         {
             "@type": "transfer:from",
             "name": "sender",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "kyberswap": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 34966,
+                    "sampleAddress": "0x2f2dd99235cb728fc79af575f1325eaa270f0c99",
+                    "sampleTxHash": "0x007160c7a10ede8dcc02c77061a38cff982d0c969fad84611c5b868fe8796b18",
+                    "found": 7,
+                    "samples": 100
+                },
+                "1inch": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 3365,
+                    "sampleAddress": "0x2a0a81e257a2f5d6ed4f07b81dbda09f107bd027",
+                    "sampleTxHash": "0x003632e31263475237995dff11e975ac859b26b9681c2157c882bbba7bd9ef08",
+                    "found": 26,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "srcToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "kyberswap": {
+                    "is_erc20": 0.97,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 362105,
+                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                    "sampleTxHash": "0x00000dad32cc47133a00e48897b6c864aa7a37f0dda9746dade793d7a875b0f6",
+                    "found": 100,
+                    "samples": 100
+                },
+                "1inch": {
+                    "is_erc20": 0.97,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 7876,
+                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                    "sampleTxHash": "0x003632e31263475237995dff11e975ac859b26b9681c2157c882bbba7bd9ef08",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:token",
             "name": "dstToken",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "kyberswap": {
+                    "is_erc20": 0.99,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 264470,
+                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                    "sampleTxHash": "0x0000841675ceea9af7a4d1e564f0c5f48e1dd05fd98a68877e85f88ccbbfbedd",
+                    "found": 100,
+                    "samples": 100
+                },
+                "1inch": {
+                    "is_erc20": 0.96,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 7918,
+                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                    "sampleTxHash": "0x000b3d9e462d3283cef8281b0e684e7f6dc154d63bdcafe196a40f9e0e025d21",
+                    "found": 100,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "transfer:to",
             "name": "dstReceiver",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "kyberswap": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 35757,
+                    "sampleAddress": "0x2f2dd99235cb728fc79af575f1325eaa270f0c99",
+                    "sampleTxHash": "0x007160c7a10ede8dcc02c77061a38cff982d0c969fad84611c5b868fe8796b18",
+                    "found": 6,
+                    "samples": 100
+                },
+                "1inch": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 3355,
+                    "sampleAddress": "0x89b537d4e0de035303dc1bdae18394f7a6c15c36",
+                    "sampleTxHash": "0x0043349ffefc7c457d94de2f15fc4502ab3e9bec7e4ddcef910a4deb3fc7f52d",
+                    "found": 25,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:tokenAmount",
@@ -42,5 +130,29 @@
     "projects": {
         "kyberswap": 156970,
         "1inch": 274
+    },
+    "contract_address": {
+        "features": {
+            "kyberswap": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 500595,
+                "sampleAddress": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+                "sampleTxHash": "0x00005e63a072ccf09952e58e8cc45425bbcecf53e5eaf446eb5584b4b44b84d3",
+                "found": 3,
+                "samples": 3
+            },
+            "1inch": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 8071,
+                "sampleAddress": "0x11111112542d85b3ef69ae05771c2dccff4faa26",
+                "sampleTxHash": "0x00052d19f3a4d665c63cb49bb7b6a1cc73c66c1dd9f6d306cc30cd52827214f6",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

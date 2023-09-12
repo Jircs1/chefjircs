@@ -19,7 +19,19 @@
         {
             "@type": "transfer:to",
             "name": "owner",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "ens": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 114980,
+                    "sampleAddress": "0x80a96b126dc3101041e02e04d2bbe924bd8b3c55",
+                    "sampleTxHash": "0x0003244499a2d7ad32b581bacb02116ed50c7d7201ee12272a8b3133e6b0d868",
+                    "found": 0,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "evm:tokenAmount",
@@ -34,5 +46,19 @@
     ],
     "projects": {
         "ens": 11122
+    },
+    "contract_address": {
+        "features": {
+            "ens": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 753398,
+                "sampleAddress": "0x283af0b28c62c092c9727f1ee09c02ca627eb7f5",
+                "sampleTxHash": "0x000011d15d00ea42f17e2b4c2f3a351fa31cf173256dbfb1829b3a616d956a97",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }

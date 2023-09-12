@@ -9,7 +9,49 @@
         {
             "@type": "transfer:to",
             "name": "user",
-            "type": "address"
+            "type": "address",
+            "features": {
+                "convex": {
+                    "is_erc20": 0.107143,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 12610,
+                    "sampleAddress": "0x3cf54f3a1969be9916dad548f3c084331c4450b5",
+                    "sampleTxHash": "0x001f798ad4f957e29e8c9c11d182e8e19990655721b462618daece0019b4da5f",
+                    "found": 84,
+                    "samples": 100
+                },
+                "aura": {
+                    "is_erc20": 0.27027,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 4134,
+                    "sampleAddress": "0x12adde99768a82871eaaecfbdb065b12c56f0578",
+                    "sampleTxHash": "0x000b933053e117842d0a4a01ec83d829ebc78d3da06e8efa249a45df00a7d00e",
+                    "found": 37,
+                    "samples": 100
+                },
+                "bend": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 105,
+                    "sampleAddress": "0xcf620c347386c42cdec152688b881e767c614d70",
+                    "sampleTxHash": "0x09ed57096ae171c412c74188843655a4d6d1b7bc67ed4e57d429525ae2083f64",
+                    "found": 1,
+                    "samples": 12
+                },
+                "duckdaodime": {
+                    "is_erc20": 0,
+                    "is_erc721": 0,
+                    "is_erc20lp": 0,
+                    "numLogs": 105,
+                    "sampleAddress": "0xa2c5fbd8ca4b98cb079ca688d4ab5975b8862c0f",
+                    "sampleTxHash": "0x0230e3177e12a68a9f53fa4bbd5c7ef64ec7e795d3a1da5447ab4162518cc9f7",
+                    "found": 0,
+                    "samples": 100
+                }
+            }
         },
         {
             "@type": "erc20:lookupid",
@@ -28,5 +70,49 @@
         "aura": 3362,
         "duckdaodime": 74,
         "bend": 72
+    },
+    "contract_address": {
+        "features": {
+            "convex": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 31652,
+                "sampleAddress": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
+                "sampleTxHash": "0x0000b4043415c08bc110c0aa8b348071adc5dadd46b0c87c9cdbf0f547c4bd29",
+                "found": 1,
+                "samples": 1
+            },
+            "aura": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 9535,
+                "sampleAddress": "0xa57b8d98dae62b26ec3bcc4a365338157060b234",
+                "sampleTxHash": "0x0005f3c73da071063814b620cf2678aa34741098f5d45397fb599377e8895c30",
+                "found": 2,
+                "samples": 2
+            },
+            "duckdaodime": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 287,
+                "sampleAddress": "0x3a9280f3a7ac4dda31161d6df2f8139ae303d0ab",
+                "sampleTxHash": "0x00affb0b9673833d0c5968ccf5a977bd023675b6d374404dadc907879a02f5fe",
+                "found": 1,
+                "samples": 1
+            },
+            "bend": {
+                "is_erc20": 0,
+                "is_erc721": 0,
+                "is_erc20lp": 0,
+                "numLogs": 105,
+                "sampleAddress": "0x7941d082d46a9a8c3e8c2106187a24b74cc1bdd3",
+                "sampleTxHash": "0x0323cbc9859b570f3e48c92870dbeaa562844306f25ccd4e56b84640b7d8fd32",
+                "found": 1,
+                "samples": 1
+            }
+        }
     }
 }
