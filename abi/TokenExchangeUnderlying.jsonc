@@ -1,87 +1,42 @@
 {
-    "@id": "TokenExchangeUnderlying",
-    "hex_signature": "0xd013ca23e77a65003c2c659c5442c00c805371b7fc1ebd4c206c41d1536bd90b",
     "name": "TokenExchangeUnderlying",
-    "signature": "TokenExchangeUnderlying(address,int128,uint256,int128,uint256)",
-    "numLogs": 10689,
-    "numProjects": 3,
-    "inputs": [
+    "abis": [
         {
-            "@type": "dex:trader",
-            "type": "address",
-            "name": "buyer",
-            "features": {
-                "curve": {
-                    "is_erc20": 0.0121951,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 51685,
-                    "sampleAddress": "0x7122db0ebe4eb9b434a9f2ffe6760bc03bfbd0e0",
-                    "sampleTxHash": "0x00001561e3db0665334b7f27c559a1ed975ebe5f0fd17489f298146f9969f4ce",
-                    "found": 82,
-                    "samples": 100
+            "@id": "TokenExchangeUnderlying",
+            "hex_signature": "0xd013ca23e77a65003c2c659c5442c00c805371b7fc1ebd4c206c41d1536bd90b",
+            "type": "event",
+            "signature": "TokenExchangeUnderlying(address,int128,uint256,int128,uint256)",
+            "name": "TokenExchangeUnderlying",
+            "inputs": [
+                {
+                    "@type": "dex:trader",
+                    "type": "address",
+                    "name": "buyer"
                 },
-                "inverse": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 980,
-                    "sampleAddress": "0x0000000000a84d1a9b0063a910315c7ffa9cd248",
-                    "sampleTxHash": "0x010de54e21add4e15fda440af3c2fec0e875e3fef82729778f00f87b9a8936ec",
-                    "found": 48,
-                    "samples": 99
+                {
+                    "@type": "erc20:lookupid",
+                    "type": "int128",
+                    "name": "sold_id"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "type": "uint256",
+                    "name": "tokens_sold"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "type": "int128",
+                    "name": "bought_id"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$3",
+                    "type": "uint256",
+                    "name": "tokens_bought"
                 }
-            }
-        },
-        {
-            "@type": "erc20:lookupid",
-            "type": "int128",
-            "name": "sold_id"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "lookupid:$1",
-            "type": "uint256",
-            "name": "tokens_sold"
-        },
-        {
-            "@type": "erc20:lookupid",
-            "type": "int128",
-            "name": "bought_id"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "lookupid:$3",
-            "type": "uint256",
-            "name": "tokens_bought"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "curve": 10666,
-        "inverse": 22
-    },
-    "contract_address": {
-        "features": {
-            "curve": {
-                "is_erc20": 0.05,
-                "is_erc721": 0,
-                "is_erc20lp": 1,
-                "numLogs": 60350,
-                "sampleAddress": "0xed279fdd11ca84beef15af5d39bb4d4bee23f0ca",
-                "sampleTxHash": "0x000b7bfb5eab4846c9d7f9fdc3912d5a5e4fbdb7bfc2e1bc06c1091178f9f5a1",
-                "found": 100,
-                "samples": 100
-            },
-            "inverse": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 1,
-                "numLogs": 980,
-                "sampleAddress": "0xaa5a67c256e27a5d80712c51971408db3370927d",
-                "sampleTxHash": "0x010de54e21add4e15fda440af3c2fec0e875e3fef82729778f00f87b9a8936ec",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

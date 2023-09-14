@@ -1,0 +1,83 @@
+{
+    "name": "LogDeposit",
+    "abis": [
+        {
+            "@id": "LogDeposit_Locker",
+            "hex_signature": "0x5b5dbc6c64043a15d3fe6943a6e443a826b78755edc257b2ec890c022225dbcf",
+            "type": "event",
+            "signature": "LogDeposit(address,uint256,uint256,uint256,uint256)",
+            "name": "LogDeposit",
+            "inputs": [
+                {
+                    "@type": "dydx:locker",
+                    "name": "locker",
+                    "type": "address"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "lockTime",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dydx:lockType",
+                    "name": "lockType",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "LogDeposit_StarkKey",
+            "hex_signature": "0x06724742ccc8c330a39a641ef02a0b419bd09248360680bb38159b0a8c2635d6",
+            "type": "event",
+            "signature": "LogDeposit(address,uint256,uint256,uint256,uint256,uint256)",
+            "name": "LogDeposit",
+            "inputs": [
+                {
+                    "@type": "dydx:depositorEthKey",
+                    "name": "depositorEthKey",
+                    "type": "address"
+                },
+                {
+                    "@type": "dydx:starkKey",
+                    "name": "starkKey",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dydx:vaultId",
+                    "name": "vaultId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dydx:assetType",
+                    "name": "assetType",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "nonQuantizedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "quantizedAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

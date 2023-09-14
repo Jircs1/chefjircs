@@ -1,0 +1,276 @@
+{
+    "name": "Deposit",
+    "abis": [
+        {
+            "@id": "Deposit_BPS",
+            "hex_signature": "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15",
+            "type": "event",
+            "signature": "Deposit(address,uint256,uint256)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dex:bps",
+                    "name": "feeBps",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_DEX3",
+            "hex_signature": "0xb19157bff94fdd40c58c7d4a5d52e8eb8c2d570ca17b322b49a2bbbeedc82fbf",
+            "type": "event",
+            "signature": "Deposit(address,uint256,uint256,uint256,int24,int24)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "dex:liquidity",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "tickLower",
+                    "type": "int24"
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "tickUpper",
+                    "type": "int24"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_ERC20",
+            "hex_signature": "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+            "type": "event",
+            "signature": "Deposit(address,uint256)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_ERC721",
+            "hex_signature": "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+            "type": "event",
+            "signature": "Deposit(address,uint256)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "nftId",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_Lending",
+            "hex_signature": "0xde6857219544bb5b7746f48ed30be6386fefc61b2f864cacf559893bf50fd951",
+            "type": "event",
+            "signature": "Deposit(address,address,address,uint256,uint16)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "reserve",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "name": "onBehalfOf",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "referrer:referral",
+                    "name": "referral",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_PID",
+            "hex_signature": "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15",
+            "type": "event",
+            "signature": "Deposit(address,uint256,uint256)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_SG",
+            "hex_signature": "0xbe9cf0e939c614fad640a623a53ba0a807c8cb503c4c4c8dacabe27b86ff2dd5",
+            "type": "event",
+            "signature": "Deposit(address,uint256,uint256,uint8,uint256)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "provider",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "value",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "locktime",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "stargate:action",
+                    "name": "action",
+                    "type": "uint8"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "ts",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_SG2",
+            "hex_signature": "0xa945e51eec50ab98c161376f0db4cf2aeba3ec92755fe2fcd388bdbbb80ff196",
+            "type": "event",
+            "signature": "Deposit(bytes32,uint32,uint256)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "stargate:commitment",
+                    "name": "commitment",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "stargate:leafIndex",
+                    "name": "leafIndex",
+                    "type": "uint32"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposit_US",
+            "hex_signature": "0xdcbc1c05240f31ff3ad067ef1ee35ce4997762752e3a095284754544f4c709d7",
+            "type": "event",
+            "signature": "Deposit(address,address,uint256,uint256)",
+            "name": "Deposit",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$2",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

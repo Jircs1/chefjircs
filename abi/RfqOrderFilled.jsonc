@@ -1,118 +1,57 @@
 {
-    "@id": "RfqOrderFilled",
-    "hex_signature": "0x829fa99d94dc4636925b38632e625736a614c154d55006b7ab6bea979c210c32",
     "name": "RfqOrderFilled",
-    "signature": "RfqOrderFilled(bytes32,address,address,address,address,uint128,uint128,bytes32)",
-    "numLogs": 74141,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "0x:orderHash",
-            "name": "orderHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "dex:maker",
-            "name": "maker",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 275926,
-                    "sampleAddress": "0xa69babef1ca67a37ffaf7a485dfff3382056e78c",
-                    "sampleTxHash": "0x00000e4e40911b6232bcb9f29abb96c95637cb5118b7b8821672c8111d4749fa",
-                    "found": 10,
-                    "samples": 100
+            "@id": "RfqOrderFilled",
+            "hex_signature": "0x829fa99d94dc4636925b38632e625736a614c154d55006b7ab6bea979c210c32",
+            "type": "event",
+            "signature": "RfqOrderFilled(bytes32,address,address,address,address,uint128,uint128,bytes32)",
+            "name": "RfqOrderFilled",
+            "inputs": [
+                {
+                    "@type": "0x:orderHash",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "dex:maker",
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:taker",
+                    "name": "taker",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "makerToken",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "takerToken",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$4",
+                    "name": "takerTokenFilledAmount",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$3",
+                    "name": "makerTokenFilledAmount",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "0x:pool",
+                    "name": "pool",
+                    "type": "bytes32"
                 }
-            }
-        },
-        {
-            "@type": "dex:taker",
-            "name": "taker",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 267173,
-                    "sampleAddress": "0x74de5d4fcbf63e00296fd95d33236b9794016631",
-                    "sampleTxHash": "0x00000e4e40911b6232bcb9f29abb96c95637cb5118b7b8821672c8111d4749fa",
-                    "found": 21,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:token",
-            "name": "makerToken",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0.989899,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 276008,
-                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-                    "sampleTxHash": "0x0001e625f180cdc84a72370e9188bfa39bb877eee67f8176ac8617d13f388c0b",
-                    "found": 99,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:token",
-            "name": "takerToken",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0.989899,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 276009,
-                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-                    "sampleTxHash": "0x00000e4e40911b6232bcb9f29abb96c95637cb5118b7b8821672c8111d4749fa",
-                    "found": 99,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$4",
-            "name": "takerTokenFilledAmount",
-            "type": "uint128"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$3",
-            "name": "makerTokenFilledAmount",
-            "type": "uint128"
-        },
-        {
-            "@type": "0x:pool",
-            "name": "pool",
-            "type": "bytes32"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "0x": 73991,
-        "metamask": 150
-    },
-    "contract_address": {
-        "features": {
-            "0x": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 276016,
-                "sampleAddress": "0xdef1c0ded9bec7f1a1670819833240f027b25eff",
-                "sampleTxHash": "0x00000e4e40911b6232bcb9f29abb96c95637cb5118b7b8821672c8111d4749fa",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

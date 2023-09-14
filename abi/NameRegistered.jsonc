@@ -1,54 +1,106 @@
 {
-    "@id": "NameRegistered",
-    "hex_signature": "0xb3d987963d01b2f68493b4bdb130988f157ea43070d4ad840fee0466ed9370d9",
     "name": "NameRegistered",
-    "signature": "NameRegistered(uint256,address,uint256)",
-    "numLogs": 94441,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "ens:id",
-            "name": "id",
-            "type": "uint256"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "owner",
-            "type": "address",
-            "features": {
-                "ens": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 630383,
-                    "sampleAddress": "0x283af0b28c62c092c9727f1ee09c02ca627eb7f5",
-                    "sampleTxHash": "0x000011d15d00ea42f17e2b4c2f3a351fa31cf173256dbfb1829b3a616d956a97",
-                    "found": 2,
-                    "samples": 100
+            "@id": "NameRegistered",
+            "hex_signature": "0xb3d987963d01b2f68493b4bdb130988f157ea43070d4ad840fee0466ed9370d9",
+            "type": "event",
+            "signature": "NameRegistered(uint256,address,uint256)",
+            "name": "NameRegistered",
+            "inputs": [
+                {
+                    "@type": "ens:id",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "expires",
+                    "type": "uint256",
+                    "validationFailure": true
                 }
-            }
+            ],
+            "outputs": null
         },
         {
-            "@type": "evm:timestamp",
-            "name": "expires",
-            "type": "uint256"
+            "@id": "NameRegistered_CostLabel",
+            "hex_signature": "0xca6abbe9d7f11422cb6ca7629fbf6fe9efb1c621f71ce8f02b9f2a230097404f",
+            "type": "event",
+            "signature": "NameRegistered(string,bytes32,address,uint256,uint256)",
+            "name": "NameRegistered",
+            "inputs": [
+                {
+                    "@type": "ens:name",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "@type": "ens:label",
+                    "name": "label",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "cost",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "expires",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "NameRegistered_Premium",
+            "hex_signature": "0x69e37f151eb98a09618ddaa80c8cfaf1ce5996867c489f45b555b412271ebf27",
+            "type": "event",
+            "signature": "NameRegistered(string,bytes32,address,uint256,uint256,uint256)",
+            "name": "NameRegistered",
+            "inputs": [
+                {
+                    "@type": "ens:name",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "@type": "ens:label",
+                    "name": "label",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "baseCost",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "premium",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "expires",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "ens": 94441
-    },
-    "contract_address": {
-        "features": {
-            "ens": {
-                "is_erc20": 0,
-                "is_erc721": 1,
-                "is_erc20lp": 0,
-                "numLogs": 853722,
-                "sampleAddress": "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
-                "sampleTxHash": "0x000011d15d00ea42f17e2b4c2f3a351fa31cf173256dbfb1829b3a616d956a97",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

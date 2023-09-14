@@ -1,64 +1,40 @@
 {
-    "@id": "PacketReceived",
-    "hex_signature": "0x2bd2d8a84b748439fd50d79a49502b4eb5faa25b864da6a9ab5c150704be9a4d",
     "name": "PacketReceived",
-    "signature": "PacketReceived(uint16,bytes,address,uint64,bytes32)",
-    "numLogs": 776806,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "layerzero:chainID",
-            "name": "srcChainId",
-            "type": "uint16"
-        },
-        {
-            "@type": "transfer:from",
-            "name": "srcAddress",
-            "type": "bytes"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "dstAddress",
-            "type": "address",
-            "features": {
-                "layerzero": {
-                    "is_erc20": 0.26,
-                    "is_erc721": 0.27,
-                    "is_erc20lp": 0,
-                    "numLogs": 976923,
-                    "sampleAddress": "0xaf54be5b6eec24d6bfacf1cce4eaf680a8239398",
-                    "sampleTxHash": "0x00000af4dce7e471dace87ad21133a76019fccecc7e085d77f1eff60e6abcea4",
-                    "found": 100,
-                    "samples": 100
+            "@id": "PacketReceived",
+            "hex_signature": "0x2bd2d8a84b748439fd50d79a49502b4eb5faa25b864da6a9ab5c150704be9a4d",
+            "type": "event",
+            "signature": "PacketReceived(uint16,bytes,address,uint64,bytes32)",
+            "name": "PacketReceived",
+            "inputs": [
+                {
+                    "@type": "layerzero:chainID",
+                    "name": "srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "@type": "transfer:from",
+                    "name": "srcAddress",
+                    "type": "bytes"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "dstAddress",
+                    "type": "address"
+                },
+                {
+                    "@type": "evm:nonce",
+                    "name": "nonce",
+                    "type": "uint64"
+                },
+                {
+                    "@type": "layerzero:payloadHash",
+                    "name": "payloadHash",
+                    "type": "bytes32"
                 }
-            }
-        },
-        {
-            "@type": "evm:nonce",
-            "name": "nonce",
-            "type": "uint64"
-        },
-        {
-            "@type": "layerzero:payloadHash",
-            "name": "payloadHash",
-            "type": "bytes32"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "layerzero": 776806
-    },
-    "contract_address": {
-        "features": {
-            "layerzero": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 979924,
-                "sampleAddress": "0x38de71124f7a447a01d67945a51edce9ff491251",
-                "sampleTxHash": "0x00000524efc05a04cc2160c93635c48b88e29762d0edade7922bd95d9ef80287",
-                "found": 3,
-                "samples": 3
-            }
-        }
-    }
+    ]
 }

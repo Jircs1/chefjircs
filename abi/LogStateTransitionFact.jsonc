@@ -1,54 +1,20 @@
 {
-    "@id": "LogStateTransitionFact",
-    "hex_signature": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
     "name": "LogStateTransitionFact",
-    "signature": "LogStateTransitionFact(bytes32)",
-    "numLogs": 119721,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "starknet:stateTransitionFact",
-            "name": "stateTransitionFact",
-            "type": "bytes32"
+            "@id": "LogStateTransitionFact",
+            "hex_signature": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
+            "type": "event",
+            "signature": "LogStateTransitionFact(bytes32)",
+            "name": "LogStateTransitionFact",
+            "inputs": [
+                {
+                    "@type": "starknet:stateTransitionFact",
+                    "name": "stateTransitionFact",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "starknet": 119107,
-        "dydx": 6494,
-        "deversifi": 614
-    },
-    "contract_address": {
-        "features": {
-            "starknet": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 180474,
-                "sampleAddress": "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4",
-                "sampleTxHash": "0x000019af114220e90ad5e4f56bb162a77ad850591a815405e304f3dcd47e9ca2",
-                "found": 1,
-                "samples": 1
-            },
-            "dydx": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 25241,
-                "sampleAddress": "0x5fdcca53617f4d2b9134b29090c87d01058e27e9",
-                "sampleTxHash": "0x0004db0cd7a01968b17ad0e734723ca70bb7ef34cc88b379defd8284ce0d695b",
-                "found": 6,
-                "samples": 6
-            },
-            "deversifi": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 1451,
-                "sampleAddress": "0x5d22045daceab03b158031ecb7d9d06fad24609b",
-                "sampleTxHash": "0x000628b691c9fad58deb100aa36b24eb5f0236880531c9617c63c82eb5910e46",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

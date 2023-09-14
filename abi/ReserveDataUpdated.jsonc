@@ -1,90 +1,45 @@
 {
-    "@id": "ReserveDataUpdated",
-    "hex_signature": "0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a",
     "name": "ReserveDataUpdated",
-    "signature": "ReserveDataUpdated(address,uint256,uint256,uint256,uint256,uint256)",
-    "numLogs": 77767,
-    "numProjects": 3,
-    "inputs": [
+    "abis": [
         {
-            "@type": "lending:reserve",
-            "name": "reserve",
-            "type": "address",
-            "features": {
-                "aave": {
-                    "is_erc20": 0.941176,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0.0980392,
-                    "numLogs": 426625,
-                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-                    "sampleTxHash": "0x00001ed05b2ebadc3ec01932e2862fd3746d9a48d91830252d8658c9d0c29d87",
-                    "found": 51,
-                    "samples": 51
+            "@id": "ReserveDataUpdated",
+            "hex_signature": "0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a",
+            "type": "event",
+            "signature": "ReserveDataUpdated(address,uint256,uint256,uint256,uint256,uint256)",
+            "name": "ReserveDataUpdated",
+            "inputs": [
+                {
+                    "@type": "lending:reserve",
+                    "name": "reserve",
+                    "type": "address"
                 },
-                "lendingpool": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 29332,
-                    "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
-                    "sampleTxHash": "0x0028ebb58ae1292576833c19ea89415130302de978ceae30e569b333d319411c",
-                    "found": 14,
-                    "samples": 14
+                {
+                    "@type": "lending:rate",
+                    "name": "liquidityRate",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "lending:rate",
+                    "name": "stableBorrowRate",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "lending:rate",
+                    "name": "variableBorrowRate",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "lending:liquidityIndex",
+                    "name": "liquidityIndex",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "lending:variableBorrowIndex",
+                    "name": "variableBorrowIndex",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "@type": "lending:rate",
-            "name": "liquidityRate",
-            "type": "uint256"
-        },
-        {
-            "@type": "lending:rate",
-            "name": "stableBorrowRate",
-            "type": "uint256"
-        },
-        {
-            "@type": "lending:rate",
-            "name": "variableBorrowRate",
-            "type": "uint256"
-        },
-        {
-            "@type": "lending:liquidityIndex",
-            "name": "liquidityIndex",
-            "type": "uint256"
-        },
-        {
-            "@type": "lending:variableBorrowIndex",
-            "name": "variableBorrowIndex",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "aave": 76013,
-        "lendingpool": 1748
-    },
-    "contract_address": {
-        "features": {
-            "aave": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 426625,
-                "sampleAddress": "0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9",
-                "sampleTxHash": "0x00001ed05b2ebadc3ec01932e2862fd3746d9a48d91830252d8658c9d0c29d87",
-                "found": 3,
-                "samples": 3
-            },
-            "lendingpool": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 29332,
-                "sampleAddress": "0x2409af0251dcb89ee3dee572629291f9b087c668",
-                "sampleTxHash": "0x0016fbccc742cf7b4f87ab2e73dd73abf4fa519308ac3df67167b2541c3ea383",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

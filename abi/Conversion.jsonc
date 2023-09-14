@@ -1,0 +1,94 @@
+{
+    "name": "Conversion",
+    "abis": [
+        {
+            "@id": "Conversion_Fee",
+            "hex_signature": "0x276856b36cbc45526a0ba64f44611557a2a8b68662c5388e9fe6d72e86e1c8cb",
+            "type": "event",
+            "signature": "Conversion(address,address,address,uint256,uint256,int256)",
+            "name": "Conversion",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "_fromToken",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "_toToken",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:trader",
+                    "name": "_trader",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "_return",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "_conversionFee",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Conversion_Trader",
+            "hex_signature": "0x7154b38b5dd31bb3122436a96d4e09aba5b323ae1fd580025fab55074334c095",
+            "type": "event",
+            "signature": "Conversion(address,address,address,uint256,uint256,address)",
+            "name": "Conversion",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "_smartToken",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "_fromToken",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "_toToken",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "_fromAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "name": "_toAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "dex:trader",
+                    "name": "_trader",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

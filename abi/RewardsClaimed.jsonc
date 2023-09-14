@@ -1,0 +1,49 @@
+{
+    "name": "RewardsClaimed",
+    "abis": [
+        {
+            "@id": "RewardsClaimed_ERC20",
+            "hex_signature": "0xfc30cddea38e2bf4d6ea7d3f9ed3b6ad7f176419f4963bd81318067a4aee73fe",
+            "type": "event",
+            "signature": "RewardsClaimed(address,uint256)",
+            "name": "RewardsClaimed",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "RewardsClaimed_Recipient",
+            "hex_signature": "0xfc30cddea38e2bf4d6ea7d3f9ed3b6ad7f176419f4963bd81318067a4aee73fe",
+            "type": "event",
+            "signature": "RewardsClaimed(address,uint256)",
+            "name": "RewardsClaimed",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "snxAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

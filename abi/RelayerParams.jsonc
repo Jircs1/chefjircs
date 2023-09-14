@@ -1,38 +1,25 @@
 {
-    "@id": "RelayerParams",
-    "hex_signature": "0xb0c632f55f1e1b3b2c3d82f41ee4716bb4c00f0f5d84cdafc141581bb8757a4f",
     "name": "RelayerParams",
-    "signature": "RelayerParams(bytes,uint16)",
-    "numLogs": 392643,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "layerzero:adapterParams",
-            "name": "adapterParams",
-            "type": "bytes"
-        },
-        {
-            "@type": "layerzero:outboundProofType",
-            "name": "outboundProofType",
-            "type": "uint16"
+            "@id": "RelayerParams",
+            "hex_signature": "0xb0c632f55f1e1b3b2c3d82f41ee4716bb4c00f0f5d84cdafc141581bb8757a4f",
+            "type": "event",
+            "signature": "RelayerParams(bytes,uint16)",
+            "name": "RelayerParams",
+            "inputs": [
+                {
+                    "@type": "layerzero:adapterParams",
+                    "name": "adapterParams",
+                    "type": "bytes"
+                },
+                {
+                    "@type": "layerzero:outboundProofType",
+                    "name": "outboundProofType",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "layerzero": 391665,
-        "stargate": 978
-    },
-    "contract_address": {
-        "features": {
-            "layerzero": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 254271,
-                "sampleAddress": "0x38de71124f7a447a01d67945a51edce9ff491251",
-                "sampleTxHash": "0x000049beb778f30ebaec615c97558df5e4f3ca1f4a48624897eac58a8ac9c1dd",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

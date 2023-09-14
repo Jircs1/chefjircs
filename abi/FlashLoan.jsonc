@@ -1,0 +1,72 @@
+{
+    "name": "FlashLoan",
+    "abis": [
+        {
+            "@id": "FlashLoan_Lender",
+            "hex_signature": "0x0d7d75e01ab95780d3cd1c8ec0dd6c2ce19e3a20427eec8bf53283b6fb8e95f0",
+            "type": "event",
+            "signature": "FlashLoan(address,address,uint256,uint256)",
+            "name": "FlashLoan",
+            "inputs": [
+                {
+                    "@type": "balancer:lender",
+                    "name": "lender",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "amountLoaned",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "amountRepayed",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "FlashLoan_Recipient",
+            "hex_signature": "0x0d7d75e01ab95780d3cd1c8ec0dd6c2ce19e3a20427eec8bf53283b6fb8e95f0",
+            "type": "event",
+            "signature": "FlashLoan(address,address,uint256,uint256)",
+            "name": "FlashLoan",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "internalType": "contract IFlashLoanRecipient",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "feeAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

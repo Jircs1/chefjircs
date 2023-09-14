@@ -1,277 +1,104 @@
 {
-    "@id": "OrderFulfilled",
-    "hex_signature": "0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31",
     "name": "OrderFulfilled",
-    "signature": "OrderFulfilled(bytes32,address,address,address,(uint8,address,uint256,uint256)[],(uint8,address,uint256,uint256,address)[])",
-    "numLogs": 2570911,
-    "numProjects": 4,
-    "inputs": [
+    "abis": [
         {
-            "@type": "opensea:orderHash",
-            "name": "orderHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "opensea:offerer",
-            "name": "offerer",
-            "type": "address",
-            "features": {
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 391628,
-                    "sampleAddress": "0x3a8713065e4daa9603b91ef35d6a8336ef7b26c6",
-                    "sampleTxHash": "0x00113a2db2c8dff12cea61901f678307a6684cbc585448f94fc3cf28edafe3d3",
-                    "found": 0,
-                    "samples": 100
-                },
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 346207,
-                    "sampleAddress": "0x3a8713065e4daa9603b91ef35d6a8336ef7b26c6",
-                    "sampleTxHash": "0x00113a2db2c8dff12cea61901f678307a6684cbc585448f94fc3cf28edafe3d3",
-                    "found": 0,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 346207,
-                    "sampleAddress": "0x3a8713065e4daa9603b91ef35d6a8336ef7b26c6",
-                    "sampleTxHash": "0x00113a2db2c8dff12cea61901f678307a6684cbc585448f94fc3cf28edafe3d3",
-                    "found": 0,
-                    "samples": 100
-                },
-                "para.space": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 103,
-                    "sampleAddress": "0x14ff0bc9417b6796f79768729002a793b51205b8",
-                    "sampleTxHash": "0x3cb92c027b711570900bb4a544f6f7635ea9a9ebfa90ec7d3f69d11c5fe55a79",
-                    "found": 0,
-                    "samples": 61
-                }
-            }
-        },
-        {
-            "@type": "opensea:zone",
-            "name": "zone",
-            "type": "address",
-            "features": {
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 12594340,
-                    "sampleAddress": "0x004c00500000ad104d7dbd00e3ae0a5c00560c00",
-                    "sampleTxHash": "0x000000a15bff08f6b43abaad5fb500bcf9a261b3f3b71e0307e2bdfa09be476a",
-                    "found": 14,
-                    "samples": 100
-                },
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 11184829,
-                    "sampleAddress": "0x004c00500000ad104d7dbd00e3ae0a5c00560c00",
-                    "sampleTxHash": "0x000000a15bff08f6b43abaad5fb500bcf9a261b3f3b71e0307e2bdfa09be476a",
-                    "found": 14,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 11184829,
-                    "sampleAddress": "0x004c00500000ad104d7dbd00e3ae0a5c00560c00",
-                    "sampleTxHash": "0x000000a15bff08f6b43abaad5fb500bcf9a261b3f3b71e0307e2bdfa09be476a",
-                    "found": 14,
-                    "samples": 100
-                },
-                "para.space": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 103,
-                    "sampleAddress": "0x0000000000000000000000000000000000000000",
-                    "sampleTxHash": "0x00eae67b7544f99e4db14c1aa4d93c7c742b0d56877fa94dfca9a0a335ca9b56",
-                    "found": 0,
-                    "samples": 1
-                }
-            }
-        },
-        {
-            "@type": "transfer:to",
-            "name": "recipient",
-            "type": "address",
-            "features": {
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 809381,
-                    "sampleAddress": "0x0000000000000000000000000000000000000000",
-                    "sampleTxHash": "0x00011c2dfee5f136af181702dcdaba0324d7de84aaed570cc051f330ca19ba8f",
-                    "found": 13,
-                    "samples": 100
-                },
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 767072,
-                    "sampleAddress": "0x0000000000000000000000000000000000000000",
-                    "sampleTxHash": "0x00011c2dfee5f136af181702dcdaba0324d7de84aaed570cc051f330ca19ba8f",
-                    "found": 12,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 767072,
-                    "sampleAddress": "0x0000000000000000000000000000000000000000",
-                    "sampleTxHash": "0x00011c2dfee5f136af181702dcdaba0324d7de84aaed570cc051f330ca19ba8f",
-                    "found": 12,
-                    "samples": 100
-                },
-                "para.space": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 103,
-                    "sampleAddress": "0x0000000000000000000000000000000000000000",
-                    "sampleTxHash": "0x00eae67b7544f99e4db14c1aa4d93c7c742b0d56877fa94dfca9a0a335ca9b56",
-                    "found": 1,
-                    "samples": 2
-                }
-            }
-        },
-        {
-            "components": [
+            "@id": "OrderFulfilled",
+            "hex_signature": "0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31",
+            "type": "event",
+            "signature": "OrderFulfilled(bytes32,address,address,address,(uint8,address,uint256,uint256)[],(uint8,address,uint256,uint256,address)[])",
+            "name": "OrderFulfilled",
+            "inputs": [
                 {
-                    "@type": "opensea:itemType",
-                    "internalType": "enum ItemType",
-                    "name": "itemType",
-                    "type": "uint8"
+                    "@type": "opensea:orderHash",
+                    "name": "orderHash",
+                    "type": "bytes32"
                 },
                 {
-                    "@type": "erc721:token",
-                    "internalType": "address",
-                    "name": "token",
+                    "@type": "opensea:offerer",
+                    "name": "offerer",
                     "type": "address"
                 },
                 {
-                    "@type": "erc721:tokenID",
-                    "internalType": "uint256",
-                    "name": "identifier",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "erc721:tokenAmount",
-                    "@token": "$1",
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
-                }
-            ],
-            "internalType": "struct SpentItem[]",
-            "name": "offer",
-            "type": "tuple[]"
-        },
-        {
-            "components": [
-                {
-                    "@type": "opensea:itemType",
-                    "internalType": "enum ItemType",
-                    "name": "itemType",
-                    "type": "uint8"
-                },
-                {
-                    "@type": "erc721:token",
-                    "internalType": "address",
-                    "name": "token",
+                    "@type": "opensea:zone",
+                    "name": "zone",
                     "type": "address"
-                },
-                {
-                    "@type": "evm:index",
-                    "internalType": "uint256",
-                    "name": "identifier",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "erc721:tokenID",
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
                 },
                 {
                     "@type": "transfer:to",
-                    "internalType": "address payable",
                     "name": "recipient",
                     "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "@type": "opensea:itemType",
+                            "internalType": "enum ItemType",
+                            "name": "itemType",
+                            "type": "uint8"
+                        },
+                        {
+                            "@type": "erc721:token",
+                            "internalType": "address",
+                            "name": "token",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "erc721:tokenID",
+                            "internalType": "uint256",
+                            "name": "identifier",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "erc721:tokenAmount",
+                            "@token": "$1",
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct SpentItem[]",
+                    "name": "offer",
+                    "type": "tuple[]"
+                },
+                {
+                    "components": [
+                        {
+                            "@type": "opensea:itemType",
+                            "internalType": "enum ItemType",
+                            "name": "itemType",
+                            "type": "uint8"
+                        },
+                        {
+                            "@type": "erc721:token",
+                            "internalType": "address",
+                            "name": "token",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "evm:index",
+                            "internalType": "uint256",
+                            "name": "identifier",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "erc721:tokenID",
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "transfer:to",
+                            "internalType": "address payable",
+                            "name": "recipient",
+                            "type": "address"
+                        }
+                    ],
+                    "internalType": "struct ReceivedItem[]",
+                    "name": "consideration",
+                    "type": "tuple[]"
                 }
             ],
-            "internalType": "struct ReceivedItem[]",
-            "name": "consideration",
-            "type": "tuple[]"
+            "outputs": null
         }
-    ],
-    "projects": {
-        "opensea": 856987,
-        "dharma": 856954,
-        "vectorized": 856954,
-        "para.space": 28,
-        "blur": 17,
-        "1 others": 16
-    },
-    "contract_address": {
-        "features": {
-            "opensea": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 12595379,
-                "sampleAddress": "0x00000000006c3852cbef3e08e8df289169ede581",
-                "sampleTxHash": "0x000000a15bff08f6b43abaad5fb500bcf9a261b3f3b71e0307e2bdfa09be476a",
-                "found": 6,
-                "samples": 6
-            },
-            "dharma": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 11185864,
-                "sampleAddress": "0x00000000006c3852cbef3e08e8df289169ede581",
-                "sampleTxHash": "0x000000a15bff08f6b43abaad5fb500bcf9a261b3f3b71e0307e2bdfa09be476a",
-                "found": 6,
-                "samples": 6
-            },
-            "vectorized": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 11185864,
-                "sampleAddress": "0x00000000006c3852cbef3e08e8df289169ede581",
-                "sampleTxHash": "0x000000a15bff08f6b43abaad5fb500bcf9a261b3f3b71e0307e2bdfa09be476a",
-                "found": 6,
-                "samples": 6
-            },
-            "para.space": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 103,
-                "sampleAddress": "0xe5db2791fc60f58bc3537263c17a8daa549999d6",
-                "sampleTxHash": "0x00eae67b7544f99e4db14c1aa4d93c7c742b0d56877fa94dfca9a0a335ca9b56",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

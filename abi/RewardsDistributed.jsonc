@@ -1,135 +1,27 @@
 {
-    "@id": "RewardsDistributed",
-    "hex_signature": "0xdf29796aad820e4bb192f3a8d631b76519bcd2cbe77cc85af20e9df53cece086",
     "name": "RewardsDistributed",
-    "signature": "RewardsDistributed(address,uint256)",
-    "numLogs": 7362,
-    "numProjects": 6,
-    "inputs": [
+    "abis": [
         {
-            "@type": "transfer:from",
-            "name": "from",
-            "type": "address",
-            "features": {
-                "nftx": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 18169,
-                    "sampleAddress": "0x688c3e4658b5367da06fd629e41879beab538e37",
-                    "sampleTxHash": "0x0000a964aa55cdcc06b534953b1d72845b3f5487291514744d5b29cdc5114e89",
-                    "found": 1,
-                    "samples": 1
+            "@id": "RewardsDistributed",
+            "hex_signature": "0xdf29796aad820e4bb192f3a8d631b76519bcd2cbe77cc85af20e9df53cece086",
+            "type": "event",
+            "signature": "RewardsDistributed(address,uint256)",
+            "name": "RewardsDistributed",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
                 },
-                "cryptounicorns": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 4162,
-                    "sampleAddress": "0x2d9fd7ad43e75d1f991de6cc876d2285cf8ccbf0",
-                    "sampleTxHash": "0x046ce3e6768d24ba0b570f91134e385beb829bca1e2ef8bc5f995185560bfe6b",
-                    "found": 5,
-                    "samples": 100
-                },
-                "asap": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 2228,
-                    "sampleAddress": "0xc36ad98e62598ae24d4487d8012209f687c30d45",
-                    "sampleTxHash": "0x00432f8d4ffbda80099020564c80a2c17503b7faca12ac7f9e75c2ccfc68ade8",
-                    "found": 1,
-                    "samples": 1
-                },
-                "convex": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 406,
-                    "sampleAddress": "0xc2544a32872a91f4a553b404c6950e89de901fdb",
-                    "sampleTxHash": "0x022c12ef3ec703b98833f942a3a7d9f6103d05bdc34808f11ba69970ea431063",
-                    "found": 4,
-                    "samples": 4
-                },
-                "ethlinq": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 9,
-                    "sampleAddress": "0xa48f54ce738a55b9784bf6ea704e7f64a661ef73",
-                    "sampleTxHash": "0x1219a47c4f708a976fe37321d6a35c3c85faaa07002bab104691728b0559878d",
-                    "found": 0,
-                    "samples": 1
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "weiAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
                 }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "weiAmount",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "nftx": 4206,
-        "asap": 2188,
-        "cryptounicorns": 664,
-        "ethlinq": 172,
-        "convex": 118,
-        "3 others": 115
-    },
-    "contract_address": {
-        "features": {
-            "nftx": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 15056,
-                "sampleAddress": "0x6c6bce43323f6941fd6febe8ff3208436e8e0dc7",
-                "sampleTxHash": "0x000f5670e6aef4110d05799a0e11f185d370d958295f746933f08eb3216f0e5d",
-                "found": 100,
-                "samples": 100
-            },
-            "cryptounicorns": {
-                "is_erc20": 0.5,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 4233,
-                "sampleAddress": "0xfd91fe0563dd210d2cc33d8978a8ea3deeaf216a",
-                "sampleTxHash": "0x0092b3e0b72d8ed2cdb7faea9f62cc149def1bbccb4109ac90ae7f3362d34176",
-                "found": 18,
-                "samples": 18
-            },
-            "asap": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 2228,
-                "sampleAddress": "0x7c7aa99027892c5647d8733c8e0f0b3fde4147bc",
-                "sampleTxHash": "0x00432f8d4ffbda80099020564c80a2c17503b7faca12ac7f9e75c2ccfc68ade8",
-                "found": 1,
-                "samples": 1
-            },
-            "convex": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 406,
-                "sampleAddress": "0x3a562a8ceb9866bcf39bb5eda32f282d619e08e0",
-                "sampleTxHash": "0x022c12ef3ec703b98833f942a3a7d9f6103d05bdc34808f11ba69970ea431063",
-                "found": 8,
-                "samples": 8
-            },
-            "ethlinq": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 9,
-                "sampleAddress": "0x65ab7aed6c8ba2e35f75135c3039c0b5d944bc1a",
-                "sampleTxHash": "0x1219a47c4f708a976fe37321d6a35c3c85faaa07002bab104691728b0559878d",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

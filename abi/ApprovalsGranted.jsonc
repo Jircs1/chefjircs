@@ -1,91 +1,25 @@
 {
-    "@id": "ApprovalsGranted",
-    "hex_signature": "0x2689e1a312b4212a2eb518d23bfd4c7cc30e3a7bc7a7e2524e8ec16e6a3713ab",
     "name": "ApprovalsGranted",
-    "signature": "ApprovalsGranted(address,address[])",
-    "numLogs": 27369,
-    "numProjects": 3,
-    "inputs": [
+    "abis": [
         {
-            "@type": "dex:admin",
-            "name": "user",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 228,
-                    "sampleAddress": "0x38fcee2d166879584e171e9ad2058527fbf5abb5",
-                    "sampleTxHash": "0x161408178657d8ed4851c4b953ba2ed8717fedb2eacdfe4743d818d7d96206b5",
-                    "found": 1,
-                    "samples": 100
+            "@id": "ApprovalsGranted",
+            "hex_signature": "0x2689e1a312b4212a2eb518d23bfd4c7cc30e3a7bc7a7e2524e8ec16e6a3713ab",
+            "type": "event",
+            "signature": "ApprovalsGranted(address,address[])",
+            "name": "ApprovalsGranted",
+            "inputs": [
+                {
+                    "@type": "dex:admin",
+                    "name": "user",
+                    "type": "address"
                 },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 228,
-                    "sampleAddress": "0x38fcee2d166879584e171e9ad2058527fbf5abb5",
-                    "sampleTxHash": "0x161408178657d8ed4851c4b953ba2ed8717fedb2eacdfe4743d818d7d96206b5",
-                    "found": 1,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 228,
-                    "sampleAddress": "0x38fcee2d166879584e171e9ad2058527fbf5abb5",
-                    "sampleTxHash": "0x161408178657d8ed4851c4b953ba2ed8717fedb2eacdfe4743d818d7d96206b5",
-                    "found": 0,
-                    "samples": 100
+                {
+                    "@type": "dex:operators",
+                    "name": "operators",
+                    "type": "address[]"
                 }
-            }
-        },
-        {
-            "@type": "dex:operators",
-            "name": "operators",
-            "type": "address[]"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "dharma": 9123,
-        "opensea": 9123,
-        "vectorized": 9123
-    },
-    "contract_address": {
-        "features": {
-            "dharma": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 14799,
-                "sampleAddress": "0x000000000060c4ca14cfc4325359062ace33fe3d",
-                "sampleTxHash": "0x0000a28abbdc49e81c5a9b7ae9dcba95122d7959df59c9252347b187345bec66",
-                "found": 2,
-                "samples": 2
-            },
-            "opensea": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 14799,
-                "sampleAddress": "0x000000000060c4ca14cfc4325359062ace33fe3d",
-                "sampleTxHash": "0x0000a28abbdc49e81c5a9b7ae9dcba95122d7959df59c9252347b187345bec66",
-                "found": 2,
-                "samples": 2
-            },
-            "vectorized": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 14799,
-                "sampleAddress": "0x000000000060c4ca14cfc4325359062ace33fe3d",
-                "sampleTxHash": "0x0000a28abbdc49e81c5a9b7ae9dcba95122d7959df59c9252347b187345bec66",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

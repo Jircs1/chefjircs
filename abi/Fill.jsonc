@@ -1,135 +1,75 @@
 {
-    "@id": "Fill",
-    "hex_signature": "0x0bcc4c97732e47d9946f229edb95f5b6323f601300e4690de719993f3c371129",
     "name": "Fill",
-    "signature": "Fill(address,address,address,address,uint256,uint256,uint256,uint256,bytes32,bytes,bytes)",
-    "numLogs": 13888,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "erc20:token",
-            "name": "makerAddress",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 125914,
-                    "sampleAddress": "0x56178a0d5f301baf6cf3e1cd53d9863437345bf9",
-                    "sampleTxHash": "0x0000967e8a44591129468a3c47a281e750daf5131816685dd0eddda71606075d",
-                    "found": 3,
-                    "samples": 100
+            "@id": "Fill",
+            "hex_signature": "0x0bcc4c97732e47d9946f229edb95f5b6323f601300e4690de719993f3c371129",
+            "type": "event",
+            "signature": "Fill(address,address,address,address,uint256,uint256,uint256,uint256,bytes32,bytes,bytes)",
+            "name": "Fill",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "makerAddress",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "feeRecipientAddress",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "takerAddress",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:from",
+                    "name": "senderAddress",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "makerAssetFilledAmount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "takerAssetFilledAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "makerFeePaid",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "name": "takerFeePaid",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "0x:orderHash",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "0x:assetData",
+                    "name": "makerAssetData",
+                    "type": "bytes"
+                },
+                {
+                    "@type": "0x:assetData",
+                    "name": "takerAssetData",
+                    "type": "bytes"
                 }
-            }
-        },
-        {
-            "@type": "transfer:to",
-            "name": "feeRecipientAddress",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 95212,
-                    "sampleAddress": "0x55662e225a3376759c24331a9aed764f8f0c9fbb",
-                    "sampleTxHash": "0x0000967e8a44591129468a3c47a281e750daf5131816685dd0eddda71606075d",
-                    "found": 1,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:token",
-            "name": "takerAddress",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 125561,
-                    "sampleAddress": "0x8d90113a1e286a5ab3e496fbd1853f265e5913c6",
-                    "sampleTxHash": "0x000396e07aa4557086b41d35abb3641ee5b39ea5d078950cc533f705037a9c06",
-                    "found": 14,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "transfer:from",
-            "name": "senderAddress",
-            "type": "address",
-            "features": {
-                "0x": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 125561,
-                    "sampleAddress": "0x8d90113a1e286a5ab3e496fbd1853f265e5913c6",
-                    "sampleTxHash": "0x000396e07aa4557086b41d35abb3641ee5b39ea5d078950cc533f705037a9c06",
-                    "found": 14,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$0",
-            "name": "makerAssetFilledAmount",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$1",
-            "name": "takerAssetFilledAmount",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$0",
-            "name": "makerFeePaid",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$2",
-            "name": "takerFeePaid",
-            "type": "uint256"
-        },
-        {
-            "@type": "0x:orderHash",
-            "name": "orderHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "0x:assetData",
-            "name": "makerAssetData",
-            "type": "bytes"
-        },
-        {
-            "@type": "0x:assetData",
-            "name": "takerAssetData",
-            "type": "bytes"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "0x": 13888,
-        "tokenlon": 50
-    },
-    "contract_address": {
-        "features": {
-            "0x": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 128187,
-                "sampleAddress": "0x080bf510fcbf18b91105470639e9561022937712",
-                "sampleTxHash": "0x0000967e8a44591129468a3c47a281e750daf5131816685dd0eddda71606075d",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

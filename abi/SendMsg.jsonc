@@ -1,37 +1,25 @@
 {
-    "@id": "SendMsg",
-    "hex_signature": "0x8d3ee0df6a4b7e82a7f20a763f1c6826e6176323e655af64f32318827d2112d4",
     "name": "SendMsg",
-    "signature": "SendMsg(uint8,uint64)",
-    "numLogs": 313249,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "stargate:msgType",
-            "name": "msgType",
-            "type": "uint8"
-        },
-        {
-            "@type": "evm:nonce",
-            "name": "nonce",
-            "type": "uint64"
+            "@id": "SendMsg",
+            "hex_signature": "0x8d3ee0df6a4b7e82a7f20a763f1c6826e6176323e655af64f32318827d2112d4",
+            "type": "event",
+            "signature": "SendMsg(uint8,uint64)",
+            "name": "SendMsg",
+            "inputs": [
+                {
+                    "@type": "stargate:msgType",
+                    "name": "msgType",
+                    "type": "uint8"
+                },
+                {
+                    "@type": "evm:nonce",
+                    "name": "nonce",
+                    "type": "uint64"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "stargate": 313249
-    },
-    "contract_address": {
-        "features": {
-            "stargate": {
-                "is_erc20": 0.5,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 358271,
-                "sampleAddress": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97",
-                "sampleTxHash": "0x000022e50e9593c9d998cb352ae35960389c842e06c06be0400350f9f39f9843",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

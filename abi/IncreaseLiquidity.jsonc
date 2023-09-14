@@ -1,94 +1,38 @@
 {
-    "@id": "IncreaseLiquidity",
-    "hex_signature": "0x3067048beee31b25b2f1681f88dac838c8bba36af25bfb2b7cf7473a5847e35f",
     "name": "IncreaseLiquidity",
-    "signature": "IncreaseLiquidity(uint256,uint128,uint256,uint256)",
-    "numLogs": 106730,
-    "numProjects": 10,
-    "inputs": [
+    "abis": [
         {
-            "@type": "erc20:lookupid",
-            "name": "tokenId",
-            "type": "uint256"
-        },
-        {
-            "@type": "dex:liquidity",
-            "name": "liquidity",
-            "type": "uint128"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "erc20lp:token0",
-            "name": "amount0",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "erc20lp:token1",
-            "name": "amount1",
-            "type": "uint256"
+            "@id": "IncreaseLiquidity",
+            "hex_signature": "0x3067048beee31b25b2f1681f88dac838c8bba36af25bfb2b7cf7473a5847e35f",
+            "type": "event",
+            "signature": "IncreaseLiquidity(uint256,uint128,uint256,uint256)",
+            "name": "IncreaseLiquidity",
+            "inputs": [
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "dex:liquidity",
+                    "name": "liquidity",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "uniswap": 75512,
-        "dackieswap": 16122,
-        "sushiswap": 8457,
-        "throne": 3152,
-        "pancakeswap": 3031,
-        "2 others": 446
-    },
-    "contract_address": {
-        "features": {
-            "uniswap": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 337406,
-                "sampleAddress": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
-                "sampleTxHash": "0x000030188de410a6ad662a97e1b0ba2b1e9868863b80501cf0da0f13ed59c888",
-                "found": 2,
-                "samples": 2
-            },
-            "dackieswap": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 11224,
-                "sampleAddress": "0xcfb05ab06d338fd85bbf4486e69809d96a906b77",
-                "sampleTxHash": "0x00056e46bd5d30143fe4e8859a22c11fc0779ec586367743cf6389ccad1a4cd8",
-                "found": 1,
-                "samples": 1
-            },
-            "sushiswap": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 7481,
-                "sampleAddress": "0x80c7dd17b01855a6d2347444a0fcc36136a314de",
-                "sampleTxHash": "0x000120636abee3ba410afe17c560cced5ccdcd8896b0cffc71ddddf1bf6f55d6",
-                "found": 2,
-                "samples": 2
-            },
-            "pancakeswap": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 4322,
-                "sampleAddress": "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364",
-                "sampleTxHash": "0x000536e3b6a0e2d8520a34dbafc82eff7a796f56605a4f6c139ffd74fa156258",
-                "found": 1,
-                "samples": 1
-            },
-            "throne": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 3135,
-                "sampleAddress": "0x2cdca0a5e8c0133dc8e3677b4022817c6c7dc40b",
-                "sampleTxHash": "0x0005f2f195d15a0c1ae63d801cc93bcc4f7bc1382146f4e17f82611942974e22",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

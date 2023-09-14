@@ -1,88 +1,76 @@
 {
-    "@id": "SequencerBatchDelivered",
-    "hex_signature": "0x7394f4a19a13c7b92b5bb71033245305946ef78452f7b4986ac1390b5df4ebd7",
     "name": "SequencerBatchDelivered",
-    "signature": "SequencerBatchDelivered(uint256,bytes32,bytes32,bytes32,uint256,(uint64,uint64,uint64,uint64),uint8)",
-    "numLogs": 107125,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "arbitrum:batchSequenceNumber",
-            "name": "batchSequenceNumber",
-            "type": "uint256"
-        },
-        {
-            "@type": "arbitrum:beforeAcc",
-            "name": "beforeAcc",
-            "type": "bytes32"
-        },
-        {
-            "@type": "arbitrum:afterAcc",
-            "name": "afterAcc",
-            "type": "bytes32"
-        },
-        {
-            "@type": "arbitrum:delayedAcc",
-            "name": "delayedAcc",
-            "type": "bytes32"
-        },
-        {
-            "@type": "arbitrum:afterDelayedMessagesRead",
-            "name": "afterDelayedMessagesRead",
-            "type": "uint256"
-        },
-        {
-            "components": [
+            "@id": "SequencerBatchDelivered",
+            "hex_signature": "0x7394f4a19a13c7b92b5bb71033245305946ef78452f7b4986ac1390b5df4ebd7",
+            "type": "event",
+            "signature": "SequencerBatchDelivered(uint256,bytes32,bytes32,bytes32,uint256,(uint64,uint64,uint64,uint64),uint8)",
+            "name": "SequencerBatchDelivered",
+            "inputs": [
                 {
-                    "@type": "evm:timestamp",
-                    "internalType": "uint64",
-                    "name": "minTimestamp",
-                    "type": "uint64"
+                    "@type": "arbitrum:batchSequenceNumber",
+                    "name": "batchSequenceNumber",
+                    "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
-                    "internalType": "uint64",
-                    "name": "maxTimestamp",
-                    "type": "uint64"
+                    "@type": "arbitrum:beforeAcc",
+                    "name": "beforeAcc",
+                    "type": "bytes32"
                 },
                 {
-                    "@type": "blockNumber",
-                    "internalType": "uint64",
-                    "name": "minBlockNumber",
-                    "type": "uint64"
+                    "@type": "arbitrum:afterAcc",
+                    "name": "afterAcc",
+                    "type": "bytes32"
                 },
                 {
-                    "@type": "blockNumber",
-                    "internalType": "uint64",
-                    "name": "maxBlockNumber",
-                    "type": "uint64"
+                    "@type": "arbitrum:delayedAcc",
+                    "name": "delayedAcc",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "arbitrum:afterDelayedMessagesRead",
+                    "name": "afterDelayedMessagesRead",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "@type": "evm:timestamp",
+                            "internalType": "uint64",
+                            "name": "minTimestamp",
+                            "type": "uint64"
+                        },
+                        {
+                            "@type": "evm:timestamp",
+                            "internalType": "uint64",
+                            "name": "maxTimestamp",
+                            "type": "uint64"
+                        },
+                        {
+                            "@type": "blockNumber",
+                            "internalType": "uint64",
+                            "name": "minBlockNumber",
+                            "type": "uint64"
+                        },
+                        {
+                            "@type": "blockNumber",
+                            "internalType": "uint64",
+                            "name": "maxBlockNumber",
+                            "type": "uint64"
+                        }
+                    ],
+                    "internalType": "struct ISequencerInbox.TimeBounds",
+                    "name": "timeBounds",
+                    "type": "tuple"
+                },
+                {
+                    "internalType": "enum ISequencerInbox.BatchDataLocation",
+                    "name": "dataLocation",
+                    "type": "uint8"
                 }
             ],
-            "internalType": "struct ISequencerInbox.TimeBounds",
-            "name": "timeBounds",
-            "type": "tuple"
-        },
-        {
-            "internalType": "enum ISequencerInbox.BatchDataLocation",
-            "name": "dataLocation",
-            "type": "uint8"
+            "outputs": null
         }
-    ],
-    "projects": {
-        "arbitrum": 107125
-    },
-    "contract_address": {
-        "features": {
-            "arbitrum": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 341516,
-                "sampleAddress": "0x1c479675ad559dc151f6ec7ed3fbf8cee79582b6",
-                "sampleTxHash": "0x000037754464756326ab9e95294511cc984f59f031ba478e170a7fbec4436bc4",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

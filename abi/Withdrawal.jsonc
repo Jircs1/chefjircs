@@ -1,0 +1,79 @@
+{
+    "name": "Withdrawal",
+    "abis": [
+        {
+            "@id": "Withdrawal_ERC20Recipient",
+            "hex_signature": "0x7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65",
+            "type": "event",
+            "signature": "Withdrawal(address,uint256)",
+            "name": "Withdrawal",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdrawal_ERC20Token",
+            "hex_signature": "0x7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65",
+            "type": "event",
+            "signature": "Withdrawal(address,uint256)",
+            "name": "Withdrawal",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdrawal_NullifierRelayer",
+            "hex_signature": "0xe9e508bad6d4c3227e881ca19068f099da81b5164dd6d62b2eaf1e8bc6c34931",
+            "type": "event",
+            "signature": "Withdrawal(address,bytes32,address,uint256)",
+            "name": "Withdrawal",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "tornado:nullifier",
+                    "name": "_nullifier",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "tornado:relayer",
+                    "name": "relayer",
+                    "type": "address"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "fee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,163 +1,36 @@
 {
-    "@id": "DistributedSupplierComp",
-    "hex_signature": "0x2caecd17d02f56fa897705dcc740da2d237c373f70686f4e0d9bd3bf0400ea7a",
     "name": "DistributedSupplierComp",
-    "signature": "DistributedSupplierComp(address,address,uint256,uint256)",
-    "numLogs": 12012,
-    "numProjects": 9,
-    "inputs": [
+    "abis": [
         {
-            "internalType": "contract CToken",
-            "name": "cToken",
-            "type": "address",
-            "features": {
-                "compound": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 145184,
-                    "sampleAddress": "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5",
-                    "sampleTxHash": "0x00006527b0800e6a04799070062272a9a9bac067d85fc9b96cc787ce001db50d",
-                    "found": 20,
-                    "samples": 20
+            "@id": "DistributedSupplierComp",
+            "hex_signature": "0x2caecd17d02f56fa897705dcc740da2d237c373f70686f4e0d9bd3bf0400ea7a",
+            "type": "event",
+            "signature": "DistributedSupplierComp(address,address,uint256,uint256)",
+            "name": "DistributedSupplierComp",
+            "inputs": [
+                {
+                    "internalType": "contract CToken",
+                    "name": "cToken",
+                    "type": "address"
                 },
-                "inverse": {
-                    "is_erc20": 0.916667,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 3475,
-                    "sampleAddress": "0x1637e4e9941d55703a7a5e7807d6ada3f7dcd61b",
-                    "sampleTxHash": "0x000ce6452ddaf23ece438ccc4057d2bbb3640d4ad8fe98a5af7c8a548b9bbacf",
-                    "found": 24,
-                    "samples": 24
+                {
+                    "name": "supplier",
+                    "type": "address"
                 },
-                "mantra": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 2595,
-                    "sampleAddress": "0x11c70caa910647d820bd014d676dcd97edd64a99",
-                    "sampleTxHash": "0x00009dba860cf2f8191e485e0d747a1ba72f12fbe6b487c2affd205402348f9a",
-                    "found": 58,
-                    "samples": 58
+                {
+                    "@type": "erc20:tokenAmount",
+                    "name": "compDelta",
+                    "type": "uint256",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
-                "defigeek": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 610,
-                    "sampleAddress": "0x35036a4b7b012331f23f2945c08a5274ced38ac2",
-                    "sampleTxHash": "0x004ef79d6519a93f7b5ca63623f83cf57802aedf689ec570c06a2df6f633fb81",
-                    "found": 2,
-                    "samples": 2
+                {
+                    "@type": "compound:supplyindex",
+                    "name": "compSupplyIndex",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "name": "supplier",
-            "type": "address",
-            "features": {
-                "compound": {
-                    "is_erc20": 0.141176,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0.105882,
-                    "numLogs": 72061,
-                    "sampleAddress": "0x56178a0d5f301baf6cf3e1cd53d9863437345bf9",
-                    "sampleTxHash": "0x00006527b0800e6a04799070062272a9a9bac067d85fc9b96cc787ce001db50d",
-                    "found": 85,
-                    "samples": 100
-                },
-                "mantra": {
-                    "is_erc20": 0.25,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 2020,
-                    "sampleAddress": "0x835f88e9e8eec1fd39a5a0a4249bc34190c5b4a2",
-                    "sampleTxHash": "0x005905868b5b50413ae92a6499dbc57b6833f4c2f85b6448ab7a48754180e8ac",
-                    "found": 4,
-                    "samples": 100
-                },
-                "inverse": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1641,
-                    "sampleAddress": "0x9d5df30f475cea915b1ed4c0cca59255c897b61b",
-                    "sampleTxHash": "0x01357d1a42129aa52bf5dc3d8e4ec0e8d2250f502bdc837e00157a7a40e93f51",
-                    "found": 26,
-                    "samples": 100
-                },
-                "defigeek": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 610,
-                    "sampleAddress": "0x587b938a8b21ea570325e91bdd01b161783a75e8",
-                    "sampleTxHash": "0x004ef79d6519a93f7b5ca63623f83cf57802aedf689ec570c06a2df6f633fb81",
-                    "found": 0,
-                    "samples": 44
-                }
-            }
-        },
-        {
-            "@type": "compound:delta",
-            "name": "compDelta",
-            "type": "uint256"
-        },
-        {
-            "@type": "compound:supplyindex",
-            "name": "compSupplyIndex",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "compound": 11045,
-        "inverse": 659,
-        "mantra": 193,
-        "defigeek": 108
-    },
-    "contract_address": {
-        "features": {
-            "compound": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 145184,
-                "sampleAddress": "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b",
-                "sampleTxHash": "0x00006527b0800e6a04799070062272a9a9bac067d85fc9b96cc787ce001db50d",
-                "found": 1,
-                "samples": 1
-            },
-            "inverse": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 3475,
-                "sampleAddress": "0x4dcf7407ae5c07f8681e1659f626e114a7667339",
-                "sampleTxHash": "0x000ce6452ddaf23ece438ccc4057d2bbb3640d4ad8fe98a5af7c8a548b9bbacf",
-                "found": 1,
-                "samples": 1
-            },
-            "mantra": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 2595,
-                "sampleAddress": "0x606246e9ef6c70dcb6cee42136cd06d127e2b7c7",
-                "sampleTxHash": "0x00009dba860cf2f8191e485e0d747a1ba72f12fbe6b487c2affd205402348f9a",
-                "found": 1,
-                "samples": 1
-            },
-            "defigeek": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 610,
-                "sampleAddress": "0x485d8c64f33db5152a1159e0443daa4b1a620160",
-                "sampleTxHash": "0x004ef79d6519a93f7b5ca63623f83cf57802aedf689ec570c06a2df6f633fb81",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

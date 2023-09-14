@@ -1,0 +1,243 @@
+{
+    "name": "OrdersMatched",
+    "abis": [
+        {
+            "@id": "OrdersMatched_Blur",
+            "hex_signature": "0x61cbb2a3dee0b6064c2e681aadd61677fb4ef319f0b547508d495626f5a62f64",
+            "type": "event",
+            "signature": "OrdersMatched(address,address,(address,uint8,address,address,uint256,uint256,address,uint256,uint256,uint256,(uint16,address)[],uint256,bytes),bytes32,(address,uint8,address,address,uint256,uint256,address,uint256,uint256,uint256,(uint16,address)[],uint256,bytes),bytes32)",
+            "name": "OrdersMatched",
+            "inputs": [
+                {
+                    "@type": "dex:maker",
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:taker",
+                    "name": "taker",
+                    "type": "address"
+                },
+                {
+                    "@type": "blur:order",
+                    "components": [
+                        {
+                            "@type": "dex:trader",
+                            "internalType": "address",
+                            "name": "trader",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "blur:side",
+                            "internalType": "enum Side",
+                            "name": "side",
+                            "type": "uint8"
+                        },
+                        {
+                            "@type": "blur:matchingPolicy",
+                            "internalType": "address",
+                            "name": "matchingPolicy",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "erc721:token",
+                            "internalType": "address",
+                            "name": "collection",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "erc721:tokenID",
+                            "@token": "$3",
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "erc721:tokenAmount",
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "erc20:token",
+                            "internalType": "address",
+                            "name": "paymentToken",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "dex:price",
+                            "internalType": "uint256",
+                            "name": "price",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "evm:timestamp",
+                            "internalType": "uint256",
+                            "name": "listingTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "evm:timestamp",
+                            "internalType": "uint256",
+                            "name": "expirationTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "@type": "blur:rate",
+                                    "internalType": "uint16",
+                                    "name": "rate",
+                                    "type": "uint16"
+                                },
+                                {
+                                    "@type": "transfer:to",
+                                    "internalType": "address payable",
+                                    "name": "recipient",
+                                    "type": "address"
+                                }
+                            ],
+                            "internalType": "struct Fee[]",
+                            "name": "fees",
+                            "type": "tuple[]"
+                        },
+                        {
+                            "@type": "evm:nonce",
+                            "internalType": "uint256",
+                            "name": "salt",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "extraParams",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct Order",
+                    "name": "sell",
+                    "type": "tuple"
+                },
+                {
+                    "name": "sellHash",
+                    "type": "bytes32"
+                },
+                {
+                    "components": [
+                        {
+                            "@type": "dex:trader",
+                            "internalType": "address",
+                            "name": "trader",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "enum Side",
+                            "name": "side",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "matchingPolicy",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "erc721:token",
+                            "internalType": "address",
+                            "name": "collection",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "erc721:tokenID",
+                            "@token": "$3",
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "erc721:tokenAmount",
+                            "@token": "$3",
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "erc20:token",
+                            "internalType": "address",
+                            "name": "paymentToken",
+                            "type": "address"
+                        },
+                        {
+                            "@type": "dex:price",
+                            "internalType": "uint256",
+                            "name": "price",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "timestamp",
+                            "internalType": "uint256",
+                            "name": "listingTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "@type": "timestamp",
+                            "internalType": "uint256",
+                            "name": "expirationTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint16",
+                                    "name": "rate",
+                                    "type": "uint16"
+                                },
+                                {
+                                    "@type": "transfer:to",
+                                    "internalType": "address payable",
+                                    "name": "recipient",
+                                    "type": "address"
+                                }
+                            ],
+                            "internalType": "struct Fee[]",
+                            "name": "fees",
+                            "type": "tuple[]"
+                        },
+                        {
+                            "@type": "evm:nonce",
+                            "internalType": "uint256",
+                            "name": "salt",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "extraParams",
+                            "type": "bytes"
+                        }
+                    ],
+                    "internalType": "struct Order",
+                    "name": "buy",
+                    "type": "tuple"
+                },
+                {
+                    "name": "buyHash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "OrdersMatched_OS",
+            "hex_signature": "0x4b9f2d36e1b4c93de62cc077b00b1a91d84b6c31b4a14e012718dcca230689e7",
+            "type": "event",
+            "signature": "OrdersMatched(bytes32[])",
+            "name": "OrdersMatched",
+            "inputs": [
+                {
+                    "@type": "opensea:orderHash",
+                    "name": "orderHashes",
+                    "type": "bytes32[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

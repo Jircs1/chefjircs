@@ -1,113 +1,55 @@
 {
-    "@id": "Route",
-    "hex_signature": "0x2db5ddd0b42bdbca0d69ea16f234a870a485854ae0d91f16643d6f317d8b8994",
     "name": "Route",
-    "signature": "Route(address,address,address,address,uint256,uint256,uint256)",
-    "numLogs": 279728,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "transfer:from",
-            "name": "from",
-            "type": "address",
-            "features": {
-                "sushiswap": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 36053,
-                    "sampleAddress": "0x01d0f5d8c41989ac61fa48048ed40008404b1c24",
-                    "sampleTxHash": "0x221580575d75f75f7a998c7d3e2bc7d82a1aa400d377d61746d4382107183b88",
-                    "found": 4,
-                    "samples": 100
+            "@id": "Route",
+            "hex_signature": "0x2db5ddd0b42bdbca0d69ea16f234a870a485854ae0d91f16643d6f317d8b8994",
+            "type": "event",
+            "signature": "Route(address,address,address,address,uint256,uint256,uint256)",
+            "name": "Route",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "tokenIn",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "tokenOut",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$3",
+                    "name": "amountOutMin",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$3",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "validationSuccess": true
                 }
-            }
-        },
-        {
-            "@type": "transfer:to",
-            "name": "to",
-            "type": "address",
-            "features": {
-                "sushiswap": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 36332,
-                    "sampleAddress": "0xd8995e588bc2b265d90e9c5ea3b04ea488f92034",
-                    "sampleTxHash": "0x009163d96c22794b444e6ba0909f5fcb101074631becc89a75b451f294530b2d",
-                    "found": 0,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:token",
-            "name": "tokenIn",
-            "type": "address",
-            "features": {
-                "sushiswap": {
-                    "is_erc20": 0.98,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 258945,
-                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-                    "sampleTxHash": "0x00004b9c43a0e924a1bc667f821f3650111e849628c26eb4d19091e1fd86671d",
-                    "found": 100,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:token",
-            "name": "tokenOut",
-            "type": "address",
-            "features": {
-                "sushiswap": {
-                    "is_erc20": 0.98,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 249513,
-                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-                    "sampleTxHash": "0x0000996c11c1d3cb505aded26f76c351c4056ce661b3912f21029c50e8c6d8d2",
-                    "found": 100,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$2",
-            "name": "amountIn",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$3",
-            "name": "amountOutMin",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$3",
-            "name": "amountOut",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "sushiswap": 279728
-    },
-    "contract_address": {
-        "features": {
-            "sushiswap": {
-                "is_erc20": 0.666667,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 271431,
-                "sampleAddress": "0x0be808376ecb75a5cf9bb6d237d16cd37893d904",
-                "sampleTxHash": "0x00004b9c43a0e924a1bc667f821f3650111e849628c26eb4d19091e1fd86671d",
-                "found": 3,
-                "samples": 3
-            }
-        }
-    }
+    ]
 }

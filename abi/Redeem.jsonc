@@ -1,0 +1,62 @@
+{
+    "name": "Redeem",
+    "abis": [
+        {
+            "@id": "Redeem_ERC20",
+            "hex_signature": "0xe5b754fb1abb7f01b499791d0b820ae3b6af3424ac1c59768edb53f4ec31a929",
+            "type": "event",
+            "signature": "Redeem(address,uint256,uint256)",
+            "name": "Redeem",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "redeemer",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "redeemAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "redeemTokens",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Redeem_PID",
+            "hex_signature": "0xe5b754fb1abb7f01b499791d0b820ae3b6af3424ac1c59768edb53f4ec31a929",
+            "type": "event",
+            "signature": "Redeem(address,uint256,uint256)",
+            "name": "Redeem",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

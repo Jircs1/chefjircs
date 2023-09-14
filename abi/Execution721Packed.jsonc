@@ -1,42 +1,30 @@
 {
-    "@id": "Execution721Packed",
-    "hex_signature": "0x1d5e12b51dee5e4d34434576c3fb99714a85f57b0fd546ada4b0bddd736d12b2",
     "name": "Execution721Packed",
-    "signature": "Execution721Packed(bytes32,uint256,uint256)",
-    "numLogs": 58614,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "blur:orderHash",
-            "name": "orderHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "blur:trader",
-            "name": "tokenIdListingIndexTrader",
-            "type": "uint256"
-        },
-        {
-            "@type": "blur:collectionPriceSide",
-            "name": "collectionPriceSide",
-            "type": "uint256"
+            "@id": "Execution721Packed",
+            "hex_signature": "0x1d5e12b51dee5e4d34434576c3fb99714a85f57b0fd546ada4b0bddd736d12b2",
+            "type": "event",
+            "signature": "Execution721Packed(bytes32,uint256,uint256)",
+            "name": "Execution721Packed",
+            "inputs": [
+                {
+                    "@type": "blur:orderHash",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "blur:trader",
+                    "name": "tokenIdListingIndexTrader",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "blur:collectionPriceSide",
+                    "name": "collectionPriceSide",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "blur": 58614
-    },
-    "contract_address": {
-        "features": {
-            "blur": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 91572,
-                "sampleAddress": "0xb2ecfe4e4d61f8790bbb9de2d1259b9e2410cea5",
-                "sampleTxHash": "0x0005035b72fc3089b866295711a5829379f8a77ce1437abdda68c5d35ccbf17d",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

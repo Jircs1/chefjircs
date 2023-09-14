@@ -1,39 +1,25 @@
 {
-    "@id": "InboxMessageDelivered",
-    "hex_signature": "0xff64905f73a67fb594e0f940a8075a860db489ad991e032f48c81123eb52d60b",
     "name": "InboxMessageDelivered",
-    "signature": "InboxMessageDelivered(uint256,bytes)",
-    "numLogs": 187549,
-    "numProjects": 4,
-    "inputs": [
+    "abis": [
         {
-            "@type": "arbitrum:messageNum",
-            "name": "messageNum",
-            "type": "uint256"
-        },
-        {
-            "@type": "arbitrum:inboxMessage",
-            "name": "data",
-            "type": "bytes"
+            "@id": "InboxMessageDelivered",
+            "hex_signature": "0xff64905f73a67fb594e0f940a8075a860db489ad991e032f48c81123eb52d60b",
+            "type": "event",
+            "signature": "InboxMessageDelivered(uint256,bytes)",
+            "name": "InboxMessageDelivered",
+            "inputs": [
+                {
+                    "@type": "arbitrum:messageNum",
+                    "name": "messageNum",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "arbitrum:inboxMessage",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "arbitrum": 187519,
-        "metamask": 16,
-        "hop": 13
-    },
-    "contract_address": {
-        "features": {
-            "arbitrum": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 1239530,
-                "sampleAddress": "0x4dbd4fc535ac27206064b68ffcf827b0a60bab3f",
-                "sampleTxHash": "0x000004bcc219e5d593ee7441cb74c4c073378620459339481f0b88a5b6234a0c",
-                "found": 4,
-                "samples": 4
-            }
-        }
-    }
+    ]
 }

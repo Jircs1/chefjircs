@@ -1,75 +1,32 @@
 {
-    "@id": "NonceIncreased",
-    "hex_signature": "0xdc0537f71d06d3708f52baf4ddf6918b25f1a145ba08873de27485682b35cac1",
     "name": "NonceIncreased",
-    "signature": "NonceIncreased(address,uint256,uint256)",
-    "numLogs": 8360,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "dex:maker",
-            "name": "maker",
-            "type": "address",
-            "features": {
-                "1inch": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 5574,
-                    "sampleAddress": "0xe407f56df5825a7454e266cb2a83d9e3a7c31ff7",
-                    "sampleTxHash": "0x00bb5d0f296a5f819b3d8947c7ca70ba8069accfccdeb9a8962c1ee156797117",
-                    "found": 0,
-                    "samples": 100
+            "@id": "NonceIncreased",
+            "hex_signature": "0xdc0537f71d06d3708f52baf4ddf6918b25f1a145ba08873de27485682b35cac1",
+            "type": "event",
+            "signature": "NonceIncreased(address,uint256,uint256)",
+            "name": "NonceIncreased",
+            "inputs": [
+                {
+                    "@type": "dex:maker",
+                    "name": "maker",
+                    "type": "address"
                 },
-                "kyberswap": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 163,
-                    "sampleAddress": "0x24a64f43e26aeb1f27a7d83a7c8e34919032cd5e",
-                    "sampleTxHash": "0x172c2abab62740c193466a2c1651f95222918c482384992c024ec922dcc88107",
-                    "found": 0,
-                    "samples": 100
+                {
+                    "@type": "evm:nonce",
+                    "name": "oldNonce",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "name": "newNonce",
+                    "type": "uint256",
+                    "@token": "$",
+                    "validationSuccess": true
                 }
-            }
-        },
-        {
-            "@type": "evm:nonce",
-            "name": "oldNonce",
-            "type": "uint256"
-        },
-        {
-            "@type": "evm:nonce",
-            "name": "newNonce",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "1inch": 8360,
-        "kyberswap": 87
-    },
-    "contract_address": {
-        "features": {
-            "1inch": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 20739,
-                "sampleAddress": "0x303389f541ff2d620e42832f180a08e767b28e10",
-                "sampleTxHash": "0x0001f47e1ddcf5bf4384f11b2f97b2d28dd396fb1057efe507a0494b8510306e",
-                "found": 2,
-                "samples": 2
-            },
-            "kyberswap": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 194,
-                "sampleAddress": "0x227b0c196ea8db17a665ea6824d972a64202e936",
-                "sampleTxHash": "0x00cbff4f706d48914654a986531e7bbb7ad8febafc4d7585b7d6d930f5e46f8d",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

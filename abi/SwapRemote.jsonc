@@ -1,63 +1,38 @@
 {
-    "@id": "SwapRemote",
-    "hex_signature": "0xfb2b592367452f1c437675bed47f5e1e6c25188c17d7ba01a12eb030bc41ccef",
     "name": "SwapRemote",
-    "signature": "SwapRemote(address,uint256,uint256,uint256)",
-    "numLogs": 549622,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "transfer:to",
-            "name": "to",
-            "type": "address",
-            "features": {
-                "stargate": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 27746,
-                    "sampleAddress": "0xf314fa27066bdde92e6122059b103e8899d0a096",
-                    "sampleTxHash": "0x000dc39f5315500e52bd41dcfa9b05d4cc585b55f6bd6a5fae47e671a2f1e83b",
-                    "found": 17,
-                    "samples": 100
+            "@id": "SwapRemote",
+            "hex_signature": "0xfb2b592367452f1c437675bed47f5e1e6c25188c17d7ba01a12eb030bc41ccef",
+            "type": "event",
+            "signature": "SwapRemote(address,uint256,uint256,uint256)",
+            "name": "SwapRemote",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "amountSD",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "protocolFee",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "dstFee",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "amountSD",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "protocolFee",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "dstFee",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "stargate": 548107,
-        "layerzero": 1515
-    },
-    "contract_address": {
-        "features": {
-            "stargate": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 394233,
-                "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
-                "sampleTxHash": "0x00005afd87ccb92e6d649eb3a68c5d15460946fa8d09a833b09527af6d881178",
-                "found": 14,
-                "samples": 14
-            }
-        }
-    }
+    ]
 }

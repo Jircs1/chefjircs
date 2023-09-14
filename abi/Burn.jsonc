@@ -1,155 +1,298 @@
 {
-    "@id": "Burn",
-    "hex_signature": "0x0c396cd989a39f4459b5fa1aed6a9a8dcdbc45908acfd67e028cd568da98982c",
     "name": "Burn",
-    "signature": "Burn(address,int24,int24,uint128,uint256,uint256)",
-    "numLogs": 112620,
-    "numProjects": 17,
-    "inputs": [
+    "abis": [
         {
-            "@type": "transfer:from",
-            "name": "owner",
-            "type": "address",
-            "features": {
-                "uniswap": {
-                    "is_erc20": 0.73,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 364171,
-                    "sampleAddress": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
-                    "sampleTxHash": "0x000012f63f5585499e50b0356f33c9eb5439ad3afd84888e0e2abd382896b62b",
-                    "found": 100,
-                    "samples": 100
+            "@id": "Burn",
+            "hex_signature": "0x0c396cd989a39f4459b5fa1aed6a9a8dcdbc45908acfd67e028cd568da98982c",
+            "type": "event",
+            "signature": "Burn(address,int24,int24,uint128,uint256,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "owner",
+                    "type": "address"
                 },
-                "dackieswap": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 7768,
-                    "sampleAddress": "0xcfb05ab06d338fd85bbf4486e69809d96a906b77",
-                    "sampleTxHash": "0x000933a688e0f2d7f95bfd423233a083caef207504379c2406da739fbea27f26",
-                    "found": 1,
-                    "samples": 1
+                {
+                    "@type": "dex:tick",
+                    "name": "bottomTick",
+                    "type": "int24"
                 },
-                "sushiswap": {
-                    "is_erc20": 0.285714,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 5955,
-                    "sampleAddress": "0x80c7dd17b01855a6d2347444a0fcc36136a314de",
-                    "sampleTxHash": "0x000f8f94b56cff076dff22799d866b671fd980ad6c5b38967bf8986e2418b02c",
-                    "found": 7,
-                    "samples": 7
+                {
+                    "@type": "dex:tick",
+                    "name": "topTick",
+                    "type": "int24"
                 },
-                "pancakeswap": {
-                    "is_erc20": 0.5,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 3190,
-                    "sampleAddress": "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364",
-                    "sampleTxHash": "0x00125e51785ceabecf4026bf19aae5e5e89bd5e07d892a3528cffe4aa43c820b",
-                    "found": 2,
-                    "samples": 2
+                {
+                    "name": "liquidityAmount",
+                    "type": "uint128"
                 },
-                "horizondex": {
-                    "is_erc20": 0,
-                    "is_erc721": 1,
-                    "is_erc20lp": 0,
-                    "numLogs": 945,
-                    "sampleAddress": "0xb3cc484a60bc300719aaefbd158a4e8e59d84555",
-                    "sampleTxHash": "0x001de34de2a36eeb48fcc645a89344320e0c7fc8568c3d174ac6c82f652aefa1",
-                    "found": 1,
-                    "samples": 1
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1",
+                    "type": "uint256"
                 }
-            }
+            ],
+            "outputs": null
         },
         {
-            "@type": "dex:tick",
-            "name": "bottomTick",
-            "type": "int24"
+            "@id": "Burn_ERC20",
+            "hex_signature": "0x4cf25bc1d991c17529c25213d3cc0cda295eeaad5f13f361969b12ea48015f90",
+            "type": "event",
+            "signature": "Burn(address,address,uint256,uint256,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "balanceIncrease",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "evm:index",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         },
         {
-            "@type": "dex:tick",
-            "name": "topTick",
-            "type": "int24"
+            "@id": "Burn_ERC20b",
+            "hex_signature": "0xcc16f5dbb4873280815c1ee09dbd06736cffcc184412cf7a71a0fdb75d397ca5",
+            "type": "event",
+            "signature": "Burn(address,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
         },
         {
-            "name": "liquidityAmount",
-            "type": "uint128"
+            "@id": "Burn_ERC20Beneficary",
+            "hex_signature": "0x5d624aa9c148153ab3446c1b154f660ee7701e549fe9b62dab7171b1c80e6fa2",
+            "type": "event",
+            "signature": "Burn(address,address,uint256,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "dex:sponsor",
+                    "name": "sponsor",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:beneficiary",
+                    "name": "onBehalfOf",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         },
         {
-            "@type": "erc20:tokenAmount",
-            "@token": "erc20lp:token0",
-            "name": "amount0",
-            "type": "uint256"
+            "@id": "Burn_ERC20c",
+            "hex_signature": "0x49995e5dd6158cf69ad3e9777c46755a1a826a446c6416992167462dad033b2a",
+            "type": "event",
+            "signature": "Burn(address,uint256,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amountLP",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amountSD",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
         },
         {
-            "@type": "erc20:tokenAmount",
-            "@token": "erc20lp:token1",
-            "name": "amount1",
-            "type": "uint256"
+            "@id": "Burn_ERC20Index",
+            "hex_signature": "0x49995e5dd6158cf69ad3e9777c46755a1a826a446c6416992167462dad033b2a",
+            "type": "event",
+            "signature": "Burn(address,uint256,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$2",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "index",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Burn_ERC20LP",
+            "hex_signature": "0x5d624aa9c148153ab3446c1b154f660ee7701e549fe9b62dab7171b1c80e6fa2",
+            "type": "event",
+            "signature": "Burn(address,address,uint256,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Burn_ERC20LPb",
+            "hex_signature": "0xdccd412f0b1252819cb1fd330b93224ca42612892bb3f4f789976e6d81936496",
+            "type": "event",
+            "signature": "Burn(address,uint256,uint256,address)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token0",
+                    "name": "amount0",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token1",
+                    "name": "amount1",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Burn_NativeERC20",
+            "hex_signature": "0x4cf25bc1d991c17529c25213d3cc0cda295eeaad5f13f361969b12ea48015f90",
+            "type": "event",
+            "signature": "Burn(address,address,uint256,uint256,uint256)",
+            "name": "Burn",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:liquidity",
+                    "name": "liquidity",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "name": "amountETHOut",
+                    "type": "uint256",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amountTokenOut",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "uniswap": 91904,
-        "dackieswap": 10495,
-        "sushiswap": 6431,
-        "pancakeswap": 2290,
-        "horizondex": 1281,
-        "6 others": 193
-    },
-    "contract_address": {
-        "features": {
-            "uniswap": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 1,
-                "numLogs": 265805,
-                "sampleAddress": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
-                "sampleTxHash": "0x0001ec994a6af5c62c60079d15c0538fcbc104ab50acfca73c610ea26294d0e4",
-                "found": 100,
-                "samples": 100
-            },
-            "dackieswap": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 7768,
-                "sampleAddress": "0x4195e7a7c8d7cc9269f594f425fd1036941f7242",
-                "sampleTxHash": "0x000933a688e0f2d7f95bfd423233a083caef207504379c2406da739fbea27f26",
-                "found": 72,
-                "samples": 72
-            },
-            "sushiswap": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0.96,
-                "numLogs": 5303,
-                "sampleAddress": "0x5f0a153a64fd734c111b770da11de2c385ca8042",
-                "sampleTxHash": "0x000f8f94b56cff076dff22799d866b671fd980ad6c5b38967bf8986e2418b02c",
-                "found": 100,
-                "samples": 100
-            },
-            "pancakeswap": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 3190,
-                "sampleAddress": "0x6ca298d2983ab03aa1da7679389d955a4efee15c",
-                "sampleTxHash": "0x00125e51785ceabecf4026bf19aae5e5e89bd5e07d892a3528cffe4aa43c820b",
-                "found": 74,
-                "samples": 74
-            },
-            "horizondex": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0.96,
-                "numLogs": 945,
-                "sampleAddress": "0xd5c5a89ae6292d8c1fe342cf05111e7540a136b5",
-                "sampleTxHash": "0x001de34de2a36eeb48fcc645a89344320e0c7fc8568c3d174ac6c82f652aefa1",
-                "found": 25,
-                "samples": 25
-            }
-        }
-    }
+    ]
 }

@@ -1,0 +1,80 @@
+{
+    "name": "Collect",
+    "abis": [
+        {
+            "@id": "Collect_ERC721",
+            "hex_signature": "0x40d0efd1a53d60ecbf40971b9daf7dc90178c3aadc7aab1765632738fa8b8f01",
+            "type": "event",
+            "signature": "Collect(uint256,address,uint256,uint256)",
+            "name": "Collect",
+            "inputs": [
+                {
+                    "@type": "erc721:tokenID",
+                    "@token": null,
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "_recipient",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "_amount0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "_amount1",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Collect_Ticks",
+            "hex_signature": "0x70935338e69775456a85ddef226c395fb668b63fa0115f5f20610b388e6ca9c0",
+            "type": "event",
+            "signature": "Collect(address,address,int24,int24,uint128,uint128)",
+            "name": "Collect",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "bottomTick",
+                    "type": "int24"
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "topTick",
+                    "type": "int24"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1",
+                    "type": "uint128"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

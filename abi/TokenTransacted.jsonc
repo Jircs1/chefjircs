@@ -1,206 +1,45 @@
 {
-    "@id": "TokenTransacted",
-    "hex_signature": "0xf3574a20a6defd7fc26917e8013cdd578db5eaa4d9a3eb54f2bb0983ad8ab40d",
     "name": "TokenTransacted",
-    "signature": "TokenTransacted(address,address,bytes32,address,uint256,address)",
-    "numLogs": 4669,
-    "numProjects": 4,
-    "inputs": [
+    "abis": [
         {
-            "@type": "transfer:from",
-            "name": "msgSender",
-            "type": "address",
-            "features": {
-                "bitstamp": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 36088,
-                    "sampleAddress": "0x00bdb5699745f5b860228c8f939abf1b9ae374ed",
-                    "sampleTxHash": "0x000014906a7d65bbf8e213577f70ce8282ad3ef494963b3c25daac72e47d519f",
-                    "found": 0,
-                    "samples": 1
+            "@id": "TokenTransacted",
+            "hex_signature": "0xf3574a20a6defd7fc26917e8013cdd578db5eaa4d9a3eb54f2bb0983ad8ab40d",
+            "type": "event",
+            "signature": "TokenTransacted(address,address,bytes32,address,uint256,address)",
+            "name": "TokenTransacted",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "msgSender",
+                    "type": "address"
                 },
-                "korbit": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1189,
-                    "sampleAddress": "0x32b56fc48684fa085df8c4cd2feaafc25c304db9",
-                    "sampleTxHash": "0x00daabfbfae202349f695f88bbaff17395ec389d52e9bcb54b0ca4aae225c1c8",
-                    "found": 0,
-                    "samples": 1
+                {
+                    "name": "otherSigner",
+                    "type": "address"
                 },
-                "triv": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 117,
-                    "sampleAddress": "0x74a3868811ee9f88f57e3bc7a7c28689774b2c9b",
-                    "sampleTxHash": "0x02b2d5bf7a126ca6e0d5a1c3e37a3e764f0f5208634b8a827cc7ec635d05b207",
-                    "found": 0,
-                    "samples": 1
+                {
+                    "name": "operation",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "toAddress",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$5",
+                    "name": "value",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "tokenContractAddress",
+                    "type": "address"
                 }
-            }
-        },
-        {
-            "name": "otherSigner",
-            "type": "address",
-            "features": {
-                "bitstamp": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 36088,
-                    "sampleAddress": "0x3e071255695b527e6e85f5e367b1c173bcea5b0f",
-                    "sampleTxHash": "0x000014906a7d65bbf8e213577f70ce8282ad3ef494963b3c25daac72e47d519f",
-                    "found": 0,
-                    "samples": 1
-                },
-                "korbit": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1189,
-                    "sampleAddress": "0x61caa11eb8d762869773bf924dee4acf8863696d",
-                    "sampleTxHash": "0x00daabfbfae202349f695f88bbaff17395ec389d52e9bcb54b0ca4aae225c1c8",
-                    "found": 0,
-                    "samples": 3
-                },
-                "triv": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 117,
-                    "sampleAddress": "0x47df4bb2d1a10681104ba8330f041ccdc7249e36",
-                    "sampleTxHash": "0x02b2d5bf7a126ca6e0d5a1c3e37a3e764f0f5208634b8a827cc7ec635d05b207",
-                    "found": 0,
-                    "samples": 1
-                }
-            }
-        },
-        {
-            "name": "operation",
-            "type": "bytes32"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "toAddress",
-            "type": "address",
-            "features": {
-                "bitstamp": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 23368,
-                    "sampleAddress": "0x48ec5560bfd59b95859965cce48cc244cfdf6b0c",
-                    "sampleTxHash": "0x00040e90035cd357f283b32220e70274797d7dc0850c801ed9f213cf7641b1a3",
-                    "found": 19,
-                    "samples": 100
-                },
-                "korbit": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1189,
-                    "sampleAddress": "0x8550e644d74536f1df38b17d5f69aa1bfe28ae86",
-                    "sampleTxHash": "0x00daabfbfae202349f695f88bbaff17395ec389d52e9bcb54b0ca4aae225c1c8",
-                    "found": 5,
-                    "samples": 13
-                },
-                "triv": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 117,
-                    "sampleAddress": "0xe2eabb47791b2314001eb6cdf3d4782f0d9a7fbd",
-                    "sampleTxHash": "0x02b2d5bf7a126ca6e0d5a1c3e37a3e764f0f5208634b8a827cc7ec635d05b207",
-                    "found": 3,
-                    "samples": 8
-                }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$5",
-            "name": "value",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:token",
-            "name": "tokenContractAddress",
-            "type": "address",
-            "features": {
-                "bitstamp": {
-                    "is_erc20": 0.970149,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 36088,
-                    "sampleAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-                    "sampleTxHash": "0x000014906a7d65bbf8e213577f70ce8282ad3ef494963b3c25daac72e47d519f",
-                    "found": 67,
-                    "samples": 67
-                },
-                "korbit": {
-                    "is_erc20": 0.977273,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1189,
-                    "sampleAddress": "0xf1f955016ecbcd7321c7266bccfb96c68ea5e49b",
-                    "sampleTxHash": "0x024edef97b86ff6ec858b263792af841133db5b744595217641920ffa74f7f2e",
-                    "found": 44,
-                    "samples": 44
-                },
-                "triv": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 117,
-                    "sampleAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-                    "sampleTxHash": "0x03efe21fabb15181cddcc9c4fb03bec93e3b8885f9d49a0d00511fc876714b8c",
-                    "found": 17,
-                    "samples": 17
-                }
-            }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "bitstamp": 4411,
-        "korbit": 233,
-        "triv": 21
-    },
-    "contract_address": {
-        "features": {
-            "bitstamp": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 36088,
-                "sampleAddress": "0x1522900b6dafac587d499a862861c0869be6e428",
-                "sampleTxHash": "0x000014906a7d65bbf8e213577f70ce8282ad3ef494963b3c25daac72e47d519f",
-                "found": 1,
-                "samples": 1
-            },
-            "korbit": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 1189,
-                "sampleAddress": "0xe5d7ccc5fc3b3216c4dff3a59442f1d83038468c",
-                "sampleTxHash": "0x00daabfbfae202349f695f88bbaff17395ec389d52e9bcb54b0ca4aae225c1c8",
-                "found": 3,
-                "samples": 3
-            },
-            "triv": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 117,
-                "sampleAddress": "0x08daf71efa7915807bc5675ad402989d7820cf6f",
-                "sampleTxHash": "0x02b2d5bf7a126ca6e0d5a1c3e37a3e764f0f5208634b8a827cc7ec635d05b207",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

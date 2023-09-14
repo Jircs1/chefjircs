@@ -1,0 +1,96 @@
+{
+    "name": "Sync",
+    "abis": [
+        {
+            "@id": "Sync_112",
+            "hex_signature": "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1",
+            "type": "event",
+            "signature": "Sync(uint112,uint112)",
+            "name": "Sync",
+            "inputs": [
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "reserve0",
+                    "type": "uint112"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "reserve1",
+                    "type": "uint112"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Sync_256",
+            "hex_signature": "0xcf2aa50876cdfbb541206f89af0ee78d44a2abf8d328e37fa4917f982149848a",
+            "type": "event",
+            "signature": "Sync(uint256,uint256)",
+            "name": "Sync",
+            "inputs": [
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "reserve0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "reserve1",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Sync_ERC20LPFictiveReserve",
+            "hex_signature": "0x2a368c7f33bb86e2d999940a3989d849031aff29b750f67947e6b8e8c3d2ffd6",
+            "type": "event",
+            "signature": "Sync(uint256,uint256,uint256,uint256,uint256,uint256)",
+            "name": "Sync",
+            "inputs": [
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "reserve0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "reserve1",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "fictiveReserve0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "fictiveReserve1",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dex:price",
+                    "@token": "erc20lp:token0",
+                    "name": "priceAverage0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dex:price",
+                    "@token": "erc20lp:token1",
+                    "name": "priceAverage1",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

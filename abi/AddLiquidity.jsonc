@@ -1,0 +1,81 @@
+{
+    "name": "AddLiquidity",
+    "abis": [
+        {
+            "@id": "AddLiquidity_Multiple",
+            "hex_signature": "0x189c623b666b1b45b83d7178f39b8c087cb09774317ca2f53c2d3c3726f222a2",
+            "type": "event",
+            "signature": "AddLiquidity(address,uint256[],uint256[],uint256,uint256)",
+            "name": "AddLiquidity",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "provider",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "tokenAmounts",
+                    "type": "uint256[]"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "fees",
+                    "type": "uint256[]"
+                },
+                {
+                    "@type": "dex:invariant",
+                    "name": "invariant",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "lpTokenSupply",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "AddLiquidity_Two",
+            "hex_signature": "0x26f55a85081d24974e85c6c00045d0f0453991e95873f52bff0d21af4079a768",
+            "type": "event",
+            "signature": "AddLiquidity(address,uint256[2],uint256[2],uint256,uint256)",
+            "name": "AddLiquidity",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "provider",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "token_amounts",
+                    "type": "uint256[2]"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "fees",
+                    "type": "uint256[2]"
+                },
+                {
+                    "@type": "dex:invariant",
+                    "name": "invariant",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "token_supply",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

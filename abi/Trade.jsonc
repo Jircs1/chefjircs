@@ -1,0 +1,45 @@
+{
+    "@id": "Trade",
+    "hex_signature": "0xa07a543ab8a018198e99ca0184c93fe9050a79400a0a723441f84de1d972cc17",
+    "name": "Trade",
+    "signature": "Trade(address,address,address,uint256,uint256,uint256,bytes)",
+    "inputs": [
+        {
+            "name": "owner",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "sellToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:token",
+            "name": "buyToken",
+            "type": "address"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$1",
+            "name": "sellAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "buyAmount",
+            "type": "uint256"
+        },
+        {
+            "@type": "erc20:tokenAmount",
+            "@token": "$2",
+            "name": "feeAmount",
+            "type": "uint256"
+        },
+        {
+            "name": "orderUid",
+            "type": "bytes"
+        }
+    ],
+    "type": "event"
+}

@@ -1,64 +1,40 @@
 {
-    "@id": "HashReceived",
-    "hex_signature": "0x74bbc026808dcba59692d6a8bb20596849ca718e10e2432c6cdf48af865bc5d9",
     "name": "HashReceived",
-    "signature": "HashReceived(uint16,address,bytes32,bytes32,uint256)",
-    "numLogs": 776835,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "layerzero:chainID",
-            "name": "srcChainId",
-            "type": "uint16"
-        },
-        {
-            "@type": "layerzero:oracle",
-            "name": "oracle",
-            "type": "address",
-            "features": {
-                "layerzero": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 695932,
-                    "sampleAddress": "0xaab5a48cfc03efa9cc34a2c1aacccb84b4b770e4",
-                    "sampleTxHash": "0x00003213b6508b1fcf6b02b9fcd6af8578df0d04da7bcceb6e9f0bf2e2cfbd92",
-                    "found": 4,
-                    "samples": 4
+            "@id": "HashReceived",
+            "hex_signature": "0x74bbc026808dcba59692d6a8bb20596849ca718e10e2432c6cdf48af865bc5d9",
+            "type": "event",
+            "signature": "HashReceived(uint16,address,bytes32,bytes32,uint256)",
+            "name": "HashReceived",
+            "inputs": [
+                {
+                    "@type": "layerzero:chainID",
+                    "name": "srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "@type": "layerzero:oracle",
+                    "name": "oracle",
+                    "type": "address"
+                },
+                {
+                    "@type": "layerzero:lookupHash",
+                    "name": "lookupHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "layerzero:blockData",
+                    "name": "blockData",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "layerzero:confirmations",
+                    "name": "confirmations",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "@type": "layerzero:lookupHash",
-            "name": "lookupHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "layerzero:blockData",
-            "name": "blockData",
-            "type": "bytes32"
-        },
-        {
-            "@type": "layerzero:confirmations",
-            "name": "confirmations",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "layerzero": 776835
-    },
-    "contract_address": {
-        "features": {
-            "layerzero": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 695932,
-                "sampleAddress": "0x38de71124f7a447a01d67945a51edce9ff491251",
-                "sampleTxHash": "0x00003213b6508b1fcf6b02b9fcd6af8578df0d04da7bcceb6e9f0bf2e2cfbd92",
-                "found": 3,
-                "samples": 3
-            }
-        }
-    }
+    ]
 }

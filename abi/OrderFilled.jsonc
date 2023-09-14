@@ -1,55 +1,30 @@
 {
-    "@id": "OrderFilled",
-    "hex_signature": "0xb9ed0243fdf00f0545c63a0af8850c090d86bb46682baec4bf3c496814fe4f02",
     "name": "OrderFilled",
-    "signature": "OrderFilled(address,bytes32,uint256)",
-    "numLogs": 121366,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "dex:maker",
-            "name": "maker",
-            "type": "address",
-            "features": {
-                "1inch": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 80399,
-                    "sampleAddress": "0x53222470cdcfb8081c0e3a50fd106f0d69e63f20",
-                    "sampleTxHash": "0x0005262ded443f5a6a2cf2b64836738886574fb0926f67b0ed5d48f0579d0a03",
-                    "found": 19,
-                    "samples": 100
+            "@id": "OrderFilled",
+            "hex_signature": "0xb9ed0243fdf00f0545c63a0af8850c090d86bb46682baec4bf3c496814fe4f02",
+            "type": "event",
+            "signature": "OrderFilled(address,bytes32,uint256)",
+            "name": "OrderFilled",
+            "inputs": [
+                {
+                    "@type": "dex:maker",
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "@type": "1inch:orderHash",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "dex:remaining",
+                    "name": "remaining",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "@type": "1inch:orderHash",
-            "name": "orderHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "dex:remaining",
-            "name": "remaining",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "1inch": 121366,
-        "metamask": 14
-    },
-    "contract_address": {
-        "features": {
-            "1inch": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 600086,
-                "sampleAddress": "0x1111111254eeb25477b68fb85ed929f73a960582",
-                "sampleTxHash": "0x00007ee86c8dedf910e254eb499746b9094d0d91ad3d33a4a40dc648a991fcd5",
-                "found": 5,
-                "samples": 5
-            }
-        }
-    }
+    ]
 }

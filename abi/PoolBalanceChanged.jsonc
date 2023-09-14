@@ -1,65 +1,41 @@
 {
-    "@id": "PoolBalanceChanged",
-    "hex_signature": "0xe5ce249087ce04f05a957192435400fd97868dba0e6a4b4c049abf8af80dae78",
     "name": "PoolBalanceChanged",
-    "signature": "PoolBalanceChanged(bytes32,address,address[],int256[],uint256[])",
-    "numLogs": 17441,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "erc20:lookupid",
-            "name": "poolId",
-            "type": "bytes32"
-        },
-        {
-            "@type": "balancer:liquidityProvider",
-            "name": "liquidityProvider",
-            "type": "address",
-            "features": {
-                "balancer": {
-                    "is_erc20": 0.222222,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 15682,
-                    "sampleAddress": "0x593f39a4ba26a9c8ed2128ac95d109e8e403c485",
-                    "sampleTxHash": "0x0043f0106b0a4b86f9e297aea019406d8cf0ad48f77668fcdc1c30f8388010ea",
-                    "found": 45,
-                    "samples": 100
+            "@id": "PoolBalanceChanged",
+            "hex_signature": "0xe5ce249087ce04f05a957192435400fd97868dba0e6a4b4c049abf8af80dae78",
+            "type": "event",
+            "signature": "PoolBalanceChanged(bytes32,address,address[],int256[],uint256[])",
+            "name": "PoolBalanceChanged",
+            "inputs": [
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "poolId",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "balancer:liquidityProvider",
+                    "name": "liquidityProvider",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "tokens",
+                    "type": "address[]"
+                },
+                {
+                    "@type": "balancer:deltas",
+                    "name": "deltas",
+                    "type": "int256[]"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "protocolFeeAmounts",
+                    "type": "uint256[]"
                 }
-            }
-        },
-        {
-            "@type": "erc20:token",
-            "name": "tokens",
-            "type": "address[]"
-        },
-        {
-            "@type": "balancer:deltas",
-            "name": "deltas",
-            "type": "int256[]"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "protocolFeeAmounts",
-            "type": "uint256[]"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "balancer": 17441
-    },
-    "contract_address": {
-        "features": {
-            "balancer": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 61457,
-                "sampleAddress": "0xba12222222228d8ba445958a75a0704d566bf2c8",
-                "sampleTxHash": "0x0000a3e21bcf49f4ee326c091d3732b5df2de8da829b8aa05eccb66a03c2b03f",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

@@ -1,0 +1,81 @@
+{
+    "name": "RewardPaid",
+    "abis": [
+        {
+            "@id": "RewardPaid_ERC20",
+            "hex_signature": "0xe2403640ba68fed3a2f88b7557551d1993f84b99bb10ff833f0cf8db0c5e0486",
+            "type": "event",
+            "signature": "RewardPaid(address,uint256)",
+            "name": "RewardPaid",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "@token": null,
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "RewardPaid_ERC20LP",
+            "hex_signature": "0xd6f2c8500df5b44f11e9e48b91ff9f1b9d81bc496d55570c2b1b75bf65243f51",
+            "type": "event",
+            "signature": "RewardPaid(address,uint256,uint256)",
+            "name": "RewardPaid",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "fees0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "fees1",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "RewardPaid_PID",
+            "hex_signature": "0xd6f2c8500df5b44f11e9e48b91ff9f1b9d81bc496d55570c2b1b75bf65243f51",
+            "type": "event",
+            "signature": "RewardPaid(address,uint256,uint256)",
+            "name": "RewardPaid",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

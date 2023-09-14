@@ -1,71 +1,39 @@
 {
-    "@id": "WithdrawalClaimed",
-    "hex_signature": "0x6ad26c5e238e7d002799f9a5db07e81ef14e37386ae03496d7a7ef04713e145b",
     "name": "WithdrawalClaimed",
-    "signature": "WithdrawalClaimed(uint256,address,address,uint256)",
-    "numLogs": 5551,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "lido:requestId",
-            "name": "requestId",
-            "type": "uint256"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "owner",
-            "type": "address",
-            "features": {
-                "lido": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1457,
-                    "sampleAddress": "0x4a87ecdfb459eb36d25226d9ccd7ec4f684ab3fc",
-                    "sampleTxHash": "0x08d6ab1c91e367dd5a11ec915fd62748c664a984fcde8c1d1f328c0ca6790705",
-                    "found": 5,
-                    "samples": 100
+            "@id": "WithdrawalClaimed",
+            "hex_signature": "0x6ad26c5e238e7d002799f9a5db07e81ef14e37386ae03496d7a7ef04713e145b",
+            "type": "event",
+            "signature": "WithdrawalClaimed(uint256,address,address,uint256)",
+            "name": "WithdrawalClaimed",
+            "inputs": [
+                {
+                    "@type": "erc20:tokenAmount",
+                    "name": "requestId",
+                    "type": "uint256",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "name": "amountOfETH",
+                    "type": "uint256",
+                    "@token": "$",
+                    "validationSuccess": true
                 }
-            }
-        },
-        {
-            "@type": "transfer:to",
-            "name": "receiver",
-            "type": "address",
-            "features": {
-                "lido": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1457,
-                    "sampleAddress": "0x4a87ecdfb459eb36d25226d9ccd7ec4f684ab3fc",
-                    "sampleTxHash": "0x08d6ab1c91e367dd5a11ec915fd62748c664a984fcde8c1d1f328c0ca6790705",
-                    "found": 4,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "evm:tokenAmount",
-            "name": "amountOfETH",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "lido": 5551
-    },
-    "contract_address": {
-        "features": {
-            "lido": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 7261,
-                "sampleAddress": "0x889edc2edab5f40e902b864ad4d7ade8e412f9b1",
-                "sampleTxHash": "0x00154edb3940b9ca3211120b415c8d633609c075305b0792abc98d079fdf392f",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

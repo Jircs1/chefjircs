@@ -1,47 +1,35 @@
 {
-    "@id": "Execution721MakerFeePacked",
-    "hex_signature": "0x7dc5c0699ac8dd5250cbe368a2fc3b4a2daadb120ad07f6cccea29f83482686e",
     "name": "Execution721MakerFeePacked",
-    "signature": "Execution721MakerFeePacked(bytes32,uint256,uint256,uint256)",
-    "numLogs": 53214,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "blur:orderHash",
-            "name": "orderHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "blur:trader",
-            "name": "tokenIdListingIndexTrader",
-            "type": "uint256"
-        },
-        {
-            "@type": "blur:collectionPriceSide",
-            "name": "collectionPriceSide",
-            "type": "uint256"
-        },
-        {
-            "@type": "blur:rate",
-            "name": "makerFeeRecipientRate",
-            "type": "uint256"
+            "@id": "Execution721MakerFeePacked",
+            "hex_signature": "0x7dc5c0699ac8dd5250cbe368a2fc3b4a2daadb120ad07f6cccea29f83482686e",
+            "type": "event",
+            "signature": "Execution721MakerFeePacked(bytes32,uint256,uint256,uint256)",
+            "name": "Execution721MakerFeePacked",
+            "inputs": [
+                {
+                    "@type": "blur:orderHash",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "blur:trader",
+                    "name": "tokenIdListingIndexTrader",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "blur:collectionPriceSide",
+                    "name": "collectionPriceSide",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "blur:rate",
+                    "name": "makerFeeRecipientRate",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "blur": 53214
-    },
-    "contract_address": {
-        "features": {
-            "blur": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 76828,
-                "sampleAddress": "0xb2ecfe4e4d61f8790bbb9de2d1259b9e2410cea5",
-                "sampleTxHash": "0x0000815f249302647bc202a785a8a628d40ad7e226f9e86c8ba9c6004c18590e",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

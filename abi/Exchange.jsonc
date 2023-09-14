@@ -1,98 +1,31 @@
 {
-    "@id": "Exchange",
-    "hex_signature": "0xddac40937f35385a34f721af292e5a83fc5b840f722bff57c2fc71adba708c48",
     "name": "Exchange",
-    "signature": "Exchange(address,uint256,address)",
-    "numLogs": 307022,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "erc20:token",
-            "name": "pair",
-            "type": "address",
-            "features": {
-                "kyberswap": {
-                    "is_erc20": 0.65,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0.79,
-                    "numLogs": 641726,
-                    "sampleAddress": "0x555b6ee8fab3dfdbcca9121721c435fd4c7a1fd1",
-                    "sampleTxHash": "0x00005e63a072ccf09952e58e8cc45425bbcecf53e5eaf446eb5584b4b44b84d3",
-                    "found": 100,
-                    "samples": 100
+            "@id": "Exchange",
+            "hex_signature": "0xddac40937f35385a34f721af292e5a83fc5b840f722bff57c2fc71adba708c48",
+            "type": "event",
+            "signature": "Exchange(address,uint256,address)",
+            "name": "Exchange",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "pair",
+                    "type": "address"
                 },
-                "baseon": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 1,
-                    "numLogs": 149,
-                    "sampleAddress": "0x9a0b05f3cf748a114a4f8351802b3bffe07100d4",
-                    "sampleTxHash": "0x026a8c5983a4071d1da0d899a693b7efa148b0ea3a437a20c127e58bf00d27ef",
-                    "found": 24,
-                    "samples": 24
-                }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$0",
-            "name": "amountOut",
-            "type": "uint256"
-        },
-        {
-            "@type": "kyberdex:output",
-            "name": "output",
-            "type": "address",
-            "features": {
-                "kyberswap": {
-                    "is_erc20": 1,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 589502,
-                    "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-                    "sampleTxHash": "0x0000841675ceea9af7a4d1e564f0c5f48e1dd05fd98a68877e85f88ccbbfbedd",
-                    "found": 100,
-                    "samples": 100
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amountOut",
+                    "type": "uint256"
                 },
-                "baseon": {
-                    "is_erc20": 0.9,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 149,
-                    "sampleAddress": "0xeb466342c4d449bc9f53a865d5cb90586f405215",
-                    "sampleTxHash": "0x02be6be1b64d74c0f13a11b0f822e9f38cb255af2f6c5dec342aa2a13fa68af0",
-                    "found": 10,
-                    "samples": 10
+                {
+                    "@type": "kyberdex:output",
+                    "name": "output",
+                    "type": "address"
                 }
-            }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "kyberswap": 306975,
-        "baseon": 47
-    },
-    "contract_address": {
-        "features": {
-            "kyberswap": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 1051048,
-                "sampleAddress": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
-                "sampleTxHash": "0x00005e63a072ccf09952e58e8cc45425bbcecf53e5eaf446eb5584b4b44b84d3",
-                "found": 10,
-                "samples": 10
-            },
-            "baseon": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 149,
-                "sampleAddress": "0xc7262361fc436498ec91025daa4cfb481574312d",
-                "sampleTxHash": "0x026a8c5983a4071d1da0d899a693b7efa148b0ea3a437a20c127e58bf00d27ef",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

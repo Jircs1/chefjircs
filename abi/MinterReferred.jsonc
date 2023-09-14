@@ -1,86 +1,20 @@
 {
-    "@id": "MinterReferred",
-    "hex_signature": "0xcecb5f5b62b88dc819e81f535d3c431ec78987ab181067baac5d532dde7ee38a",
     "name": "MinterReferred",
-    "signature": "MinterReferred(address)",
-    "numLogs": 370829,
-    "numProjects": 4,
-    "inputs": [
+    "abis": [
         {
-            "@type": "referral:referer",
-            "name": "referrer",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 40333,
-                    "sampleAddress": "0x18588006b8de2af1b3e9ac0cdf7261015a953bae",
-                    "sampleTxHash": "0x00879d9b08fa0684e6bd5014b16a059dcfce7e9ed07a375427a494ebb550af78",
-                    "found": 0,
-                    "samples": 100
-                },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 40333,
-                    "sampleAddress": "0x18588006b8de2af1b3e9ac0cdf7261015a953bae",
-                    "sampleTxHash": "0x00879d9b08fa0684e6bd5014b16a059dcfce7e9ed07a375427a494ebb550af78",
-                    "found": 0,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 40333,
-                    "sampleAddress": "0x18588006b8de2af1b3e9ac0cdf7261015a953bae",
-                    "sampleTxHash": "0x00879d9b08fa0684e6bd5014b16a059dcfce7e9ed07a375427a494ebb550af78",
-                    "found": 0,
-                    "samples": 100
+            "@id": "MinterReferred",
+            "hex_signature": "0xcecb5f5b62b88dc819e81f535d3c431ec78987ab181067baac5d532dde7ee38a",
+            "type": "event",
+            "signature": "MinterReferred(address)",
+            "name": "MinterReferred",
+            "inputs": [
+                {
+                    "@type": "referral:referer",
+                    "name": "referrer",
+                    "type": "address"
                 }
-            }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "dharma": 123608,
-        "opensea": 123608,
-        "vectorized": 123608
-    },
-    "contract_address": {
-        "features": {
-            "dharma": {
-                "is_erc20": 0,
-                "is_erc721": 1,
-                "is_erc20lp": 0,
-                "numLogs": 260423,
-                "sampleAddress": "0x0000000000664ceffed39244a8312bd895470803",
-                "sampleTxHash": "0x00000f81f1a16d22dc4eb0d0e586501c2c6650f43024fe13838cc369d77e0876",
-                "found": 1,
-                "samples": 1
-            },
-            "opensea": {
-                "is_erc20": 0,
-                "is_erc721": 1,
-                "is_erc20lp": 0,
-                "numLogs": 260423,
-                "sampleAddress": "0x0000000000664ceffed39244a8312bd895470803",
-                "sampleTxHash": "0x00000f81f1a16d22dc4eb0d0e586501c2c6650f43024fe13838cc369d77e0876",
-                "found": 1,
-                "samples": 1
-            },
-            "vectorized": {
-                "is_erc20": 0,
-                "is_erc721": 1,
-                "is_erc20lp": 0,
-                "numLogs": 260423,
-                "sampleAddress": "0x0000000000664ceffed39244a8312bd895470803",
-                "sampleTxHash": "0x00000f81f1a16d22dc4eb0d0e586501c2c6650f43024fe13838cc369d77e0876",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

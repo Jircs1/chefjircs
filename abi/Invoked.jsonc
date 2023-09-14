@@ -1,102 +1,35 @@
 {
-    "@id": "Invoked",
-    "hex_signature": "0x7d2476ab50663f025cff0be85655bcf355f62768615c0c478f3cd5293f807365",
     "name": "Invoked",
-    "signature": "Invoked(address,address,uint256,bytes)",
-    "numLogs": 7096,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "walletfactory:module",
-            "name": "module",
-            "type": "address",
-            "features": {
-                "walletfactory": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 77684,
-                    "sampleAddress": "0x9d58779365b067d5d3fcc6e92d237acd06f1e6a1",
-                    "sampleTxHash": "0x000228987903ea4218038fb8d43c652ac4aaf971170c045edc161c5ffa34d100",
-                    "found": 4,
-                    "samples": 4
+            "@id": "Invoked",
+            "hex_signature": "0x7d2476ab50663f025cff0be85655bcf355f62768615c0c478f3cd5293f807365",
+            "type": "event",
+            "signature": "Invoked(address,address,uint256,bytes)",
+            "name": "Invoked",
+            "inputs": [
+                {
+                    "@type": "walletfactory:module",
+                    "name": "module",
+                    "type": "address"
                 },
-                "mykey": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 44,
-                    "sampleAddress": "0x1c2349acbb7f83d07577692c75b6d7654899bf10",
-                    "sampleTxHash": "0x0176ede482da15fa24a72a8a9d6271779d912a8d313891ea53780e1987056c4f",
-                    "found": 2,
-                    "samples": 2
-                }
-            }
-        },
-        {
-            "@type": "walletfactory:module",
-            "name": "target",
-            "type": "address",
-            "features": {
-                "walletfactory": {
-                    "is_erc20": 0.453608,
-                    "is_erc721": 0.0412371,
-                    "is_erc20lp": 0.0103093,
-                    "numLogs": 64527,
-                    "sampleAddress": "0x482579f93dc13e6b434e38b5a0447ca543d88a46",
-                    "sampleTxHash": "0x000228987903ea4218038fb8d43c652ac4aaf971170c045edc161c5ffa34d100",
-                    "found": 97,
-                    "samples": 100
+                {
+                    "@type": "walletfactory:module",
+                    "name": "target",
+                    "type": "address"
                 },
-                "mykey": {
-                    "is_erc20": 0.777778,
-                    "is_erc721": 0.0555556,
-                    "is_erc20lp": 0.0555556,
-                    "numLogs": 44,
-                    "sampleAddress": "0xe3d189a69e5ae2ca76ed848a262230fb8ff5eff8",
-                    "sampleTxHash": "0x09dc3651489375a97da64ce75c6f13d8c9beaab7e4a845676d1a8bd16a16f379",
-                    "found": 18,
-                    "samples": 24
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
                 }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "value",
-            "type": "uint256"
-        },
-        {
-            "name": "data",
-            "type": "bytes"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "walletfactory": 7037,
-        "mykey": 59
-    },
-    "contract_address": {
-        "features": {
-            "walletfactory": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 18330,
-                "sampleAddress": "0x94cfa68f579ad3bc891ea7d4d8bd89999bce2c53",
-                "sampleTxHash": "0x0079498386ef112757b302359e1838c33f8e80f6bfbcfad6c37ad3fb328fd2eb",
-                "found": 100,
-                "samples": 100
-            },
-            "mykey": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 44,
-                "sampleAddress": "0x935f0a599a2e7ac448b7b60a02b501f902481f79",
-                "sampleTxHash": "0x09dc3651489375a97da64ce75c6f13d8c9beaab7e4a845676d1a8bd16a16f379",
-                "found": 22,
-                "samples": 22
-            }
-        }
-    }
+    ]
 }

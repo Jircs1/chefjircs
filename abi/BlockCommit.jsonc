@@ -1,41 +1,29 @@
 {
-    "@id": "BlockCommit",
-    "hex_signature": "0x8f2916b2f2d78cc5890ead36c06c0f6d5d112c7e103589947e8e2f0d6eddb763",
     "name": "BlockCommit",
-    "signature": "BlockCommit(uint256,bytes32,bytes32)",
-    "numLogs": 136630,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "evm:blockNumber",
-            "name": "blockNumber",
-            "type": "uint256"
-        },
-        {
-            "@type": "evm:blockHash",
-            "name": "blockHash",
-            "type": "bytes32"
-        },
-        {
-            "name": "commitment",
-            "type": "bytes32"
+            "@id": "BlockCommit",
+            "hex_signature": "0x8f2916b2f2d78cc5890ead36c06c0f6d5d112c7e103589947e8e2f0d6eddb763",
+            "type": "event",
+            "signature": "BlockCommit(uint256,bytes32,bytes32)",
+            "name": "BlockCommit",
+            "inputs": [
+                {
+                    "@type": "evm:blockNumber",
+                    "name": "blockNumber",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:blockHash",
+                    "name": "blockHash",
+                    "type": "bytes32"
+                },
+                {
+                    "name": "commitment",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "tornado": 136630
-    },
-    "contract_address": {
-        "features": {
-            "tornado": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 189447,
-                "sampleAddress": "0x32400084c286cf3e17e7b677ea9583e60a000324",
-                "sampleTxHash": "0x00009a5742a902f522a0cf37cc3ee6194a670d409cdb3ff5d4f26e6cef6476a8",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

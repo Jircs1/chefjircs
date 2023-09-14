@@ -1,71 +1,49 @@
 {
-    "@id": "Fee",
-    "hex_signature": "0x4c39b7ce5f4f514f45cb6f82b171b8b0b7f2cbf488ad28e4eff451588e2f014b",
     "name": "Fee",
-    "signature": "Fee(address,uint256,uint256,address[],uint256[],bool)",
-    "numLogs": 117524,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "erc20:token",
-            "name": "token",
-            "type": "address",
-            "features": {
-                "kyberswap": {
-                    "is_erc20": 0.99,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 327488,
-                    "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-                    "sampleTxHash": "0x0000841675ceea9af7a4d1e564f0c5f48e1dd05fd98a68877e85f88ccbbfbedd",
-                    "found": 100,
-                    "samples": 100
+            "@id": "Fee",
+            "hex_signature": "0x4c39b7ce5f4f514f45cb6f82b171b8b0b7f2cbf488ad28e4eff451588e2f014b",
+            "type": "event",
+            "signature": "Fee(address,uint256,uint256,address[],uint256[],bool)",
+            "name": "Fee",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "totalAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "totalFee",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "recipients",
+                    "type": "address[]"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amounts",
+                    "type": "uint256[]"
+                },
+                {
+                    "name": "isBps",
+                    "type": "bool"
                 }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$0",
-            "name": "totalAmount",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$0",
-            "name": "totalFee",
-            "type": "uint256"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "recipients",
-            "type": "address[]"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$0",
-            "name": "amounts",
-            "type": "uint256[]"
-        },
-        {
-            "name": "isBps",
-            "type": "bool"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "kyberswap": 117524
-    },
-    "contract_address": {
-        "features": {
-            "kyberswap": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 328704,
-                "sampleAddress": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
-                "sampleTxHash": "0x00005e63a072ccf09952e58e8cc45425bbcecf53e5eaf446eb5584b4b44b84d3",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

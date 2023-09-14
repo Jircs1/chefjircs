@@ -1,0 +1,283 @@
+{
+    "name": "Mint",
+    "abis": [
+        {
+            "@id": "Mint_B",
+            "hex_signature": "0x458f5fa412d0f69b08dd84872b0215675cc67bc1d5b6fd93300a1c3878b86196",
+            "type": "event",
+            "signature": "Mint(address,address,uint256,uint256,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:beneficiary",
+                    "name": "onBehalfOf",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "value",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "balanceIncrease",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:index",
+                    "name": "index",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Mint_DEX3",
+            "hex_signature": "0x7a53080ba414158be7ec69b987b5fb7d07dee101fe85488f0853ae16239d0bde",
+            "type": "event",
+            "signature": "Mint(address,address,int24,int24,uint128,uint256,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "tickLower",
+                    "type": "int24"
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "tickUpper",
+                    "type": "int24"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "qty",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token0",
+                    "name": "qty0",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token1",
+                    "name": "qty1",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Mint_ERC20",
+            "hex_signature": "0x4c209b5fc8ad50758f13e2e1088ba56a560dff690a1c6fef26394f4c03821c4f",
+            "type": "event",
+            "signature": "Mint(address,uint256,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "minter",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token0",
+                    "name": "mintAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token1",
+                    "name": "mintTokens",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Mint_ERC20C",
+            "hex_signature": "0xab8530f87dc9b59234c4623bf917212bb2536d647574c8e7e5da92c2ede0c9f8",
+            "type": "event",
+            "signature": "Mint(address,address,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "value",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Mint_ERC20F",
+            "hex_signature": "0xb4c03061fb5b7fed76389d5af8f2e0ddb09f8c70d1333abbb62582835e10accb",
+            "type": "event",
+            "signature": "Mint(address,uint256,uint256,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amountLP",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "amountSD",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "mintFeeAmountSD",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Mint_ERC20LP",
+            "hex_signature": "0xb4c03061fb5b7fed76389d5af8f2e0ddb09f8c70d1333abbb62582835e10accb",
+            "type": "event",
+            "signature": "Mint(address,uint256,uint256,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "dex:share",
+                    "name": "share",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Mint_ERC721",
+            "hex_signature": "0x4c209b5fc8ad50758f13e2e1088ba56a560dff690a1c6fef26394f4c03821c4f",
+            "type": "event",
+            "signature": "Mint(address,uint256,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token0",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token1",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Mint_NativeERC20",
+            "hex_signature": "0x458f5fa412d0f69b08dd84872b0215675cc67bc1d5b6fd93300a1c3878b86196",
+            "type": "event",
+            "signature": "Mint(address,address,uint256,uint256,uint256)",
+            "name": "Mint",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "name": "amountETH",
+                    "type": "uint256",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amountToken",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dex:liquidity",
+                    "name": "liquidity",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

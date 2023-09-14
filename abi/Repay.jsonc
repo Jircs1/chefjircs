@@ -1,0 +1,94 @@
+{
+    "name": "Repay",
+    "abis": [
+        {
+            "@id": "Repay_ATokens",
+            "hex_signature": "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+            "type": "event",
+            "signature": "Repay(address,address,address,uint256,bool)",
+            "name": "Repay",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "reserve",
+                    "type": "address"
+                },
+                {
+                    "@type": "lending:user",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "lending:repayer",
+                    "name": "repayer",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "lending:useATokens",
+                    "name": "useATokens",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Repay_LienID",
+            "hex_signature": "0x2469cc9e12e74c63438d5b1117b318cd3a4cdaf9d659d9eac6d975d14d963254",
+            "type": "event",
+            "signature": "Repay(uint256,address)",
+            "name": "Repay",
+            "inputs": [
+                {
+                    "@type": "blur:lienId",
+                    "name": "lienId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc721:token",
+                    "name": "collection",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Repay_ReserveTokens",
+            "hex_signature": "0x4cdde6e09bb755c9a5589ebaec640bbfedff1362d4b255ebf8339782b9942faa",
+            "type": "event",
+            "signature": "Repay(address,address,address,uint256)",
+            "name": "Repay",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "reserve",
+                    "type": "address"
+                },
+                {
+                    "@type": "lending:user",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "lending:repayer",
+                    "name": "repayer",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,54 +1,32 @@
 {
-    "@id": "ReceiveFromChain",
-    "hex_signature": "0x831bc68226f8d1f734ffcca73602efc4eca13711402ba1d2cc05ee17bb54f631",
     "name": "ReceiveFromChain",
-    "signature": "ReceiveFromChain(uint16,uint64,uint256)",
-    "numLogs": 58310,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "stargate:chainID",
-            "name": "srcChainId",
-            "type": "uint16"
-        },
-        {
-            "@type": "evm:nonce",
-            "name": "nonce",
-            "type": "uint64"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "qty",
-            "type": "uint256"
+            "@id": "ReceiveFromChain",
+            "hex_signature": "0x831bc68226f8d1f734ffcca73602efc4eca13711402ba1d2cc05ee17bb54f631",
+            "type": "event",
+            "signature": "ReceiveFromChain(uint16,uint64,uint256)",
+            "name": "ReceiveFromChain",
+            "inputs": [
+                {
+                    "@type": "stargate:chainID",
+                    "name": "srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "@type": "evm:nonce",
+                    "name": "nonce",
+                    "type": "uint64"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "qty",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "stargate": 58310,
-        "layerzero": 87
-    },
-    "contract_address": {
-        "features": {
-            "layerzero": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 56700,
-                "sampleAddress": "0xe3b53af74a4bf62ae5511055290838050bf764df",
-                "sampleTxHash": "0x0001731a55ddaedaa0f203e9332270ac0bde7a4851465ac6b64b64860d13dde6",
-                "found": 4,
-                "samples": 4
-            },
-            "stargate": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 56672,
-                "sampleAddress": "0xe3b53af74a4bf62ae5511055290838050bf764df",
-                "sampleTxHash": "0x0001731a55ddaedaa0f203e9332270ac0bde7a4851465ac6b64b64860d13dde6",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

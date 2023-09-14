@@ -1,42 +1,30 @@
 {
-    "@id": "SendToChain",
-    "hex_signature": "0x664e26797cde1146ddfcb9a5d3f4de61179f9c11b2698599bb09e686f442172b",
     "name": "SendToChain",
-    "signature": "SendToChain(uint16,bytes,uint256)",
-    "numLogs": 30205,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "stargate:chainID",
-            "name": "dstChainId",
-            "type": "uint16"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "to",
-            "type": "bytes"
-        },
-        {
-            "@type": "evm:tokenAmount",
-            "name": "qty",
-            "type": "uint256"
+            "@id": "SendToChain",
+            "hex_signature": "0x664e26797cde1146ddfcb9a5d3f4de61179f9c11b2698599bb09e686f442172b",
+            "type": "event",
+            "signature": "SendToChain(uint16,bytes,uint256)",
+            "name": "SendToChain",
+            "inputs": [
+                {
+                    "@type": "stargate:chainID",
+                    "name": "dstChainId",
+                    "type": "uint16"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "bytes"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "qty",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "stargate": 30205
-    },
-    "contract_address": {
-        "features": {
-            "stargate": {
-                "is_erc20": 1,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 28888,
-                "sampleAddress": "0xe3b53af74a4bf62ae5511055290838050bf764df",
-                "sampleTxHash": "0x000049beb778f30ebaec615c97558df5e4f3ca1f4a48624897eac58a8ac9c1dd",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

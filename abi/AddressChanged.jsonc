@@ -1,41 +1,29 @@
 {
-    "@id": "AddressChanged",
-    "hex_signature": "0x65412581168e88a1e60c6459d7f44ae83ad0832e670826c05a4e2476b57af752",
     "name": "AddressChanged",
-    "signature": "AddressChanged(bytes32,uint256,bytes)",
-    "numLogs": 104378,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "ens:node",
-            "name": "node",
-            "type": "bytes32"
-        },
-        {
-            "@type": "ens:coinType",
-            "name": "coinType",
-            "type": "uint256"
-        },
-        {
-            "name": "newAddress",
-            "type": "bytes"
+            "@id": "AddressChanged",
+            "hex_signature": "0x65412581168e88a1e60c6459d7f44ae83ad0832e670826c05a4e2476b57af752",
+            "type": "event",
+            "signature": "AddressChanged(bytes32,uint256,bytes)",
+            "name": "AddressChanged",
+            "inputs": [
+                {
+                    "@type": "ens:node",
+                    "name": "node",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "ens:coinType",
+                    "name": "coinType",
+                    "type": "uint256"
+                },
+                {
+                    "name": "newAddress",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "ens": 104378
-    },
-    "contract_address": {
-        "features": {
-            "ens": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 614204,
-                "sampleAddress": "0x4976fb03c32e5b8cfe2b6ccb31c09ba78ebaba41",
-                "sampleTxHash": "0x000011d15d00ea42f17e2b4c2f3a351fa31cf173256dbfb1829b3a616d956a97",
-                "found": 6,
-                "samples": 6
-            }
-        }
-    }
+    ]
 }

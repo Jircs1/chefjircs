@@ -1,49 +1,25 @@
 {
-    "@id": "StartAuction",
-    "hex_signature": "0xe5095dc360d1a56740c946cccc76520c1a1a57381c950520062adeda68dbf572",
     "name": "StartAuction",
-    "signature": "StartAuction(uint256,address)",
-    "numLogs": 54051,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "blur:lienId",
-            "name": "lienId",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc721:token",
-            "name": "collection",
-            "type": "address",
-            "features": {
-                "blur": {
-                    "is_erc20": 0,
-                    "is_erc721": 0.9375,
-                    "is_erc20lp": 0,
-                    "numLogs": 57415,
-                    "sampleAddress": "0xed5af388653567af2f388e6224dc7c4b3241c544",
-                    "sampleTxHash": "0x00056fcb5f68fc8d5dc4cbde865dfe0f0371050963a70cf5044b241dce821ed0",
-                    "found": 16,
-                    "samples": 16
+            "@id": "StartAuction",
+            "hex_signature": "0xe5095dc360d1a56740c946cccc76520c1a1a57381c950520062adeda68dbf572",
+            "type": "event",
+            "signature": "StartAuction(uint256,address)",
+            "name": "StartAuction",
+            "inputs": [
+                {
+                    "@type": "blur:lienId",
+                    "name": "lienId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc721:token",
+                    "name": "collection",
+                    "type": "address"
                 }
-            }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "blur": 54051
-    },
-    "contract_address": {
-        "features": {
-            "blur": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 57415,
-                "sampleAddress": "0x29469395eaf6f95920e59f858042f0e28d98a20b",
-                "sampleTxHash": "0x000058854a05306f468f32a0ca2986b42b3d779aa8beee4ca1ec867a8745478f",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

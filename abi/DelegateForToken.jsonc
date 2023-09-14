@@ -1,168 +1,39 @@
 {
-    "@id": "DelegateForToken",
-    "hex_signature": "0xe89c6ba1e8957285aed22618f52aa1dcb9d5bb64e1533d8b55136c72fcf5aa5d",
     "name": "DelegateForToken",
-    "signature": "DelegateForToken(address,address,address,uint256,bool)",
-    "numLogs": 10791,
-    "numProjects": 5,
-    "inputs": [
+    "abis": [
         {
-            "name": "vault",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0.047619,
-                    "is_erc20lp": 0,
-                    "numLogs": 6432,
-                    "sampleAddress": "0x60da2a1f0693ea2f44f38421f7842a79bd3c9f14",
-                    "sampleTxHash": "0x011d9503b219834e59749629e446fc1012e1ee057e58db1a6507c5b06a859df0",
-                    "found": 21,
-                    "samples": 100
+            "@id": "DelegateForToken",
+            "hex_signature": "0xe89c6ba1e8957285aed22618f52aa1dcb9d5bb64e1533d8b55136c72fcf5aa5d",
+            "type": "event",
+            "signature": "DelegateForToken(address,address,address,uint256,bool)",
+            "name": "DelegateForToken",
+            "inputs": [
+                {
+                    "name": "vault",
+                    "type": "address"
                 },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0.047619,
-                    "is_erc20lp": 0,
-                    "numLogs": 6432,
-                    "sampleAddress": "0x60da2a1f0693ea2f44f38421f7842a79bd3c9f14",
-                    "sampleTxHash": "0x011d9503b219834e59749629e446fc1012e1ee057e58db1a6507c5b06a859df0",
-                    "found": 21,
-                    "samples": 100
+                {
+                    "name": "delegate",
+                    "type": "address"
                 },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0.047619,
-                    "is_erc20lp": 0,
-                    "numLogs": 6432,
-                    "sampleAddress": "0x60da2a1f0693ea2f44f38421f7842a79bd3c9f14",
-                    "sampleTxHash": "0x011d9503b219834e59749629e446fc1012e1ee057e58db1a6507c5b06a859df0",
-                    "found": 21,
-                    "samples": 100
+                {
+                    "@type": "erc721:token",
+                    "name": "contract_",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "name": "value",
+                    "type": "bool"
                 }
-            }
-        },
-        {
-            "name": "delegate",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 1,
-                    "is_erc20lp": 0,
-                    "numLogs": 2289,
-                    "sampleAddress": "0x648a58121dc0de4436837dc585ded4fa5fba6d3e",
-                    "sampleTxHash": "0x0b96b5793557e53ed8e3beafcf69556092a99da4169c0ee835e1790aa93415ec",
-                    "found": 1,
-                    "samples": 100
-                },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 1,
-                    "is_erc20lp": 0,
-                    "numLogs": 2289,
-                    "sampleAddress": "0x648a58121dc0de4436837dc585ded4fa5fba6d3e",
-                    "sampleTxHash": "0x0b96b5793557e53ed8e3beafcf69556092a99da4169c0ee835e1790aa93415ec",
-                    "found": 1,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 1,
-                    "is_erc20lp": 0,
-                    "numLogs": 2289,
-                    "sampleAddress": "0x648a58121dc0de4436837dc585ded4fa5fba6d3e",
-                    "sampleTxHash": "0x0b96b5793557e53ed8e3beafcf69556092a99da4169c0ee835e1790aa93415ec",
-                    "found": 1,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc721:token",
-            "name": "contract_",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0.0103093,
-                    "is_erc721": 0.71134,
-                    "is_erc20lp": 0,
-                    "numLogs": 11008,
-                    "sampleAddress": "0x764aeebcf425d56800ef2c84f2578689415a2daa",
-                    "sampleTxHash": "0x0000f6a0441125be49859fa1f3f179504f2754c48085695e4c60dd65f3fba66d",
-                    "found": 97,
-                    "samples": 100
-                },
-                "opensea": {
-                    "is_erc20": 0.0103093,
-                    "is_erc721": 0.701031,
-                    "is_erc20lp": 0,
-                    "numLogs": 11008,
-                    "sampleAddress": "0x764aeebcf425d56800ef2c84f2578689415a2daa",
-                    "sampleTxHash": "0x0000f6a0441125be49859fa1f3f179504f2754c48085695e4c60dd65f3fba66d",
-                    "found": 97,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0.0103093,
-                    "is_erc721": 0.701031,
-                    "is_erc20lp": 0,
-                    "numLogs": 11008,
-                    "sampleAddress": "0x764aeebcf425d56800ef2c84f2578689415a2daa",
-                    "sampleTxHash": "0x0000f6a0441125be49859fa1f3f179504f2754c48085695e4c60dd65f3fba66d",
-                    "found": 97,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc721:tokenID",
-            "@token": "$2",
-            "name": "tokenId",
-            "type": "uint256"
-        },
-        {
-            "name": "value",
-            "type": "bool"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "dharma": 3596,
-        "opensea": 3596,
-        "vectorized": 3596
-    },
-    "contract_address": {
-        "features": {
-            "dharma": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 11406,
-                "sampleAddress": "0x00000000000076a84fef008cdabe6409d2fe638b",
-                "sampleTxHash": "0x0000f6a0441125be49859fa1f3f179504f2754c48085695e4c60dd65f3fba66d",
-                "found": 1,
-                "samples": 1
-            },
-            "opensea": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 11406,
-                "sampleAddress": "0x00000000000076a84fef008cdabe6409d2fe638b",
-                "sampleTxHash": "0x0000f6a0441125be49859fa1f3f179504f2754c48085695e4c60dd65f3fba66d",
-                "found": 1,
-                "samples": 1
-            },
-            "vectorized": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 11406,
-                "sampleAddress": "0x00000000000076a84fef008cdabe6409d2fe638b",
-                "sampleTxHash": "0x0000f6a0441125be49859fa1f3f179504f2754c48085695e4c60dd65f3fba66d",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

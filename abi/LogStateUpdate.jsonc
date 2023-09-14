@@ -1,42 +1,30 @@
 {
-    "@id": "LogStateUpdate",
-    "hex_signature": "0xd342ddf7a308dec111745b00315c14b7efb2bdae570a6856e088ed0c65a3576c",
     "name": "LogStateUpdate",
-    "signature": "LogStateUpdate(uint256,int256,uint256)",
-    "numLogs": 119107,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "starknet:globalRoot",
-            "name": "globalRoot",
-            "type": "uint256"
-        },
-        {
-            "@type": "evm:blockNumber",
-            "name": "blockNumber",
-            "type": "int256"
-        },
-        {
-            "@type": "evm:blockHash",
-            "name": "blockHash",
-            "type": "uint256"
+            "@id": "LogStateUpdate",
+            "hex_signature": "0xd342ddf7a308dec111745b00315c14b7efb2bdae570a6856e088ed0c65a3576c",
+            "type": "event",
+            "signature": "LogStateUpdate(uint256,int256,uint256)",
+            "name": "LogStateUpdate",
+            "inputs": [
+                {
+                    "@type": "starknet:globalRoot",
+                    "name": "globalRoot",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:blockNumber",
+                    "name": "blockNumber",
+                    "type": "int256"
+                },
+                {
+                    "@type": "evm:blockHash",
+                    "name": "blockHash",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "starknet": 119107
-    },
-    "contract_address": {
-        "features": {
-            "starknet": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 114733,
-                "sampleAddress": "0xc662c410c0ecf747543f5ba90660f6abebd9c8c4",
-                "sampleTxHash": "0x000019af114220e90ad5e4f56bb162a77ad850591a815405e304f3dcd47e9ca2",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

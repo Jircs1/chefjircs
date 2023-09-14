@@ -1,89 +1,52 @@
 {
-    "@id": "TransferSentToL2",
-    "hex_signature": "0x0a0607688c86ec1775abcdbab7b33a3a35a6c9cde677c9be880150c231cc6b0b",
     "name": "TransferSentToL2",
-    "signature": "TransferSentToL2(uint256,address,uint256,uint256,uint256,address,uint256)",
-    "numLogs": 36429,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "hop:chainID",
-            "name": "chainId",
-            "type": "uint256"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "recipient",
-            "type": "address",
-            "features": {
-                "hop": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 7703,
-                    "sampleAddress": "0x4ff20209d1100e718a8a4cf4f2baa275317ae4ff",
-                    "sampleTxHash": "0x00272adf728bdda7f34256cdad02da79b0dd6865df2cea30c426285cd8636048",
-                    "found": 0,
-                    "samples": 100
+            "@id": "TransferSentToL2",
+            "hex_signature": "0x0a0607688c86ec1775abcdbab7b33a3a35a6c9cde677c9be880150c231cc6b0b",
+            "type": "event",
+            "signature": "TransferSentToL2(uint256,address,uint256,uint256,uint256,address,uint256)",
+            "name": "TransferSentToL2",
+            "inputs": [
+                {
+                    "@type": "hop:chainID",
+                    "name": "chainId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "amountOutMin",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "deadline",
+                    "type": "uint256"
+                },
+                {
+                    "name": "relayer",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "relayerFee",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "amount",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "amountOutMin",
-            "type": "uint256"
-        },
-        {
-            "@type": "evm:timestamp",
-            "name": "deadline",
-            "type": "uint256"
-        },
-        {
-            "name": "relayer",
-            "type": "address",
-            "features": {
-                "hop": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 233933,
-                    "sampleAddress": "0x710bda329b2a6224e4b44833de30f38e7f81d564",
-                    "sampleTxHash": "0x0000c7ae754131e36541a4c29634318e609c9b3e880a88b0b2b8facec7675f61",
-                    "found": 0,
-                    "samples": 14
-                }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "relayerFee",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "hop": 36392,
-        "metamask": 37
-    },
-    "contract_address": {
-        "features": {
-            "hop": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 233933,
-                "sampleAddress": "0xb8901acb165ed027e32754e0ffe830802919727f",
-                "sampleTxHash": "0x00006459a09f25ccbc86b1aab0c6f3afa58220d55185cd17630fd01c8689e899",
-                "found": 10,
-                "samples": 10
-            }
-        }
-    }
+    ]
 }

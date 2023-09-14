@@ -1,215 +1,53 @@
 {
-    "@id": "SeaDropMint",
-    "hex_signature": "0xe90cf9cc0a552cf52ea6ff74ece0f1c8ae8cc9ad630d3181f55ac43ca076b7d6",
     "name": "SeaDropMint",
-    "signature": "SeaDropMint(address,address,address,address,uint256,uint256,uint256,uint256)",
-    "numLogs": 182169,
-    "numProjects": 3,
-    "inputs": [
+    "abis": [
         {
-            "@type": "erc721:token",
-            "name": "nftContract",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0.52,
-                    "is_erc20lp": 0,
-                    "numLogs": 73465,
-                    "sampleAddress": "0xbe9371326f91345777b04394448c23e2bfeaa826",
-                    "sampleTxHash": "0x00020d0630d70db035f503d6032a821615facb4bbe6b01b392e8b622ed79ff59",
-                    "found": 100,
-                    "samples": 100
+            "@id": "SeaDropMint",
+            "hex_signature": "0xe90cf9cc0a552cf52ea6ff74ece0f1c8ae8cc9ad630d3181f55ac43ca076b7d6",
+            "type": "event",
+            "signature": "SeaDropMint(address,address,address,address,uint256,uint256,uint256,uint256)",
+            "name": "SeaDropMint",
+            "inputs": [
+                {
+                    "@type": "erc721:token",
+                    "name": "nftContract",
+                    "type": "address"
                 },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0.52,
-                    "is_erc20lp": 0,
-                    "numLogs": 73465,
-                    "sampleAddress": "0xbe9371326f91345777b04394448c23e2bfeaa826",
-                    "sampleTxHash": "0x00020d0630d70db035f503d6032a821615facb4bbe6b01b392e8b622ed79ff59",
-                    "found": 100,
-                    "samples": 100
+                {
+                    "name": "minter",
+                    "type": "address"
                 },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0.52,
-                    "is_erc20lp": 0,
-                    "numLogs": 73465,
-                    "sampleAddress": "0xbe9371326f91345777b04394448c23e2bfeaa826",
-                    "sampleTxHash": "0x00020d0630d70db035f503d6032a821615facb4bbe6b01b392e8b622ed79ff59",
-                    "found": 100,
-                    "samples": 100
+                {
+                    "name": "feeRecipient",
+                    "type": "address"
+                },
+                {
+                    "name": "payer",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc721:tokenAmount",
+                    "@token": "$0",
+                    "name": "quantityMinted",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "opensea:unitMintPrice",
+                    "name": "unitMintPrice",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dex:bps",
+                    "name": "feeBps",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "opensea:dropStageIndex",
+                    "name": "dropStageIndex",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "name": "minter",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1654,
-                    "sampleAddress": "0x84de6e4b8c0490dbbb93bff16d5d691ec5dacff0",
-                    "sampleTxHash": "0x01baeea660347d2e7883ad37ca3500e5358945d4f572b65073726c2e207b50c9",
-                    "found": 0,
-                    "samples": 100
-                },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1654,
-                    "sampleAddress": "0x84de6e4b8c0490dbbb93bff16d5d691ec5dacff0",
-                    "sampleTxHash": "0x01baeea660347d2e7883ad37ca3500e5358945d4f572b65073726c2e207b50c9",
-                    "found": 0,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1654,
-                    "sampleAddress": "0x84de6e4b8c0490dbbb93bff16d5d691ec5dacff0",
-                    "sampleTxHash": "0x01baeea660347d2e7883ad37ca3500e5358945d4f572b65073726c2e207b50c9",
-                    "found": 0,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "name": "feeRecipient",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 81765,
-                    "sampleAddress": "0x0000a26b00c1f0df003000390027140000faa719",
-                    "sampleTxHash": "0x0000569e7e628079cdd3259b684c26d3b61cd1bda81049ab9d617866eb088681",
-                    "found": 1,
-                    "samples": 2
-                },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 81765,
-                    "sampleAddress": "0x0000a26b00c1f0df003000390027140000faa719",
-                    "sampleTxHash": "0x0000569e7e628079cdd3259b684c26d3b61cd1bda81049ab9d617866eb088681",
-                    "found": 1,
-                    "samples": 2
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 81765,
-                    "sampleAddress": "0x0000a26b00c1f0df003000390027140000faa719",
-                    "sampleTxHash": "0x0000569e7e628079cdd3259b684c26d3b61cd1bda81049ab9d617866eb088681",
-                    "found": 1,
-                    "samples": 2
-                }
-            }
-        },
-        {
-            "name": "payer",
-            "type": "address",
-            "features": {
-                "dharma": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 2266,
-                    "sampleAddress": "0xef0b56692f78a44cf4034b07f80204757c31bcc9",
-                    "sampleTxHash": "0x00579cbf5412c8c49e97d6990b82984a6ded10ce0122cb53222b60755d60add4",
-                    "found": 1,
-                    "samples": 100
-                },
-                "opensea": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 2266,
-                    "sampleAddress": "0xef0b56692f78a44cf4034b07f80204757c31bcc9",
-                    "sampleTxHash": "0x00579cbf5412c8c49e97d6990b82984a6ded10ce0122cb53222b60755d60add4",
-                    "found": 1,
-                    "samples": 100
-                },
-                "vectorized": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 2266,
-                    "sampleAddress": "0xef0b56692f78a44cf4034b07f80204757c31bcc9",
-                    "sampleTxHash": "0x00579cbf5412c8c49e97d6990b82984a6ded10ce0122cb53222b60755d60add4",
-                    "found": 1,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc721:tokenAmount",
-            "@token": "$0",
-            "name": "quantityMinted",
-            "type": "uint256"
-        },
-        {
-            "@type": "opensea:unitMintPrice",
-            "name": "unitMintPrice",
-            "type": "uint256"
-        },
-        {
-            "@type": "dex:bps",
-            "name": "feeBps",
-            "type": "uint256"
-        },
-        {
-            "@type": "opensea:dropStageIndex",
-            "name": "dropStageIndex",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "dharma": 60723,
-        "opensea": 60723,
-        "vectorized": 60723
-    },
-    "contract_address": {
-        "features": {
-            "dharma": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 81765,
-                "sampleAddress": "0x00005ea00ac477b1030ce78506496e8c2de24bf5",
-                "sampleTxHash": "0x0000569e7e628079cdd3259b684c26d3b61cd1bda81049ab9d617866eb088681",
-                "found": 1,
-                "samples": 1
-            },
-            "opensea": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 81765,
-                "sampleAddress": "0x00005ea00ac477b1030ce78506496e8c2de24bf5",
-                "sampleTxHash": "0x0000569e7e628079cdd3259b684c26d3b61cd1bda81049ab9d617866eb088681",
-                "found": 1,
-                "samples": 1
-            },
-            "vectorized": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 81765,
-                "sampleAddress": "0x00005ea00ac477b1030ce78506496e8c2de24bf5",
-                "sampleTxHash": "0x0000569e7e628079cdd3259b684c26d3b61cd1bda81049ab9d617866eb088681",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

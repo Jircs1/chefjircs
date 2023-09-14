@@ -1,0 +1,85 @@
+{
+    "name": "Deposited",
+    "abis": [
+        {
+            "@id": "Deposited_Data",
+            "hex_signature": "0x6e89d517057028190560dd200cf6bf792842861353d1173761dfa362e1c133f0",
+            "type": "event",
+            "signature": "Deposited(address,uint256,bytes)",
+            "name": "Deposited",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposited_PID",
+            "hex_signature": "0x73a19dd210f1a7f902193214c0ee91dd35ee5b4d920cba8d519eca65a7b488ca",
+            "type": "event",
+            "signature": "Deposited(address,uint256,uint256)",
+            "name": "Deposited",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Deposited_Round",
+            "hex_signature": "0x73a19dd210f1a7f902193214c0ee91dd35ee5b4d920cba8d519eca65a7b488ca",
+            "type": "event",
+            "signature": "Deposited(address,uint256,uint256)",
+            "name": "Deposited",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "name": "round",
+                    "type": "uint256",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

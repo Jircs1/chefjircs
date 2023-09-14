@@ -1,54 +1,30 @@
 {
-    "@id": "NewOwner",
-    "hex_signature": "0xce0457fe73731f824cc272376169235128c118b49d344817417c6d108d155e82",
     "name": "NewOwner",
-    "signature": "NewOwner(bytes32,bytes32,address)",
-    "numLogs": 135960,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "ens:node",
-            "name": "node",
-            "type": "bytes32"
-        },
-        {
-            "@type": "ens:label",
-            "name": "label",
-            "type": "bytes32"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "owner",
-            "type": "address",
-            "features": {
-                "ens": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 778306,
-                    "sampleAddress": "0x283af0b28c62c092c9727f1ee09c02ca627eb7f5",
-                    "sampleTxHash": "0x000011d15d00ea42f17e2b4c2f3a351fa31cf173256dbfb1829b3a616d956a97",
-                    "found": 10,
-                    "samples": 100
+            "@id": "NewOwner",
+            "hex_signature": "0xce0457fe73731f824cc272376169235128c118b49d344817417c6d108d155e82",
+            "type": "event",
+            "signature": "NewOwner(bytes32,bytes32,address)",
+            "name": "NewOwner",
+            "inputs": [
+                {
+                    "@type": "ens:node",
+                    "name": "node",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "ens:label",
+                    "name": "label",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "owner",
+                    "type": "address"
                 }
-            }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "ens": 135960
-    },
-    "contract_address": {
-        "features": {
-            "ens": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 1642045,
-                "sampleAddress": "0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e",
-                "sampleTxHash": "0x00000b6023db480c872346134062680d9fac466b34f90dc442f8d4d3e4131046",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

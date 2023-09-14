@@ -1,49 +1,25 @@
 {
-    "@id": "NewResolver",
-    "hex_signature": "0x335721b01866dc23fbee8b6b2c7b1e14d6f05c28cd35a2c934239f94095602a0",
     "name": "NewResolver",
-    "signature": "NewResolver(bytes32,address)",
-    "numLogs": 121050,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "ens:node",
-            "name": "_node",
-            "type": "bytes32"
-        },
-        {
-            "@type": "ens:resolver",
-            "name": "_resolver",
-            "type": "address",
-            "features": {
-                "ens": {
-                    "is_erc20": 0.0350877,
-                    "is_erc721": 0.0701754,
-                    "is_erc20lp": 0,
-                    "numLogs": 827440,
-                    "sampleAddress": "0x4976fb03c32e5b8cfe2b6ccb31c09ba78ebaba41",
-                    "sampleTxHash": "0x00000b6023db480c872346134062680d9fac466b34f90dc442f8d4d3e4131046",
-                    "found": 57,
-                    "samples": 100
+            "@id": "NewResolver",
+            "hex_signature": "0x335721b01866dc23fbee8b6b2c7b1e14d6f05c28cd35a2c934239f94095602a0",
+            "type": "event",
+            "signature": "NewResolver(bytes32,address)",
+            "name": "NewResolver",
+            "inputs": [
+                {
+                    "@type": "ens:node",
+                    "name": "_node",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "ens:resolver",
+                    "name": "_resolver",
+                    "type": "address"
                 }
-            }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "ens": 121049
-    },
-    "contract_address": {
-        "features": {
-            "ens": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 829422,
-                "sampleAddress": "0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e",
-                "sampleTxHash": "0x00000b6023db480c872346134062680d9fac466b34f90dc442f8d4d3e4131046",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

@@ -1,255 +1,43 @@
 {
-    "@id": "Transacted",
-    "hex_signature": "0x59bed9ab5d78073465dd642a9e3e76dfdb7d53bcae9d09df7d0b8f5234d5a806",
     "name": "Transacted",
-    "signature": "Transacted(address,address,bytes32,address,uint256,bytes)",
-    "numLogs": 47981,
-    "numProjects": 8,
-    "inputs": [
+    "abis": [
         {
-            "@type": "transfer:from",
-            "name": "msgSender",
-            "type": "address",
-            "features": {
-                "walletfactory": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 108393,
-                    "sampleAddress": "0x538d72ded42a76a30f730292da939e0577f22f57",
-                    "sampleTxHash": "0x0001369df2101b29a49e629c466736e2afe83feb614bf4d7e6bb537d38647ee8",
-                    "found": 0,
-                    "samples": 100
+            "@id": "Transacted",
+            "hex_signature": "0x59bed9ab5d78073465dd642a9e3e76dfdb7d53bcae9d09df7d0b8f5234d5a806",
+            "type": "event",
+            "signature": "Transacted(address,address,bytes32,address,uint256,bytes)",
+            "name": "Transacted",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "msgSender",
+                    "type": "address"
                 },
-                "bitstamp": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 20203,
-                    "sampleAddress": "0x00bdb5699745f5b860228c8f939abf1b9ae374ed",
-                    "sampleTxHash": "0x0000c2ec8cc9e65ad5764d49395aad05f0f58e4752b79bec89c4147ea926a84b",
-                    "found": 0,
-                    "samples": 1
+                {
+                    "name": "otherSigner",
+                    "type": "address"
                 },
-                "coinlist": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 10292,
-                    "sampleAddress": "0xd2c82f2e5fa236e114a81173e375a73664610998",
-                    "sampleTxHash": "0x00069c05d4c8fd0b89815abb2d92af21b51c7c58b06545619d6b06b71b19bdf5",
-                    "found": 0,
-                    "samples": 1
+                {
+                    "name": "operation",
+                    "type": "bytes32"
                 },
-                "blockfi": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 8066,
-                    "sampleAddress": "0x808b4da0be6c9512e948521452227efc619bea52",
-                    "sampleTxHash": "0x0000d2ebd115c08b7705e2703f8494e0e7bf4eab274ee4dc5c57da818a60c8ec",
-                    "found": 0,
-                    "samples": 1
+                {
+                    "@type": "transfer:to",
+                    "name": "toAddress",
+                    "type": "address"
                 },
-                "korbit": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 85,
-                    "sampleAddress": "0x32b56fc48684fa085df8c4cd2feaafc25c304db9",
-                    "sampleTxHash": "0x0177eab704631e095b2bd56008dc8b6574914cf042955ecdde552a630609e892",
-                    "found": 0,
-                    "samples": 1
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "name": "data",
+                    "type": "bytes"
                 }
-            }
-        },
-        {
-            "name": "otherSigner",
-            "type": "address",
-            "features": {
-                "walletfactory": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 98595,
-                    "sampleAddress": "0x7e06ec2471f9fa456d30f854b45567efbb70c85e",
-                    "sampleTxHash": "0x0001369df2101b29a49e629c466736e2afe83feb614bf4d7e6bb537d38647ee8",
-                    "found": 0,
-                    "samples": 100
-                },
-                "bitstamp": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 20203,
-                    "sampleAddress": "0x3e071255695b527e6e85f5e367b1c173bcea5b0f",
-                    "sampleTxHash": "0x0000c2ec8cc9e65ad5764d49395aad05f0f58e4752b79bec89c4147ea926a84b",
-                    "found": 0,
-                    "samples": 1
-                },
-                "coinlist": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 10292,
-                    "sampleAddress": "0xb067fee58723af1d5fc03e63ae8c278717f2c83d",
-                    "sampleTxHash": "0x00069c05d4c8fd0b89815abb2d92af21b51c7c58b06545619d6b06b71b19bdf5",
-                    "found": 0,
-                    "samples": 8
-                },
-                "blockfi": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 8066,
-                    "sampleAddress": "0x689d84c5b5f4424954343c1458e32e4397923ddf",
-                    "sampleTxHash": "0x0000d2ebd115c08b7705e2703f8494e0e7bf4eab274ee4dc5c57da818a60c8ec",
-                    "found": 0,
-                    "samples": 4
-                },
-                "korbit": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 85,
-                    "sampleAddress": "0xc25b99303c0fda0e8bce110dbb4614a357401d0f",
-                    "sampleTxHash": "0x0177eab704631e095b2bd56008dc8b6574914cf042955ecdde552a630609e892",
-                    "found": 0,
-                    "samples": 2
-                }
-            }
-        },
-        {
-            "name": "operation",
-            "type": "bytes32"
-        },
-        {
-            "@type": "transfer:to",
-            "name": "toAddress",
-            "type": "address",
-            "features": {
-                "walletfactory": {
-                    "is_erc20": 0.0384615,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 48653,
-                    "sampleAddress": "0xa2afbedf7e5c8bf94ee7a4f7912359104c186881",
-                    "sampleTxHash": "0x0001369df2101b29a49e629c466736e2afe83feb614bf4d7e6bb537d38647ee8",
-                    "found": 26,
-                    "samples": 100
-                },
-                "bitstamp": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 6983,
-                    "sampleAddress": "0x48ec5560bfd59b95859965cce48cc244cfdf6b0c",
-                    "sampleTxHash": "0x000e7ccf302fb9697ed80ef40e4815aacbca098a30caa93cdc5d12472350ad50",
-                    "found": 19,
-                    "samples": 100
-                },
-                "coinlist": {
-                    "is_erc20": 0.142857,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 939,
-                    "sampleAddress": "0xd2c82f2e5fa236e114a81173e375a73664610998",
-                    "sampleTxHash": "0x0042f3957ffc21efc6107f9dea2d52ec85dbcaa3efea4927115c7ad43bbbbec9",
-                    "found": 7,
-                    "samples": 100
-                },
-                "blockfi": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 435,
-                    "sampleAddress": "0x3fda25f27211a138adf211f4c060f2149674be6d",
-                    "sampleTxHash": "0x0432431f7a526f07bb47a18d9e7512b06ba891483d3b44204519bef211fabe04",
-                    "found": 5,
-                    "samples": 100
-                },
-                "korbit": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 85,
-                    "sampleAddress": "0x8550e644d74536f1df38b17d5f69aa1bfe28ae86",
-                    "sampleTxHash": "0x0177eab704631e095b2bd56008dc8b6574914cf042955ecdde552a630609e892",
-                    "found": 0,
-                    "samples": 2
-                }
-            }
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "value",
-            "type": "uint256"
-        },
-        {
-            "name": "data",
-            "type": "bytes"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "walletfactory": 46011,
-        "coinlist": 1400,
-        "bitstamp": 274,
-        "blockfi": 272,
-        "korbit": 13
-    },
-    "contract_address": {
-        "features": {
-            "walletfactory": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 98595,
-                "sampleAddress": "0x48ec5560bfd59b95859965cce48cc244cfdf6b0c",
-                "sampleTxHash": "0x0001369df2101b29a49e629c466736e2afe83feb614bf4d7e6bb537d38647ee8",
-                "found": 100,
-                "samples": 100
-            },
-            "bitstamp": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 20203,
-                "sampleAddress": "0x1522900b6dafac587d499a862861c0869be6e428",
-                "sampleTxHash": "0x0000c2ec8cc9e65ad5764d49395aad05f0f58e4752b79bec89c4147ea926a84b",
-                "found": 1,
-                "samples": 1
-            },
-            "coinlist": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 10292,
-                "sampleAddress": "0xd1669ac6044269b59fa12c5822439f609ca54f41",
-                "sampleTxHash": "0x00069c05d4c8fd0b89815abb2d92af21b51c7c58b06545619d6b06b71b19bdf5",
-                "found": 8,
-                "samples": 8
-            },
-            "blockfi": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 8066,
-                "sampleAddress": "0x3fda25f27211a138adf211f4c060f2149674be6d",
-                "sampleTxHash": "0x0000d2ebd115c08b7705e2703f8494e0e7bf4eab274ee4dc5c57da818a60c8ec",
-                "found": 4,
-                "samples": 4
-            },
-            "korbit": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 85,
-                "sampleAddress": "0x0c01089aedc45ab0f43467cceca6b4d3e4170bea",
-                "sampleTxHash": "0x0177eab704631e095b2bd56008dc8b6574914cf042955ecdde552a630609e892",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

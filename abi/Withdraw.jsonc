@@ -1,0 +1,197 @@
+{
+    "name": "Withdraw",
+    "abis": [
+        {
+            "@id": "Withdraw_ClaimedBalance",
+            "hex_signature": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
+            "type": "event",
+            "signature": "Withdraw(address,uint256,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "claimedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "balance",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdraw_ERC20",
+            "hex_signature": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb",
+            "type": "event",
+            "signature": "Withdraw(address,address,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdraw_Lending",
+            "hex_signature": "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7",
+            "type": "event",
+            "signature": "Withdraw(address,address,address,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "reserve",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdraw_PID",
+            "hex_signature": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
+            "type": "event",
+            "signature": "Withdraw(address,uint256,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdraw_T",
+            "hex_signature": "0x884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a9424364",
+            "type": "event",
+            "signature": "Withdraw(address,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "_depositor",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "_amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdraw_US",
+            "hex_signature": "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7",
+            "type": "event",
+            "signature": "Withdraw(address,address,address,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Withdraw_UT",
+            "hex_signature": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb",
+            "type": "event",
+            "signature": "Withdraw(address,address,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "@type": "transfer:to",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

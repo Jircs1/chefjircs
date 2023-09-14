@@ -1,55 +1,30 @@
 {
-    "@id": "StateSynced",
-    "hex_signature": "0x103fed9db65eac19c4d870f49ab7520fe03b99f1838e5996caf47e9e43308392",
     "name": "StateSynced",
-    "signature": "StateSynced(uint256,address,bytes)",
-    "numLogs": 65327,
-    "numProjects": 3,
-    "inputs": [
+    "abis": [
         {
-            "@type": "polygon:id",
-            "name": "id",
-            "type": "uint256"
-        },
-        {
-            "@type": "polygon:stateSync_contractAddress",
-            "name": "contractAddress",
-            "type": "address",
-            "features": {
-                "polygon": {
-                    "is_erc20": 0.333333,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 448452,
-                    "sampleAddress": "0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa",
-                    "sampleTxHash": "0x0000981c4744f325f08ad46b71f2c8e7c342e86b9dd4a39e8ed702234c69311b",
-                    "found": 3,
-                    "samples": 4
+            "@id": "StateSynced",
+            "hex_signature": "0x103fed9db65eac19c4d870f49ab7520fe03b99f1838e5996caf47e9e43308392",
+            "type": "event",
+            "signature": "StateSynced(uint256,address,bytes)",
+            "name": "StateSynced",
+            "inputs": [
+                {
+                    "@type": "polygon:id",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "polygon:stateSync_contractAddress",
+                    "name": "contractAddress",
+                    "type": "address"
+                },
+                {
+                    "@type": "polygon:stateSync_data",
+                    "name": "data",
+                    "type": "bytes"
                 }
-            }
-        },
-        {
-            "@type": "polygon:stateSync_data",
-            "name": "data",
-            "type": "bytes"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "polygon": 65307,
-        "metamask": 18
-    },
-    "contract_address": {
-        "features": {
-            "polygon": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 448452,
-                "sampleAddress": "0x28e4f3a7f651294b9564800b2d01f35189a5bfbe",
-                "sampleTxHash": "0x000026a461d0bed7ad7b378f2d9fe9f2bc79c71361442fec744c92a303f32888",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

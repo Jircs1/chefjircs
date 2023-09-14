@@ -1,0 +1,119 @@
+{
+    "name": "TokenExchange",
+    "abis": [
+        {
+            "@id": "TokenExchange_128",
+            "hex_signature": "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140",
+            "type": "event",
+            "signature": "TokenExchange(address,int128,uint256,int128,uint256)",
+            "name": "TokenExchange",
+            "inputs": [
+                {
+                    "@type": "dex:trader",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "sold_id",
+                    "type": "int128"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "tokens_sold",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "bought_id",
+                    "type": "int128"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$3",
+                    "name": "tokens_bought",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "TokenExchange_256",
+            "hex_signature": "0xb2e76ae99761dc136e598d4a629bb347eccb9532a5f8bbd72e18467c3c34cc98",
+            "type": "event",
+            "signature": "TokenExchange(address,uint256,uint256,uint256,uint256)",
+            "name": "TokenExchange",
+            "inputs": [
+                {
+                    "@type": "dex:trader",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "sold_id",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "tokens_sold",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "bought_id",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$3",
+                    "name": "tokens_bought",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "TokenExchange_PPS",
+            "hex_signature": "0x143f1f8e861fbdeddd5b46e844b7d3ac7b86a122f36e8c463859ee6811b1f29c",
+            "type": "event",
+            "signature": "TokenExchange(address,uint256,uint256,uint256,uint256,uint256,uint256)",
+            "name": "TokenExchange",
+            "inputs": [
+                {
+                    "@type": "dex:trader",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "sold_id",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "tokens_sold",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "bought_id",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$3",
+                    "name": "tokens_bought",
+                    "type": "uint256",
+                    "validationFailure": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

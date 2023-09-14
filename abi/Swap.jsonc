@@ -1,0 +1,358 @@
+{
+    "name": "Swap",
+    "abis": [
+        {
+            "@id": "Swap_AggregatorID",
+            "hex_signature": "0xbeee1e6e7fe307ddcf84b0a16137a4430ad5e2480fc4f4a8e250ab56ccd7630d",
+            "type": "event",
+            "signature": "Swap(string,address)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "metamask:aggregatorId",
+                    "name": "aggregatorId",
+                    "type": "string"
+                },
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Swap_Multichain",
+            "hex_signature": "0x34660fc8af304464529f48a778e03d03e4d34bcd5f9b6f0cfbf3cd238c642f7f",
+            "type": "event",
+            "signature": "Swap(uint16,uint256,address,uint256,uint256,uint256,uint256,uint256)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "stargate:chainID",
+                    "name": "chainId",
+                    "type": "uint16"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "dstPoolId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "transfer:from",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "amountSD",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "eqReward",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "eqFee",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "protocolFee",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "lookupid:$1",
+                    "name": "lpFee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Swap_PID",
+            "hex_signature": "0x2170c741c41531aec20e7c107c24eecfdd15e69c9bb0a8dd37b1840b9e0b207b",
+            "type": "event",
+            "signature": "Swap(bytes32,address,address,uint256,uint256)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "balancer:poolId",
+                    "name": "poolId",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "tokenIn",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "tokenOut",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "amountIn",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Swap_V2",
+            "hex_signature": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+            "type": "event",
+            "signature": "Swap(address,uint256,uint256,uint256,uint256,address)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token0",
+                    "name": "amount0In",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token1",
+                    "name": "amount1In",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token0",
+                    "name": "amount0Out",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$:token1",
+                    "name": "amount1Out",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Swap_V2a",
+            "hex_signature": "0xb3e2773606abfd36b5bd91394b3a54d1398336c65005baf7bf7a05efeffaf75b",
+            "type": "event",
+            "signature": "Swap(address,address,uint256,uint256,uint256,uint256)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "inputCurrency",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "outputCurrency",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "inputAmount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "outputAmount",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "fee",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "dex:rate",
+                    "name": "feeRate",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Swap_V2b",
+            "hex_signature": "0xb3e2773606abfd36b5bd91394b3a54d1398336c65005baf7bf7a05efeffaf75b",
+            "type": "event",
+            "signature": "Swap(address,address,uint256,uint256,uint256,uint256)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0In",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1In",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0Out",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1Out",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Swap_V3",
+            "hex_signature": "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67",
+            "type": "event",
+            "signature": "Swap(address,address,int256,int256,uint160,uint128,int24)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0",
+                    "type": "int256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1",
+                    "type": "int256"
+                },
+                {
+                    "@type": "dex:sqrtPriceX96",
+                    "name": "price",
+                    "type": "uint160"
+                },
+                {
+                    "@type": "dex:liquidity",
+                    "name": "liquidity",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "tick",
+                    "type": "int24"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Swap_V3a",
+            "hex_signature": "0x19b47279256b2a23a1665c810c8d55a1758940ee09377d4f8d26497a3577dc83",
+            "type": "event",
+            "signature": "Swap(address,address,int256,int256,uint160,uint128,int24,uint128,uint128)",
+            "name": "Swap",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "amount0",
+                    "type": "int256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "amount1",
+                    "type": "int256"
+                },
+                {
+                    "@type": "dex:sqrtPriceX96",
+                    "name": "sqrtPriceX96",
+                    "type": "uint160"
+                },
+                {
+                    "@type": "dex:liquidity",
+                    "name": "liquidity",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "dex:tick",
+                    "name": "tick",
+                    "type": "int24"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token0",
+                    "name": "protocolFeesToken0",
+                    "type": "uint128"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "erc20lp:token1",
+                    "name": "protocolFeesToken1",
+                    "type": "uint128"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

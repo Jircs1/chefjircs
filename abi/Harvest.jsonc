@@ -1,0 +1,82 @@
+{
+    "name": "Harvest",
+    "abis": [
+        {
+            "@id": "Harvest_ERC20",
+            "hex_signature": "0xd25759d838eb0a46600f8f327cce144e61d7caefbef27010fe31e2aab091704f",
+            "type": "event",
+            "signature": "Harvest(address,address,uint256,uint256,uint256)",
+            "name": "Harvest",
+            "inputs": [
+                {
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "assets",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": null,
+                    "name": "platformFee",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "harvestBounty",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "Harvest_PID",
+            "hex_signature": "0xd25759d838eb0a46600f8f327cce144e61d7caefbef27010fe31e2aab091704f",
+            "type": "event",
+            "signature": "Harvest(address,address,uint256,uint256,uint256)",
+            "name": "Harvest",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "pid",
+                    "type": "uint256",
+                    "validationFailure": true
+                },
+                {
+                    "@type": "erc20:lookupid",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "reward",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

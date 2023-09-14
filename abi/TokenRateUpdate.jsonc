@@ -1,71 +1,35 @@
 {
-    "@id": "TokenRateUpdate",
-    "hex_signature": "0x77f29993cf2c084e726f7e802da0719d6a0ade3e204badc7a3ffd57ecb768c24",
     "name": "TokenRateUpdate",
-    "signature": "TokenRateUpdate(address,address,uint256,uint256)",
-    "numLogs": 30620,
-    "numProjects": 2,
-    "inputs": [
+    "abis": [
         {
-            "@type": "erc20:token",
-            "name": "_token1",
-            "type": "address",
-            "features": {
-                "bancor": {
-                    "is_erc20": 0.99,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 368324,
-                    "sampleAddress": "0xb1cd6e4153b2a390cf00a6556b0fc1458c4a5533",
-                    "sampleTxHash": "0x00046ee004745785532a28e42f9729854e94eb4a46cc7cecd7e77a7d03ad260a",
-                    "found": 100,
-                    "samples": 100
+            "@id": "TokenRateUpdate",
+            "hex_signature": "0x77f29993cf2c084e726f7e802da0719d6a0ade3e204badc7a3ffd57ecb768c24",
+            "type": "event",
+            "signature": "TokenRateUpdate(address,address,uint256,uint256)",
+            "name": "TokenRateUpdate",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "_token1",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "_token2",
+                    "type": "address"
+                },
+                {
+                    "@type": "bancor:rate",
+                    "name": "_rateN",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "bancor:rate",
+                    "name": "_rateD",
+                    "type": "uint256"
                 }
-            }
-        },
-        {
-            "@type": "erc20:token",
-            "name": "_token2",
-            "type": "address",
-            "features": {
-                "bancor": {
-                    "is_erc20": 0.97,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 385869,
-                    "sampleAddress": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
-                    "sampleTxHash": "0x000003d5b6ebf765e46f69afe24fe727e451291e3b46d2bcc673b7bafaffb4fd",
-                    "found": 100,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "bancor:rate",
-            "name": "_rateN",
-            "type": "uint256"
-        },
-        {
-            "@type": "bancor:rate",
-            "name": "_rateD",
-            "type": "uint256"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "bancor": 30618
-    },
-    "contract_address": {
-        "features": {
-            "bancor": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 383180,
-                "sampleAddress": "0x4c9a2bd661d640da3634a4988a9bd2bc0f18e5a9",
-                "sampleTxHash": "0x00046ee004745785532a28e42f9729854e94eb4a46cc7cecd7e77a7d03ad260a",
-                "found": 100,
-                "samples": 100
-            }
-        }
-    }
+    ]
 }

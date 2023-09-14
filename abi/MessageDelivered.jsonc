@@ -1,93 +1,55 @@
 {
-    "@id": "MessageDelivered",
-    "hex_signature": "0x5e3c1311ea442664e8b1611bfabef659120ea7a0a2cfc0667700bebc69cbffe1",
     "name": "MessageDelivered",
-    "signature": "MessageDelivered(uint256,bytes32,address,uint8,address,bytes32,uint256,uint64)",
-    "numLogs": 187549,
-    "numProjects": 4,
-    "inputs": [
+    "abis": [
         {
-            "@type": "arbitrum:messageIndex",
-            "name": "messageIndex",
-            "type": "uint256"
-        },
-        {
-            "@type": "arbitrum:beforeInboxAcc",
-            "name": "beforeInboxAcc",
-            "type": "bytes32"
-        },
-        {
-            "@type": "arbitrum:inboxAddress",
-            "name": "inbox",
-            "type": "address",
-            "features": {
-                "arbitrum": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 1239530,
-                    "sampleAddress": "0x4dbd4fc535ac27206064b68ffcf827b0a60bab3f",
-                    "sampleTxHash": "0x000004bcc219e5d593ee7441cb74c4c073378620459339481f0b88a5b6234a0c",
-                    "found": 4,
-                    "samples": 4
+            "@id": "MessageDelivered",
+            "hex_signature": "0x5e3c1311ea442664e8b1611bfabef659120ea7a0a2cfc0667700bebc69cbffe1",
+            "type": "event",
+            "signature": "MessageDelivered(uint256,bytes32,address,uint8,address,bytes32,uint256,uint64)",
+            "name": "MessageDelivered",
+            "inputs": [
+                {
+                    "@type": "arbitrum:messageIndex",
+                    "name": "messageIndex",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "arbitrum:beforeInboxAcc",
+                    "name": "beforeInboxAcc",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "arbitrum:inboxAddress",
+                    "name": "inbox",
+                    "type": "address"
+                },
+                {
+                    "@type": "arbitrum:kind",
+                    "name": "kind",
+                    "type": "uint8"
+                },
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "arbitrum:messageDataHash",
+                    "name": "messageDataHash",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "evm:tokenAmount",
+                    "name": "baseFeeL1",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:timestamp",
+                    "name": "timestamp",
+                    "type": "uint64"
                 }
-            }
-        },
-        {
-            "@type": "arbitrum:kind",
-            "name": "kind",
-            "type": "uint8"
-        },
-        {
-            "@type": "transfer:from",
-            "name": "sender",
-            "type": "address",
-            "features": {
-                "arbitrum": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 521401,
-                    "sampleAddress": "0xc1b634853cb333d3ad8663715b08f41a3aec47cc",
-                    "sampleTxHash": "0x000037754464756326ab9e95294511cc984f59f031ba478e170a7fbec4436bc4",
-                    "found": 0,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "arbitrum:messageDataHash",
-            "name": "messageDataHash",
-            "type": "bytes32"
-        },
-        {
-            "@type": "evm:tokenAmount",
-            "name": "baseFeeL1",
-            "type": "uint256"
-        },
-        {
-            "@type": "evm:timestamp",
-            "name": "timestamp",
-            "type": "uint64"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "arbitrum": 187519,
-        "metamask": 16,
-        "hop": 13
-    },
-    "contract_address": {
-        "features": {
-            "arbitrum": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 1239530,
-                "sampleAddress": "0x8315177ab297ba92a06054ce80a67ed4dbd7ed3a",
-                "sampleTxHash": "0x000004bcc219e5d593ee7441cb74c4c073378620459339481f0b88a5b6234a0c",
-                "found": 2,
-                "samples": 2
-            }
-        }
-    }
+    ]
 }

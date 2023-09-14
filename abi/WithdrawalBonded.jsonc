@@ -1,38 +1,27 @@
 {
-    "@id": "WithdrawalBonded",
-    "hex_signature": "0x0c3d250c7831051e78aa6a56679e590374c7c424415ffe4aa474491def2fe705",
     "name": "WithdrawalBonded",
-    "signature": "WithdrawalBonded(bytes32,uint256)",
-    "numLogs": 105028,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "hop:transferId",
-            "name": "transferId",
-            "type": "bytes32"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": null,
-            "name": "amount",
-            "type": "uint256"
+            "@id": "WithdrawalBonded",
+            "hex_signature": "0x0c3d250c7831051e78aa6a56679e590374c7c424415ffe4aa474491def2fe705",
+            "type": "event",
+            "signature": "WithdrawalBonded(bytes32,uint256)",
+            "name": "WithdrawalBonded",
+            "inputs": [
+                {
+                    "@type": "hop:transferId",
+                    "name": "transferId",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "hop": 105028
-    },
-    "contract_address": {
-        "features": {
-            "hop": {
-                "is_erc20": 0.153846,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 397998,
-                "sampleAddress": "0xb8901acb165ed027e32754e0ffe830802919727f",
-                "sampleTxHash": "0x000006821f4ea496cf94340cd66d073ee2f762d8ef2cf2733b5581b41fa9340e",
-                "found": 13,
-                "samples": 13
-            }
-        }
-    }
+    ]
 }

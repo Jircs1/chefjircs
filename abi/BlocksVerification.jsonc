@@ -1,37 +1,25 @@
 {
-    "@id": "BlocksVerification",
-    "hex_signature": "0x22c9005dd88c18b552a1cd7e8b3b937fcde9ca69213c1f658f54d572e4877a81",
     "name": "BlocksVerification",
-    "signature": "BlocksVerification(uint256,uint256)",
-    "numLogs": 136920,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "evm:blockNumber",
-            "name": "previousLastVerifiedBlock",
-            "type": "uint256"
-        },
-        {
-            "@type": "evm:blockNumber",
-            "name": "currentLastVerifiedBlock",
-            "type": "uint256"
+            "@id": "BlocksVerification",
+            "hex_signature": "0x22c9005dd88c18b552a1cd7e8b3b937fcde9ca69213c1f658f54d572e4877a81",
+            "type": "event",
+            "signature": "BlocksVerification(uint256,uint256)",
+            "name": "BlocksVerification",
+            "inputs": [
+                {
+                    "@type": "evm:blockNumber",
+                    "name": "previousLastVerifiedBlock",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:blockNumber",
+                    "name": "currentLastVerifiedBlock",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "tornado": 136920
-    },
-    "contract_address": {
-        "features": {
-            "tornado": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 181191,
-                "sampleAddress": "0x32400084c286cf3e17e7b677ea9583e60a000324",
-                "sampleTxHash": "0x0000023d155fd8760f6771fe6bc4a4a77f5aa0b3c337622eb8c22f30a233b67c",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

@@ -1,70 +1,25 @@
 {
-    "@id": "NameChanged",
-    "hex_signature": "0xb7d29e911041e8d9b843369e890bcb72c9388692ba48b65ac54e7214c4c348f7",
     "name": "NameChanged",
-    "signature": "NameChanged(bytes32,string)",
-    "numLogs": 82259,
-    "numProjects": 5,
-    "inputs": [
+    "abis": [
         {
-            "@type": "ens:node",
-            "name": "node",
-            "type": "bytes32"
-        },
-        {
-            "@type": "ens:name",
-            "name": "name",
-            "type": "string"
+            "@id": "NameChanged",
+            "hex_signature": "0xb7d29e911041e8d9b843369e890bcb72c9388692ba48b65ac54e7214c4c348f7",
+            "type": "event",
+            "signature": "NameChanged(bytes32,string)",
+            "name": "NameChanged",
+            "inputs": [
+                {
+                    "@type": "ens:node",
+                    "name": "node",
+                    "type": "bytes32"
+                },
+                {
+                    "@type": "ens:name",
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "ens": 82035,
-        "walletfactory": 147,
-        "cabin": 38,
-        "mirror": 38
-    },
-    "contract_address": {
-        "features": {
-            "ens": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 108993,
-                "sampleAddress": "0x231b0ee14048e9dccd1d247744d114a4eb5e8e63",
-                "sampleTxHash": "0x00000fe441e4e3edb0fd9b407dc014c745ee17e2ebaea0f9445a81c94b04c7a7",
-                "found": 2,
-                "samples": 2
-            },
-            "walletfactory": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 1510,
-                "sampleAddress": "0xf58d55f06bb92f083e78bb5063a2dd3544f9b6a3",
-                "sampleTxHash": "0x0014689a3da4580c0470f3359c25c241348a37d921713b3c25b82b11071ebd6e",
-                "found": 1,
-                "samples": 1
-            },
-            "cabin": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 113,
-                "sampleAddress": "0xc11796439c3202f4ef836eb126cc67eb378d52c8",
-                "sampleTxHash": "0x00abf380ce06c157f44ea8b7543396fee64be0a78b9075742f49ea39718a4df8",
-                "found": 1,
-                "samples": 1
-            },
-            "mirror": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 113,
-                "sampleAddress": "0xc11796439c3202f4ef836eb126cc67eb378d52c8",
-                "sampleTxHash": "0x00abf380ce06c157f44ea8b7543396fee64be0a78b9075742f49ea39718a4df8",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }

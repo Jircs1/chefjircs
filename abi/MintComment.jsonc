@@ -1,78 +1,42 @@
 {
-    "@id": "MintComment",
-    "hex_signature": "0xb9490aee663998179ad13f9e1c1eb6189c71ad1a9ec87f33ad2766f98d9a268a",
     "name": "MintComment",
-    "signature": "MintComment(address,address,uint256,uint256,string)",
-    "numLogs": 7665,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "transfer:from",
-            "name": "sender",
-            "type": "address",
-            "features": {
-                "zora": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 735,
-                    "sampleAddress": "0xed727248627fda303a1794f5da747215b6314330",
-                    "sampleTxHash": "0x038235e4914eaf3d20fe948beed84a87c0184f59d758673b82288fe2da770be7",
-                    "found": 0,
-                    "samples": 100
+            "@id": "MintComment",
+            "hex_signature": "0xb9490aee663998179ad13f9e1c1eb6189c71ad1a9ec87f33ad2766f98d9a268a",
+            "type": "event",
+            "signature": "MintComment(address,address,uint256,uint256,string)",
+            "name": "MintComment",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc721:token",
+                    "name": "tokenContract",
+                    "type": "address"
+                },
+                {
+                    "@type": "erc721:tokenID",
+                    "@token": "$1",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "quantity",
+                    "type": "uint256"
+                },
+                {
+                    "@type": "evm:comment",
+                    "name": "comment",
+                    "type": "string"
                 }
-            }
-        },
-        {
-            "@type": "erc721:token",
-            "name": "tokenContract",
-            "type": "address",
-            "features": {
-                "zora": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 9220,
-                    "sampleAddress": "0x4ebb2384cc1e86f578e37f2057b336b9027cb95a",
-                    "sampleTxHash": "0x001138b04e2abb8eb4388417a6c0a70b25833c5bf54cb5bcb4e2c2bf88200127",
-                    "found": 100,
-                    "samples": 100
-                }
-            }
-        },
-        {
-            "@type": "erc721:tokenID",
-            "@token": "$1",
-            "name": "tokenId",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$1",
-            "name": "quantity",
-            "type": "uint256"
-        },
-        {
-            "@type": "evm:comment",
-            "name": "comment",
-            "type": "string"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "zora": 7665
-    },
-    "contract_address": {
-        "features": {
-            "zora": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 9274,
-                "sampleAddress": "0x4ebb2384cc1e86f578e37f2057b336b9027cb95a",
-                "sampleTxHash": "0x001138b04e2abb8eb4388417a6c0a70b25833c5bf54cb5bcb4e2c2bf88200127",
-                "found": 100,
-                "samples": 100
-            }
-        }
-    }
+    ]
 }

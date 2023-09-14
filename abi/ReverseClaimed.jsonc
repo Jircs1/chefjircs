@@ -1,49 +1,25 @@
 {
-    "@id": "ReverseClaimed",
-    "hex_signature": "0x6ada868dd3058cf77a48a74489fd7963688e5464b2b0fa957ace976243270e92",
     "name": "ReverseClaimed",
-    "signature": "ReverseClaimed(address,bytes32)",
-    "numLogs": 82049,
-    "numProjects": 1,
-    "inputs": [
+    "abis": [
         {
-            "@type": "ens:addr",
-            "name": "addr",
-            "type": "address",
-            "features": {
-                "ens": {
-                    "is_erc20": 0,
-                    "is_erc721": 0,
-                    "is_erc20lp": 0,
-                    "numLogs": 932,
-                    "sampleAddress": "0xeb2346193466b346c3975a2947723aee21e1ce4a",
-                    "sampleTxHash": "0x043ad0406217ba1d522a0ad7f2a141b9917b2257017da3602ede5f1209f4ff24",
-                    "found": 3,
-                    "samples": 100
+            "@id": "ReverseClaimed",
+            "hex_signature": "0x6ada868dd3058cf77a48a74489fd7963688e5464b2b0fa957ace976243270e92",
+            "type": "event",
+            "signature": "ReverseClaimed(address,bytes32)",
+            "name": "ReverseClaimed",
+            "inputs": [
+                {
+                    "@type": "ens:addr",
+                    "name": "addr",
+                    "type": "address"
+                },
+                {
+                    "@type": "ens:node",
+                    "name": "node",
+                    "type": "bytes32"
                 }
-            }
-        },
-        {
-            "@type": "ens:node",
-            "name": "node",
-            "type": "bytes32"
+            ],
+            "outputs": null
         }
-    ],
-    "projects": {
-        "ens": 82049
-    },
-    "contract_address": {
-        "features": {
-            "ens": {
-                "is_erc20": 0,
-                "is_erc721": 0,
-                "is_erc20lp": 0,
-                "numLogs": 111566,
-                "sampleAddress": "0xa58e81fe9b61b5c3fe2afd33cf304c454abfc7cb",
-                "sampleTxHash": "0x00000fe441e4e3edb0fd9b407dc014c745ee17e2ebaea0f9445a81c94b04c7a7",
-                "found": 1,
-                "samples": 1
-            }
-        }
-    }
+    ]
 }
