@@ -1,0 +1,38 @@
+{
+    "name": "ActionTarget",
+    "abis": [
+        {
+            "hex_signature": "0xc678724853e8a8ed1f6ed64e9efc05afa8c6826d63a2c42e33fbd4697ff45845",
+            "type": "event",
+            "signature": "ActionTarget(uint256,uint256,bool,uint256)",
+            "name": "ActionTarget",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "actionId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "sourceChainId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "isSuccess",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

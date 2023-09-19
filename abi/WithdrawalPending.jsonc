@@ -1,0 +1,38 @@
+{
+    "name": "WithdrawalPending",
+    "abis": [
+        {
+            "@id": "0x08262c50127efaa884a8609d16fe2ed98c5fd8e4f1c393f2d7d8f9f52f602ff6",
+            "type": "event",
+            "signature": "WithdrawalPending(uint16,address,uint128,uint8)",
+            "name": "WithdrawalPending",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "tokenId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "amount",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum Operations.WithdrawalType",
+                    "name": "withdrawalType",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

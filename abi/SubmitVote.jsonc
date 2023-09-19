@@ -1,0 +1,41 @@
+{
+    "name": "SubmitVote",
+    "abis": [
+        {
+            "hex_signature": "0x786755545a7e27c12c90cc7f0934514d03fdacfe3684a340b8c4100531e7ecd5",
+            "type": "event",
+            "signature": "SubmitVote(address,uint256,uint256,bool)",
+            "name": "SubmitVote",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "member",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposal",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

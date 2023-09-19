@@ -1,0 +1,77 @@
+{
+    "name": "StakeStart",
+    "abis": [
+        {
+            "@id": "0x14872dc760f33532684e68e1b6d5fd3f71ba7b07dee76bdb2b084f28b74233ef",
+            "type": "event",
+            "signature": "StakeStart(uint256,address,uint40)",
+            "name": "StakeStart",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "stakerAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "stakeId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xdc5a18c7d77c61a390e121362aef97759e74c60c7af28d64ab9b0317a06fe9d3",
+            "type": "event",
+            "signature": "StakeStart(address,uint40,uint40,uint128,uint128,uint16)",
+            "name": "StakeStart",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "stakerAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "stakeId",
+                    "type": "uint40"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint40",
+                    "name": "timestamp",
+                    "type": "uint40"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "stakedAmount",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "stakeShares",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "stakedDays",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

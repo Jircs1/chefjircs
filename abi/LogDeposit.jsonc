@@ -2,34 +2,38 @@
     "name": "LogDeposit",
     "abis": [
         {
-            "@id": "LogDeposit_Locker",
-            "hex_signature": "0x5b5dbc6c64043a15d3fe6943a6e443a826b78755edc257b2ec890c022225dbcf",
+            "@id": "0x5b5dbc6c64043a15d3fe6943a6e443a826b78755edc257b2ec890c022225dbcf",
             "type": "event",
             "signature": "LogDeposit(address,uint256,uint256,uint256,uint256)",
             "name": "LogDeposit",
             "inputs": [
                 {
-                    "@type": "dydx:locker",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "locker",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "value",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "lockTime",
                     "type": "uint256"
                 },
                 {
-                    "@type": "dydx:lockType",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "lockType",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "timestamp",
                     "type": "uint256"
                 }
@@ -37,8 +41,7 @@
             "outputs": null
         },
         {
-            "@id": "LogDeposit_StarkKey",
-            "hex_signature": "0x06724742ccc8c330a39a641ef02a0b419bd09248360680bb38159b0a8c2635d6",
+            "@id": "0x06724742ccc8c330a39a641ef02a0b419bd09248360680bb38159b0a8c2635d6",
             "type": "event",
             "signature": "LogDeposit(address,uint256,uint256,uint256,uint256,uint256)",
             "name": "LogDeposit",
@@ -46,7 +49,29 @@
                 {
                     "@type": "dydx:depositorEthKey",
                     "name": "depositorEthKey",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "dydx": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 107846,
+                            "sampleAddress": "0x8e8bd01b5a9eb272cc3892a2e40e64a716aa2a40",
+                            "sampleTxHash": "0x000082c415d1c1adeccd77f0e0abfee33e1b52a9b11f7a662e1493f24e150966",
+                            "found": 3,
+                            "samples": 100
+                        },
+                        "deversifi": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1480,
+                            "sampleAddress": "0xed9d63a96c27f87b07115b56b2e3572827f21646",
+                            "sampleTxHash": "0x003a6287514910d3ae614106a059127542490b3cf854045fb493f788ae5faad6",
+                            "found": 1,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "dydx:starkKey",
@@ -75,6 +100,72 @@
                     "name": "quantizedAmount",
                     "type": "uint256",
                     "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x9dbb0e7dda3e09710ce75b801addc87cf9d9c6c581641b3275fca409ad086c62",
+            "type": "event",
+            "signature": "LogDeposit(address,uint256,uint256)",
+            "name": "LogDeposit",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xb2346165e782564f17f5b7e555c21f4fd96fbc93458572bf0113ea35a958fc55",
+            "type": "event",
+            "signature": "LogDeposit(address,address,address,uint256,uint256)",
+            "name": "LogDeposit",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "share",
+                    "type": "uint256"
                 }
             ],
             "outputs": null

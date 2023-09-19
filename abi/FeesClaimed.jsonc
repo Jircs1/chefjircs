@@ -1,0 +1,62 @@
+{
+    "name": "FeesClaimed",
+    "abis": [
+        {
+            "@id": "0x2227733fc4c8a9034cb58087dcf6995128b9c0233b038b03366aaf30c92b92d6",
+            "type": "event",
+            "signature": "FeesClaimed(uint256,address,uint256)",
+            "name": "FeesClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "cycle",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fees",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x1ac537f0ad67b64ac68a04587ff3a4cb6977de22eb2c37ee560897a92c6d07c7",
+            "type": "event",
+            "signature": "FeesClaimed(address,uint256,uint256)",
+            "name": "FeesClaimed",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sUSDAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "snxRewards",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

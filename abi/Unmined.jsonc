@@ -1,0 +1,29 @@
+{
+    "name": "Unmined",
+    "abis": [
+        {
+            "hex_signature": "0x53d02005d2e370ce08a8b60d65e07879891c336e6513821a3923f11854b54027",
+            "type": "event",
+            "signature": "Unmined(address,uint256)",
+            "name": "Unmined",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "miner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

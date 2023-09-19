@@ -1,0 +1,38 @@
+{
+    "name": "NftRemovedFromExhibition",
+    "abis": [
+        {
+            "hex_signature": "0x2ea2946ee16c4a1d0ec58464194022e54432a6d7db359835ddf283555f2c8eee",
+            "type": "event",
+            "signature": "NftRemovedFromExhibition(address,uint256,uint256)",
+            "name": "NftRemovedFromExhibition",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "exhibitionId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

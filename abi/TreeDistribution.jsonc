@@ -1,0 +1,41 @@
+{
+    "name": "TreeDistribution",
+    "abis": [
+        {
+            "hex_signature": "0x17cc18c044bdfa5f365fb0f6140ffbaa76843012681aedb2015580693fa49b94",
+            "type": "event",
+            "signature": "TreeDistribution(address,uint256,uint256,uint256)",
+            "name": "TreeDistribution",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

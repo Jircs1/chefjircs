@@ -1,45 +1,44 @@
 {
-    "@id": "Trade",
-    "hex_signature": "0xa07a543ab8a018198e99ca0184c93fe9050a79400a0a723441f84de1d972cc17",
     "name": "Trade",
-    "signature": "Trade(address,address,address,uint256,uint256,uint256,bytes)",
-    "inputs": [
+    "abis": [
         {
-            "name": "owner",
-            "type": "address"
-        },
-        {
-            "@type": "erc20:token",
-            "name": "sellToken",
-            "type": "address"
-        },
-        {
-            "@type": "erc20:token",
-            "name": "buyToken",
-            "type": "address"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$1",
-            "name": "sellAmount",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$2",
-            "name": "buyAmount",
-            "type": "uint256"
-        },
-        {
-            "@type": "erc20:tokenAmount",
-            "@token": "$2",
-            "name": "feeAmount",
-            "type": "uint256"
-        },
-        {
-            "name": "orderUid",
-            "type": "bytes"
+            "hex_signature": "0xb8aaa3347fac66c4197e2ddb56d1b1e06fa6f7ae158c01cb2e7f9f9efb4975bb",
+            "type": "event",
+            "signature": "Trade(uint32,address,address,int256,int256)",
+            "name": "Trade",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "maturity",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "base",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "fyTokens",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
         }
-    ],
-    "type": "event"
+    ]
 }

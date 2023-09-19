@@ -1,0 +1,32 @@
+{
+    "name": "Repaid",
+    "abis": [
+        {
+            "hex_signature": "0x1b8cd61ed43bec7c6bdad3a18ffee613f99c853d16c50678d248d879e1b43438",
+            "type": "event",
+            "signature": "Repaid(address,uint256,uint256)",
+            "name": "Repaid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "repayer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "debt",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

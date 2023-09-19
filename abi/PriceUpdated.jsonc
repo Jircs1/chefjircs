@@ -2,40 +2,36 @@
     "name": "PriceUpdated",
     "abis": [
         {
-            "@id": "PriceUpdated",
-            "hex_signature": "0x945c1c4e99aa89f648fbfe3df471b916f719e16d960fcec0737d4d56bd696838",
+            "@id": "0x46eec4e0eeeef5830de3472bb39db7e52b1c809286dc87c4b85b20e003cc70c3",
             "type": "event",
-            "signature": "PriceUpdated(uint256,uint256)",
+            "signature": "PriceUpdated(bytes32,uint256)",
             "name": "PriceUpdated",
             "inputs": [
                 {
-                    "@type": "stargate:price",
-                    "name": "oldPrice",
-                    "type": "uint256"
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "symbolHash",
+                    "type": "bytes32"
                 },
                 {
-                    "@type": "stargate:price",
-                    "name": "newPrice",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
                     "type": "uint256"
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "PriceUpdated_PID",
-            "hex_signature": "0x945c1c4e99aa89f648fbfe3df471b916f719e16d960fcec0737d4d56bd696838",
+            "@id": "0x66cbca4f3c64fecf1dcb9ce094abcf7f68c3450a1d4e3a8e917dd621edb4ebe0",
             "type": "event",
-            "signature": "PriceUpdated(uint256,uint256)",
+            "signature": "PriceUpdated(uint256)",
             "name": "PriceUpdated",
             "inputs": [
                 {
-                    "@type": "erc20:lookupid",
-                    "name": "poolId",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "dex:price",
-                    "name": "priceSD",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
                     "type": "uint256"
                 }
             ],

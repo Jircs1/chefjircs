@@ -1,0 +1,35 @@
+{
+    "name": "SelfieGenderChange",
+    "abis": [
+        {
+            "hex_signature": "0x775d579f06c3df740abc5a231008feae164b2fcd101a0f3d8059cdea4923bc98",
+            "type": "event",
+            "signature": "SelfieGenderChange(uint256,uint256,uint256)",
+            "name": "SelfieGenderChange",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "gender",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

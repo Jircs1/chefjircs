@@ -2,26 +2,26 @@
     "name": "Fees",
     "abis": [
         {
-            "@id": "Fees",
-            "hex_signature": "0x112c256902bf554b6ed882d2936687aaeb4225e8cd5b51303c90ca6cf43a8602",
+            "@id": "0x112c256902bf554b6ed882d2936687aaeb4225e8cd5b51303c90ca6cf43a8602",
             "type": "event",
             "signature": "Fees(address,uint256,uint256)",
             "name": "Fees",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token0",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount0",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount1",
                     "type": "uint256"
                 }

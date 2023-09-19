@@ -1,0 +1,29 @@
+{
+    "name": "RemoveShares",
+    "abis": [
+        {
+            "hex_signature": "0xae0577e1c96b26fbc0b9df702431f5470979d001d24f136eded791b8b6521d6f",
+            "type": "event",
+            "signature": "RemoveShares(address,uint256)",
+            "name": "RemoveShares",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

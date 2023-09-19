@@ -1,0 +1,47 @@
+{
+    "name": "LogWithdrawalPerformed",
+    "abis": [
+        {
+            "@id": "0xb7477a7b93b2addc5272bbd7ad0986ef1c0d0bd265f26c3dc4bbe42727c2ac0c",
+            "type": "event",
+            "signature": "LogWithdrawalPerformed(uint256,uint256,uint256,uint256,address)",
+            "name": "LogWithdrawalPerformed",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "starkKey",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "assetType",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonQuantizedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "quantizedAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

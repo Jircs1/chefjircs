@@ -1,0 +1,50 @@
+{
+    "name": "Erc20Wrap",
+    "abis": [
+        {
+            "hex_signature": "0xd86e46c0b98ab82d234497fd7d7e31711dfa27764034b1763f3575c521f6ff94",
+            "type": "event",
+            "signature": "Erc20Wrap(address,uint256,uint256,uint256,address,uint256)",
+            "name": "Erc20Wrap",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "erc20Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "transferredAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "wrappedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "dust",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "oceanId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "RewardWithdraw",
+    "abis": [
+        {
+            "hex_signature": "0x9549bc3ab80685b72be16a99657f49f2802ef7458da3f7ca37a9b72cb7bbb81e",
+            "type": "event",
+            "signature": "RewardWithdraw(uint256,uint256,uint256)",
+            "name": "RewardWithdraw",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_txNo",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_reward",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

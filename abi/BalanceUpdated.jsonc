@@ -1,0 +1,38 @@
+{
+    "name": "BalanceUpdated",
+    "abis": [
+        {
+            "@id": "0x526824944047da5b81071fb6349412005c5da81380b336103fbe5dd34556c776",
+            "type": "event",
+            "signature": "BalanceUpdated(address,address,uint256,uint256)",
+            "name": "BalanceUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalSupply",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "ShareBurnedWithId",
+    "abis": [
+        {
+            "@id": "0x502f5a6697a92e602c626b931a4a771fef4360eb9cece7bf906f10c5cec96aaa",
+            "type": "event",
+            "signature": "ShareBurnedWithId(uint256,address,uint256,uint256,uint256)",
+            "name": "ShareBurnedWithId",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "validatorId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokens",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

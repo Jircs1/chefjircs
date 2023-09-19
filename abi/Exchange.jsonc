@@ -2,25 +2,26 @@
     "name": "Exchange",
     "abis": [
         {
-            "@id": "Exchange",
-            "hex_signature": "0xddac40937f35385a34f721af292e5a83fc5b840f722bff57c2fc71adba708c48",
+            "@id": "0xddac40937f35385a34f721af292e5a83fc5b840f722bff57c2fc71adba708c48",
             "type": "event",
             "signature": "Exchange(address,uint256,address)",
             "name": "Exchange",
             "inputs": [
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "pair",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$0",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amountOut",
                     "type": "uint256"
                 },
                 {
-                    "@type": "kyberdex:output",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "output",
                     "type": "address"
                 }

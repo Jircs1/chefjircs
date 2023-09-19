@@ -1,0 +1,50 @@
+{
+    "name": "SwapExecuted",
+    "abis": [
+        {
+            "hex_signature": "0xdde2f3711ab09cdddcfee16ca03e54d21fb8cf3fa647b9797913c950d38ad693",
+            "type": "event",
+            "signature": "SwapExecuted(address,address,uint256,address,uint256)",
+            "name": "SwapExecuted",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "router",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenIn",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOut",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$3",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

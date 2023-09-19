@@ -1,0 +1,32 @@
+{
+    "name": "UserRewardUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x8bc1d590aceafd40bad4a30470e184e85ae3ee9dfee29af722b2c1549d9a7608",
+            "type": "event",
+            "signature": "UserRewardUpdated(address,uint8,uint248)",
+            "name": "UserRewardUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "lastRewardRateIndex",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint248",
+                    "name": "earned",
+                    "type": "uint248"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

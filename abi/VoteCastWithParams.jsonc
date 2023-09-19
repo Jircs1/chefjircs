@@ -1,0 +1,50 @@
+{
+    "name": "VoteCastWithParams",
+    "abis": [
+        {
+            "hex_signature": "0xe2babfbac5889a709b63bb7f598b324e08bc5a4fb9ec647fb3cbc9ec07eb8712",
+            "type": "event",
+            "signature": "VoteCastWithParams(address,uint256,uint8,uint256,string,bytes)",
+            "name": "VoteCastWithParams",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "voter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "support",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "weight",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "reason",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "params",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

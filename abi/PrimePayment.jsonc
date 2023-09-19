@@ -1,0 +1,53 @@
+{
+    "name": "PrimePayment",
+    "abis": [
+        {
+            "hex_signature": "0x9b5da855ca9cc9290820ab44c8d4c69c4b207baf5a9c941d6c082a3546c31416",
+            "type": "event",
+            "signature": "PrimePayment(address,uint256,uint256,uint256,uint256,uint256)",
+            "name": "PrimePayment",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "paymentAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "cardCount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "primeAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalCardCount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

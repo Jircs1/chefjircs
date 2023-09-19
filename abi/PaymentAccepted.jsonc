@@ -1,0 +1,34 @@
+{
+    "name": "PaymentAccepted",
+    "abis": [
+        {
+            "@id": "0x826e7792f434a28ba302e6767da85b4b8e56b83a5e028687f30e848e32667f95",
+            "type": "event",
+            "signature": "PaymentAccepted(bytes32,address,uint256,uint256)",
+            "name": "PaymentAccepted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "hash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "name": "tokenContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "time",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

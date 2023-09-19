@@ -1,0 +1,44 @@
+{
+    "name": "MaxCumulativeDeltaDiffExceeded",
+    "abis": [
+        {
+            "@id": "0xe582322b389ad06b2bbf619cd6da3f16a288ec873ea0fa6df4d72f3d9480b447",
+            "type": "event",
+            "signature": "MaxCumulativeDeltaDiffExceeded(address,uint256,uint256,uint256,uint256)",
+            "name": "MaxCumulativeDeltaDiffExceeded",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "refPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fastPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "cumulativeRefDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "cumulativeFastDelta",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

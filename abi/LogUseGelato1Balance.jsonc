@@ -1,0 +1,59 @@
+{
+    "name": "LogUseGelato1Balance",
+    "abis": [
+        {
+            "@id": "0x116bfd46451bbd23e7a5f5b7420b28e3d98d4c477f173da513aaaeac3c4baada",
+            "type": "event",
+            "signature": "LogUseGelato1Balance(address,address,address,uint256,uint256,uint256,bytes32)",
+            "name": "LogUseGelato1Balance",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sponsor",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "feeToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oneBalanceChainId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nativeToFeeTokenXRateNumerator",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nativeToFeeTokenXRateDenominator",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "taskId",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

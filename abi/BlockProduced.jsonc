@@ -1,0 +1,44 @@
+{
+    "name": "BlockProduced",
+    "abis": [
+        {
+            "@id": "0x14aa79ee14fcd694c30b9c3f6d41247d2e0c87bfefec35a6864d124e80864672",
+            "type": "event",
+            "signature": "BlockProduced(uint256,address,uint32,uint256,uint256)",
+            "name": "BlockProduced",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "producer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "blockNumber",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "roundDuration",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "difficulty",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

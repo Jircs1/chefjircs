@@ -1,0 +1,32 @@
+{
+    "name": "VaultTransfer",
+    "abis": [
+        {
+            "hex_signature": "0x239e7f6cdac8fb35a788a46b431b54da87de90b82448a2c294be5e92a6e579af",
+            "type": "event",
+            "signature": "VaultTransfer(address,address,uint256)",
+            "name": "VaultTransfer",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

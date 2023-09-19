@@ -1,0 +1,62 @@
+{
+    "name": "TokenMint",
+    "abis": [
+        {
+            "hex_signature": "0x96cf551c818da56faa6ddb7fd002e845e11366de7e533273e38729d7720c9215",
+            "type": "event",
+            "signature": "TokenMint(address,uint256[],uint8,uint256,bool,address,bool,uint256[])",
+            "name": "TokenMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "enum IWildXYZMinter.MintType",
+                    "name": "mintType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountPaid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isDelegated",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "delegatedVault",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "oasisUsed",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "oasisIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

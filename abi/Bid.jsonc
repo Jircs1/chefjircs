@@ -1,0 +1,44 @@
+{
+    "name": "Bid",
+    "abis": [
+        {
+            "@id": "0x4dcc013473324698bfbe263facec4ea4b1bc43624236542deabec62c2122b305",
+            "type": "event",
+            "signature": "Bid(address,uint256,uint256,uint256)",
+            "name": "Bid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bidAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bidderTotal",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bucketTotal",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

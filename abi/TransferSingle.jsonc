@@ -2,38 +2,43 @@
     "name": "TransferSingle",
     "abis": [
         {
-            "@id": "TransferSingle",
-            "hex_signature": "0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62",
+            "@id": "0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62",
             "type": "event",
             "signature": "TransferSingle(address,address,address,uint256,uint256)",
             "name": "TransferSingle",
             "inputs": [
                 {
-                    "@type": "erc1155:sender",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "to",
                     "type": "address"
                 },
                 {
-                    "@type": "erc1155:tokenType",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "id",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc1155:tokenAmount",
-                    "@token": "lookupid:$3",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount",
                     "type": "uint256",
-                    "validationFailure": true
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null

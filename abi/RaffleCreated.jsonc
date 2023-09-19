@@ -1,0 +1,35 @@
+{
+    "name": "RaffleCreated",
+    "abis": [
+        {
+            "hex_signature": "0x81781e053ec72aa8731479536c4da8f819ef3283d2c0dea5c4f0d938bed84895",
+            "type": "event",
+            "signature": "RaffleCreated(uint256,address,uint256)",
+            "name": "RaffleCreated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "raffleId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "nftId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

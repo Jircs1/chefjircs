@@ -1,0 +1,35 @@
+{
+    "name": "Stake_Deposited",
+    "abis": [
+        {
+            "hex_signature": "0x9e3e33edf5dcded4adabc51b1266225d00fa41516bfcad69513fa4eca69519da",
+            "type": "event",
+            "signature": "Stake_Deposited(address,uint256,bytes32)",
+            "name": "Stake_Deposited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "vega_public_key",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

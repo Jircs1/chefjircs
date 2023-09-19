@@ -2,8 +2,7 @@
     "name": "TransferNative",
     "abis": [
         {
-            "@id": "TransferNative",
-            "hex_signature": "0xb4a87134099d10c48345145381989042ab07dc53e6e62a6511fca55438562e26",
+            "@id": "0xb4a87134099d10c48345145381989042ab07dc53e6e62a6511fca55438562e26",
             "type": "event",
             "signature": "TransferNative(address,address,uint256)",
             "name": "TransferNative",
@@ -11,12 +10,56 @@
                 {
                     "@type": "transfer:from",
                     "name": "src",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "stargate": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 443978,
+                            "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
+                            "sampleTxHash": "0x00000af4dce7e471dace87ad21133a76019fccecc7e085d77f1eff60e6abcea4",
+                            "found": 2,
+                            "samples": 2
+                        },
+                        "layerzero": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 436890,
+                            "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
+                            "sampleTxHash": "0x00000af4dce7e471dace87ad21133a76019fccecc7e085d77f1eff60e6abcea4",
+                            "found": 2,
+                            "samples": 2
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:to",
                     "name": "dst",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "stargate": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 12721,
+                            "sampleAddress": "0xf314fa27066bdde92e6122059b103e8899d0a096",
+                            "sampleTxHash": "0x000bb62473dc53b3da3694541dccd3708c2cd9247d69e25060614e413f504e68",
+                            "found": 4,
+                            "samples": 100
+                        },
+                        "layerzero": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 12681,
+                            "sampleAddress": "0xf314fa27066bdde92e6122059b103e8899d0a096",
+                            "sampleTxHash": "0x000bb62473dc53b3da3694541dccd3708c2cd9247d69e25060614e413f504e68",
+                            "found": 4,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

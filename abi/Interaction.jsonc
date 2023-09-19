@@ -1,0 +1,32 @@
+{
+    "name": "Interaction",
+    "abis": [
+        {
+            "@id": "0xed99827efb37016f2275f98c4bcf71c7551c75d59e9b450f79fa32e60be672c2",
+            "type": "event",
+            "signature": "Interaction(address,uint256,bytes4)",
+            "name": "Interaction",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

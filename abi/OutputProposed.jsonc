@@ -1,0 +1,38 @@
+{
+    "name": "OutputProposed",
+    "abis": [
+        {
+            "@id": "0xa7aaf2512769da4e444e3de247be2564225c2e7a8f74cfe528e46e17d24868e2",
+            "type": "event",
+            "signature": "OutputProposed(bytes32,uint256,uint256,uint256)",
+            "name": "OutputProposed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "outputRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2OutputIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "l2BlockNumber",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "l1Timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

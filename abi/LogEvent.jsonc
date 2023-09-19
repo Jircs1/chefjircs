@@ -1,0 +1,38 @@
+{
+    "name": "LogEvent",
+    "abis": [
+        {
+            "hex_signature": "0xa21bd02d37a839b5f9b81157b445649b4115e939611690d8a93b46bdb035a664",
+            "type": "event",
+            "signature": "LogEvent(address,address,string,bytes)",
+            "name": "LogEvent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "contractAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "logName",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

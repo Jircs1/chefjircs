@@ -1,0 +1,35 @@
+{
+    "name": "PunkOffered",
+    "abis": [
+        {
+            "@id": "0x3c7b682d5da98001a9b8cbda6c647d2c63d698a4184fd1d55e2ce7b66f5d21eb",
+            "type": "event",
+            "signature": "PunkOffered(uint256,uint256,address)",
+            "name": "PunkOffered",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "punkIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minValue",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toAddress",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

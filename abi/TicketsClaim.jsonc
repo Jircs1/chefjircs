@@ -1,0 +1,34 @@
+{
+    "name": "TicketsClaim",
+    "abis": [
+        {
+            "hex_signature": "0x0f5fca62da8fb5d95525b49e5eaa7b20bc6bd9e2f6b64b493442d1c0bd6ef486",
+            "type": "event",
+            "signature": "TicketsClaim(address,uint256,uint256,uint256)",
+            "name": "TicketsClaim",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "claimer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "name": "lotteryId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "numberTickets",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

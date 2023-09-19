@@ -1,0 +1,44 @@
+{
+    "name": "MessagePublished",
+    "abis": [
+        {
+            "@id": "0xb8abfd5c33667c7440a4fc1153ae39a24833dbe44f7eb19cbe5cd5f2583e4940",
+            "type": "event",
+            "signature": "MessagePublished(address,uint16,uint64,address,bytes)",
+            "name": "MessagePublished",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "dstChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "sequence",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "dstAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "payload",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

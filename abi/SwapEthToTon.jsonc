@@ -1,0 +1,41 @@
+{
+    "name": "SwapEthToTon",
+    "abis": [
+        {
+            "hex_signature": "0x6b74e6f7dd6e60dc426635d2014db6f0d51f3ce50162504b561ccd9ca158f68c",
+            "type": "event",
+            "signature": "SwapEthToTon(address,int8,bytes32,uint256)",
+            "name": "SwapEthToTon",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int8",
+                    "name": "to_wc",
+                    "type": "int8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "to_addr_hash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,37 +2,101 @@
     "name": "RemoveLiquidityOne",
     "abis": [
         {
-            "@id": "RemoveLiquidityOne",
-            "hex_signature": "0x43fb02998f4e03da2e0e6fff53fdbf0c40a9f45f145dc377fc30615d7d7a8a64",
+            "@id": "0x9e96dd3b997a2a257eec4df9bb6eaf626e206df5f543bd963682d143300be310",
+            "type": "event",
+            "signature": "RemoveLiquidityOne(address,uint256,uint256)",
+            "name": "RemoveLiquidityOne",
+            "inputs": [
+                {
+                    "type": "address",
+                    "name": "provider",
+                    "indexed": true
+                },
+                {
+                    "type": "uint256",
+                    "name": "token_amount",
+                    "indexed": false,
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0:token1",
+                    "validationSuccess": true
+                },
+                {
+                    "type": "uint256",
+                    "name": "coin_amount",
+                    "indexed": false
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x5ad056f2e28a8cec232015406b843668c1e36cda598127ec3b8c59b8c72773a0",
+            "type": "event",
+            "signature": "RemoveLiquidityOne(address,uint256,uint256,uint256)",
+            "name": "RemoveLiquidityOne",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "provider",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token_amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "coin_amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x43fb02998f4e03da2e0e6fff53fdbf0c40a9f45f145dc377fc30615d7d7a8a64",
             "type": "event",
             "signature": "RemoveLiquidityOne(address,uint256,uint256,uint256,uint256)",
             "name": "RemoveLiquidityOne",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "provider",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "lpTokenAmount",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "lpTokenSupply",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "boughtId",
-                    "type": "uint256"
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "lookupid:$3",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "tokensBought",
                     "type": "uint256"
                 }

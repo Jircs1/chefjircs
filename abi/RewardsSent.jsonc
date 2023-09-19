@@ -1,0 +1,35 @@
+{
+    "name": "RewardsSent",
+    "abis": [
+        {
+            "hex_signature": "0xae501bad6aaaa2e4d0f8643a69c2f725af29d188b67090354351375fce5ff0b8",
+            "type": "event",
+            "signature": "RewardsSent(address,address,uint256)",
+            "name": "RewardsSent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

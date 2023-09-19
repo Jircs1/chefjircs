@@ -2,34 +2,38 @@
     "name": "ConsumedMessageToL2",
     "abis": [
         {
-            "@id": "ConsumedMessageToL2",
-            "hex_signature": "0x9592d37825c744e33fa80c469683bbd04d336241bb600b574758efd182abe26a",
+            "@id": "0x9592d37825c744e33fa80c469683bbd04d336241bb600b574758efd182abe26a",
             "type": "event",
             "signature": "ConsumedMessageToL2(address,uint256,uint256,uint256[],uint256)",
             "name": "ConsumedMessageToL2",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "fromAddress",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "toAddress",
                     "type": "uint256"
                 },
                 {
-                    "@type": "starknet:selector",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "selector",
                     "type": "uint256"
                 },
                 {
-                    "@type": "transfer:data",
+                    "indexed": false,
+                    "internalType": "uint256[]",
                     "name": "payload",
                     "type": "uint256[]"
                 },
                 {
-                    "@type": "evm:nonce",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "nonce",
                     "type": "uint256"
                 }

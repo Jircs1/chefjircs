@@ -2,19 +2,20 @@
     "name": "SentMessageExtension1",
     "abis": [
         {
-            "@id": "SentMessageExtension1",
-            "hex_signature": "0x8ebb2ec2465bdb2a06a66fc37a0963af8a2a6a1479d81d56fdb8cbb98096d546",
+            "@id": "0x8ebb2ec2465bdb2a06a66fc37a0963af8a2a6a1479d81d56fdb8cbb98096d546",
             "type": "event",
             "signature": "SentMessageExtension1(address,uint256)",
             "name": "SentMessageExtension1",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "value",
                     "type": "uint256"
                 }

@@ -1,0 +1,127 @@
+{
+    "name": "NodeCreated",
+    "abis": [
+        {
+            "@id": "0x4f4caa9e67fb994e349dd35d1ad0ce23053d4323f83ce11dc817b5435031d096",
+            "type": "event",
+            "signature": "NodeCreated(uint64,bytes32,bytes32,bytes32,(((bytes32[2],uint64[2]),uint8),((bytes32[2],uint64[2]),uint8),uint64),bytes32,bytes32,uint256)",
+            "name": "NodeCreated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "nodeNum",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "parentNodeHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "nodeHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "executionHash",
+                    "type": "bytes32"
+                },
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "components": [
+                                        {
+                                            "internalType": "bytes32[2]",
+                                            "name": "bytes32Vals",
+                                            "type": "bytes32[2]"
+                                        },
+                                        {
+                                            "internalType": "uint64[2]",
+                                            "name": "u64Vals",
+                                            "type": "uint64[2]"
+                                        }
+                                    ],
+                                    "internalType": "struct GlobalState",
+                                    "name": "globalState",
+                                    "type": "tuple"
+                                },
+                                {
+                                    "internalType": "enum MachineStatus",
+                                    "name": "machineStatus",
+                                    "type": "uint8"
+                                }
+                            ],
+                            "internalType": "struct RollupLib.ExecutionState",
+                            "name": "beforeState",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "components": [
+                                        {
+                                            "internalType": "bytes32[2]",
+                                            "name": "bytes32Vals",
+                                            "type": "bytes32[2]"
+                                        },
+                                        {
+                                            "internalType": "uint64[2]",
+                                            "name": "u64Vals",
+                                            "type": "uint64[2]"
+                                        }
+                                    ],
+                                    "internalType": "struct GlobalState",
+                                    "name": "globalState",
+                                    "type": "tuple"
+                                },
+                                {
+                                    "internalType": "enum MachineStatus",
+                                    "name": "machineStatus",
+                                    "type": "uint8"
+                                }
+                            ],
+                            "internalType": "struct RollupLib.ExecutionState",
+                            "name": "afterState",
+                            "type": "tuple"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "numBlocks",
+                            "type": "uint64"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct RollupLib.Assertion",
+                    "name": "assertion",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "afterInboxBatchAcc",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "wasmModuleRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "inboxMaxCount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

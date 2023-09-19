@@ -1,0 +1,90 @@
+{
+    "name": "NewPositionOrderExtra",
+    "abis": [
+        {
+            "hex_signature": "0x8f5718aa4be060c25c24fe4d19f153bf6eaa2db82010ee75de078ae063ca0c79",
+            "type": "event",
+            "signature": "NewPositionOrderExtra(bytes32,uint64,uint96,uint96,uint96,uint8,uint8,uint32,(uint96,uint96,uint8,uint32))",
+            "name": "NewPositionOrderExtra",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "subAccountId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "orderId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "collateral",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "size",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "price",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "profitTokenId",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "flags",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "deadline",
+                    "type": "uint32"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint96",
+                            "name": "tpPrice",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "slPrice",
+                            "type": "uint96"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "tpslProfitTokenId",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "tpslDeadline",
+                            "type": "uint32"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct PositionOrderExtra",
+                    "name": "extra",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

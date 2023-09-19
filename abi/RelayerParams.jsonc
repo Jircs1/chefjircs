@@ -2,19 +2,20 @@
     "name": "RelayerParams",
     "abis": [
         {
-            "@id": "RelayerParams",
-            "hex_signature": "0xb0c632f55f1e1b3b2c3d82f41ee4716bb4c00f0f5d84cdafc141581bb8757a4f",
+            "@id": "0xb0c632f55f1e1b3b2c3d82f41ee4716bb4c00f0f5d84cdafc141581bb8757a4f",
             "type": "event",
             "signature": "RelayerParams(bytes,uint16)",
             "name": "RelayerParams",
             "inputs": [
                 {
-                    "@type": "layerzero:adapterParams",
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "adapterParams",
                     "type": "bytes"
                 },
                 {
-                    "@type": "layerzero:outboundProofType",
+                    "indexed": false,
+                    "internalType": "uint16",
                     "name": "outboundProofType",
                     "type": "uint16"
                 }

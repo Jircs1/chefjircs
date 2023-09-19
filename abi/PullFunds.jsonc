@@ -1,0 +1,47 @@
+{
+    "name": "PullFunds",
+    "abis": [
+        {
+            "hex_signature": "0x7f1bd32912cc1caeaa0a1221e71cf675c272dadfc4bbb9f9e7b15e3aba962c83",
+            "type": "event",
+            "signature": "PullFunds(address,address,address,uint256,uint256)",
+            "name": "PullFunds",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "dstAccount",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rad",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expensesAccumulator",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

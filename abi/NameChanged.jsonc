@@ -2,19 +2,20 @@
     "name": "NameChanged",
     "abis": [
         {
-            "@id": "NameChanged",
-            "hex_signature": "0xb7d29e911041e8d9b843369e890bcb72c9388692ba48b65ac54e7214c4c348f7",
+            "@id": "0xb7d29e911041e8d9b843369e890bcb72c9388692ba48b65ac54e7214c4c348f7",
             "type": "event",
             "signature": "NameChanged(bytes32,string)",
             "name": "NameChanged",
             "inputs": [
                 {
-                    "@type": "ens:node",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "node",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "ens:name",
+                    "indexed": false,
+                    "internalType": "string",
                     "name": "name",
                     "type": "string"
                 }

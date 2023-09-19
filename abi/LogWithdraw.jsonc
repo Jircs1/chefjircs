@@ -1,0 +1,47 @@
+{
+    "name": "LogWithdraw",
+    "abis": [
+        {
+            "@id": "0xad9ab9ee6953d4d177f4a03b3a3ac3178ffcb9816319f348060194aa76b14486",
+            "type": "event",
+            "signature": "LogWithdraw(address,address,address,uint256,uint256)",
+            "name": "LogWithdraw",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "share",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

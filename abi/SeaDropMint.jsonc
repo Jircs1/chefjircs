@@ -2,47 +2,59 @@
     "name": "SeaDropMint",
     "abis": [
         {
-            "@id": "SeaDropMint",
-            "hex_signature": "0xe90cf9cc0a552cf52ea6ff74ece0f1c8ae8cc9ad630d3181f55ac43ca076b7d6",
+            "@id": "0xe90cf9cc0a552cf52ea6ff74ece0f1c8ae8cc9ad630d3181f55ac43ca076b7d6",
             "type": "event",
             "signature": "SeaDropMint(address,address,address,address,uint256,uint256,uint256,uint256)",
             "name": "SeaDropMint",
             "inputs": [
                 {
-                    "@type": "erc721:token",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "nftContract",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "minter",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "feeRecipient",
                     "type": "address"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "payer",
                     "type": "address"
                 },
                 {
-                    "@type": "erc721:tokenAmount",
-                    "@token": "$0",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "quantityMinted",
-                    "type": "uint256"
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "opensea:unitMintPrice",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "unitMintPrice",
                     "type": "uint256"
                 },
                 {
-                    "@type": "dex:bps",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "feeBps",
                     "type": "uint256"
                 },
                 {
-                    "@type": "opensea:dropStageIndex",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "dropStageIndex",
                     "type": "uint256"
                 }

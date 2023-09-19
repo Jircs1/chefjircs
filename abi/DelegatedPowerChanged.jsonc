@@ -2,25 +2,25 @@
     "name": "DelegatedPowerChanged",
     "abis": [
         {
-            "@id": "DelegatedPowerChanged",
-            "hex_signature": "0xa0a19463ee116110c9b282012d9b65cc5522dc38a9520340cbaf3142e550127f",
+            "@id": "0xa0a19463ee116110c9b282012d9b65cc5522dc38a9520340cbaf3142e550127f",
             "type": "event",
             "signature": "DelegatedPowerChanged(address,uint256,uint8)",
             "name": "DelegatedPowerChanged",
             "inputs": [
                 {
-                    "@type": "delegation:delegator",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "user",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount",
                     "type": "uint256"
                 },
                 {
-                    "@type": "aave:delegationtype",
+                    "indexed": false,
                     "internalType": "enum IGovernancePowerDelegationERC20.DelegationType",
                     "name": "delegationType",
                     "type": "uint8"

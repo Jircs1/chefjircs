@@ -1,0 +1,47 @@
+{
+    "name": "ReleaseTokens",
+    "abis": [
+        {
+            "hex_signature": "0x0acc1b205de4ee991800bce293c4d395094e55c615e20495ed87305421c7e9a1",
+            "type": "event",
+            "signature": "ReleaseTokens(address,uint256,address,uint256,address)",
+            "name": "ReleaseTokens",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gaslessReward",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

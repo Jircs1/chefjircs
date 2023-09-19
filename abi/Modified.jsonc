@@ -1,0 +1,38 @@
+{
+    "name": "Modified",
+    "abis": [
+        {
+            "hex_signature": "0x5015559e4f379aa0dd2effee572c916b09bb68ed41ad9ab127c8066f052e1643",
+            "type": "event",
+            "signature": "Modified(uint256,(address,uint8[])[])",
+            "name": "Modified",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "operator",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "enum IDCAPermissionManager.Permission[]",
+                            "name": "permissions",
+                            "type": "uint8[]"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IDCAPermissionManager.PermissionSet[]",
+                    "name": "permissions",
+                    "type": "tuple[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

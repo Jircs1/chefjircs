@@ -1,0 +1,56 @@
+{
+    "name": "CallScheduled",
+    "abis": [
+        {
+            "hex_signature": "0x4cf4410cc57040e44862ef0f45f3dd5a5e02db8eb8add648d4b0e236f1d07dca",
+            "type": "event",
+            "signature": "CallScheduled(bytes32,uint256,address,uint256,bytes,bytes32,uint256)",
+            "name": "CallScheduled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "predecessor",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "delay",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

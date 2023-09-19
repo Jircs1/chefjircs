@@ -1,0 +1,35 @@
+{
+    "name": "UpdatedPermissions",
+    "abis": [
+        {
+            "hex_signature": "0x35fb03d0d293ef5b362761900725ce891f8f766b5a662cdd445372355448e7ca",
+            "type": "event",
+            "signature": "UpdatedPermissions(uint256,address,uint256)",
+            "name": "UpdatedPermissions",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "permissions",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "HSITransfer",
+    "abis": [
+        {
+            "@id": "0xc24b27b33d05d2d17b1cf97ccbe0c85b21236ad0f06ba8359bf46f8e3b2749b6",
+            "type": "event",
+            "signature": "HSITransfer(uint256,address,address,address)",
+            "name": "HSITransfer",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "hsiAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "oldStaker",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newStaker",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

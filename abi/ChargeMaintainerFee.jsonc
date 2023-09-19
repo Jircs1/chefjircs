@@ -1,0 +1,32 @@
+{
+    "name": "ChargeMaintainerFee",
+    "abis": [
+        {
+            "@id": "0xe4fed5362e2669c70e5da5a18942d1e617d8917f6adc0164d9668bd3a6d0cebe",
+            "type": "event",
+            "signature": "ChargeMaintainerFee(address,bool,uint256)",
+            "name": "ChargeMaintainerFee",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "maintainer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isBaseToken",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

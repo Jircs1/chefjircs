@@ -1,0 +1,32 @@
+{
+    "name": "BlockExecution",
+    "abis": [
+        {
+            "hex_signature": "0x2402307311a4d6604e4e7b4c8a15a7e1213edb39c16a31efa70afb06030d3165",
+            "type": "event",
+            "signature": "BlockExecution(uint256,bytes32,bytes32)",
+            "name": "BlockExecution",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "blockHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "commitment",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

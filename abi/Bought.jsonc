@@ -1,0 +1,44 @@
+{
+    "name": "Bought",
+    "abis": [
+        {
+            "@id": "0x47abb63d521dd2e26fcdd6dd304df0a109af421045f9cf9d53a6d1b7f5c16376",
+            "type": "event",
+            "signature": "Bought(uint256,uint256,uint256,uint256)",
+            "name": "Bought",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "traitId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenDna",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "boosterVal",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

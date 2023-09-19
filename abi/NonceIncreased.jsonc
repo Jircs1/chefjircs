@@ -2,8 +2,7 @@
     "name": "NonceIncreased",
     "abis": [
         {
-            "@id": "NonceIncreased",
-            "hex_signature": "0xdc0537f71d06d3708f52baf4ddf6918b25f1a145ba08873de27485682b35cac1",
+            "@id": "0xdc0537f71d06d3708f52baf4ddf6918b25f1a145ba08873de27485682b35cac1",
             "type": "event",
             "signature": "NonceIncreased(address,uint256,uint256)",
             "name": "NonceIncreased",
@@ -11,7 +10,29 @@
                 {
                     "@type": "dex:maker",
                     "name": "maker",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "1inch": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 5574,
+                            "sampleAddress": "0xe407f56df5825a7454e266cb2a83d9e3a7c31ff7",
+                            "sampleTxHash": "0x00bb5d0f296a5f819b3d8947c7ca70ba8069accfccdeb9a8962c1ee156797117",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "kyberswap": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 163,
+                            "sampleAddress": "0x24a64f43e26aeb1f27a7d83a7c8e34919032cd5e",
+                            "sampleTxHash": "0x172c2abab62740c193466a2c1651f95222918c482384992c024ec922dcc88107",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "evm:nonce",

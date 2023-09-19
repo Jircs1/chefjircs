@@ -1,0 +1,44 @@
+{
+    "name": "ListingRestrictionsUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x343b2029cbfdc6e6fd2b557ad4c7749f492f6c29d7c9d8dd19e9b0e2481e8ee5",
+            "type": "event",
+            "signature": "ListingRestrictionsUpdated(uint256,bytes32,uint256,uint256,uint256)",
+            "name": "ListingRestrictionsUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "listingId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "allowlistRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reserved",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mintedFromReserve",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "maxPerAddress",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

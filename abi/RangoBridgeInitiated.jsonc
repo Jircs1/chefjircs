@@ -1,0 +1,71 @@
+{
+    "name": "RangoBridgeInitiated",
+    "abis": [
+        {
+            "hex_signature": "0xa551f5e7134cc110651fa6eb8a0423535b3ea90eedb01463af70e6798a75d426",
+            "type": "event",
+            "signature": "RangoBridgeInitiated(address,address,uint256,address,uint256,bool,bool,uint8,uint16)",
+            "name": "RangoBridgeInitiated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "requestId",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "bridgeToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bridgeAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "destinationChainId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "hasInterchainMessage",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "hasDestinationSwap",
+                    "type": "bool"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "bridgeId",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "dAppTag",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

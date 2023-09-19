@@ -1,0 +1,113 @@
+{
+    "name": "LogUpdatePool",
+    "abis": [
+        {
+            "@id": "0xcb7325664a4a3b7c7223eefc492a97ca4fdf94d46884621e5a8fae5a04b2b9d2",
+            "type": "event",
+            "signature": "LogUpdatePool(uint256,uint256,uint256,uint256)",
+            "name": "LogUpdatePool",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lastRewardTime",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lpSupply",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accRewardPerShare",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x0fc9545022a542541ad085d091fb09a2ab36fee366a4576ab63714ea907ad353",
+            "type": "event",
+            "signature": "LogUpdatePool(uint256,uint64,uint256,uint256)",
+            "name": "LogUpdatePool",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "lastRewardTime",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lpSupply",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accSushiPerShare",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xc75b283f14d0a806c63b93a3659ed39c43a20bf0fff8030465e93d79e91ca40f",
+            "type": "event",
+            "signature": "LogUpdatePool(uint256,uint256,uint256,uint256,uint256)",
+            "name": "LogUpdatePool",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lastRewardTimestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "supply",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accPerShare",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "currencyId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

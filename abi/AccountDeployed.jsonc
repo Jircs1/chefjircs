@@ -1,0 +1,38 @@
+{
+    "name": "AccountDeployed",
+    "abis": [
+        {
+            "@id": "0xd51a9c61267aa6196961883ecf5ff2da6619c37dac0fa92122513fb32c032d2d",
+            "type": "event",
+            "signature": "AccountDeployed(bytes32,address,address,address)",
+            "name": "AccountDeployed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "userOpHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "paymaster",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

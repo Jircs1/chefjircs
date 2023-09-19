@@ -2,29 +2,32 @@
     "name": "TokenRateUpdate",
     "abis": [
         {
-            "@id": "TokenRateUpdate",
-            "hex_signature": "0x77f29993cf2c084e726f7e802da0719d6a0ade3e204badc7a3ffd57ecb768c24",
+            "@id": "0x77f29993cf2c084e726f7e802da0719d6a0ade3e204badc7a3ffd57ecb768c24",
             "type": "event",
             "signature": "TokenRateUpdate(address,address,uint256,uint256)",
             "name": "TokenRateUpdate",
             "inputs": [
                 {
-                    "@type": "erc20:token",
+                    "indexed": true,
+                    "internalType": "contract IERC20",
                     "name": "_token1",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": true,
+                    "internalType": "contract IERC20",
                     "name": "_token2",
                     "type": "address"
                 },
                 {
-                    "@type": "bancor:rate",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "_rateN",
                     "type": "uint256"
                 },
                 {
-                    "@type": "bancor:rate",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "_rateD",
                     "type": "uint256"
                 }

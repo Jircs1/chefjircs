@@ -1,0 +1,29 @@
+{
+    "name": "DepositQueued",
+    "abis": [
+        {
+            "hex_signature": "0x39b741a94a004f4e0edfdc3c607302b8ccb1b8c4c5a9b5f761fec94a116921fb",
+            "type": "event",
+            "signature": "DepositQueued(address,uint256)",
+            "name": "DepositQueued",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

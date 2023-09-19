@@ -1,0 +1,65 @@
+{
+    "name": "PrivateSaleMint",
+    "abis": [
+        {
+            "hex_signature": "0x08363e897e78bb2d9ed326cf57650998c305abb630d3c1d921c412f732a8829d",
+            "type": "event",
+            "signature": "PrivateSaleMint(address,(uint256,uint256,uint256,uint256,uint256),uint256,uint256)",
+            "name": "PrivateSaleMint",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "price",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "quantity",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "txLimit",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "walletLimit",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deadline",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IKomethAppImplementation.PrivateSale",
+                    "name": "privateSale",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "kind",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

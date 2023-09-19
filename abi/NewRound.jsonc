@@ -1,0 +1,32 @@
+{
+    "name": "NewRound",
+    "abis": [
+        {
+            "@id": "0x0109fc6f55cf40689f02fbaad7af7fe7bbac8a3d2186600afc7d3e10cac60271",
+            "type": "event",
+            "signature": "NewRound(uint256,address,uint256)",
+            "name": "NewRound",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "roundId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "startedBy",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "startedAt",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

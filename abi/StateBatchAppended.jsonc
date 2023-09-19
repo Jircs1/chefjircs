@@ -1,0 +1,44 @@
+{
+    "name": "StateBatchAppended",
+    "abis": [
+        {
+            "@id": "0x16be4c5129a4e03cf3350262e181dc02ddfb4a6008d925368c0899fcd97ca9c5",
+            "type": "event",
+            "signature": "StateBatchAppended(uint256,bytes32,uint256,uint256,bytes)",
+            "name": "StateBatchAppended",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_batchIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_batchRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_batchSize",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_prevTotalElements",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_extraData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "SupplyDecreased",
+    "abis": [
+        {
+            "hex_signature": "0x1b7e18241beced0d7f41fbab1ea8ed468732edbcb74ec4420151654ca71c8a63",
+            "type": "event",
+            "signature": "SupplyDecreased(address,uint256)",
+            "name": "SupplyDecreased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

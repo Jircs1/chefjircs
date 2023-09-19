@@ -2,37 +2,72 @@
     "name": "AddLiquidity",
     "abis": [
         {
-            "@id": "AddLiquidity_Multiple",
-            "hex_signature": "0x189c623b666b1b45b83d7178f39b8c087cb09774317ca2f53c2d3c3726f222a2",
+            "@id": "0x26f55a85081d24974e85c6c00045d0f0453991e95873f52bff0d21af4079a768",
+            "type": "event",
+            "signature": "AddLiquidity(address,uint256[2],uint256[2],uint256,uint256)",
+            "name": "AddLiquidity",
+            "inputs": [
+                {
+                    "name": "provider",
+                    "type": "address",
+                    "indexed": true
+                },
+                {
+                    "name": "token_amounts",
+                    "type": "uint256[2]",
+                    "indexed": false
+                },
+                {
+                    "name": "fees",
+                    "type": "uint256[2]",
+                    "indexed": false
+                },
+                {
+                    "name": "invariant",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "token_supply",
+                    "type": "uint256",
+                    "indexed": false
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x189c623b666b1b45b83d7178f39b8c087cb09774317ca2f53c2d3c3726f222a2",
             "type": "event",
             "signature": "AddLiquidity(address,uint256[],uint256[],uint256,uint256)",
             "name": "AddLiquidity",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "provider",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": false,
+                    "internalType": "uint256[]",
                     "name": "tokenAmounts",
                     "type": "uint256[]"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": false,
+                    "internalType": "uint256[]",
                     "name": "fees",
                     "type": "uint256[]"
                 },
                 {
-                    "@type": "dex:invariant",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "invariant",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "lpTokenSupply",
                     "type": "uint256"
                 }
@@ -40,38 +75,96 @@
             "outputs": null
         },
         {
-            "@id": "AddLiquidity_Two",
-            "hex_signature": "0x26f55a85081d24974e85c6c00045d0f0453991e95873f52bff0d21af4079a768",
+            "@id": "0x423f6495a08fc652425cf4ed0d1f9e37e571d9b9529b1c1c23cce780b2e7df0d",
             "type": "event",
-            "signature": "AddLiquidity(address,uint256[2],uint256[2],uint256,uint256)",
+            "signature": "AddLiquidity(address,uint256[3],uint256[3],uint256,uint256)",
             "name": "AddLiquidity",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "type": "address",
                     "name": "provider",
+                    "indexed": true
+                },
+                {
+                    "type": "uint256[3]",
+                    "name": "token_amounts",
+                    "indexed": false
+                },
+                {
+                    "type": "uint256[3]",
+                    "name": "fees",
+                    "indexed": false
+                },
+                {
+                    "type": "uint256",
+                    "name": "invariant",
+                    "indexed": false
+                },
+                {
+                    "type": "uint256",
+                    "name": "token_supply",
+                    "indexed": false
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x540ab385f9b5d450a27404172caade516b3ba3f4be88239ac56a2ad1de2a1f5a",
+            "type": "event",
+            "signature": "AddLiquidity(address,uint256[2],uint256,uint256)",
+            "name": "AddLiquidity",
+            "inputs": [
+                {
+                    "name": "provider",
+                    "type": "address",
+                    "indexed": true
+                },
+                {
+                    "name": "token_amounts",
+                    "type": "uint256[2]",
+                    "indexed": false
+                },
+                {
+                    "name": "fee",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "token_supply",
+                    "type": "uint256",
+                    "indexed": false
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xd2491a9b4fe81a7cd4511e8b7b7743951b061dad5bed7da8a7795b080ee08c7e",
+            "type": "event",
+            "signature": "AddLiquidity(address,address,uint256,uint256)",
+            "name": "AddLiquidity",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "name": "token_amounts",
-                    "type": "uint256[2]"
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "onBehalfOf",
+                    "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "name": "fees",
-                    "type": "uint256[2]"
-                },
-                {
-                    "@type": "dex:invariant",
-                    "name": "invariant",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "name": "token_supply",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "referralCode",
                     "type": "uint256"
                 }
             ],

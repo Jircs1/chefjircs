@@ -2,14 +2,14 @@
     "name": "MinterReferred",
     "abis": [
         {
-            "@id": "MinterReferred",
-            "hex_signature": "0xcecb5f5b62b88dc819e81f535d3c431ec78987ab181067baac5d532dde7ee38a",
+            "@id": "0xcecb5f5b62b88dc819e81f535d3c431ec78987ab181067baac5d532dde7ee38a",
             "type": "event",
             "signature": "MinterReferred(address)",
             "name": "MinterReferred",
             "inputs": [
                 {
-                    "@type": "referral:referer",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "referrer",
                     "type": "address"
                 }

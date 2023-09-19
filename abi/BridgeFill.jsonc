@@ -2,8 +2,7 @@
     "name": "BridgeFill",
     "abis": [
         {
-            "@id": "BridgeFill",
-            "hex_signature": "0xe59e71a14fe90157eedc866c4f8c767d3943d6b6b2e8cd64dddcc92ab4c55af8",
+            "@id": "0xe59e71a14fe90157eedc866c4f8c767d3943d6b6b2e8cd64dddcc92ab4c55af8",
             "type": "event",
             "signature": "BridgeFill(bytes32,address,address,uint256,uint256)",
             "name": "BridgeFill",
@@ -16,12 +15,36 @@
                 {
                     "@type": "erc20:token",
                     "name": "inputToken",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "0x": {
+                            "is_erc20": 0.98,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 145894,
+                            "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                            "sampleTxHash": "0x0000e745743050bdbf9be2ecdc0dc7fee589cb6b1ff0cdb7b95019f33adb0d75",
+                            "found": 100,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:token",
                     "name": "outputToken",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "0x": {
+                            "is_erc20": 0.99,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 151701,
+                            "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                            "sampleTxHash": "0x0000447746062eede6910097754c5b6bd0f3be2282a042d69b8b0c951c9919c9",
+                            "found": 100,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

@@ -1,0 +1,32 @@
+{
+    "name": "BridgedDeposit",
+    "abis": [
+        {
+            "hex_signature": "0x573284f4c36da6a8d8d84cd06662235f8a770cc98e8c80e304b8f382fdc3dca2",
+            "type": "event",
+            "signature": "BridgedDeposit(address,address,uint256)",
+            "name": "BridgedDeposit",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

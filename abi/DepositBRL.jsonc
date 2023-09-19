@@ -1,0 +1,29 @@
+{
+    "name": "DepositBRL",
+    "abis": [
+        {
+            "hex_signature": "0xa590458b91b688d40da5e616ab851c3cd2be1f151c41755266055eb43059a8d3",
+            "type": "event",
+            "signature": "DepositBRL(address,uint256)",
+            "name": "DepositBRL",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

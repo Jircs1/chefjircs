@@ -1,0 +1,62 @@
+{
+    "name": "PositionChanged",
+    "abis": [
+        {
+            "@id": "0x968bc4f738eae0486dc6736c4b427dbafa4acfdf6eaf223337791ddeb3a56247",
+            "type": "event",
+            "signature": "PositionChanged(address,address,int256,int256,uint256,int256,int256,uint256)",
+            "name": "PositionChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "trader",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "baseToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "exchangedPositionSize",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "exchangedPositionNotional",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "openNotional",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "realizedPnl",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sqrtPriceAfterX96",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

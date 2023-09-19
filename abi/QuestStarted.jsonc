@@ -1,0 +1,38 @@
+{
+    "name": "QuestStarted",
+    "abis": [
+        {
+            "@id": "0x9cf69842ab0633697d5e469283f269dbc744d6e296704f7e470181a0e005bb14",
+            "type": "event",
+            "signature": "QuestStarted(uint256,uint256,uint256[])",
+            "name": "QuestStarted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "questStartedAt",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "crews",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

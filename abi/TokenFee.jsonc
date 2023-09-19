@@ -1,0 +1,38 @@
+{
+    "name": "TokenFee",
+    "abis": [
+        {
+            "@id": "0x25471ec9f39b4ceb20d58f63c37f9c738011f0babcc4b6af69bdd82984ca5f8e",
+            "type": "event",
+            "signature": "TokenFee(uint256,uint256,address,address)",
+            "name": "TokenFee",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "RubicPart",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "integratorPart",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "integrator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

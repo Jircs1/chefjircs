@@ -1,0 +1,65 @@
+{
+    "name": "TokenTransfer",
+    "abis": [
+        {
+            "@id": "0xd0ed88a3f042c6bbb1e3ea406079b5f2b4b198afccaa535d837f4c63abbc4de6",
+            "type": "event",
+            "signature": "TokenTransfer(address,address,uint256)",
+            "name": "TokenTransfer",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x1e1f95da2230e98068fd08167ab08fbe471331c1e5a358760d9418ae96c1775e",
+            "type": "event",
+            "signature": "TokenTransfer(uint256,address,address)",
+            "name": "TokenTransfer",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "oldOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

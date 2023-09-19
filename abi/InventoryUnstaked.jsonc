@@ -1,0 +1,38 @@
+{
+    "name": "InventoryUnstaked",
+    "abis": [
+        {
+            "hex_signature": "0x2d80d681127a38ca715ea60cfd400ccbe674c857d140e3437d0da5dde6152fa3",
+            "type": "event",
+            "signature": "InventoryUnstaked(uint256,uint256,uint256,address)",
+            "name": "InventoryUnstaked",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "vaultId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "xTokensUnstaked",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "numNftsRedeemed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "unstaker",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

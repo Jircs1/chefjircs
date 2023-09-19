@@ -1,0 +1,56 @@
+{
+    "name": "ClaimVoyageRewards",
+    "abis": [
+        {
+            "hex_signature": "0xdc1dda0cf54208fd9e79bd79cf307bd77513a34429e54c94e91619dd58883fd3",
+            "type": "event",
+            "signature": "ClaimVoyageRewards(uint256,uint16,uint8[9],uint16,uint16[],uint8[],uint256)",
+            "name": "ClaimVoyageRewards",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_voyageId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_noOfChests",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8[9]",
+                    "name": "_destroyedSupportShips",
+                    "type": "uint8[9]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_healthDamage",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16[]",
+                    "name": "_interactionRNGs",
+                    "type": "uint16[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8[]",
+                    "name": "_interactionResults",
+                    "type": "uint8[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_claimedAt",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

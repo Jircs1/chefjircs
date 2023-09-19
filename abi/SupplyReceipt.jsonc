@@ -1,0 +1,41 @@
+{
+    "name": "SupplyReceipt",
+    "abis": [
+        {
+            "@id": "0xa5521f7d015e07af98ded530ac91a9ccef09b2b0fe09f6a0c8742f40d88e00d1",
+            "type": "event",
+            "signature": "SupplyReceipt(address,bytes32,uint256,uint256)",
+            "name": "SupplyReceipt",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "supplier",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "partition",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,8 +2,7 @@
     "name": "Fee",
     "abis": [
         {
-            "@id": "Fee",
-            "hex_signature": "0x4c39b7ce5f4f514f45cb6f82b171b8b0b7f2cbf488ad28e4eff451588e2f014b",
+            "@id": "0x4c39b7ce5f4f514f45cb6f82b171b8b0b7f2cbf488ad28e4eff451588e2f014b",
             "type": "event",
             "signature": "Fee(address,uint256,uint256,address[],uint256[],bool)",
             "name": "Fee",
@@ -11,7 +10,19 @@
                 {
                     "@type": "erc20:token",
                     "name": "token",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "kyberswap": {
+                            "is_erc20": 0.99,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 327488,
+                            "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                            "sampleTxHash": "0x0000841675ceea9af7a4d1e564f0c5f48e1dd05fd98a68877e85f88ccbbfbedd",
+                            "found": 100,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -41,6 +52,36 @@
                 {
                     "name": "isBps",
                     "type": "bool"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x6ded982279c8387ad8a63e73385031a3807c1862e633f06e09d11bcb6e282f60",
+            "type": "event",
+            "signature": "Fee(address,address,uint256)",
+            "name": "Fee",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_feeAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "coin",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null

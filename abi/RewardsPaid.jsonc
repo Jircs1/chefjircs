@@ -1,0 +1,29 @@
+{
+    "name": "RewardsPaid",
+    "abis": [
+        {
+            "hex_signature": "0xd5ec1b97fc4d048ade361b013c285a0a5c1c40ae32579013ad3798ee657d9de7",
+            "type": "event",
+            "signature": "RewardsPaid(address,uint256)",
+            "name": "RewardsPaid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewards",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

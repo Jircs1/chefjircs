@@ -1,0 +1,56 @@
+{
+    "name": "TokensTransferred",
+    "abis": [
+        {
+            "@id": "0x3c67396e9c55d2fc8ad68875fc5beca1d96ad2a2f23b210ccc1d986551ab6fdf",
+            "type": "event",
+            "signature": "TokensTransferred(address,address,address,address,uint256,uint8,address)",
+            "name": "TokensTransferred",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "universe",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum Augur.TokenType",
+                    "name": "tokenType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "market",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

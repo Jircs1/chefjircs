@@ -1,0 +1,47 @@
+{
+    "name": "TransferAllowance",
+    "abis": [
+        {
+            "@id": "0x05b90458f953d3fcb2d7fb25616a2fddeca749d0c47cc5c9832d0266b5346eea",
+            "type": "event",
+            "signature": "TransferAllowance(address,address,address,uint256,string)",
+            "name": "TransferAllowance",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "oldVault",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newVault",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "memo",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

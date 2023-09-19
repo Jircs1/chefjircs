@@ -1,0 +1,41 @@
+{
+    "name": "DelegatorUnstakeWithId",
+    "abis": [
+        {
+            "@id": "0x7beb9bef91040fcf7607c78d4fc668370a9036788d7e6f202a4a2db5b0c28c80",
+            "type": "event",
+            "signature": "DelegatorUnstakeWithId(uint256,address,uint256,uint256)",
+            "name": "DelegatorUnstakeWithId",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "validatorId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "UserRefunded",
+    "abis": [
+        {
+            "@id": "0x662bc2a64340bca927d72cb5c5ec2285714bb7a1b8927bb9c601287f4a479362",
+            "type": "event",
+            "signature": "UserRefunded(address,uint256,uint256)",
+            "name": "UserRefunded",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bidAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "wonItemsCount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

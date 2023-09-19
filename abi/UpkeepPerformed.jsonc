@@ -1,0 +1,44 @@
+{
+    "name": "UpkeepPerformed",
+    "abis": [
+        {
+            "@id": "0xcaacad83e47cc45c280d487ec84184eee2fa3b54ebaa393bda7549f13da228f6",
+            "type": "event",
+            "signature": "UpkeepPerformed(uint256,bool,address,uint96,bytes)",
+            "name": "UpkeepPerformed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "payment",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "performData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

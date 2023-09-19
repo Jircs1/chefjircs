@@ -1,0 +1,44 @@
+{
+    "name": "TradingLiquidityUpdated",
+    "abis": [
+        {
+            "@id": "0x6e96dc5343d067ec486a9920e0304c3610ed05c65e45cc029d9b9fe7ecfa7620",
+            "type": "event",
+            "signature": "TradingLiquidityUpdated(bytes32,address,address,uint256,uint256)",
+            "name": "TradingLiquidityUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "contextId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract Token",
+                    "name": "pool",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract Token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prevLiquidity",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newLiquidity",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

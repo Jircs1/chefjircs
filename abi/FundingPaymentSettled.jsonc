@@ -1,0 +1,32 @@
+{
+    "name": "FundingPaymentSettled",
+    "abis": [
+        {
+            "@id": "0x733330d4aad1a878654bf888817b79bc6478013399be29fa3b8845c81305249e",
+            "type": "event",
+            "signature": "FundingPaymentSettled(address,address,int256)",
+            "name": "FundingPaymentSettled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "trader",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "baseToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "fundingPayment",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

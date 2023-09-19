@@ -1,0 +1,41 @@
+{
+    "name": "DistributedBorrowerComp",
+    "abis": [
+        {
+            "@id": "0x1fc3ecc087d8d2d15e23d0032af5a47059c3892d003d8e139fdcb6bb327c99a6",
+            "type": "event",
+            "signature": "DistributedBorrowerComp(address,address,uint256,uint256)",
+            "name": "DistributedBorrowerComp",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract CToken",
+                    "name": "cToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "compDelta",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "compBorrowIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "TransactionMinted",
+    "abis": [
+        {
+            "hex_signature": "0x915db48d8fb487d7270d03883272f79acecb5ffdf96da8a9df141de5a45a4ffc",
+            "type": "event",
+            "signature": "TransactionMinted(uint32,bytes32,address,uint256)",
+            "name": "TransactionMinted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "chainId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "dest",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

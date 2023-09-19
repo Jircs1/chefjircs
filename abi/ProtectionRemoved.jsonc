@@ -1,0 +1,50 @@
+{
+    "name": "ProtectionRemoved",
+    "abis": [
+        {
+            "hex_signature": "0xeafbca2ddc06778be021087babbeda29033997e4e461abdc6d5bf30a0f14a025",
+            "type": "event",
+            "signature": "ProtectionRemoved(address,address,address,uint256,uint256)",
+            "name": "ProtectionRemoved",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_provider",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IDSToken",
+                    "name": "_poolToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20Token",
+                    "name": "_reserveToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_poolAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_reserveAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

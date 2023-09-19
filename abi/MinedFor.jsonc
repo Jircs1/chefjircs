@@ -1,0 +1,29 @@
+{
+    "name": "MinedFor",
+    "abis": [
+        {
+            "hex_signature": "0x4995275d5fede9791a4f176a8aa7d0fea6c316f6ba53693c3acd58ee707a7196",
+            "type": "event",
+            "signature": "MinedFor(address,uint256)",
+            "name": "MinedFor",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "miner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

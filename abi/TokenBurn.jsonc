@@ -1,0 +1,29 @@
+{
+    "name": "TokenBurn",
+    "abis": [
+        {
+            "hex_signature": "0xfecf12fd01122af77b8b8f1a0f126363142d14fba298ea36d9fe4909f61bb5a1",
+            "type": "event",
+            "signature": "TokenBurn(uint8,uint256)",
+            "name": "TokenBurn",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "_burnFee",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "burnAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

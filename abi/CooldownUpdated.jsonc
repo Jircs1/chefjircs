@@ -1,0 +1,32 @@
+{
+    "name": "CooldownUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x689b1244ebbe1d58fc658fbaa0d29bcefe03171883758be32137e2ee083b79fb",
+            "type": "event",
+            "signature": "CooldownUpdated(address,uint256,uint256)",
+            "name": "CooldownUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "cooldownTimestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

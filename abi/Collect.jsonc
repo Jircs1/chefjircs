@@ -2,32 +2,77 @@
     "name": "Collect",
     "abis": [
         {
-            "@id": "Collect_ERC721",
-            "hex_signature": "0x40d0efd1a53d60ecbf40971b9daf7dc90178c3aadc7aab1765632738fa8b8f01",
+            "@id": "0x70935338e69775456a85ddef226c395fb668b63fa0115f5f20610b388e6ca9c0",
+            "type": "event",
+            "signature": "Collect(address,address,int24,int24,uint128,uint128)",
+            "name": "Collect",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "bottomTick",
+                    "type": "int24"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "topTick",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "amount0",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "amount1",
+                    "type": "uint128"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x40d0efd1a53d60ecbf40971b9daf7dc90178c3aadc7aab1765632738fa8b8f01",
             "type": "event",
             "signature": "Collect(uint256,address,uint256,uint256)",
             "name": "Collect",
             "inputs": [
                 {
-                    "@type": "erc721:tokenID",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "_tokenId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "_recipient",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token0",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "_amount0",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "_amount1",
                     "type": "uint256"
                 }
@@ -35,43 +80,37 @@
             "outputs": null
         },
         {
-            "@id": "Collect_Ticks",
-            "hex_signature": "0x70935338e69775456a85ddef226c395fb668b63fa0115f5f20610b388e6ca9c0",
+            "@id": "0x42bd73ea702d7cf4505c06a7ac02a171536177d9cc2c7665443151ec91cc43fc",
             "type": "event",
-            "signature": "Collect(address,address,int24,int24,uint128,uint128)",
+            "signature": "Collect(address,address,uint256,bytes)",
             "name": "Collect",
             "inputs": [
                 {
-                    "@type": "transfer:from",
-                    "name": "owner",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
-                    "name": "recipient",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "dex:tick",
-                    "name": "bottomTick",
-                    "type": "int24"
-                },
-                {
-                    "@type": "dex:tick",
-                    "name": "topTick",
-                    "type": "int24"
-                },
-                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collected",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token0",
-                    "name": "amount0",
-                    "type": "uint128"
+                    "@token": "$0",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token1",
-                    "name": "amount1",
-                    "type": "uint128"
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
                 }
             ],
             "outputs": null

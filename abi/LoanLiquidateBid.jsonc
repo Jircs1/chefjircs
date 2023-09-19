@@ -1,0 +1,38 @@
+{
+    "name": "LoanLiquidateBid",
+    "abis": [
+        {
+            "@id": "0xe8a39971ed535d13041f79f54ea41f45a2435bc8e608d91068e374606bce9eb8",
+            "type": "event",
+            "signature": "LoanLiquidateBid(uint256,address,uint40,uint40)",
+            "name": "LoanLiquidateBid",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "stakeId",
+                    "type": "uint40"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "liquidationId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "DistributedBorrowerStrike",
+    "abis": [
+        {
+            "hex_signature": "0x730ec20a857394345ba1d81394d16c333202df6c655e85f7cf16c65954def57e",
+            "type": "event",
+            "signature": "DistributedBorrowerStrike(address,address,uint256,uint256)",
+            "name": "DistributedBorrowerStrike",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract SToken",
+                    "name": "sToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "strikeDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "strikeBorrowIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

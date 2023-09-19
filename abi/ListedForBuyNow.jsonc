@@ -1,0 +1,41 @@
+{
+    "name": "ListedForBuyNow",
+    "abis": [
+        {
+            "@id": "0x7fd7de54b3a4cc7952845fd3fa85208e0ba980067ead6d59721bebc8bd7ec414",
+            "type": "event",
+            "signature": "ListedForBuyNow(uint256,uint256,address,uint256)",
+            "name": "ListedForBuyNow",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_price",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_currentOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_startDate",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

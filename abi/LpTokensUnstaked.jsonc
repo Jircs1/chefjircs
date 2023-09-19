@@ -1,0 +1,35 @@
+{
+    "name": "LpTokensUnstaked",
+    "abis": [
+        {
+            "hex_signature": "0x820d19e507b9188a561dd1270049c35fd21a7289cdbf5230d13ba5b42609d7dc",
+            "type": "event",
+            "signature": "LpTokensUnstaked(address,address,uint256)",
+            "name": "LpTokensUnstaked",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "lpToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lpTokenAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

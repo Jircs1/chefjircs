@@ -1,0 +1,38 @@
+{
+    "name": "NativeGasTokenPayment",
+    "abis": [
+        {
+            "@id": "0x9363885e28e7ba67b096932f9f00dff44742731d6cb4fa26ccd4424e78e41e13",
+            "type": "event",
+            "signature": "NativeGasTokenPayment(address,bytes32,uint256,uint32)",
+            "name": "NativeGasTokenPayment",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "paymentRecipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "vectorId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountToCreator",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "percentageBPSOfTotal",
+                    "type": "uint32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

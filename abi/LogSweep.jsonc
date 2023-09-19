@@ -1,0 +1,37 @@
+{
+    "name": "LogSweep",
+    "abis": [
+        {
+            "@id": "0xa64da754fccf55aa65a1f0128a648633fade3884b236e879ee9f64c78df5d5d7",
+            "type": "event",
+            "signature": "LogSweep(address,address,address,uint256)",
+            "name": "LogSweep",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

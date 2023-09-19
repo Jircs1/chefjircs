@@ -1,0 +1,35 @@
+{
+    "name": "SubmitStake",
+    "abis": [
+        {
+            "hex_signature": "0x157efccb244e0e1ae7a36a1c28a1f45b62e1250e06e57d9cb44cc1cdc2d95d92",
+            "type": "event",
+            "signature": "SubmitStake(uint256,address,uint256)",
+            "name": "SubmitStake",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "stakeIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakeAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

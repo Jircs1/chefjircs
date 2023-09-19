@@ -1,0 +1,47 @@
+{
+    "name": "xStake",
+    "abis": [
+        {
+            "@id": "0x178123d39dce6e2b64dc524173d382bbaa21eeb3f2e27ecf9d5ff72e10e6eb03",
+            "type": "event",
+            "signature": "xStake(uint256,address,address,uint256,bool)",
+            "name": "xStake",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "roundId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "staked",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

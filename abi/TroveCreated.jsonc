@@ -1,0 +1,32 @@
+{
+    "name": "TroveCreated",
+    "abis": [
+        {
+            "hex_signature": "0xc78aeff453faf39d5a4a56acb99641aa471118956e00bdf4ca3e08ee6687fef6",
+            "type": "event",
+            "signature": "TroveCreated(address,address,uint256)",
+            "name": "TroveCreated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_collateral",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "arrayIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "name": "UserGradualUpdated",
+    "abis": [
+        {
+            "hex_signature": "0xebc99566369f3a0bb7856de228673359eed87e744e506850f424863304607709",
+            "type": "event",
+            "signature": "UserGradualUpdated(address,uint16,uint48,uint48,uint56)",
+            "name": "UserGradualUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "lastUpdatedTrancheIndex",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint48",
+                    "name": "maturedVotingPower",
+                    "type": "uint48"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint48",
+                    "name": "maturingAmount",
+                    "type": "uint48"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint56",
+                    "name": "rawUnmaturedVotingPower",
+                    "type": "uint56"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

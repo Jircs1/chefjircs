@@ -1,0 +1,38 @@
+{
+    "name": "OffchainData",
+    "abis": [
+        {
+            "@id": "0xb92710e3fad9222f817fcd828bd1ce3612ad0cd1c8bd5f3a3f4b8d85c4444621",
+            "type": "event",
+            "signature": "OffchainData(uint256,uint256,uint256,address)",
+            "name": "OffchainData",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "rollupId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "chunk",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalChunks",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

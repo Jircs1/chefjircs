@@ -1,0 +1,50 @@
+{
+    "name": "StakeChanged",
+    "abis": [
+        {
+            "@id": "0x39df0e5286a3ef2f42a0bf52f32cfe2c58e5b0405f47fe512f2c2439e4cfe204",
+            "type": "event",
+            "signature": "StakeChanged(address,uint256)",
+            "name": "StakeChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newStake",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x02a5b2bd0f6030e3d5dfb2ee2b5bcf058fe8526dabf91b58b2d5d53d0f02dc04",
+            "type": "event",
+            "signature": "StakeChanged(uint256,address)",
+            "name": "StakeChanged",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_newSystemStake",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_depositor",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

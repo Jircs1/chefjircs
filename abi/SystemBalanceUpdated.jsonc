@@ -1,0 +1,32 @@
+{
+    "name": "SystemBalanceUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x407aa06211cf8eec4798e12787e05d8e5ba13eab80aac8df1b59ed5db8520197",
+            "type": "event",
+            "signature": "SystemBalanceUpdated(address,uint256,uint256)",
+            "name": "SystemBalanceUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20Token",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "prevAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,49 +2,56 @@
     "name": "MessageDelivered",
     "abis": [
         {
-            "@id": "MessageDelivered",
-            "hex_signature": "0x5e3c1311ea442664e8b1611bfabef659120ea7a0a2cfc0667700bebc69cbffe1",
+            "@id": "0x5e3c1311ea442664e8b1611bfabef659120ea7a0a2cfc0667700bebc69cbffe1",
             "type": "event",
             "signature": "MessageDelivered(uint256,bytes32,address,uint8,address,bytes32,uint256,uint64)",
             "name": "MessageDelivered",
             "inputs": [
                 {
-                    "@type": "arbitrum:messageIndex",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "messageIndex",
                     "type": "uint256"
                 },
                 {
-                    "@type": "arbitrum:beforeInboxAcc",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "beforeInboxAcc",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "arbitrum:inboxAddress",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "inbox",
                     "type": "address"
                 },
                 {
-                    "@type": "arbitrum:kind",
+                    "indexed": false,
+                    "internalType": "uint8",
                     "name": "kind",
                     "type": "uint8"
                 },
                 {
-                    "@type": "transfer:from",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "arbitrum:messageDataHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "messageDataHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "baseFeeL1",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
+                    "internalType": "uint64",
                     "name": "timestamp",
                     "type": "uint64"
                 }

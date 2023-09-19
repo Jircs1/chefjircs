@@ -1,0 +1,29 @@
+{
+    "name": "PoolExited",
+    "abis": [
+        {
+            "hex_signature": "0xbc865856a1e9f1dfe2abde98edc2eefe87b6c391a47032388ef36d8c2474aad3",
+            "type": "event",
+            "signature": "PoolExited(address,uint256)",
+            "name": "PoolExited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

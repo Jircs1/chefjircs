@@ -1,0 +1,83 @@
+{
+    "name": "ERC721SellOrderFilled",
+    "abis": [
+        {
+            "@id": "0x9c248aa1a265aa616f707b979d57f4529bb63a4fc34dc7fc61fdddc18410f74e",
+            "type": "event",
+            "signature": "ERC721SellOrderFilled(bytes32,address,address,uint256,address,uint256,(address,uint256)[],address,uint256)",
+            "name": "ERC721SellOrderFilled",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "taker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$7",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "erc20Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "erc20TokenAmount",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct INFTOrdersFeature.Fee[]",
+                    "name": "fees",
+                    "type": "tuple[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "erc721Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "erc721TokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

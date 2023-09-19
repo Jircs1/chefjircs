@@ -1,0 +1,44 @@
+{
+    "name": "MintedMulti",
+    "abis": [
+        {
+            "hex_signature": "0x7d3ff197e9071095bd36b627028ef523ecf46fcbf17cbde745a4b65aec88b6bc",
+            "type": "event",
+            "signature": "MintedMulti(address,address,uint256,address[],uint256[])",
+            "name": "MintedMulti",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "minter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "output",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "inputs",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "inputQuantities",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

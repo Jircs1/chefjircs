@@ -1,0 +1,29 @@
+{
+    "name": "LogSupply",
+    "abis": [
+        {
+            "hex_signature": "0x0417b340e646d4be71f9b2da63b5c3c69bc9cfa069f0e0db4756271886130bf4",
+            "type": "event",
+            "signature": "LogSupply(uint256,uint256)",
+            "name": "LogSupply",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "previousSupply",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "supply",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

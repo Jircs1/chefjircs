@@ -2,19 +2,20 @@
     "name": "ExecutionSuccess",
     "abis": [
         {
-            "@id": "ExecutionSuccess",
-            "hex_signature": "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e",
+            "@id": "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e",
             "type": "event",
             "signature": "ExecutionSuccess(bytes32,uint256)",
             "name": "ExecutionSuccess",
             "inputs": [
                 {
-                    "@type": "evm:TransactionHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "txHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "payment",
                     "type": "uint256"
                 }

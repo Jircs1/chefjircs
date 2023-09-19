@@ -1,0 +1,29 @@
+{
+    "name": "TakeFromEcoSytem",
+    "abis": [
+        {
+            "hex_signature": "0xe9160783ba96a6ddf769b9adfe8589cd44b9d68cdcc4fa5879db4f6853f1fadd",
+            "type": "event",
+            "signature": "TakeFromEcoSytem(address,uint256)",
+            "name": "TakeFromEcoSytem",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

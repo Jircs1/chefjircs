@@ -1,0 +1,35 @@
+{
+    "name": "Approvalevent",
+    "abis": [
+        {
+            "hex_signature": "0xb82a483df0f7915541b57bac923e706935b9fcc0f2a98555b6b9414a49739fd1",
+            "type": "event",
+            "signature": "Approvalevent(address,address,uint256)",
+            "name": "Approvalevent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

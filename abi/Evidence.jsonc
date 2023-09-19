@@ -1,0 +1,38 @@
+{
+    "name": "Evidence",
+    "abis": [
+        {
+            "hex_signature": "0xdccf2f8b2cc26eafcd61905cba744cff4b81d14740725f6376390dc6298a6a3c",
+            "type": "event",
+            "signature": "Evidence(address,uint256,address,string)",
+            "name": "Evidence",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract Arbitrator",
+                    "name": "_arbitrator",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_evidenceGroupID",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_party",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "_evidence",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

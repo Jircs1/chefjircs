@@ -1,0 +1,35 @@
+{
+    "name": "Wrapped",
+    "abis": [
+        {
+            "@id": "0xfd309eb86d648181535e968c9664c76d79ac879215f6d2fb28b696836bc5d1a9",
+            "type": "event",
+            "signature": "Wrapped(uint256,address,bytes32)",
+            "name": "Wrapped",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pairId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "namer",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

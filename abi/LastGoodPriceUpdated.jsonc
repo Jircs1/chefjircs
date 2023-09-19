@@ -1,0 +1,41 @@
+{
+    "name": "LastGoodPriceUpdated",
+    "abis": [
+        {
+            "@id": "0x4d29de21de555af78a62fc82dd4bc05e9ae5b0660a37f04729527e0f22780cd3",
+            "type": "event",
+            "signature": "LastGoodPriceUpdated(uint256)",
+            "name": "LastGoodPriceUpdated",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_lastGoodPrice",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x9a696fe6a955b23852e2b245b6847dfda7d8944623d9b42628e087344ad17963",
+            "type": "event",
+            "signature": "LastGoodPriceUpdated(address,uint256)",
+            "name": "LastGoodPriceUpdated",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_collateral",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_lastGoodPrice",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

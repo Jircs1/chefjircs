@@ -1,0 +1,29 @@
+{
+    "name": "taxFeeSent",
+    "abis": [
+        {
+            "hex_signature": "0x763e8d15fa4de0103ce2540dc2352012bb34bfd419d7f2cae0573283fe964f91",
+            "type": "event",
+            "signature": "taxFeeSent(address,uint256)",
+            "name": "taxFeeSent",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

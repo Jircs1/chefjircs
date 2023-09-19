@@ -2,28 +2,32 @@
     "name": "ETHBridgeInitiated",
     "abis": [
         {
-            "@id": "ETHBridgeInitiated",
-            "hex_signature": "0x2849b43074093a05396b6f2a937dee8565b15a48a7b3d4bffb732a5017380af5",
+            "@id": "0x2849b43074093a05396b6f2a937dee8565b15a48a7b3d4bffb732a5017380af5",
             "type": "event",
             "signature": "ETHBridgeInitiated(address,address,uint256,bytes)",
             "name": "ETHBridgeInitiated",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "to",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "extraData",
                     "type": "bytes"
                 }

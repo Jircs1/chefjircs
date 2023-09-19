@@ -1,0 +1,38 @@
+{
+    "name": "TokensBridgingInitiated",
+    "abis": [
+        {
+            "@id": "0x59a9a8027b9c87b961e254899821c9a276b5efc35d1f7409ea4f291470f1629a",
+            "type": "event",
+            "signature": "TokensBridgingInitiated(address,address,uint256,bytes32)",
+            "name": "TokensBridgingInitiated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "messageId",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

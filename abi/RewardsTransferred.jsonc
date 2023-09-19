@@ -1,0 +1,29 @@
+{
+    "name": "RewardsTransferred",
+    "abis": [
+        {
+            "hex_signature": "0x586b2e63a21a7a4e1402e36f48ce10cb1ec94684fea254c186b76d1f98ecf130",
+            "type": "event",
+            "signature": "RewardsTransferred(address,uint256)",
+            "name": "RewardsTransferred",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "holder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

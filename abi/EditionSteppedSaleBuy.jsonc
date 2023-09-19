@@ -1,0 +1,44 @@
+{
+    "name": "EditionSteppedSaleBuy",
+    "abis": [
+        {
+            "hex_signature": "0x41820cf4351ec738da5f8ada46c5a38d78c6aeaa3039cb1dddcf1ea6853dd343",
+            "type": "event",
+            "signature": "EditionSteppedSaleBuy(uint256,uint256,address,uint256,uint16)",
+            "name": "EditionSteppedSaleBuy",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_editionId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_price",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_currentStep",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

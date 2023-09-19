@@ -1,0 +1,29 @@
+{
+    "name": "WithdrawFromStrategy",
+    "abis": [
+        {
+            "hex_signature": "0x06c03dc1e1399953729e53ec7181b6e753942e20fafe5b55917f5c34559ae69c",
+            "type": "event",
+            "signature": "WithdrawFromStrategy(address,uint256,uint256)",
+            "name": "WithdrawFromStrategy",
+            "inputs": [
+                {
+                    "name": "strategy",
+                    "type": "address",
+                    "indexed": true
+                },
+                {
+                    "name": "totalDebt",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "loss",
+                    "type": "uint256",
+                    "indexed": false
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "RiseBridgedIn",
+    "abis": [
+        {
+            "hex_signature": "0x0e128c83dc42be0b80a07793e5b69c77c3981238a44754802b90d92ae85b3b48",
+            "type": "event",
+            "signature": "RiseBridgedIn(address,address,uint256)",
+            "name": "RiseBridgedIn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "contractAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

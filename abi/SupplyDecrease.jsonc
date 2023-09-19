@@ -1,0 +1,32 @@
+{
+    "name": "SupplyDecrease",
+    "abis": [
+        {
+            "hex_signature": "0x5e139d4b8080a4a00dcc151e8217694aeebae893936326aa22096924a9906677",
+            "type": "event",
+            "signature": "SupplyDecrease(uint256,uint256,uint256)",
+            "name": "SupplyDecrease",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "epoch",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newDebt",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

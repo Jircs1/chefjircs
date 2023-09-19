@@ -2,24 +2,26 @@
     "name": "WithdrawalProven",
     "abis": [
         {
-            "@id": "WithdrawalProven",
-            "hex_signature": "0x67a6208cfcc0801d50f6cbe764733f4fddf66ac0b04442061a8a8c0cb6b63f62",
+            "@id": "0x67a6208cfcc0801d50f6cbe764733f4fddf66ac0b04442061a8a8c0cb6b63f62",
             "type": "event",
             "signature": "WithdrawalProven(bytes32,address,address)",
             "name": "WithdrawalProven",
             "inputs": [
                 {
-                    "@type": "optimism:withdrawalHash",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "withdrawalHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "to",
                     "type": "address"
                 }

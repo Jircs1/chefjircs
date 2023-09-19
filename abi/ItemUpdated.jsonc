@@ -1,0 +1,56 @@
+{
+    "name": "ItemUpdated",
+    "abis": [
+        {
+            "hex_signature": "0xde1951e410d2f4644b8dd23d6b9e5d2e862b417055f42e3939ab16b4635ec6de",
+            "type": "event",
+            "signature": "ItemUpdated(address,address,uint256,uint64,uint128,uint64,address)",
+            "name": "ItemUpdated",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nftAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "quantity",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "pricePerItem",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "expirationTime",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

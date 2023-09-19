@@ -1,0 +1,32 @@
+{
+    "name": "FeeReceived",
+    "abis": [
+        {
+            "hex_signature": "0x26d8baa91676f5f0ff9373b84d9a9736de9187010efe488a475a0dd91adbdb46",
+            "type": "event",
+            "signature": "FeeReceived(uint256,address,uint256)",
+            "name": "FeeReceived",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "vaultId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

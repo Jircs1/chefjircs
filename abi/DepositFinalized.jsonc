@@ -1,0 +1,50 @@
+{
+    "name": "DepositFinalized",
+    "abis": [
+        {
+            "@id": "0xb0444523268717a02698be47d0803aa7468c00acbed2f8bd93a0459cde61dd89",
+            "type": "event",
+            "signature": "DepositFinalized(address,address,address,address,uint256,bytes)",
+            "name": "DepositFinalized",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l2Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "extraData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

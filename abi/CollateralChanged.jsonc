@@ -1,0 +1,41 @@
+{
+    "name": "CollateralChanged",
+    "abis": [
+        {
+            "hex_signature": "0xde54006e825a11b955b762dda1068596579f82b325e183045afefa6f71a8db49",
+            "type": "event",
+            "signature": "CollateralChanged(address,address,uint256,bool)",
+            "name": "CollateralChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "position",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "collateralToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateralAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isCollateralIncrease",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

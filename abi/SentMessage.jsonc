@@ -2,34 +2,38 @@
     "name": "SentMessage",
     "abis": [
         {
-            "@id": "SentMessage",
-            "hex_signature": "0xcb0f7ffd78f9aee47a248fae8db181db6eee833039123e026dcbff529522e52a",
+            "@id": "0xcb0f7ffd78f9aee47a248fae8db181db6eee833039123e026dcbff529522e52a",
             "type": "event",
             "signature": "SentMessage(address,address,bytes,uint256,uint256)",
             "name": "SentMessage",
             "inputs": [
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "target",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:from",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:data",
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "message",
                     "type": "bytes"
                 },
                 {
-                    "@type": "evm:nonce",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "messageNonce",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:gasLimit",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "gasLimit",
                     "type": "uint256"
                 }

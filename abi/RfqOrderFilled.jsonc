@@ -2,51 +2,56 @@
     "name": "RfqOrderFilled",
     "abis": [
         {
-            "@id": "RfqOrderFilled",
-            "hex_signature": "0x829fa99d94dc4636925b38632e625736a614c154d55006b7ab6bea979c210c32",
+            "@id": "0x829fa99d94dc4636925b38632e625736a614c154d55006b7ab6bea979c210c32",
             "type": "event",
             "signature": "RfqOrderFilled(bytes32,address,address,address,address,uint128,uint128,bytes32)",
             "name": "RfqOrderFilled",
             "inputs": [
                 {
-                    "@type": "0x:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "dex:maker",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "maker",
                     "type": "address"
                 },
                 {
-                    "@type": "dex:taker",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "taker",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "makerToken",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "takerToken",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$4",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "takerTokenFilledAmount",
                     "type": "uint128"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$3",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "makerTokenFilledAmount",
                     "type": "uint128"
                 },
                 {
-                    "@type": "0x:pool",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "pool",
                     "type": "bytes32"
                 }

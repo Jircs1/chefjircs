@@ -1,0 +1,38 @@
+{
+    "name": "SimpleExpansionPackPurchased",
+    "abis": [
+        {
+            "hex_signature": "0x575579fb1f0ad1ed7cc76bf03eb7ce3af535a09d132fd5836c09d4d913c0115f",
+            "type": "event",
+            "signature": "SimpleExpansionPackPurchased(uint256,address,uint32,uint256[])",
+            "name": "SimpleExpansionPackPurchased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "saleId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "purchaser",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "numPurchases",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

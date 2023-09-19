@@ -1,0 +1,29 @@
+{
+    "name": "Collected",
+    "abis": [
+        {
+            "hex_signature": "0xf17fdee613a92b35db6b7598eb43750b24d4072eb304e6eca80121e40402e34b",
+            "type": "event",
+            "signature": "Collected(bytes32,uint256)",
+            "name": "Collected",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "subgraphDeploymentID",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokens",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

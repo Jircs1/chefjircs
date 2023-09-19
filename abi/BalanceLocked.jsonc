@@ -1,0 +1,34 @@
+{
+    "name": "BalanceLocked",
+    "abis": [
+        {
+            "@id": "0x89f85a4bd38f70943757e43dedd843409e565220cb52ba80fc297d1246b3b9bb",
+            "type": "event",
+            "signature": "BalanceLocked(address,uint256,uint256,uint256)",
+            "name": "BalanceLocked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "_owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_oldLockedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_newLockedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_expiry",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

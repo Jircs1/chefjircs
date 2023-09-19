@@ -2,60 +2,60 @@
     "name": "NameRegistered",
     "abis": [
         {
-            "@id": "NameRegistered",
-            "hex_signature": "0xb3d987963d01b2f68493b4bdb130988f157ea43070d4ad840fee0466ed9370d9",
+            "@id": "0xb3d987963d01b2f68493b4bdb130988f157ea43070d4ad840fee0466ed9370d9",
             "type": "event",
             "signature": "NameRegistered(uint256,address,uint256)",
             "name": "NameRegistered",
             "inputs": [
                 {
-                    "@type": "ens:id",
+                    "indexed": true,
                     "name": "id",
                     "type": "uint256"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
                     "name": "owner",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
                     "name": "expires",
                     "type": "uint256",
-                    "validationFailure": true
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "NameRegistered_CostLabel",
-            "hex_signature": "0xca6abbe9d7f11422cb6ca7629fbf6fe9efb1c621f71ce8f02b9f2a230097404f",
+            "@id": "0xca6abbe9d7f11422cb6ca7629fbf6fe9efb1c621f71ce8f02b9f2a230097404f",
             "type": "event",
             "signature": "NameRegistered(string,bytes32,address,uint256,uint256)",
             "name": "NameRegistered",
             "inputs": [
                 {
-                    "@type": "ens:name",
+                    "indexed": false,
                     "name": "name",
                     "type": "string"
                 },
                 {
-                    "@type": "ens:label",
+                    "indexed": true,
                     "name": "label",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
                     "name": "owner",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
                     "name": "cost",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
                     "name": "expires",
                     "type": "uint256"
                 }
@@ -63,39 +63,95 @@
             "outputs": null
         },
         {
-            "@id": "NameRegistered_Premium",
-            "hex_signature": "0x69e37f151eb98a09618ddaa80c8cfaf1ce5996867c489f45b555b412271ebf27",
+            "@id": "0x69e37f151eb98a09618ddaa80c8cfaf1ce5996867c489f45b555b412271ebf27",
             "type": "event",
             "signature": "NameRegistered(string,bytes32,address,uint256,uint256,uint256)",
             "name": "NameRegistered",
             "inputs": [
                 {
-                    "@type": "ens:name",
+                    "indexed": false,
+                    "internalType": "string",
                     "name": "name",
                     "type": "string"
                 },
                 {
-                    "@type": "ens:label",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "label",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "owner",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "baseCost",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "premium",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expires",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x3f20a2f68d2f1fc31915768c6a23ee9a37aea4bc54fd9698fd61546843bb2259",
+            "type": "event",
+            "signature": "NameRegistered(string,bytes32,address,uint256,uint256,uint256,uint256)",
+            "name": "NameRegistered",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "label",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "baseCost",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "premium",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "expires",
                     "type": "uint256"
                 }

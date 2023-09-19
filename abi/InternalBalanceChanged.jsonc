@@ -1,0 +1,32 @@
+{
+    "name": "InternalBalanceChanged",
+    "abis": [
+        {
+            "@id": "0x18e1ea4139e68413d7d08aa752e71568e36b2c5bf940893314c2c5b01eaa0c42",
+            "type": "event",
+            "signature": "InternalBalanceChanged(address,address,int256)",
+            "name": "InternalBalanceChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "delta",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

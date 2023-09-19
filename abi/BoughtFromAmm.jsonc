@@ -1,0 +1,56 @@
+{
+    "name": "BoughtFromAmm",
+    "abis": [
+        {
+            "hex_signature": "0xf3bfbc0822d1ed667a2b298e71e0304f2c1f4685398189d7c39e412f733150f4",
+            "type": "event",
+            "signature": "BoughtFromAmm(address,address,uint8,uint256,uint256,address,address)",
+            "name": "BoughtFromAmm",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "market",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum ThalesAMM.Position",
+                    "name": "position",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sUSDPaid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "susd",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

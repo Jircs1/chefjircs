@@ -1,0 +1,32 @@
+{
+    "name": "StratHarvest",
+    "abis": [
+        {
+            "@id": "0x9bc239f1724cacfb88cb1d66a2dc437467699b68a8c90d7b63110cf4b6f92410",
+            "type": "event",
+            "signature": "StratHarvest(address,uint256,uint256)",
+            "name": "StratHarvest",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "harvester",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "wantHarvested",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tvl",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

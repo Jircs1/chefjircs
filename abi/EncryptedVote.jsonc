@@ -1,0 +1,50 @@
+{
+    "name": "EncryptedVote",
+    "abis": [
+        {
+            "hex_signature": "0x8022192bcf69f9acab6286405c558cbcf8900605e5b2e6ebf3db5a28c57f0d56",
+            "type": "event",
+            "signature": "EncryptedVote(address,uint32,bytes32,uint256,bytes,bytes)",
+            "name": "EncryptedVote",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "roundId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "identifier",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "ancillaryData",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "encryptedVote",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,8 +2,125 @@
     "name": "Repay",
     "abis": [
         {
-            "@id": "Repay_ATokens",
-            "hex_signature": "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+            "@id": "0x2469cc9e12e74c63438d5b1117b318cd3a4cdaf9d659d9eac6d975d14d963254",
+            "type": "event",
+            "signature": "Repay(uint256,address)",
+            "name": "Repay",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lienId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "collection",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x4cdde6e09bb755c9a5589ebaec640bbfedff1362d4b255ebf8339782b9942faa",
+            "type": "event",
+            "signature": "Repay(address,address,address,uint256)",
+            "name": "Repay",
+            "inputs": [
+                {
+                    "@type": "erc20:token",
+                    "name": "reserve",
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.971429,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 51072,
+                            "sampleAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                            "sampleTxHash": "0x000199a4f5f0c778caa9a95395a8198045c78551dbaf3153ce94ad4524c0567c",
+                            "found": 35,
+                            "samples": 35
+                        },
+                        "lendingpool": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2767,
+                            "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                            "sampleTxHash": "0x012871bb664dc7a553c2e5305e24b9ebf0080768099c153ae480a54ead9674ca",
+                            "found": 14,
+                            "samples": 14
+                        }
+                    }
+                },
+                {
+                    "@type": "lending:user",
+                    "name": "user",
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.0588235,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 18869,
+                            "sampleAddress": "0x777777c9898d384f785ee44acfe945efdff5f3e0",
+                            "sampleTxHash": "0x000a54ea60832324b3a946e4b71e716372b6bb5a283ddc5cbc0595ccc9122fb3",
+                            "found": 34,
+                            "samples": 100
+                        },
+                        "lendingpool": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1985,
+                            "sampleAddress": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+                            "sampleTxHash": "0x00be58cb4004db85375daf7be03f51c32472a68ee7fe5c950902067a93efeae6",
+                            "found": 3,
+                            "samples": 100
+                        }
+                    }
+                },
+                {
+                    "@type": "lending:repayer",
+                    "name": "repayer",
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.0666667,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 28530,
+                            "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                            "sampleTxHash": "0x001023001ee5968650beb0d9072a8451050c7a01dc1d5ed7cddd2a33e155fddc",
+                            "found": 45,
+                            "samples": 100
+                        },
+                        "lendingpool": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1997,
+                            "sampleAddress": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+                            "sampleTxHash": "0x00be58cb4004db85375daf7be03f51c32472a68ee7fe5c950902067a93efeae6",
+                            "found": 3,
+                            "samples": 100
+                        }
+                    }
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "name": "amount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
             "type": "event",
             "signature": "Repay(address,address,address,uint256,bool)",
             "name": "Repay",
@@ -11,17 +128,83 @@
                 {
                     "@type": "erc20:token",
                     "name": "reserve",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "para.space": {
+                            "is_erc20": 0.909091,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 21028,
+                            "sampleAddress": "0xc5c9fb6223a989208df27dcee33fc59ff5c26fff",
+                            "sampleTxHash": "0x000aa060ee47c249bda778a25aa28b1d2954531a688c9ac21861b4187c7e7d19",
+                            "found": 11,
+                            "samples": 11
+                        },
+                        "aave": {
+                            "is_erc20": 0.952381,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 11687,
+                            "sampleAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                            "sampleTxHash": "0x0003ec1cf00abb6dc564ea0e3f9d5c4dfc6baf89765bd56d03d64c39be349dbb",
+                            "found": 21,
+                            "samples": 21
+                        }
+                    }
                 },
                 {
                     "@type": "lending:user",
                     "name": "user",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "para.space": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 7408,
+                            "sampleAddress": "0x54be3a794282c030b15e43ae2bb182e14c409c5e",
+                            "sampleTxHash": "0x04309b08f2191ec47e2fac9bd7ab1227e2f4ca99d842cf0594827c19c3348ce3",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "aave": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 3103,
+                            "sampleAddress": "0x0000cd00001700b10049dfc947103e00e1c62683",
+                            "sampleTxHash": "0x00bd92aa1751b1d2ca24919a1de4d8c9623b684fbd1c80ed973035b668e71f26",
+                            "found": 17,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "lending:repayer",
                     "name": "repayer",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "para.space": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 17459,
+                            "sampleAddress": "0x638a98bbb92a7582d07c52ff407d49664dc8b3ee",
+                            "sampleTxHash": "0x004a87c1bde5768bf245554ee66e40d1d910e63ad2c3a0248326e89493749cfb",
+                            "found": 3,
+                            "samples": 100
+                        },
+                        "aave": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 5307,
+                            "sampleAddress": "0xd322a49006fc828f9b5b37ab215f99b4e5cab19c",
+                            "sampleTxHash": "0x0023bf94cc9f8b5944adc57702e7ee7f5bfb00f025595dff7605056397c14d9f",
+                            "found": 24,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -39,52 +222,87 @@
             "outputs": null
         },
         {
-            "@id": "Repay_LienID",
-            "hex_signature": "0x2469cc9e12e74c63438d5b1117b318cd3a4cdaf9d659d9eac6d975d14d963254",
+            "@id": "0x50e03867c1178391f204f7bf0eb2f52d5167dc65a99a9650a95abe55d17be17e",
             "type": "event",
-            "signature": "Repay(uint256,address)",
+            "signature": "Repay(address,address,uint256,address,uint256,address,uint256)",
             "name": "Repay",
             "inputs": [
                 {
-                    "@type": "blur:lienId",
-                    "name": "lienId",
-                    "type": "uint256"
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
                 },
                 {
-                    "@type": "erc721:token",
-                    "name": "collection",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "reserve",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftAsset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nftTokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$3",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "loanId",
+                    "type": "uint256"
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "Repay_ReserveTokens",
-            "hex_signature": "0x4cdde6e09bb755c9a5589ebaec640bbfedff1362d4b255ebf8339782b9942faa",
+            "@id": "0x05f2eeda0e08e4b437f487c8d7d29b14537d15e3488170dc3de5dbdf8dac4684",
             "type": "event",
-            "signature": "Repay(address,address,address,uint256)",
+            "signature": "Repay(address,address,uint256)",
             "name": "Repay",
             "inputs": [
                 {
-                    "@type": "erc20:token",
-                    "name": "reserve",
-                    "type": "address"
-                },
-                {
-                    "@type": "lending:user",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "user",
                     "type": "address"
                 },
                 {
-                    "@type": "lending:repayer",
-                    "name": "repayer",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$0",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount",
                     "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
                     "validationSuccess": true
                 }
             ],

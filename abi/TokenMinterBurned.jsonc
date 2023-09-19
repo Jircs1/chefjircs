@@ -1,0 +1,35 @@
+{
+    "name": "TokenMinterBurned",
+    "abis": [
+        {
+            "hex_signature": "0xdc7fd22bc401e7c6b9be2c2736286a2a42ea0c6307bc97ff0fb12bd0abd2c747",
+            "type": "event",
+            "signature": "TokenMinterBurned(address,address,uint256)",
+            "name": "TokenMinterBurned",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "LogUnstakeLocked",
+    "abis": [
+        {
+            "hex_signature": "0x729ab3b283445a8f221b97237248ecc12a89cafc93156a0c77e1174a01ef1c16",
+            "type": "event",
+            "signature": "LogUnstakeLocked(address,uint256,uint256,bool)",
+            "name": "LogUnstakeLocked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakeId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isYield",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

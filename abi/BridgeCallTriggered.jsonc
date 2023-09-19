@@ -1,0 +1,38 @@
+{
+    "name": "BridgeCallTriggered",
+    "abis": [
+        {
+            "@id": "0x2d9d115ef3e4a606d698913b1eae831a3cdfe20d9a83d48007b0526749c3d466",
+            "type": "event",
+            "signature": "BridgeCallTriggered(address,address,uint256,bytes)",
+            "name": "BridgeCallTriggered",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "outbox",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "MintedIssue",
+    "abis": [
+        {
+            "hex_signature": "0x966d62c0a408368c656346fe829fad3f53d4436857794a7356a71fa3fe8e53df",
+            "type": "event",
+            "signature": "MintedIssue(address,uint256,uint256)",
+            "name": "MintedIssue",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "issue",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

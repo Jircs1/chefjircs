@@ -2,36 +2,7 @@
     "name": "TokensMinted",
     "abis": [
         {
-            "@id": "TokensMinted_MIQ",
-            "hex_signature": "0x2e8ac5177a616f2aec08c3048f5021e4e9743ece034e8d83ba5caf76688bb475",
-            "type": "event",
-            "signature": "TokensMinted(address,uint256,uint256)",
-            "name": "TokensMinted",
-            "inputs": [
-                {
-                    "@type": "dex:minter",
-                    "name": "_owner",
-                    "type": "address"
-                },
-                {
-                    "@type": "erc721:tokenId",
-                    "@token": "$",
-                    "name": "_id",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "name": "_amount",
-                    "type": "uint256",
-                    "validationSuccess": true
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "TokensMinted_MQ",
-            "hex_signature": "0x3f2c9d57c068687834f0de942a9babb9e5acab57d516d3480a3c16ee165a4273",
+            "@id": "0x3f2c9d57c068687834f0de942a9babb9e5acab57d516d3480a3c16ee165a4273",
             "type": "event",
             "signature": "TokensMinted(address,uint256)",
             "name": "TokensMinted",
@@ -39,7 +10,29 @@
                 {
                     "@type": "transfer:to",
                     "name": "mintedTo",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "bueno": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 12763,
+                            "sampleAddress": "0x5a776ea5e89d6f4504b208a6bd459d912a2ee22e",
+                            "sampleTxHash": "0x01997d7c5a7a18d1457f68eb33ad331d41b177a512fcad4f8b7282fdb708e450",
+                            "found": 5,
+                            "samples": 100
+                        },
+                        "thirdweb": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1290,
+                            "sampleAddress": "0x6d331a5bc31600274e9ca6a24e00d63d5473249a",
+                            "sampleTxHash": "0x002799bb9b0c6724e0f35d8cbf97367420ff78e7ab9dff151ba36fab6618676b",
+                            "found": 1,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -52,23 +45,73 @@
             "outputs": null
         },
         {
-            "@id": "TokensMinted_MT",
-            "hex_signature": "0x3f2c9d57c068687834f0de942a9babb9e5acab57d516d3480a3c16ee165a4273",
+            "@id": "0x04133ee4cb027e1c5fce5e3481289278a93bd16a65a3b65b428a6d239e706bfb",
             "type": "event",
-            "signature": "TokensMinted(address,uint256)",
+            "signature": "TokensMinted(address,uint256,string,uint256)",
             "name": "TokensMinted",
             "inputs": [
                 {
-                    "@type": "dex:minter",
-                    "name": "mintedBy",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "mintedTo",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenIdMinted",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "uri",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "quantityMinted",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
                     "@token": "$",
-                    "name": "tokensNumber",
-                    "type": "uint256",
                     "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x6155cfd0fd028b0ca77e8495a60cbe563e8bce8611f0aad6fedbdaafc05d44a2",
+            "type": "event",
+            "signature": "TokensMinted(address,uint256,uint256,uint256)",
+            "name": "TokensMinted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ethAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
                 }
             ],
             "outputs": null

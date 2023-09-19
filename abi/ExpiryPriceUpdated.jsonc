@@ -1,0 +1,44 @@
+{
+    "name": "ExpiryPriceUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x0160752083b78189f1650efb0abdaa0dd2110e5782f553c825705746ac2a5718",
+            "type": "event",
+            "signature": "ExpiryPriceUpdated(address,uint256,uint256,uint256)",
+            "name": "ExpiryPriceUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "expiryTimestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "onchainTimestamp",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

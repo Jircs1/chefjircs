@@ -2,37 +2,44 @@
     "name": "Transacted",
     "abis": [
         {
-            "@id": "Transacted",
-            "hex_signature": "0x59bed9ab5d78073465dd642a9e3e76dfdb7d53bcae9d09df7d0b8f5234d5a806",
+            "@id": "0x59bed9ab5d78073465dd642a9e3e76dfdb7d53bcae9d09df7d0b8f5234d5a806",
             "type": "event",
             "signature": "Transacted(address,address,bytes32,address,uint256,bytes)",
             "name": "Transacted",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "msgSender",
                     "type": "address"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "otherSigner",
                     "type": "address"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "operation",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "toAddress",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "value",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "data",
                     "type": "bytes"
                 }

@@ -1,0 +1,44 @@
+{
+    "name": "WithdrawStake",
+    "abis": [
+        {
+            "hex_signature": "0x673bfbb3dfcd8a2199b5dd0f5266f5ed6716f9502c7dcc5aa89b1d46554b96df",
+            "type": "event",
+            "signature": "WithdrawStake(uint256,address,uint256,uint256)",
+            "name": "WithdrawStake",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "stakeIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakeAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bonusAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,61 +2,32 @@
     "name": "UpdatePool",
     "abis": [
         {
-            "@id": "UpdatePool_PerSharePerFactor",
-            "hex_signature": "0x3be3541fc42237d611b30329040bfa4569541d156560acdbbae57640d20b8f46",
+            "@id": "0x3be3541fc42237d611b30329040bfa4569541d156560acdbbae57640d20b8f46",
             "type": "event",
             "signature": "UpdatePool(uint256,uint256,uint256,uint256)",
             "name": "UpdatePool",
             "inputs": [
                 {
-                    "@type": "evm:timestamp",
-                    "name": "lastRewardTimestamp",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
-                    "name": "lpSupply",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "dex:accTokenPerShare",
-                    "name": "accYetiPerShare",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "dex:accTokenPerShare",
-                    "name": "accYetiPerFactorShare",
-                    "type": "uint256"
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "UpdatePool_PID",
-            "hex_signature": "0x3be3541fc42237d611b30329040bfa4569541d156560acdbbae57640d20b8f46",
-            "type": "event",
-            "signature": "UpdatePool(uint256,uint256,uint256,uint256)",
-            "name": "UpdatePool",
-            "inputs": [
-                {
-                    "@type": "erc20:lookupid",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "pid",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "lastRewardTimestamp",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "lookupid:$0",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "lpSupply",
                     "type": "uint256"
                 },
                 {
-                    "@type": "dex:accTokenPerShare",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "accTokenPerShare",
                     "type": "uint256"
                 }

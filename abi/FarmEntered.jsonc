@@ -1,0 +1,38 @@
+{
+    "name": "FarmEntered",
+    "abis": [
+        {
+            "hex_signature": "0x4a9757f8f71efdde4b041ff384e461c5707a95d74463b60892bd1f7b9c34a289",
+            "type": "event",
+            "signature": "FarmEntered(uint256,bytes32,uint128,uint256)",
+            "name": "FarmEntered",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "incentiveId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "liquidity",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokensLocked",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

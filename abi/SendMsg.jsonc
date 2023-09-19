@@ -2,19 +2,20 @@
     "name": "SendMsg",
     "abis": [
         {
-            "@id": "SendMsg",
-            "hex_signature": "0x8d3ee0df6a4b7e82a7f20a763f1c6826e6176323e655af64f32318827d2112d4",
+            "@id": "0x8d3ee0df6a4b7e82a7f20a763f1c6826e6176323e655af64f32318827d2112d4",
             "type": "event",
             "signature": "SendMsg(uint8,uint64)",
             "name": "SendMsg",
             "inputs": [
                 {
-                    "@type": "stargate:msgType",
+                    "indexed": false,
+                    "internalType": "uint8",
                     "name": "msgType",
                     "type": "uint8"
                 },
                 {
-                    "@type": "evm:nonce",
+                    "indexed": false,
+                    "internalType": "uint64",
                     "name": "nonce",
                     "type": "uint64"
                 }

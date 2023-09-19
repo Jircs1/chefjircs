@@ -1,0 +1,40 @@
+{
+    "name": "StakeSet",
+    "abis": [
+        {
+            "hex_signature": "0x8f753321c98641397daaca5e8abf8881fff1fd7a7bc229924a012e2cb61763d5",
+            "type": "event",
+            "signature": "StakeSet(address,uint256,uint128,uint256)",
+            "name": "StakeSet",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "_address",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_subcourtID",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "name": "_stake",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "name": "_newTotalStake",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

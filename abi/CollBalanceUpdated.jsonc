@@ -1,0 +1,29 @@
+{
+    "name": "CollBalanceUpdated",
+    "abis": [
+        {
+            "hex_signature": "0xf0393a34d05e6567686ad4e097f9d9d2781565957394f1f0d984e5d8e6378f20",
+            "type": "event",
+            "signature": "CollBalanceUpdated(address,uint256)",
+            "name": "CollBalanceUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_newBalance",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

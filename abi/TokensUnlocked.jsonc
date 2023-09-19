@@ -1,0 +1,29 @@
+{
+    "name": "TokensUnlocked",
+    "abis": [
+        {
+            "hex_signature": "0xe7b379c6c1fa169e9079c25e9143b127637eef8ec8c9d5c06ddb4ab3e1195888",
+            "type": "event",
+            "signature": "TokensUnlocked(address,uint256)",
+            "name": "TokensUnlocked",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

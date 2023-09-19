@@ -1,0 +1,50 @@
+{
+    "name": "ERC20WithdrawalFinalized",
+    "abis": [
+        {
+            "@id": "0x3ceee06c1e37648fcbb6ed52e17b3e1f275a1f8c7b22a84b2b84732431e046b3",
+            "type": "event",
+            "signature": "ERC20WithdrawalFinalized(address,address,address,address,uint256,bytes)",
+            "name": "ERC20WithdrawalFinalized",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l2Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "extraData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

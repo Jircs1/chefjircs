@@ -1,0 +1,38 @@
+{
+    "name": "RedeemCommunitySBT",
+    "abis": [
+        {
+            "@id": "0x39f7d08f31ad3faee8d636e08f31a3a2de14760c8eb7db26c3470e0470692013",
+            "type": "event",
+            "signature": "RedeemCommunitySBT((address,uint96),uint256)",
+            "name": "RedeemCommunitySBT",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "account",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "badgeId",
+                            "type": "uint96"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct CommunitySBT.LeafInfo",
+                    "name": "leafInfo",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

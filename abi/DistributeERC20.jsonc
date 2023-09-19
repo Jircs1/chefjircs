@@ -1,0 +1,41 @@
+{
+    "name": "DistributeERC20",
+    "abis": [
+        {
+            "hex_signature": "0xb5ee5dc3d2c31a019bbf2c787e0e9c97971c96aceea1c38c12fc8fd25c536d46",
+            "type": "event",
+            "signature": "DistributeERC20(address,address,uint256,address)",
+            "name": "DistributeERC20",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "split",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract ERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "distributorAddress",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

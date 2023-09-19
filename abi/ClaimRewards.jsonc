@@ -1,0 +1,119 @@
+{
+    "name": "ClaimRewards",
+    "abis": [
+        {
+            "@id": "0x1f89f96333d3133000ee447473151fa9606543368f02271c9d95ae14f13bcc67",
+            "type": "event",
+            "signature": "ClaimRewards(address,uint256)",
+            "name": "ClaimRewards",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x030f754a3e747235920c21afeca14e881b260d41c7e657ada6c0b049f7eebca9",
+            "type": "event",
+            "signature": "ClaimRewards(address,uint256,address)",
+            "name": "ClaimRewards",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x9aa05b3d70a9e3e2f004f039648839560576334fb45c81f91b6db03ad9e2efc9",
+            "type": "event",
+            "signature": "ClaimRewards(address,address,uint256)",
+            "name": "ClaimRewards",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "reward",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x674a8930d4166ce2352c3dc1e9ff633595db479f71f3741270a0a73a52cb7b0f",
+            "type": "event",
+            "signature": "ClaimRewards(address,uint256,uint256)",
+            "name": "ClaimRewards",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "usdtAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "redactedTokenAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

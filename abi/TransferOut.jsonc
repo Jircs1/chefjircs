@@ -1,0 +1,44 @@
+{
+    "name": "TransferOut",
+    "abis": [
+        {
+            "@id": "0xa9cd03aa3c1b4515114539cd53d22085129d495cb9e9f9af77864526240f1bf7",
+            "type": "event",
+            "signature": "TransferOut(address,address,address,uint256,string)",
+            "name": "TransferOut",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "memo",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

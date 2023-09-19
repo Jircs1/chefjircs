@@ -1,0 +1,44 @@
+{
+    "name": "WritingEditionPurchased",
+    "abis": [
+        {
+            "@id": "0x6d127962f8e412a3050dd402e293265d1b21852a77b965abd7b16a1f4de86ed0",
+            "type": "event",
+            "signature": "WritingEditionPurchased(address,uint256,address,uint256,string)",
+            "name": "WritingEditionPurchased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "clone",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "message",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

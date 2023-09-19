@@ -1,0 +1,50 @@
+{
+    "name": "MintFromFixedPriceDrop",
+    "abis": [
+        {
+            "@id": "0x05ebbb6b0ce7d564230ba625dd7a0e5108786b0852d6060de6099e1778203e34",
+            "type": "event",
+            "signature": "MintFromFixedPriceDrop(address,address,uint256,uint256,uint256,uint256)",
+            "name": "MintFromFixedPriceDrop",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "firstTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "count",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalFees",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "creatorRev",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

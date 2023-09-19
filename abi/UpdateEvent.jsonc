@@ -1,0 +1,38 @@
+{
+    "name": "UpdateEvent",
+    "abis": [
+        {
+            "@id": "0x8b1606624b2f737eaf245dca9fba97deb930da8f4c71fb05a3f1b77d6bb8dfeb",
+            "type": "event",
+            "signature": "UpdateEvent(uint32,bytes32,bytes32,uint32)",
+            "name": "UpdateEvent",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "startBlockNumber",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "prevHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "root",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "numFinal",
+                    "type": "uint32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

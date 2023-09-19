@@ -9,11 +9,9 @@
             "name": "WithdrawalClaimed",
             "inputs": [
                 {
-                    "@type": "erc20:tokenAmount",
+                    "@type": "lido:requestId",
                     "name": "requestId",
-                    "type": "uint256",
-                    "@token": "$",
-                    "validationSuccess": true
+                    "type": "uint256"
                 },
                 {
                     "@type": "transfer:to",
@@ -26,11 +24,9 @@
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
+                    "@type": "evm:tokenAmount",
                     "name": "amountOfETH",
-                    "type": "uint256",
-                    "@token": "$",
-                    "validationSuccess": true
+                    "type": "uint256"
                 }
             ],
             "outputs": null

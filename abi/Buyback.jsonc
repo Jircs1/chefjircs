@@ -1,0 +1,38 @@
+{
+    "name": "Buyback",
+    "abis": [
+        {
+            "hex_signature": "0x60834d16b2233c60158595fefd21ceac17ee4acbc1c259e0f0e507fb070442a7",
+            "type": "event",
+            "signature": "Buyback(address,address,uint256,bytes)",
+            "name": "Buyback",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

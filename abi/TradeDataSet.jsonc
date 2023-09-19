@@ -1,0 +1,53 @@
+{
+    "name": "TradeDataSet",
+    "abis": [
+        {
+            "hex_signature": "0x75c6fee771257d0c8f6faeed1a52849bd77886e7277a92a19ced50872a4d1dae",
+            "type": "event",
+            "signature": "TradeDataSet(address,uint256,uint256,uint256,uint256)",
+            "name": "TradeDataSet",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "vaultAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tradeDate",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tradeExpiry",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_aprBps",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tenorInDays",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

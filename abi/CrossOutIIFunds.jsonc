@@ -1,0 +1,53 @@
+{
+    "name": "CrossOutIIFunds",
+    "abis": [
+        {
+            "hex_signature": "0x692e6a6e27573f2a2a757e34cb16ae101c5fca8834f9b8a6cdbcf64b8450d870",
+            "type": "event",
+            "signature": "CrossOutIIFunds(address,string,uint256,address,uint256,bytes)",
+            "name": "CrossOutIIFunds",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "to",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$3",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "ERC20",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ethAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

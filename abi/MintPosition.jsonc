@@ -1,0 +1,47 @@
+{
+    "name": "MintPosition",
+    "abis": [
+        {
+            "hex_signature": "0x2aa61af31176eaad0779e2bd456bd28a44d1a68b677072b5ada024becc1b6d30",
+            "type": "event",
+            "signature": "MintPosition(uint256,uint80,uint128,uint256,uint256)",
+            "name": "MintPosition",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint80",
+                    "name": "poolId",
+                    "type": "uint80"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "liquidity",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

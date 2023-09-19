@@ -1,0 +1,38 @@
+{
+    "name": "BuyNowPurchased",
+    "abis": [
+        {
+            "@id": "0x25a395eca5bca1a1ca0c1543a3e87384fabcf63100e03535276da15f838805b2",
+            "type": "event",
+            "signature": "BuyNowPurchased(uint256,address,address,uint256)",
+            "name": "BuyNowPurchased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_currentOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_price",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

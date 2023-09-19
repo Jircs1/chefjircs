@@ -1,0 +1,41 @@
+{
+    "name": "TokensBurned",
+    "abis": [
+        {
+            "hex_signature": "0x19783b34589160c168487dc7f9c51ae0bcefe67a47d6708fba90f6ce0366d3d1",
+            "type": "event",
+            "signature": "TokensBurned(address,uint256,uint256,uint256)",
+            "name": "TokensBurned",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ethAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

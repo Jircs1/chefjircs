@@ -1,0 +1,38 @@
+{
+    "name": "StartMission",
+    "abis": [
+        {
+            "hex_signature": "0xdef5703ca13a253124b6220f97948346540b87ad01ef24b8e064d5f1f74c5603",
+            "type": "event",
+            "signature": "StartMission(address,uint256,uint256)",
+            "name": "StartMission",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "troopId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "missionId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "UserCollateralChanged",
+    "abis": [
+        {
+            "hex_signature": "0x1d22042d9eb89f2620572acbf8d85b66fba5a2ca19d166d8659574440175c964",
+            "type": "event",
+            "signature": "UserCollateralChanged(address,uint256)",
+            "name": "UserCollateralChanged",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newCollateralTokens",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

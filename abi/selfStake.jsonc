@@ -1,0 +1,41 @@
+{
+    "name": "selfStake",
+    "abis": [
+        {
+            "@id": "0xdcf891885e788b94db6de05809e1c074e1396e919fa3ef010342de9dfbdd8361",
+            "type": "event",
+            "signature": "selfStake(uint256,address,uint256,bool)",
+            "name": "selfStake",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "roundId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "staked",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

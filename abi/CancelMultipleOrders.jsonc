@@ -1,0 +1,26 @@
+{
+    "name": "CancelMultipleOrders",
+    "abis": [
+        {
+            "@id": "0xfa0ae5d80fe3763c880a3839fab0294171a6f730d1f82c4cd5392c6f67b41732",
+            "type": "event",
+            "signature": "CancelMultipleOrders(address,uint256[])",
+            "name": "CancelMultipleOrders",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "orderNonces",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

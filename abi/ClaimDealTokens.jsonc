@@ -1,0 +1,35 @@
+{
+    "name": "ClaimDealTokens",
+    "abis": [
+        {
+            "hex_signature": "0xce1dc4948d579f5127fc6f628533f11ddbe30bde149747de2bc89420a35f917e",
+            "type": "event",
+            "signature": "ClaimDealTokens(address,uint256,uint256)",
+            "name": "ClaimDealTokens",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountMinted",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountPurchasingReturned",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

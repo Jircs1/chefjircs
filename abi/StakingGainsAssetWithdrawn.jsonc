@@ -1,0 +1,32 @@
+{
+    "name": "StakingGainsAssetWithdrawn",
+    "abis": [
+        {
+            "@id": "0x5461929fc7866d2777ffdec3e8203fb397bb1c8d727549022e6128217bf80ae3",
+            "type": "event",
+            "signature": "StakingGainsAssetWithdrawn(address,address,uint256)",
+            "name": "StakingGainsAssetWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "assetGain",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

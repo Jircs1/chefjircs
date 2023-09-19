@@ -2,18 +2,20 @@
     "name": "AddrChanged",
     "abis": [
         {
-            "@id": "AddrChanged",
-            "hex_signature": "0x52d7d861f09ab3d26239d492e8968629f95e9e318cf0b73bfddc441522a15fd2",
+            "@id": "0x52d7d861f09ab3d26239d492e8968629f95e9e318cf0b73bfddc441522a15fd2",
             "type": "event",
             "signature": "AddrChanged(bytes32,address)",
             "name": "AddrChanged",
             "inputs": [
                 {
-                    "@type": "ens:node",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "node",
                     "type": "bytes32"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "a",
                     "type": "address"
                 }

@@ -1,0 +1,32 @@
+{
+    "name": "Synchronized",
+    "abis": [
+        {
+            "@id": "0x5ffbf9ce09d035b92503aad17a31b3d37ca5cd887b63701ddc2200be77d9ccc7",
+            "type": "event",
+            "signature": "Synchronized(address,uint256,uint64)",
+            "name": "Synchronized",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_by",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "yieldRewardsPerWeight",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "lastYieldDistribution",
+                    "type": "uint64"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

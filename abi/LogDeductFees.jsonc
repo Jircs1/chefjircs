@@ -1,0 +1,47 @@
+{
+    "name": "LogDeductFees",
+    "abis": [
+        {
+            "@id": "0xe06da4bed68570a3adccb02d0aed523ccc1dd372f85808168917d1c4a7e78acb",
+            "type": "event",
+            "signature": "LogDeductFees(address,address,address,uint256,address)",
+            "name": "LogDeductFees",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "executor",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fees",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "service",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

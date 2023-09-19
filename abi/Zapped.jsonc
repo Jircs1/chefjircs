@@ -1,0 +1,50 @@
+{
+    "name": "Zapped",
+    "abis": [
+        {
+            "hex_signature": "0x185f471aee8e22c0f6772d9076b984cb8394859d474a9799c1421f440262d581",
+            "type": "event",
+            "signature": "Zapped(bool,uint256,uint256,address,address,uint256)",
+            "name": "Zapped",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "_borrow",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_ethAmt",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_rdntAmt",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_onBehalf",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_lockTypeIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

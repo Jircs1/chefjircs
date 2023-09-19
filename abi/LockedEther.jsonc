@@ -1,0 +1,32 @@
+{
+    "name": "LockedEther",
+    "abis": [
+        {
+            "@id": "0x3e799b2d61372379e767ef8f04d65089179b7a6f63f9be3065806456c7309f1b",
+            "type": "event",
+            "signature": "LockedEther(address,address,uint256)",
+            "name": "LockedEther",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "depositor",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "depositReceiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

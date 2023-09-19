@@ -1,0 +1,47 @@
+{
+    "name": "LogStake",
+    "abis": [
+        {
+            "@id": "0x47ee2438657f63a52980ec1ed6e4424262f81f621308d91694c410db5bfa401b",
+            "type": "event",
+            "signature": "LogStake(address,address,uint256,uint256,uint64)",
+            "name": "LogStake",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "by",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakeId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "lockUntil",
+                    "type": "uint64"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Permit",
+    "abis": [
+        {
+            "@id": "0xc6a377bfc4eb120024a8ac08eef205be16b817020812c73223e81d1bdb9708ec",
+            "type": "event",
+            "signature": "Permit(address,address,address,uint160,uint48,uint48)",
+            "name": "Permit",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint160",
+                    "name": "amount",
+                    "type": "uint160"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint48",
+                    "name": "expiration",
+                    "type": "uint48"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint48",
+                    "name": "nonce",
+                    "type": "uint48"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

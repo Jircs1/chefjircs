@@ -1,0 +1,38 @@
+{
+    "name": "CommitteeChange",
+    "abis": [
+        {
+            "hex_signature": "0xb5da830bb76a930eaf5d2544578c75dd9c1bd6146b894a51c9314464300fadde",
+            "type": "event",
+            "signature": "CommitteeChange(address,uint256,bool,bool)",
+            "name": "CommitteeChange",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "weight",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "certification",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "inCommittee",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

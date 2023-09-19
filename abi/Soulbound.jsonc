@@ -1,0 +1,29 @@
+{
+    "name": "Soulbound",
+    "abis": [
+        {
+            "@id": "0xe0abe9435049152fa612635eac4022235b6f5c156ecf799bdac41b11b9fa2211",
+            "type": "event",
+            "signature": "Soulbound(uint256,bool)",
+            "name": "Soulbound",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "bounded",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

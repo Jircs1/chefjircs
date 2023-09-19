@@ -2,8 +2,7 @@
     "name": "ClaimAdminFee",
     "abis": [
         {
-            "@id": "ClaimAdminFee",
-            "hex_signature": "0x6059a38198b1dc42b3791087d1ff0fbd72b3179553c25f678cd246f52ffaaf59",
+            "@id": "0x6059a38198b1dc42b3791087d1ff0fbd72b3179553c25f678cd246f52ffaaf59",
             "type": "event",
             "signature": "ClaimAdminFee(address,uint256)",
             "name": "ClaimAdminFee",
@@ -11,7 +10,59 @@
                 {
                     "@type": "transfer:to",
                     "name": "admin",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "curve": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 106446,
+                            "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                            "sampleTxHash": "0x0001c0cbab7b3dfdbad28befda477b4d05cc94682c6bc6ce211267cefc2ec998",
+                            "found": 1,
+                            "samples": 1
+                        },
+                        "rkp3r": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2452,
+                            "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                            "sampleTxHash": "0x0002ff0672079db23283a39f1630acb5f3694cf9e212b2068095206d05870f2b",
+                            "found": 1,
+                            "samples": 1
+                        },
+                        "yearn": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2452,
+                            "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                            "sampleTxHash": "0x0002ff0672079db23283a39f1630acb5f3694cf9e212b2068095206d05870f2b",
+                            "found": 1,
+                            "samples": 1
+                        },
+                        "fiddyresearch": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1061,
+                            "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                            "sampleTxHash": "0x000add645c581c30a5ac7e39e2ec7c83a4bc5402ece0841b9fdfe032647e9461",
+                            "found": 1,
+                            "samples": 1
+                        },
+                        "aladdindao": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 768,
+                            "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                            "sampleTxHash": "0x0048b8ff45f0026af698739604892cffaf8b933704b638849eaadc2bda1e7799",
+                            "found": 1,
+                            "samples": 1
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

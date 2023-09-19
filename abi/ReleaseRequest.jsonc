@@ -1,0 +1,38 @@
+{
+    "name": "ReleaseRequest",
+    "abis": [
+        {
+            "hex_signature": "0x1aba60afeb70d9dd8f76ece1c94871b4c3eb1b252b32f58102e21bfb81e944bf",
+            "type": "event",
+            "signature": "ReleaseRequest(address,bytes32,uint256,bytes)",
+            "name": "ReleaseRequest",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "supplier",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "partition",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

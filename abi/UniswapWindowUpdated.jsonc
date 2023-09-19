@@ -1,0 +1,44 @@
+{
+    "name": "UniswapWindowUpdated",
+    "abis": [
+        {
+            "@id": "0xe37d39315e3419c0937360f1ac88f2c52ecf67e3b22b367f82047ddb4591904a",
+            "type": "event",
+            "signature": "UniswapWindowUpdated(bytes32,uint256,uint256,uint256,uint256)",
+            "name": "UniswapWindowUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "symbolHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldTimestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newTimestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newPrice",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

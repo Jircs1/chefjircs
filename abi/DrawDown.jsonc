@@ -1,0 +1,35 @@
+{
+    "name": "DrawDown",
+    "abis": [
+        {
+            "hex_signature": "0xe201e6531c39b0640b808074009b8aee94328121338eb569f55de6ccb3c317ac",
+            "type": "event",
+            "signature": "DrawDown(address,uint256,uint256)",
+            "name": "DrawDown",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_beneficiary",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

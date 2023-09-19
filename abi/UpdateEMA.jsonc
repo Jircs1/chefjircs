@@ -1,0 +1,38 @@
+{
+    "name": "UpdateEMA",
+    "abis": [
+        {
+            "@id": "0x96e2c334d3c0fa98c8b728ee84471864ffe5b28e05f46e52f8a469d0ab3a8b8b",
+            "type": "event",
+            "signature": "UpdateEMA(uint256,uint256,uint128,uint256)",
+            "name": "UpdateEMA",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "shortEMA",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "longEMA",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "lastBlockVolume",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "skipBlock",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

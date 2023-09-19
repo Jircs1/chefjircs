@@ -1,0 +1,44 @@
+{
+    "name": "Borrowed",
+    "abis": [
+        {
+            "hex_signature": "0x5cca43c4e3413a9cb79c12d544d9c8eb8b9fb087849468beaa1773f75fa2b794",
+            "type": "event",
+            "signature": "Borrowed(address,uint256,uint256,bool)",
+            "name": "Borrowed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "insured",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

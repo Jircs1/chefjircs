@@ -1,0 +1,32 @@
+{
+    "name": "RelayerApprovalChanged",
+    "abis": [
+        {
+            "@id": "0x46961fdb4502b646d5095fba7600486a8ac05041d55cdf0f16ed677180b5cad8",
+            "type": "event",
+            "signature": "RelayerApprovalChanged(address,address,bool)",
+            "name": "RelayerApprovalChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "relayer",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

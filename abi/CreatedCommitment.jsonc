@@ -1,0 +1,50 @@
+{
+    "name": "CreatedCommitment",
+    "abis": [
+        {
+            "hex_signature": "0x16b531d6c0bbff6da27b922e61fc528bb3ae5b435f9e56fb87e399afb6ae520a",
+            "type": "event",
+            "signature": "CreatedCommitment(uint256,address,uint256,address,uint256)",
+            "name": "CreatedCommitment",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "commitmentId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "lender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "marketId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "lendingToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

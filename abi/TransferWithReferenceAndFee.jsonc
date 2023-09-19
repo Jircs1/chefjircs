@@ -1,0 +1,44 @@
+{
+    "name": "TransferWithReferenceAndFee",
+    "abis": [
+        {
+            "hex_signature": "0xa1c241e337c4610a9d0f881111e977e9dc8690c85fe2108897bb1483c66e6a96",
+            "type": "event",
+            "signature": "TransferWithReferenceAndFee(address,uint256,bytes,uint256,address)",
+            "name": "TransferWithReferenceAndFee",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes",
+                    "name": "paymentReference",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feeAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "feeAddress",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

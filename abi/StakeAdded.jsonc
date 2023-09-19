@@ -1,0 +1,38 @@
+{
+    "name": "StakeAdded",
+    "abis": [
+        {
+            "hex_signature": "0x270d6dd254edd1d985c81cf7861b8f28fb06b6d719df04d90464034d43412440",
+            "type": "event",
+            "signature": "StakeAdded(address,uint256,uint256)",
+            "name": "StakeAdded",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "usdAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blxAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

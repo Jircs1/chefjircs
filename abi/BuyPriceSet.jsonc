@@ -1,0 +1,38 @@
+{
+    "name": "BuyPriceSet",
+    "abis": [
+        {
+            "@id": "0xfcc77ea8bdcce862f43b7fb00fe6b0eb90d6aeead27d3800d9257cf7a05f9d96",
+            "type": "event",
+            "signature": "BuyPriceSet(address,uint256,address,uint256)",
+            "name": "BuyPriceSet",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

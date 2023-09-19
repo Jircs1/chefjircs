@@ -1,0 +1,80 @@
+{
+    "name": "ExecuteDecreaseOrder",
+    "abis": [
+        {
+            "hex_signature": "0x9a382661d6573da86db000471303be6f0b2b1bb66089b08e3c16a85d7b6e94f8",
+            "type": "event",
+            "signature": "ExecuteDecreaseOrder(address,uint256,address,uint256,address,uint256,bool,uint256,bool,uint256,uint256)",
+            "name": "ExecuteDecreaseOrder",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "orderIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "collateralToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "collateralDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "indexToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sizeDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isLong",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "triggerPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "triggerAboveThreshold",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "executionFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "executionPrice",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

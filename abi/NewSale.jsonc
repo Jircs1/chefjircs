@@ -1,0 +1,50 @@
+{
+    "name": "NewSale",
+    "abis": [
+        {
+            "hex_signature": "0x306e6cde5eb293794d557a3a6c844de939e6206b05e6910451c512852bf654a5",
+            "type": "event",
+            "signature": "NewSale(uint256,address,address,address,uint256,uint256)",
+            "name": "NewSale",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "listingId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "assetContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lister",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "quantityBought",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalPricePaid",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

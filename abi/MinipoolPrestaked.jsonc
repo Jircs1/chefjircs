@@ -1,0 +1,50 @@
+{
+    "name": "MinipoolPrestaked",
+    "abis": [
+        {
+            "@id": "0x889f738426ec48d04c92bdcce1bc71c7aab6ba5296a4e92cc28a58c680b0a4ae",
+            "type": "event",
+            "signature": "MinipoolPrestaked(bytes,bytes,bytes32,uint256,bytes,uint256)",
+            "name": "MinipoolPrestaked",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "validatorPubkey",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "validatorSignature",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "depositDataRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "withdrawalCredentials",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

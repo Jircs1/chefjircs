@@ -2,28 +2,32 @@
     "name": "ETHDepositInitiated",
     "abis": [
         {
-            "@id": "ETHDepositInitiated",
-            "hex_signature": "0x35d79ab81f2b2017e19afb5c5571778877782d7a8786f5907f93b0f4702f4f23",
+            "@id": "0x35d79ab81f2b2017e19afb5c5571778877782d7a8786f5907f93b0f4702f4f23",
             "type": "event",
             "signature": "ETHDepositInitiated(address,address,uint256,bytes)",
             "name": "ETHDepositInitiated",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "_from",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "_to",
                     "type": "address"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "_amount",
-                    "@type": "evm:tokenAmount",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "_data",
                     "type": "bytes"
                 }

@@ -1,0 +1,44 @@
+{
+    "name": "EventClaim",
+    "abis": [
+        {
+            "@id": "0x055a181b27c0ef897e8c559755721e45a372d5ac946a2ae3905b8a4364e8745b",
+            "type": "event",
+            "signature": "EventClaim(uint256,uint256,uint256,address,address)",
+            "name": "EventClaim",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_cid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_dummyId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_nftID",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IStarNFT",
+                    "name": "_starNFT",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_sender",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

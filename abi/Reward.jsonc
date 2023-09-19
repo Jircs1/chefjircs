@@ -1,0 +1,29 @@
+{
+    "name": "Reward",
+    "abis": [
+        {
+            "@id": "0x619caafabdd75649b302ba8419e48cccf64f37f1983ac4727cfb38b57703ffc9",
+            "type": "event",
+            "signature": "Reward(address,uint256)",
+            "name": "Reward",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "transcoder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

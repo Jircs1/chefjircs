@@ -1,0 +1,44 @@
+{
+    "name": "NewAssetTransaction",
+    "abis": [
+        {
+            "hex_signature": "0x680bf27edbd578e3c9c5afd420badcf2fe53be197a76c602d30480831c2a8587",
+            "type": "event",
+            "signature": "NewAssetTransaction(address,address,bool,uint112,uint64)",
+            "name": "NewAssetTransaction",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "assetAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isDeposit",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint112",
+                    "name": "amount",
+                    "type": "uint112"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

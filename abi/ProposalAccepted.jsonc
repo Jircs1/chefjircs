@@ -1,0 +1,35 @@
+{
+    "name": "ProposalAccepted",
+    "abis": [
+        {
+            "@id": "0xea45672a2d92b09ff2dd48aa67615f8b5c79d7808b7282fc026a24e00283f78d",
+            "type": "event",
+            "signature": "ProposalAccepted(uint256,address,uint256)",
+            "name": "ProposalAccepted",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "voter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "weight",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

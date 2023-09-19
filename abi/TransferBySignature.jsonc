@@ -1,0 +1,50 @@
+{
+    "name": "TransferBySignature",
+    "abis": [
+        {
+            "hex_signature": "0xc9fbf9f295770004fd3f75553aff7c914cfda0e68ae990146b01fcfa48a27635",
+            "type": "event",
+            "signature": "TransferBySignature(address,address,address,uint256,uint256)",
+            "name": "TransferBySignature",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "signer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "StartTorrent",
+    "abis": [
+        {
+            "@id": "0xfbb2077593b3594fd0ac359a2d898268191a74843aaf1ba3f517b5514a1b0711",
+            "type": "event",
+            "signature": "StartTorrent(address,uint256,uint256)",
+            "name": "StartTorrent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "count",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "term",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "RewardsCollection",
+    "abis": [
+        {
+            "hex_signature": "0xe3debe835f6848edc082b32a1d729781d3bfcd7e14422d80bcaa6794d3816b2f",
+            "type": "event",
+            "signature": "RewardsCollection(address,uint256,uint256,uint256)",
+            "name": "RewardsCollection",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "feesToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewards",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountLPTokensForNode",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "currentPriceLP",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

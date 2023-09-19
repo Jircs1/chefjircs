@@ -1,0 +1,32 @@
+{
+    "name": "RollupProcessed",
+    "abis": [
+        {
+            "hex_signature": "0x14054a15b39bfd65ec00fc6d15c7e5f9cbc1dc6f452cbefa359b4da61ad89fb6",
+            "type": "event",
+            "signature": "RollupProcessed(uint256,bytes32[],address)",
+            "name": "RollupProcessed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "rollupId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32[]",
+                    "name": "nextExpectedDefiHashes",
+                    "type": "bytes32[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

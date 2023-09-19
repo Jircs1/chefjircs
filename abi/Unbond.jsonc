@@ -1,0 +1,38 @@
+{
+    "name": "Unbond",
+    "abis": [
+        {
+            "hex_signature": "0x7659747cd8571f1071eea946fdc648adcf181cad916f32a05f82c3a525976048",
+            "type": "event",
+            "signature": "Unbond(address,uint256,uint256)",
+            "name": "Unbond",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "depositId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

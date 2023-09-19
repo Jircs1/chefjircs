@@ -1,0 +1,47 @@
+{
+    "name": "WithdrawPairNft",
+    "abis": [
+        {
+            "hex_signature": "0x63a13470c4507d4f2c9d1bad1b7d603229456f8ebe7d3048d5cd8a02cf8d1ee6",
+            "type": "event",
+            "signature": "WithdrawPairNft(address,uint256,uint256,uint256,uint256)",
+            "name": "WithdrawPairNft",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTypePoolId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mainTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bakcTokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

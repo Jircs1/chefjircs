@@ -1,0 +1,50 @@
+{
+    "name": "TokensSent",
+    "abis": [
+        {
+            "hex_signature": "0xf157365de57ff25f29bd6829ee21d4b5aa47db86dd94bdb4bfa5ec3113ce79d1",
+            "type": "event",
+            "signature": "TokensSent(uint256,bytes32,uint8,bytes32,uint256,uint8)",
+            "name": "TokensSent",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "recipient",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "destinationChainId",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "receiveToken",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum MessengerProtocol",
+                    "name": "messenger",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "name": "DistributedSupplierReward",
+    "abis": [
+        {
+            "@id": "0xaccd035d02c456be35306aecd5a5fe62320713dde09ccd68b0a5e8ed93039999",
+            "type": "event",
+            "signature": "DistributedSupplierReward(uint8,address,address,uint256,uint256)",
+            "name": "DistributedSupplierReward",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "rewardType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract CToken",
+                    "name": "cToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "supplier",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewardDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewardSupplyIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

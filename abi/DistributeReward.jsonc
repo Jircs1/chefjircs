@@ -1,0 +1,29 @@
+{
+    "name": "DistributeReward",
+    "abis": [
+        {
+            "hex_signature": "0xe8b160e373db99a103e0a2abfa029b9c3fc8b328984a1ead8a65ae68ae646db7",
+            "type": "event",
+            "signature": "DistributeReward(address,uint256)",
+            "name": "DistributeReward",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

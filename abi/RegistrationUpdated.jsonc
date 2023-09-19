@@ -2,18 +2,20 @@
     "name": "RegistrationUpdated",
     "abis": [
         {
-            "@id": "RegistrationUpdated",
-            "hex_signature": "0x86d03f430c7616021073d7a71766f632f1ce19f289aa989534d9f4732253eb59",
+            "@id": "0x86d03f430c7616021073d7a71766f632f1ce19f289aa989534d9f4732253eb59",
             "type": "event",
             "signature": "RegistrationUpdated(address,bool)",
             "name": "RegistrationUpdated",
             "inputs": [
                 {
-                    "@type": "opensea:registrant",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "registrant",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "bool",
                     "name": "registered",
                     "type": "bool"
                 }

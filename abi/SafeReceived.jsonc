@@ -2,19 +2,20 @@
     "name": "SafeReceived",
     "abis": [
         {
-            "@id": "SafeReceived",
-            "hex_signature": "0x3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
+            "@id": "0x3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
             "type": "event",
             "signature": "SafeReceived(address,uint256)",
             "name": "SafeReceived",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "value",
                     "type": "uint256"
                 }

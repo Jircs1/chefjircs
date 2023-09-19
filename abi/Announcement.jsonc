@@ -1,0 +1,44 @@
+{
+    "name": "Announcement",
+    "abis": [
+        {
+            "@id": "0x29877766fa2bfe3b90008d6d92f965eca91cbc5757ed775740e460799fb92219",
+            "type": "event",
+            "signature": "Announcement(address,uint256,address,bytes32,bytes32)",
+            "name": "Announcement",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "pkx",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "ciphertext",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

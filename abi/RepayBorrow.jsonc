@@ -1,0 +1,44 @@
+{
+    "name": "RepayBorrow",
+    "abis": [
+        {
+            "@id": "0x1a2a22cb034d26d1854bdc6666a5b91fe25efbbb5dcad3b0355478d6f5c362a1",
+            "type": "event",
+            "signature": "RepayBorrow(address,address,uint256,uint256,uint256)",
+            "name": "RepayBorrow",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "payer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "repayAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accountBorrows",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalBorrows",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

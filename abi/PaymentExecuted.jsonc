@@ -1,0 +1,32 @@
+{
+    "name": "PaymentExecuted",
+    "abis": [
+        {
+            "@id": "0xe56ca6e9a81874e5a0d13f616127ff156f98b8c2546e7810b271bdfac7cadfb1",
+            "type": "event",
+            "signature": "PaymentExecuted(string,uint256,uint256)",
+            "name": "PaymentExecuted",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "refId",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockSigned",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

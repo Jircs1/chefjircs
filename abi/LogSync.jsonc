@@ -1,0 +1,32 @@
+{
+    "name": "LogSync",
+    "abis": [
+        {
+            "@id": "0x33e6f269701b611439c5bd9eae485d1b2f10d29b632a6f0d5688c93c2d77af1f",
+            "type": "event",
+            "signature": "LogSync(address,uint256,uint64)",
+            "name": "LogSync",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "by",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "yieldRewardsPerWeight",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "lastYieldDistribution",
+                    "type": "uint64"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

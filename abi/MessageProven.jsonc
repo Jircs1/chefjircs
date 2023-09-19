@@ -1,0 +1,32 @@
+{
+    "name": "MessageProven",
+    "abis": [
+        {
+            "hex_signature": "0x7ec1ea51fe3db53e55ed9d922854bc2156f467ff2f87d74e2086dae2c84a88a8",
+            "type": "event",
+            "signature": "MessageProven(bytes32,bytes32,uint256)",
+            "name": "MessageProven",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "aggregateRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "aggregateIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

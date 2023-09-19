@@ -1,0 +1,32 @@
+{
+    "name": "PremiumTransferred",
+    "abis": [
+        {
+            "hex_signature": "0x1c9849b240df738991f255a71682e8c472fbdc3be4d91cf2ccef14a59c416e2d",
+            "type": "event",
+            "signature": "PremiumTransferred(address,uint256,uint256)",
+            "name": "PremiumTransferred",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "recipientPortion",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "optionMarketPortion",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

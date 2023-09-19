@@ -1,0 +1,50 @@
+{
+    "name": "WithdrawDone",
+    "abis": [
+        {
+            "hex_signature": "0x48a1ab26f3aa7b62bb6b6e8eed182f292b84eb7b006c0254386b268af20774be",
+            "type": "event",
+            "signature": "WithdrawDone(bytes32,uint64,address,address,uint256,bytes32)",
+            "name": "WithdrawDone",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "withdrawId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "seqnum",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "refid",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

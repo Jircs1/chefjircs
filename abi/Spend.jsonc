@@ -1,0 +1,38 @@
+{
+    "name": "Spend",
+    "abis": [
+        {
+            "@id": "0xed8cfe3600cacf009dc67354491d44da19a77f26a4aed42181ba6824ccb35d72",
+            "type": "event",
+            "signature": "Spend(address,address,uint256,uint256)",
+            "name": "Spend",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "userAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tax",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

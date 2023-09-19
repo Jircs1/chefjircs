@@ -1,0 +1,37 @@
+{
+    "name": "SharesBurnt",
+    "abis": [
+        {
+            "hex_signature": "0x8b2a1e1ad5e0578c3dd82494156e985dade827a87c573b5c1c7716a32162ad64",
+            "type": "event",
+            "signature": "SharesBurnt(address,uint256,uint256,uint256)",
+            "name": "SharesBurnt",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "preRebaseTokenAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "postRebaseTokenAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "sharesAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

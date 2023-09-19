@@ -1,0 +1,56 @@
+{
+    "name": "LoanRenegotiated",
+    "abis": [
+        {
+            "hex_signature": "0x37357bed780fda5aed28c32fe9cd762cb2f2f8a70c0d9b342aba59c945943ca0",
+            "type": "event",
+            "signature": "LoanRenegotiated(uint32,address,address,uint32,uint256,uint256,uint256)",
+            "name": "LoanRenegotiated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "loanId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "newLoanDuration",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newMaximumRepaymentAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "renegotiationFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "renegotiationAdminFee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "Underwrite",
+    "abis": [
+        {
+            "hex_signature": "0xa30eb1f1bb0892af5e3389941c42bc7f44a8bf7b6071ecfe3e964673c908f2b2",
+            "type": "event",
+            "signature": "Underwrite(address,address,uint256,uint256,uint256,bool)",
+            "name": "Underwrite",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "underwriter",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "longReceiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "shortTokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "intervalContractSize",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "intervalPremium",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isManualUnderwrite",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

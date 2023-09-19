@@ -1,0 +1,56 @@
+{
+    "name": "MultichainBridge",
+    "abis": [
+        {
+            "hex_signature": "0x359931ba9bad6de821af56744460f2e37149eb4d178eb0e3e2aae0b815f91af5",
+            "type": "event",
+            "signature": "MultichainBridge(uint8,address,address,uint256,address,address,uint256)",
+            "name": "MultichainBridge",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "enum RangoMultichainModels.MultichainBridgeType",
+                    "name": "_actionType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_fromToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_underlyingToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_inputAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "multichainRouter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_receiverAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_receiverChainID",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

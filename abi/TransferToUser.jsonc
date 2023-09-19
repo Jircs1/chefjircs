@@ -1,0 +1,32 @@
+{
+    "name": "TransferToUser",
+    "abis": [
+        {
+            "hex_signature": "0x2d6ff46a316ec627f7677daafa6ad7d6f36bcf938c5f47bf6e671b09d27b415f",
+            "type": "event",
+            "signature": "TransferToUser(address,address,uint256)",
+            "name": "TransferToUser",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

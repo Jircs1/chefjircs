@@ -1,0 +1,50 @@
+{
+    "name": "AddInterest",
+    "abis": [
+        {
+            "@id": "0x50225349cc7e3814c4fa5fe6baef7a3c4cac55e92c64b1f4a5d1ba55e65dcc82",
+            "type": "event",
+            "signature": "AddInterest(uint256,uint256,uint256,uint256,uint256)",
+            "name": "AddInterest",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_interestEarned",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_rate",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_deltaTime",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_feesAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_feesShare",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

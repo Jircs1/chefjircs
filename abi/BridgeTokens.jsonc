@@ -1,0 +1,44 @@
+{
+    "name": "BridgeTokens",
+    "abis": [
+        {
+            "@id": "0xb2d93ec15439019c2bd2b7d1271afd1bab015bc32c9626b0f54483958e8f2530",
+            "type": "event",
+            "signature": "BridgeTokens(bytes32,uint16,uint64,bytes32,bytes)",
+            "name": "BridgeTokens",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "emitter",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "chainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "sequence",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "nonce",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "payload",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

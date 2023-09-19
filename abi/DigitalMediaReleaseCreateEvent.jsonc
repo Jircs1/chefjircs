@@ -1,0 +1,42 @@
+{
+    "name": "DigitalMediaReleaseCreateEvent",
+    "abis": [
+        {
+            "@id": "0x775f53e4c75ce0c74e611f7f0bb660e4cd647e0522ef0f8aefd4ecef373c5df9",
+            "type": "event",
+            "signature": "DigitalMediaReleaseCreateEvent(uint256,address,uint32,string,uint256)",
+            "name": "DigitalMediaReleaseCreateEvent",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "printEdition",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "name": "tokenURI",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "name": "digitalMediaId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

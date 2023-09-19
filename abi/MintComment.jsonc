@@ -2,36 +2,38 @@
     "name": "MintComment",
     "abis": [
         {
-            "@id": "MintComment",
-            "hex_signature": "0xb9490aee663998179ad13f9e1c1eb6189c71ad1a9ec87f33ad2766f98d9a268a",
+            "@id": "0xb9490aee663998179ad13f9e1c1eb6189c71ad1a9ec87f33ad2766f98d9a268a",
             "type": "event",
             "signature": "MintComment(address,address,uint256,uint256,string)",
             "name": "MintComment",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "erc721:token",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "tokenContract",
                     "type": "address"
                 },
                 {
-                    "@type": "erc721:tokenID",
-                    "@token": "$1",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "tokenId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "quantity",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:comment",
+                    "indexed": false,
+                    "internalType": "string",
                     "name": "comment",
                     "type": "string"
                 }

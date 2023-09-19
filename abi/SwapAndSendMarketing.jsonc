@@ -1,0 +1,29 @@
+{
+    "name": "SwapAndSendMarketing",
+    "abis": [
+        {
+            "@id": "0x957ad1fc6d4d41da6d1a8d37303289ef3c4b78e0285ff5df1e12070ef0e62999",
+            "type": "event",
+            "signature": "SwapAndSendMarketing(uint256,uint256)",
+            "name": "SwapAndSendMarketing",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokensSwapped",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bnbSend",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

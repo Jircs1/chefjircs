@@ -1,0 +1,44 @@
+{
+    "name": "VestingEntryCreated",
+    "abis": [
+        {
+            "@id": "0x2cc016694185d38abbe28d9e9baea2e9d95a321ae43475e5ea7b643756840bc0",
+            "type": "event",
+            "signature": "VestingEntryCreated(address,uint256,uint256,uint256,uint256)",
+            "name": "VestingEntryCreated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beneficiary",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "entryID",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

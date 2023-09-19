@@ -2,19 +2,20 @@
     "name": "StartAuction",
     "abis": [
         {
-            "@id": "StartAuction",
-            "hex_signature": "0xe5095dc360d1a56740c946cccc76520c1a1a57381c950520062adeda68dbf572",
+            "@id": "0xe5095dc360d1a56740c946cccc76520c1a1a57381c950520062adeda68dbf572",
             "type": "event",
             "signature": "StartAuction(uint256,address)",
             "name": "StartAuction",
             "inputs": [
                 {
-                    "@type": "blur:lienId",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "lienId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc721:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "collection",
                     "type": "address"
                 }

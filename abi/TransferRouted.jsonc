@@ -1,0 +1,38 @@
+{
+    "name": "TransferRouted",
+    "abis": [
+        {
+            "@id": "0x85291dff2161a93c2f12c819d31889c96c63042116f5bc5a205aa701c2c429f5",
+            "type": "event",
+            "signature": "TransferRouted(address,address,address,address)",
+            "name": "TransferRouted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_userFrom",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_userTo",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "gateway",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

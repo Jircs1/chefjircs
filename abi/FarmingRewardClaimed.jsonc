@@ -1,0 +1,32 @@
+{
+    "name": "FarmingRewardClaimed",
+    "abis": [
+        {
+            "hex_signature": "0x97e6c3172350795e26977663112f38653689372e771e85bad9fbadb1af0e98b2",
+            "type": "event",
+            "signature": "FarmingRewardClaimed(address,address,uint256)",
+            "name": "FarmingRewardClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reward",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

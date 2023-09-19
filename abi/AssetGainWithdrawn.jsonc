@@ -1,0 +1,35 @@
+{
+    "name": "AssetGainWithdrawn",
+    "abis": [
+        {
+            "@id": "0x3807eb27e116be27b5a2c63478a4f4029945291386db0b94d494102430cab67c",
+            "type": "event",
+            "signature": "AssetGainWithdrawn(address,uint256,uint256)",
+            "name": "AssetGainWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_Asset",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_SLSDLoss",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

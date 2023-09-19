@@ -1,0 +1,53 @@
+{
+    "name": "ReserveAuctionFinalized",
+    "abis": [
+        {
+            "@id": "0x2edb0e99c6ac35be6731dab554c1d1fa1b7beb675090dbb09fb14e615aca1c4a",
+            "type": "event",
+            "signature": "ReserveAuctionFinalized(uint256,address,address,uint256,uint256,uint256)",
+            "name": "ReserveAuctionFinalized",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "platformFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "royaltyFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sellerRev",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

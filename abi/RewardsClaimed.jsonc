@@ -2,8 +2,7 @@
     "name": "RewardsClaimed",
     "abis": [
         {
-            "@id": "RewardsClaimed_ERC20",
-            "hex_signature": "0xfc30cddea38e2bf4d6ea7d3f9ed3b6ad7f176419f4963bd81318067a4aee73fe",
+            "@id": "0xfc30cddea38e2bf4d6ea7d3f9ed3b6ad7f176419f4963bd81318067a4aee73fe",
             "type": "event",
             "signature": "RewardsClaimed(address,uint256)",
             "name": "RewardsClaimed",
@@ -11,7 +10,49 @@
                 {
                     "@type": "erc20:token",
                     "name": "token",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "bend": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 3733,
+                            "sampleAddress": "0x24ce338baf5659bacb1bb92aa3a0ce9dd36f31b0",
+                            "sampleTxHash": "0x00bcd1e9802d8d3ef593d8dcd7b04044f33f59cd57b388024144cd48bc4fe1c2",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "dydx": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 993,
+                            "sampleAddress": "0x9b7d9c455bc22b2d35219748d6fae5f7e948aed4",
+                            "sampleTxHash": "0x0d9013c9b56a4a8cbfe74e71df9353c792d96c2a3f77fc4ec38b3be06540abc2",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "thirdweb": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 423,
+                            "sampleAddress": "0x61753c9e8687b8dc70ba67bc2b6f872b05f7d338",
+                            "sampleTxHash": "0x01f854ae3118251bf1ea0a39aefb6c775f649af9f6cfa1a94e6ec386c40ab8ba",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "bancor": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 100,
+                            "sampleAddress": "0xc2c28f19d7a896fe2634392fe732f716671c54eb",
+                            "sampleTxHash": "0xd8b07bc6a1bc4f39a37743e1f3c989afdd0829856e341b15d2eeb0bb9795ce36",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -24,23 +65,64 @@
             "outputs": null
         },
         {
-            "@id": "RewardsClaimed_Recipient",
-            "hex_signature": "0xfc30cddea38e2bf4d6ea7d3f9ed3b6ad7f176419f4963bd81318067a4aee73fe",
+            "@id": "0x9310ccfcb8de723f578a9e4282ea9f521f05ae40dc08f3068dfad528a65ee3c7",
             "type": "event",
-            "signature": "RewardsClaimed(address,uint256)",
+            "signature": "RewardsClaimed(address,address,uint256)",
             "name": "RewardsClaimed",
             "inputs": [
                 {
-                    "@type": "transfer:to",
-                    "name": "account",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_from",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "rewardAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xd92c424393cb3ccdf7d5e36602e3bfa34f24490579ba47978f4bcfad496995f2",
+            "type": "event",
+            "signature": "RewardsClaimed(address,address,uint256,uint256)",
+            "name": "RewardsClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_escrowedAmount",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
                     "@token": "$",
-                    "name": "snxAmount",
-                    "type": "uint256",
                     "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_nonEscrowedAmount",
+                    "type": "uint256"
                 }
             ],
             "outputs": null

@@ -2,31 +2,32 @@
     "name": "SendCredits",
     "abis": [
         {
-            "@id": "SendCredits",
-            "hex_signature": "0x6939f93e3f21cf1362eb17155b740277de5687dae9a83a85909fd71da95944e7",
+            "@id": "0x6939f93e3f21cf1362eb17155b740277de5687dae9a83a85909fd71da95944e7",
             "type": "event",
             "signature": "SendCredits(uint16,uint256,uint256,uint256)",
             "name": "SendCredits",
             "inputs": [
                 {
-                    "@type": "stargate:chainID",
+                    "indexed": false,
+                    "internalType": "uint16",
                     "name": "dstChainId",
                     "type": "uint16"
                 },
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "dstPoolId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "credits",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "idealBalance",
                     "type": "uint256"
                 }

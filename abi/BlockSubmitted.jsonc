@@ -1,0 +1,32 @@
+{
+    "name": "BlockSubmitted",
+    "abis": [
+        {
+            "@id": "0xcc86d9ed29ebae540f9d25a4976d4da36ea4161b854b8ecf18f491cf6b0feb5c",
+            "type": "event",
+            "signature": "BlockSubmitted(uint256,bytes32,bytes32)",
+            "name": "BlockSubmitted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "blockIdx",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "merkleRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "publicDataHash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

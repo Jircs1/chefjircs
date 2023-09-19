@@ -1,0 +1,50 @@
+{
+    "name": "Migrate",
+    "abis": [
+        {
+            "hex_signature": "0xfb4fa0c1e3394566ca16c7045e2cb7c48a163744e90561215f72fa0782c34e8a",
+            "type": "event",
+            "signature": "Migrate(uint256,uint256,uint256,address,bool,address)",
+            "name": "Migrate",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "wxAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "xAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "v1Amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "lock",
+                    "type": "bool"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

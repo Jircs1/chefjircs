@@ -1,0 +1,29 @@
+{
+    "name": "NewMint",
+    "abis": [
+        {
+            "@id": "0x52277f0b4a9b555c5aa96900a13546f972bda413737ec164aac947c87eec6024",
+            "type": "event",
+            "signature": "NewMint(address,uint256)",
+            "name": "NewMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "msgSender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "mintQuantity",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

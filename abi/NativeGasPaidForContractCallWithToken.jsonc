@@ -1,0 +1,62 @@
+{
+    "name": "NativeGasPaidForContractCallWithToken",
+    "abis": [
+        {
+            "@id": "0x999d431b58761213cf53af96262b67a069cbd963499fd8effd1e21556217b841",
+            "type": "event",
+            "signature": "NativeGasPaidForContractCallWithToken(address,string,string,bytes32,string,uint256,uint256,address)",
+            "name": "NativeGasPaidForContractCallWithToken",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sourceAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "destinationChain",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "destinationAddress",
+                    "type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "payloadHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasFeeAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "refundAddress",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

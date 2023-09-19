@@ -1,0 +1,29 @@
+{
+    "name": "ClaimedToWallet",
+    "abis": [
+        {
+            "hex_signature": "0x5b3caf86a928978ea450673332677022e5274a93c9e2d50dfe156c8c7c5bf795",
+            "type": "event",
+            "signature": "ClaimedToWallet(address,uint256)",
+            "name": "ClaimedToWallet",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_honeyAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

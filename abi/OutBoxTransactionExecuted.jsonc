@@ -1,0 +1,38 @@
+{
+    "name": "OutBoxTransactionExecuted",
+    "abis": [
+        {
+            "@id": "0x20af7f3bbfe38132b8900ae295cd9c8d1914be7052d061a511f3f728dab18964",
+            "type": "event",
+            "signature": "OutBoxTransactionExecuted(address,address,uint256,uint256)",
+            "name": "OutBoxTransactionExecuted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l2Sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "zero",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "transactionIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "DefaultDecayPeriodVoteUpdate",
+    "abis": [
+        {
+            "hex_signature": "0x2d2d732aa884d37295a1b5995321d502ebc228d25e644eef0a435d4e5f245acd",
+            "type": "event",
+            "signature": "DefaultDecayPeriodVoteUpdate(address,uint256,bool,uint256)",
+            "name": "DefaultDecayPeriodVoteUpdate",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "decayPeriod",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isDefault",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

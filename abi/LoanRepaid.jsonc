@@ -1,0 +1,158 @@
+{
+    "name": "LoanRepaid",
+    "abis": [
+        {
+            "@id": "0x3687d64f40b11dd1c102a76882ac1735891c546a96ae27935eb5c7865b9d86fa",
+            "type": "event",
+            "signature": "LoanRepaid(uint32,address,address,uint256,uint256,uint256,uint256,uint256,address,address,address)",
+            "name": "LoanRepaid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "loanId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "loanPrincipalAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nftCollateralId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountPaidToLender",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$10",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "adminFee",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$10",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "revenueShare",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "revenueSharePartner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nftCollateralContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "loanERC20Denomination",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x6ee3573bd905753c83bc1aaca3c15bfa36391db95b778bd825eb010645a7ee45",
+            "type": "event",
+            "signature": "LoanRepaid(uint32,address,address,uint256,uint256,uint256,uint256,address,address)",
+            "name": "LoanRepaid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "loanId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "borrowAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nftTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "repayAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$8",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "adminFee",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$8",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nftAsset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "borrowAsset",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

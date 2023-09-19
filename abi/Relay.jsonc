@@ -2,45 +2,50 @@
     "name": "Relay",
     "abis": [
         {
-            "@id": "Relay",
-            "hex_signature": "0x79fa08de5149d912dce8e5e8da7a7c17ccdf23dd5d3bfe196802e6eb86347c7c",
+            "@id": "0x79fa08de5149d912dce8e5e8da7a7c17ccdf23dd5d3bfe196802e6eb86347c7c",
             "type": "event",
             "signature": "Relay(bytes32,address,address,address,uint256,uint64,bytes32)",
             "name": "Relay",
             "inputs": [
                 {
-                    "@type": "celer:transferId",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "transferId",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "transfer:from",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "receiver",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "token",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$3",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount",
                     "type": "uint256"
                 },
                 {
-                    "@type": "celer:chainID",
+                    "indexed": false,
+                    "internalType": "uint64",
                     "name": "srcChainId",
                     "type": "uint64"
                 },
                 {
-                    "@type": "celer:transferId",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "srcTransferId",
                     "type": "bytes32"
                 }

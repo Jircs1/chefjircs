@@ -1,0 +1,44 @@
+{
+    "name": "UserStaked",
+    "abis": [
+        {
+            "hex_signature": "0x9f69538b20901013ea360bae2dce4079d45308fcfed02b3f0768c9f70f4ba9c0",
+            "type": "event",
+            "signature": "UserStaked(uint256,uint256,uint256,uint256,address)",
+            "name": "UserStaked",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "vaultId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "count",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lpBalance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timelockUntil",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

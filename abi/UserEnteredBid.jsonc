@@ -1,0 +1,32 @@
+{
+    "name": "UserEnteredBid",
+    "abis": [
+        {
+            "@id": "0xa16480eaadf1bcfc74d6fe79423817d891a510e620d366c02a7d0b866dbf594f",
+            "type": "event",
+            "signature": "UserEnteredBid(address,uint256,bool)",
+            "name": "UserEnteredBid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bidAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "newUser",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

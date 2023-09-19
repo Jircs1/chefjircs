@@ -1,0 +1,56 @@
+{
+    "name": "RedeemScheduled",
+    "abis": [
+        {
+            "hex_signature": "0x5ccd009502509cf28762c67858994d85b163bb6e451f5e9df7c5e18c9c2e123e",
+            "type": "event",
+            "signature": "RedeemScheduled(bytes32,bytes32,uint64,uint64,address,uint256,uint256)",
+            "name": "RedeemScheduled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "ticketId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "retryTxHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "sequenceNum",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "donatedGas",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "gasDonor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "maxRefund",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "submissionFeeRefund",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

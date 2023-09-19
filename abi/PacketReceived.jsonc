@@ -2,34 +2,38 @@
     "name": "PacketReceived",
     "abis": [
         {
-            "@id": "PacketReceived",
-            "hex_signature": "0x2bd2d8a84b748439fd50d79a49502b4eb5faa25b864da6a9ab5c150704be9a4d",
+            "@id": "0x2bd2d8a84b748439fd50d79a49502b4eb5faa25b864da6a9ab5c150704be9a4d",
             "type": "event",
             "signature": "PacketReceived(uint16,bytes,address,uint64,bytes32)",
             "name": "PacketReceived",
             "inputs": [
                 {
-                    "@type": "layerzero:chainID",
+                    "indexed": true,
+                    "internalType": "uint16",
                     "name": "srcChainId",
                     "type": "uint16"
                 },
                 {
-                    "@type": "transfer:from",
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "srcAddress",
                     "type": "bytes"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "dstAddress",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:nonce",
+                    "indexed": false,
+                    "internalType": "uint64",
                     "name": "nonce",
                     "type": "uint64"
                 },
                 {
-                    "@type": "layerzero:payloadHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "payloadHash",
                     "type": "bytes32"
                 }

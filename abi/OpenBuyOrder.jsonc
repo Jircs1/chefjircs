@@ -1,0 +1,44 @@
+{
+    "name": "OpenBuyOrder",
+    "abis": [
+        {
+            "hex_signature": "0xecab89c21a18231f17bff6027decbe0682bc9916e969562a87781927b18b2e4d",
+            "type": "event",
+            "signature": "OpenBuyOrder(address,uint256,address,uint256,uint256)",
+            "name": "OpenBuyOrder",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "batchId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "collateral",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

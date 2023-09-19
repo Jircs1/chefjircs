@@ -1,0 +1,56 @@
+{
+    "name": "NewReport",
+    "abis": [
+        {
+            "@id": "0x48e9e2c732ba278de6ac88a3a57a5c5ba13d3d8370e709b3b98333a57876ca95",
+            "type": "event",
+            "signature": "NewReport(bytes32,uint256,bytes,uint256,bytes,address)",
+            "name": "NewReport",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "_queryId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_time",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_value",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_nonce",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_queryData",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_reporter",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "TokenDeposited",
+    "abis": [
+        {
+            "@id": "0x14c4e7cf1c77c463baf4198cf43a79854a178a5641b6e59a109d7ed539f410aa",
+            "type": "event",
+            "signature": "TokenDeposited(bytes32,address,uint256,uint256)",
+            "name": "TokenDeposited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "by",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

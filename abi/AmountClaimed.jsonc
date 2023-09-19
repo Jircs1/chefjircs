@@ -1,0 +1,29 @@
+{
+    "name": "AmountClaimed",
+    "abis": [
+        {
+            "hex_signature": "0x13dcfa08b5805e689424ccce1892676af568734e1561cc374b73c6c5e5f30400",
+            "type": "event",
+            "signature": "AmountClaimed(address,uint256)",
+            "name": "AmountClaimed",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

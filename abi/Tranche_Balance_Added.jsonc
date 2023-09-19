@@ -1,0 +1,35 @@
+{
+    "name": "Tranche_Balance_Added",
+    "abis": [
+        {
+            "hex_signature": "0xd574b9b920ef951710b35bf90459120b667d6c810777f945e3e82996f75824c4",
+            "type": "event",
+            "signature": "Tranche_Balance_Added(address,uint8,uint256)",
+            "name": "Tranche_Balance_Added",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "tranche_id",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

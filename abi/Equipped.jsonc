@@ -1,0 +1,35 @@
+{
+    "name": "Equipped",
+    "abis": [
+        {
+            "hex_signature": "0x913887fd0b468ebff22eac13535c8b5a656d89040bff7d16d7d4531bf27030d6",
+            "type": "event",
+            "signature": "Equipped(uint256,string,uint256)",
+            "name": "Equipped",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "typeOf",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "itemTokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

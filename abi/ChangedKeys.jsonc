@@ -1,0 +1,39 @@
+{
+    "name": "ChangedKeys",
+    "abis": [
+        {
+            "hex_signature": "0xaa10e7a0117d4323f1d99d630ec169bebb3a988e895770e351987e01ff5423d5",
+            "type": "event",
+            "signature": "ChangedKeys(uint32,bytes32,bytes32,uint32,uint32)",
+            "name": "ChangedKeys",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "point",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "name": "encryptionKey",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "authenticationKey",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "cryptoSuiteVersion",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "name": "keyRevisionNumber",
+                    "type": "uint32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

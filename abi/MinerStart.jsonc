@@ -1,0 +1,41 @@
+{
+    "name": "MinerStart",
+    "abis": [
+        {
+            "@id": "0xb835eb6eed5c55377b86134b41c9354047e0fc6c7582efe59648572fff81b364",
+            "type": "event",
+            "signature": "MinerStart(uint256,uint256,address,uint40)",
+            "name": "MinerStart",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data1",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "minerId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "RewardDistributed",
+    "abis": [
+        {
+            "hex_signature": "0xd53ea54cd361f7c49d3ca11bfcb71b4783448ade1b32513783ee19776f2adf31",
+            "type": "event",
+            "signature": "RewardDistributed(address,address,uint256,uint256)",
+            "name": "RewardDistributed",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "iToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accountIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

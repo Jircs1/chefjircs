@@ -1,0 +1,38 @@
+{
+    "name": "NumTokenMint",
+    "abis": [
+        {
+            "@id": "0x981414aed4973b05aa301314dc13a5a4077f24490497b98bc270852581c1c578",
+            "type": "event",
+            "signature": "NumTokenMint(bytes32,address,bool,uint256)",
+            "name": "NumTokenMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "vectorId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "contractAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "onChainVector",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "numMinted",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "ExecSuccess",
+    "abis": [
+        {
+            "@id": "0xa458375b1282695a972870cbfbc4891a9d856b79d563d17667d171d87e0c527a",
+            "type": "event",
+            "signature": "ExecSuccess(uint256,address,address,bytes,bytes32,bool)",
+            "name": "ExecSuccess",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "txFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "feeToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "execAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "execData",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "taskId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "callSuccess",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

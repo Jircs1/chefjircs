@@ -2,35 +2,41 @@
     "name": "Purchased",
     "abis": [
         {
-            "@id": "Purchased",
-            "hex_signature": "0xb362243af1e2070d7d5bf8d713f2e0fab64203f1b71462afbe20572909788c5e",
+            "@id": "0xb362243af1e2070d7d5bf8d713f2e0fab64203f1b71462afbe20572909788c5e",
             "type": "event",
             "signature": "Purchased(address,address,uint256,uint256,uint256)",
             "name": "Purchased",
             "inputs": [
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "erc721:token",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "minter",
                     "type": "address"
                 },
                 {
-                    "@type": "erc721:tokenID",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "tokenId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc721:tokenAmount",
-                    "@token": "$1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "quantity",
-                    "type": "uint256"
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "evm:tokenAmount",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "value",
                     "type": "uint256"
                 }

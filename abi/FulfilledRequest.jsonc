@@ -1,0 +1,32 @@
+{
+    "name": "FulfilledRequest",
+    "abis": [
+        {
+            "@id": "0xc0977dab79883641ece94bb6a932ca83049f561ffff8d8daaeafdbc1acce9e0a",
+            "type": "event",
+            "signature": "FulfilledRequest(address,bytes32,bytes)",
+            "name": "FulfilledRequest",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "airnode",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "requestId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

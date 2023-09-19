@@ -1,0 +1,32 @@
+{
+    "name": "LogBegin",
+    "abis": [
+        {
+            "hex_signature": "0x1e4e60ae3aeb9909ff5e6502e86867f181eadfa0c215186eaf47665909d71eb1",
+            "type": "event",
+            "signature": "LogBegin(address,bytes4,bytes)",
+            "name": "LogBegin",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "payload",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

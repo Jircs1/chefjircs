@@ -1,0 +1,44 @@
+{
+    "name": "ZapIn",
+    "abis": [
+        {
+            "hex_signature": "0xa71185a0ff368de4e9e445d8601c4fbd50d9b674e4e43f5f8feafb8d64a2e13e",
+            "type": "event",
+            "signature": "ZapIn(address,address,uint256,uint256,address)",
+            "name": "ZapIn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenToZap",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lpToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenAmountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lpTokenAmountReceived",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

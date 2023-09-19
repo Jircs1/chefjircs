@@ -1,0 +1,65 @@
+{
+    "name": "UpdateStatus",
+    "abis": [
+        {
+            "@id": "0xed71188e6e889129ea3e58f204838c0d459c617582cbbc6759017f50820edb5c",
+            "type": "event",
+            "signature": "UpdateStatus(uint32,uint64,address,uint8)",
+            "name": "UpdateStatus",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "loanId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "smartNftId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "loanContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum IDirectLoanCoordinator.StatusType",
+                    "name": "newStatus",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xa99afb24dca45e3cebef49cd6184255e4623c0bf6c5e87bb6738629ceefa2dac",
+            "type": "event",
+            "signature": "UpdateStatus(uint32,uint64,uint8)",
+            "name": "UpdateStatus",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "loanId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "xy3NftId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum ILoanStatus.StatusType",
+                    "name": "newStatus",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "Reinvest",
+    "abis": [
+        {
+            "hex_signature": "0xbd654390d0d973e8c8376ed6053be8658870df892687852cc5c914d700291b87",
+            "type": "event",
+            "signature": "Reinvest(address,uint256)",
+            "name": "Reinvest",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "holder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "PaymentBurnExecuted",
+    "abis": [
+        {
+            "@id": "0xa95ab8c27887dbb274b3a318aee67f1593da730d0ddf4fca623ff0fc2024bcc8",
+            "type": "event",
+            "signature": "PaymentBurnExecuted(string,address,uint256,uint256)",
+            "name": "PaymentBurnExecuted",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "orderId",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "transBlock",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

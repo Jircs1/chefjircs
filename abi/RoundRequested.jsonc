@@ -1,0 +1,38 @@
+{
+    "name": "RoundRequested",
+    "abis": [
+        {
+            "@id": "0x3ea16a923ff4b1df6526e854c9e3a995c43385d70e73359e10623c74f0b52037",
+            "type": "event",
+            "signature": "RoundRequested(address,bytes16,uint32,uint8)",
+            "name": "RoundRequested",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "requester",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes16",
+                    "name": "configDigest",
+                    "type": "bytes16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "epoch",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "round",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

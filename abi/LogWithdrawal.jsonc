@@ -2,20 +2,21 @@
     "name": "LogWithdrawal",
     "abis": [
         {
-            "@id": "LogWithdrawal",
-            "hex_signature": "0xb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e91",
+            "@id": "0xb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e91",
             "type": "event",
             "signature": "LogWithdrawal(address,uint256)",
             "name": "LogWithdrawal",
             "inputs": [
                 {
-                    "@type": "dydx:SentToAddress",
-                    "name": "SentToAddress",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:tokenAmount",
-                    "name": "AmountTransferred",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
                     "type": "uint256"
                 }
             ],

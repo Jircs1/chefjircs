@@ -2,85 +2,77 @@
     "name": "NewPriorityRequest",
     "abis": [
         {
-            "@id": "NewPriorityRequest",
-            "hex_signature": "0x4531cd5795773d7101c17bdeb9f5ab7f47d7056017506f937083be5d6e77a382",
+            "@id": "0x4531cd5795773d7101c17bdeb9f5ab7f47d7056017506f937083be5d6e77a382",
             "type": "event",
             "signature": "NewPriorityRequest(uint256,bytes32,uint64,(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256[4],bytes,bytes,uint256[],bytes,bytes),bytes[])",
             "name": "NewPriorityRequest",
             "inputs": [
                 {
-                    "@type": "tornado:txId",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "txId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:TransactionHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "txHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
+                    "internalType": "uint64",
                     "name": "expirationTimestamp",
                     "type": "uint64"
                 },
                 {
                     "components": [
                         {
-                            "@type": "tornado:txType",
                             "internalType": "uint256",
                             "name": "txType",
                             "type": "uint256"
                         },
                         {
-                            "@type": "transfer:from",
                             "internalType": "uint256",
                             "name": "from",
                             "type": "uint256"
                         },
                         {
-                            "@type": "transfer:to",
                             "internalType": "uint256",
                             "name": "to",
                             "type": "uint256"
                         },
                         {
-                            "@type": "evm:gasLimit",
                             "internalType": "uint256",
                             "name": "gasLimit",
                             "type": "uint256"
                         },
                         {
-                            "@type": "evm:gasPerPubdataByteLimit",
                             "internalType": "uint256",
                             "name": "gasPerPubdataByteLimit",
                             "type": "uint256"
                         },
                         {
-                            "@type": "evm:maxFeePerGas",
                             "internalType": "uint256",
                             "name": "maxFeePerGas",
                             "type": "uint256"
                         },
                         {
-                            "@type": "evm:maxPriorityFeePerGas",
                             "internalType": "uint256",
                             "name": "maxPriorityFeePerGas",
                             "type": "uint256"
                         },
                         {
-                            "@type": "tornado:paymaster",
                             "internalType": "uint256",
                             "name": "paymaster",
                             "type": "uint256"
                         },
                         {
-                            "@type": "evm:nonce",
                             "internalType": "uint256",
                             "name": "nonce",
                             "type": "uint256"
                         },
                         {
-                            "@type": "evm:tokenAmount",
                             "internalType": "uint256",
                             "name": "value",
                             "type": "uint256"
@@ -116,13 +108,55 @@
                             "type": "bytes"
                         }
                     ],
+                    "indexed": false,
                     "internalType": "struct IMailbox.L2CanonicalTransaction",
                     "name": "transaction",
                     "type": "tuple"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes[]",
                     "name": "factoryDeps",
                     "type": "bytes[]"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xd0943372c08b438a88d4b39d77216901079eda9ca59d45349841c099083b6830",
+            "type": "event",
+            "signature": "NewPriorityRequest(address,uint64,uint8,bytes,uint256)",
+            "name": "NewPriorityRequest",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "serialId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum Operations.OpType",
+                    "name": "opType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "pubData",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expirationBlock",
+                    "type": "uint256"
                 }
             ],
             "outputs": null

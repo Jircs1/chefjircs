@@ -1,0 +1,38 @@
+{
+    "name": "SellerReferralPaid",
+    "abis": [
+        {
+            "@id": "0x27a4dd4ff659a9e6354fb079b2208365e5b83f55c22a4150eee2bca89501cb98",
+            "type": "event",
+            "signature": "SellerReferralPaid(address,uint256,address,uint256)",
+            "name": "SellerReferralPaid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sellerReferrer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sellerReferrerFee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

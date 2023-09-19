@@ -1,0 +1,32 @@
+{
+    "name": "NftDeposited",
+    "abis": [
+        {
+            "hex_signature": "0xdb6d35979e943a3a34892e2a1ada2a2583e9f361a3d7807438e77402d3625ca9",
+            "type": "event",
+            "signature": "NftDeposited(address,uint256[],address)",
+            "name": "NftDeposited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nft",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

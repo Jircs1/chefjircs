@@ -1,0 +1,32 @@
+{
+    "name": "LoanStart",
+    "abis": [
+        {
+            "hex_signature": "0xd1531219a20f2d83d987ee404dcc7e73580f8c88df13e9cd7568900c8aac2ac5",
+            "type": "event",
+            "signature": "LoanStart(uint256,address,uint40)",
+            "name": "LoanStart",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "stakeId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

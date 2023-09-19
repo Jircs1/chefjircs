@@ -1,0 +1,38 @@
+{
+    "name": "APYFeePaid",
+    "abis": [
+        {
+            "hex_signature": "0xe02f89a472c9f9be95b6093634de6f0967e703e84390d7e00d23e15ea6b99765",
+            "type": "event",
+            "signature": "APYFeePaid(address,uint256,uint256)",
+            "name": "APYFeePaid",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "underwriter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "shortTokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

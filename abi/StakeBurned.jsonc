@@ -1,0 +1,29 @@
+{
+    "name": "StakeBurned",
+    "abis": [
+        {
+            "@id": "0x659f33fc6677bebf3a9bf3101092792e31f35766d0358e54577bdd91a655f6a0",
+            "type": "event",
+            "signature": "StakeBurned(address,uint256)",
+            "name": "StakeBurned",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "relayer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountBurned",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

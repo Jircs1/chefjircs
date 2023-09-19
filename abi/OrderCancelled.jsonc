@@ -2,25 +2,62 @@
     "name": "OrderCancelled",
     "abis": [
         {
-            "@id": "OrderCancelled",
-            "hex_signature": "0x6bacc01dbe442496068f7d234edd811f1a5f833243e0aec824f86ab861f3c90d",
+            "@id": "0x6bacc01dbe442496068f7d234edd811f1a5f833243e0aec824f86ab861f3c90d",
             "type": "event",
             "signature": "OrderCancelled(bytes32,address,address)",
             "name": "OrderCancelled",
             "inputs": [
                 {
-                    "@type": "opensea:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "opensea:offerer",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "offerer",
                     "type": "address"
                 },
                 {
-                    "@type": "opensea:zone",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "zone",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x5152abf959f6564662358c2e52b702259b78bac5ee7842a0f01937e670efcc7d",
+            "type": "event",
+            "signature": "OrderCancelled(bytes32)",
+            "name": "OrderCancelled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "hash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xa6eb7cdc219e1518ced964e9a34e61d68a94e4f1569db3e84256ba981ba52753",
+            "type": "event",
+            "signature": "OrderCancelled(bytes32,address)",
+            "name": "OrderCancelled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "maker",
                     "type": "address"
                 }
             ],

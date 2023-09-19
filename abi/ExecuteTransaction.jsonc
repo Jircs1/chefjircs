@@ -1,0 +1,50 @@
+{
+    "name": "ExecuteTransaction",
+    "abis": [
+        {
+            "hex_signature": "0xa560e3198060a2f10670c1ec5b403077ea6ae93ca8de1c32b451dc1a943cd6e7",
+            "type": "event",
+            "signature": "ExecuteTransaction(bytes32,address,uint256,string,bytes,uint256)",
+            "name": "ExecuteTransaction",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "txHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "signature",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "eta",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

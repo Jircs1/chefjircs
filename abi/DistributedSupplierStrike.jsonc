@@ -1,0 +1,38 @@
+{
+    "name": "DistributedSupplierStrike",
+    "abis": [
+        {
+            "hex_signature": "0x926dc6130c8a69503e637fa5aed5b3ba65bd6d241957047e4bcc24485e0c48fb",
+            "type": "event",
+            "signature": "DistributedSupplierStrike(address,address,uint256,uint256)",
+            "name": "DistributedSupplierStrike",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract SToken",
+                    "name": "sToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "supplier",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "strikeDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "strikeSupplyIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

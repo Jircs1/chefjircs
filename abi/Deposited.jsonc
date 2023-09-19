@@ -2,24 +2,26 @@
     "name": "Deposited",
     "abis": [
         {
-            "@id": "Deposited_Data",
-            "hex_signature": "0x6e89d517057028190560dd200cf6bf792842861353d1173761dfa362e1c133f0",
+            "@id": "0x6e89d517057028190560dd200cf6bf792842861353d1173761dfa362e1c133f0",
             "type": "event",
             "signature": "Deposited(address,uint256,bytes)",
             "name": "Deposited",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "value",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "data",
                     "type": "bytes"
                 }
@@ -27,35 +29,34 @@
             "outputs": null
         },
         {
-            "@id": "Deposited_PID",
-            "hex_signature": "0x73a19dd210f1a7f902193214c0ee91dd35ee5b4d920cba8d519eca65a7b488ca",
+            "@id": "0x8752a472e571a816aea92eec8dae9baf628e840f4929fbcc2d155e6233ff68a7",
             "type": "event",
-            "signature": "Deposited(address,uint256,uint256)",
+            "signature": "Deposited(address,address,uint256)",
             "name": "Deposited",
             "inputs": [
                 {
-                    "@type": "transfer:from",
-                    "name": "user",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:lookupid",
-                    "name": "pid",
-                    "type": "uint256"
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "lookupid:$1",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "amount",
-                    "type": "uint256",
-                    "validationFailure": true
+                    "type": "uint256"
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "Deposited_Round",
-            "hex_signature": "0x73a19dd210f1a7f902193214c0ee91dd35ee5b4d920cba8d519eca65a7b488ca",
+            "@id": "0x73a19dd210f1a7f902193214c0ee91dd35ee5b4d920cba8d519eca65a7b488ca",
             "type": "event",
             "signature": "Deposited(address,uint256,uint256)",
             "name": "Deposited",
@@ -63,7 +64,59 @@
                 {
                     "@type": "transfer:from",
                     "name": "user",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "convex": {
+                            "is_erc20": 0.101266,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 13354,
+                            "sampleAddress": "0x3cf54f3a1969be9916dad548f3c084331c4450b5",
+                            "sampleTxHash": "0x0026af610c1dc63528225790a42605f1c1f9053e49b744ff60edbc5af83ddaa8",
+                            "found": 79,
+                            "samples": 100
+                        },
+                        "dharma": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 8837,
+                            "sampleAddress": "0xed10c9701567782ad53068fde4ba5d3e12c3ec5b",
+                            "sampleTxHash": "0x00189eedfc5bd242b815fc5a4092b615074379dcab21cfe1517d4c467f390400",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "opensea": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 8837,
+                            "sampleAddress": "0xed10c9701567782ad53068fde4ba5d3e12c3ec5b",
+                            "sampleTxHash": "0x00189eedfc5bd242b815fc5a4092b615074379dcab21cfe1517d4c467f390400",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "vectorized": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 8837,
+                            "sampleAddress": "0xed10c9701567782ad53068fde4ba5d3e12c3ec5b",
+                            "sampleTxHash": "0x00189eedfc5bd242b815fc5a4092b615074379dcab21cfe1517d4c467f390400",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "aura": {
+                            "is_erc20": 0.637681,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 4976,
+                            "sampleAddress": "0xcb611d0bd02a74c491b75d51d6ea5558f1887da3",
+                            "sampleTxHash": "0x01de959e182ce653e61a5fe32492207732d7e2658fc68a713443dc21992bcd28",
+                            "found": 69,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -77,6 +130,99 @@
                     "type": "uint256",
                     "@token": "$0",
                     "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x34194be2f096bdb2ad418add902a4da76d3d6f6d387d86d857f56c7711ecca70",
+            "type": "event",
+            "signature": "Deposited(uint256,uint256,address,address)",
+            "name": "Deposited",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "duration",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x2da466a7b24304f47e87fa2e1e5a81b9831ce54fec19055ce277ca2f39ba42c4",
+            "type": "event",
+            "signature": "Deposited(address,uint256)",
+            "name": "Deposited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xb32af138549e2a71563d1f2b1f7f0a139b3cdbc83d877d13603de1c3c5fd487a",
+            "type": "event",
+            "signature": "Deposited(address,address,uint256,bool)",
+            "name": "Deposited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "_wrapped",
+                    "type": "bool"
                 }
             ],
             "outputs": null

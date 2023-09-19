@@ -1,0 +1,44 @@
+{
+    "name": "TransactionBatchAppended",
+    "abis": [
+        {
+            "@id": "0x127186556e7be68c7e31263195225b4de02820707889540969f62c05cf73525e",
+            "type": "event",
+            "signature": "TransactionBatchAppended(uint256,bytes32,uint256,uint256,bytes)",
+            "name": "TransactionBatchAppended",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_batchIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "_batchRoot",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_batchSize",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_prevTotalElements",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_extraData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

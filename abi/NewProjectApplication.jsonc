@@ -1,0 +1,44 @@
+{
+    "name": "NewProjectApplication",
+    "abis": [
+        {
+            "hex_signature": "0xca792622046325e9cd4e24b490cb000ef72acea3a15284efc14ee709307a5e00",
+            "type": "event",
+            "signature": "NewProjectApplication(bytes32,uint256,(uint256,string))",
+            "name": "NewProjectApplication",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "projectID",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "applicationIndex",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "protocol",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "pointer",
+                            "type": "string"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct MetaPtr",
+                    "name": "applicationMetaPtr",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

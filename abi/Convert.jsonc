@@ -1,0 +1,35 @@
+{
+    "name": "Convert",
+    "abis": [
+        {
+            "@id": "0xccfaeb3043a96a967dc036ab72e078a9632af809671bc2a1ac30a8043645f89e",
+            "type": "event",
+            "signature": "Convert(address,address,uint256)",
+            "name": "Convert",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

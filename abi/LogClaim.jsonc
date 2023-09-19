@@ -1,0 +1,27 @@
+{
+    "name": "LogClaim",
+    "abis": [
+        {
+            "hex_signature": "0xfce6d5860f911bc27ece1365300332d2ddbe20c1adc46ee2eddd8f72c48053b2",
+            "type": "event",
+            "signature": "LogClaim(address,uint256)",
+            "name": "LogClaim",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "_user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

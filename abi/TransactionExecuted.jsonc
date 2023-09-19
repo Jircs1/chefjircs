@@ -1,0 +1,38 @@
+{
+    "name": "TransactionExecuted",
+    "abis": [
+        {
+            "@id": "0x7da4525a280527268ba2e963ee6c1b18f43c9507bcb1d2560f652ab17c76e90a",
+            "type": "event",
+            "signature": "TransactionExecuted(address,bool,bytes,bytes32)",
+            "name": "TransactionExecuted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "returnData",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "signedHash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

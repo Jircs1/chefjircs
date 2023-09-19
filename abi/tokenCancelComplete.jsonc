@@ -1,0 +1,32 @@
+{
+    "name": "tokenCancelComplete",
+    "abis": [
+        {
+            "hex_signature": "0x999d547d8d089cf86770a8d456089ad67809fe3a82bdcddbd9acafe0dfdd5b1f",
+            "type": "event",
+            "signature": "tokenCancelComplete(address,uint256,uint8)",
+            "name": "tokenCancelComplete",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "token_id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "enum StakeNFT.StakingStatus",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

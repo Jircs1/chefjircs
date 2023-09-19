@@ -1,0 +1,44 @@
+{
+    "name": "ReferralRewardPaid",
+    "abis": [
+        {
+            "@id": "0x84ff16114f882a54c4748006b5e4b0b7ac76bd911d135145a6d063fd76a38a40",
+            "type": "event",
+            "signature": "ReferralRewardPaid(address,address,address,address,uint256)",
+            "name": "ReferralRewardPaid",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOut",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenReward",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

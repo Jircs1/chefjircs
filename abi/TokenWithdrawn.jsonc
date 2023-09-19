@@ -1,0 +1,38 @@
+{
+    "name": "TokenWithdrawn",
+    "abis": [
+        {
+            "@id": "0xacd47105acf174819374e9d73c4c60bdaee9d4c7939b88a4cebb4dfe0500fbd8",
+            "type": "event",
+            "signature": "TokenWithdrawn(bytes32,address,uint256,uint256)",
+            "name": "TokenWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "by",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

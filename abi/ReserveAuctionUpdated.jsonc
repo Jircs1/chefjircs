@@ -1,0 +1,29 @@
+{
+    "name": "ReserveAuctionUpdated",
+    "abis": [
+        {
+            "@id": "0x0c0f2662914f0cd1e952db2aa425901cb00e7c1f507687d22cb04e836d55d9c7",
+            "type": "event",
+            "signature": "ReserveAuctionUpdated(uint256,uint256)",
+            "name": "ReserveAuctionUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reservePrice",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

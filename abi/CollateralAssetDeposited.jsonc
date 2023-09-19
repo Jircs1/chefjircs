@@ -1,0 +1,44 @@
+{
+    "name": "CollateralAssetDeposited",
+    "abis": [
+        {
+            "hex_signature": "0xbfab88b861f171b7db714f00e5966131253918d55ddba816c3eb94657d102390",
+            "type": "event",
+            "signature": "CollateralAssetDeposited(address,address,address,uint256,uint256)",
+            "name": "CollateralAssetDeposited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "accountOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "vaultId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

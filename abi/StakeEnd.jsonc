@@ -1,0 +1,101 @@
+{
+    "name": "StakeEnd",
+    "abis": [
+        {
+            "@id": "0x72d9c5a7ab13846e08d9c838f9e866a1bb4a66a2fd3ba3c9e7da3cf9e394dfd7",
+            "type": "event",
+            "signature": "StakeEnd(uint256,uint256,address,uint40)",
+            "name": "StakeEnd",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data1",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "stakerAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "stakeId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x1ca44014a5a36217a467507491f4bb0117097c066ab4108946fb579e63db90d9",
+            "type": "event",
+            "signature": "StakeEnd(address,uint40,uint40,uint128,uint128,uint128,uint128,uint16,bool)",
+            "name": "StakeEnd",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "stakerAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "stakeId",
+                    "type": "uint40"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint40",
+                    "name": "timestamp",
+                    "type": "uint40"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "stakedAmount",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "stakeShares",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "payout",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "penalty",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "servedDays",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "prevUnlocked",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

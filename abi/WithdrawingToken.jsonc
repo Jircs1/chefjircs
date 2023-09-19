@@ -1,0 +1,41 @@
+{
+    "name": "WithdrawingToken",
+    "abis": [
+        {
+            "@id": "0x91b4005f248ece53c5402f0c547c6a472d18676fbb0e2e15029d4869140cbe20",
+            "type": "event",
+            "signature": "WithdrawingToken(address,address,uint256,string)",
+            "name": "WithdrawingToken",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "proof",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "SpentERC20",
+    "abis": [
+        {
+            "@id": "0x3d1915a2cdcecdfffc5eb2a7994c069bad5d4aa96aca85667dedbe60bb80491c",
+            "type": "event",
+            "signature": "SpentERC20(address,address,uint256)",
+            "name": "SpentERC20",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "erc20contract",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "transfer",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

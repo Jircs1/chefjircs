@@ -2,62 +2,58 @@
     "name": "Withdraw",
     "abis": [
         {
-            "@id": "Withdraw_ClaimedBalance",
-            "hex_signature": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
+            "@id": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
             "type": "event",
             "signature": "Withdraw(address,uint256,uint256)",
             "name": "Withdraw",
             "inputs": [
                 {
-                    "@type": "transfer:to",
-                    "name": "account",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
                     "type": "address"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
-                    "@token": null,
-                    "name": "claimedAmount",
-                    "type": "uint256"
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
-                    "name": "balance",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
                     "type": "uint256"
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "Withdraw_ERC20",
-            "hex_signature": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb",
+            "@id": "0x884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a9424364",
             "type": "event",
-            "signature": "Withdraw(address,address,uint256)",
+            "signature": "Withdraw(address,uint256)",
             "name": "Withdraw",
             "inputs": [
                 {
-                    "@type": "erc20:token",
-                    "name": "token",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
-                    "name": "to",
-                    "type": "address"
-                },
-                {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "amount",
-                    "type": "uint256",
-                    "validationSuccess": true
+                    "type": "uint256"
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "Withdraw_Lending",
-            "hex_signature": "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7",
+            "@id": "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7",
             "type": "event",
             "signature": "Withdraw(address,address,address,uint256)",
             "name": "Withdraw",
@@ -65,17 +61,143 @@
                 {
                     "@type": "erc20:token",
                     "name": "reserve",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.94,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.1,
+                            "numLogs": 115668,
+                            "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                            "sampleTxHash": "0x0000559f4baea7f5a570b2745bd904f8852073f961c161988fafa3987f1b2e73",
+                            "found": 50,
+                            "samples": 50
+                        },
+                        "para.space": {
+                            "is_erc20": 0.928571,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 10084,
+                            "sampleAddress": "0xc5c9fb6223a989208df27dcee33fc59ff5c26fff",
+                            "sampleTxHash": "0x00106e9bef6d13e431436a80a5505f607a3ef85ac4db43165ca309cad35b72e5",
+                            "found": 14,
+                            "samples": 14
+                        },
+                        "lendingpool": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 4317,
+                            "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                            "sampleTxHash": "0x0028ebb58ae1292576833c19ea89415130302de978ceae30e569b333d319411c",
+                            "found": 14,
+                            "samples": 14
+                        },
+                        "energon": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 38,
+                            "sampleAddress": "0xa65ea719d5a4aa03c685761827a1b7c0b18b5ad0",
+                            "sampleTxHash": "0x02a10cd6ddea4cb1e9ec62169b524076eb96597ef8ff0ac05c73e67500ea4470",
+                            "found": 1,
+                            "samples": 1
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:to",
                     "name": "user",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.0759494,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.0253165,
+                            "numLogs": 64185,
+                            "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                            "sampleTxHash": "0x0000edbdb49c712198e1d25d7260fc321c97001814b8e20ffe60b32735133302",
+                            "found": 79,
+                            "samples": 100
+                        },
+                        "lendingpool": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2807,
+                            "sampleAddress": "0x31d3243cfb54b34fc9c73e1cb1137124bd6b13e1",
+                            "sampleTxHash": "0x00193f6952d21ab431239bac778400e23e8ece3ff21259b0f4df20b2b3a054b9",
+                            "found": 3,
+                            "samples": 100
+                        },
+                        "para.space": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2420,
+                            "sampleAddress": "0x92d6c316cde81f6a179a60ee4a3ea8a76d40508a",
+                            "sampleTxHash": "0x004cafabc87385d8bdb7858688154b7efa198ace6422106aa7cb4ee0943c30f0",
+                            "found": 3,
+                            "samples": 100
+                        },
+                        "energon": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 38,
+                            "sampleAddress": "0x2f2e8c0b1c8546bf94c27630476fac165450e34e",
+                            "sampleTxHash": "0x0c8ac02a8d2907778a8a544acd6a683d36df88267042a7ffc7517cc847cf5613",
+                            "found": 0,
+                            "samples": 21
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:to",
                     "name": "to",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.0246914,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 63310,
+                            "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                            "sampleTxHash": "0x0000edbdb49c712198e1d25d7260fc321c97001814b8e20ffe60b32735133302",
+                            "found": 81,
+                            "samples": 100
+                        },
+                        "lendingpool": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2806,
+                            "sampleAddress": "0x31d3243cfb54b34fc9c73e1cb1137124bd6b13e1",
+                            "sampleTxHash": "0x00193f6952d21ab431239bac778400e23e8ece3ff21259b0f4df20b2b3a054b9",
+                            "found": 3,
+                            "samples": 100
+                        },
+                        "para.space": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2405,
+                            "sampleAddress": "0x92d6c316cde81f6a179a60ee4a3ea8a76d40508a",
+                            "sampleTxHash": "0x004cafabc87385d8bdb7858688154b7efa198ace6422106aa7cb4ee0943c30f0",
+                            "found": 3,
+                            "samples": 100
+                        },
+                        "energon": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.5,
+                            "numLogs": 38,
+                            "sampleAddress": "0x7a7923281b5e56c41b11393689be1d74e79098c0",
+                            "sampleTxHash": "0x06a7dd40424200411a55b63b6fe271b29024136ab213f7203ed1be5ad819b4e4",
+                            "found": 4,
+                            "samples": 4
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -88,100 +210,166 @@
             "outputs": null
         },
         {
-            "@id": "Withdraw_PID",
-            "hex_signature": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
+            "@id": "0x33be7eabd8ed368ca1aa14ce2ad1e90a0c9bf21edbb3820d5591546e4eb84157",
             "type": "event",
-            "signature": "Withdraw(address,uint256,uint256)",
+            "signature": "Withdraw(address,address,uint256,uint256,bytes)",
             "name": "Withdraw",
             "inputs": [
                 {
-                    "@type": "transfer:to",
-                    "name": "user",
-                    "type": "address"
-                },
-                {
-                    "@type": "erc20:lookupid",
-                    "name": "pid",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "lookupid:$1",
-                    "name": "amount",
-                    "type": "uint256"
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "Withdraw_T",
-            "hex_signature": "0x884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a9424364",
-            "type": "event",
-            "signature": "Withdraw(address,uint256)",
-            "name": "Withdraw",
-            "inputs": [
-                {
-                    "@type": "transfer:to",
-                    "name": "_depositor",
-                    "type": "address"
-                },
-                {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
-                    "name": "_amount",
-                    "type": "uint256"
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "Withdraw_US",
-            "hex_signature": "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7",
-            "type": "event",
-            "signature": "Withdraw(address,address,address,uint256)",
-            "name": "Withdraw",
-            "inputs": [
-                {
-                    "@type": "transfer:to",
-                    "name": "user",
-                    "type": "address"
-                },
-                {
-                    "@type": "transfer:to",
-                    "name": "to",
-                    "type": "address"
-                },
-                {
-                    "@type": "erc20:token",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "token",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "withdrawn",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
                     "@token": "$0",
-                    "name": "amount",
-                    "type": "uint256",
                     "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "Withdraw_UT",
-            "hex_signature": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb",
+            "@id": "0x9b1bfa7fa9ee420a16e124f794c35ac9f90472acc99140eb2f6447c714cad8eb",
             "type": "event",
             "signature": "Withdraw(address,address,uint256)",
             "name": "Withdraw",
             "inputs": [
                 {
-                    "@type": "transfer:to",
-                    "name": "user",
-                    "type": "address"
+                    "@type": "erc20:token",
+                    "name": "token",
+                    "type": "address",
+                    "features": {
+                        "compound": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 3731,
+                            "sampleAddress": "0x49707808908f0c2450b3f2672e012edbf49ed808",
+                            "sampleTxHash": "0x00263c3dbcfd7d3c6a234c5b8c0c0f034e854ea75de401bf2367304b37b6ab19",
+                            "found": 13,
+                            "samples": 100
+                        },
+                        "dharma": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 330,
+                            "sampleAddress": "0xb93b1460f366eb4094a3d081298e8611abe73e07",
+                            "sampleTxHash": "0x03f0bb8e6af9aa6d6c91f9d4444618476b10da7ac8eeb22dd3af33da1d9b3f64",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "opensea": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 330,
+                            "sampleAddress": "0xb93b1460f366eb4094a3d081298e8611abe73e07",
+                            "sampleTxHash": "0x03f0bb8e6af9aa6d6c91f9d4444618476b10da7ac8eeb22dd3af33da1d9b3f64",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "vectorized": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 330,
+                            "sampleAddress": "0xb93b1460f366eb4094a3d081298e8611abe73e07",
+                            "sampleTxHash": "0x03f0bb8e6af9aa6d6c91f9d4444618476b10da7ac8eeb22dd3af33da1d9b3f64",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "alchemix": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 216,
+                            "sampleAddress": "0x3b15cec2d922ab0ef74688bcc1056461049f89cb",
+                            "sampleTxHash": "0x010711e14a047f155637cb325f884d0b1a1970b9d79f9be7ada133f0d7d8fed9",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:to",
                     "name": "to",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "compound": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 4787,
+                            "sampleAddress": "0xa397a8c2086c554b531c02e29f3291c9704b00c7",
+                            "sampleTxHash": "0x00172bac3ef63f40feb12e7340fec1f93b0143db82393da94205fc905333df49",
+                            "found": 14,
+                            "samples": 100
+                        },
+                        "dharma": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 330,
+                            "sampleAddress": "0xb93b1460f366eb4094a3d081298e8611abe73e07",
+                            "sampleTxHash": "0x03f0bb8e6af9aa6d6c91f9d4444618476b10da7ac8eeb22dd3af33da1d9b3f64",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "opensea": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 330,
+                            "sampleAddress": "0xb93b1460f366eb4094a3d081298e8611abe73e07",
+                            "sampleTxHash": "0x03f0bb8e6af9aa6d6c91f9d4444618476b10da7ac8eeb22dd3af33da1d9b3f64",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "vectorized": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 330,
+                            "sampleAddress": "0xb93b1460f366eb4094a3d081298e8611abe73e07",
+                            "sampleTxHash": "0x03f0bb8e6af9aa6d6c91f9d4444618476b10da7ac8eeb22dd3af33da1d9b3f64",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "alchemix": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 216,
+                            "sampleAddress": "0x3b15cec2d922ab0ef74688bcc1056461049f89cb",
+                            "sampleTxHash": "0x010711e14a047f155637cb325f884d0b1a1970b9d79f9be7ada133f0d7d8fed9",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -189,6 +377,237 @@
                     "name": "amount",
                     "type": "uint256",
                     "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x56c54ba9bd38d8fd62012e42c7ee564519b09763c426d331b3661b537ead19b2",
+            "type": "event",
+            "signature": "Withdraw(address,uint256,address)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xfbde797d201c681b91056529119e0b02407c7bb96a4a2c75c01fc9667232c8db",
+            "type": "event",
+            "signature": "Withdraw(address,address,address,uint256,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "assets",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "shares",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xf341246adaac6f497bc2a656f546ab9e182111d630394f0c57c710a59a2cb567",
+            "type": "event",
+            "signature": "Withdraw(address,address,uint256,uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xa866edf1861d39a9973d7892f3869e1bb4b76bc00d216872c1dd2bc547f2da2e",
+            "type": "event",
+            "signature": "Withdraw(string,bytes,bytes,bytes,bytes32[],uint256[],bytes)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "fromChain",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "fromAddr",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "toAddr",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "token",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32[]",
+                    "name": "bytes32s",
+                    "type": "bytes32[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "uints",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x5b6b431d4476a211bb7d41c20d1aab9ae2321deee0d20be3d9fc9b1093fa6e3d",
+            "type": "event",
+            "signature": "Withdraw(uint256)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x8166bf25f8a2b7ed3c85049207da4358d16edbed977d23fa2ee6f0dde3ec2132",
+            "type": "event",
+            "signature": "Withdraw(address,uint256,uint256,address)",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewardAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x67e9df8b3c7743c9f1b625ba4f2b4e601206dbd46ed5c33c85a1242e4d23a2d1",
+            "type": "event",
+            "signature": "Withdraw(address,uint256[])",
+            "name": "Withdraw",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "addr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]"
                 }
             ],
             "outputs": null

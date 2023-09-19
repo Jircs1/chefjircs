@@ -1,0 +1,35 @@
+{
+    "name": "ProposalExecuted",
+    "abis": [
+        {
+            "hex_signature": "0xc98fbf8f20b11b050a9541d12aee1c11fcd31e8e42975cc885fb3d33a6accc82",
+            "type": "event",
+            "signature": "ProposalExecuted(uint256,address,bytes)",
+            "name": "ProposalExecuted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "proposalId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "executor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "nextProgressData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

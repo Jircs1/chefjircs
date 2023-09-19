@@ -1,0 +1,50 @@
+{
+    "name": "LogExecSuccess",
+    "abis": [
+        {
+            "@id": "0x66c4011e59db1d425e14edc51069e4f5ec3d042d2a254511a8dbc6e3996c9140",
+            "type": "event",
+            "signature": "LogExecSuccess(address,address,address,uint256,uint256,uint256)",
+            "name": "LogExecSuccess",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "executor",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "service",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "creditToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "credit",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasDebitInCreditToken",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasDebitInNativeToken",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

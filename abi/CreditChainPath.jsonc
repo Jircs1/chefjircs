@@ -2,31 +2,35 @@
     "name": "CreditChainPath",
     "abis": [
         {
-            "@id": "CreditChainPath",
-            "hex_signature": "0xdbdd25248751feb2f3b66721dfdd11662a68bc155af3771e661aabec92fba814",
+            "@id": "0xdbdd25248751feb2f3b66721dfdd11662a68bc155af3771e661aabec92fba814",
             "type": "event",
             "signature": "CreditChainPath(uint16,uint256,uint256,uint256)",
             "name": "CreditChainPath",
             "inputs": [
                 {
-                    "@type": "stargate:chainID",
+                    "indexed": false,
+                    "internalType": "uint16",
                     "name": "chainId",
                     "type": "uint16"
                 },
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "srcPoolId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amountSD",
-                    "type": "uint256"
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "idealBalance",
                     "type": "uint256"
                 }

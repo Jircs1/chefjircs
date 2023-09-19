@@ -1,0 +1,26 @@
+{
+    "name": "CollateralUpdated",
+    "abis": [
+        {
+            "hex_signature": "0xdf43c689abc8d83e86b74634bbe0ba590e2ecb34f3f432a612c6edef3e532cbd",
+            "type": "event",
+            "signature": "CollateralUpdated(address,uint256)",
+            "name": "CollateralUpdated",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "contract IProduct",
+                    "name": "product",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed18",
+                    "name": "targetCollateral",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

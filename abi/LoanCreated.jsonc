@@ -1,0 +1,44 @@
+{
+    "name": "LoanCreated",
+    "abis": [
+        {
+            "hex_signature": "0x096fdcc5b68ebd426766200953c7038e72c0918a54ed2336b70c9cbbe7f9081e",
+            "type": "event",
+            "signature": "LoanCreated(uint256,uint256,uint256,uint256,uint216)",
+            "name": "LoanCreated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "loanId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nft",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "interest",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "startTime",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint216",
+                    "name": "borrowed",
+                    "type": "uint216"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

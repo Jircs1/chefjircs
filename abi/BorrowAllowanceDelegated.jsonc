@@ -2,8 +2,7 @@
     "name": "BorrowAllowanceDelegated",
     "abis": [
         {
-            "@id": "BorrowAllowanceDelegated",
-            "hex_signature": "0xda919360433220e13b51e8c211e490d148e61a3bd53de8c097194e458b97f3e1",
+            "@id": "0xda919360433220e13b51e8c211e490d148e61a3bd53de8c097194e458b97f3e1",
             "type": "event",
             "signature": "BorrowAllowanceDelegated(address,address,address,uint256)",
             "name": "BorrowAllowanceDelegated",
@@ -11,17 +10,143 @@
                 {
                     "@type": "transfer:from",
                     "name": "fromUser",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "lendingpool": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 7640,
+                            "sampleAddress": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+                            "sampleTxHash": "0x07e8eea355f7338200a93d9765a10c2c83fa407b510f231a1ebb5737d30d5b68",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "bend": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 6608,
+                            "sampleAddress": "0xed2ab4948ba6a909a7751dec4f34f303eb8c7236",
+                            "sampleTxHash": "0x002755e79e62a90140d3e84fedacec11ef0d444b732da1a8304a9624e8a40e53",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "aave": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 3196,
+                            "sampleAddress": "0xc37704a457b1ee87eb657cae584a34961e86acac",
+                            "sampleTxHash": "0x00114656ac03459585231477d0c9a3e7d62a5eb3e50e451769468bf2e35a71eb",
+                            "found": 2,
+                            "samples": 100
+                        },
+                        "para.space": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 742,
+                            "sampleAddress": "0x35bf94c72cd19da0f6875a6ebd6215f2d12ccd59",
+                            "sampleTxHash": "0x0081485554f9af595515fffb2da98de9ec1b2a62098f721885216683927bf12b",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:to",
                     "name": "toUser",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.0384615,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 15771,
+                            "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                            "sampleTxHash": "0x00028a3158e4d03413a6e3836d4542e77a637eb30e3ed3b66a94ee0da8e4695c",
+                            "found": 26,
+                            "samples": 63
+                        },
+                        "bend": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 14084,
+                            "sampleAddress": "0x3b968d2d299b895a5fcf3bba7a64ad0f566e6f88",
+                            "sampleTxHash": "0x0003129f5e41640cd11ec49a3b7596eff5fb8575bf03816fe90996934942a032",
+                            "found": 13,
+                            "samples": 30
+                        },
+                        "lendingpool": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 9364,
+                            "sampleAddress": "0x38972f4bc20dbf2eb2a4cb0593414e7f1bc73c2d",
+                            "sampleTxHash": "0x005ba73ba177e506060a6121c5f226ffc12ef4bd2b308222a7fa791beb7f9c6a",
+                            "found": 6,
+                            "samples": 6
+                        },
+                        "para.space": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1866,
+                            "sampleAddress": "0x92d6c316cde81f6a179a60ee4a3ea8a76d40508a",
+                            "sampleTxHash": "0x00173ab6e047f4394b0a208cee83550ac9380b5645aae28acb351ec985b56b16",
+                            "found": 2,
+                            "samples": 10
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:token",
                     "name": "asset",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "aave": {
+                            "is_erc20": 0.965517,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 15771,
+                            "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                            "sampleTxHash": "0x00028a3158e4d03413a6e3836d4542e77a637eb30e3ed3b66a94ee0da8e4695c",
+                            "found": 29,
+                            "samples": 29
+                        },
+                        "bend": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 14084,
+                            "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                            "sampleTxHash": "0x0000811a2ef167532a365b78374f9068ce321a913ba8cf417e33f0ad4ab87014",
+                            "found": 2,
+                            "samples": 2
+                        },
+                        "lendingpool": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 9364,
+                            "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                            "sampleTxHash": "0x01733cba6a5a236d6c9a983956203a745a4b91c52e66306a615959a8ac55d1e3",
+                            "found": 13,
+                            "samples": 13
+                        },
+                        "para.space": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1866,
+                            "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                            "sampleTxHash": "0x00173ab6e047f4394b0a208cee83550ac9380b5645aae28acb351ec985b56b16",
+                            "found": 1,
+                            "samples": 1
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

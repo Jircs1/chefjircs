@@ -1,0 +1,80 @@
+{
+    "name": "MadeFullRequest",
+    "abis": [
+        {
+            "@id": "0x3a52c462346de2e9436a3868970892956828a11b9c43da1ed43740b12e1125ae",
+            "type": "event",
+            "signature": "MadeFullRequest(address,bytes32,uint256,uint256,address,bytes32,address,address,address,bytes4,bytes)",
+            "name": "MadeFullRequest",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "airnode",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "requestId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "requesterRequestCount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "requester",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "endpointId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sponsor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sponsorWallet",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "fulfillAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes4",
+                    "name": "fulfillFunctionId",
+                    "type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "parameters",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

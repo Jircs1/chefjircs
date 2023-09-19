@@ -1,0 +1,32 @@
+{
+    "name": "MintMessageReceived",
+    "abis": [
+        {
+            "hex_signature": "0x9664398b763718216b638e1979dee262872db5d2ec052195db9dc1ad029b9748",
+            "type": "event",
+            "signature": "MintMessageReceived(uint16,address,uint256)",
+            "name": "MintMessageReceived",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

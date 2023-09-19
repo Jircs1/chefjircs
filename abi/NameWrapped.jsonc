@@ -2,34 +2,38 @@
     "name": "NameWrapped",
     "abis": [
         {
-            "@id": "NameWrapped",
-            "hex_signature": "0x8ce7013e8abebc55c3890a68f5a27c67c3f7efa64e584de5fb22363c606fd340",
+            "@id": "0x8ce7013e8abebc55c3890a68f5a27c67c3f7efa64e584de5fb22363c606fd340",
             "type": "event",
             "signature": "NameWrapped(bytes32,bytes,address,uint32,uint64)",
             "name": "NameWrapped",
             "inputs": [
                 {
-                    "@type": "ens:node",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "node",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "ens:name",
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "name",
                     "type": "bytes"
                 },
                 {
-                    "@type": "ens:owner",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "owner",
                     "type": "address"
                 },
                 {
-                    "@type": "ens:fuses",
+                    "indexed": false,
+                    "internalType": "uint32",
                     "name": "fuses",
                     "type": "uint32"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
+                    "internalType": "uint64",
                     "name": "expiry",
                     "type": "uint64"
                 }

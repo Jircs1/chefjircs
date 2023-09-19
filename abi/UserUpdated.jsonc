@@ -1,0 +1,32 @@
+{
+    "name": "UserUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x97ce9d7086176d6da45e4e7999788176e2629a7591ffe505b0c1b13fe8052cc6",
+            "type": "event",
+            "signature": "UserUpdated(address,uint256,uint256)",
+            "name": "UserUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "previousBalance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newBalance",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

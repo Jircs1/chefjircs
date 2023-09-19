@@ -2,67 +2,74 @@
     "name": "LimitOrderFilled",
     "abis": [
         {
-            "@id": "LimitOrderFilled",
-            "hex_signature": "0xab614d2b738543c0ea21f56347cf696a3a0c42a7cbec3212a5ca22a4dcff2124",
+            "@id": "0xab614d2b738543c0ea21f56347cf696a3a0c42a7cbec3212a5ca22a4dcff2124",
             "type": "event",
             "signature": "LimitOrderFilled(bytes32,address,address,address,address,address,uint128,uint128,uint128,uint256,bytes32)",
             "name": "LimitOrderFilled",
             "inputs": [
                 {
-                    "@type": "0x:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "dex:maker",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "maker",
                     "type": "address"
                 },
                 {
-                    "@type": "dex:taker",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "taker",
                     "type": "address"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "feeRecipient",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "makerToken",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "takerToken",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$5",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "takerTokenFilledAmount",
                     "type": "uint128"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$4",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "makerTokenFilledAmount",
                     "type": "uint128"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$5",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "takerTokenFeeFilledAmount",
                     "type": "uint128"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "protocolFeePaid",
                     "type": "uint256"
                 },
                 {
-                    "@type": "0x:pool",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "pool",
                     "type": "bytes32"
                 }

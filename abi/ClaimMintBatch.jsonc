@@ -1,0 +1,32 @@
+{
+    "name": "ClaimMintBatch",
+    "abis": [
+        {
+            "@id": "0x74f5d3254dfa39a7b1217a27d5d9b3e061eafe11720eca1cf499da2dc1eb1259",
+            "type": "event",
+            "signature": "ClaimMintBatch(address,uint256,uint16)",
+            "name": "ClaimMintBatch",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "creatorContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "claimIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "mintCount",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "LiquidityRemoved",
+    "abis": [
+        {
+            "@id": "0xcda1185f28599e6bd14ab8a68b3c30a11e1dce4256b5e67e94dd3fd846a6c589",
+            "type": "event",
+            "signature": "LiquidityRemoved(address,uint256,uint256,address)",
+            "name": "LiquidityRemoved",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lpTokensBurnt",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "liquidityProvider",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

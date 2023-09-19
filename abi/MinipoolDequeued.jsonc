@@ -1,0 +1,32 @@
+{
+    "name": "MinipoolDequeued",
+    "abis": [
+        {
+            "@id": "0xc7d9de0aecd8d5829d96dfdb22c26b4625da22c5098c557e8b034a58015f189a",
+            "type": "event",
+            "signature": "MinipoolDequeued(address,bytes32,uint256)",
+            "name": "MinipoolDequeued",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "minipool",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "queueId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

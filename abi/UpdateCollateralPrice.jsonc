@@ -1,0 +1,38 @@
+{
+    "name": "UpdateCollateralPrice",
+    "abis": [
+        {
+            "hex_signature": "0x37f13f22a2174c79144ffda4c6b7ad416951d5a41171bec961f53ef4c049014e",
+            "type": "event",
+            "signature": "UpdateCollateralPrice(bytes32,uint256,uint256,uint256)",
+            "name": "UpdateCollateralPrice",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "collateralType",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "priceFeedValue",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "safetyPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "liquidationPrice",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

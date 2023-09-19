@@ -2,20 +2,20 @@
     "name": "OrderFilledRFQ",
     "abis": [
         {
-            "@id": "OrderFilledRFQ",
-            "hex_signature": "0xc3b639f02b125bfa160e50739b8c44eb2d1b6908e2b6d5925c6d770f2ca78127",
+            "@id": "0xc3b639f02b125bfa160e50739b8c44eb2d1b6908e2b6d5925c6d770f2ca78127",
             "type": "event",
             "signature": "OrderFilledRFQ(bytes32,uint256)",
             "name": "OrderFilledRFQ",
             "inputs": [
                 {
-                    "@type": "1inch:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "makingAmount",
                     "type": "uint256"
                 }

@@ -1,0 +1,65 @@
+{
+    "name": "ExecutedRelayerRefundRoot",
+    "abis": [
+        {
+            "hex_signature": "0xf8bd640004bcec1b89657020f561d0b070cbdf662d0b158db9dccb0a8301bfab",
+            "type": "event",
+            "signature": "ExecutedRelayerRefundRoot(uint256,uint256,uint256[],uint32,uint32,address,address[],address)",
+            "name": "ExecutedRelayerRefundRoot",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountToReturn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "refundAmounts",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "rootBundleId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "leafId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "l2TokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "refundAddresses",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "name": "LiFiTransferCompleted",
+    "abis": [
+        {
+            "hex_signature": "0xb8c86983f929c6b770461983d1bbde1870408120f07123e9c12d49f35a0b4c4b",
+            "type": "event",
+            "signature": "LiFiTransferCompleted(bytes32,address,address,uint256,uint256)",
+            "name": "LiFiTransferCompleted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "transactionId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receivingAssetId",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

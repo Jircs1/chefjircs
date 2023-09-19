@@ -1,0 +1,32 @@
+{
+    "name": "ERC1155BondTokenCreated",
+    "abis": [
+        {
+            "hex_signature": "0xd5a20d99fad8d4fec2eae3eb7d21c0bebeaecce7cf87b698ddba05071e7bde27",
+            "type": "event",
+            "signature": "ERC1155BondTokenCreated(uint256,address,uint48)",
+            "name": "ERC1155BondTokenCreated",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract ERC20",
+                    "name": "underlying",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint48",
+                    "name": "expiry",
+                    "type": "uint48"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

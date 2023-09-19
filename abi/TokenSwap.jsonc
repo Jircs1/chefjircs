@@ -2,37 +2,41 @@
     "name": "TokenSwap",
     "abis": [
         {
-            "@id": "TokenSwap",
-            "hex_signature": "0xc6c1e0630dbe9130cc068028486c0d118ddcea348550819defd5cb8c257f8a38",
+            "@id": "0xc6c1e0630dbe9130cc068028486c0d118ddcea348550819defd5cb8c257f8a38",
             "type": "event",
             "signature": "TokenSwap(address,uint256,uint256,uint128,uint128)",
             "name": "TokenSwap",
             "inputs": [
                 {
-                    "@type": "dex:trader",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "buyer",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "lookupid:$3",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "tokensSold",
                     "type": "uint256",
-                    "validationFailure": true
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "lookupid:$4",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "tokensBought",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "soldId",
                     "type": "uint128"
                 },
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "boughtId",
                     "type": "uint128"
                 }

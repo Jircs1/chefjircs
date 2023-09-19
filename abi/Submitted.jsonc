@@ -2,8 +2,7 @@
     "name": "Submitted",
     "abis": [
         {
-            "@id": "Submitted",
-            "hex_signature": "0x96a25c8ce0baabc1fdefd93e9ed25d8e092a3332f3aa9a41722b5697231d1d1a",
+            "@id": "0x96a25c8ce0baabc1fdefd93e9ed25d8e092a3332f3aa9a41722b5697231d1d1a",
             "type": "event",
             "signature": "Submitted(address,uint256,address)",
             "name": "Submitted",
@@ -11,7 +10,19 @@
                 {
                     "@type": "transfer:from",
                     "name": "sender",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "lido": {
+                            "is_erc20": 0.102564,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 46734,
+                            "sampleAddress": "0x67054183db455d74839d1ea11f7e497350f64c71",
+                            "sampleTxHash": "0x000328f54225ad277354f26a14e1abbd24b60e6cc0cfb0f40415f6d824a1cacd",
+                            "found": 39,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -23,7 +34,19 @@
                 {
                     "@type": "lido:referral",
                     "name": "referral",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "lido": {
+                            "is_erc20": 0.0434783,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 212054,
+                            "sampleAddress": "0x0000000000000000000000000000000000000000",
+                            "sampleTxHash": "0x000174c288c2cf38885073b68e4a3e5c25019894bc6d798c1f8b5cbdab6a4bef",
+                            "found": 23,
+                            "samples": 100
+                        }
+                    }
                 }
             ],
             "outputs": null

@@ -1,0 +1,41 @@
+{
+    "name": "LogConvertedDeposit",
+    "abis": [
+        {
+            "@id": "0x3e0a29a2dbb5fca584b437ca620962b0f4899e3cfc0ac2cd4fd4e8e5e874faf5",
+            "type": "event",
+            "signature": "LogConvertedDeposit(address,address,uint256,uint256)",
+            "name": "LogConvertedDeposit",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenFrom",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenFromAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "usdcAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

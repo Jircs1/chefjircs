@@ -2,14 +2,14 @@
     "name": "Packet",
     "abis": [
         {
-            "@id": "Packet",
-            "hex_signature": "0xe9bded5f24a4168e4f3bf44e00298c993b22376aad8c58c7dda9718a54cbea82",
+            "@id": "0xe9bded5f24a4168e4f3bf44e00298c993b22376aad8c58c7dda9718a54cbea82",
             "type": "event",
             "signature": "Packet(bytes)",
             "name": "Packet",
             "inputs": [
                 {
-                    "@type": "layerzero:payload",
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "payload",
                     "type": "bytes"
                 }

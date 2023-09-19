@@ -1,0 +1,38 @@
+{
+    "name": "CollectVaultFees",
+    "abis": [
+        {
+            "hex_signature": "0x0a242f7ecaf711036ca770774ceffae28e60ef042ac113ddd187f2631db0c006",
+            "type": "event",
+            "signature": "CollectVaultFees(uint256,uint256,uint256,address)",
+            "name": "CollectVaultFees",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "performanceFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "vaultFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "round",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "feeRecipient",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,8 +2,7 @@
     "name": "Sale",
     "abis": [
         {
-            "@id": "Sale",
-            "hex_signature": "0x4e26b0356a15833a75d497ecc40ebbb716b99466ed0dba9454f1fff451e25a90",
+            "@id": "0x4e26b0356a15833a75d497ecc40ebbb716b99466ed0dba9454f1fff451e25a90",
             "type": "event",
             "signature": "Sale(address,uint256,uint256,uint256)",
             "name": "Sale",
@@ -11,7 +10,29 @@
                 {
                     "@type": "transfer:to",
                     "name": "to",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "zora": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 8125,
+                            "sampleAddress": "0x17cd072cbd45031efc21da538c783e0ed3b25dcc",
+                            "sampleTxHash": "0x00b9de740625da815dcc9103bb00361312a8e48eb647fea3088bf953e92ebf3c",
+                            "found": 4,
+                            "samples": 100
+                        },
+                        "holograph": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 383,
+                            "sampleAddress": "0xd80f0d03579d1cae085ba34c3e909c33e710a52d",
+                            "sampleTxHash": "0x39663a51eb6a4eceeccf9bb72a8dfcdf2f2cc31354509ecb9f0a57165eaff913",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

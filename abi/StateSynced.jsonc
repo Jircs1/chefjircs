@@ -2,24 +2,26 @@
     "name": "StateSynced",
     "abis": [
         {
-            "@id": "StateSynced",
-            "hex_signature": "0x103fed9db65eac19c4d870f49ab7520fe03b99f1838e5996caf47e9e43308392",
+            "@id": "0x103fed9db65eac19c4d870f49ab7520fe03b99f1838e5996caf47e9e43308392",
             "type": "event",
             "signature": "StateSynced(uint256,address,bytes)",
             "name": "StateSynced",
             "inputs": [
                 {
-                    "@type": "polygon:id",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "id",
                     "type": "uint256"
                 },
                 {
-                    "@type": "polygon:stateSync_contractAddress",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "contractAddress",
                     "type": "address"
                 },
                 {
-                    "@type": "polygon:stateSync_data",
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "data",
                     "type": "bytes"
                 }

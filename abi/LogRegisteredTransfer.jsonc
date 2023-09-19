@@ -2,8 +2,7 @@
     "name": "LogRegisteredTransfer",
     "abis": [
         {
-            "@id": "LogRegisteredTransfer",
-            "hex_signature": "0x36c96ccc320eab9b6da1de6cc1e8ebc52a51cb114710b9c7db204cdad3067ce1",
+            "@id": "0x36c96ccc320eab9b6da1de6cc1e8ebc52a51cb114710b9c7db204cdad3067ce1",
             "type": "event",
             "signature": "LogRegisteredTransfer(address,address,uint256,uint256)",
             "name": "LogRegisteredTransfer",
@@ -11,12 +10,76 @@
                 {
                     "@type": "transfer:to",
                     "name": "recipient",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "sorare": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 13065,
+                            "sampleAddress": "0x33d7897c9055dffd75ca6fcb8eeea5694f3de936",
+                            "sampleTxHash": "0x00026df0db39751b24502d4f8cbc70d350b67a806f1e917d2864ea978385b3a8",
+                            "found": 1,
+                            "samples": 100
+                        },
+                        "dydx": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 5083,
+                            "sampleAddress": "0xd120cf3e0408dd794f856e8ca2a23e3396a9b687",
+                            "sampleTxHash": "0x00a09b1b45115702b5a8576ee1b51c1fb0298e18f1d01071006d0ca138ca1662",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "POLY": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1330,
+                            "sampleAddress": "0x0d1ea5b02981c5ceacd0954bdf6f3fb17b0c8170",
+                            "sampleTxHash": "0x000ae81ba93fa63b1dbd465a3ae2e467a57345727b6560415b611bbbb4e4496a",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:token",
                     "name": "token",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "sorare": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 174122,
+                            "sampleAddress": "0x0000000000000000000000000000000000000000",
+                            "sampleTxHash": "0x0000021f22bb06c542ae09378998c302fd1d97f6c875f10b0195928100fa3b63",
+                            "found": 0,
+                            "samples": 1
+                        },
+                        "dydx": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 50914,
+                            "sampleAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                            "sampleTxHash": "0x0000ec47eaf47c3884bcd7cb6582cf386272cffe263165a5b0fbc0f13cc55412",
+                            "found": 1,
+                            "samples": 1
+                        },
+                        "POLY": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 17229,
+                            "sampleAddress": "0x0000000000000000000000000000000000000000",
+                            "sampleTxHash": "0x000211a1b015ad975d7fe42404885ef6f34d5f0811d80a45bbf3e5178fa44948",
+                            "found": 20,
+                            "samples": 21
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

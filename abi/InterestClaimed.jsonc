@@ -1,0 +1,29 @@
+{
+    "name": "InterestClaimed",
+    "abis": [
+        {
+            "@id": "0xf9984c8173c4b4ff9cc454f76ed19c053f4490ccb224fd9ddffeb4ef4bea3530",
+            "type": "event",
+            "signature": "InterestClaimed(address,uint256)",
+            "name": "InterestClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "initerestAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

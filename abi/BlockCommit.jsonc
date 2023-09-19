@@ -2,25 +2,43 @@
     "name": "BlockCommit",
     "abis": [
         {
-            "@id": "BlockCommit",
-            "hex_signature": "0x8f2916b2f2d78cc5890ead36c06c0f6d5d112c7e103589947e8e2f0d6eddb763",
+            "@id": "0x8f2916b2f2d78cc5890ead36c06c0f6d5d112c7e103589947e8e2f0d6eddb763",
             "type": "event",
             "signature": "BlockCommit(uint256,bytes32,bytes32)",
             "name": "BlockCommit",
             "inputs": [
                 {
-                    "@type": "evm:blockNumber",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "blockNumber",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:blockHash",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "blockHash",
                     "type": "bytes32"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "commitment",
                     "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x81a92942d0f9c33b897a438384c9c3d88be397776138efa3ba1a4fc8b6268424",
+            "type": "event",
+            "signature": "BlockCommit(uint32)",
+            "name": "BlockCommit",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "blockNumber",
+                    "type": "uint32"
                 }
             ],
             "outputs": null

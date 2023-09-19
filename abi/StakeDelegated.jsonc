@@ -1,0 +1,44 @@
+{
+    "name": "StakeDelegated",
+    "abis": [
+        {
+            "@id": "0xcd0366dce5247d874ffc60a762aa7abbb82c1695bbb171609c1b8861e279eb73",
+            "type": "event",
+            "signature": "StakeDelegated(address,address,uint256,uint256)",
+            "name": "StakeDelegated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "indexer",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokens",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "shares",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

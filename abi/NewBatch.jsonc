@@ -1,0 +1,50 @@
+{
+    "name": "NewBatch",
+    "abis": [
+        {
+            "hex_signature": "0x4bdd04ed9d5392ce48b8fc80abc6fdc0916ce12072be2d571c2d482416349a38",
+            "type": "event",
+            "signature": "NewBatch(uint256,address,uint256,uint256,uint32,uint256)",
+            "name": "NewBatch",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "collateral",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "supply",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "reserveRatio",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "slippage",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

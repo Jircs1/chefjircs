@@ -1,0 +1,32 @@
+{
+    "name": "Migrated",
+    "abis": [
+        {
+            "hex_signature": "0x928fd5531324ee87d76cc5307dc37580174da76b85cd546da631b2670bc266b5",
+            "type": "event",
+            "signature": "Migrated(address,address,uint256)",
+            "name": "Migrated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

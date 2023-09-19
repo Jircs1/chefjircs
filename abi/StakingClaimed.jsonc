@@ -1,0 +1,32 @@
+{
+    "name": "StakingClaimed",
+    "abis": [
+        {
+            "hex_signature": "0xb2023bef4c59920139945431260be6e3c169ffb234d567512ae93f9afda8a56f",
+            "type": "event",
+            "signature": "StakingClaimed(address,uint256,address)",
+            "name": "StakingClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "claimingWallet",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "depositToWallet",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

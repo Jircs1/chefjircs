@@ -1,0 +1,56 @@
+{
+    "name": "ContractCallWithToken",
+    "abis": [
+        {
+            "@id": "0x7e50569d26be643bda7757722291ec66b1be66d8283474ae3fab5a98f878a7a2",
+            "type": "event",
+            "signature": "ContractCallWithToken(address,string,string,bytes32,bytes,string,uint256)",
+            "name": "ContractCallWithToken",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "destinationChain",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "destinationContractAddress",
+                    "type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "payloadHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "payload",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

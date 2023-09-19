@@ -1,0 +1,29 @@
+{
+    "name": "StarClaimed",
+    "abis": [
+        {
+            "hex_signature": "0x600ea3891141b95cbf6042c7c0054a72001860c514e9fc9ab158e3ed63f90ec7",
+            "type": "event",
+            "signature": "StarClaimed(address,uint256)",
+            "name": "StarClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reward",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

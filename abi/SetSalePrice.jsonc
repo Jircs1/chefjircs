@@ -1,0 +1,59 @@
+{
+    "name": "SetSalePrice",
+    "abis": [
+        {
+            "@id": "0xb6039ff1edf80efca6bc48b89f5415ba07fecb2d321058dae9ce6369b2ff964b",
+            "type": "event",
+            "signature": "SetSalePrice(address,address,address,uint256,uint256,address[],uint8[])",
+            "name": "SetSalePrice",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_originContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_currencyAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_target",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address payable[]",
+                    "name": "_splitRecipients",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8[]",
+                    "name": "_splitRatios",
+                    "type": "uint8[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

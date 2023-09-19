@@ -1,0 +1,38 @@
+{
+    "name": "DonationSent",
+    "abis": [
+        {
+            "@id": "0x3bb7428b25f9bdad9bd2faa4c6a7a9e5d5882657e96c1d24cc41c1d6c1910a98",
+            "type": "event",
+            "signature": "DonationSent(address,uint256,address,address)",
+            "name": "DonationSent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "dest",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "donor",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

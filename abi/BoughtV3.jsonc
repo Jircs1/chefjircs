@@ -1,0 +1,83 @@
+{
+    "name": "BoughtV3",
+    "abis": [
+        {
+            "@id": "0x4cc7e95e48af62690313a0733e93308ac9a73326bc3c29f1788b1191c376d5b6",
+            "type": "event",
+            "signature": "BoughtV3(bytes16,address,uint256,address,address,address,address,uint256,uint256,uint256)",
+            "name": "BoughtV3",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes16",
+                    "name": "uuid",
+                    "type": "bytes16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "partner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feePercent",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "initiator",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "beneficiary",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "srcToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "destToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "srcAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$5",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "receivedAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$6",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expectedAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$5",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

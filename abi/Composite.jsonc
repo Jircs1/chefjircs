@@ -1,0 +1,35 @@
+{
+    "name": "Composite",
+    "abis": [
+        {
+            "hex_signature": "0x905feedea1eda3a8be0478a0f07f90de1ac162b88dfb7cc30cb5d2d57323f0af",
+            "type": "event",
+            "signature": "Composite(uint256,uint256,uint8)",
+            "name": "Composite",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "burnedId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "checks",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "ServiceFee",
+    "abis": [
+        {
+            "hex_signature": "0x6b0714b8faf060425ff50a36726d7dbfab63b9e3c17515f10290fd04ec946e27",
+            "type": "event",
+            "signature": "ServiceFee(uint32,address,uint16,uint256)",
+            "name": "ServiceFee",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "loanId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "serviceFeeRate",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feeAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

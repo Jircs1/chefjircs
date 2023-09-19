@@ -1,0 +1,44 @@
+{
+    "name": "DistributedBorrowerReward",
+    "abis": [
+        {
+            "@id": "0xa1b6a046664a0ecf068059f26de56878f8d0e799907ca2e42d9148ccbdc717a7",
+            "type": "event",
+            "signature": "DistributedBorrowerReward(uint8,address,address,uint256,uint256)",
+            "name": "DistributedBorrowerReward",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "rewardType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract CToken",
+                    "name": "cToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewardDelta",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewardBorrowIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "ProposalVote",
+    "abis": [
+        {
+            "@id": "0x25f8daaa4635a7729927ba3f5b3d59cc3320aca7c32c9db4e7ca7b9574343640",
+            "type": "event",
+            "signature": "ProposalVote(uint8,uint64,uint8,bytes32)",
+            "name": "ProposalVote",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "originChainID",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "depositNonce",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum IVoterUpgradeable.ProposalStatus",
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

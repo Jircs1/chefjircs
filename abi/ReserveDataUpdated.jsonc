@@ -2,39 +2,83 @@
     "name": "ReserveDataUpdated",
     "abis": [
         {
-            "@id": "ReserveDataUpdated",
-            "hex_signature": "0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a",
+            "@id": "0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a",
             "type": "event",
             "signature": "ReserveDataUpdated(address,uint256,uint256,uint256,uint256,uint256)",
             "name": "ReserveDataUpdated",
             "inputs": [
                 {
-                    "@type": "lending:reserve",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "reserve",
                     "type": "address"
                 },
                 {
-                    "@type": "lending:rate",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "liquidityRate",
                     "type": "uint256"
                 },
                 {
-                    "@type": "lending:rate",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "stableBorrowRate",
                     "type": "uint256"
                 },
                 {
-                    "@type": "lending:rate",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "variableBorrowRate",
                     "type": "uint256"
                 },
                 {
-                    "@type": "lending:liquidityIndex",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "liquidityIndex",
                     "type": "uint256"
                 },
                 {
-                    "@type": "lending:variableBorrowIndex",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "variableBorrowIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x4063a2df84b66bb796eb32622851d833e57b2c4292900c18f963af8808b13e35",
+            "type": "event",
+            "signature": "ReserveDataUpdated(address,uint256,uint256,uint256,uint256)",
+            "name": "ReserveDataUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "reserve",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "liquidityRate",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "variableBorrowRate",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "liquidityIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "variableBorrowIndex",
                     "type": "uint256"
                 }

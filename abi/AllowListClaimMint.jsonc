@@ -1,0 +1,32 @@
+{
+    "name": "AllowListClaimMint",
+    "abis": [
+        {
+            "hex_signature": "0xaf51c773e2553034bd87cb48ad768d00c3a32fd477c785f6db772e4aa5723ad5",
+            "type": "event",
+            "signature": "AllowListClaimMint(address,address,uint256)",
+            "name": "AllowListClaimMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "userAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "numberOfTokens",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

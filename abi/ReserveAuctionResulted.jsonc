@@ -1,0 +1,44 @@
+{
+    "name": "ReserveAuctionResulted",
+    "abis": [
+        {
+            "hex_signature": "0xa0a548bb147d15d7de045c333ab8b0ec3d0cc790775d009185aa0e009437507e",
+            "type": "event",
+            "signature": "ReserveAuctionResulted(uint256,uint256,address,address,address)",
+            "name": "ReserveAuctionResulted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_finalPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_currentOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_winner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_resulter",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

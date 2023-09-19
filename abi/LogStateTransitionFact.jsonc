@@ -2,14 +2,14 @@
     "name": "LogStateTransitionFact",
     "abis": [
         {
-            "@id": "LogStateTransitionFact",
-            "hex_signature": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
+            "@id": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
             "type": "event",
             "signature": "LogStateTransitionFact(bytes32)",
             "name": "LogStateTransitionFact",
             "inputs": [
                 {
-                    "@type": "starknet:stateTransitionFact",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "stateTransitionFact",
                     "type": "bytes32"
                 }

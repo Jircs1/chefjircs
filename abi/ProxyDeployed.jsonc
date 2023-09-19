@@ -1,0 +1,32 @@
+{
+    "name": "ProxyDeployed",
+    "abis": [
+        {
+            "@id": "0x9e0862c4ebff2150fbbfd3f8547483f55bdec0c34fd977d3fccaa55d6c4ce784",
+            "type": "event",
+            "signature": "ProxyDeployed(address,address,address)",
+            "name": "ProxyDeployed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "implementation",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "proxy",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "deployer",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "NodeConfirmed",
+    "abis": [
+        {
+            "@id": "0x22ef0479a7ff660660d1c2fe35f1b632cf31675c2d9378db8cec95b00d8ffa3c",
+            "type": "event",
+            "signature": "NodeConfirmed(uint64,bytes32,bytes32)",
+            "name": "NodeConfirmed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "nodeNum",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "blockHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "sendRoot",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

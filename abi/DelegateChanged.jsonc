@@ -2,25 +2,27 @@
     "name": "DelegateChanged",
     "abis": [
         {
-            "@id": "DelegateChanged",
-            "hex_signature": "0x3134e8a2e6d97e929a7e54011ea5485d7d196dd5f0ba4d4ef95803e8e3fc257f",
+            "@id": "0x3134e8a2e6d97e929a7e54011ea5485d7d196dd5f0ba4d4ef95803e8e3fc257f",
             "type": "event",
             "signature": "DelegateChanged(address,address,address)",
             "name": "DelegateChanged",
             "inputs": [
                 {
-                    "@type": "delegation:delegator",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "delegator",
                     "type": "address"
                 },
                 {
-                    "@type": "delegation:delegated",
-                    "name": "currentDelegate",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromDelegate",
                     "type": "address"
                 },
                 {
-                    "@type": "delegation:delegated",
-                    "name": "newDelegate",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toDelegate",
                     "type": "address"
                 }
             ],

@@ -2,14 +2,14 @@
     "name": "ClientData",
     "abis": [
         {
-            "@id": "ClientData",
-            "hex_signature": "0x095e66fa4dd6a6f7b43fb8444a7bd0edb870508c7abf639bc216efb0bcff9779",
+            "@id": "0x095e66fa4dd6a6f7b43fb8444a7bd0edb870508c7abf639bc216efb0bcff9779",
             "type": "event",
             "signature": "ClientData(bytes)",
             "name": "ClientData",
             "inputs": [
                 {
-                    "@type": "kyberswap:clientData",
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "clientData",
                     "type": "bytes"
                 }

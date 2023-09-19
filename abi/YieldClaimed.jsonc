@@ -1,0 +1,41 @@
+{
+    "name": "YieldClaimed",
+    "abis": [
+        {
+            "hex_signature": "0x5033fdcf01566fb38fe1493114b856ff2a5d1c7875a6fafdacd1d320a012806a",
+            "type": "event",
+            "signature": "YieldClaimed(address,address,bool,uint256)",
+            "name": "YieldClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_by",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "sSyn",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

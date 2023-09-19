@@ -1,0 +1,65 @@
+{
+    "name": "LoanUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x69be227a0f861d92245592f172e9f035838b1e7fe03192b3b1dde80c9b104d8d",
+            "type": "event",
+            "signature": "LoanUpdated(address,uint256,address,uint256,address,uint256,uint256,uint256)",
+            "name": "LoanUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "loanId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nftAsset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nftTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "reserveAsset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountAdded",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountTaken",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$4",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "borrowIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

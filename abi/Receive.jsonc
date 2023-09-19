@@ -1,0 +1,32 @@
+{
+    "name": "Receive",
+    "abis": [
+        {
+            "@id": "0xfd19781f43410d9594fd4c02dd1d98dbe99099cbd222d5851a6e183c468d33ca",
+            "type": "event",
+            "signature": "Receive(address,address,uint256)",
+            "name": "Receive",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

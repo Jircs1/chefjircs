@@ -1,0 +1,44 @@
+{
+    "name": "OfferMade",
+    "abis": [
+        {
+            "@id": "0x00ce0a712e4e277ac7b34942865f0de7a5629dffe0539b70423ad5ff1ed6ab42",
+            "type": "event",
+            "signature": "OfferMade(address,uint256,address,uint256,uint256)",
+            "name": "OfferMade",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expiration",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

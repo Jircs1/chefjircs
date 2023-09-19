@@ -1,0 +1,56 @@
+{
+    "name": "ZapInRebalancing",
+    "abis": [
+        {
+            "hex_signature": "0x4ff29158e89c3af93365bf0fa1d14c5768109fb139f24b97c8a7d510b2d5e3f6",
+            "type": "event",
+            "signature": "ZapInRebalancing(address,address,address,uint256,uint256,uint256,address)",
+            "name": "ZapInRebalancing",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token0ToZap",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token1ToZap",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "lpToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token0AmountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token1AmountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lpTokenAmountReceived",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

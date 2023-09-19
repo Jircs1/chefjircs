@@ -1,0 +1,32 @@
+{
+    "name": "FeesClaim",
+    "abis": [
+        {
+            "hex_signature": "0x7a6996f208e1f74222a1b84b080a89f0b84e81ec5bed570e1c232950014ecc6f",
+            "type": "event",
+            "signature": "FeesClaim(address,uint256,uint256)",
+            "name": "FeesClaim",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount1",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

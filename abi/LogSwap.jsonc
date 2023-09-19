@@ -1,0 +1,29 @@
+{
+    "name": "LogSwap",
+    "abis": [
+        {
+            "hex_signature": "0x4fbc02dad9bd3098e9e4f226d6b4d628c079355f397ac31e1795da06b5e375ca",
+            "type": "event",
+            "signature": "LogSwap(address,uint256)",
+            "name": "LogSwap",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "swappedTo",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

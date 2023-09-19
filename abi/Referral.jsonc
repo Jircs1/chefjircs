@@ -1,0 +1,41 @@
+{
+    "name": "Referral",
+    "abis": [
+        {
+            "hex_signature": "0x8abfbe92bb62ff992ef6347c68d007f25a6e5aea2ad2f05e89f3486947cc0b20",
+            "type": "event",
+            "signature": "Referral(address,address,uint128,uint256)",
+            "name": "Referral",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "affiliate",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "wad",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "numMints",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

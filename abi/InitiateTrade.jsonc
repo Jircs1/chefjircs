@@ -1,0 +1,32 @@
+{
+    "name": "InitiateTrade",
+    "abis": [
+        {
+            "hex_signature": "0xa058ea17deb3dad493dcf014f030710e90240e4bf900bace442ac371365ac3ec",
+            "type": "event",
+            "signature": "InitiateTrade(address,uint256,uint256)",
+            "name": "InitiateTrade",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "queueId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "queuedTime",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

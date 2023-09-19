@@ -1,0 +1,41 @@
+{
+    "name": "WithdrawRemote",
+    "abis": [
+        {
+            "hex_signature": "0x44d3575fd94f9e0a41d7ebbc7e952f9b615c3f8d1faf924e1e9e98c0edf0d380",
+            "type": "event",
+            "signature": "WithdrawRemote(uint16,uint256,uint256,uint256)",
+            "name": "WithdrawRemote",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "srcPoolId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "swapAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "mintAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

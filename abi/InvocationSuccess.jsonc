@@ -1,0 +1,32 @@
+{
+    "name": "InvocationSuccess",
+    "abis": [
+        {
+            "@id": "0x101214446435ebbb29893f3348e3aae5ea070b63037a3df346d09d3396a34aee",
+            "type": "event",
+            "signature": "InvocationSuccess(bytes32,uint256,uint256)",
+            "name": "InvocationSuccess",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "hash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "result",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "numOperations",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

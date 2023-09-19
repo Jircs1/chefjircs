@@ -1,0 +1,44 @@
+{
+    "name": "MessageFailed",
+    "abis": [
+        {
+            "@id": "0xe183f33de2837795525b4792ca4cd60535bd77c53b7e7030060bfcf5734d6b0c",
+            "type": "event",
+            "signature": "MessageFailed(uint16,bytes,uint64,bytes,bytes)",
+            "name": "MessageFailed",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "_srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_srcAddress",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "_nonce",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_payload",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_reason",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

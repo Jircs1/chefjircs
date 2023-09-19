@@ -1,0 +1,32 @@
+{
+    "name": "TransferRedeemed",
+    "abis": [
+        {
+            "hex_signature": "0xcaf280c8cfeba144da67230d9b009c8f868a75bac9a528fa0474be1ba317c169",
+            "type": "event",
+            "signature": "TransferRedeemed(uint16,bytes32,uint64)",
+            "name": "TransferRedeemed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "emitterChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "emitterAddress",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "sequence",
+                    "type": "uint64"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "name": "ChangedWater",
+    "abis": [
+        {
+            "hex_signature": "0x62d58ec674722272e308fa95d606f6affc32bf26f77964ce2f9c0967f45e42fa",
+            "type": "event",
+            "signature": "ChangedWater(uint256,address,uint256,uint256)",
+            "name": "ChangedWater",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_changer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_historyIndex",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_changedAt",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

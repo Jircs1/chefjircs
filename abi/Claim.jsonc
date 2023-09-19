@@ -2,8 +2,7 @@
     "name": "Claim",
     "abis": [
         {
-            "@id": "Claim",
-            "hex_signature": "0x47cee97cb7acd717b3c0aa1435d004cd5b3c8c57d70dbceb4e4458bbd60e39d4",
+            "@id": "0x47cee97cb7acd717b3c0aa1435d004cd5b3c8c57d70dbceb4e4458bbd60e39d4",
             "type": "event",
             "signature": "Claim(address,uint256)",
             "name": "Claim",
@@ -11,7 +10,59 @@
                 {
                     "@type": "transfer:to",
                     "name": "receiver",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "linq": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 1274,
+                            "sampleAddress": "0x77f50f963d55c7c7dc2b5a44767299c02af76a66",
+                            "sampleTxHash": "0x0c4669d271719e50efcc89b29caefdc92591192e0a573a23c234584bee63dce6",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "ooki": {
+                            "is_erc20": 0.571429,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.285714,
+                            "numLogs": 526,
+                            "sampleAddress": "0x8f7cfa2c864c0ba87b678804803946f82cb1e37c",
+                            "sampleTxHash": "0x007930cbf4fd741eb1191ff8693b73888b0c51e359a001f83c7094c62f13c8df",
+                            "found": 7,
+                            "samples": 90
+                        },
+                        "ethlinq": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 312,
+                            "sampleAddress": "0x122720e148118e05eb023f97f35c08336f874da0",
+                            "sampleTxHash": "0x00f50267811c27f868002541781109b974437d4adf044beb1fa69e4f189d4568",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "asap": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 263,
+                            "sampleAddress": "0x34c4e9eb2e0cfc05818a98fe9762380ff6c97fa1",
+                            "sampleTxHash": "0x0250ed96f1a359948d9ebb9b9e835f7b2c0975b92bb0324e38f21bc44030d25e",
+                            "found": 0,
+                            "samples": 100
+                        },
+                        "hop": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 100,
+                            "sampleAddress": "0x8725f93a02e641add9232f9d1e580f0bd3cf0771",
+                            "sampleTxHash": "0x8801a29cc9eb8f8888c2d323e9c996ea587c9ad252e70fe64d6fc12819cb347a",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -19,6 +70,141 @@
                     "name": "amount",
                     "type": "uint256",
                     "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xa2c38e2d2fb7e3e1912d937fd1ca11ed6d51864dee4cfa7a7bf02becd7acf092",
+            "type": "event",
+            "signature": "Claim(address,uint256,bool)",
+            "name": "Claim",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "automatic",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x34fcbac0073d7c3d388e51312faf357774904998eeb8fca628b9e6f65ee1cbf7",
+            "type": "event",
+            "signature": "Claim(address,uint256,uint256)",
+            "name": "Claim",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "S",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x45c072aa05b9853b5a993de7a28bc332ee01404a628cec1a23ce0f659f842ef1",
+            "type": "event",
+            "signature": "Claim(address,uint256,uint256,uint256)",
+            "name": "Claim",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "holder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "transferred",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "burned",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x1bb61a7c0e8fe6922242f2a1fb97851dd40ebfa837ab768260708c3cbc1f8601",
+            "type": "event",
+            "signature": "Claim(address,uint256,uint256,uint8[],uint256[])",
+            "name": "Claim",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "rewardRound",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8[]",
+                    "name": "treeIds",
+                    "type": "uint8[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "amounts",
+                    "type": "uint256[]"
                 }
             ],
             "outputs": null

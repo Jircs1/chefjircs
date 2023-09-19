@@ -1,0 +1,62 @@
+{
+    "name": "EtherWithdrawn",
+    "abis": [
+        {
+            "@id": "0xfc06bd2dc22238bad571c0432cfc04aee3d074be8cd974c9a9151e99df57e72b",
+            "type": "event",
+            "signature": "EtherWithdrawn(string,uint256,uint256)",
+            "name": "EtherWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "by",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xd5ca65e1ec4f4864fea7b9c5cb1ec3087a0dbf9c74641db3f6458edf445c4051",
+            "type": "event",
+            "signature": "EtherWithdrawn(address,uint256,uint256)",
+            "name": "EtherWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

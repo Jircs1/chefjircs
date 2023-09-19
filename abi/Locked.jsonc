@@ -1,0 +1,50 @@
+{
+    "name": "Locked",
+    "abis": [
+        {
+            "@id": "0x032bc66be43dbccb7487781d168eb7bda224628a3b2c3388bdf69b532a3a1611",
+            "type": "event",
+            "signature": "Locked(uint256)",
+            "name": "Locked",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xd4665e3049283582ba6f9eba07a5b3e12dab49e02da99e8927a47af5d134bea5",
+            "type": "event",
+            "signature": "Locked(address,uint256,uint256)",
+            "name": "Locked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_weeks",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

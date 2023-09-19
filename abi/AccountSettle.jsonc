@@ -1,0 +1,38 @@
+{
+    "name": "AccountSettle",
+    "abis": [
+        {
+            "hex_signature": "0x40957a7f26dd9f9d628b1aba01d4a3db4c38008974c79a62f6cf0f273a78b3a8",
+            "type": "event",
+            "signature": "AccountSettle(address,address,int256,uint256)",
+            "name": "AccountSettle",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract IProduct",
+                    "name": "product",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "Fixed18",
+                    "name": "amount",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "UFixed18",
+                    "name": "newShortfall",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

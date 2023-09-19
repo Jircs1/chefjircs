@@ -1,0 +1,47 @@
+{
+    "name": "ProxySwapWithFee",
+    "abis": [
+        {
+            "hex_signature": "0x2fe279dbe9d225a9d3c707f70e43c44034ee8ebbe8a65ceefc7fe927a55a67de",
+            "type": "event",
+            "signature": "ProxySwapWithFee(address,address,uint256,uint256,uint256)",
+            "name": "ProxySwapWithFee",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_fromToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_toToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "feeTotal",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

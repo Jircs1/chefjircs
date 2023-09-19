@@ -1,0 +1,41 @@
+{
+    "name": "UpdateRate",
+    "abis": [
+        {
+            "@id": "0xc63977c8e2362a31182dc8e89a52252f9836922738e0abcfc0de6924972eafe5",
+            "type": "event",
+            "signature": "UpdateRate(uint256,uint256,uint256,uint256)",
+            "name": "UpdateRate",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldRatePerSec",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "oldFullUtilizationRate",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newRatePerSec",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newFullUtilizationRate",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

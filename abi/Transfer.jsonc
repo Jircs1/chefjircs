@@ -2,55 +2,161 @@
     "name": "Transfer",
     "abis": [
         {
-            "@id": "Transfer_ERC20",
-            "hex_signature": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "@id": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
             "type": "event",
             "signature": "Transfer(address,address,uint256)",
             "name": "Transfer",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "to",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
                     "@token": "$",
-                    "name": "value",
-                    "type": "uint256",
                     "validationSuccess": true
                 }
             ],
             "outputs": null
         },
         {
-            "@id": "Transfer_ERC721",
-            "hex_signature": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "@id": "0xd1398bee19313d6bf672ccb116e51f4a1a947e91c757907f51fbb5b5e56c698f",
             "type": "event",
-            "signature": "Transfer(address,address,uint256)",
+            "signature": "Transfer(address,address,address,uint256)",
             "name": "Transfer",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "clone",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "to",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "tokenId",
                     "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
                     "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xe19260aff97b920c7df27010903aeb9c8d2be5d310a2c67824cf3f15396e4c16",
+            "type": "event",
+            "signature": "Transfer(address,address,uint256,bytes)",
+            "name": "Transfer",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xd4735d920b0f87494915f556dd9b54c8f309026070caea5c737245152564d266",
+            "type": "event",
+            "signature": "Transfer(bytes32,address)",
+            "name": "Transfer",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "node",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "owner",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xf8ffa2f4cc3cb642240a588faa304203a1f404d3805f4ab5eb30fcd1f54213d1",
+            "type": "event",
+            "signature": "Transfer(address,address,address,uint256,string)",
+            "name": "Transfer",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "contractAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "_brandName",
+                    "type": "string"
                 }
             ],
             "outputs": null

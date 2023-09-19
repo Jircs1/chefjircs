@@ -1,0 +1,47 @@
+{
+    "name": "TokenWithdraw",
+    "abis": [
+        {
+            "@id": "0x8b0afdc777af6946e53045a4a75212769075d30455a212ac51c9b16f9c5c9b26",
+            "type": "event",
+            "signature": "TokenWithdraw(address,address,uint256,uint256,bytes32)",
+            "name": "TokenWithdraw",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "kappa",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

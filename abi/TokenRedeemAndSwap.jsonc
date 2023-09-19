@@ -1,0 +1,62 @@
+{
+    "name": "TokenRedeemAndSwap",
+    "abis": [
+        {
+            "hex_signature": "0x91f25e9be0134ec851830e0e76dc71e06f9dade75a9b84e9524071dbbc319425",
+            "type": "event",
+            "signature": "TokenRedeemAndSwap(address,uint256,address,uint256,uint8,uint8,uint256,uint256)",
+            "name": "TokenRedeemAndSwap",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "tokenIndexFrom",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "tokenIndexTo",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minDy",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

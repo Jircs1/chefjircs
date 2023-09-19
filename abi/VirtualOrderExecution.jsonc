@@ -1,0 +1,80 @@
+{
+    "name": "VirtualOrderExecution",
+    "abis": [
+        {
+            "@id": "0x793ee8b0d8020fc042a920607e3cbd37f5132c011786c8dd10a685f4414ed381",
+            "type": "event",
+            "signature": "VirtualOrderExecution(uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256)",
+            "name": "VirtualOrderExecution",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blocktimestamp",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newReserve0",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newReserve1",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newTwammReserve0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newTwammReserve1",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token0Bought",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token1Bought",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token0Sold",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token1Sold",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expiries",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

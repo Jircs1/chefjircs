@@ -1,0 +1,62 @@
+{
+    "name": "RootBundleExecuted",
+    "abis": [
+        {
+            "hex_signature": "0xf652dd63b1aedbf9e740f3152fb67b0d94d069cf1182811ebd88921850d93567",
+            "type": "event",
+            "signature": "RootBundleExecuted(uint256,uint256,uint256,address[],uint256[],int256[],int256[],address)",
+            "name": "RootBundleExecuted",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "groupIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "leafId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "l1Tokens",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "bundleLpFees",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256[]",
+                    "name": "netSendAmounts",
+                    "type": "int256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256[]",
+                    "name": "runningBalances",
+                    "type": "int256[]"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

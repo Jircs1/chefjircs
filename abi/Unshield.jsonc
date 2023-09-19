@@ -1,0 +1,55 @@
+{
+    "name": "Unshield",
+    "abis": [
+        {
+            "hex_signature": "0xd93cf895c7d5b2cd7dc7a098b678b3089f37d91f48d9b83a0800a91cbdf05284",
+            "type": "event",
+            "signature": "Unshield(address,(uint8,address,uint256),uint256,uint256)",
+            "name": "Unshield",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "enum TokenType",
+                            "name": "tokenType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "tokenAddress",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenSubID",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct TokenData",
+                    "name": "token",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,19 +2,20 @@
     "name": "ReverseClaimed",
     "abis": [
         {
-            "@id": "ReverseClaimed",
-            "hex_signature": "0x6ada868dd3058cf77a48a74489fd7963688e5464b2b0fa957ace976243270e92",
+            "@id": "0x6ada868dd3058cf77a48a74489fd7963688e5464b2b0fa957ace976243270e92",
             "type": "event",
             "signature": "ReverseClaimed(address,bytes32)",
             "name": "ReverseClaimed",
             "inputs": [
                 {
-                    "@type": "ens:addr",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "addr",
                     "type": "address"
                 },
                 {
-                    "@type": "ens:node",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "node",
                     "type": "bytes32"
                 }

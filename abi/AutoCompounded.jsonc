@@ -1,0 +1,68 @@
+{
+    "name": "AutoCompounded",
+    "abis": [
+        {
+            "hex_signature": "0x85058548e7a7243b0976c561ca5316398d5368a87260205c952f2dc35aadc4ea",
+            "type": "event",
+            "signature": "AutoCompounded(address,uint256,uint256,uint256,uint256,uint256,address,address)",
+            "name": "AutoCompounded",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountAdded0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountAdded1",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reward0",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$6",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reward1",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$7",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token0",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token1",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

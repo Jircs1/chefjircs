@@ -1,0 +1,38 @@
+{
+    "name": "NewUserTwab",
+    "abis": [
+        {
+            "hex_signature": "0xdd3e7cd3a260a292b0b3306b2ca62f30a7349619a9d09c58109318774c6b627d",
+            "type": "event",
+            "signature": "NewUserTwab(address,(uint224,uint32))",
+            "name": "NewUserTwab",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "delegate",
+                    "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint224",
+                            "name": "amount",
+                            "type": "uint224"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "timestamp",
+                            "type": "uint32"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct ObservationLib.Observation",
+                    "name": "newTwab",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

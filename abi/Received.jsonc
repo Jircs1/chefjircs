@@ -1,0 +1,53 @@
+{
+    "name": "Received",
+    "abis": [
+        {
+            "@id": "0x88a5966d370b9919b20f3e2c13ff65706f196a4e32cc2c12bf57088f88525874",
+            "type": "event",
+            "signature": "Received(address,uint256)",
+            "name": "Received",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x606834f57405380c4fb88d1f4850326ad3885f014bab3b568dfbf7a041eef738",
+            "type": "event",
+            "signature": "Received(uint256,address,bytes)",
+            "name": "Received",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

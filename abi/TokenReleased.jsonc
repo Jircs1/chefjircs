@@ -1,0 +1,29 @@
+{
+    "name": "TokenReleased",
+    "abis": [
+        {
+            "hex_signature": "0x9cf9e3ab58b33f06d81842ea0ad850b6640c6430d6396973312e1715792e7a91",
+            "type": "event",
+            "signature": "TokenReleased(address,uint256)",
+            "name": "TokenReleased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

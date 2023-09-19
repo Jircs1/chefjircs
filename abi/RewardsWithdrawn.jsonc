@@ -1,0 +1,29 @@
+{
+    "name": "RewardsWithdrawn",
+    "abis": [
+        {
+            "@id": "0x8a43c4352486ec339f487f64af78ca5cbf06cd47833f073d3baf3a193e503161",
+            "type": "event",
+            "signature": "RewardsWithdrawn(address,uint256)",
+            "name": "RewardsWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "by",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fundsWithdrawn",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

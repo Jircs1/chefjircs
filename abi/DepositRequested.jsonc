@@ -1,0 +1,143 @@
+{
+    "name": "DepositRequested",
+    "abis": [
+        {
+            "@id": "0x73ff7b101bcdc22f199e8e1dd9893170a683d6897be4f1086ca05705abb886ae",
+            "type": "event",
+            "signature": "DepositRequested(address,address,address,uint16,uint96)",
+            "name": "DepositRequested",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "tokenId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "amount",
+                    "type": "uint96"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xd7b25068d9dc8d00765254cfb7f5070f98d263c8d68931d937c7362fa738048b",
+            "type": "event",
+            "signature": "DepositRequested(bytes32,(uint256,uint8,(address,address,uint256),(address,address,uint256),(uint8,uint256,uint256)))",
+            "name": "DepositRequested",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "receiptHash",
+                    "type": "bytes32"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "id",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "enum Transfer.Kind",
+                            "name": "kind",
+                            "type": "uint8"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "address",
+                                    "name": "addr",
+                                    "type": "address"
+                                },
+                                {
+                                    "internalType": "address",
+                                    "name": "tokenAddr",
+                                    "type": "address"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "chainId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Token.Owner",
+                            "name": "mainchain",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "address",
+                                    "name": "addr",
+                                    "type": "address"
+                                },
+                                {
+                                    "internalType": "address",
+                                    "name": "tokenAddr",
+                                    "type": "address"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "chainId",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Token.Owner",
+                            "name": "ronin",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "enum Token.Standard",
+                                    "name": "erc",
+                                    "type": "uint8"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "id",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "quantity",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Token.Info",
+                            "name": "info",
+                            "type": "tuple"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Transfer.Receipt",
+                    "name": "receipt",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

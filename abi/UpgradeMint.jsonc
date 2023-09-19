@@ -1,0 +1,41 @@
+{
+    "name": "UpgradeMint",
+    "abis": [
+        {
+            "hex_signature": "0xaeec270ce2bbfa41def9f74d2570158bfee3e410ddaeac464224ea1e597ba89d",
+            "type": "event",
+            "signature": "UpgradeMint(uint256,uint256,uint256,uint256)",
+            "name": "UpgradeMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_upgradedId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_petType",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_oldTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_serumCount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "ProcessedDividendTracker",
+    "abis": [
+        {
+            "@id": "0xc864333d6121033635ab41b29ae52f10a22cf4438c3e4f1c4c68518feb2f8a98",
+            "type": "event",
+            "signature": "ProcessedDividendTracker(uint256,uint256,uint256,bool,uint256,address)",
+            "name": "ProcessedDividendTracker",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "iterations",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claims",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lastProcessedIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "automatic",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gas",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "processor",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

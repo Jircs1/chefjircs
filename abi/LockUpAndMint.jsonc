@@ -1,0 +1,68 @@
+{
+    "name": "LockUpAndMint",
+    "abis": [
+        {
+            "hex_signature": "0x3ae3c0c20d9359330cd6b79ab3e1850a2c5e588528053ca327371d607b1435a2",
+            "type": "event",
+            "signature": "LockUpAndMint(address,uint256,uint256,uint256,string,uint256,uint256,uint256)",
+            "name": "LockUpAndMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "minter",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_lockupAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_tipAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_lockTimeInterval",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "uri",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "unlockPeriod",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "currentTime",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

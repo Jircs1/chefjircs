@@ -1,0 +1,29 @@
+{
+    "name": "Donate",
+    "abis": [
+        {
+            "@id": "0xa259c93818139b6bc90fb80e8feb75122b42edaae49560f81392cf4e1946726e",
+            "type": "event",
+            "signature": "Donate(uint256,bool)",
+            "name": "Donate",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isBaseToken",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

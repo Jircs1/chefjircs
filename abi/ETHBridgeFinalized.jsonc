@@ -1,0 +1,38 @@
+{
+    "name": "ETHBridgeFinalized",
+    "abis": [
+        {
+            "@id": "0x31b2166ff604fc5672ea5df08a78081d2bc6d746cadce880747f3643d819e83d",
+            "type": "event",
+            "signature": "ETHBridgeFinalized(address,address,uint256,bytes)",
+            "name": "ETHBridgeFinalized",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "extraData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

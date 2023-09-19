@@ -1,0 +1,38 @@
+{
+    "name": "ReceiptUpdated",
+    "abis": [
+        {
+            "@id": "0x88bc1bf6777e1eaef8a0583c526f6963c9183af9ee82015f9a28f55b9115ea71",
+            "type": "event",
+            "signature": "ReceiptUpdated(address,uint256,uint256,uint256)",
+            "name": "ReceiptUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_purchaser",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_projectId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_numPurchased",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_netPosted",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

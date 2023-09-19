@@ -1,0 +1,72 @@
+{
+    "name": "LiFiTransferStarted",
+    "abis": [
+        {
+            "@id": "0xcba69f43792f9f399347222505213b55af8e0b0b54b893085c2e27ecbe1644f1",
+            "type": "event",
+            "signature": "LiFiTransferStarted((bytes32,string,string,address,address,address,uint256,uint256,bool,bool))",
+            "name": "LiFiTransferStarted",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "bytes32",
+                            "name": "transactionId",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "bridge",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "integrator",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "referrer",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "sendingAssetId",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "receiver",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "minAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "destinationChainId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "hasSourceSwaps",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "hasDestinationCall",
+                            "type": "bool"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct ILiFi.BridgeData",
+                    "name": "bridgeData",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

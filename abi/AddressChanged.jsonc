@@ -2,23 +2,26 @@
     "name": "AddressChanged",
     "abis": [
         {
-            "@id": "AddressChanged",
-            "hex_signature": "0x65412581168e88a1e60c6459d7f44ae83ad0832e670826c05a4e2476b57af752",
+            "@id": "0x65412581168e88a1e60c6459d7f44ae83ad0832e670826c05a4e2476b57af752",
             "type": "event",
             "signature": "AddressChanged(bytes32,uint256,bytes)",
             "name": "AddressChanged",
             "inputs": [
                 {
-                    "@type": "ens:node",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "node",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "ens:coinType",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "coinType",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "newAddress",
                     "type": "bytes"
                 }

@@ -1,0 +1,122 @@
+{
+    "name": "FillOrder",
+    "abis": [
+        {
+            "@id": "0x75d58426b26ab641a6a6a46f12fe35e17c570a1cd264c7248a73d90e3a8682ff",
+            "type": "event",
+            "signature": "FillOrder(string,bytes32,bytes32,address,address,uint256,address,address,uint256,address,uint256,uint16)",
+            "name": "FillOrder",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "source",
+                    "type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "transactionHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "orderHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "userAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "takerAssetAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "takerAssetAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$4",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "makerAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "makerAssetAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "makerAssetAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$7",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiverAddr",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "settleAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$7",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "feeFactor",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x6204728db10730656ada9f8ce5b258b0d97dc6ac8e8a101ff4b905c3c9cc7dc5",
+            "type": "event",
+            "signature": "FillOrder(uint64,uint8,bytes32[3])",
+            "name": "FillOrder",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "orderId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum OrderType",
+                    "name": "orderType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32[3]",
+                    "name": "orderData",
+                    "type": "bytes32[3]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

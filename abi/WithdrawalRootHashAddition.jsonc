@@ -1,0 +1,29 @@
+{
+    "name": "WithdrawalRootHashAddition",
+    "abis": [
+        {
+            "hex_signature": "0xe03adc1e77ba682eeca70bd85e61002b19d2167914a5c91673b6db229fc9abef",
+            "type": "event",
+            "signature": "WithdrawalRootHashAddition(bytes32,uint256)",
+            "name": "WithdrawalRootHashAddition",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "rootHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

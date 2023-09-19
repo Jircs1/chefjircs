@@ -1,0 +1,38 @@
+{
+    "name": "VerifyHeaderAndExecuteTxEvent",
+    "abis": [
+        {
+            "@id": "0x8a4a2663ce60ce4955c595da2894de0415240f1ace024cfbff85f513b656bdae",
+            "type": "event",
+            "signature": "VerifyHeaderAndExecuteTxEvent(uint64,bytes,bytes,bytes)",
+            "name": "VerifyHeaderAndExecuteTxEvent",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "fromChainID",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "toContract",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "crossChainTxHash",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "fromChainTxHash",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "LogOnReward",
+    "abis": [
+        {
+            "@id": "0x2ece88ca2bc08dd018db50e1d25a20bf1241e5fab1c396caa51f01a54bd2f75b",
+            "type": "event",
+            "signature": "LogOnReward(address,uint256,uint256,address)",
+            "name": "LogOnReward",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

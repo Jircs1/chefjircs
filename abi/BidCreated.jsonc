@@ -1,0 +1,44 @@
+{
+    "name": "BidCreated",
+    "abis": [
+        {
+            "hex_signature": "0x77689ebf788c0f9d9e045fa81e22903cc7a1e34686c3fa4874c9a6a4d8a239f5",
+            "type": "event",
+            "signature": "BidCreated(uint256,address,uint256,uint256)",
+            "name": "BidCreated",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "difference",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

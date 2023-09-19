@@ -1,0 +1,32 @@
+{
+    "name": "StakingGainsWithdrawn",
+    "abis": [
+        {
+            "hex_signature": "0xf744d34ca1cb25acfa4180df5f09a67306107110a9f4b6ed99bb3be259738215",
+            "type": "event",
+            "signature": "StakingGainsWithdrawn(address,uint256,uint256)",
+            "name": "StakingGainsWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "BAIGain",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "COLGain",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

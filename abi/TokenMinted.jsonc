@@ -1,0 +1,29 @@
+{
+    "name": "TokenMinted",
+    "abis": [
+        {
+            "hex_signature": "0xb9144c96c86541f6fa89c9f2f02495cccf4b08cd6643e26d34ee00aa586558a8",
+            "type": "event",
+            "signature": "TokenMinted(address,uint256)",
+            "name": "TokenMinted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

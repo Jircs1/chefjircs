@@ -1,0 +1,32 @@
+{
+    "name": "WithdrawNative",
+    "abis": [
+        {
+            "@id": "0x3bfd26201736b5cb14a562ab3cfc2bef76901726e3a78483d6288af47131e1d9",
+            "type": "event",
+            "signature": "WithdrawNative(address,address,uint256)",
+            "name": "WithdrawNative",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "msgSender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

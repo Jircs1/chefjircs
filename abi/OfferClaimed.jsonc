@@ -1,0 +1,47 @@
+{
+    "name": "OfferClaimed",
+    "abis": [
+        {
+            "@id": "0xb6ccdf0f604b7944dc67e7a20fcac8d00f86137f70b2cf577073372a54767847",
+            "type": "event",
+            "signature": "OfferClaimed(address,address,uint256,uint256,uint256,uint256)",
+            "name": "OfferClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "offerId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "name": "pricePaid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "feePaid",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

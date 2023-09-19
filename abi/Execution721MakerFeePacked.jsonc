@@ -2,29 +2,32 @@
     "name": "Execution721MakerFeePacked",
     "abis": [
         {
-            "@id": "Execution721MakerFeePacked",
-            "hex_signature": "0x7dc5c0699ac8dd5250cbe368a2fc3b4a2daadb120ad07f6cccea29f83482686e",
+            "@id": "0x7dc5c0699ac8dd5250cbe368a2fc3b4a2daadb120ad07f6cccea29f83482686e",
             "type": "event",
             "signature": "Execution721MakerFeePacked(bytes32,uint256,uint256,uint256)",
             "name": "Execution721MakerFeePacked",
             "inputs": [
                 {
-                    "@type": "blur:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "blur:trader",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "tokenIdListingIndexTrader",
                     "type": "uint256"
                 },
                 {
-                    "@type": "blur:collectionPriceSide",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "collectionPriceSide",
                     "type": "uint256"
                 },
                 {
-                    "@type": "blur:rate",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "makerFeeRecipientRate",
                     "type": "uint256"
                 }

@@ -1,0 +1,41 @@
+{
+    "name": "RaffleEnded",
+    "abis": [
+        {
+            "hex_signature": "0xe0b2a72a0644b093aac275024c05c7c28851a0b572557a32241d13634a0f3e08",
+            "type": "event",
+            "signature": "RaffleEnded(uint256,address,uint256,uint256)",
+            "name": "RaffleEnded",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "raffleId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "winner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountRaised",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "randomNumber",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

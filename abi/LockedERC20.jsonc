@@ -1,0 +1,41 @@
+{
+    "name": "LockedERC20",
+    "abis": [
+        {
+            "@id": "0x9b217a401a5ddf7c4d474074aff9958a18d48690d77cc2151c4706aa7348b401",
+            "type": "event",
+            "signature": "LockedERC20(address,address,address,uint256)",
+            "name": "LockedERC20",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "depositor",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "depositReceiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "rootToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

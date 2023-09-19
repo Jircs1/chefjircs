@@ -1,0 +1,41 @@
+{
+    "name": "MinerEnd",
+    "abis": [
+        {
+            "@id": "0xd3fd340b2f03159ddf95049eedb22400dec3358e9293504346f648c551086520",
+            "type": "event",
+            "signature": "MinerEnd(uint256,uint256,address,uint40)",
+            "name": "MinerEnd",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data1",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "accountant",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "minerId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

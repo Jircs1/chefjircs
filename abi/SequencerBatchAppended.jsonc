@@ -1,0 +1,35 @@
+{
+    "name": "SequencerBatchAppended",
+    "abis": [
+        {
+            "@id": "0x602f1aeac0ca2e7a13e281a9ef0ad7838542712ce16780fa2ecffd351f05f899",
+            "type": "event",
+            "signature": "SequencerBatchAppended(uint256,uint256,uint256)",
+            "name": "SequencerBatchAppended",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_startingQueueIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_numQueueElements",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_totalElements",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "RelicBurn",
+    "abis": [
+        {
+            "hex_signature": "0x85ebca8d9afdcddb1cea5b8edd947e88443b229c69194863841a6eb03dcb42a3",
+            "type": "event",
+            "signature": "RelicBurn(address,uint256,uint256,string)",
+            "name": "RelicBurn",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "rarity",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "reason",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "SubscriptionUnitsUpdated",
+    "abis": [
+        {
+            "hex_signature": "0xe0707ac7efb8b59c22189af8d004ed17dc9e4379e71b9066119b62c182524977",
+            "type": "event",
+            "signature": "SubscriptionUnitsUpdated(address,address,address,uint32,uint128,bytes)",
+            "name": "SubscriptionUnitsUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract ISuperfluidToken",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "subscriber",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "publisher",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "indexId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "units",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "userData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,19 +2,24 @@
     "name": "CounterIncremented",
     "abis": [
         {
-            "@id": "CounterIncremented",
-            "hex_signature": "0x721c20121297512b72821b97f5326877ea8ecf4bb9948fea5bfcb6453074d37f",
+            "@id": "0x721c20121297512b72821b97f5326877ea8ecf4bb9948fea5bfcb6453074d37f",
             "type": "event",
             "signature": "CounterIncremented(uint256,address)",
             "name": "CounterIncremented",
             "inputs": [
                 {
-                    "@type": "evm:counter",
-                    "name": "newCounter",
-                    "type": "uint256"
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "counter",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "name": "offerer",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
                     "type": "address"
                 }
             ],

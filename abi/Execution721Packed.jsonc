@@ -2,24 +2,26 @@
     "name": "Execution721Packed",
     "abis": [
         {
-            "@id": "Execution721Packed",
-            "hex_signature": "0x1d5e12b51dee5e4d34434576c3fb99714a85f57b0fd546ada4b0bddd736d12b2",
+            "@id": "0x1d5e12b51dee5e4d34434576c3fb99714a85f57b0fd546ada4b0bddd736d12b2",
             "type": "event",
             "signature": "Execution721Packed(bytes32,uint256,uint256)",
             "name": "Execution721Packed",
             "inputs": [
                 {
-                    "@type": "blur:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "blur:trader",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "tokenIdListingIndexTrader",
                     "type": "uint256"
                 },
                 {
-                    "@type": "blur:collectionPriceSide",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "collectionPriceSide",
                     "type": "uint256"
                 }

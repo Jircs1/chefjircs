@@ -1,0 +1,38 @@
+{
+    "name": "AuctionCanceled",
+    "abis": [
+        {
+            "hex_signature": "0x6091afcbe8514686c43b167ca4f1b03e24446d29d8490d496e438f8a2c763439",
+            "type": "event",
+            "signature": "AuctionCanceled(uint256,uint256,address,address)",
+            "name": "AuctionCanceled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOwner",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

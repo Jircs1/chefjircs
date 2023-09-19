@@ -1,0 +1,50 @@
+{
+    "name": "NativeGasPaidForContractCall",
+    "abis": [
+        {
+            "hex_signature": "0x617332c1832058df6ee45fcbdf471251474c9945a8e5d229287a21a5f67ccf0a",
+            "type": "event",
+            "signature": "NativeGasPaidForContractCall(address,string,string,bytes32,uint256,address)",
+            "name": "NativeGasPaidForContractCall",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sourceAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "destinationChain",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "destinationAddress",
+                    "type": "string"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "payloadHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasFeeAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "refundAddress",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

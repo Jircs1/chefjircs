@@ -1,0 +1,38 @@
+{
+    "name": "LPWithdrawn",
+    "abis": [
+        {
+            "hex_signature": "0x86ef7829731d23705c76edb615e2feb99fd3832d911fd10bfca814e372925523",
+            "type": "event",
+            "signature": "LPWithdrawn(address,uint256,uint256)",
+            "name": "LPWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "depositor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "depositAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "withdrawnTokens",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

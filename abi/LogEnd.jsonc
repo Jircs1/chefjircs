@@ -1,0 +1,32 @@
+{
+    "name": "LogEnd",
+    "abis": [
+        {
+            "hex_signature": "0xc4c643b243548ed55ba2a304003e28a0a82c202984eb15e1d80d811e02dec47f",
+            "type": "event",
+            "signature": "LogEnd(address,bytes4,bytes)",
+            "name": "LogEnd",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "handler",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes4",
+                    "name": "selector",
+                    "type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "result",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Payment",
+    "abis": [
+        {
+            "@id": "0x6c08739efe35f044209cc5778450323c8f3d5357b1f1e6b78125257986451627",
+            "type": "event",
+            "signature": "Payment(string,uint256,address)",
+            "name": "Payment",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "metadata",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

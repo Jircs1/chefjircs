@@ -1,0 +1,50 @@
+{
+    "name": "ClaimFor",
+    "abis": [
+        {
+            "@id": "0xcfb930b6b49765485460cb1c6853ec3437a78b18d8c9a25b9fed2eea3b6756a9",
+            "type": "event",
+            "signature": "ClaimFor(address,uint256,address,uint256,uint256,address)",
+            "name": "ClaimFor",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "windowIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accountIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "rewardToken",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

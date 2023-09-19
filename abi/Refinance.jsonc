@@ -2,8 +2,7 @@
     "name": "Refinance",
     "abis": [
         {
-            "@id": "Refinance",
-            "hex_signature": "0x558a9295c62e9e1b12a21c8fe816f4816a2e0269a53157edbfa16017b11b9ac9",
+            "@id": "0x558a9295c62e9e1b12a21c8fe816f4816a2e0269a53157edbfa16017b11b9ac9",
             "type": "event",
             "signature": "Refinance(uint256,address,address,uint256,uint256,uint256)",
             "name": "Refinance",
@@ -16,12 +15,36 @@
                 {
                     "@type": "erc721:token",
                     "name": "collection",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "blur": {
+                            "is_erc20": 0,
+                            "is_erc721": 0.9375,
+                            "is_erc20lp": 0,
+                            "numLogs": 147008,
+                            "sampleAddress": "0xed5af388653567af2f388e6224dc7c4b3241c544",
+                            "sampleTxHash": "0x000515e1993e3ee729109a18a2d93e3e50b39ffcd6975fcea21c86b765721159",
+                            "found": 16,
+                            "samples": 16
+                        }
+                    }
                 },
                 {
                     "@type": "blur:newLender",
                     "name": "newLender",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "blur": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 65360,
+                            "sampleAddress": "0xcbb0fe555f61d23427740984325b4583a4a34c82",
+                            "sampleTxHash": "0x0006780327b167e8675d68ecbd0e079052e767e575513d3a13ce95c0229570c2",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

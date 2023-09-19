@@ -1,0 +1,41 @@
+{
+    "name": "transferWithTax",
+    "abis": [
+        {
+            "@id": "0x0b0a49c8d042a49a5fa9f59858363cafadba1d4e36cd681f0e240a40e4cf765a",
+            "type": "event",
+            "signature": "transferWithTax(address,address,uint256,uint256)",
+            "name": "transferWithTax",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_burnAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

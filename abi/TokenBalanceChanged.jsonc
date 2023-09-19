@@ -1,0 +1,56 @@
+{
+    "name": "TokenBalanceChanged",
+    "abis": [
+        {
+            "@id": "0x63fd58f559b73fc4da5511c341ec8a7b31c5c48538ef83c6077712b6edf5f7cb",
+            "type": "event",
+            "signature": "TokenBalanceChanged(address,address,address,uint8,address,uint256,uint256)",
+            "name": "TokenBalanceChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "universe",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum Augur.TokenType",
+                    "name": "tokenType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "market",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "balance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "outcome",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

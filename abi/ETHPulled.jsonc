@@ -1,0 +1,29 @@
+{
+    "name": "ETHPulled",
+    "abis": [
+        {
+            "hex_signature": "0x9f15f0df128ea65ddf3aaa8d614e5f49a3c1e64d78f072b28aabdc36c9d27bf2",
+            "type": "event",
+            "signature": "ETHPulled(address,uint256)",
+            "name": "ETHPulled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenLock",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

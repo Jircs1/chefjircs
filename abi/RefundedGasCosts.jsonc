@@ -1,0 +1,50 @@
+{
+    "name": "RefundedGasCosts",
+    "abis": [
+        {
+            "@id": "0xd0224505f828ccfcbc56ca0590d97442e239a7aa770f712948fd6388356b20de",
+            "type": "event",
+            "signature": "RefundedGasCosts(address,address,bool,uint256,uint256,uint256)",
+            "name": "RefundedGasCosts",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "refundee",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "contractAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gas",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountPaid",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

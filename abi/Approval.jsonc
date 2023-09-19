@@ -1,0 +1,64 @@
+{
+    "name": "Approval",
+    "abis": [
+        {
+            "@id": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "type": "event",
+            "signature": "Approval(address,address,uint256)",
+            "name": "Approval",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "approved",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xb3fd5071835887567a0671151121894ddccc2842f1d10bedad13e0d17cace9a7",
+            "type": "event",
+            "signature": "Approval(address,address,uint256,uint256)",
+            "name": "Approval",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "tokensHolder",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "tokensSpender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "oldTokensNumber",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "newTokensNumber",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

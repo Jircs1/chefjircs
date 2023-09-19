@@ -1,0 +1,38 @@
+{
+    "name": "RoyaltiesSet",
+    "abis": [
+        {
+            "@id": "0x3fa96d7b6bcbfe71ef171666d84db3cf52fa2d1c8afdb1cc8e486177f208b7df",
+            "type": "event",
+            "signature": "RoyaltiesSet(uint256,(address,uint96)[])",
+            "name": "RoyaltiesSet",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address payable",
+                            "name": "account",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint96",
+                            "name": "value",
+                            "type": "uint96"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct LibPart.Part[]",
+                    "name": "royalties",
+                    "type": "tuple[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

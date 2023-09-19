@@ -2,38 +2,25 @@
     "name": "WithdrawalRequested",
     "abis": [
         {
-            "@id": "WithdrawalRequested",
-            "hex_signature": "0xf0cb471f23fb74ea44b8252eb1881a2dca546288d9f6e90d1a0e82fe0ed342ab",
+            "hex_signature": "0xe670e4e82118d22a1f9ee18920455ebc958bae26a90a05d31d3378788b1b0e44",
             "type": "event",
-            "signature": "WithdrawalRequested(uint256,address,address,uint256,uint256)",
+            "signature": "WithdrawalRequested(address,uint256)",
             "name": "WithdrawalRequested",
             "inputs": [
                 {
-                    "@type": "erc20:tokenAmount",
-                    "name": "requestId",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "investor",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "id",
                     "type": "uint256",
+                    "@type": "erc20:tokenAmount",
                     "@token": "$",
                     "validationSuccess": true
-                },
-                {
-                    "@type": "transfer:to",
-                    "name": "requestor",
-                    "type": "address"
-                },
-                {
-                    "@type": "transfer:from",
-                    "name": "owner",
-                    "type": "address"
-                },
-                {
-                    "@type": "evm:tokenAmount",
-                    "name": "amountOfStETH",
-                    "type": "uint256"
-                },
-                {
-                    "@type": "lido:shares",
-                    "name": "amountOfShares",
-                    "type": "uint256"
                 }
             ],
             "outputs": null

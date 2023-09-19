@@ -2,19 +2,20 @@
     "name": "ReserveUsedAsCollateralEnabled",
     "abis": [
         {
-            "@id": "ReserveUsedAsCollateralEnabled",
-            "hex_signature": "0x00058a56ea94653cdf4f152d227ace22d4c00ad99e2a43f58cb7d9e3feb295f2",
+            "@id": "0x00058a56ea94653cdf4f152d227ace22d4c00ad99e2a43f58cb7d9e3feb295f2",
             "type": "event",
             "signature": "ReserveUsedAsCollateralEnabled(address,address)",
             "name": "ReserveUsedAsCollateralEnabled",
             "inputs": [
                 {
-                    "@type": "lending:reserve",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "reserve",
                     "type": "address"
                 },
                 {
-                    "@type": "lending:user",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "user",
                     "type": "address"
                 }

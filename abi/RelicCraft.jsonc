@@ -1,0 +1,56 @@
+{
+    "name": "RelicCraft",
+    "abis": [
+        {
+            "@id": "0x6ecc55d9c49e85d50a3ccdb5b7c490179694cd317ecb04bbc27e91f7cfb3c40b",
+            "type": "event",
+            "signature": "RelicCraft(address,uint256,uint256,uint256,uint256[],uint256[],uint256[])",
+            "name": "RelicCraft",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fromRarity",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "burnRelicRarity",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "kzgTokenIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "kubzTokenIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "burnRelicTokenIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

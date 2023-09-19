@@ -1,0 +1,53 @@
+{
+    "name": "DepositToken",
+    "abis": [
+        {
+            "hex_signature": "0x63333d9ba80d323ed3a2c486809215e8f1fb8c645691606b862787fad572c1c7",
+            "type": "event",
+            "signature": "DepositToken(address,uint256,address,string,string,uint256)",
+            "name": "DepositToken",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "targetAddress",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "chain",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nativeValue",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

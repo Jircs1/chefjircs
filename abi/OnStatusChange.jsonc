@@ -1,0 +1,26 @@
+{
+    "name": "OnStatusChange",
+    "abis": [
+        {
+            "hex_signature": "0x6c63948b76a7869a0d6806020a8c442c5665618c286c511088aa8377a9887c6c",
+            "type": "event",
+            "signature": "OnStatusChange(uint256,uint8)",
+            "name": "OnStatusChange",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "issueId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum VoterUpgradeable.ProposalStatus",
+                    "name": "Status",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

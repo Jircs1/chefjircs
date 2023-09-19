@@ -1,0 +1,35 @@
+{
+    "name": "BadgeClaimed",
+    "abis": [
+        {
+            "@id": "0x18f16ba4056da04d7ba586437d74d8b74b8e28769fb80fdc8f521c6ab4717fd6",
+            "type": "event",
+            "signature": "BadgeClaimed(uint256,address,uint256)",
+            "name": "BadgeClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "badgeId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

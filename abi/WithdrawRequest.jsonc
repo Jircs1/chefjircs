@@ -1,0 +1,35 @@
+{
+    "name": "WithdrawRequest",
+    "abis": [
+        {
+            "hex_signature": "0xcdb62e3f244f9959bd661d145243fc71558361230885919e11fcc84312d44c7d",
+            "type": "event",
+            "signature": "WithdrawRequest(address,address,uint256)",
+            "name": "WithdrawRequest",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountOut",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

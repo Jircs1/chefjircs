@@ -2,8 +2,7 @@
     "name": "LoanOfferTaken",
     "abis": [
         {
-            "@id": "LoanOfferTaken",
-            "hex_signature": "0x06a333c2d6fe967ca967f7a35be2eb45e8caeb6cf05e16f55d42b91b5fe31255",
+            "@id": "0x06a333c2d6fe967ca967f7a35be2eb45e8caeb6cf05e16f55d42b91b5fe31255",
             "type": "event",
             "signature": "LoanOfferTaken(bytes32,uint256,address,address,address,uint256,uint256,uint256,uint256)",
             "name": "LoanOfferTaken",
@@ -21,17 +20,53 @@
                 {
                     "@type": "erc721:token",
                     "name": "collection",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "blur": {
+                            "is_erc20": 0,
+                            "is_erc721": 0.9375,
+                            "is_erc20lp": 0,
+                            "numLogs": 207382,
+                            "sampleAddress": "0xed5af388653567af2f388e6224dc7c4b3241c544",
+                            "sampleTxHash": "0x0003252a28972ca0a086747fcb5365acc6f85b86111b5a5cd202e36d0feadef2",
+                            "found": 16,
+                            "samples": 16
+                        }
+                    }
                 },
                 {
                     "@type": "lending:lender",
                     "name": "lender",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "blur": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 100667,
+                            "sampleAddress": "0xcbb0fe555f61d23427740984325b4583a4a34c82",
+                            "sampleTxHash": "0x000a863da4dc6aa5a01de3038f994642bdbd60c6b30db077feace4fd2ba45182",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "lending:borrower",
                     "name": "borrower",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "blur": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 87941,
+                            "sampleAddress": "0xb26b5d90c8961a779efc8d8ad881b128dd8385eb",
+                            "sampleTxHash": "0x0000145456a508beab27e38dbd14fbeec925e95f4f5eda7fc8560f4f5e529820",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

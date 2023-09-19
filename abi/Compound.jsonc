@@ -1,0 +1,29 @@
+{
+    "name": "Compound",
+    "abis": [
+        {
+            "@id": "0x169f1815ebdea059aac3bb00ec9a9594c7a5ffcb64a17e8392b5d84909a14556",
+            "type": "event",
+            "signature": "Compound(address,uint256)",
+            "name": "Compound",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token0Address",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "token0Amt",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

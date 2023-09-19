@@ -2,24 +2,26 @@
     "name": "OrderFilled",
     "abis": [
         {
-            "@id": "OrderFilled",
-            "hex_signature": "0xb9ed0243fdf00f0545c63a0af8850c090d86bb46682baec4bf3c496814fe4f02",
+            "@id": "0xb9ed0243fdf00f0545c63a0af8850c090d86bb46682baec4bf3c496814fe4f02",
             "type": "event",
             "signature": "OrderFilled(address,bytes32,uint256)",
             "name": "OrderFilled",
             "inputs": [
                 {
-                    "@type": "dex:maker",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "maker",
                     "type": "address"
                 },
                 {
-                    "@type": "1inch:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "dex:remaining",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "remaining",
                     "type": "uint256"
                 }

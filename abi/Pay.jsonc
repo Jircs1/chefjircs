@@ -1,0 +1,35 @@
+{
+    "name": "Pay",
+    "abis": [
+        {
+            "hex_signature": "0x32c8827c44bf4e71963135be394d95e34ec7302da6f5d8fca5439557863a33f4",
+            "type": "event",
+            "signature": "Pay(address,uint256,uint256)",
+            "name": "Pay",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "code",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

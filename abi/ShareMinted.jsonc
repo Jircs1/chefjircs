@@ -1,0 +1,38 @@
+{
+    "name": "ShareMinted",
+    "abis": [
+        {
+            "@id": "0xc9afff0972d33d68c8d330fe0ebd0e9f54491ad8c59ae17330a9206f280f0865",
+            "type": "event",
+            "signature": "ShareMinted(uint256,address,uint256,uint256)",
+            "name": "ShareMinted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "validatorId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokens",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "SwapPtAndToken",
+    "abis": [
+        {
+            "hex_signature": "0x78e08a1e3c7a72f78d2c8ad8254052914bad73f8c681dbdc4267d0bb8ac9423c",
+            "type": "event",
+            "signature": "SwapPtAndToken(address,address,address,address,int256,int256)",
+            "name": "SwapPtAndToken",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "market",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "netPtToAccount",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "netTokenToAccount",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

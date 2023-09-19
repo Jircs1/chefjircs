@@ -2,8 +2,70 @@
     "name": "ReceiveFromChain",
     "abis": [
         {
-            "@id": "ReceiveFromChain",
-            "hex_signature": "0x831bc68226f8d1f734ffcca73602efc4eca13711402ba1d2cc05ee17bb54f631",
+            "@id": "0xbf551ec93859b170f9b2141bd9298bf3f64322c6f7beb2543a0cb669834118bf",
+            "type": "event",
+            "signature": "ReceiveFromChain(uint16,address,uint256)",
+            "name": "ReceiveFromChain",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "_srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x5b821db8a46f8ecbe1941ba2f51cfeea9643268b56631f70d45e2a745d990265",
+            "type": "event",
+            "signature": "ReceiveFromChain(uint16,bytes,address,uint256[])",
+            "name": "ReceiveFromChain",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "_srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes",
+                    "name": "_srcAddress",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_toAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "_tokenIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x831bc68226f8d1f734ffcca73602efc4eca13711402ba1d2cc05ee17bb54f631",
             "type": "event",
             "signature": "ReceiveFromChain(uint16,uint64,uint256)",
             "name": "ReceiveFromChain",
@@ -24,6 +86,45 @@
                     "name": "qty",
                     "type": "uint256",
                     "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x64e10c37f404d128982dce114f5d233c14c5c7f6d8db93099e3d99dacb9e27ba",
+            "type": "event",
+            "signature": "ReceiveFromChain(uint16,bytes,address,uint256,uint64)",
+            "name": "ReceiveFromChain",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "_srcChainId",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes",
+                    "name": "_srcAddress",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_toAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "_nonce",
+                    "type": "uint64"
                 }
             ],
             "outputs": null

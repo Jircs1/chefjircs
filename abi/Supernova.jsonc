@@ -1,0 +1,47 @@
+{
+    "name": "Supernova",
+    "abis": [
+        {
+            "hex_signature": "0xcf9ca7e13a52be0b8719a96eee53f29187b04e95bc0968dc3a2384cf77e3e622",
+            "type": "event",
+            "signature": "Supernova(uint256,uint256[],uint256,string,uint256)",
+            "name": "Supernova",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "burntTokens",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "burntTotal",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "character",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "hype",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

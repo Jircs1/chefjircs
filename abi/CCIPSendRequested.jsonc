@@ -1,0 +1,94 @@
+{
+    "name": "CCIPSendRequested",
+    "abis": [
+        {
+            "hex_signature": "0xaffc45517195d6499808c643bd4a7b0ffeedf95bea5852840d7bfcf63f59e821",
+            "type": "event",
+            "signature": "CCIPSendRequested((uint64,uint64,uint256,address,uint64,uint256,bool,address,bytes,(address,uint256)[],address,bytes32))",
+            "name": "CCIPSendRequested",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint64",
+                            "name": "sourceChainSelector",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "sequenceNumber",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "feeTokenAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "sender",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "nonce",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "gasLimit",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "strict",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "receiver",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "bytes",
+                            "name": "data",
+                            "type": "bytes"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "address",
+                                    "name": "token",
+                                    "type": "address"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "amount",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Client.EVMTokenAmount[]",
+                            "name": "tokenAmounts",
+                            "type": "tuple[]"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "feeToken",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "messageId",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Internal.EVM2EVMMessage",
+                    "name": "message",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

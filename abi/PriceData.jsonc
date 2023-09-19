@@ -2,34 +2,38 @@
     "name": "PriceData",
     "abis": [
         {
-            "@id": "PriceData",
-            "hex_signature": "0x23b9387f81fca646aac1dc4487ede045c65f5f7445482906565f01e05afdb3a8",
+            "@id": "0x23b9387f81fca646aac1dc4487ede045c65f5f7445482906565f01e05afdb3a8",
             "type": "event",
             "signature": "PriceData(address,uint256,uint256,uint256,uint256)",
             "name": "PriceData",
             "inputs": [
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "token",
                     "type": "address"
                 },
                 {
-                    "@type": "dex:price",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "refPrice",
                     "type": "uint256"
                 },
                 {
-                    "@type": "dex:price",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "fastPrice",
                     "type": "uint256"
                 },
                 {
-                    "@type": "dex:cumulativeRefDelta",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "cumulativeRefDelta",
                     "type": "uint256"
                 },
                 {
-                    "@type": "dex:cumulativeFastDelta",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "cumulativeFastDelta",
                     "type": "uint256"
                 }

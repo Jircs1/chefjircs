@@ -2,24 +2,26 @@
     "name": "MintFeePayout",
     "abis": [
         {
-            "@id": "MintFeePayout",
-            "hex_signature": "0x6f8da53cfedb8cc4f7935c3629624e50b63053c93bb2cad246aa4d3a2ba7d4ce",
+            "@id": "0x6f8da53cfedb8cc4f7935c3629624e50b63053c93bb2cad246aa4d3a2ba7d4ce",
             "type": "event",
             "signature": "MintFeePayout(uint256,address,bool)",
             "name": "MintFeePayout",
             "inputs": [
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "mintFeeAmount",
                     "type": "uint256"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "mintFeeRecipient",
                     "type": "address"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bool",
                     "name": "success",
                     "type": "bool"
                 }

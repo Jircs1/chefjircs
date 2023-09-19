@@ -1,0 +1,32 @@
+{
+    "name": "CollectTax",
+    "abis": [
+        {
+            "hex_signature": "0x584c2e3a292b065d3d3a0edd7e25bb572b4c171192c33ab9c3b0f5d4448adf8b",
+            "type": "event",
+            "signature": "CollectTax(bytes32,uint256,int256)",
+            "name": "CollectTax",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "collateralType",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "latestAccumulatedRate",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "deltaRate",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

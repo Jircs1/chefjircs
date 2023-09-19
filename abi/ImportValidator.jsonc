@@ -1,0 +1,38 @@
+{
+    "name": "ImportValidator",
+    "abis": [
+        {
+            "@id": "0xb20f83d7fca2253dd4a37d0ee1922398cbbecf5a89899514947161ae70c0037f",
+            "type": "event",
+            "signature": "ImportValidator(uint256,uint256,bytes32,bytes32)",
+            "name": "ImportValidator",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "epoch",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "blockNumber",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "blockHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "receiptHash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

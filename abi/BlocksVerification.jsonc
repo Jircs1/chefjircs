@@ -2,19 +2,20 @@
     "name": "BlocksVerification",
     "abis": [
         {
-            "@id": "BlocksVerification",
-            "hex_signature": "0x22c9005dd88c18b552a1cd7e8b3b937fcde9ca69213c1f658f54d572e4877a81",
+            "@id": "0x22c9005dd88c18b552a1cd7e8b3b937fcde9ca69213c1f658f54d572e4877a81",
             "type": "event",
             "signature": "BlocksVerification(uint256,uint256)",
             "name": "BlocksVerification",
             "inputs": [
                 {
-                    "@type": "evm:blockNumber",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "previousLastVerifiedBlock",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:blockNumber",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "currentLastVerifiedBlock",
                     "type": "uint256"
                 }

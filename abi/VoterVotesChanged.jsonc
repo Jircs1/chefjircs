@@ -1,0 +1,32 @@
+{
+    "name": "VoterVotesChanged",
+    "abis": [
+        {
+            "@id": "0x3eaa1c4be29b4a4c60e00300b5a17a8ec6c982b5b0ad5870cc84ebdc3b24d68e",
+            "type": "event",
+            "signature": "VoterVotesChanged(address,uint256,uint256)",
+            "name": "VoterVotesChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "voter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "previousBalance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newBalance",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

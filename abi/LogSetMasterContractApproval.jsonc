@@ -1,0 +1,32 @@
+{
+    "name": "LogSetMasterContractApproval",
+    "abis": [
+        {
+            "@id": "0x5f6ebb64ba012a851c6f014e6cad458ddf213d1512049b31cd06365c2b059257",
+            "type": "event",
+            "signature": "LogSetMasterContractApproval(address,address,bool)",
+            "name": "LogSetMasterContractApproval",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "masterContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

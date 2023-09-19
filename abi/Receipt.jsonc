@@ -1,0 +1,29 @@
+{
+    "name": "Receipt",
+    "abis": [
+        {
+            "@id": "0x7784f8d436dc514f0690e472c7e2d7f660a73e504c69b2350f6be5a5f02432ef",
+            "type": "event",
+            "signature": "Receipt(address,uint256)",
+            "name": "Receipt",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

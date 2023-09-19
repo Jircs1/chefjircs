@@ -1,0 +1,47 @@
+{
+    "name": "SendToSeeleEvent",
+    "abis": [
+        {
+            "hex_signature": "0x0ee3881a7b95db3ea47c0e737fea394eb0d9fbcd0fd5f9c44acccf294cefed0a",
+            "type": "event",
+            "signature": "SendToSeeleEvent(address,address,address,uint256,uint256)",
+            "name": "SendToSeeleEvent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_tokenContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_destination",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_eventNonce",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

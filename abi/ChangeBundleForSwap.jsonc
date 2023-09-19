@@ -1,0 +1,38 @@
+{
+    "name": "ChangeBundleForSwap",
+    "abis": [
+        {
+            "hex_signature": "0x700dec44bb198379f48560c2e4ea3ce1a6485d0beaf623dbcead52c7850ff3df",
+            "type": "event",
+            "signature": "ChangeBundleForSwap(uint64,int256,uint256,uint128)",
+            "name": "ChangeBundleForSwap",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "bundleId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "makerAmountRemaining",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "takerFeeAmountIn",
+                    "type": "uint128"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

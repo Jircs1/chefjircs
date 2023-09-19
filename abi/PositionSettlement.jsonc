@@ -1,0 +1,38 @@
+{
+    "name": "PositionSettlement",
+    "abis": [
+        {
+            "@id": "0x970071e0d424aa8ce645bd8034df7db5eec3ce8fb9d83833a84320fb29b2c9fc",
+            "type": "event",
+            "signature": "PositionSettlement(address,int24,int24,int256)",
+            "name": "PositionSettlement",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "tickLower",
+                    "type": "int24"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "tickUpper",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "settlementCashflow",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

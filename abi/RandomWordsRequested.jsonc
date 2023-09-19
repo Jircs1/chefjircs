@@ -1,0 +1,62 @@
+{
+    "name": "RandomWordsRequested",
+    "abis": [
+        {
+            "@id": "0x63373d1c4696214b898952999c9aaec57dac1ee2723cec59bea6888f489a9772",
+            "type": "event",
+            "signature": "RandomWordsRequested(bytes32,uint256,uint256,uint64,uint16,uint32,uint32,address)",
+            "name": "RandomWordsRequested",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "keyHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "requestId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "preSeed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "subId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "minimumRequestConfirmations",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "callbackGasLimit",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "numWords",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,46 +2,50 @@
     "name": "OtcOrderFilled",
     "abis": [
         {
-            "@id": "OtcOrderFilled",
-            "hex_signature": "0xac75f773e3a92f1a02b12134d65e1f47f8a14eabe4eaf1e24624918e6a8b269f",
+            "@id": "0xac75f773e3a92f1a02b12134d65e1f47f8a14eabe4eaf1e24624918e6a8b269f",
             "type": "event",
             "signature": "OtcOrderFilled(bytes32,address,address,address,address,uint128,uint128)",
             "name": "OtcOrderFilled",
             "inputs": [
                 {
-                    "@type": "0x:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "dex:maker",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "maker",
                     "type": "address"
                 },
                 {
-                    "@type": "dex:taker",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "taker",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "makerToken",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "takerToken",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$4",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "makerTokenFilledAmount",
                     "type": "uint128"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$5",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "takerTokenFilledAmount",
                     "type": "uint128"
                 }

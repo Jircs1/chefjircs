@@ -1,0 +1,29 @@
+{
+    "name": "UnstakeTokens",
+    "abis": [
+        {
+            "hex_signature": "0xf74a79d13d6fdbdf26b2c779e6a24490a43e65d60cc7e064740f8d40b2b5ea2c",
+            "type": "event",
+            "signature": "UnstakeTokens(address,uint256)",
+            "name": "UnstakeTokens",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

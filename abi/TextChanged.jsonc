@@ -1,0 +1,65 @@
+{
+    "name": "TextChanged",
+    "abis": [
+        {
+            "@id": "0xd8c9334b1a9c2f9da342a0a2b32629c1a229b6445dad78947f674b44444a7550",
+            "type": "event",
+            "signature": "TextChanged(bytes32,string,string)",
+            "name": "TextChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "node",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "indexedKey",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x448bc014f1536726cf8d54ff3d6481ed3cbc683c2591ca204274009afa09b1a1",
+            "type": "event",
+            "signature": "TextChanged(bytes32,string,string,string)",
+            "name": "TextChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "node",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "string",
+                    "name": "indexedKey",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "key",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "value",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

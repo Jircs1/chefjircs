@@ -1,0 +1,41 @@
+{
+    "name": "TokenBidRemovedEvent",
+    "abis": [
+        {
+            "hex_signature": "0xf6b89ca1bccc679695ae3b928ee8c9335ecdfd739853cfe9e209a13e40cfacc0",
+            "type": "event",
+            "signature": "TokenBidRemovedEvent(uint256,address,uint256,bool)",
+            "name": "TokenBidRemovedEvent",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bidId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isBidder",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

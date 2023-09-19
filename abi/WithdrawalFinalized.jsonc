@@ -2,20 +2,94 @@
     "name": "WithdrawalFinalized",
     "abis": [
         {
-            "@id": "WithdrawalFinalized",
-            "hex_signature": "0xdb5c7652857aa163daadd670e116628fb42e869d8ac4251ef8971d9e5727df1b",
+            "@id": "0xdb5c7652857aa163daadd670e116628fb42e869d8ac4251ef8971d9e5727df1b",
             "type": "event",
             "signature": "WithdrawalFinalized(bytes32,bool)",
             "name": "WithdrawalFinalized",
             "inputs": [
                 {
-                    "@type": "optimism:withdrawalHash",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "withdrawalHash",
                     "type": "bytes32"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bool",
                     "name": "success",
                     "type": "bool"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x891afe029c75c4f8c5855fc3480598bc5a53739344f6ae575bdb7ea2a79f56b3",
+            "type": "event",
+            "signature": "WithdrawalFinalized(address,address,address,uint256,uint256)",
+            "name": "WithdrawalFinalized",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "l1Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "exitNum",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xac1b18083978656d557d6e91c88203585cfda1031bdb14538327121ef140d383",
+            "type": "event",
+            "signature": "WithdrawalFinalized(address,address,uint256)",
+            "name": "WithdrawalFinalized",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "l1Token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null

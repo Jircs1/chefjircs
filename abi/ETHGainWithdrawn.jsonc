@@ -1,0 +1,32 @@
+{
+    "name": "ETHGainWithdrawn",
+    "abis": [
+        {
+            "@id": "0x51457222ebca92c335c9c86e2baa1cc0e40ffaa9084a51452980d5ba8dec2f63",
+            "type": "event",
+            "signature": "ETHGainWithdrawn(address,uint256,uint256)",
+            "name": "ETHGainWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_depositor",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_ETH",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_ARTHLoss",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "WrapperFees",
+    "abis": [
+        {
+            "@id": "0x97bcdc1dd7ab82ef93280983f23d391afea463d0333fddd1a4617693b9ccfeea",
+            "type": "event",
+            "signature": "WrapperFees(bytes2,address,uint256,uint256)",
+            "name": "WrapperFees",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes2",
+                    "name": "partnerId",
+                    "type": "bytes2"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "wrapperFee",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "callerFee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

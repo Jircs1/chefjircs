@@ -1,0 +1,44 @@
+{
+    "name": "CBridgeIMStatusUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x1cbe9d2f9c17d230efb5c6ed6065b9872001bf185d0c6bdd82b60fe57e84cbbe",
+            "type": "event",
+            "signature": "CBridgeIMStatusUpdated(bytes32,address,uint256,uint8,address)",
+            "name": "CBridgeIMStatusUpdated",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "outputAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum IRango.CrossChainOperationStatus",
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "destination",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

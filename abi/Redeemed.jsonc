@@ -2,8 +2,7 @@
     "name": "Redeemed",
     "abis": [
         {
-            "@id": "Redeemed",
-            "hex_signature": "0xf3a670cd3af7d64b488926880889d08a8585a138ff455227af6737339a1ec262",
+            "@id": "0xf3a670cd3af7d64b488926880889d08a8585a138ff455227af6737339a1ec262",
             "type": "event",
             "signature": "Redeemed(address,uint256,uint256)",
             "name": "Redeemed",
@@ -11,7 +10,19 @@
                 {
                     "@type": "transfer:to",
                     "name": "_sender",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "stargate": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 7368,
+                            "sampleAddress": "0xf4627cec6ea1c46963942c076f39746814b7aa9e",
+                            "sampleTxHash": "0x0006eab4b5547ed1ab1717da80417f765d7e28a90079dff666cce54760f0babc",
+                            "found": 0,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",
@@ -30,28 +41,28 @@
             "outputs": null
         },
         {
-            "@id": "Reedemed_Rate",
-            "hex_signature": "0xf3a670cd3af7d64b488926880889d08a8585a138ff455227af6737339a1ec262",
+            "@id": "0x63b13f6307f284441e029836b0c22eb91eb62a7ad555670061157930ce884f4e",
             "type": "event",
-            "signature": "Redeemed(address,uint256,uint256)",
+            "signature": "Redeemed(uint256[],uint256[],address)",
             "name": "Redeemed",
             "inputs": [
                 {
-                    "@type": "transfer:to",
-                    "name": "_user",
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "nftIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "specificIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
                     "type": "address"
-                },
-                {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "name": "_amount",
-                    "type": "uint256",
-                    "validationSuccess": true
-                },
-                {
-                    "@type": "stargate:rate",
-                    "name": "_exchangeRate",
-                    "type": "uint256"
                 }
             ],
             "outputs": null

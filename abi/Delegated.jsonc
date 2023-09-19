@@ -1,0 +1,38 @@
+{
+    "name": "Delegated",
+    "abis": [
+        {
+            "hex_signature": "0x30bcda2f188b532c7644e632473e83a6fb3c5c79717650d0ac790d141bb1b177",
+            "type": "event",
+            "signature": "Delegated(address,address,uint256,uint64)",
+            "name": "Delegated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "validator",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "epoch",
+                    "type": "uint64"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

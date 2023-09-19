@@ -1,0 +1,38 @@
+{
+    "name": "LoanTaken",
+    "abis": [
+        {
+            "hex_signature": "0x7f998982d8fd777092d13a0c3ab33d9e65778194170dcb979d2dd80e56b46a73",
+            "type": "event",
+            "signature": "LoanTaken(uint256,uint256,address)",
+            "name": "LoanTaken",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "takenBy",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "ClaimVesting",
+    "abis": [
+        {
+            "hex_signature": "0x93b2b5baeb90867d00d09e02023eed58ae019d05b1c254578512984cc85e5ba6",
+            "type": "event",
+            "signature": "ClaimVesting(address,uint256,uint256)",
+            "name": "ClaimVesting",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "payee",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "claimAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

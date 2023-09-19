@@ -1,0 +1,41 @@
+{
+    "name": "LogWithdrawalAllowed",
+    "abis": [
+        {
+            "@id": "0x03c10a82c955f7bcd0c934147fb39cafca947a4294425b1751d884c8ac954287",
+            "type": "event",
+            "signature": "LogWithdrawalAllowed(uint256,uint256,uint256,uint256)",
+            "name": "LogWithdrawalAllowed",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "starkKey",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "assetType",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonQuantizedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "quantizedAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

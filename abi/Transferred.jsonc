@@ -2,25 +2,90 @@
     "name": "Transferred",
     "abis": [
         {
-            "@id": "Transferred",
-            "hex_signature": "0x769254a71d2f67d8ac6cb44f2803c0d05cfbcf9effadb6a984f10ff9de3df6c3",
+            "@id": "0x769254a71d2f67d8ac6cb44f2803c0d05cfbcf9effadb6a984f10ff9de3df6c3",
             "type": "event",
             "signature": "Transferred(address,address,address,uint256)",
             "name": "Transferred",
             "inputs": [
                 {
                     "name": "_by",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "illuvium": {
+                            "is_erc20": 0.0862069,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.103448,
+                            "numLogs": 237296,
+                            "sampleAddress": "0x6a091a3406e0073c3cd6340122143009adac0eda",
+                            "sampleTxHash": "0x0000d4856ebfc1f644d296d91e436360049284ae24eaba77851a87b0b6531984",
+                            "found": 58,
+                            "samples": 100
+                        },
+                        "syndicate": {
+                            "is_erc20": 0.0512821,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.0512821,
+                            "numLogs": 17848,
+                            "sampleAddress": "0xcec8f07014d889442d7cf3b477b8f72f8179ea09",
+                            "sampleTxHash": "0x3ee480f8ab8f5dae7782699c0267c37e045dc1b280206716899a1565c805ec2b",
+                            "found": 39,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:from",
                     "name": "_from",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "illuvium": {
+                            "is_erc20": 0.104167,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.125,
+                            "numLogs": 192972,
+                            "sampleAddress": "0x6a091a3406e0073c3cd6340122143009adac0eda",
+                            "sampleTxHash": "0x0000d4856ebfc1f644d296d91e436360049284ae24eaba77851a87b0b6531984",
+                            "found": 48,
+                            "samples": 100
+                        },
+                        "syndicate": {
+                            "is_erc20": 0.0869565,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.0869565,
+                            "numLogs": 16002,
+                            "sampleAddress": "0xb44889a0da462090922f72d7faf69bceb3adb7c6",
+                            "sampleTxHash": "0x3ee480f8ab8f5dae7782699c0267c37e045dc1b280206716899a1565c805ec2b",
+                            "found": 23,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:to",
                     "name": "_to",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "illuvium": {
+                            "is_erc20": 0.102564,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.153846,
+                            "numLogs": 142405,
+                            "sampleAddress": "0x6a091a3406e0073c3cd6340122143009adac0eda",
+                            "sampleTxHash": "0x0000edf694982782a142497768c51b1f2210bc34594f4d3667e4175f1a574acb",
+                            "found": 39,
+                            "samples": 100
+                        },
+                        "syndicate": {
+                            "is_erc20": 0.117647,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0.117647,
+                            "numLogs": 9793,
+                            "sampleAddress": "0xd14782a6f2512495584a252ffca49b17486a08d3",
+                            "sampleTxHash": "0x002b5aad928da91fc4eb54e822ab4450efaa1389bab0be7f2706a1cc99419415",
+                            "found": 17,
+                            "samples": 100
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

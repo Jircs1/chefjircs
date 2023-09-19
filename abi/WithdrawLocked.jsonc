@@ -1,0 +1,41 @@
+{
+    "name": "WithdrawLocked",
+    "abis": [
+        {
+            "hex_signature": "0x1d9308f6b22a2754a1c622bb30889e8f8f956c83e524d039e9d65d5f052eb908",
+            "type": "event",
+            "signature": "WithdrawLocked(address,uint256,bytes32,address)",
+            "name": "WithdrawLocked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "kek_id",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "destination_address",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

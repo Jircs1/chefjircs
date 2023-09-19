@@ -2,8 +2,7 @@
     "name": "RewardsDistributed",
     "abis": [
         {
-            "@id": "RewardsDistributed",
-            "hex_signature": "0xdf29796aad820e4bb192f3a8d631b76519bcd2cbe77cc85af20e9df53cece086",
+            "@id": "0xdf29796aad820e4bb192f3a8d631b76519bcd2cbe77cc85af20e9df53cece086",
             "type": "event",
             "signature": "RewardsDistributed(address,uint256)",
             "name": "RewardsDistributed",
@@ -11,7 +10,59 @@
                 {
                     "@type": "transfer:from",
                     "name": "from",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "nftx": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 18169,
+                            "sampleAddress": "0x688c3e4658b5367da06fd629e41879beab538e37",
+                            "sampleTxHash": "0x0000a964aa55cdcc06b534953b1d72845b3f5487291514744d5b29cdc5114e89",
+                            "found": 1,
+                            "samples": 1
+                        },
+                        "cryptounicorns": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 4162,
+                            "sampleAddress": "0x2d9fd7ad43e75d1f991de6cc876d2285cf8ccbf0",
+                            "sampleTxHash": "0x046ce3e6768d24ba0b570f91134e385beb829bca1e2ef8bc5f995185560bfe6b",
+                            "found": 5,
+                            "samples": 100
+                        },
+                        "asap": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 2228,
+                            "sampleAddress": "0xc36ad98e62598ae24d4487d8012209f687c30d45",
+                            "sampleTxHash": "0x00432f8d4ffbda80099020564c80a2c17503b7faca12ac7f9e75c2ccfc68ade8",
+                            "found": 1,
+                            "samples": 1
+                        },
+                        "convex": {
+                            "is_erc20": 1,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 406,
+                            "sampleAddress": "0xc2544a32872a91f4a553b404c6950e89de901fdb",
+                            "sampleTxHash": "0x022c12ef3ec703b98833f942a3a7d9f6103d05bdc34808f11ba69970ea431063",
+                            "found": 4,
+                            "samples": 4
+                        },
+                        "ethlinq": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 9,
+                            "sampleAddress": "0xa48f54ce738a55b9784bf6ea704e7f64a661ef73",
+                            "sampleTxHash": "0x1219a47c4f708a976fe37321d6a35c3c85faaa07002bab104691728b0559878d",
+                            "found": 0,
+                            "samples": 1
+                        }
+                    }
                 },
                 {
                     "@type": "erc20:tokenAmount",

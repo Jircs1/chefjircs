@@ -1,0 +1,47 @@
+{
+    "name": "CollateralWithdrawn",
+    "abis": [
+        {
+            "hex_signature": "0x900e8de8e8718a6bde86415bf9b8c70e1a4f744314eaef5c60b0705a271035d6",
+            "type": "event",
+            "signature": "CollateralWithdrawn(address,address,uint256,uint256,uint256)",
+            "name": "CollateralWithdrawn",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "withdrawn",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

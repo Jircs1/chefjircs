@@ -1,0 +1,47 @@
+{
+    "name": "GasFeeCalculated",
+    "abis": [
+        {
+            "@id": "0x9b36696d0f99bcef3d9db526d18d2e13abee9741727d7d21128c6079d985c2e1",
+            "type": "event",
+            "signature": "GasFeeCalculated(uint256,uint256,uint256,uint256,uint256)",
+            "name": "GasFeeCalculated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "gasUsed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "gasPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "nativeTokenPriceInTransferredToken",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenGasBaseFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "gasFeeInTransferredToken",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

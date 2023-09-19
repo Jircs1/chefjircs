@@ -1,0 +1,38 @@
+{
+    "name": "NftAddedToExhibition",
+    "abis": [
+        {
+            "hex_signature": "0xb17e0c916df75a12480835f00b3927cb871bbe00bacf819f81a1d92f9ff7f38d",
+            "type": "event",
+            "signature": "NftAddedToExhibition(address,uint256,uint256)",
+            "name": "NftAddedToExhibition",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "nftContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "exhibitionId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

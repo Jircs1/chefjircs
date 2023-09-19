@@ -2,35 +2,38 @@
     "name": "PoolBalanceChanged",
     "abis": [
         {
-            "@id": "PoolBalanceChanged",
-            "hex_signature": "0xe5ce249087ce04f05a957192435400fd97868dba0e6a4b4c049abf8af80dae78",
+            "@id": "0xe5ce249087ce04f05a957192435400fd97868dba0e6a4b4c049abf8af80dae78",
             "type": "event",
             "signature": "PoolBalanceChanged(bytes32,address,address[],int256[],uint256[])",
             "name": "PoolBalanceChanged",
             "inputs": [
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "poolId",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "balancer:liquidityProvider",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "liquidityProvider",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": false,
+                    "internalType": "contract IERC20[]",
                     "name": "tokens",
                     "type": "address[]"
                 },
                 {
-                    "@type": "balancer:deltas",
+                    "indexed": false,
+                    "internalType": "int256[]",
                     "name": "deltas",
                     "type": "int256[]"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256[]",
                     "name": "protocolFeeAmounts",
                     "type": "uint256[]"
                 }

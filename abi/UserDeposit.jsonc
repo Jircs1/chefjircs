@@ -1,0 +1,29 @@
+{
+    "name": "UserDeposit",
+    "abis": [
+        {
+            "hex_signature": "0x35db3d768e685509e031bae369804ca7dc6656af739e079f1d3312cadc7b19d8",
+            "type": "event",
+            "signature": "UserDeposit(address,uint256)",
+            "name": "UserDeposit",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "wallet",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

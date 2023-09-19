@@ -2,8 +2,7 @@
     "name": "LogMessageToL2",
     "abis": [
         {
-            "@id": "LogMessageToL2",
-            "hex_signature": "0xdb80dd488acf86d17c747445b0eabb5d57c541d3bd7b6b87af987858e5066b2b",
+            "@id": "0xdb80dd488acf86d17c747445b0eabb5d57c541d3bd7b6b87af987858e5066b2b",
             "type": "event",
             "signature": "LogMessageToL2(address,uint256,uint256,uint256[],uint256,uint256)",
             "name": "LogMessageToL2",
@@ -11,7 +10,19 @@
                 {
                     "@type": "transfer:from",
                     "name": "fromAddress",
-                    "type": "address"
+                    "type": "address",
+                    "features": {
+                        "starknet": {
+                            "is_erc20": 0.0833333,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 953005,
+                            "sampleAddress": "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419",
+                            "sampleTxHash": "0x00002729c5f7ec56d8b335c5c0cadb51446bafb25b9869a1e4d7bd0b54866971",
+                            "found": 24,
+                            "samples": 25
+                        }
+                    }
                 },
                 {
                     "@type": "transfer:to",

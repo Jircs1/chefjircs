@@ -1,0 +1,53 @@
+{
+    "name": "DistributionClaimedByPartyToken",
+    "abis": [
+        {
+            "@id": "0x1ef0986161a82a71426dec04dd3ef55fbf8e44e3cfebccb087acb2f97839c05d",
+            "type": "event",
+            "signature": "DistributionClaimedByPartyToken(address,uint256,address,uint8,address,uint256)",
+            "name": "DistributionClaimedByPartyToken",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract Party",
+                    "name": "party",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "partyTokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum ITokenDistributor.TokenType",
+                    "name": "tokenType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountClaimed",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

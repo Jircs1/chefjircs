@@ -1,0 +1,41 @@
+{
+    "name": "LogClaimYieldRewards",
+    "abis": [
+        {
+            "@id": "0x7aa2446843f85ab4372b9a9eddbe072a35cd062fb199eaddea2ad3b8d0396fa2",
+            "type": "event",
+            "signature": "LogClaimYieldRewards(address,address,bool,uint256)",
+            "name": "LogClaimYieldRewards",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "by",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "sILV",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

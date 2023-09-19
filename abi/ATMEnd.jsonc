@@ -1,0 +1,32 @@
+{
+    "name": "ATMEnd",
+    "abis": [
+        {
+            "hex_signature": "0x4ceede7ab397298db4e08659a00eb98042f4db567612eedce6c678c34fe175af",
+            "type": "event",
+            "signature": "ATMEnd(uint256,address,uint40)",
+            "name": "ATMEnd",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data0",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "atmId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

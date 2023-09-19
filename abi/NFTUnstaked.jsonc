@@ -1,0 +1,35 @@
+{
+    "name": "NFTUnstaked",
+    "abis": [
+        {
+            "hex_signature": "0xc486b9458a8637650d84d262414833a5a457bc91ae86b7da110386c8c3fa255b",
+            "type": "event",
+            "signature": "NFTUnstaked(address,uint256,uint256)",
+            "name": "NFTUnstaked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

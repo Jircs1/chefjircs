@@ -1,0 +1,47 @@
+{
+    "name": "CollateralDeposited",
+    "abis": [
+        {
+            "hex_signature": "0x7e387d4929067a5275d9dee7be89865d22cdc9d73f817ad152814a729ba6755e",
+            "type": "event",
+            "signature": "CollateralDeposited(address,address,uint256,uint256,uint256)",
+            "name": "CollateralDeposited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "deposited",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

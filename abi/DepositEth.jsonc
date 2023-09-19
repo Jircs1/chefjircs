@@ -1,0 +1,29 @@
+{
+    "name": "DepositEth",
+    "abis": [
+        {
+            "@id": "0x7034bb05cfe54b0d147fc0574ed166101e7f0313eb404e113974fbe2a998ca83",
+            "type": "event",
+            "signature": "DepositEth(address,uint256)",
+            "name": "DepositEth",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

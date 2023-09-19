@@ -1,0 +1,35 @@
+{
+    "name": "WithdrawFromStream",
+    "abis": [
+        {
+            "hex_signature": "0x36c3ab437e6a424ed25dc4bfdeb62706aa06558660fab2dab229d2555adaf89c",
+            "type": "event",
+            "signature": "WithdrawFromStream(uint256,address,uint256)",
+            "name": "WithdrawFromStream",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "streamId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

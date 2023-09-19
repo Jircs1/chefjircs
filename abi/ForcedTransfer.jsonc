@@ -1,0 +1,41 @@
+{
+    "name": "ForcedTransfer",
+    "abis": [
+        {
+            "@id": "0x47cea260e2dfb95ed2ab59ad44fe2ac9cddb432afb828d2a1475936b5a2b829a",
+            "type": "event",
+            "signature": "ForcedTransfer(address,address,address,uint256)",
+            "name": "ForcedTransfer",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "requester",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

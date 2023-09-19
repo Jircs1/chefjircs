@@ -1,0 +1,32 @@
+{
+    "name": "TransactionBatchExecutedEvent",
+    "abis": [
+        {
+            "@id": "0x02c7e81975f8edb86e2a0c038b7b86a49c744236abf0f6177ff5afc6986ab708",
+            "type": "event",
+            "signature": "TransactionBatchExecutedEvent(uint256,address,uint256)",
+            "name": "TransactionBatchExecutedEvent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_batchNonce",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_eventNonce",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

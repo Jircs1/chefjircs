@@ -1,0 +1,29 @@
+{
+    "name": "FeeAdded",
+    "abis": [
+        {
+            "@id": "0xbf2b46285c2ba2766660d9f8cfafdb8abd51bbba1f29c584b7dd34ecf853dd4c",
+            "type": "event",
+            "signature": "FeeAdded(address,uint256)",
+            "name": "FeeAdded",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

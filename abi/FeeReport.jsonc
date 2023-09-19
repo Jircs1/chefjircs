@@ -1,0 +1,37 @@
+{
+    "name": "FeeReport",
+    "abis": [
+        {
+            "hex_signature": "0x5c971a56b919bc03cfcc69b3500de2c9400b81ff5977e541c5075e04348756f5",
+            "type": "event",
+            "signature": "FeeReport(uint256,uint256,uint256,uint256)",
+            "name": "FeeReport",
+            "inputs": [
+                {
+                    "name": "management_fee",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "performance_fee",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "strategist_fee",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "duration",
+                    "type": "uint256",
+                    "indexed": false,
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

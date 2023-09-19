@@ -1,0 +1,41 @@
+{
+    "name": "Bribed",
+    "abis": [
+        {
+            "hex_signature": "0x74bd0b58587a15767427910140bcf99db1ef7f905cb0a2983a72cd2033954227",
+            "type": "event",
+            "signature": "Bribed(address,uint256,bytes32,uint256)",
+            "name": "Bribed",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "_proposal",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_choiceIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

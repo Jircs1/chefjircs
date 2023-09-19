@@ -1,0 +1,29 @@
+{
+    "name": "ExecutionDailyLimitChanged",
+    "abis": [
+        {
+            "hex_signature": "0x4c177b42dbe934b3abbc0208c11a42e46589983431616f1710ab19969c5ed62e",
+            "type": "event",
+            "signature": "ExecutionDailyLimitChanged(address,uint256)",
+            "name": "ExecutionDailyLimitChanged",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "newLimit",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "ClosePosition",
+    "abis": [
+        {
+            "hex_signature": "0xad61fdefcf969920b58ee3fc753c769d85f23f36b446cf737c0c5e7dcf840a6e",
+            "type": "event",
+            "signature": "ClosePosition(uint256,address,uint256,uint256,uint256,uint256)",
+            "name": "ClosePosition",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "indexPriceStart",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "indexPriceSettle",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountWon",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountLost",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

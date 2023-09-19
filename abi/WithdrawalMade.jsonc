@@ -1,0 +1,44 @@
+{
+    "name": "WithdrawalMade",
+    "abis": [
+        {
+            "hex_signature": "0x92f2787b755dae547f1701582fe74c7abf277ec14db316dd01abc69cacf7a259",
+            "type": "event",
+            "signature": "WithdrawalMade(address,uint256,uint256,uint256,uint256)",
+            "name": "WithdrawalMade",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tranche",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "interestWithdrawn",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "principalWithdrawn",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "CoinFlip_Outcome_Event",
+    "abis": [
+        {
+            "hex_signature": "0x063ba2c91a70f945b84c24531b0de813d66f430987169cb7d878431c04cb0004",
+            "type": "event",
+            "signature": "CoinFlip_Outcome_Event(address,uint256,uint256,address,uint8[],uint256[],uint32)",
+            "name": "CoinFlip_Outcome_Event",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "playerAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "wager",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payout",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8[]",
+                    "name": "coinOutcomes",
+                    "type": "uint8[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "payouts",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "numGames",
+                    "type": "uint32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

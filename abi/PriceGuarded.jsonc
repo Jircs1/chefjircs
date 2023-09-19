@@ -1,0 +1,32 @@
+{
+    "name": "PriceGuarded",
+    "abis": [
+        {
+            "hex_signature": "0x6b871468876a51b1609c5e5fc5c6f57c7e9a66aba8ad5a41ed4a5b2b50d7d1f6",
+            "type": "event",
+            "signature": "PriceGuarded(bytes32,uint256,uint256)",
+            "name": "PriceGuarded",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "symbolHash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reporterPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "anchorPrice",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "UpgradedCharacter",
+    "abis": [
+        {
+            "hex_signature": "0x32954ea04e32991ff6568eb2b6b0cdfae40e0aa843dd0619c90ca257f394115d",
+            "type": "event",
+            "signature": "UpgradedCharacter(address,uint256,uint256)",
+            "name": "UpgradedCharacter",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "wallet",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "upgradeNumber",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "EETransferV1",
+    "abis": [
+        {
+            "@id": "0x104ce6adace18a8921a4a90cde8b3f21b4958ccf5835b5085ad6026e80dd9bcd",
+            "type": "event",
+            "signature": "EETransferV1(address,address,address,uint256)",
+            "name": "EETransferV1",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "registrar",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

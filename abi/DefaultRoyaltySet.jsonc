@@ -1,0 +1,38 @@
+{
+    "name": "DefaultRoyaltySet",
+    "abis": [
+        {
+            "@id": "0xbf01bc9c369732bad663e53aa98fde6b4b1b097e2df0a77c3fc1ac113f26a085",
+            "type": "event",
+            "signature": "DefaultRoyaltySet(uint16,(address,uint16)[])",
+            "name": "DefaultRoyaltySet",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "royaltyBPS",
+                    "type": "uint16"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address payable",
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "bps",
+                            "type": "uint16"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Recipient[]",
+                    "name": "recipients",
+                    "type": "tuple[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

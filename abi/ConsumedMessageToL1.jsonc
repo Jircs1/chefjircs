@@ -2,24 +2,26 @@
     "name": "ConsumedMessageToL1",
     "abis": [
         {
-            "@id": "ConsumedMessageToL1",
-            "hex_signature": "0x7a06c571aa77f34d9706c51e5d8122b5595aebeaa34233bfe866f22befb973b1",
+            "@id": "0x7a06c571aa77f34d9706c51e5d8122b5595aebeaa34233bfe866f22befb973b1",
             "type": "event",
             "signature": "ConsumedMessageToL1(uint256,address,uint256[])",
             "name": "ConsumedMessageToL1",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "fromAddress",
                     "type": "uint256"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "toAddress",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:data",
+                    "indexed": false,
+                    "internalType": "uint256[]",
                     "name": "payload",
                     "type": "uint256[]"
                 }

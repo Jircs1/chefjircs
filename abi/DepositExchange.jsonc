@@ -1,0 +1,104 @@
+{
+    "name": "DepositExchange",
+    "abis": [
+        {
+            "hex_signature": "0xd13737c1afa57fcf8b649aa0e5c8f7a841c4f9301da7e263d256720f935902e6",
+            "type": "event",
+            "signature": "DepositExchange((bytes32,address,address,uint256,address,uint256,(uint256,uint256,uint8,uint256,uint8,uint8,uint256),uint8,uint256))",
+            "name": "DepositExchange",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "bytes32",
+                            "name": "txnId",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "sender",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "tokenIn",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amountIn",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "tokenOut",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "amountOut",
+                            "type": "uint256"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint256",
+                                    "name": "rate",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "fee",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "enum Exchange.TypeFee",
+                                    "name": "typeFee",
+                                    "type": "uint8"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "amountBonus",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint8",
+                                    "name": "decimalsIn",
+                                    "type": "uint8"
+                                },
+                                {
+                                    "internalType": "uint8",
+                                    "name": "decimalsOut",
+                                    "type": "uint8"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "amountLimit",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct Exchange.ExchangeInfo",
+                            "name": "exchangeInfo",
+                            "type": "tuple"
+                        },
+                        {
+                            "internalType": "enum Exchange.TxnStatus",
+                            "name": "status",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "timestamp",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct Exchange.TxnInfo",
+                    "name": "txnInfo",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "ChangedPartition",
+    "abis": [
+        {
+            "@id": "0x67c8ba31d2dd11f1384577b3405b04ed91eed1231e408432ad2458cab37b2fa1",
+            "type": "event",
+            "signature": "ChangedPartition(bytes32,bytes32,uint256)",
+            "name": "ChangedPartition",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "fromPartition",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "toPartition",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,14 +2,22 @@
     "name": "Executed",
     "abis": [
         {
-            "@id": "Executed",
-            "hex_signature": "0xa74c8847d513feba22a0f0cb38d53081abf97562cdb293926ba243689e7c41ca",
+            "@id": "0x68f46c45a243a0e9065a97649faf9a5afe1692f2679e650c2f853b9cd734cc0e",
+            "type": "event",
+            "signature": "Executed()",
+            "name": "Executed",
+            "inputs": [],
+            "outputs": null
+        },
+        {
+            "@id": "0xa74c8847d513feba22a0f0cb38d53081abf97562cdb293926ba243689e7c41ca",
             "type": "event",
             "signature": "Executed(bytes32)",
             "name": "Executed",
             "inputs": [
                 {
-                    "@type": "axelar:commandId",
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "commandId",
                     "type": "bytes32"
                 }

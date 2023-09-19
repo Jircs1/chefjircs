@@ -1,0 +1,41 @@
+{
+    "name": "WithdrewStake",
+    "abis": [
+        {
+            "hex_signature": "0xa7c0f0cac6bd4d18042007706c84a8abe823751cf289b69c01e83eef7b5915c7",
+            "type": "event",
+            "signature": "WithdrewStake(address,address,uint256,uint256)",
+            "name": "WithdrewStake",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "underlyingAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakeAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

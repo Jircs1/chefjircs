@@ -1,0 +1,99 @@
+{
+    "name": "WLVendingItemPurchased",
+    "abis": [
+        {
+            "hex_signature": "0xb29e4d8ddc1049dad9c6e28988851d2cf547b6dbcfb1851286a6e34601e81031",
+            "type": "event",
+            "signature": "WLVendingItemPurchased(address,uint256,(uint256,uint8,bool,string,string,string,uint32,uint32,uint256,uint256,uint256,string,string))",
+            "name": "WLVendingItemPurchased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "purchaser_",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "index_",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "tokenId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "enum FFMarketplace.VendingItemType",
+                            "name": "itemType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "active",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "title",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "imageUri",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "description",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "amountAvailable",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "amountPurchased",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "startTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "endTime",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "price",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "discord",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "twitter",
+                            "type": "string"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct FFMarketplace.WLVendingItem",
+                    "name": "item_",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

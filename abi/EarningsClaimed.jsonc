@@ -1,0 +1,47 @@
+{
+    "name": "EarningsClaimed",
+    "abis": [
+        {
+            "hex_signature": "0x06f39318c760ad4d630f57ba8f8d3c21b8e1deb076e19476d1dece4e3d737e7a",
+            "type": "event",
+            "signature": "EarningsClaimed(address,uint256,uint256,uint256)",
+            "name": "EarningsClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "claimedBy",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "cncEarned",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "crvEarned",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "cvxEarned",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

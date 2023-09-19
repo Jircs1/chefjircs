@@ -1,0 +1,118 @@
+{
+    "name": "LoanStarted",
+    "abis": [
+        {
+            "@id": "0x42cc7f53ef7b494c5dd6f0095175f7d07b5d3d7b2a03f34389fea445ba4a3a8b",
+            "type": "event",
+            "signature": "LoanStarted(uint32,address,address,(uint256,uint256,uint256,address,uint32,uint16,uint16,address,uint64,address,address),(address,uint16,uint16))",
+            "name": "LoanStarted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "loanId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "lender",
+                    "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint256",
+                            "name": "loanPrincipalAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "maximumRepaymentAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "nftCollateralId",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "loanERC20Denomination",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "loanDuration",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "loanInterestRateForDurationInBasisPoints",
+                            "type": "uint16"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "loanAdminFeeInBasisPoints",
+                            "type": "uint16"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "nftCollateralWrapper",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint64",
+                            "name": "loanStartTime",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "nftCollateralContract",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "borrower",
+                            "type": "address"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct LoanData.LoanTerms",
+                    "name": "loanTerms",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "revenueSharePartner",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "revenueShareInBasisPoints",
+                            "type": "uint16"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "referralFeeInBasisPoints",
+                            "type": "uint16"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct LoanData.LoanExtras",
+                    "name": "loanExtras",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

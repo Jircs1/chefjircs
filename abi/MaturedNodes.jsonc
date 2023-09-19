@@ -1,0 +1,35 @@
+{
+    "name": "MaturedNodes",
+    "abis": [
+        {
+            "@id": "0xd1ad6f13ecf90412417f16481b7455bda8aa6ec0133a68cdab069f9b7bd623f9",
+            "type": "event",
+            "signature": "MaturedNodes(address,uint256,uint256)",
+            "name": "MaturedNodes",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "entity",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "packType",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "maturedCount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

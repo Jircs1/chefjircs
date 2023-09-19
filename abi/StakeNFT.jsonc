@@ -1,0 +1,32 @@
+{
+    "name": "StakeNFT",
+    "abis": [
+        {
+            "hex_signature": "0x655a5eba8ac6488bcc4f80e2e56f6fb68a551fbd8872f3758e366aa23b2c60f8",
+            "type": "event",
+            "signature": "StakeNFT(address,uint256,uint256)",
+            "name": "StakeNFT",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakeTime",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

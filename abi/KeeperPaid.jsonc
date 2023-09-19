@@ -1,0 +1,32 @@
+{
+    "name": "KeeperPaid",
+    "abis": [
+        {
+            "hex_signature": "0xf03012dd4aab142682aa01439f94e975e2ec77ef558352323bc05f382f74b082",
+            "type": "event",
+            "signature": "KeeperPaid(address,address,uint256)",
+            "name": "KeeperPaid",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_pool",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "keeper",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reward",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

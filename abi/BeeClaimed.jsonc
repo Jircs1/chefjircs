@@ -1,0 +1,29 @@
+{
+    "name": "BeeClaimed",
+    "abis": [
+        {
+            "hex_signature": "0xa72b9f69ceff29b665f9add67b0f19138fd338f2e79ece3cdcd167943e531a58",
+            "type": "event",
+            "signature": "BeeClaimed(address,uint256)",
+            "name": "BeeClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

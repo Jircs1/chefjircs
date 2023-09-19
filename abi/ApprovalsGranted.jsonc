@@ -2,19 +2,20 @@
     "name": "ApprovalsGranted",
     "abis": [
         {
-            "@id": "ApprovalsGranted",
-            "hex_signature": "0x2689e1a312b4212a2eb518d23bfd4c7cc30e3a7bc7a7e2524e8ec16e6a3713ab",
+            "@id": "0x2689e1a312b4212a2eb518d23bfd4c7cc30e3a7bc7a7e2524e8ec16e6a3713ab",
             "type": "event",
             "signature": "ApprovalsGranted(address,address[])",
             "name": "ApprovalsGranted",
             "inputs": [
                 {
-                    "@type": "dex:admin",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "user",
                     "type": "address"
                 },
                 {
-                    "@type": "dex:operators",
+                    "indexed": false,
+                    "internalType": "address[]",
                     "name": "operators",
                     "type": "address[]"
                 }

@@ -2,40 +2,47 @@
     "name": "UpdateLiquidity",
     "abis": [
         {
-            "@id": "UpdateLiquidity",
-            "hex_signature": "0xee8f6362d59839b4b3c990d7e085a63a0fe2c58f4eff4a9a2b6de93a4c645ae3",
+            "@id": "0xee8f6362d59839b4b3c990d7e085a63a0fe2c58f4eff4a9a2b6de93a4c645ae3",
             "type": "event",
             "signature": "UpdateLiquidity(address,uint256,uint256,int128,int24,int24)",
             "name": "UpdateLiquidity",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "pid",
                     "type": "uint256",
-                    "validationFailure": true
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "tokenId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "dex:liquidity",
+                    "indexed": false,
+                    "internalType": "int128",
                     "name": "liquidity",
                     "type": "int128"
                 },
                 {
-                    "@type": "dex:tick",
+                    "indexed": false,
+                    "internalType": "int24",
                     "name": "tickLower",
                     "type": "int24"
                 },
                 {
-                    "@type": "dex:tick",
+                    "indexed": false,
+                    "internalType": "int24",
                     "name": "tickUpper",
                     "type": "int24"
                 }

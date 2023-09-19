@@ -1,0 +1,50 @@
+{
+    "name": "BurnCompleted",
+    "abis": [
+        {
+            "@id": "0xd31ae0a5fc46ab05b27d837efddb13837db6eb85442f9b1d3f609bf1552f3f4f",
+            "type": "event",
+            "signature": "BurnCompleted(bytes32,address,uint256,uint256,address)",
+            "name": "BurnCompleted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$4",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "bridgingFee",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$4",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

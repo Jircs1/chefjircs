@@ -2,36 +2,43 @@
     "name": "HashReceived",
     "abis": [
         {
-            "@id": "HashReceived",
-            "hex_signature": "0x74bbc026808dcba59692d6a8bb20596849ca718e10e2432c6cdf48af865bc5d9",
+            "@id": "0x74bbc026808dcba59692d6a8bb20596849ca718e10e2432c6cdf48af865bc5d9",
             "type": "event",
             "signature": "HashReceived(uint16,address,bytes32,bytes32,uint256)",
             "name": "HashReceived",
             "inputs": [
                 {
-                    "@type": "layerzero:chainID",
+                    "indexed": true,
+                    "internalType": "uint16",
                     "name": "srcChainId",
                     "type": "uint16"
                 },
                 {
-                    "@type": "layerzero:oracle",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "oracle",
                     "type": "address"
                 },
                 {
-                    "@type": "layerzero:lookupHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "lookupHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "layerzero:blockData",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "blockData",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "layerzero:confirmations",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "confirmations",
-                    "type": "uint256"
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null

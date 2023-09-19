@@ -1,0 +1,32 @@
+{
+    "name": "ChargedFees",
+    "abis": [
+        {
+            "@id": "0xd255b592c7f268a73e534da5219a60ff911b4cf6daae21c7d20527dd657bd99a",
+            "type": "event",
+            "signature": "ChargedFees(uint256,uint256,uint256)",
+            "name": "ChargedFees",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "callFees",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "beefyFees",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "strategistFees",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

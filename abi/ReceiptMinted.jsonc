@@ -1,0 +1,38 @@
+{
+    "name": "ReceiptMinted",
+    "abis": [
+        {
+            "hex_signature": "0xa9e09a39b54248cb5161a8bad4e544f88b8aa2da99e7c425846bece6703cc1fc",
+            "type": "event",
+            "signature": "ReceiptMinted(address,address,uint256,string)",
+            "name": "ReceiptMinted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "questAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "questId",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,24 +2,23 @@
     "name": "ForwarderDeposited",
     "abis": [
         {
-            "@id": "ForwarderDeposited",
-            "hex_signature": "0x69b31548dea9b3b707b4dff357d326e3e9348b24e7a6080a218a6edeeec48f9b",
+            "@id": "0x69b31548dea9b3b707b4dff357d326e3e9348b24e7a6080a218a6edeeec48f9b",
             "type": "event",
             "signature": "ForwarderDeposited(address,uint256,bytes)",
             "name": "ForwarderDeposited",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": false,
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
+                    "indexed": false,
                     "name": "value",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
                     "name": "data",
                     "type": "bytes"
                 }

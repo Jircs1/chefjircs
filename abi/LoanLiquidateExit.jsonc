@@ -1,0 +1,38 @@
+{
+    "name": "LoanLiquidateExit",
+    "abis": [
+        {
+            "hex_signature": "0x4880f72426ed087acce5733f8d2607065f5eb9cf9888f4ba51e605c3f5d0efdc",
+            "type": "event",
+            "signature": "LoanLiquidateExit(uint256,address,uint40,uint40)",
+            "name": "LoanLiquidateExit",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "data",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "liquidator",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "stakeId",
+                    "type": "uint40"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint40",
+                    "name": "liquidationId",
+                    "type": "uint40"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

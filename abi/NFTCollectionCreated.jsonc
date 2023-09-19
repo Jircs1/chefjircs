@@ -1,0 +1,50 @@
+{
+    "name": "NFTCollectionCreated",
+    "abis": [
+        {
+            "@id": "0x22bd5d982c942d99c12bfa4feda7e796b2b9d6a1b8097c890871b12de29963eb",
+            "type": "event",
+            "signature": "NFTCollectionCreated(address,address,uint256,string,string,uint256)",
+            "name": "NFTCollectionCreated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "collection",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "creator",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "version",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

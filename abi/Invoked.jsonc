@@ -2,30 +2,66 @@
     "name": "Invoked",
     "abis": [
         {
-            "@id": "Invoked",
-            "hex_signature": "0x7d2476ab50663f025cff0be85655bcf355f62768615c0c478f3cd5293f807365",
+            "@id": "0x7d2476ab50663f025cff0be85655bcf355f62768615c0c478f3cd5293f807365",
             "type": "event",
             "signature": "Invoked(address,address,uint256,bytes)",
             "name": "Invoked",
             "inputs": [
                 {
-                    "@type": "walletfactory:module",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "module",
                     "type": "address"
                 },
                 {
-                    "@type": "walletfactory:module",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "target",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "value",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x2a936dbabeaea30adc1ddad138b1958497988474bef8b09a29411f0105ab8ab2",
+            "type": "event",
+            "signature": "Invoked(address,uint256,bytes,bytes)",
+            "name": "Invoked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_target",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "_returnValue",
                     "type": "bytes"
                 }
             ],

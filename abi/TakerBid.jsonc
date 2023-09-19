@@ -2,80 +2,76 @@
     "name": "TakerBid",
     "abis": [
         {
-            "@id": "TakerBid",
-            "hex_signature": "0x3ee3de4684413690dee6fff1a0a4f92916a1b97d1c5a83cdf24671844306b2e3",
+            "@id": "0x95fb6205e23ff6bda16a2d1dba56b9ad7c783f67c96fa149785052f47696f2be",
             "type": "event",
-            "signature": "TakerBid((bytes32,uint256,bool),address,address,uint256,address,address,uint256[],uint256[],address[2],uint256[3])",
+            "signature": "TakerBid(bytes32,uint256,address,address,address,address,address,uint256,uint256,uint256)",
             "name": "TakerBid",
             "inputs": [
                 {
-                    "components": [
-                        {
-                            "internalType": "bytes32",
-                            "name": "orderHash",
-                            "type": "bytes32"
-                        },
-                        {
-                            "@type": "nonce",
-                            "internalType": "uint256",
-                            "name": "orderNonce",
-                            "type": "uint256"
-                        },
-                        {
-                            "internalType": "bool",
-                            "name": "isNonceInvalidated",
-                            "type": "bool"
-                        }
-                    ],
-                    "internalType": "struct ILooksRareProtocol.NonceInvalidationParameters",
-                    "name": "nonceInvalidationParameters",
-                    "type": "tuple"
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "makerOrderHash",
+                    "type": "bytes32"
                 },
                 {
-                    "@type": "opensea:bidUser",
-                    "name": "bidUser",
-                    "type": "address"
-                },
-                {
-                    "@type": "opensea:bidRecipient",
-                    "name": "bidRecipient",
-                    "type": "address"
-                },
-                {
-                    "@type": "opensea:strategyId",
-                    "name": "strategyId",
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "orderNonce",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:token",
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "taker",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "strategy",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "currency",
                     "type": "address"
                 },
                 {
-                    "@type": "erc721:token",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "collection",
                     "type": "address"
                 },
                 {
-                    "@type": "opensea:itemId",
-                    "name": "itemIds",
-                    "type": "uint256[]"
-                },
-                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
-                    "@token": "$4",
-                    "name": "amounts",
-                    "type": "uint256[]"
+                    "@token": "$6",
+                    "validationSuccess": true
                 },
                 {
-                    "name": "feeRecipients",
-                    "type": "address[2]"
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256",
                     "@type": "erc20:tokenAmount",
-                    "@token": "$4",
-                    "name": "feeAmounts",
-                    "type": "uint256[3]"
+                    "@token": "$5",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null

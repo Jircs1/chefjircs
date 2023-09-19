@@ -1,0 +1,27 @@
+{
+    "name": "NonceIncremented",
+    "abis": [
+        {
+            "hex_signature": "0xa82a649bbd060c9099cd7b7326e2b0dc9e9af0836480e0f849dc9eaa79710b3b",
+            "type": "event",
+            "signature": "NonceIncremented(address,uint256)",
+            "name": "NonceIncremented",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "maker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "newNonce",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

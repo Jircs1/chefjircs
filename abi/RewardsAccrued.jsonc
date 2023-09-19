@@ -1,0 +1,29 @@
+{
+    "name": "RewardsAccrued",
+    "abis": [
+        {
+            "@id": "0x2468f9268c60ad90e2d49edb0032c8a001e733ae888b3ab8e982edf535be1a76",
+            "type": "event",
+            "signature": "RewardsAccrued(address,uint256)",
+            "name": "RewardsAccrued",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

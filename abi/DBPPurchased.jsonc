@@ -1,0 +1,32 @@
+{
+    "name": "DBPPurchased",
+    "abis": [
+        {
+            "hex_signature": "0x659ad67f9507d8fdc7b7c81d156a69d01306685cdc3838bacd84481c49e67815",
+            "type": "event",
+            "signature": "DBPPurchased(uint256,address,uint32)",
+            "name": "DBPPurchased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "saleId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "purchaser",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "quantity",
+                    "type": "uint32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

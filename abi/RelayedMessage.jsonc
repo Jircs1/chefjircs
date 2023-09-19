@@ -1,0 +1,49 @@
+{
+    "name": "RelayedMessage",
+    "abis": [
+        {
+            "@id": "0x4641df4a962071e12719d8c8c8e5ac7fc4d97b927346a3d7a335b1f7517e133c",
+            "type": "event",
+            "signature": "RelayedMessage(bytes32)",
+            "name": "RelayedMessage",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "msgHash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x27333edb8bdcd40a0ae944fb121b5e2d62ea782683946654a0f5e607a908d578",
+            "type": "event",
+            "signature": "RelayedMessage(address,address,bytes32,bool)",
+            "name": "RelayedMessage",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "executor",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "messageId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "status",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

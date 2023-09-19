@@ -1,0 +1,35 @@
+{
+    "name": "BurnRedeemInitialized",
+    "abis": [
+        {
+            "hex_signature": "0xf4d614881eb59d4bcd5ea596b177a55b560306371604a9490ca2a5c2f24df14d",
+            "type": "event",
+            "signature": "BurnRedeemInitialized(address,uint256,address)",
+            "name": "BurnRedeemInitialized",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "creatorContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "initializer",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

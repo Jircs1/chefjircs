@@ -2,25 +2,26 @@
     "name": "OrderCanceled",
     "abis": [
         {
-            "@id": "OrderCanceled",
-            "hex_signature": "0xcbfa7d191838ece7ba4783ca3a30afd316619b7f368094b57ee7ffde9a923db1",
+            "@id": "0xcbfa7d191838ece7ba4783ca3a30afd316619b7f368094b57ee7ffde9a923db1",
             "type": "event",
             "signature": "OrderCanceled(address,bytes32,uint256)",
             "name": "OrderCanceled",
             "inputs": [
                 {
-                    "@type": "dex:trader",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "trader",
                     "type": "address"
                 },
                 {
-                    "@type": "1inch:orderId",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderId",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "remaining",
                     "type": "uint256"
                 }

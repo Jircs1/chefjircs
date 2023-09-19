@@ -1,0 +1,35 @@
+{
+    "name": "TreasurySent",
+    "abis": [
+        {
+            "hex_signature": "0x824a097e8d4e9580223eddbe4bf5cfd647cc4d997b60a0371177169fd3302c2d",
+            "type": "event",
+            "signature": "TreasurySent(uint256,address,uint256)",
+            "name": "TreasurySent",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_pid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

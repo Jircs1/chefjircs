@@ -1,0 +1,50 @@
+{
+    "name": "MetadropMint",
+    "abis": [
+        {
+            "@id": "0xb5bfc190364a05627bb8cf9d1a03c8e456dbb89d9be707c0e6549e181314650e",
+            "type": "event",
+            "signature": "MetadropMint(address,address,address,address,uint256,uint256[])",
+            "name": "MetadropMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "allowanceAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipientAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "callerAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "primarySaleModuleAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "unitPrice",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

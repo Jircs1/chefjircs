@@ -1,0 +1,65 @@
+{
+    "name": "TokenDepositAndSwap",
+    "abis": [
+        {
+            "@id": "0x79c15604b92ef54d3f61f0c40caab8857927ca3d5092367163b4562c1699eb5f",
+            "type": "event",
+            "signature": "TokenDepositAndSwap(address,uint256,address,uint256,uint8,uint8,uint256,uint256)",
+            "name": "TokenDepositAndSwap",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "chainId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "tokenIndexFrom",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "tokenIndexTo",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minDy",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "deadline",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

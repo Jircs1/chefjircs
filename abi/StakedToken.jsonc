@@ -1,0 +1,35 @@
+{
+    "name": "StakedToken",
+    "abis": [
+        {
+            "hex_signature": "0x31afb4434291156233127bc71455b509c4545ab840846e50605e9d7a23f71070",
+            "type": "event",
+            "signature": "StakedToken(address,uint256[],uint256)",
+            "name": "StakedToken",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "wallet",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "tokens",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

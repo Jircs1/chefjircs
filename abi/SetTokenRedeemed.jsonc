@@ -1,0 +1,41 @@
+{
+    "name": "SetTokenRedeemed",
+    "abis": [
+        {
+            "hex_signature": "0x05f8aaada00823525432114f0e904c6f7c0198a5b8f113ee635ff81aaf9566ad",
+            "type": "event",
+            "signature": "SetTokenRedeemed(address,address,address,uint256)",
+            "name": "SetTokenRedeemed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_setToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_redeemer",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_quantity",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

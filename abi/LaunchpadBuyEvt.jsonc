@@ -1,0 +1,44 @@
+{
+    "name": "LaunchpadBuyEvt",
+    "abis": [
+        {
+            "hex_signature": "0x5aa7d5b30f516f63f12615c7b9128f2c697b7ecfdb3970c6809000f5e4c8d7be",
+            "type": "event",
+            "signature": "LaunchpadBuyEvt(bytes4,bytes4,uint256,uint256,uint256)",
+            "name": "LaunchpadBuyEvt",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes4",
+                    "name": "proxyId",
+                    "type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes4",
+                    "name": "launchpadId",
+                    "type": "bytes4"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "roundsIdx",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "quantity",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payValue",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

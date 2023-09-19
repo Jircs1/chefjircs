@@ -1,0 +1,38 @@
+{
+    "name": "WithdrawInitiated",
+    "abis": [
+        {
+            "hex_signature": "0xf908b12fe0d8dc1ff4fda115e5bace3a7ad1aad889daca8e638ca0b29f806577",
+            "type": "event",
+            "signature": "WithdrawInitiated(address,uint256,uint256)",
+            "name": "WithdrawInitiated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "initiateDate",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "HotWalletChanged",
+    "abis": [
+        {
+            "@id": "0xfe38e8cfa313b7afb5308cb4cb6d2abb26ab148f98086f786d0c2688b3c59846",
+            "type": "event",
+            "signature": "HotWalletChanged(address,address,address,uint256)",
+            "name": "HotWalletChanged",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "coldWallet",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "expirationTimestamp",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

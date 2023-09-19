@@ -1,0 +1,35 @@
+{
+    "name": "LogTransfer",
+    "abis": [
+        {
+            "hex_signature": "0x0a85107a334eae0d22d21cdf13af0f8e8125039ec60baaa843d2c4c5b0680174",
+            "type": "event",
+            "signature": "LogTransfer(address,address,uint256)",
+            "name": "LogTransfer",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

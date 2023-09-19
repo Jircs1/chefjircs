@@ -1,0 +1,47 @@
+{
+    "name": "WithdrawMessage",
+    "abis": [
+        {
+            "hex_signature": "0x5473dff3f715e6a201118e7235059f5c6ecca0db8a0bace52bd370e6ea135422",
+            "type": "event",
+            "signature": "WithdrawMessage(bytes32,address,bytes32,uint256,bytes)",
+            "name": "WithdrawMessage",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "MessageID",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "substrateSender",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "sig",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

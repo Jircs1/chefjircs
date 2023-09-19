@@ -1,0 +1,32 @@
+{
+    "name": "BondRedeemed",
+    "abis": [
+        {
+            "hex_signature": "0x51c99f515c87b0d95ba97f616edd182e8f161c4932eac17c6fefe9dab58b77b1",
+            "type": "event",
+            "signature": "BondRedeemed(address,uint256,uint256)",
+            "name": "BondRedeemed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "payout",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "remaining",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

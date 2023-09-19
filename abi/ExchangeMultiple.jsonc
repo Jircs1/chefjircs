@@ -1,0 +1,49 @@
+{
+    "name": "ExchangeMultiple",
+    "abis": [
+        {
+            "@id": "0x14b561178ae0f368f40fafd0485c4f7129ea71cdc00b4ce1e5940f9bc659c8b2",
+            "type": "event",
+            "signature": "ExchangeMultiple(address,address,address[9],uint256[3][4],address[4],uint256,uint256)",
+            "name": "ExchangeMultiple",
+            "inputs": [
+                {
+                    "name": "buyer",
+                    "type": "address",
+                    "indexed": true
+                },
+                {
+                    "name": "receiver",
+                    "type": "address",
+                    "indexed": true
+                },
+                {
+                    "name": "route",
+                    "type": "address[9]",
+                    "indexed": false
+                },
+                {
+                    "name": "swap_params",
+                    "type": "uint256[3][4]",
+                    "indexed": false
+                },
+                {
+                    "name": "pools",
+                    "type": "address[4]",
+                    "indexed": false
+                },
+                {
+                    "name": "amount_sold",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "amount_bought",
+                    "type": "uint256",
+                    "indexed": false
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,24 +2,23 @@
     "name": "NewOwner",
     "abis": [
         {
-            "@id": "NewOwner",
-            "hex_signature": "0xce0457fe73731f824cc272376169235128c118b49d344817417c6d108d155e82",
+            "@id": "0xce0457fe73731f824cc272376169235128c118b49d344817417c6d108d155e82",
             "type": "event",
             "signature": "NewOwner(bytes32,bytes32,address)",
             "name": "NewOwner",
             "inputs": [
                 {
-                    "@type": "ens:node",
+                    "indexed": true,
                     "name": "node",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "ens:label",
+                    "indexed": true,
                     "name": "label",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": false,
                     "name": "owner",
                     "type": "address"
                 }

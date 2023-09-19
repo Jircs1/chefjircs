@@ -1,0 +1,38 @@
+{
+    "name": "Leverage",
+    "abis": [
+        {
+            "hex_signature": "0x012a05dea1e4b56be6c250aaa3e6189a1f531f1fd201b35b2a74c56577000bf4",
+            "type": "event",
+            "signature": "Leverage(uint256,uint256,bool,address)",
+            "name": "Leverage",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountRequested",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountGiven",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "deficit",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "flashLoan",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

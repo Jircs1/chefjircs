@@ -2,23 +2,26 @@
     "name": "SubscriptionUpdated",
     "abis": [
         {
-            "@id": "SubscriptionUpdated",
-            "hex_signature": "0x0038c54977604f1a5c0a3604cbbecd0153c81e3131799ead95755e8bb5d5b9e8",
+            "@id": "0x0038c54977604f1a5c0a3604cbbecd0153c81e3131799ead95755e8bb5d5b9e8",
             "type": "event",
             "signature": "SubscriptionUpdated(address,address,bool)",
             "name": "SubscriptionUpdated",
             "inputs": [
                 {
-                    "@type": "subscription:subsciber",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "registrant",
                     "type": "address"
                 },
                 {
-                    "@type": "subscription:subscription",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "subscription",
                     "type": "address"
                 },
                 {
+                    "indexed": true,
+                    "internalType": "bool",
                     "name": "subscribed",
                     "type": "bool"
                 }

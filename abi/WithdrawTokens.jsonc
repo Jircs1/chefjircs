@@ -1,0 +1,29 @@
+{
+    "name": "WithdrawTokens",
+    "abis": [
+        {
+            "hex_signature": "0x680f2e4f4032ebf1774e8cdbaddcb1b617a5a606411c8ca96257ada338d3833c",
+            "type": "event",
+            "signature": "WithdrawTokens(address,uint256)",
+            "name": "WithdrawTokens",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

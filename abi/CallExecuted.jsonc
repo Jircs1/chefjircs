@@ -1,0 +1,44 @@
+{
+    "name": "CallExecuted",
+    "abis": [
+        {
+            "hex_signature": "0xc2617efa69bab66782fa219543714338489c4e9e178271560a91b82c3f612b58",
+            "type": "event",
+            "signature": "CallExecuted(bytes32,uint256,address,uint256,bytes)",
+            "name": "CallExecuted",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "id",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

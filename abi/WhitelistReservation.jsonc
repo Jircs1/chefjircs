@@ -1,0 +1,38 @@
+{
+    "name": "WhitelistReservation",
+    "abis": [
+        {
+            "hex_signature": "0x67d853e772c14e6d1b45c4098753e89aea35cb627ecc554fd3c954911b7ec126",
+            "type": "event",
+            "signature": "WhitelistReservation(address,uint256,uint256,uint256)",
+            "name": "WhitelistReservation",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "userTotalReservation",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "totalWhitelistReservation",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

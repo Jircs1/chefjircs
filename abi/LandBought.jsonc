@@ -1,0 +1,59 @@
+{
+    "name": "LandBought",
+    "abis": [
+        {
+            "hex_signature": "0xd62a7516129ae59493adc9aebaefd2a06d20313fdd586db8540cca620ef97ce3",
+            "type": "event",
+            "signature": "LandBought(address,uint32,int16,int16,uint256,uint256,uint8)",
+            "name": "LandBought",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "encXY",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int16",
+                    "name": "x",
+                    "type": "int16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int16",
+                    "name": "y",
+                    "type": "int16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum LandAuctionV2.Stage",
+                    "name": "saleStage",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

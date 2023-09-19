@@ -1,0 +1,41 @@
+{
+    "name": "QuestEdited",
+    "abis": [
+        {
+            "hex_signature": "0x321f5b987da3cdd88d15ba5e36586aa60fd631bcbb32fbcd879dfa2d533bb7ca",
+            "type": "event",
+            "signature": "QuestEdited(uint256,uint256,uint256[],uint256)",
+            "name": "QuestEdited",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "questStartedAt",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "crews",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "questEditedAt",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

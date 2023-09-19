@@ -2,34 +2,40 @@
     "name": "SwapRemote",
     "abis": [
         {
-            "@id": "SwapRemote",
-            "hex_signature": "0xfb2b592367452f1c437675bed47f5e1e6c25188c17d7ba01a12eb030bc41ccef",
+            "@id": "0xfb2b592367452f1c437675bed47f5e1e6c25188c17d7ba01a12eb030bc41ccef",
             "type": "event",
             "signature": "SwapRemote(address,uint256,uint256,uint256)",
             "name": "SwapRemote",
             "inputs": [
                 {
-                    "@type": "transfer:to",
+                    "indexed": false,
+                    "internalType": "address",
                     "name": "to",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amountSD",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "protocolFee",
-                    "type": "uint256"
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "dstFee",
-                    "type": "uint256"
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null

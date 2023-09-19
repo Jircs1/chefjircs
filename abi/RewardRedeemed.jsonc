@@ -1,0 +1,34 @@
+{
+    "name": "RewardRedeemed",
+    "abis": [
+        {
+            "hex_signature": "0xef1bb27f27213e5cb8963b669bf571859e849a0b1c0d1135c6932d61a1188ce3",
+            "type": "event",
+            "signature": "RewardRedeemed(uint256,address,address,uint256)",
+            "name": "RewardRedeemed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "poolId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "name": "staker",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "rewarder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

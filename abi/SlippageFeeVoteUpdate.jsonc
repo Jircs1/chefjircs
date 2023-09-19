@@ -1,0 +1,38 @@
+{
+    "name": "SlippageFeeVoteUpdate",
+    "abis": [
+        {
+            "hex_signature": "0xce0cf859d853e1944032294143a1bf3ad799998ae77acbeb6c4d9b20d6910240",
+            "type": "event",
+            "signature": "SlippageFeeVoteUpdate(address,uint256,bool,uint256)",
+            "name": "SlippageFeeVoteUpdate",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "slippageFee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isDefault",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

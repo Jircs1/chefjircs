@@ -1,0 +1,65 @@
+{
+    "name": "FeeCollected",
+    "abis": [
+        {
+            "@id": "0xf228de527fc1b9843baac03b9a04565473a263375950e63435d4138464386f46",
+            "type": "event",
+            "signature": "FeeCollected(address,address,uint256)",
+            "name": "FeeCollected",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xf1d6c8ee14081f641e2073a1064d870f135f1001a301c6b14a7b9655672fec11",
+            "type": "event",
+            "signature": "FeeCollected(uint256,address,uint256)",
+            "name": "FeeCollected",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "badgeId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "weiAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

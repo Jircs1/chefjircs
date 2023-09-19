@@ -1,0 +1,50 @@
+{
+    "name": "TokensReleased",
+    "abis": [
+        {
+            "@id": "0xbd9f18d326ad1063dfe8cf499c197c8a6b7d8a48bac781527b5c177bfa1ad826",
+            "type": "event",
+            "signature": "TokensReleased(bytes32,bytes32,address,address,uint256,uint256)",
+            "name": "TokensReleased",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "airdrop",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "leaf",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "contract IERC20",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "releasedAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "scheduleAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "name": "DogeJoinedTheParty",
+    "abis": [
+        {
+            "hex_signature": "0x246b335ff653677f0265d2c996ae2bf3c388b8103f39929758eda76493c6a508",
+            "type": "event",
+            "signature": "DogeJoinedTheParty(uint256,address,uint256)",
+            "name": "DogeJoinedTheParty",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "instructionId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

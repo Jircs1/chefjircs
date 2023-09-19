@@ -1,0 +1,35 @@
+{
+    "name": "WalletsCreated",
+    "abis": [
+        {
+            "hex_signature": "0x4781cf9bea301b9e21ed2b088e9daf13add2ee71b38076211ffacf60e82d4f1c",
+            "type": "event",
+            "signature": "WalletsCreated(address,uint256,uint256)",
+            "name": "WalletsCreated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "term",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

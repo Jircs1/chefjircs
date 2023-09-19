@@ -1,0 +1,32 @@
+{
+    "name": "Claim1",
+    "abis": [
+        {
+            "@id": "0xb533cd5ff9fe6578a985cd9f6134baf83ea6aaf0236d28533fd9cf8313846f42",
+            "type": "event",
+            "signature": "Claim1(address,uint16,uint120)",
+            "name": "Claim1",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "currentUnlock",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint120",
+                    "name": "claimedTokens",
+                    "type": "uint120"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -2,32 +2,35 @@
     "name": "IncreaseLiquidity",
     "abis": [
         {
-            "@id": "IncreaseLiquidity",
-            "hex_signature": "0x3067048beee31b25b2f1681f88dac838c8bba36af25bfb2b7cf7473a5847e35f",
+            "@id": "0x3067048beee31b25b2f1681f88dac838c8bba36af25bfb2b7cf7473a5847e35f",
             "type": "event",
             "signature": "IncreaseLiquidity(uint256,uint128,uint256,uint256)",
             "name": "IncreaseLiquidity",
             "inputs": [
                 {
-                    "@type": "erc20:lookupid",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "tokenId",
                     "type": "uint256",
-                    "validationFailure": true
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 },
                 {
-                    "@type": "dex:liquidity",
+                    "indexed": false,
+                    "internalType": "uint128",
                     "name": "liquidity",
                     "type": "uint128"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token0",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount0",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": "erc20lp:token1",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount1",
                     "type": "uint256"
                 }

@@ -1,0 +1,32 @@
+{
+    "name": "REWARD_CLAIMED",
+    "abis": [
+        {
+            "hex_signature": "0xa28f1f3546f32985703a5a32cbf18677dc0ece9c4db31ae416084d68aeb7d0db",
+            "type": "event",
+            "signature": "REWARD_CLAIMED(address,uint256,bool)",
+            "name": "REWARD_CLAIMED",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "hasDFILeft",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

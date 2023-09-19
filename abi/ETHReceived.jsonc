@@ -1,0 +1,44 @@
+{
+    "name": "ETHReceived",
+    "abis": [
+        {
+            "@id": "0x27f12abfe35860a9a927b465bb3d4a9c23c8428174b83f278fe45ed7b4da2662",
+            "type": "event",
+            "signature": "ETHReceived(uint256)",
+            "name": "ETHReceived",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xbfe611b001dfcd411432f7bf0d79b82b4b2ee81511edac123a3403c357fb972a",
+            "type": "event",
+            "signature": "ETHReceived(address,uint256)",
+            "name": "ETHReceived",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "_from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

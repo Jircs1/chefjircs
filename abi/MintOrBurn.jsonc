@@ -1,0 +1,60 @@
+{
+    "name": "MintOrBurn",
+    "abis": [
+        {
+            "hex_signature": "0x420e1933a11dc3afb4a4c96d4760053d12f80cad7fd9febd0fa8eca80d76cd2b",
+            "type": "event",
+            "signature": "MintOrBurn((address,address,int24,int24),uint256,bool,int256)",
+            "name": "MintOrBurn",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "contract IMarginEngine",
+                            "name": "marginEngine",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "owner",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "int24",
+                            "name": "tickLower",
+                            "type": "int24"
+                        },
+                        {
+                            "internalType": "int24",
+                            "name": "tickUpper",
+                            "type": "int24"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct IPeriphery.PositionDetails",
+                    "name": "position",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "notional",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isMint",
+                    "type": "bool"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "positionMarginRequirement",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

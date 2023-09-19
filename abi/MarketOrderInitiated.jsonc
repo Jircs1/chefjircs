@@ -1,0 +1,38 @@
+{
+    "name": "MarketOrderInitiated",
+    "abis": [
+        {
+            "hex_signature": "0x3e544118c04e3bb18b669475695cd270ba0e41fb13177483f01c14222de62a86",
+            "type": "event",
+            "signature": "MarketOrderInitiated(uint256,address,uint256,bool)",
+            "name": "MarketOrderInitiated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "orderId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "trader",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "pairIndex",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "open",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

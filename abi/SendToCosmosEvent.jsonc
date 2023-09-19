@@ -1,0 +1,47 @@
+{
+    "name": "SendToCosmosEvent",
+    "abis": [
+        {
+            "@id": "0x9e9794dbf94b0a0aa31a480f5b38550eda7f89115ac8fbf4953fa4dd219900c9",
+            "type": "event",
+            "signature": "SendToCosmosEvent(address,address,string,uint256,uint256)",
+            "name": "SendToCosmosEvent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_tokenContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "_destination",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_eventNonce",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

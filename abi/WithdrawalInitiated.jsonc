@@ -1,0 +1,53 @@
+{
+    "name": "WithdrawalInitiated",
+    "abis": [
+        {
+            "hex_signature": "0xd9fbd8fe4451ae979e36c7923543e61b94e26b6f1510866805ee90023a61aa21",
+            "type": "event",
+            "signature": "WithdrawalInitiated(address,address,uint256,uint256,uint256)",
+            "name": "WithdrawalInitiated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "contract Token",
+                    "name": "pool",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "provider",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "requestId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "poolTokenAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "reserveTokenAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

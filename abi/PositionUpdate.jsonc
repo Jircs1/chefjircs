@@ -1,0 +1,62 @@
+{
+    "name": "PositionUpdate",
+    "abis": [
+        {
+            "@id": "0x4a0dd77e6cb2be1847de991681f679a59bbe3e047ecb337a8426980861f82c0f",
+            "type": "event",
+            "signature": "PositionUpdate(address,int24,int24,uint128,int256,int256,int256,uint256)",
+            "name": "PositionUpdate",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "tickLower",
+                    "type": "int24"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "tickUpper",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "_liquidity",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "margin",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "fixedTokenBalance",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "variableTokenBalance",
+                    "type": "int256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "accumulatedFees",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

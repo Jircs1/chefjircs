@@ -1,0 +1,59 @@
+{
+    "name": "CardAdded",
+    "abis": [
+        {
+            "hex_signature": "0x4442bae5a17069681b85c6af363fc614a18b0f2a23e9ae05c0f0a56480a9d9f0",
+            "type": "event",
+            "signature": "CardAdded(uint256,uint256,uint16,uint8,uint16,bytes32,uint16)",
+            "name": "CardAdded",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "cardId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "playerId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint16",
+                    "name": "season",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "scarcity",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "serialNumber",
+                    "type": "uint16"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "metadata",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint16",
+                    "name": "clubId",
+                    "type": "uint16"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

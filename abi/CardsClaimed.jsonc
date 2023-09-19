@@ -1,0 +1,53 @@
+{
+    "name": "CardsClaimed",
+    "abis": [
+        {
+            "hex_signature": "0x1d87f091a192ed2ec53c296fe4aa7beb809df3dec06f1e88ab0ec9fbf2c67e2e",
+            "type": "event",
+            "signature": "CardsClaimed(address,uint256[],uint256[],uint256,uint256,bytes)",
+            "name": "CardsClaimed",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "paymentAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "cardIds",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "cardQuantities",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nonce",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "signature",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

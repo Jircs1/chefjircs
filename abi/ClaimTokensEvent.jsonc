@@ -1,0 +1,38 @@
+{
+    "name": "ClaimTokensEvent",
+    "abis": [
+        {
+            "hex_signature": "0xaca94a3466fab333b79851ab29b0715612740e4ae0d891ef8e9bd2a1bf5e24dd",
+            "type": "event",
+            "signature": "ClaimTokensEvent(address,uint256,uint256,uint256)",
+            "name": "ClaimTokensEvent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "_amountClaimed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amountBurned",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

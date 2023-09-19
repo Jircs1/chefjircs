@@ -2,56 +2,62 @@
     "name": "TransferSent",
     "abis": [
         {
-            "@id": "TransferSent",
-            "hex_signature": "0xe35dddd4ea75d7e9b3fe93af4f4e40e778c3da4074c9d93e7c6536f1e803c1eb",
+            "@id": "0xe35dddd4ea75d7e9b3fe93af4f4e40e778c3da4074c9d93e7c6536f1e803c1eb",
             "type": "event",
             "signature": "TransferSent(bytes32,uint256,address,uint256,bytes32,uint256,uint256,uint256,uint256)",
             "name": "TransferSent",
             "inputs": [
                 {
+                    "indexed": true,
+                    "internalType": "bytes32",
                     "name": "transferId",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "hop:chainID",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "chainId",
                     "type": "uint256"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "recipient",
                     "type": "address"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amount",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:nonce",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "transferNonce",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "bonderFee",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:index",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "index",
                     "type": "uint256"
                 },
                 {
-                    "@type": "erc20:tokenAmount",
-                    "@token": null,
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "amountOutMin",
                     "type": "uint256"
                 },
                 {
-                    "@type": "evm:timestamp",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "deadline",
                     "type": "uint256"
                 }

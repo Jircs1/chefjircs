@@ -1,0 +1,38 @@
+{
+    "name": "BroadcastTotalSupply",
+    "abis": [
+        {
+            "hex_signature": "0x5f9e7cb1ed2eca254f75b6e350699887aa8597e3a2ec9e0aa2b3504c211facbd",
+            "type": "event",
+            "signature": "BroadcastTotalSupply((uint128,uint128),uint256[])",
+            "name": "BroadcastTotalSupply",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint128",
+                            "name": "bias",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "slope",
+                            "type": "uint128"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct VeBalance",
+                    "name": "newTotalSupply",
+                    "type": "tuple"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "chainIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

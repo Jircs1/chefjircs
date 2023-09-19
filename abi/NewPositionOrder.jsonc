@@ -1,0 +1,62 @@
+{
+    "name": "NewPositionOrder",
+    "abis": [
+        {
+            "@id": "0x00da46badc3d23e4ffbd09bb00128a2274573502fdbb15d233ec3441c01b6af3",
+            "type": "event",
+            "signature": "NewPositionOrder(bytes32,uint64,uint96,uint96,uint96,uint8,uint8,uint32)",
+            "name": "NewPositionOrder",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "subAccountId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "orderId",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "collateral",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "size",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "price",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "profitTokenId",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "flags",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "deadline",
+                    "type": "uint32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "ConversionOut",
+    "abis": [
+        {
+            "hex_signature": "0xb999b06746a947f1958636b9b9377ae814fe578413dfffd4d3a7a96196fe02fc",
+            "type": "event",
+            "signature": "ConversionOut(address,bytes32,uint256)",
+            "name": "ConversionOut",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "tokenHolder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "conversionId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

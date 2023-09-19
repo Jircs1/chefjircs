@@ -1,0 +1,44 @@
+{
+    "name": "StakeTokens",
+    "abis": [
+        {
+            "hex_signature": "0x5fe79871cd2431c06447cbcf2557091da5d2ed5bc640f1028f42665913786e42",
+            "type": "event",
+            "signature": "StakeTokens(address,uint256,uint256,uint256)",
+            "name": "StakeTokens",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountStaked",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "lockOptionIndex",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

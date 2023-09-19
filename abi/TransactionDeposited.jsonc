@@ -2,28 +2,32 @@
     "name": "TransactionDeposited",
     "abis": [
         {
-            "@id": "TransactionDeposited",
-            "hex_signature": "0xb3813568d9991fc951961fcb4c784893574240a28925604d09fc577c55bb7c32",
+            "@id": "0xb3813568d9991fc951961fcb4c784893574240a28925604d09fc577c55bb7c32",
             "type": "event",
             "signature": "TransactionDeposited(address,address,uint256,bytes)",
             "name": "TransactionDeposited",
             "inputs": [
                 {
-                    "@type": "transfer:from",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "from",
                     "type": "address"
                 },
                 {
-                    "@type": "transfer:to",
+                    "indexed": true,
+                    "internalType": "address",
                     "name": "to",
                     "type": "address"
                 },
                 {
-                    "@type": "evm:version",
+                    "indexed": true,
+                    "internalType": "uint256",
                     "name": "version",
                     "type": "uint256"
                 },
                 {
+                    "indexed": false,
+                    "internalType": "bytes",
                     "name": "opaqueData",
                     "type": "bytes"
                 }

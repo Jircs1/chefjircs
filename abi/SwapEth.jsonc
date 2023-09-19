@@ -1,0 +1,44 @@
+{
+    "name": "SwapEth",
+    "abis": [
+        {
+            "@id": "0x4e96fb90a89341a56db7ad2bbf04c715bbf20be6a9a9e764671f718c4697649a",
+            "type": "event",
+            "signature": "SwapEth(string,address,string,uint256,uint256)",
+            "name": "SwapEth",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "toToken",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "destination",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fromAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minReturnAmount",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

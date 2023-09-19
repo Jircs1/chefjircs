@@ -2,29 +2,32 @@
     "name": "Execution721TakerFeePacked",
     "abis": [
         {
-            "@id": "Execution721TakerFeePacked",
-            "hex_signature": "0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab",
+            "@id": "0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab",
             "type": "event",
             "signature": "Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)",
             "name": "Execution721TakerFeePacked",
             "inputs": [
                 {
-                    "@type": "blur:orderHash",
+                    "indexed": false,
+                    "internalType": "bytes32",
                     "name": "orderHash",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "blur:trader",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "tokenIdListingIndexTrader",
                     "type": "uint256"
                 },
                 {
-                    "@type": "blur:collectionPriceSide",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "collectionPriceSide",
                     "type": "uint256"
                 },
                 {
-                    "@type": "blur:rate",
+                    "indexed": false,
+                    "internalType": "uint256",
                     "name": "takerFeeRecipientRate",
                     "type": "uint256"
                 }

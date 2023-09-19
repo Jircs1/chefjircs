@@ -1,0 +1,56 @@
+{
+    "name": "OrderExecuted3",
+    "abis": [
+        {
+            "@id": "0xfe7ce4ede4e17a67309fb218be86869fcb5ddf36df5527e01b6587401975d532",
+            "type": "event",
+            "signature": "OrderExecuted3(address,address,address,address[],uint256,uint256[],address)",
+            "name": "OrderExecuted3",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "maker_address",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "taker_address",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "base_token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "quote_tokens",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "base_quantity",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "quote_quantities",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

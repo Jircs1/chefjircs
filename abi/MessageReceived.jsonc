@@ -1,0 +1,44 @@
+{
+    "name": "MessageReceived",
+    "abis": [
+        {
+            "hex_signature": "0x58200b4c34ae05ee816d710053fff3fb75af4395915d3d2a771b24aa10e3cc5d",
+            "type": "event",
+            "signature": "MessageReceived(address,uint32,uint64,bytes32,bytes)",
+            "name": "MessageReceived",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "caller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "sourceDomain",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "nonce",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "sender",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "messageBody",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

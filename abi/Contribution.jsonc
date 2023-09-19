@@ -1,0 +1,29 @@
+{
+    "name": "Contribution",
+    "abis": [
+        {
+            "hex_signature": "0x4d154d4aae216bed6d0926db77c00df2b57c6b5ba4eee05775de20facede3a7b",
+            "type": "event",
+            "signature": "Contribution(address,uint256)",
+            "name": "Contribution",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

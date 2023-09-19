@@ -1,0 +1,44 @@
+{
+    "name": "TroveUpdated",
+    "abis": [
+        {
+            "@id": "0xc3770d654ed33aeea6bf11ac8ef05d02a6a04ed4686dd2f624d853bbec43cc8b",
+            "type": "event",
+            "signature": "TroveUpdated(address,uint256,uint256,uint256,uint8)",
+            "name": "TroveUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_borrower",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_debt",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_coll",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stake",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "enum BorrowerOperations.BorrowerOperation",
+                    "name": "operation",
+                    "type": "uint8"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

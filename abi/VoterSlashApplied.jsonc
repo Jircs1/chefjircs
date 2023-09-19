@@ -1,0 +1,32 @@
+{
+    "name": "VoterSlashApplied",
+    "abis": [
+        {
+            "hex_signature": "0xc2be4e0100330100d6f985214474331aa8f1a686d719540c9951cf4463640e6a",
+            "type": "event",
+            "signature": "VoterSlashApplied(address,int128,uint128)",
+            "name": "VoterSlashApplied",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "voter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int128",
+                    "name": "slashedTokens",
+                    "type": "int128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "postStake",
+                    "type": "uint128"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

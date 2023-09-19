@@ -1,0 +1,47 @@
+{
+    "name": "KeeperWork",
+    "abis": [
+        {
+            "@id": "0x46f2180879a7123a197cc3828c28955d70d661c70acbdc02450daf5f9a9c1cfa",
+            "type": "event",
+            "signature": "KeeperWork(address,address,address,uint256,uint256)",
+            "name": "KeeperWork",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_credit",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_job",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "_keeper",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_payment",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "_gasLeft",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

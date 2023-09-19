@@ -1,0 +1,41 @@
+{
+    "name": "ReserveAuctionBidPlaced",
+    "abis": [
+        {
+            "@id": "0x26ea3ebbda62eb1baef13e1c237dddd956c87f80b2801f2616d806d52557b121",
+            "type": "event",
+            "signature": "ReserveAuctionBidPlaced(uint256,address,uint256,uint256)",
+            "name": "ReserveAuctionBidPlaced",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "endTime",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

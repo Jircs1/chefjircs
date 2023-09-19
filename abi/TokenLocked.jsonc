@@ -1,0 +1,53 @@
+{
+    "name": "TokenLocked",
+    "abis": [
+        {
+            "@id": "0xced5acbb7e5a814f575209abeb5eff445b89a35e223c395603d3da68162dc6a7",
+            "type": "event",
+            "signature": "TokenLocked(uint256,uint256,string)",
+            "name": "TokenLocked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "numberOfWeeks",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "nonce",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x9ecfd70e9ff36df72989324a49559383d39f9290d700b10cf5ac10dcb68d2643",
+            "type": "event",
+            "signature": "TokenLocked(uint256,address)",
+            "name": "TokenLocked",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "tokenOwner",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

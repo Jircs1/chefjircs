@@ -1,0 +1,29 @@
+{
+    "name": "Lend",
+    "abis": [
+        {
+            "hex_signature": "0x41b123d2493c7b2067b8b7f49cf71532523d83ead11494d793531ece1fd4d046",
+            "type": "event",
+            "signature": "Lend(address,uint256)",
+            "name": "Lend",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

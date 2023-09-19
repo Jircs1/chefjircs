@@ -1,0 +1,44 @@
+{
+    "name": "ClaimSellOrder",
+    "abis": [
+        {
+            "hex_signature": "0x0eca047a22717e04fff16b883e2490c1490c953ec49bf7af9270fffddd8b5302",
+            "type": "event",
+            "signature": "ClaimSellOrder(address,uint256,address,uint256,uint256)",
+            "name": "ClaimSellOrder",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "batchId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "collateral",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fee",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "value",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

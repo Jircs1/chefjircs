@@ -1,0 +1,56 @@
+{
+    "name": "ItemSold",
+    "abis": [
+        {
+            "hex_signature": "0x72d3f914473a393354e6fcd9c3cb7d2eee53924b9b856f9da274e024566292a5",
+            "type": "event",
+            "signature": "ItemSold(address,address,address,uint256,uint64,uint128,address)",
+            "name": "ItemSold",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "nftAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint64",
+                    "name": "quantity",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint128",
+                    "name": "pricePerItem",
+                    "type": "uint128"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "paymentToken",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

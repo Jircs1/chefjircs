@@ -1,0 +1,35 @@
+{
+    "name": "LogSwapin",
+    "abis": [
+        {
+            "hex_signature": "0x05d0634fe981be85c22e2942a880821b70095d84e152c3ea3c17a4e4250d9d61",
+            "type": "event",
+            "signature": "LogSwapin(bytes32,address,uint256)",
+            "name": "LogSwapin",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "txhash",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

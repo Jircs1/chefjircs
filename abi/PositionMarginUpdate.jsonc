@@ -1,0 +1,44 @@
+{
+    "name": "PositionMarginUpdate",
+    "abis": [
+        {
+            "@id": "0x58fda8ef9050967ebeb4f3bc6baea53d849c21755d63a2abb4507c5db1b118ec",
+            "type": "event",
+            "signature": "PositionMarginUpdate(address,address,int24,int24,int256)",
+            "name": "PositionMarginUpdate",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "tickLower",
+                    "type": "int24"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "int24",
+                    "name": "tickUpper",
+                    "type": "int24"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int256",
+                    "name": "marginDelta",
+                    "type": "int256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

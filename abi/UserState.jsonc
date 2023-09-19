@@ -1,0 +1,47 @@
+{
+    "name": "UserState",
+    "abis": [
+        {
+            "hex_signature": "0xeec6b7095a637e006c79c1819d696e353a8f703db2c49fc0219e17a8fd04f7f2",
+            "type": "event",
+            "signature": "UserState(address,uint256,uint256,int256,int256,uint256)",
+            "name": "UserState",
+            "inputs": [
+                {
+                    "name": "user",
+                    "type": "address",
+                    "indexed": true
+                },
+                {
+                    "name": "collateral",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "debt",
+                    "type": "uint256",
+                    "indexed": false,
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "name": "n1",
+                    "type": "int256",
+                    "indexed": false
+                },
+                {
+                    "name": "n2",
+                    "type": "int256",
+                    "indexed": false
+                },
+                {
+                    "name": "liquidation_discount",
+                    "type": "uint256",
+                    "indexed": false
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

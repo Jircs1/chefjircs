@@ -1,0 +1,32 @@
+{
+    "name": "CreatedDrop",
+    "abis": [
+        {
+            "@id": "0xad59ebba8bfb06ba01a615a611467ca3bef86a275bd5e9704d3b295112550ba5",
+            "type": "event",
+            "signature": "CreatedDrop(address,address,uint256)",
+            "name": "CreatedDrop",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "creator",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "editionContractAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "editionSize",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

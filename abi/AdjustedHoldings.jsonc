@@ -1,0 +1,35 @@
+{
+    "name": "AdjustedHoldings",
+    "abis": [
+        {
+            "hex_signature": "0xb5ac373069545fdd5da402c94d10b968168eb2c09893e9a1a1fd087b2b3b34b1",
+            "type": "event",
+            "signature": "AdjustedHoldings(address,uint256,uint256)",
+            "name": "AdjustedHoldings",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "eligibleAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "nextEpochAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

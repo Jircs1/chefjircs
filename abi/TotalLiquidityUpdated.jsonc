@@ -1,0 +1,44 @@
+{
+    "name": "TotalLiquidityUpdated",
+    "abis": [
+        {
+            "hex_signature": "0x67c4863f17da9847c57c9fa043e63a0ddf4f5a86fd63a6f71ea69057a11c411a",
+            "type": "event",
+            "signature": "TotalLiquidityUpdated(bytes32,address,uint256,uint256,uint256)",
+            "name": "TotalLiquidityUpdated",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "contextId",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract Token",
+                    "name": "pool",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "liquidity",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "stakedBalance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "poolTokenSupply",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

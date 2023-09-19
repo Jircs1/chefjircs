@@ -1,0 +1,29 @@
+{
+    "name": "CancelSellNft",
+    "abis": [
+        {
+            "hex_signature": "0x6d97e11e5e36c8f052a95826e5998a393bc23c1ca95dc24d00e28ce375dae1fc",
+            "type": "event",
+            "signature": "CancelSellNft(address,uint256)",
+            "name": "CancelSellNft",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

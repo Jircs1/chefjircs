@@ -1,0 +1,53 @@
+{
+    "name": "SwapAndLiquify",
+    "abis": [
+        {
+            "@id": "0x17bbfb9a6069321b6ded73bd96327c9e6b7212a5cd51ff219cd61370acafb561",
+            "type": "event",
+            "signature": "SwapAndLiquify(uint256,uint256,uint256)",
+            "name": "SwapAndLiquify",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokensSwapped",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "ethReceived",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokensIntoLiqudity",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x28fc98272ce761178794ad6768050fea1648e07f1e2ffe15afd3a290f8381486",
+            "type": "event",
+            "signature": "SwapAndLiquify(uint256,uint256)",
+            "name": "SwapAndLiquify",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "ethReceived",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokensIntoLiqudity",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

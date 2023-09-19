@@ -1,0 +1,104 @@
+{
+    "name": "BurnRedeemMint",
+    "abis": [
+        {
+            "@id": "0x3ea53625fcb61f620716fae8ad32375fc4f80feb23831a3c53731a8bb76d69a8",
+            "type": "event",
+            "signature": "BurnRedeemMint(address,uint256,uint256,address,uint256)",
+            "name": "BurnRedeemMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "creatorContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "burnTokenAddress",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "burnTokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xe728850e46a56a3fba2c081f2fd18bf58c36ed66ee183389e92b075910f2da09",
+            "type": "event",
+            "signature": "BurnRedeemMint(address,uint256,uint256)",
+            "name": "BurnRedeemMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "creatorContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "index",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xb5455bab62448f7d0d17200c75068da7cfafd5c6bfe32d214ddd755e5f82dbe0",
+            "type": "event",
+            "signature": "BurnRedeemMint(address,uint256,uint256,uint32)",
+            "name": "BurnRedeemMint",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "creatorContract",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "instanceId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint32",
+                    "name": "redeemedCount",
+                    "type": "uint32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

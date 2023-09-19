@@ -2,19 +2,18 @@
     "name": "NewResolver",
     "abis": [
         {
-            "@id": "NewResolver",
-            "hex_signature": "0x335721b01866dc23fbee8b6b2c7b1e14d6f05c28cd35a2c934239f94095602a0",
+            "@id": "0x335721b01866dc23fbee8b6b2c7b1e14d6f05c28cd35a2c934239f94095602a0",
             "type": "event",
             "signature": "NewResolver(bytes32,address)",
             "name": "NewResolver",
             "inputs": [
                 {
-                    "@type": "ens:node",
+                    "indexed": true,
                     "name": "_node",
                     "type": "bytes32"
                 },
                 {
-                    "@type": "ens:resolver",
+                    "indexed": false,
                     "name": "_resolver",
                     "type": "address"
                 }

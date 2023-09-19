@@ -1,0 +1,29 @@
+{
+    "name": "CreateRDF",
+    "abis": [
+        {
+            "hex_signature": "0x001ff0a7f9f9bfa6a3d5d102a071d2bcae92556caf0da1318cfc2783796bab17",
+            "type": "event",
+            "signature": "CreateRDF(uint256,string)",
+            "name": "CreateRDF",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "rdfStatements",
+                    "type": "string"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "FlashLoanLocking",
+    "abis": [
+        {
+            "@id": "0x24e54b4b5d12d667319275fb50d50071162f76f8062063c801f3bd99f9e57c39",
+            "type": "event",
+            "signature": "FlashLoanLocking(uint256,address,address,bool)",
+            "name": "FlashLoanLocking",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "minter",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "approved",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

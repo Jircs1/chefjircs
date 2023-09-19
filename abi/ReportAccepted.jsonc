@@ -1,0 +1,78 @@
+{
+    "name": "ReportAccepted",
+    "abis": [
+        {
+            "hex_signature": "0xe81b49e583122eb290c46fc255c962b9a2dec468816c00fb7a2e6ebc42dc92d4",
+            "type": "event",
+            "signature": "ReportAccepted((((address,uint192)[],uint64,uint192),(uint64,uint64),bytes32))",
+            "name": "ReportAccepted",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "components": [
+                                        {
+                                            "internalType": "address",
+                                            "name": "sourceToken",
+                                            "type": "address"
+                                        },
+                                        {
+                                            "internalType": "uint192",
+                                            "name": "usdPerToken",
+                                            "type": "uint192"
+                                        }
+                                    ],
+                                    "internalType": "struct Internal.TokenPriceUpdate[]",
+                                    "name": "tokenPriceUpdates",
+                                    "type": "tuple[]"
+                                },
+                                {
+                                    "internalType": "uint64",
+                                    "name": "destChainSelector",
+                                    "type": "uint64"
+                                },
+                                {
+                                    "internalType": "uint192",
+                                    "name": "usdPerUnitGas",
+                                    "type": "uint192"
+                                }
+                            ],
+                            "internalType": "struct Internal.PriceUpdates",
+                            "name": "priceUpdates",
+                            "type": "tuple"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint64",
+                                    "name": "min",
+                                    "type": "uint64"
+                                },
+                                {
+                                    "internalType": "uint64",
+                                    "name": "max",
+                                    "type": "uint64"
+                                }
+                            ],
+                            "internalType": "struct CommitStore.Interval",
+                            "name": "interval",
+                            "type": "tuple"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "merkleRoot",
+                            "type": "bytes32"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct CommitStore.CommitReport",
+                    "name": "report",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

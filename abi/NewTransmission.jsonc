@@ -1,0 +1,50 @@
+{
+    "name": "NewTransmission",
+    "abis": [
+        {
+            "@id": "0xf6a97944f31ea060dfde0566e4167c1a1082551e64b60ecb14d599a9d023d451",
+            "type": "event",
+            "signature": "NewTransmission(uint32,int192,address,int192[],bytes,bytes32)",
+            "name": "NewTransmission",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint32",
+                    "name": "aggregatorRoundId",
+                    "type": "uint32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int192",
+                    "name": "answer",
+                    "type": "int192"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "transmitter",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "int192[]",
+                    "name": "observations",
+                    "type": "int192[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "observers",
+                    "type": "bytes"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "rawReportContext",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

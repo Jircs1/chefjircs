@@ -1,0 +1,38 @@
+{
+    "name": "EntrySold",
+    "abis": [
+        {
+            "@id": "0xd746af8dc82f9bed98cea0fe0264eb1c3d2e5f7bcc77fc5efb429c79df407887",
+            "type": "event",
+            "signature": "EntrySold(uint256,address,uint256,uint256)",
+            "name": "EntrySold",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "raffleId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "currentSize",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "priceStructureId",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

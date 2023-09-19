@@ -1,0 +1,47 @@
+{
+    "name": "PaymentTransferExecuted",
+    "abis": [
+        {
+            "hex_signature": "0x2919d2cec9197c7c65a2b1bb1724bf2800d7d09c0beeb44fec565648c7a0aeed",
+            "type": "event",
+            "signature": "PaymentTransferExecuted(string,address,uint256,uint256,address)",
+            "name": "PaymentTransferExecuted",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "orderId",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "transBlock",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "wallet",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

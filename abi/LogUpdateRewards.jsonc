@@ -1,0 +1,41 @@
+{
+    "name": "LogUpdateRewards",
+    "abis": [
+        {
+            "@id": "0x31eeb6a0d26c29b4c243d704ff4ae6feebcc2e8b123df7ea0bd12083c3083cb8",
+            "type": "event",
+            "signature": "LogUpdateRewards(address,address,uint256,uint256)",
+            "name": "LogUpdateRewards",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "by",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "yieldValue",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "revDisValue",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

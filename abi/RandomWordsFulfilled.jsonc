@@ -1,0 +1,38 @@
+{
+    "name": "RandomWordsFulfilled",
+    "abis": [
+        {
+            "@id": "0x7dffc5ae5ee4e2e4df1651cf6ad329a73cebdb728f37ea0187b9b17e036756e4",
+            "type": "event",
+            "signature": "RandomWordsFulfilled(uint256,uint256,uint96,bool)",
+            "name": "RandomWordsFulfilled",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "requestId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "outputSeed",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint96",
+                    "name": "payment",
+                    "type": "uint96"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "success",
+                    "type": "bool"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

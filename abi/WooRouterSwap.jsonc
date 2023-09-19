@@ -1,0 +1,62 @@
+{
+    "name": "WooRouterSwap",
+    "abis": [
+        {
+            "@id": "0x27c98e911efdd224f4002f6cd831c3ad0d2759ee176f9ee8466d95826af22a1c",
+            "type": "event",
+            "signature": "WooRouterSwap(uint8,address,address,uint256,uint256,address,address,address)",
+            "name": "WooRouterSwap",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "enum IWooRouterV2.SwapType",
+                    "name": "swapType",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "fromToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "toToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fromAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "toAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "rebateTo",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}

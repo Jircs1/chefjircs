@@ -1,0 +1,44 @@
+{
+    "name": "ProposalEvent",
+    "abis": [
+        {
+            "@id": "0x803c5a12f6bde629cea32e63d4b92d1b560816a6fb72e939d3c89e1cab650417",
+            "type": "event",
+            "signature": "ProposalEvent(uint8,uint64,uint8,bytes32,bytes32)",
+            "name": "ProposalEvent",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint8",
+                    "name": "originChainID",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint64",
+                    "name": "depositNonce",
+                    "type": "uint64"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "enum Bridge.ProposalStatus",
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "resourceID",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes32",
+                    "name": "dataHash",
+                    "type": "bytes32"
+                }
+            ],
+            "outputs": null
+        }
+    ]
+}
