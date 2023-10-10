@@ -1,0 +1,83 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tier",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "honAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "hroId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "workerAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Stake",
+        "type": "event",
+        "@id": "0x2720efa4b2dd4f3f8a347da3cbd290a522e9432da9072c5b8e6300496fdde282",
+        "signature": "Stake(address,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract IPool",
+                "name": "pool",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128[]",
+                "name": "binIds",
+                "type": "uint128[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128[]",
+                "name": "ratios",
+                "type": "uint128[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "contract IPoolPositionSlim",
+                "name": "poolPosition",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "poolPositionNumber",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "PoolPositionCreated",
+        "type": "event",
+        "@id": "0x8f8879ffd08f52cea5fd357c96f99931a564ca54e120dba4fe84e56233f4a63d",
+        "signature": "PoolPositionCreated(address,uint128[],uint128[],address,uint256)"
+    }
+]

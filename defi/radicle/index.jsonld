@@ -1,0 +1,346 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "delegation:delegated",
+                "name": "delegate",
+                "type": "address",
+                "features": {
+                    "ens": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12219,
+                        "sampleAddress": "0x983110309620d911731ac0932219af06091b6744",
+                        "sampleTxHash": "0x002c0aa2ca0e1b3197d2f1a26519cf6d60bd8fbe50902ae32cdeb378e13483cf",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "hop": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10017,
+                        "sampleAddress": "0xf4b0556b9b6f53e00a1fdd2b0478ce841991d8fa",
+                        "sampleTxHash": "0x0056b32ae5bf449b472856cde231f4598585286ec2cdbdc0999f9b6ce179b169",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "uniswap": {
+                        "is_erc20": 0.166667,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 6235,
+                        "sampleAddress": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+                        "sampleTxHash": "0x00544c5ab5f8d61573aa0aeba299842536bad21364df83af57417ab8fd07ea90",
+                        "found": 12,
+                        "samples": 100
+                    },
+                    "gitcoin": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4673,
+                        "sampleAddress": "0x4be88f63f919324210ea3a2ccad4ff0734425f91",
+                        "sampleTxHash": "0x00cbdf04133512aed9e5ca000993973394f39996829179016f21afb4ac3b1139",
+                        "found": 2,
+                        "samples": 100
+                    },
+                    "bitdao": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4513,
+                        "sampleAddress": "0x853edd954dd508117cb957918378c976ac390d8e",
+                        "sampleTxHash": "0x0043f4388dc409e84ea71513979034896e558ee41a1bb354570e0649653da733",
+                        "found": 4,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "previousBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "newBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DelegateVotesChanged",
+        "type": "event",
+        "@id": "0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724",
+        "signature": "DelegateVotesChanged(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "voter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "proposalId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "support",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "votes",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "VoteCast",
+        "type": "event",
+        "@id": "0x877856338e13f63d0c36822ff0ef736b80934cd90574a3a5bc9262c39d217c46",
+        "signature": "VoteCast(address,uint256,bool,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "delegator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fromDelegate",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "toDelegate",
+                "type": "address"
+            }
+        ],
+        "name": "DelegateChanged",
+        "type": "event",
+        "@id": "0x3134e8a2e6d97e929a7e54011ea5485d7d196dd5f0ba4d4ef95803e8e3fc257f",
+        "signature": "DelegateChanged(address,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "proposer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "targets",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "values",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "string[]",
+                "name": "signatures",
+                "type": "string[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes[]",
+                "name": "calldatas",
+                "type": "bytes[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startBlock",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "endBlock",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+            }
+        ],
+        "name": "ProposalCreated",
+        "type": "event",
+        "@id": "0x7d84a6263ae0d98d3329bd7b46bb4e8d6f98cd35a7adb45c274c8b7fd5ebd5e0",
+        "signature": "ProposalCreated(uint256,address,address[],uint256[],string[],bytes[],uint256,uint256,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "eta",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "ProposalQueued",
+        "type": "event",
+        "@id": "0x9a2e42fd6722813d69113e7d0079d3d940171428df7373df9c7f7617cfda2892",
+        "signature": "ProposalQueued(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "txHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "signature",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "eta",
+                "type": "uint256"
+            }
+        ],
+        "name": "QueueTransaction",
+        "type": "event",
+        "@id": "0x76e2796dc3a81d57b0e8504b647febcbeeb5f4af818e164f11eef8131a6a763f",
+        "signature": "QueueTransaction(bytes32,address,uint256,string,bytes,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "txHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "signature",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "eta",
+                "type": "uint256"
+            }
+        ],
+        "name": "ExecuteTransaction",
+        "type": "event",
+        "@id": "0xa560e3198060a2f10670c1ec5b403077ea6ae93ca8de1c32b451dc1a943cd6e7",
+        "signature": "ExecuteTransaction(bytes32,address,uint256,string,bytes,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            }
+        ],
+        "name": "ProposalExecuted",
+        "type": "event",
+        "@id": "0x712ae1383f79ac853f8d882153778e0260ef8f03b504e2866e0593e04d2b291f",
+        "signature": "ProposalExecuted(uint256)"
+    }
+]

@@ -1,0 +1,215 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "agreementClass",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "id",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32[]",
+                "name": "data",
+                "type": "bytes32[]"
+            }
+        ],
+        "name": "AgreementUpdated",
+        "type": "event",
+        "@id": "0x0c4c547b3a4fcaa5be8353b3111472b124155bccc86de811d4a481c9e6e9faca",
+        "signature": "AgreementUpdated(address,bytes32,bytes32[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "agreementClass",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "slotId",
+                "type": "uint256"
+            }
+        ],
+        "name": "AgreementStateUpdated",
+        "type": "event",
+        "@id": "0x30f416fa68fca014a0f334464c64b000ba53e99b6d2afdea9d5ca756372d5985",
+        "signature": "AgreementStateUpdated(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "operatorData",
+                "type": "bytes"
+            }
+        ],
+        "name": "Minted",
+        "type": "event",
+        "@id": "0x2fe5be0146f74c5bce36c0b80911af6c7d86ff27e89d5cfa61fc681327954e5d",
+        "signature": "Minted(address,address,uint256,bytes,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokenUpgraded",
+        "type": "event",
+        "@id": "0x25ca84076773b0455db53621c459ddc84fe40840e4932a62706a032566f399df",
+        "signature": "TokenUpgraded(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "version",
+                "type": "uint8"
+            }
+        ],
+        "name": "Initialized",
+        "type": "event",
+        "@id": "0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498",
+        "signature": "Initialized(uint8)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "MetadataUpdate",
+        "type": "event",
+        "@id": "0xf8e1a15aba9398e019f0b49df1a4fde98ee17ae345cb5f6b5e2c27f5033e8ce7",
+        "signature": "MetadataUpdate(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "role",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            }
+        ],
+        "name": "RoleGranted",
+        "type": "event",
+        "@id": "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+        "signature": "RoleGranted(bytes32,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_dropId",
+                "type": "uint256"
+            }
+        ],
+        "name": "UpdatedPhase",
+        "type": "event",
+        "@id": "0xfda37b53117c5bf84916ece7449890be93cbd2842914c83f4a6864adb618654f",
+        "signature": "UpdatedPhase(uint256)"
+    }
+]

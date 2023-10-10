@@ -1,0 +1,250 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tvl",
+                "type": "uint256"
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0x4d6ce1e535dbade1c23defba91e23b8f791ce5edc0cc320257a2b364e4e38426",
+        "signature": "Deposit(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "Withdraw",
+        "type": "event",
+        "@id": "0x5b6b431d4476a211bb7d41c20d1aab9ae2321deee0d20be3d9fc9b1093fa6e3d",
+        "signature": "Withdraw(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "callFees",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "beefyFees",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "strategistFees",
+                "type": "uint256"
+            }
+        ],
+        "name": "ChargedFees",
+        "type": "event",
+        "@id": "0xd255b592c7f268a73e534da5219a60ff911b4cf6daae21c7d20527dd657bd99a",
+        "signature": "ChargedFees(uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "harvester",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "wantHarvested",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tvl",
+                "type": "uint256"
+            }
+        ],
+        "name": "StratHarvest",
+        "type": "event",
+        "@id": "0x9bc239f1724cacfb88cb1d66a2dc437467699b68a8c90d7b63110cf4b6f92410",
+        "signature": "StratHarvest(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokenReturned",
+        "type": "event",
+        "@id": "0xeaf449319c042c9ba3474fa0c5329eb58cd1f23be110cdbf9d697b8d303dac15",
+        "signature": "TokenReturned(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "proxy",
+                "type": "address"
+            }
+        ],
+        "name": "ProxyCreated",
+        "type": "event",
+        "@id": "0x00fffc2da0b561cae30d9826d37709e9421c4725faebc226cbbb7ef5fc5e7349",
+        "signature": "ProxyCreated(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "vault",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "desiredToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mooTokenIn",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            }
+        ],
+        "name": "ZapOut",
+        "type": "event",
+        "@id": "0xde160ef457e2842f9b597ec662dc8b390d699ba99300cfe5429f960b4bffd2f0",
+        "signature": "ZapOut(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "reward",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RewardAdded",
+        "type": "event",
+        "@id": "0xde88a922e0d3b88b24e9623efeb464919c6bf9f66857a65e2bfcf2ce87a9433d",
+        "signature": "RewardAdded(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15",
+        "signature": "Deposit(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Withdraw",
+        "type": "event",
+        "@id": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
+        "signature": "Withdraw(address,uint256,uint256)"
+    }
+]

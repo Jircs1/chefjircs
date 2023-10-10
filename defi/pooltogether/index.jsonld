@@ -1,0 +1,531 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "CreditBurned",
+        "type": "event",
+        "@id": "0xf584c579437bc25785b953cc4d8d247251812751e1871c6130cbdecf95a106cf",
+        "signature": "CreditBurned(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "redeemed",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$2",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "exitFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "InstantWithdrawal",
+        "type": "event",
+        "@id": "0x0271704a58fd2953e49b87d67a0a3ce28a58147de98a5457f60b4686f6385030",
+        "signature": "InstantWithdrawal(address,address,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "CreditMinted",
+        "type": "event",
+        "@id": "0x2f92d56910619b38bc29fd8e4ca5e56359edac7a0c086cdcd305fb603fa37491",
+        "signature": "CreditMinted(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "delegation:delegated",
+                "name": "delegate",
+                "type": "address",
+                "features": {
+                    "ens": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12219,
+                        "sampleAddress": "0x983110309620d911731ac0932219af06091b6744",
+                        "sampleTxHash": "0x002c0aa2ca0e1b3197d2f1a26519cf6d60bd8fbe50902ae32cdeb378e13483cf",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "hop": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10017,
+                        "sampleAddress": "0xf4b0556b9b6f53e00a1fdd2b0478ce841991d8fa",
+                        "sampleTxHash": "0x0056b32ae5bf449b472856cde231f4598585286ec2cdbdc0999f9b6ce179b169",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "uniswap": {
+                        "is_erc20": 0.166667,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 6235,
+                        "sampleAddress": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+                        "sampleTxHash": "0x00544c5ab5f8d61573aa0aeba299842536bad21364df83af57417ab8fd07ea90",
+                        "found": 12,
+                        "samples": 100
+                    },
+                    "gitcoin": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4673,
+                        "sampleAddress": "0x4be88f63f919324210ea3a2ccad4ff0734425f91",
+                        "sampleTxHash": "0x00cbdf04133512aed9e5ca000993973394f39996829179016f21afb4ac3b1139",
+                        "found": 2,
+                        "samples": 100
+                    },
+                    "bitdao": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4513,
+                        "sampleAddress": "0x853edd954dd508117cb957918378c976ac390d8e",
+                        "sampleTxHash": "0x0043f4388dc409e84ea71513979034896e558ee41a1bb354570e0649653da733",
+                        "found": 4,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "previousBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "newBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DelegateVotesChanged",
+        "type": "event",
+        "@id": "0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724",
+        "signature": "DelegateVotesChanged(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "voter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "proposalId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "support",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "votes",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "VoteCast",
+        "type": "event",
+        "@id": "0x877856338e13f63d0c36822ff0ef736b80934cd90574a3a5bc9262c39d217c46",
+        "signature": "VoteCast(address,uint256,bool,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint32",
+                "name": "requestId",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "randomNumber",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RandomNumberCompleted",
+        "type": "event",
+        "@id": "0x629394f18de7accce1179c28c39be59503a57cbcf45980a2772743b041b36271",
+        "signature": "RandomNumberCompleted(uint32,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint32",
+                "name": "requestId",
+                "type": "uint32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            }
+        ],
+        "name": "RandomNumberRequested",
+        "type": "event",
+        "@id": "0xcf635b20f2defc1e71326dc4f0b616fa676e29a5bae87da19fcaddc550b33f03",
+        "signature": "RandomNumberRequested(uint32,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint32",
+                "name": "drawId",
+                "type": "uint32"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint8",
+                        "name": "bitRangeSize",
+                        "type": "uint8"
+                    },
+                    {
+                        "internalType": "uint8",
+                        "name": "matchCardinality",
+                        "type": "uint8"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "startTimestampOffset",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "endTimestampOffset",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "maxPicksPerUser",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "expiryDuration",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "uint104",
+                        "name": "numberOfPicks",
+                        "type": "uint104"
+                    },
+                    {
+                        "internalType": "uint32[16]",
+                        "name": "tiers",
+                        "type": "uint32[16]"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "prize",
+                        "type": "uint256"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IPrizeDistributionSource.PrizeDistribution",
+                "name": "prizeDistribution",
+                "type": "tuple"
+            }
+        ],
+        "name": "PrizeDistributionSet",
+        "type": "event",
+        "@id": "0x2d81da839b2f3db2ed762907f74df3acecdc30461dba4813694c225ba911e1f6",
+        "signature": "PrizeDistributionSet(uint32,(uint8,uint8,uint32,uint32,uint32,uint32,uint104,uint32[16],uint256))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint32",
+                "name": "rngRequestId",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "rngLockBlock",
+                "type": "uint32"
+            }
+        ],
+        "name": "DrawStarted",
+        "type": "event",
+        "@id": "0x0de3a7af7d3c2126e4fb96a7065b39f8bb17e3b9111c092e11236942fb38ca61",
+        "signature": "DrawStarted(uint32,uint32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint32",
+                "name": "drawId",
+                "type": "uint32"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "winningRandomNumber",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "drawId",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "timestamp",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "beaconPeriodStartedAt",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "beaconPeriodSeconds",
+                        "type": "uint32"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IDrawBeacon.Draw",
+                "name": "draw",
+                "type": "tuple"
+            }
+        ],
+        "name": "DrawSet",
+        "type": "event",
+        "@id": "0xc6f337e5507fd1bdebc6d79ed14168145e8c109d7b7139459692e24f06baed17",
+        "signature": "DrawSet(uint32,(uint256,uint32,uint64,uint64,uint32))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "randomNumber",
+                "type": "uint256"
+            }
+        ],
+        "name": "DrawCompleted",
+        "type": "event",
+        "@id": "0x13f646a3648ee5b5a0e8d6bc3d2d623fddf38fa7c8c5dfdbdbe6a913112edc6c",
+        "signature": "DrawCompleted(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "messageId",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "toChainId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+            }
+        ],
+        "name": "MessageDispatched",
+        "type": "event",
+        "@id": "0xe2f8f20ddbedfce5eb59a8b930077e7f4906a01300b9318db5f90d1c96c7b6d4",
+        "signature": "MessageDispatched(bytes32,address,uint256,address,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint32",
+                "name": "drawId",
+                "type": "uint32"
+            }
+        ],
+        "name": "PrizeDistributionPushed",
+        "type": "event",
+        "@id": "0x622f68684c34385911683ccecb27900a10d7c8860cb20b153b1ff20d5c4f7a44",
+        "signature": "PrizeDistributionPushed(uint32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "contract ISingleMessageDispatcher",
+                "name": "dispatcher",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "toChainId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "drawExecutor",
+                "type": "address"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "winningRandomNumber",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "drawId",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "timestamp",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "beaconPeriodStartedAt",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "beaconPeriodSeconds",
+                        "type": "uint32"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IDrawBeacon.Draw",
+                "name": "draw",
+                "type": "tuple"
+            }
+        ],
+        "name": "DrawDispatched",
+        "type": "event",
+        "@id": "0x22e618b95c54407a3ebf356907db11abbdd414b92f49f8da996020d19c2f0010",
+        "signature": "DrawDispatched(address,uint256,address,(uint256,uint32,uint64,uint64,uint32))"
+    }
+]

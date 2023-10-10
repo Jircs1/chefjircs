@@ -1,0 +1,677 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "string",
+                "name": "logName",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+            }
+        ],
+        "name": "ActionEvent",
+        "type": "event",
+        "@id": "0x2b6d22f419271bcc89bbac8deec947c664365d6e24d06fef0ca7c325c704dce3",
+        "signature": "ActionEvent(string,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "src",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "dst",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rad",
+                "type": "uint256"
+            }
+        ],
+        "name": "TransferInternalCoins",
+        "type": "event",
+        "@id": "0x4cd53b0b754082a31f5a6f3dc965c36d1d901c309830e0b4c17949aff97f0b14",
+        "signature": "TransferInternalCoins(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "collateralType",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "parameter",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "data",
+                "type": "uint256"
+            }
+        ],
+        "name": "ModifyParameters",
+        "type": "event",
+        "@id": "0xc59b1109b54f213212d2f5af5c1dae5e887f9daa63b595578fae847cb048e8f4",
+        "signature": "ModifyParameters(bytes32,bytes32,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "LogSetOwner",
+        "type": "event",
+        "@id": "0xce241d7ca1f669fee44b6fc00b8eba2df3bb514eed0f6f668f8f89096e81ed94",
+        "signature": "LogSetOwner(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "authority",
+                "type": "address"
+            }
+        ],
+        "name": "LogSetAuthority",
+        "type": "event",
+        "@id": "0x1abebea81bfa2637f28358c371278fb15ede7ea8dd28d2e03b112ff6d936ada4",
+        "signature": "LogSetAuthority(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "parameter",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "data",
+                "type": "uint256"
+            }
+        ],
+        "name": "ModifyParameters",
+        "type": "event",
+        "@id": "0xac7c5c1afaef770ec56ac6268cd3f2fbb1035858ead2601d6553157c33036c3a",
+        "signature": "ModifyParameters(bytes32,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "collateralType",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "safe",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "collateralSource",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "debtDestination",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "deltaCollateral",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "deltaDebt",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockedCollateral",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "generatedDebt",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "globalDebt",
+                "type": "uint256"
+            }
+        ],
+        "name": "ModifySAFECollateralization",
+        "type": "event",
+        "@id": "0x182725621f9c0d485fb256f86699c82616bd6e4670325087fd08f643cab7d917",
+        "signature": "ModifySAFECollateralization(bytes32,address,address,address,int256,int256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "safe",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "deltaCollateral",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "deltaDebt",
+                "type": "int256"
+            }
+        ],
+        "name": "ModifySAFECollateralization",
+        "type": "event",
+        "@id": "0x4a1d86235388d42bee8b26817295ba354feb351780a0005e14a02303ac302df8",
+        "signature": "ModifySAFECollateralization(address,uint256,int256,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenCumulativeStaked",
+                "type": "uint256"
+            }
+        ],
+        "name": "Exit",
+        "type": "event",
+        "@id": "0xbc2a67d422c268da6fe45f3e7d194e1d98906d221f1cfad62a5c80f2cd209f4c",
+        "signature": "Exit(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "usr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "wad",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Join",
+        "type": "event",
+        "@id": "0x0e64978d073561c3dfd4d4e3e4dce066cde2ab246a44f990fabb0a21a4a3bd95",
+        "signature": "Join(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "collateralType",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "wad",
+                "type": "int256"
+            }
+        ],
+        "name": "ModifyCollateralBalance",
+        "type": "event",
+        "@id": "0x488ac1e40bb6e5ee1f88b998568d1de4cb595e9ce0e0d4e4d4cc4c202053f107",
+        "signature": "ModifyCollateralBalance(bytes32,address,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "delegation:delegated",
+                "name": "delegate",
+                "type": "address",
+                "features": {
+                    "ens": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12219,
+                        "sampleAddress": "0x983110309620d911731ac0932219af06091b6744",
+                        "sampleTxHash": "0x002c0aa2ca0e1b3197d2f1a26519cf6d60bd8fbe50902ae32cdeb378e13483cf",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "hop": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10017,
+                        "sampleAddress": "0xf4b0556b9b6f53e00a1fdd2b0478ce841991d8fa",
+                        "sampleTxHash": "0x0056b32ae5bf449b472856cde231f4598585286ec2cdbdc0999f9b6ce179b169",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "uniswap": {
+                        "is_erc20": 0.166667,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 6235,
+                        "sampleAddress": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+                        "sampleTxHash": "0x00544c5ab5f8d61573aa0aeba299842536bad21364df83af57417ab8fd07ea90",
+                        "found": 12,
+                        "samples": 100
+                    },
+                    "gitcoin": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4673,
+                        "sampleAddress": "0x4be88f63f919324210ea3a2ccad4ff0734425f91",
+                        "sampleTxHash": "0x00cbdf04133512aed9e5ca000993973394f39996829179016f21afb4ac3b1139",
+                        "found": 2,
+                        "samples": 100
+                    },
+                    "bitdao": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4513,
+                        "sampleAddress": "0x853edd954dd508117cb957918378c976ac390d8e",
+                        "sampleTxHash": "0x0043f4388dc409e84ea71513979034896e558ee41a1bb354570e0649653da733",
+                        "found": 4,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "previousBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "newBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DelegateVotesChanged",
+        "type": "event",
+        "@id": "0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724",
+        "signature": "DelegateVotesChanged(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "collateralType",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "surplusDst",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "rateMultiplier",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "dstCoinBalance",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "globalDebt",
+                "type": "uint256"
+            }
+        ],
+        "name": "UpdateAccumulatedRate",
+        "type": "event",
+        "@id": "0x5b9f54db46fa62a65324e3e9cad8e6fa0deb965ce36134b30377d7edd3a8136f",
+        "signature": "UpdateAccumulatedRate(bytes32,address,int256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "safe",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "dst",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rad",
+                "type": "uint256"
+            }
+        ],
+        "name": "TransferInternalCoins",
+        "type": "event",
+        "@id": "0x4bcf3a338d8f80224ef2faba6a44cf6740cc4ba448c950d7c99bbe02da4b710b",
+        "signature": "TransferInternalCoins(address,uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "collateralType",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "src",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "dst",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "wad",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TransferCollateral",
+        "type": "event",
+        "@id": "0xb08760a077e71005cf3651212fdbd4028d6ebc8e1844c0475f36000f2756c0d7",
+        "signature": "TransferCollateral(bytes32,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "safe",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "dst",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "wad",
+                "type": "uint256"
+            }
+        ],
+        "name": "TransferCollateral",
+        "type": "event",
+        "@id": "0xc0db7defff3210677ded74d20a6b47a7e48901c4ca7a5978dbed3826f4870d30",
+        "signature": "TransferCollateral(address,uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "cdpId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "triggerId",
+                "type": "uint256"
+            }
+        ],
+        "name": "TriggerRemoved",
+        "type": "event",
+        "@id": "0xb4a1fc324bd863f8cd42582bebf2ce7f2d309c6a84bf371f28e069f95a4fa9e1",
+        "signature": "TriggerRemoved(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "cdpId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "approvedEntity",
+                "type": "address"
+            }
+        ],
+        "name": "ApprovalRemoved",
+        "type": "event",
+        "@id": "0x5fde2e50a3ff357dc765d8ec46c00a5f409a4c2eca479d4fcfaa606a1df4a530",
+        "signature": "ApprovalRemoved(uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "delegator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fromDelegate",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "toDelegate",
+                "type": "address"
+            }
+        ],
+        "name": "DelegateChanged",
+        "type": "event",
+        "@id": "0x3134e8a2e6d97e929a7e54011ea5485d7d196dd5f0ba4d4ef95803e8e3fc257f",
+        "signature": "DelegateChanged(address,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rad",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "coinBalance",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "debtBalance",
+                "type": "uint256"
+            }
+        ],
+        "name": "SettleDebt",
+        "type": "event",
+        "@id": "0xaa3cda6ae2bb6ad9e5234a74ba9fede531dec740965eafd0b7ac9d3b90443f86",
+        "signature": "SettleDebt(uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rad",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "debtBalance",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "coinBalance",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "globalUnbackedDebt",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "globalDebt",
+                "type": "uint256"
+            }
+        ],
+        "name": "SettleDebt",
+        "type": "event",
+        "@id": "0x11000f3497809a546a9de313df16f9ce615e1c65098ba758180e1cac823ed415",
+        "signature": "SettleDebt(address,uint256,uint256,uint256,uint256,uint256)"
+    }
+]

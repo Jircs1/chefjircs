@@ -1,0 +1,416 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TransferSingle",
+        "type": "event",
+        "@id": "0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62",
+        "signature": "TransferSingle(address,address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "leftHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "rightHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newLeftFill",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newRightFill",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Match",
+        "type": "event",
+        "@id": "0x956cd63ee4cdcd81fda5f0ec7c6c36dceda99e1b412f4a650a5d26055dc3c450",
+        "signature": "Match(bytes32,bytes32,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "hash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "Cancel",
+        "type": "event",
+        "@id": "0xe8d9861dbc9c663ed3accd261bbe2fe01e0d3d9e5f51fa38523b265c7757a93a",
+        "signature": "Cancel(bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "address payable",
+                        "name": "account",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "value",
+                        "type": "uint96"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct LibPart.Part[]",
+                "name": "creators",
+                "type": "tuple[]"
+            }
+        ],
+        "name": "Creators",
+        "type": "event",
+        "@id": "0x841ffb90d4cabdd1f16034f3fa831d79060febbb8167bdd54a49269365bdf78f",
+        "signature": "Creators(uint256,(address,uint96)[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "address payable",
+                        "name": "account",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "value",
+                        "type": "uint96"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct LibPart.Part[]",
+                "name": "royalties",
+                "type": "tuple[]"
+            }
+        ],
+        "name": "RoyaltiesSet",
+        "type": "event",
+        "@id": "0x3fa96d7b6bcbfe71ef171666d84db3cf52fa2d1c8afdb1cc8e486177f208b7df",
+        "signature": "RoyaltiesSet(uint256,(address,uint96)[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "value",
+                "type": "string"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            }
+        ],
+        "name": "URI",
+        "type": "event",
+        "@id": "0x6bb7ff708619ba0610cba295a58592e0451dee2622938c8755667688daf3529b",
+        "signature": "URI(string,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "prevSupply",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "supply",
+                "type": "uint256"
+            }
+        ],
+        "name": "Supply",
+        "type": "event",
+        "@id": "0x5e2aa66efd74cce82b21852e317e5490d9ecc9e6bb953ae24d90851258cc2f5c",
+        "signature": "Supply(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "proxy",
+                "type": "address"
+            }
+        ],
+        "name": "Create721RaribleUserProxy",
+        "type": "event",
+        "@id": "0x4768a3e06654c109507892e111851106a07f51f57cc0cfc3374a141e03c3f08f",
+        "signature": "Create721RaribleUserProxy(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+            }
+        ],
+        "name": "CreateERC721RaribleUser",
+        "type": "event",
+        "@id": "0xd901a467fa419f379a67636a1de44cc2ed772beb43a0c05fa1ddcad5d59e9913",
+        "signature": "CreateERC721RaribleUser(address,string,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "address payable",
+                        "name": "account",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "value",
+                        "type": "uint96"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct LibPart.Part[]",
+                "name": "royalties",
+                "type": "tuple[]"
+            }
+        ],
+        "name": "RoyaltiesSetForContract",
+        "type": "event",
+        "@id": "0xc026171b9a7c9009d6a748a19a0a3cb877978a585e1647a87a786d724bbde127",
+        "signature": "RoyaltiesSetForContract(address,(address,uint96)[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "proxy",
+                "type": "address"
+            }
+        ],
+        "name": "Create1155RaribleUserProxy",
+        "type": "event",
+        "@id": "0x5b961e37212df9fe72e2c84d894099793a4569a883f97d6413c4362e68c644b5",
+        "signature": "Create1155RaribleUserProxy(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+            }
+        ],
+        "name": "CreateERC1155RaribleUser",
+        "type": "event",
+        "@id": "0x7da6bc204c8c4856a6aff786a6cb81c59477c782191dc51837d644a8ad50f2cc",
+        "signature": "CreateERC1155RaribleUser(address,string,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sellToken",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "sellTokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "buyToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "buyTokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "salt",
+                "type": "uint256"
+            }
+        ],
+        "name": "Cancel",
+        "type": "event",
+        "@id": "0xbfe0e802e586c99960de1a111c80f598b281996d65080d74dbe29986f55b274a",
+        "signature": "Cancel(address,uint256,address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "recipients",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "bps",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "SecondarySaleFees",
+        "type": "event",
+        "@id": "0x99aba1d63749cfd5ad1afda7c4663840924d54eb5f005bbbeadedc6ec13674b2",
+        "signature": "SecondarySaleFees(uint256,address[],uint256[])"
+    }
+]

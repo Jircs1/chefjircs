@@ -1,0 +1,218 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_weeks",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Locked",
+        "type": "event",
+        "@id": "0xd4665e3049283582ba6f9eba07a5b3e12dab49e02da99e8927a47af5d134bea5",
+        "signature": "Locked(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "updateCount",
+                "type": "uint256"
+            }
+        ],
+        "name": "RewardClaimed",
+        "type": "event",
+        "@id": "0x7a84a08b02c91f3c62d572853f966fc799bbd121e8ad7833a4494ab8dcfcb404",
+        "signature": "RewardClaimed(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "to",
+                "type": "address",
+                "features": {
+                    "convex": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2503,
+                        "sampleAddress": "0x96c68d861ada016ed98c30c810879f9df7c64154",
+                        "sampleTxHash": "0x039d12d845bd36aa7201c29b2f3670424264581dca71fdcd631a987b102c5e2d",
+                        "found": 10,
+                        "samples": 100
+                    },
+                    "redacted": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1821,
+                        "sampleAddress": "0xdf7e3fd7bb6db08cc20ba575eec69b163c2b54f4",
+                        "sampleTxHash": "0x09a5fffd78ff5088721413f0a1b40fa0999df6a74ed8e563d3ec0c24889cb7b0",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "aura": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1745,
+                        "sampleAddress": "0xb1f881f47bab744e7283851bc090baa626df931d",
+                        "sampleTxHash": "0x08fedac86f32aa2883f93c1f1996c9e1b3d8b2f4cd8e0da9540a5102e283b715",
+                        "found": 7,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "name": "amount",
+                "type": "uint256",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "name": "isNative",
+                "type": "bool"
+            }
+        ],
+        "name": "Withdrawn",
+        "type": "event",
+        "@id": "0x2fd83d5e9f5d240bed47a97a24cf354e4047e25edc2da27b01fd95e5e8a0c9a5",
+        "signature": "Withdrawn(address,uint256,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Relock",
+        "type": "event",
+        "@id": "0x31bd6ac63b078494589dfd74b11e70e90a86974bf5d950759a67a6e81b03d78f",
+        "signature": "Relock(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "minter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "MintedFor",
+        "type": "event",
+        "@id": "0x903592cd0f066f690620461a51d97e0eb2f25e48a1e4f781bcc3de1772e23c94",
+        "signature": "MintedFor(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "wxAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "xAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "v1Amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bool",
+                "name": "lock",
+                "type": "bool"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "caller",
+                "type": "address"
+            }
+        ],
+        "name": "Migrate",
+        "type": "event",
+        "@id": "0xfb4fa0c1e3394566ca16c7045e2cb7c48a163744e90561215f72fa0782c34e8a",
+        "signature": "Migrate(uint256,uint256,uint256,address,bool,address)"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "trader",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "origin",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "originAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "targetAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$2",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Trade",
+        "type": "event",
+        "@id": "0xec0d3e799aa270a144d7e3be084ccfc657450e33ecea1b1a4154c95cedaae5c3",
+        "signature": "Trade(address,address,address,uint256,uint256)"
+    }
+]

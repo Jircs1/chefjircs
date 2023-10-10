@@ -1,0 +1,62 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "collectedBase",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "collectedBond",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "remainingBase",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "remainingBond",
+                "type": "uint256"
+            }
+        ],
+        "name": "FeeCollection",
+        "type": "event",
+        "@id": "0x9f878c349b0fc751f12168fdf539db8c1848b81c0751432f28626da5aa7024ee",
+        "signature": "FeeCollection(uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "amount",
+                "type": "int256"
+            }
+        ],
+        "name": "VoteChange",
+        "type": "event",
+        "@id": "0x33161cf2da28d747be9df136b6f3729390298494947268743193c53d73d3c2e0",
+        "signature": "VoteChange(address,address,int256)"
+    }
+]

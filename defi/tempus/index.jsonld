@@ -1,0 +1,242 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "position",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "contract IERC20",
+                "name": "collateralToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isCollateralIncrease",
+                "type": "bool"
+            }
+        ],
+        "name": "CollateralChanged",
+        "type": "event",
+        "@id": "0xde54006e825a11b955b762dda1068596579f82b325e183045afefa6f71a8db49",
+        "signature": "CollateralChanged(address,address,uint256,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "position",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "contract IERC20",
+                "name": "collateralToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "debtAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isDebtIncrease",
+                "type": "bool"
+            }
+        ],
+        "name": "DebtChanged",
+        "type": "event",
+        "@id": "0x44c05672e6192a1b2b6c9d606ce13bde25c7166a0b0b26b37f1a09cb1b8423fb",
+        "signature": "DebtChanged(address,address,uint256,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "position",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "collateralAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isCollateralIncrease",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "debtAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isDebtIncrease",
+                "type": "bool"
+            }
+        ],
+        "name": "StETHPositionChanged",
+        "type": "event",
+        "@id": "0x8ec6bac52c41abc2cd8ffecf547e7916fa2412325d10243ca4cf318727cda019",
+        "signature": "StETHPositionChanged(address,uint256,bool,uint256,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_asset",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_baseRate",
+                "type": "uint256"
+            }
+        ],
+        "name": "BaseRateUpdated",
+        "type": "event",
+        "@id": "0x2f992d01b594c040f05262961e43f8311e780be5fee3deb4c57880dd6374d12d",
+        "signature": "BaseRateUpdated(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract IERC20",
+                "name": "collateralToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lastFeeOpTime",
+                "type": "uint256"
+            }
+        ],
+        "name": "LastFeeOpTimeUpdated",
+        "type": "event",
+        "@id": "0x4b1a24436e474bd20ff461d446818e19b145a1ff52f698dec751807684621acc",
+        "signature": "LastFeeOpTimeUpdated(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract IERC20",
+                "name": "collateralToken",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "position",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "feeAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "RBorrowingFeePaid",
+        "type": "event",
+        "@id": "0xbb208e80a9e52496934e76ec5c84c064af08b4d402325d2ca2fdb22d596fef3f",
+        "signature": "RBorrowingFeePaid(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "position",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "contract IERC20",
+                "name": "collateralToken",
+                "type": "address"
+            }
+        ],
+        "name": "PositionCreated",
+        "type": "event",
+        "@id": "0xb50b6911cde75151ee62a8ea049ce8e1eb7568951442b40825d50bdec8d78e9a",
+        "signature": "PositionCreated(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "position",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "delegate",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "whitelisted",
+                "type": "bool"
+            }
+        ],
+        "name": "DelegateWhitelisted",
+        "type": "event",
+        "@id": "0xf53feb974df526610200cb487537619be568fbd0796f62aac48c13aa1b01c127",
+        "signature": "DelegateWhitelisted(address,address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "position",
+                "type": "address"
+            }
+        ],
+        "name": "PositionClosed",
+        "type": "event",
+        "@id": "0xbe08976f34b1e00a9fdef44b980cf43f1508a06336901b87093351d21722c3d8",
+        "signature": "PositionClosed(address)"
+    }
+]

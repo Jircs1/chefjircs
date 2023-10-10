@@ -1,0 +1,65 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "maker": {
+                        "is_erc20": 0.01,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.04,
+                        "numLogs": 25653321,
+                        "sampleAddress": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                        "sampleTxHash": "0x000007001d6c5bd0cf28c85964d036ab41a4aa5329203a9ec3da80822e103b7d",
+                        "found": 100,
+                        "samples": 100
+                    },
+                    "stargate": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 242115,
+                        "sampleAddress": "0x150f94b44927f078737562f0fcf3c95c01cc2376",
+                        "sampleTxHash": "0x000022e50e9593c9d998cb352ae35960389c842e06c06be0400350f9f39f9843",
+                        "found": 26,
+                        "samples": 26
+                    },
+                    "curve": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 30667,
+                        "sampleAddress": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+                        "sampleTxHash": "0x00018ecd2b7baffd11a9dd0dd467764d37e94f7b3280e73d087e149123e45f43",
+                        "found": 10,
+                        "samples": 100
+                    },
+                    "dackieswap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1475,
+                        "sampleAddress": "0xfb4d71c55642aa8169ac64a14e8b34f9676bc596",
+                        "sampleTxHash": "0x03b123b72a331b8520e5b28bd6e75165d62c03c8dd339ba666cfaf96694200a5",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+        "signature": "Deposit(address,uint256)"
+    }
+]

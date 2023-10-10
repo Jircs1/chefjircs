@@ -1,0 +1,71 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "collection",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "stakedBy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "stakedAt",
+                "type": "uint256"
+            }
+        ],
+        "name": "NFMStaked",
+        "type": "event",
+        "@id": "0xc579f6fab82ed3362b98fbe7576e1eb95d7b36183da0b948f3802aa6ee8331cf",
+        "signature": "NFMStaked(address,uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "collection",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "stakedBy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "unStakedAt",
+                "type": "uint256"
+            }
+        ],
+        "name": "NFMUnStaked",
+        "type": "event",
+        "@id": "0xe892ce27ff3dbb6b3243ab8909f88149f865b95a88a7d480d381b9830f916bcc",
+        "signature": "NFMUnStaked(address,uint256,address,uint256)"
+    }
+]

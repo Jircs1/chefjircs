@@ -1,0 +1,641 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "poolAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            }
+        ],
+        "name": "AssetWithdrawn",
+        "type": "event",
+        "@id": "0x6f9cbac839b826cc524f53d10416c053fce34ec15fd1001720e777cc49720e76",
+        "signature": "AssetWithdrawn(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "caller",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "adapter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes4",
+                "name": "selector",
+                "type": "bytes4"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "integrationData",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "incomingAssets",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "incomingAssetAmounts",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "spendAssets",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "spendAssetAmounts",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "CallOnIntegrationExecutedForFund",
+        "type": "event",
+        "@id": "0xf9a77e6aa0d5e80e8c932c9586e789fc0f4efe610f844fc982129c6f385bfffa",
+        "signature": "CallOnIntegrationExecutedForFund(address,address,address,bytes4,bytes,address[],uint256[],address[],uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "vaultProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "secondsPaid",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "FeePaidForVault",
+        "type": "event",
+        "@id": "0x1e6728e7f6ab409f42c28a298d4691e94f5426e54658999f76770bff70e56eaf",
+        "signature": "FeePaidForVault(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "ProtocolFeePaidInShares",
+        "type": "event",
+        "@id": "0x390f4e733d9d6104fbfb7508fdaf57640ea4179603e995d21027fda40e257697",
+        "signature": "ProtocolFeePaidInShares(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "caller",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "externalPosition",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "actionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "actionArgs",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "assetsToTransfer",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "amountsToTransfer",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "assetsToReceive",
+                "type": "address[]"
+            }
+        ],
+        "name": "CallOnExternalPositionExecutedForFund",
+        "type": "event",
+        "@id": "0x62e5ab7686baa8b666d45a227de296ea589ff48f1f215ca0e647ef6417a8657e",
+        "signature": "CallOnExternalPositionExecutedForFund(address,address,address,uint256,bytes,address[],uint256[],address[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fee",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "enum IFeeManager.SettlementType",
+                "name": "settlementType",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "payer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "payee",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesDue",
+                "type": "uint256"
+            }
+        ],
+        "name": "FeeSettledForFund",
+        "type": "event",
+        "@id": "0xef7da7c40d1fc52df907f6fed0e539680d5fb491c3b8f94db234a360dafe1d62",
+        "signature": "FeeSettledForFund(address,address,uint8,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharePrice",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesDue",
+                "type": "uint256"
+            }
+        ],
+        "name": "Settled",
+        "type": "event",
+        "@id": "0x468aeeec0e901c52363552a06c1e39331d44c3cc886eb200af127ded3f380f82",
+        "signature": "Settled(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "vaultProxy",
+                "type": "address"
+            }
+        ],
+        "name": "ValidatedVaultProxySetForFund",
+        "type": "event",
+        "@id": "0x8852dcaa71340ea616a65ffac013450dfb238607481fb9d78346c667fe256c13",
+        "signature": "ValidatedVaultProxySetForFund(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+            }
+        ],
+        "name": "TrackedAssetAdded",
+        "type": "event",
+        "@id": "0xa0d2bfad19dc0c6970d2a2fcff65458a6d7c4fa3b6d904f44961b2c744bdf591",
+        "signature": "TrackedAssetAdded(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "payer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesQuantity",
+                "type": "uint256"
+            }
+        ],
+        "name": "Settled",
+        "type": "event",
+        "@id": "0x7e79a2206061184e05985ae0578dec52f817756a441996f984cdc817efc25a68",
+        "signature": "Settled(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "item",
+                "type": "address"
+            }
+        ],
+        "name": "ItemAddedToList",
+        "type": "event",
+        "@id": "0xb8848f994c7d66cdc76defd3606ffefb56ad840b408bf51230110196d5f4d8c4",
+        "signature": "ItemAddedToList(uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "listIds",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "ListsSetForFund",
+        "type": "event",
+        "@id": "0xd63f5b55f54cdda3234eab3aa26d85b99854a43efea66e0c459220fd7b3a332f",
+        "signature": "ListsSetForFund(address,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "nextCumulativeSlippage",
+                "type": "uint256"
+            }
+        ],
+        "name": "CumulativeSlippageUpdatedForFund",
+        "type": "event",
+        "@id": "0x4f2b5515347f3a595b0228c4e8afea6d14c5f08c4038241a43473ea876f62739",
+        "signature": "CumulativeSlippageUpdatedForFund(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "denominationAsset",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesActionTimelock",
+                "type": "uint256"
+            }
+        ],
+        "name": "ComptrollerProxyDeployed",
+        "type": "event",
+        "@id": "0x19dbe5ac5bcfdc5074f78d1e907e1dce6f6e3b50a56b50d990926abaf9c55057",
+        "signature": "ComptrollerProxyDeployed(address,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "payer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesQuantity",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "bool",
+                "name": "forSpecificAssets",
+                "type": "bool"
+            }
+        ],
+        "name": "Settled",
+        "type": "event",
+        "@id": "0x3535fa1da8a29b0e085cee0bb81ac6587dd875222e0854b76f3ffa3c16ab1a7f",
+        "signature": "Settled(address,address,uint256,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "scaledPerSecondRate",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "FundSettingsAdded",
+        "type": "event",
+        "@id": "0x90b7d1516011c1da1279f3ae0ed052b1416e7c373d4ec40cf515aa53c5f839df",
+        "signature": "FundSettingsAdded(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "policy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "settingsData",
+                "type": "bytes"
+            }
+        ],
+        "name": "PolicyEnabledForFund",
+        "type": "event",
+        "@id": "0xaa4df4fe117c520783cfff01c11283496ff2999c77c2a9b800808251a9a0332a",
+        "signature": "PolicyEnabledForFund(address,address,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fee",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "settingsData",
+                "type": "bytes"
+            }
+        ],
+        "name": "FeeEnabledForFund",
+        "type": "event",
+        "@id": "0x62b7814f137868e44c7a83c2b0a340fc5dacef8f3e748867d0f5f879fc0ef6da",
+        "signature": "FeeEnabledForFund(address,address,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rate",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "period",
+                "type": "uint256"
+            }
+        ],
+        "name": "FundSettingsAdded",
+        "type": "event",
+        "@id": "0x9f856f74192181b265e61298e386477299c53e0cb24be55a84416f2af4ba4a61",
+        "signature": "FundSettingsAdded(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "comptrollerProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "vaultProxy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "caller",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "adapter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes4",
+                "name": "selector",
+                "type": "bytes4"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "integrationData",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "incomingAssets",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "incomingAssetAmounts",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "outgoingAssets",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "outgoingAssetAmounts",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "CallOnIntegrationExecutedForFund",
+        "type": "event",
+        "@id": "0x72a42ea24876d542424742125bf664f755114a3dbf2b409ab609100c4d461236",
+        "signature": "CallOnIntegrationExecutedForFund(address,address,address,address,bytes4,bytes,address[],uint256[],address[],uint256[])"
+    }
+]

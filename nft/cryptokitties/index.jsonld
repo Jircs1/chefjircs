@@ -1,0 +1,201 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "kittyId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "matronId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "sireId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "genes",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Birth",
+        "type": "event",
+        "@id": "0x0a5311bd2a6608f08a180df2ee7c5946819a649b204b554bb8e39825b2c50ad5",
+        "signature": "Birth(address,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "matronId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "sireId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "cooldownEndBlock",
+                "type": "uint256"
+            }
+        ],
+        "name": "Pregnant",
+        "type": "event",
+        "@id": "0x241ea03ca20251805084d27d4440371c34a0b85ff108f6bb5611248f73818b80",
+        "signature": "Pregnant(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "totalPrice",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "winner",
+                "type": "address"
+            }
+        ],
+        "name": "AuctionSuccessful",
+        "type": "event",
+        "@id": "0x4fcc30d90a842164dd58501ab874a101a3749c3d4747139cefe7c876f4ccebd2",
+        "signature": "AuctionSuccessful(uint256,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "startingPrice",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "endingPrice",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "duration",
+                "type": "uint256"
+            }
+        ],
+        "name": "AuctionCreated",
+        "type": "event",
+        "@id": "0xa9c8dfcda5664a5a124c713e386da27de87432d5b668e79458501eb296389ba7",
+        "signature": "AuctionCreated(uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "AuctionCancelled",
+        "type": "event",
+        "@id": "0x2809c7e17bf978fbc7194c0a694b638c4215e9140cacc6c38ca36010b45697df",
+        "signature": "AuctionCancelled(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "bidder",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "expiresAt",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "total",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "offerPrice",
+                "type": "uint256"
+            }
+        ],
+        "name": "OfferCreated",
+        "type": "event",
+        "@id": "0x05a7f246d4cdcfed1a85bd6331d1638fa8d47fffd48ede9a22f93d06641f309c",
+        "signature": "OfferCreated(uint256,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "bidder",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "bidderReceived",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "fee",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "ExpiredOfferRemoved",
+        "type": "event",
+        "@id": "0xd876ee5dd9082a3ac4fe7be4799528f1d5f3545cee1516f2821d0f8ecc9d629c",
+        "signature": "ExpiredOfferRemoved(uint256,address,uint256,uint256)"
+    }
+]

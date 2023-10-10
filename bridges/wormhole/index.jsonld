@@ -1,0 +1,196 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "bytes",
+                "name": "encodedVm",
+                "type": "bytes"
+            }
+        ],
+        "name": "completeTransfer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xc6878519",
+        "signature": "completeTransfer(bytes)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint16",
+                "name": "recipientChain",
+                "type": "uint16"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "recipient",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "arbiterFee",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint32",
+                "name": "nonce",
+                "type": "uint32"
+            }
+        ],
+        "name": "transferTokens",
+        "outputs": [
+            {
+                "internalType": "uint64",
+                "name": "sequence",
+                "type": "uint64"
+            }
+        ],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0x0f5287b0",
+        "signature": "transferTokens(address,uint256,uint16,bytes32,uint256,uint32)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint16",
+                "name": "recipientChain",
+                "type": "uint16"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "recipient",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "arbiterFee",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint32",
+                "name": "nonce",
+                "type": "uint32"
+            }
+        ],
+        "name": "wrapAndTransferETH",
+        "outputs": [
+            {
+                "internalType": "uint64",
+                "name": "sequence",
+                "type": "uint64"
+            }
+        ],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0x9981509f",
+        "signature": "wrapAndTransferETH(uint16,bytes32,uint256,uint32)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes",
+                "name": "encodedVm",
+                "type": "bytes"
+            }
+        ],
+        "name": "completeTransferAndUnwrapETH",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xff200cde",
+        "signature": "completeTransferAndUnwrapETH(bytes)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint16",
+                "name": "recipientChain",
+                "type": "uint16"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "recipient",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint32",
+                "name": "nonce",
+                "type": "uint32"
+            },
+            {
+                "internalType": "bytes",
+                "name": "payload",
+                "type": "bytes"
+            }
+        ],
+        "name": "wrapAndTransferETHWithPayload",
+        "outputs": [
+            {
+                "internalType": "uint64",
+                "name": "sequence",
+                "type": "uint64"
+            }
+        ],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0xbee9cdfc",
+        "signature": "wrapAndTransferETHWithPayload(uint16,bytes32,uint32,bytes)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint16",
+                "name": "recipientChain",
+                "type": "uint16"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "recipient",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint32",
+                "name": "nonce",
+                "type": "uint32"
+            },
+            {
+                "internalType": "bytes",
+                "name": "payload",
+                "type": "bytes"
+            }
+        ],
+        "name": "transferTokensWithPayload",
+        "outputs": [
+            {
+                "internalType": "uint64",
+                "name": "sequence",
+                "type": "uint64"
+            }
+        ],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0xc5a5ebda",
+        "signature": "transferTokensWithPayload(address,uint256,uint16,bytes32,uint32,bytes)"
+    }
+]

@@ -1,0 +1,221 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "split",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "ReceiveETH",
+        "type": "event",
+        "@id": "0x830d2d700a97af574b186c80d40429385d24241565b08a7c559ba283a964d9b1",
+        "signature": "ReceiveETH(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "ethAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "contract ERC20[]",
+                "name": "tokens",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "tokenAmounts",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "Withdrawal",
+        "type": "event",
+        "@id": "0xa9e30bf144f83390a4fe47562a4e16892108102221c674ff538da0b72a83d174",
+        "signature": "Withdrawal(address,uint256,address[],uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "split",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "distributorAddress",
+                "type": "address"
+            }
+        ],
+        "name": "DistributeETH",
+        "type": "event",
+        "@id": "0x87c3ca0a87d9b82033e4bc55e6d30621f8d7e0c9d8ca7988edfde8932787b77b",
+        "signature": "DistributeETH(address,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "split",
+                "type": "address"
+            }
+        ],
+        "name": "CreateSplit",
+        "type": "event",
+        "@id": "0x8d5f9943c664a3edaf4d3eb18cc5e2c45a7d2dc5869be33d33bbc0fff9bc2590",
+        "signature": "CreateSplit(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "split",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "contract ERC20",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "distributorAddress",
+                "type": "address"
+            }
+        ],
+        "name": "DistributeERC20",
+        "type": "event",
+        "@id": "0xb5ee5dc3d2c31a019bbf2c787e0e9c97971c96aceea1c38c12fc8fd25c536d46",
+        "signature": "DistributeERC20(address,address,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "split",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "accounts",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32[]",
+                "name": "percentAllocations",
+                "type": "uint32[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "distributorFee",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "controller",
+                "type": "address"
+            }
+        ],
+        "name": "CreateSplit",
+        "type": "event",
+        "@id": "0xd2bcf51a5767c814cfe0266a99141f75a32103bbf8c400fbc1ac0c3b73ce25e8",
+        "signature": "CreateSplit(address,address[],uint32[],uint32,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "split",
+                "type": "address"
+            }
+        ],
+        "name": "UpdateSplit",
+        "type": "event",
+        "@id": "0x45e1e99513dd915ac128b94953ca64c6375717ea1894b3114db08cdca51debd2",
+        "signature": "UpdateSplit(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "split",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "accounts",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32[]",
+                "name": "percentAllocations",
+                "type": "uint32[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "distributorFee",
+                "type": "uint32"
+            }
+        ],
+        "name": "UpdateSplit",
+        "type": "event",
+        "@id": "0xce55a01ad467ce2f3080a2cef6eb951b65f489b97956f76c2c04bcddab92aaa9",
+        "signature": "UpdateSplit(address,address[],uint32[],uint32)"
+    }
+]

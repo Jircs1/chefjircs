@@ -1,0 +1,169 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "polygonzkevm:leafType",
+                "name": "leafType",
+                "type": "uint8"
+            },
+            {
+                "@type": "polygonzkevm:chainID",
+                "name": "originNetwork",
+                "type": "uint32"
+            },
+            {
+                "@type": "transfer:from",
+                "name": "originAddress",
+                "type": "address",
+                "features": {
+                    "polygonzkevm": {
+                        "is_erc20": 0.885417,
+                        "is_erc721": 0.0104167,
+                        "is_erc20lp": 0,
+                        "numLogs": 119083,
+                        "sampleAddress": "0x0000000000000000000000000000000000000000",
+                        "sampleTxHash": "0x00003409c8c2e6cff8b9ab8ba14811105539c727e7f0638c6bee6570c7ee9c6b",
+                        "found": 96,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "polygonzkevm:chainID",
+                "name": "destinationNetwork",
+                "type": "uint32"
+            },
+            {
+                "@type": "transfer:to",
+                "name": "destinationAddress",
+                "type": "address",
+                "features": {
+                    "polygonzkevm": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 8732,
+                        "sampleAddress": "0x9af3049dd15616fd627a35563b5282bea5c32e20",
+                        "sampleTxHash": "0x000b02a7fdff5ce815dfa7f4cb8bb2e62a7cb80915a0099a33fa2fbf35aa1da7",
+                        "found": 1,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$2",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "name": "metadata",
+                "type": "bytes"
+            },
+            {
+                "@type": "polygonzkevm:depositCount",
+                "name": "depositCount",
+                "type": "uint32"
+            }
+        ],
+        "name": "BridgeEvent",
+        "type": "event",
+        "@id": "0x501781209a1f8899323b96b4ef08b168df93e0a90c673d1e4cce39366cb62f9b",
+        "signature": "BridgeEvent(uint8,uint32,address,uint32,address,uint256,bytes,uint32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "polygonzkevm:index",
+                "name": "index",
+                "type": "uint32"
+            },
+            {
+                "@type": "polygonzkevm:chainID",
+                "name": "originNetwork",
+                "type": "uint32"
+            },
+            {
+                "@type": "transfer:from",
+                "name": "originAddress",
+                "type": "address",
+                "features": {
+                    "polygonzkevm": {
+                        "is_erc20": 0.894737,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 18868,
+                        "sampleAddress": "0x0000000000000000000000000000000000000000",
+                        "sampleTxHash": "0x0001641cdb9c184399c28a761c9ff24bb279df23f1f467f51d5f4a4d5cf60e0c",
+                        "found": 76,
+                        "samples": 81
+                    }
+                }
+            },
+            {
+                "@type": "transfer:to",
+                "name": "destinationAddress",
+                "type": "address",
+                "features": {
+                    "polygonzkevm": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 3777,
+                        "sampleAddress": "0x9af3049dd15616fd627a35563b5282bea5c32e20",
+                        "sampleTxHash": "0x0006df7aa1b9f59f1396d297f3adb0565a5d7de129b5d67cbba25d9235de499d",
+                        "found": 2,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$2",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "ClaimEvent",
+        "type": "event",
+        "@id": "0x25308c93ceeed162da955b3f7ce3e3f93606579e40fb92029faa9efe27545983",
+        "signature": "ClaimEvent(uint32,uint32,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "originNetwork",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "originTokenAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "wrappedTokenAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "metadata",
+                "type": "bytes"
+            }
+        ],
+        "name": "NewWrappedToken",
+        "type": "event",
+        "@id": "0x490e59a1701b938786ac72570a1efeac994a3dbe96e2e883e19e902ace6e6a39",
+        "signature": "NewWrappedToken(uint32,address,address,bytes)"
+    }
+]

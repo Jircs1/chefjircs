@@ -1,0 +1,269 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "minter",
+                "type": "address",
+                "features": {
+                    "uniswap": {
+                        "is_erc20": 0.285714,
+                        "is_erc721": 0.0102041,
+                        "is_erc20lp": 0,
+                        "numLogs": 577544,
+                        "sampleAddress": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                        "sampleTxHash": "0x00003f9c21c7f631474c1bbc12f0946b3f093b520fb707d9cc661a25b58e4ccd",
+                        "found": 98,
+                        "samples": 100
+                    },
+                    "pancakeswap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 20576,
+                        "sampleAddress": "0x327df1e6de05895d2ab08513aadd9313fe505d86",
+                        "sampleTxHash": "0x000dedc7c0ac33f148335f3a811407c5a60a70c119619f7c0c514cb00d5c4127",
+                        "found": 17,
+                        "samples": 19
+                    },
+                    "rocketswap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 15944,
+                        "sampleAddress": "0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e",
+                        "sampleTxHash": "0x000a77db507328cea9e3af4051c8dfd8099973543ee7a7f6eea9bf2bc9248202",
+                        "found": 4,
+                        "samples": 4
+                    },
+                    "alien": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10203,
+                        "sampleAddress": "0x7f2ff89d3c45010c976ea6bb7715dc7098af786e",
+                        "sampleTxHash": "0x000f92b6fe36d6678e203dafb4b2db8c70e0331343a98b4ea69ae0ec1fc42bae",
+                        "found": 2,
+                        "samples": 2
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "name": "mintAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "name": "mintTokens",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0x4c209b5fc8ad50758f13e2e1088ba56a560dff690a1c6fef26394f4c03821c4f",
+        "signature": "Mint(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "redeemer",
+                "type": "address",
+                "features": {
+                    "compound": {
+                        "is_erc20": 0.0810811,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.027027,
+                        "numLogs": 19674,
+                        "sampleAddress": "0x8888882f8f843896699869179fb6e4f7e3b58888",
+                        "sampleTxHash": "0x00544c5ab5f8d61573aa0aeba299842536bad21364df83af57417ab8fd07ea90",
+                        "found": 74,
+                        "samples": 100
+                    },
+                    "para.space": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 5625,
+                        "sampleAddress": "0x638a98bbb92a7582d07c52ff407d49664dc8b3ee",
+                        "sampleTxHash": "0x00084335af2f092e14b60ea29ccbd5e393511c584259751ffd4ee57715857d32",
+                        "found": 5,
+                        "samples": 100
+                    },
+                    "cream": {
+                        "is_erc20": 0.464286,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.0357143,
+                        "numLogs": 2304,
+                        "sampleAddress": "0x2dded6da1bf5dbdf597c45fcfaa3194e53ecfeaf",
+                        "sampleTxHash": "0x00b0b4a6e694bdd3b1d42fd0f0e689c69bbde6b0cd893baaf3457b10bf2ac94e",
+                        "found": 28,
+                        "samples": 100
+                    },
+                    "rari": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1128,
+                        "sampleAddress": "0xbfe1364efb0a1e01241f058a6039f43fea88cfc5",
+                        "sampleTxHash": "0x00949295a8accc3c9a96222363a06157d7e94aebfd28f943e2a24bac729e91c3",
+                        "found": 17,
+                        "samples": 100
+                    },
+                    "inverse": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 890,
+                        "sampleAddress": "0xa988350e2899588f5273c94c5b46472a9b4dd338",
+                        "sampleTxHash": "0x0329d50160a61eecc5998d0368211557058084ef5a10332dee4c2dc3d85c8daa",
+                        "found": 25,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "redeemAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "redeemTokens",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Redeem",
+        "type": "event",
+        "@id": "0xe5b754fb1abb7f01b499791d0b820ae3b6af3424ac1c59768edb53f4ec31a929",
+        "signature": "Redeem(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "payer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "borrower",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "repayAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "accountBorrows",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "totalBorrows",
+                "type": "uint256"
+            }
+        ],
+        "name": "RepayBorrow",
+        "type": "event",
+        "@id": "0x1a2a22cb034d26d1854bdc6666a5b91fe25efbbb5dcad3b0355478d6f5c362a1",
+        "signature": "RepayBorrow(address,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_borrower",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_borrowAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_tokenId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_totalBorrows",
+                "type": "uint256"
+            }
+        ],
+        "name": "Borrow",
+        "type": "event",
+        "@id": "0x13ed6866d4e1ee6da46f845c46d7e54120883d75c5ea9a2dacc1c4ca8984ab80",
+        "signature": "Borrow(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "borrower",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "liquidator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "collateralTokenAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "reward",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$3",
+                "validationSuccess": true
+            }
+        ],
+        "name": "LiquidateBorrow",
+        "type": "event",
+        "@id": "0x298637f684da70674f26509b10f07ec2fbc77a335ab1e7d6215a4b2484d8bb52",
+        "signature": "LiquidateBorrow(address,address,uint256,address,uint256)"
+    }
+]

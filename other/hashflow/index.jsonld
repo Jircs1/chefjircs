@@ -1,0 +1,50 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "ClaimHFT",
+        "type": "event",
+        "@id": "0x21437ac41ddc7c28f08ed51366c2fe9f338175cea3d66560d06afea5c47dee68",
+        "signature": "ClaimHFT(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newSigner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "oldSigner",
+                "type": "address"
+            }
+        ],
+        "name": "UpdateSigner",
+        "type": "event",
+        "@id": "0x72959271bae82854684905271432777342373a732ba892607d189cbf5049086f",
+        "signature": "UpdateSigner(address,address)"
+    }
+]

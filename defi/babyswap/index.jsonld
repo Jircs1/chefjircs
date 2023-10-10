@@ -1,0 +1,155 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "_srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "ReceiveFromChain",
+        "type": "event",
+        "@id": "0xbf551ec93859b170f9b2141bd9298bf3f64322c6f7beb2543a0cb669834118bf",
+        "signature": "ReceiveFromChain(uint16,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "_dstChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "_toAddress",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "SendToChain",
+        "type": "event",
+        "@id": "0xd81fc9b8523134ed613870ed029d6170cbb73aa6a6bc311b9a642689fb9df59a",
+        "signature": "SendToChain(uint16,address,bytes32,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "_remoteChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "_remoteAddress",
+                "type": "bytes"
+            }
+        ],
+        "name": "SetTrustedRemoteAddress",
+        "type": "event",
+        "@id": "0x8c0400cfe2d1199b1a725c78960bcc2a344d869b80590d0f2bd005db15a572ce",
+        "signature": "SetTrustedRemoteAddress(uint16,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "_dstChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "_type",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_minDstGas",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "SetMinDstGas",
+        "type": "event",
+        "@id": "0x9d5c7c0b934da8fefa9c7760c98383778a12dfbfc0c3b3106518f43fb9508ac0",
+        "signature": "SetMinDstGas(uint16,uint16,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "useCustomAdapterParams",
+                "type": "bool"
+            }
+        ],
+        "name": "SetUseCustomAdapterParams",
+        "type": "event",
+        "@id": "0x1584ad594a70cbe1e6515592e1272a987d922b097ead875069cebe8b40c004a4",
+        "signature": "SetUseCustomAdapterParams(bool)"
+    }
+]

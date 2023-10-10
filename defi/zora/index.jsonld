@@ -1,0 +1,1228 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "to",
+                "type": "address",
+                "features": {
+                    "zora": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 8125,
+                        "sampleAddress": "0x17cd072cbd45031efc21da538c783e0ed3b25dcc",
+                        "sampleTxHash": "0x00b9de740625da815dcc9103bb00361312a8e48eb647fea3088bf953e92ebf3c",
+                        "found": 4,
+                        "samples": 100
+                    },
+                    "holograph": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 383,
+                        "sampleAddress": "0xd80f0d03579d1cae085ba34c3e909c33e710a52d",
+                        "sampleTxHash": "0x39663a51eb6a4eceeccf9bb72a8dfcdf2f2cc31354509ecb9f0a57165eaff913",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "quantity",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "dex:price",
+                "name": "pricePerToken",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc721:tokenID",
+                "name": "firstPurchasedTokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "Sale",
+        "type": "event",
+        "@id": "0x4e26b0356a15833a75d497ecc40ebbb716b99466ed0dba9454f1fff451e25a90",
+        "signature": "Sale(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintFeeAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "mintFeeRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "name": "MintFeePayout",
+        "type": "event",
+        "@id": "0x6f8da53cfedb8cc4f7935c3629624e50b63053c93bb2cad246aa4d3a2ba7d4ce",
+        "signature": "MintFeePayout(uint256,address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TransferSingle",
+        "type": "event",
+        "@id": "0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62",
+        "signature": "TransferSingle(address,address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "minter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "quantity",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            }
+        ],
+        "name": "Purchased",
+        "type": "event",
+        "@id": "0xb362243af1e2070d7d5bf8d713f2e0fab64203f1b71462afbe20572909788c5e",
+        "signature": "Purchased(address,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "createReferral",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "mintReferral",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "firstMinter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "zora",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "creatorReward",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "createReferralReward",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintReferralReward",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "firstMinterReward",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "zoraReward",
+                "type": "uint256"
+            }
+        ],
+        "name": "RewardsDeposit",
+        "type": "event",
+        "@id": "0x90e8cce6b15b450d1e56e9ef986d1cd376838a90944336c02886ca12b9e6ebd7",
+        "signature": "RewardsDeposit(address,address,address,address,address,address,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "tokenContract",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "quantity",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "comment",
+                "type": "string"
+            }
+        ],
+        "name": "MintComment",
+        "type": "event",
+        "@id": "0xb9490aee663998179ad13f9e1c1eb6189c71ad1a9ec87f33ad2766f98d9a268a",
+        "signature": "MintComment(address,address,uint256,uint256,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "impl",
+                "type": "address"
+            }
+        ],
+        "name": "Upgraded",
+        "type": "event",
+        "@id": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+        "signature": "Upgraded(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "changedBy",
+                "type": "address"
+            }
+        ],
+        "name": "SalesConfigChanged",
+        "type": "event",
+        "@id": "0xc1ff5e4744ac8dd2b8027a10e3723b165975297501c71c4e7dcb8796d96375db",
+        "signature": "SalesConfigChanged(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "editionContractAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "editionSize",
+                "type": "uint256"
+            }
+        ],
+        "name": "CreatedDrop",
+        "type": "event",
+        "@id": "0xad59ebba8bfb06ba01a615a611467ca3bef86a275bd5e9704d3b295112550ba5",
+        "signature": "CreatedDrop(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "imageURI",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "animationURI",
+                "type": "string"
+            }
+        ],
+        "name": "EditionInitialized",
+        "type": "event",
+        "@id": "0xf889a5cdc62274389379cbfade0f225b1d30b7395177fd6aeaab61662b1c6edf",
+        "signature": "EditionInitialized(address,string,string,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "updater",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "newValue",
+                "type": "string"
+            }
+        ],
+        "name": "JSONExtensionUpdated",
+        "type": "event",
+        "@id": "0x032e3f01605d64bb10db2ed841df91cefce984315da40cfd2e3c001011925f1c",
+        "signature": "JSONExtensionUpdated(address,address,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "withdrawnBy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "withdrawnTo",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "feeRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "feeAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "FundsWithdrawn",
+        "type": "event",
+        "@id": "0x8a95554e4c9dcaaf33f247387f2ee77390780487d3365e3a804788791a1df500",
+        "signature": "FundsWithdrawn(address,address,uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "value",
+                "type": "string"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            }
+        ],
+        "name": "URI",
+        "type": "event",
+        "@id": "0x6bb7ff708619ba0610cba295a58592e0451dee2622938c8755667688daf3529b",
+        "signature": "URI(string,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "module",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "approved",
+                "type": "bool"
+            }
+        ],
+        "name": "ModuleApprovalSet",
+        "type": "event",
+        "@id": "0xae7dcf035464e268e998bd5ac0ac831ce45a68f2c2fbd438d6c1c5965eba79f2",
+        "signature": "ModuleApprovalSet(address,address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "permissions",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "UpdatedPermissions",
+        "type": "event",
+        "@id": "0x35fb03d0d293ef5b362761900725ce891f8f766b5a662cdd445372355448e7ca",
+        "signature": "UpdatedPermissions(uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "string",
+                        "name": "uri",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "maxSupply",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "totalMinted",
+                        "type": "uint256"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IZoraCreator1155TypesV1.TokenData",
+                "name": "tokenData",
+                "type": "tuple"
+            }
+        ],
+        "name": "UpdatedToken",
+        "type": "event",
+        "@id": "0x5086d1bcea28999da9875111e3592688fbfa821db63214c695ca35768080c2fe",
+        "signature": "UpdatedToken(address,uint256,(string,uint256,uint256))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "newURI",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "maxSupply",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "SetupNewToken",
+        "type": "event",
+        "@id": "0x1b944478023872bf91b25a13fdba3a686fdb1bf4dbb872f850240fad4b8cc068",
+        "signature": "SetupNewToken(uint256,address,string,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "mediaContract",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint64",
+                        "name": "saleStart",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "saleEnd",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "maxTokensPerAddress",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "pricePerToken",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "fundsRecipient",
+                        "type": "address"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct ZoraCreatorFixedPriceSaleStrategy.SalesConfig",
+                "name": "salesConfig",
+                "type": "tuple"
+            }
+        ],
+        "name": "SaleSet",
+        "type": "event",
+        "@id": "0x5e4ad74f00b9a9d4a8452359a7fbd80cc5a6930a9df5e5b797ddc024b24b252c",
+        "signature": "SaleSet(address,uint256,(uint64,uint64,uint64,uint96,address))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "metadataBase",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "metadataExtension",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "contractURI",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "freezeAt",
+                "type": "uint256"
+            }
+        ],
+        "name": "MetadataUpdated",
+        "type": "event",
+        "@id": "0x5eff125d5659803f33dbda215d6e8bfe0a404fd213a9ecb5e61973ee16cb17e7",
+        "signature": "MetadataUpdated(address,string,string,string,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "imageURI",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "animationURI",
+                "type": "string"
+            }
+        ],
+        "name": "MediaURIsUpdated",
+        "type": "event",
+        "@id": "0xc4c1b9223fcebe5f35b9030d3df655018c40e88d70b8a3c63ed851c5d972210f",
+        "signature": "MediaURIsUpdated(address,address,string,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "auctionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "tokenContract",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "duration",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "reservePrice",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "tokenOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "curator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "curatorFeePercentage",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "auctionCurrency",
+                "type": "address"
+            }
+        ],
+        "name": "AuctionCreated",
+        "type": "event",
+        "@id": "0x38c0b9047bd28fac9f420b967f6caf4a6260ba09d18940a9a502578a480c0900",
+        "signature": "AuctionCreated(uint256,uint256,address,uint256,uint256,address,address,uint8,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "auctionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "tokenContract",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "approved",
+                "type": "bool"
+            }
+        ],
+        "name": "AuctionApprovalUpdated",
+        "type": "event",
+        "@id": "0xec35d321ab4972475f131e184c0c0fe52c5a58a29d74f7db2969af2f6dd93a1f",
+        "signature": "AuctionApprovalUpdated(uint256,uint256,address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint32",
+                        "name": "royaltyMintSchedule",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "uint32",
+                        "name": "royaltyBPS",
+                        "type": "uint32"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "royaltyRecipient",
+                        "type": "address"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct ICreatorRoyaltiesControl.RoyaltyConfiguration",
+                "name": "configuration",
+                "type": "tuple"
+            }
+        ],
+        "name": "UpdatedRoyalties",
+        "type": "event",
+        "@id": "0x5837d55897cfc337f160a71d7b63a047abd50a3a8834f1c5d70f338846358c6d",
+        "signature": "UpdatedRoyalties(uint256,address,(uint32,uint32,address))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [],
+        "name": "SetupNewContract",
+        "type": "event",
+        "@id": "0xa45800684f65ae010ceb4385eceaed88dec7f6a6bcbe11f7ffd8bd24dd2653f4",
+        "signature": "SetupNewContract(address,address,address,string,string,(uint32,uint32,address))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "auctionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "tokenContract",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "tokenOwner",
+                "type": "address"
+            }
+        ],
+        "name": "AuctionCanceled",
+        "type": "event",
+        "@id": "0x6091afcbe8514686c43b167ca4f1b03e24446d29d8490d496e438f8a2c763439",
+        "signature": "AuctionCanceled(uint256,uint256,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "newDescription",
+                "type": "string"
+            }
+        ],
+        "name": "DescriptionUpdated",
+        "type": "event",
+        "@id": "0x36195b44a3184513e02477929207751ea9d67026b917ed74d374a7f9e8c5e4d1",
+        "signature": "DescriptionUpdated(address,address,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "version",
+                "type": "uint8"
+            }
+        ],
+        "name": "Initialized",
+        "type": "event",
+        "@id": "0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498",
+        "signature": "Initialized(uint8)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "updater",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "enum IZoraCreator1155.ConfigUpdate",
+                "name": "updateType",
+                "type": "uint8"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "address",
+                        "name": "owner",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "__gap1",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "fundsRecipient",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "__gap2",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "contract ITransferHookReceiver",
+                        "name": "transferHook",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "__gap3",
+                        "type": "uint96"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IZoraCreator1155TypesV1.ContractConfig",
+                "name": "newConfig",
+                "type": "tuple"
+            }
+        ],
+        "name": "ConfigUpdated",
+        "type": "event",
+        "@id": "0x3be6d3a1d957610f7e900c66889b874cdc9f0c22901aa8be6ec3d2d04c14ca0f",
+        "signature": "ConfigUpdated(address,uint8,(address,uint96,address,uint96,address,uint96))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "currency",
+                        "type": "address"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IMarket.Ask",
+                "name": "ask",
+                "type": "tuple"
+            }
+        ],
+        "name": "AskRemoved",
+        "type": "event",
+        "@id": "0xbf58f6d6c7d7c6efc69e7444efa93ed26d7cdc0e82e12a37df96f36a367561df",
+        "signature": "AskRemoved(uint256,(uint256,address))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "currency",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "bidder",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "recipient",
+                        "type": "address"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct Decimal.D256",
+                        "name": "sellOnShare",
+                        "type": "tuple"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IMarket.Bid",
+                "name": "bid",
+                "type": "tuple"
+            }
+        ],
+        "name": "BidCreated",
+        "type": "event",
+        "@id": "0x327bc9021bfbee403a11b13dd6c819999006aff090cc129f07e9f2840af38dd5",
+        "signature": "BidCreated(uint256,(uint256,address,address,address,(uint256)))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct Decimal.D256",
+                        "name": "prevOwner",
+                        "type": "tuple"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct Decimal.D256",
+                        "name": "creator",
+                        "type": "tuple"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct Decimal.D256",
+                        "name": "owner",
+                        "type": "tuple"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IMarket.BidShares",
+                "name": "bidShares",
+                "type": "tuple"
+            }
+        ],
+        "name": "BidShareUpdated",
+        "type": "event",
+        "@id": "0xdb88d4e96cb8697aaee5e575ee5f460817709a1dfcfbf7ba15192e90b5c86f9f",
+        "signature": "BidShareUpdated(uint256,((uint256),(uint256),(uint256)))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "currency",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "bidder",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "recipient",
+                        "type": "address"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "uint256",
+                                "name": "value",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct Decimal.D256",
+                        "name": "sellOnShare",
+                        "type": "tuple"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IMarket.Bid",
+                "name": "bid",
+                "type": "tuple"
+            }
+        ],
+        "name": "BidFinalized",
+        "type": "event",
+        "@id": "0xb6ef177c7a6f32b283a49b5e0463a39240cdaa278028dfb219480d050e8ee54c",
+        "signature": "BidFinalized(uint256,(uint256,address,address,address,(uint256)))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "version",
+                "type": "uint256"
+            }
+        ],
+        "name": "Initialized",
+        "type": "event",
+        "@id": "0xbe9b076dc5b65990cca9dd9d7366682482e7817a6f6bc7f4faf4dc32af497f32",
+        "signature": "Initialized(uint256)"
+    }
+]

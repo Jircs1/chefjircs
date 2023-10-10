@@ -1,0 +1,123 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "circle": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 49369,
+                        "sampleAddress": "0x55fe002aeff02f77364de339a1292923a15844b8",
+                        "sampleTxHash": "0x0003606b3af531647e18ef10c7760e06646a6043082cf45a80a7490f53ef0a5b",
+                        "found": 1,
+                        "samples": 5
+                    },
+                    "synthetix": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1422,
+                        "sampleAddress": "0x6db77ee44688fc7e59fb005592b0a904d0ad4e9c",
+                        "sampleTxHash": "0x00b2c47fd41afe912fd8f873eadbfe32f45c6787e201a7e54ae37f45deb07b9e",
+                        "found": 1,
+                        "samples": 100
+                    },
+                    "kyberswap": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 630,
+                        "sampleAddress": "0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202",
+                        "sampleTxHash": "0x00320cace2bbdef413741e8cc88e8e5adb472ae2670e261481a5176228a8993c",
+                        "found": 1,
+                        "samples": 2
+                    },
+                    "dodo": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 374,
+                        "sampleAddress": "0x8dd0fea5fa2f7df535f87f312641cc15d8b151ba",
+                        "sampleTxHash": "0x05e39fed84b92b2fca86ff642016a1c8798172c27ece8fd570908482c742bf4b",
+                        "found": 8,
+                        "samples": 100
+                    },
+                    "neworder": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 128,
+                        "sampleAddress": "0xe5c80a7963c0d8f4ab9c0bb8d854e47594cf9394",
+                        "sampleTxHash": "0x0b16738d6ec5fc6ea9b051a79aa9173f6e93a2b9f678802190dba09fd9ff1049",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Burn",
+        "type": "event",
+        "@id": "0xcc16f5dbb4873280815c1ee09dbd06736cffcc184412cf7a71a0fdb75d397ca5",
+        "signature": "Burn(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0x0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885",
+        "signature": "Mint(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "_owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "_operator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "_approved",
+                "type": "bool"
+            }
+        ],
+        "name": "ApprovalForAll",
+        "type": "event",
+        "@id": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31",
+        "signature": "ApprovalForAll(address,address,bool)"
+    }
+]

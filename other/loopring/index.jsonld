@@ -1,0 +1,182 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "tokenId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "amount",
+                "type": "uint96"
+            }
+        ],
+        "name": "DepositRequested",
+        "type": "event",
+        "@id": "0x73ff7b101bcdc22f199e8e1dd9893170a683d6897be4f1086ca05705abb886ae",
+        "signature": "DepositRequested(address,address,address,uint16,uint96)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "blockIdx",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "merkleRoot",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "publicDataHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "BlockSubmitted",
+        "type": "event",
+        "@id": "0xcc86d9ed29ebae540f9d25a4976d4da36ea4161b854b8ecf18f491cf6b0feb5c",
+        "signature": "BlockSubmitted(uint256,bytes32,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "category",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$3",
+                "validationSuccess": true
+            }
+        ],
+        "name": "WithdrawalCompleted",
+        "type": "event",
+        "@id": "0x0d22d7344fc6871a839149fd89f9fd88a6c29cf797a67114772a9d4df5f8c96b",
+        "signature": "WithdrawalCompleted(uint8,address,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "exchange",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "amount",
+                "type": "uint96"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "provider",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "name": "Processed",
+        "type": "event",
+        "@id": "0x8e78d5f76bce51536c826665d9ca105f063f3df143c73412da3d86fb0ebf3fac",
+        "signature": "Processed(address,address,address,address,uint96,address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "transactionHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "TransactionApproved",
+        "type": "event",
+        "@id": "0x7115b98931e7aca6d0aa11d10fe28877316a661a44c4bfc93c76b19dbbf5b107",
+        "signature": "TransactionApproved(address,bytes32)"
+    }
+]

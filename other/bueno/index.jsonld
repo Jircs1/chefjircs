@@ -1,0 +1,249 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "mintedTo",
+                "type": "address",
+                "features": {
+                    "bueno": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12763,
+                        "sampleAddress": "0x5a776ea5e89d6f4504b208a6bd459d912a2ee22e",
+                        "sampleTxHash": "0x01997d7c5a7a18d1457f68eb33ad331d41b177a512fcad4f8b7282fdb708e450",
+                        "found": 5,
+                        "samples": 100
+                    },
+                    "thirdweb": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1290,
+                        "sampleAddress": "0x6d331a5bc31600274e9ca6a24e00d63d5473249a",
+                        "sampleTxHash": "0x002799bb9b0c6724e0f35d8cbf97367420ff78e7ab9dff151ba36fab6618676b",
+                        "found": 1,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "quantityMinted",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokensMinted",
+        "type": "event",
+        "@id": "0x3f2c9d57c068687834f0de942a9babb9e5acab57d516d3480a3c16ee165a4273",
+        "signature": "TokensMinted(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "dex:minter",
+                "name": "_owner",
+                "type": "address",
+                "features": {
+                    "bueno": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1522,
+                        "sampleAddress": "0x46120a324bd326f110f336f463474b102682d553",
+                        "sampleTxHash": "0x02a16c4dadf0ddc00d61226c380f04e808b4deb549ae557a4424a5b50a5aa79e",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc721:tokenId",
+                "@token": "$",
+                "name": "_id",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "_amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokensMinted",
+        "type": "event",
+        "@id": "0x2e8ac5177a616f2aec08c3048f5021e4e9743ece034e8d83ba5caf76688bb475",
+        "signature": "TokensMinted(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TransferSingle",
+        "type": "event",
+        "@id": "0xc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f62",
+        "signature": "TransferSingle(address,address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numRecipients",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numTokens",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokensAirdropped",
+        "type": "event",
+        "@id": "0x71cc7095cc35ed4701c217a8efb440732eb0737da67f6548c008ac26fba95464",
+        "signature": "TokensAirdropped(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "phaseIds",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "activatedPublic",
+                "type": "bool"
+            }
+        ],
+        "name": "PhasesActivated",
+        "type": "event",
+        "@id": "0x906568ccdea6378b9108aec731550e3e47f4541a63781939312428b90a4b4c6d",
+        "signature": "PhasesActivated(uint256[],bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "purchaser",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "tokenSetId",
+                "type": "string"
+            }
+        ],
+        "name": "PurchaseComplete",
+        "type": "event",
+        "@id": "0x1c7011ebf5717564d7ac4d6f44256121154518b08c79a1008ac6004b88cb8436",
+        "signature": "PurchaseComplete(address,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "nft",
+                "type": "address"
+            }
+        ],
+        "name": "ContractCreated",
+        "type": "event",
+        "@id": "0x2d49c67975aadd2d389580b368cfff5b49965b0bd5da33c144922ce01e7a4d7b",
+        "signature": "ContractCreated(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "version",
+                "type": "uint8"
+            }
+        ],
+        "name": "Initialized",
+        "type": "event",
+        "@id": "0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498",
+        "signature": "Initialized(uint8)"
+    }
+]

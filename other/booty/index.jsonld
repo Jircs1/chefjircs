@@ -1,0 +1,62 @@
+[
+    {
+        "constant": false,
+        "inputs": [],
+        "name": "withdrawStake",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xbed9d861",
+        "signature": "withdrawStake()"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "totalSpankToWithdraw",
+                "type": "uint256"
+            }
+        ],
+        "name": "WithdrawStakeEvent",
+        "type": "event",
+        "@id": "0x6aacd1e4534b984215f3230eb74caaf79156b03a979f3d6cb564fe17a2f8490f",
+        "signature": "WithdrawStakeEvent(address,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+            }
+        ],
+        "name": "receiveApproval",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x8f4ffcb1",
+        "signature": "receiveApproval(address,uint256,address,bytes)"
+    }
+]

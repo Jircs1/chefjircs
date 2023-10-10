@@ -1,0 +1,227 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "affiliate",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "wad",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numMints",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Referral",
+        "type": "event",
+        "@id": "0x8abfbe92bb62ff992ef6347c68d007f25a6e5aea2ad2f05e89f3486947cc0b20",
+        "signature": "Referral(address,address,uint128,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "key",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "cid",
+                "type": "bytes32"
+            }
+        ],
+        "name": "Invited",
+        "type": "event",
+        "@id": "0xe9a0c17645ed78ccc9996259f00297ffc75e6b9d22cd605ccc9992cc8ca3f4c1",
+        "signature": "Invited(bytes32,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "src",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "wad",
+                "type": "uint128"
+            }
+        ],
+        "name": "Withdrawal",
+        "type": "event",
+        "@id": "0x02128911bc7070fd6c100b116c2dd9a3bb6bf132d5259a65ca8d0c86ccd78f49",
+        "signature": "Withdrawal(address,address,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "collection",
+                "type": "address"
+            }
+        ],
+        "name": "CollectionAdded",
+        "type": "event",
+        "@id": "0xac6afecff3051723434121cfeb5eb7618214e75741c93afb13fc8659aafc1715",
+        "signature": "CollectionAdded(address,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "src",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "wad",
+                "type": "uint128"
+            }
+        ],
+        "name": "Withdrawal",
+        "type": "event",
+        "@id": "0x8bb044d1bb6a7b421504ef7f7045b22152b504f683e8c1bcbc8222af46cb68b3",
+        "signature": "Withdrawal(address,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "txHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "payment",
+                "type": "uint256"
+            }
+        ],
+        "name": "ExecutionSuccess",
+        "type": "event",
+        "@id": "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e",
+        "signature": "ExecutionSuccess(bytes32,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "affiliate",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "wad",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numMints",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Referral",
+        "type": "event",
+        "@id": "0x6ef39f8e9fd31166d0885bc377fd095243a3a1542b9ca51a6b555fb74f47950c",
+        "signature": "Referral(address,uint128,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            }
+        ],
+        "name": "SafeReceived",
+        "type": "event",
+        "@id": "0x3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
+        "signature": "SafeReceived(address,uint256)"
+    }
+]

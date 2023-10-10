@@ -1,0 +1,257 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_buyer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_currentOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_price",
+                "type": "uint256"
+            }
+        ],
+        "name": "BuyNowPurchased",
+        "type": "event",
+        "@id": "0x25a395eca5bca1a1ca0c1543a3e87384fabcf63100e03535276da15f838805b2",
+        "signature": "BuyNowPurchased(uint256,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_editionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum MintingFactoryV2.SaleType",
+                "name": "_saleType",
+                "type": "uint8"
+            }
+        ],
+        "name": "EditionMintedAndListed",
+        "type": "event",
+        "@id": "0xe642e54c74cab3fa5b6c78685d19fe35e397e7c0c13fc3cbd28dfcf543421680",
+        "signature": "EditionMintedAndListed(uint256,uint8)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_price",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_currentOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_startDate",
+                "type": "uint256"
+            }
+        ],
+        "name": "ListedForBuyNow",
+        "type": "event",
+        "@id": "0x7fd7de54b3a4cc7952845fd3fa85208e0ba980067ead6d59721bebc8bd7ec414",
+        "signature": "ListedForBuyNow(uint256,uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_editionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_price",
+                "type": "uint256"
+            }
+        ],
+        "name": "BuyNowPriceChanged",
+        "type": "event",
+        "@id": "0x2acf0b64eca25e79ecb9831cce1c9045dce27614bb88deb1cc5b435e87278cdb",
+        "signature": "BuyNowPriceChanged(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "total",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "recipients",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "amounts",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "erc20",
+                "type": "address"
+            }
+        ],
+        "name": "FundsDrained",
+        "type": "event",
+        "@id": "0x8838732cd7139bc3e8868752e8627d2b805bc0e19a0624c10d4192d61ca04eba",
+        "signature": "FundsDrained(uint256,address[],uint256[],address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_editionId",
+                "type": "uint256"
+            }
+        ],
+        "name": "EditionCreated",
+        "type": "event",
+        "@id": "0x962bb64b059ad60d491bef43125921210925c52b11ff1cc093409113c8c5fe37",
+        "signature": "EditionCreated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_editionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "_price",
+                "type": "uint96"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "_startDate",
+                "type": "uint128"
+            }
+        ],
+        "name": "ListedEditionForBuyNow",
+        "type": "event",
+        "@id": "0x8302e6f93cb3376701de15b1925a19b120143d5cb3e90108fb88e00aede6798c",
+        "signature": "ListedEditionForBuyNow(uint256,uint96,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_reservePrice",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "_startDate",
+                "type": "uint128"
+            }
+        ],
+        "name": "ListedForReserveAuction",
+        "type": "event",
+        "@id": "0xcd712ccc5669f36ad4dfb9acf905087c4b438eabe53e24c858c72bfa0515cb98",
+        "signature": "ListedForReserveAuction(uint256,uint256,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_editionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_buyer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_price",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "_currentStep",
+                "type": "uint16"
+            }
+        ],
+        "name": "EditionSteppedSaleBuy",
+        "type": "event",
+        "@id": "0x41820cf4351ec738da5f8ada46c5a38d78c6aeaa3039cb1dddcf1ea6853dd343",
+        "signature": "EditionSteppedSaleBuy(uint256,uint256,address,uint256,uint16)"
+    }
+]

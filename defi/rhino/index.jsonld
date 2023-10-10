@@ -1,0 +1,133 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amountOutMin_ethFeeBuyBack",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "deadline",
+                "type": "uint256"
+            }
+        ],
+        "name": "deposit",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0x00aeef8a",
+        "signature": "deposit(uint256,uint256,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "minAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "withdraw",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x441a3e70",
+        "signature": "withdraw(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "stateTransitionFact",
+                "type": "bytes32"
+            }
+        ],
+        "name": "LogStateTransitionFact",
+        "type": "event",
+        "@id": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
+        "signature": "LogStateTransitionFact(bytes32)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256[]",
+                "name": "publicInput",
+                "type": "uint256[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "applicationData",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "updateState",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x538f9406",
+        "signature": "updateState(uint256[],uint256[])"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "vault",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amt",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "getId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "setId",
+                "type": "uint256"
+            }
+        ],
+        "name": "deposit",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0x2505c3d9",
+        "signature": "deposit(uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            }
+        ],
+        "name": "Burned",
+        "type": "event",
+        "@id": "0x696de425f79f4a40bc6d2122ca50507f0efbeabbff86a84871b7196ab8ea8df7",
+        "signature": "Burned(address,uint256)"
+    }
+]

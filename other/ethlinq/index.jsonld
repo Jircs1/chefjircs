@@ -1,0 +1,395 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint112",
+                "name": "reserve0",
+                "type": "uint112"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint112",
+                "name": "reserve1",
+                "type": "uint112"
+            }
+        ],
+        "name": "Sync",
+        "type": "event",
+        "@id": "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1",
+        "signature": "Sync(uint112,uint112)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0In",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1In",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0Out",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1Out",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            }
+        ],
+        "name": "Swap",
+        "type": "event",
+        "@id": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+        "signature": "Swap(address,uint256,uint256,uint256,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "linq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1274,
+                        "sampleAddress": "0x77f50f963d55c7c7dc2b5a44767299c02af76a66",
+                        "sampleTxHash": "0x0c4669d271719e50efcc89b29caefdc92591192e0a573a23c234584bee63dce6",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "dubbz": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 874,
+                        "sampleAddress": "0x04f1b9baed24a69679328c70719688f6162fce58",
+                        "sampleTxHash": "0x0297925d5e0a7c56b01b12dad452ded822dde13f9aa246c38e9c144fda56c07f",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "tenshi": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 365,
+                        "sampleAddress": "0x562680a4dc50ed2f14d75bf31f494cfe0b8d10a1",
+                        "sampleTxHash": "0x03207e0d6cf15e190262b80e6049b033a56ea1832f4fc9a15fa9ffa927745498",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "ethlinq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 312,
+                        "sampleAddress": "0x122720e148118e05eb023f97f35c08336f874da0",
+                        "sampleTxHash": "0x00f50267811c27f868002541781109b974437d4adf044beb1fa69e4f189d4568",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "expo": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 161,
+                        "sampleAddress": "0x7fd16176d86727c895b6d3f97b20c1903c827696",
+                        "sampleTxHash": "0x3f0f4381a00f80b2122eb5cc5c7b5251cfdbb558171b0d55b75c8a7e7faa10da",
+                        "found": 1,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DividendWithdrawn",
+        "type": "event",
+        "@id": "0xee503bee2bb6a87e57bc57db795f98137327401a0e7b7ce42e37926cc1a9ca4d",
+        "signature": "DividendWithdrawn(address,uint256)"
+    },
+    {
+        "name": "Claim",
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "receiver",
+                "type": "address",
+                "features": {
+                    "linq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1274,
+                        "sampleAddress": "0x77f50f963d55c7c7dc2b5a44767299c02af76a66",
+                        "sampleTxHash": "0x0c4669d271719e50efcc89b29caefdc92591192e0a573a23c234584bee63dce6",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "ooki": {
+                        "is_erc20": 0.571429,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.285714,
+                        "numLogs": 526,
+                        "sampleAddress": "0x8f7cfa2c864c0ba87b678804803946f82cb1e37c",
+                        "sampleTxHash": "0x007930cbf4fd741eb1191ff8693b73888b0c51e359a001f83c7094c62f13c8df",
+                        "found": 7,
+                        "samples": 90
+                    },
+                    "ethlinq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 312,
+                        "sampleAddress": "0x122720e148118e05eb023f97f35c08336f874da0",
+                        "sampleTxHash": "0x00f50267811c27f868002541781109b974437d4adf044beb1fa69e4f189d4568",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "asap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 263,
+                        "sampleAddress": "0x34c4e9eb2e0cfc05818a98fe9762380ff6c97fa1",
+                        "sampleTxHash": "0x0250ed96f1a359948d9ebb9b9e835f7b2c0975b92bb0324e38f21bc44030d25e",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "hop": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 100,
+                        "sampleAddress": "0x8725f93a02e641add9232f9d1e580f0bd3cf0771",
+                        "sampleTxHash": "0x8801a29cc9eb8f8888c2d323e9c996ea587c9ad252e70fe64d6fc12819cb347a",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x47cee97cb7acd717b3c0aa1435d004cd5b3c8c57d70dbceb4e4458bbd60e39d4",
+        "signature": "Claim(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DividendsDistributed",
+        "type": "event",
+        "@id": "0xa493a9229478c3fcd73f66d2cdeb7f94fd0f341da924d1054236d78454116511",
+        "signature": "DividendsDistributed(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokensSwapped",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "SendDividends",
+        "type": "event",
+        "@id": "0x80195cc573b02cc48460cbca6e6e4cc85ddb91959d946e1c3025ea3d87942dc3",
+        "signature": "SendDividends(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "nftx": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 18169,
+                        "sampleAddress": "0x688c3e4658b5367da06fd629e41879beab538e37",
+                        "sampleTxHash": "0x0000a964aa55cdcc06b534953b1d72845b3f5487291514744d5b29cdc5114e89",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "cryptounicorns": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4162,
+                        "sampleAddress": "0x2d9fd7ad43e75d1f991de6cc876d2285cf8ccbf0",
+                        "sampleTxHash": "0x046ce3e6768d24ba0b570f91134e385beb829bca1e2ef8bc5f995185560bfe6b",
+                        "found": 5,
+                        "samples": 100
+                    },
+                    "asap": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2228,
+                        "sampleAddress": "0xc36ad98e62598ae24d4487d8012209f687c30d45",
+                        "sampleTxHash": "0x00432f8d4ffbda80099020564c80a2c17503b7faca12ac7f9e75c2ccfc68ade8",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "convex": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 406,
+                        "sampleAddress": "0xc2544a32872a91f4a553b404c6950e89de901fdb",
+                        "sampleTxHash": "0x022c12ef3ec703b98833f942a3a7d9f6103d05bdc34808f11ba69970ea431063",
+                        "found": 4,
+                        "samples": 4
+                    },
+                    "ethlinq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 9,
+                        "sampleAddress": "0xa48f54ce738a55b9784bf6ea704e7f64a661ef73",
+                        "sampleTxHash": "0x1219a47c4f708a976fe37321d6a35c3c85faaa07002bab104691728b0559878d",
+                        "found": 0,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "weiAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RewardsDistributed",
+        "type": "event",
+        "@id": "0xdf29796aad820e4bb192f3a8d631b76519bcd2cbe77cc85af20e9df53cece086",
+        "signature": "RewardsDistributed(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_receiver",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "rewardAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "RewardsClaimed",
+        "type": "event",
+        "@id": "0x9310ccfcb8de723f578a9e4282ea9f521f05ae40dc08f3068dfad528a65ee3c7",
+        "signature": "RewardsClaimed(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "by",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "fundsWithdrawn",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RewardsWithdrawn",
+        "type": "event",
+        "@id": "0x8a43c4352486ec339f487f64af78ca5cbf06cd47833f073d3baf3a193e503161",
+        "signature": "RewardsWithdrawn(address,uint256)"
+    }
+]

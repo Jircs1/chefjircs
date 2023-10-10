@@ -1,0 +1,101 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "enum FasttokenDistribution.AllocationType",
+                "name": "allocationType",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "NewAllocation",
+        "type": "event",
+        "@id": "0xf06566bc20d37121f8822ea65cd542a0ee39fc7bfa84d71149b6e21691d74961",
+        "signature": "NewAllocation(address,uint8,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockupPeriod",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "vesting",
+                "type": "uint256"
+            }
+        ],
+        "name": "NewAllocation",
+        "type": "event",
+        "@id": "0xc2c07af19f0b022c178a7241f9432ed8cf9c78d174adbf2dc8629411021bfadc",
+        "signature": "NewAllocation(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            }
+        ],
+        "name": "CancelAllocation",
+        "type": "event",
+        "@id": "0x097c85f05ca1be6094e91c6c259c23ab8fb09f92e404cae48238a589df511101",
+        "signature": "CancelAllocation(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "allocatedAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            }
+        ],
+        "name": "CancelAllocation",
+        "type": "event",
+        "@id": "0x93bd5b21f327255d5c94866a6213a85fa53456a31c94c85ef95d3466a96bb776",
+        "signature": "CancelAllocation(address,address)"
+    }
+]

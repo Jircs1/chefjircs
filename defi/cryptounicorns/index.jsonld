@@ -1,0 +1,386 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "nftx": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 18169,
+                        "sampleAddress": "0x688c3e4658b5367da06fd629e41879beab538e37",
+                        "sampleTxHash": "0x0000a964aa55cdcc06b534953b1d72845b3f5487291514744d5b29cdc5114e89",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "cryptounicorns": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4162,
+                        "sampleAddress": "0x2d9fd7ad43e75d1f991de6cc876d2285cf8ccbf0",
+                        "sampleTxHash": "0x046ce3e6768d24ba0b570f91134e385beb829bca1e2ef8bc5f995185560bfe6b",
+                        "found": 5,
+                        "samples": 100
+                    },
+                    "asap": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2228,
+                        "sampleAddress": "0xc36ad98e62598ae24d4487d8012209f687c30d45",
+                        "sampleTxHash": "0x00432f8d4ffbda80099020564c80a2c17503b7faca12ac7f9e75c2ccfc68ade8",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "convex": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 406,
+                        "sampleAddress": "0xc2544a32872a91f4a553b404c6950e89de901fdb",
+                        "sampleTxHash": "0x022c12ef3ec703b98833f942a3a7d9f6103d05bdc34808f11ba69970ea431063",
+                        "found": 4,
+                        "samples": 4
+                    },
+                    "ethlinq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 9,
+                        "sampleAddress": "0xa48f54ce738a55b9784bf6ea704e7f64a661ef73",
+                        "sampleTxHash": "0x1219a47c4f708a976fe37321d6a35c3c85faaa07002bab104691728b0559878d",
+                        "found": 0,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "weiAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RewardsDistributed",
+        "type": "event",
+        "@id": "0xdf29796aad820e4bb192f3a8d631b76519bcd2cbe77cc85af20e9df53cece086",
+        "signature": "RewardsDistributed(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "name": "depositId",
+                "type": "uint256"
+            },
+            {
+                "@type": "transfer:to",
+                "name": "receiver",
+                "type": "address",
+                "features": {
+                    "merit": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 5200,
+                        "sampleAddress": "0xb37dab352185c1945cc4b7d19ce05602b9db76f8",
+                        "sampleTxHash": "0x028f2a1c164efd467eeb818797cd3eafc6dbe8f402a5f1f04bfd24ef65fa352d",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "cryptounicorns": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1595,
+                        "sampleAddress": "0xb3654f0fae2ee153c64add91d6506f4b1efd5ee5",
+                        "sampleTxHash": "0x07058dcd2c3da4b211c8fb41622fd5893afa8529ceb0c32cd555e0da537957ba",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "merit": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 5200,
+                        "sampleAddress": "0xb37dab352185c1945cc4b7d19ce05602b9db76f8",
+                        "sampleTxHash": "0x028f2a1c164efd467eeb818797cd3eafc6dbe8f402a5f1f04bfd24ef65fa352d",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "cryptounicorns": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1595,
+                        "sampleAddress": "0xb3654f0fae2ee153c64add91d6506f4b1efd5ee5",
+                        "sampleTxHash": "0x07058dcd2c3da4b211c8fb41622fd5893afa8529ceb0c32cd555e0da537957ba",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Withdrawn",
+        "type": "event",
+        "@id": "0xe5df19de43c8c04fd192bc68e484b2593570925fbb6ad8c07ccafbc2aa5c37a1",
+        "signature": "Withdrawn(uint256,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "pointsCorrection",
+                "type": "int256"
+            }
+        ],
+        "name": "PointsCorrectionUpdated",
+        "type": "event",
+        "@id": "0xf694bebd33ada288ae2f4485315db76739e2d5501daf315e71c9d8f841aa7773",
+        "signature": "PointsCorrectionUpdated(address,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "duration",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            }
+        ],
+        "name": "Deposited",
+        "type": "event",
+        "@id": "0x34194be2f096bdb2ad418add902a4da76d3d6f6d387d86d857f56c7711ecca70",
+        "signature": "Deposited(uint256,uint256,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "by",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "reward",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rewardsDistributed",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RewardsDistributed",
+        "type": "event",
+        "@id": "0x92d8e67e11e35152e7b525077fc4cf66393423d128ce3b803453b22533c57641",
+        "signature": "RewardsDistributed(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_reward",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_escrowedAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_nonEscrowedAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "RewardsClaimed",
+        "type": "event",
+        "@id": "0x7e27222c50a5510dfc61468d936b48c880bfbd05c1eb59c5be79b06e582369dd",
+        "signature": "RewardsClaimed(address,address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "reward",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "by",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "fundsWithdrawn",
+                "type": "uint256"
+            }
+        ],
+        "name": "RewardsWithdrawn",
+        "type": "event",
+        "@id": "0xd01566b65da2d62cb66f3844588c99d9a95b38394ccdc9c3f7604536e653cf1b",
+        "signature": "RewardsWithdrawn(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "reward",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "points",
+                "type": "int256"
+            }
+        ],
+        "name": "PointsCorrectionUpdated",
+        "type": "event",
+        "@id": "0x805686830eb2172dc59c1de92fdf8618d5cc21eda811cf00c034016642ce379b",
+        "signature": "PointsCorrectionUpdated(address,address,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_escrowedAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_nonEscrowedAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "RewardsClaimed",
+        "type": "event",
+        "@id": "0xd92c424393cb3ccdf7d5e36602e3bfa34f24490579ba47978f4bcfad496995f2",
+        "signature": "RewardsClaimed(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "by",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "fundsWithdrawn",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RewardsWithdrawn",
+        "type": "event",
+        "@id": "0x8a43c4352486ec339f487f64af78ca5cbf06cd47833f073d3baf3a193e503161",
+        "signature": "RewardsWithdrawn(address,uint256)"
+    }
+]

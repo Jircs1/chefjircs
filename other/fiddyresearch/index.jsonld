@@ -1,0 +1,456 @@
+[
+    {
+        "name": "TokenExchange",
+        "inputs": [
+            {
+                "name": "buyer",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "sold_id",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "tokens_sold",
+                "type": "uint256",
+                "indexed": false,
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "name": "bought_id",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "tokens_bought",
+                "type": "uint256",
+                "indexed": false,
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "name": "fee",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "packed_price_scale",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x143f1f8e861fbdeddd5b46e844b7d3ac7b86a122f36e8c463859ee6811b1f29c",
+        "signature": "TokenExchange(address,uint256,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "name": "UpdateLiquidityLimit",
+        "inputs": [
+            {
+                "@type": "dex:admin",
+                "name": "_user",
+                "type": "address",
+                "features": {
+                    "curve": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 153256,
+                        "sampleAddress": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+                        "sampleTxHash": "0x00005835abcb46d9caf79831dd1249aab09df68d18cb8822649807f7abc7c352",
+                        "found": 10,
+                        "samples": 100
+                    },
+                    "nventuro": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 27758,
+                        "sampleAddress": "0xaf52695e1bb01a16d33d7194c28c42b10e0dbec2",
+                        "sampleTxHash": "0x0003e287bf82faec9c469051c6332c74ad7477bf20467df2f23b8fa2cc7d2762",
+                        "found": 11,
+                        "samples": 100
+                    },
+                    "fiddyresearch": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2619,
+                        "sampleAddress": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+                        "sampleTxHash": "0x000add645c581c30a5ac7e39e2ec7c83a4bc5402ece0841b9fdfe032647e9461",
+                        "found": 8,
+                        "samples": 100
+                    },
+                    "yearn": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2527,
+                        "sampleAddress": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+                        "sampleTxHash": "0x000014940809c78057c091e9410650cb2bd354c38f2b7b075bc8e1d5521d16da",
+                        "found": 6,
+                        "samples": 100
+                    },
+                    "saddle": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 947,
+                        "sampleAddress": "0x0d339fbe4e9a5330670c1a78a23adb35deb7597c",
+                        "sampleTxHash": "0x0526dfa749b79ca71ebd9f8f3832a643417aae90935fd60f4ad7d64384c3a36e",
+                        "found": 5,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "_original_balance",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "_original_supply",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "_working_balance",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "_working_supply",
+                "type": "uint256"
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x7ecd84343f76a23d2227290e0288da3251b045541698e575a5515af4f04197a3",
+        "signature": "UpdateLiquidityLimit(address,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "name": "TokenExchange",
+        "inputs": [
+            {
+                "name": "buyer",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "sold_id",
+                "type": "int128",
+                "indexed": false
+            },
+            {
+                "name": "tokens_sold",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "bought_id",
+                "type": "int128",
+                "indexed": false
+            },
+            {
+                "name": "tokens_bought",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140",
+        "signature": "TokenExchange(address,int128,uint256,int128,uint256)"
+    },
+    {
+        "name": "ClaimAdminFee",
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "admin",
+                "type": "address",
+                "features": {
+                    "curve": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 106446,
+                        "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                        "sampleTxHash": "0x0001c0cbab7b3dfdbad28befda477b4d05cc94682c6bc6ce211267cefc2ec998",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "rkp3r": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2452,
+                        "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                        "sampleTxHash": "0x0002ff0672079db23283a39f1630acb5f3694cf9e212b2068095206d05870f2b",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "yearn": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2452,
+                        "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                        "sampleTxHash": "0x0002ff0672079db23283a39f1630acb5f3694cf9e212b2068095206d05870f2b",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "fiddyresearch": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1061,
+                        "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                        "sampleTxHash": "0x000add645c581c30a5ac7e39e2ec7c83a4bc5402ece0841b9fdfe032647e9461",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "aladdindao": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 768,
+                        "sampleAddress": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+                        "sampleTxHash": "0x0048b8ff45f0026af698739604892cffaf8b933704b638849eaadc2bda1e7799",
+                        "found": 1,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "tokens",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x6059a38198b1dc42b3791087d1ff0fbd72b3179553c25f678cd246f52ffaaf59",
+        "signature": "ClaimAdminFee(address,uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[3]",
+                "indexed": false
+            },
+            {
+                "name": "fee",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "packed_price_scale",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xe1b60455bd9e33720b547f60e4e0cfbf1252d0f2ee0147d53029945f39fe3c1a",
+        "signature": "AddLiquidity(address,uint256[3],uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "maker": {
+                        "is_erc20": 0.01,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.04,
+                        "numLogs": 25653321,
+                        "sampleAddress": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                        "sampleTxHash": "0x000007001d6c5bd0cf28c85964d036ab41a4aa5329203a9ec3da80822e103b7d",
+                        "found": 100,
+                        "samples": 100
+                    },
+                    "stargate": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 242115,
+                        "sampleAddress": "0x150f94b44927f078737562f0fcf3c95c01cc2376",
+                        "sampleTxHash": "0x000022e50e9593c9d998cb352ae35960389c842e06c06be0400350f9f39f9843",
+                        "found": 26,
+                        "samples": 26
+                    },
+                    "curve": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 30667,
+                        "sampleAddress": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+                        "sampleTxHash": "0x00018ecd2b7baffd11a9dd0dd467764d37e94f7b3280e73d087e149123e45f43",
+                        "found": 10,
+                        "samples": 100
+                    },
+                    "dackieswap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1475,
+                        "sampleAddress": "0xfb4d71c55642aa8169ac64a14e8b34f9676bc596",
+                        "sampleTxHash": "0x03b123b72a331b8520e5b28bd6e75165d62c03c8dd339ba666cfaf96694200a5",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+        "signature": "Deposit(address,uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[2]",
+                "indexed": false
+            },
+            {
+                "name": "fees",
+                "type": "uint256[2]",
+                "indexed": false
+            },
+            {
+                "name": "invariant",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x26f55a85081d24974e85c6c00045d0f0453991e95873f52bff0d21af4079a768",
+        "signature": "AddLiquidity(address,uint256[2],uint256[2],uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Withdraw",
+        "type": "event",
+        "@id": "0x884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a9424364",
+        "signature": "Withdraw(address,uint256)"
+    },
+    {
+        "name": "RemoveLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[3]",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xd6cc314a0b1e3b2579f8e64248e82434072e8271290eef8ad0886709304195f5",
+        "signature": "RemoveLiquidity(address,uint256[3],uint256)"
+    },
+    {
+        "name": "RemoveLiquidity",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "provider",
+                "indexed": true
+            },
+            {
+                "type": "uint256[2]",
+                "name": "token_amounts",
+                "indexed": false
+            },
+            {
+                "type": "uint256[2]",
+                "name": "fees",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "token_supply",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x7c363854ccf79623411f8995b362bce5eddff18c927edc6f5dbbb5e05819a82c",
+        "signature": "RemoveLiquidity(address,uint256[2],uint256[2],uint256)"
+    }
+]

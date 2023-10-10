@@ -1,0 +1,170 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "autoBurned",
+        "type": "event",
+        "@id": "0x7c76b725c3bdd88cc239c1cbdc4c37e260fc0650dd4784ce22d4fbd64d98c4d9",
+        "signature": "autoBurned(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "marketingFeeSent",
+        "type": "event",
+        "@id": "0x3e6afd69feef8f4cc1adbe6d3905e477db85aa5aa28d02674dc4bc6d39237fe4",
+        "signature": "marketingFeeSent(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountToken",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountCoin",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "liquidity",
+                "type": "uint256"
+            }
+        ],
+        "name": "liquidityAdded",
+        "type": "event",
+        "@id": "0x3db50c324c27fb39c451e35d4d23abba3e20d96d036e7a40f4adc681c1ce3013",
+        "signature": "liquidityAdded(uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isExcluded",
+                "type": "bool"
+            }
+        ],
+        "name": "ExcludeFromLimits",
+        "type": "event",
+        "@id": "0x4b89c347592b1d537e066cb4ed98d87696ae35164745d7e370e4add16941dc92",
+        "signature": "ExcludeFromLimits(address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isExcluded",
+                "type": "bool"
+            }
+        ],
+        "name": "ExcludeFromFees",
+        "type": "event",
+        "@id": "0x9d8f7706ea1113d1a167b526eca956215946dd36cc7df39eb16180222d8b5df7",
+        "signature": "ExcludeFromFees(address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "value",
+                "type": "bool"
+            }
+        ],
+        "name": "BlacklistUpdated",
+        "type": "event",
+        "@id": "0x6a12b3df6cba4203bd7fd06b816789f87de8c594299aed5717ae070fac781bac",
+        "signature": "BlacklistUpdated(address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "rewardsFeeSent",
+        "type": "event",
+        "@id": "0x193576e9dd325a2a57e4e6e7f6afa82c4fd152eaa8d5f874b0b0f40d924b18a6",
+        "signature": "rewardsFeeSent(uint256)"
+    }
+]

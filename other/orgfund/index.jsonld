@@ -1,0 +1,254 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "EntityEthReceived",
+        "type": "event",
+        "@id": "0x319b17788d08284faf176ecc26488a92299d712ea00ef44b9bcc454f8c8e66b2",
+        "signature": "EntityEthReceived(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint8",
+                "name": "entityType",
+                "type": "uint8"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "entityManager",
+                "type": "address"
+            }
+        ],
+        "name": "EntityDeployed",
+        "type": "event",
+        "@id": "0x1e3e29fb0c05e0c478577b9b3e207cbfe2952b1f9b239ed5d2535d4b24b6c577",
+        "signature": "EntityDeployed(address,uint8,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountSent",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "EntityValuePaidOut",
+        "type": "event",
+        "@id": "0x41ac2430a734173e8b6d39713e824f15d8ab1a9c4af6d07f5fb738822af75233",
+        "signature": "EntityValuePaidOut(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountReceived",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "EntityValueTransferred",
+        "type": "event",
+        "@id": "0x5bf84598f4648ea3b18834387f5f25bd778972e993ae703a68808743824a1618",
+        "signature": "EntityValueTransferred(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountReceived",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$2",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountFee",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$2",
+                "validationSuccess": true
+            }
+        ],
+        "name": "EntityDonationReceived",
+        "type": "event",
+        "@id": "0xc866822a337be53282ff0bf1ad9c9eb8312fa7b420f9327a2c33ec7e72d50b8f",
+        "signature": "EntityDonationReceived(address,address,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountReceived",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "EntityBalanceReconciled",
+        "type": "event",
+        "@id": "0xac791e4e5e1041f59b3427f769f90a58cb39873d7fec687682c09583b425099c",
+        "signature": "EntityBalanceReconciled(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "portfolio",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesRedeemed",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "baseTokenReceived",
+                "type": "uint256"
+            }
+        ],
+        "name": "EntityRedeem",
+        "type": "event",
+        "@id": "0xee0fb9e6d573076d9a07b1d91e0a988c2f988d1d690ff129ff3096408d0afbc8",
+        "signature": "EntityRedeem(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "portfolio",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "baseTokenDeposited",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sharesReceived",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            }
+        ],
+        "name": "EntityDeposit",
+        "type": "event",
+        "@id": "0x17f635bacbd012dd587e39c86059a06f779ee2111f6c5541b40c2941b09cf7c4",
+        "signature": "EntityDeposit(address,uint256,uint256)"
+    }
+]

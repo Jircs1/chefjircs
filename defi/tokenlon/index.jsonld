@@ -1,0 +1,345 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "source",
+                "type": "string"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "transactionHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "orderHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "userAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "takerAssetAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "takerAssetAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$4",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "makerAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "makerAssetAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "makerAssetAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$7",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "receiverAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "settleAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$7",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "feeFactor",
+                "type": "uint16"
+            }
+        ],
+        "name": "FillOrder",
+        "type": "event",
+        "@id": "0x75d58426b26ab641a6a6a46f12fe35e17c570a1cd264c7248a73d90e3a8682ff",
+        "signature": "FillOrder(string,bytes32,bytes32,address,address,uint256,address,address,uint256,address,uint256,uint16)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "string",
+                        "name": "source",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "transactionHash",
+                        "type": "bytes32"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "settleAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "receivedAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint16",
+                        "name": "feeFactor",
+                        "type": "uint16"
+                    },
+                    {
+                        "internalType": "uint16",
+                        "name": "subsidyFactor",
+                        "type": "uint16"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct AMMWrapper.TxMetaData",
+                "name": "",
+                "type": "tuple"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "address",
+                        "name": "makerAddr",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "takerAssetAddr",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "makerAssetAddr",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "takerAssetAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "makerAssetAmount",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "userAddr",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "receiverAddr",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "salt",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "deadline",
+                        "type": "uint256"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct AMMLibEIP712.Order",
+                "name": "order",
+                "type": "tuple"
+            }
+        ],
+        "name": "Swapped",
+        "type": "event",
+        "@id": "0xc36ae6e11a161c28ae95fc0f8c0f56d3d0fb7f3a3524499c53fb6733ed86764d",
+        "signature": "Swapped((string,bytes32,uint256,uint256,uint16,uint16),(address,address,address,uint256,uint256,address,address,uint256,uint256))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "source",
+                "type": "string"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "transactionHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "userAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "takerAssetAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "takerAssetAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$3",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "makerAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "makerAssetAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "makerAssetAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "receiverAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "settleAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$6",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "receivedAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$6",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "feeFactor",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "subsidyFactor",
+                "type": "uint16"
+            }
+        ],
+        "name": "Swapped",
+        "type": "event",
+        "@id": "0x751c65d3b4f3d8a604acd9f9de3800b28af395263a2c0a096f50a5d479d8bf4f",
+        "signature": "Swapped(string,bytes32,address,address,uint256,address,address,uint256,address,uint256,uint256,uint16,uint16)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0In",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1In",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0Out",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1Out",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            }
+        ],
+        "name": "Swap",
+        "type": "event",
+        "@id": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+        "signature": "Swap(address,uint256,uint256,uint256,uint256,address)"
+    }
+]

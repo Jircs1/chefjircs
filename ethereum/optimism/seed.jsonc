@@ -2,14 +2,28 @@
     "seed": [
         "0x0bb2ca5ea700ba04c713008e1a3d198b4e8da7a7",
         "0x9996571372066a1545d3435c6935e3f9593a7ef5",
-        "0xe07e50264cd86ec96a22c930f3581efb46ba3a34"
+        "0xe07e50264cd86ec96a22c930f3581efb46ba3a34",
+	"0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1",
+	"0x53a6eecc2dd4795fcc68940ddc6b4d53bd88bd9e",
+	"0x99C9fc46f92E8a1c0deC1b1747d010903E884bE1",
+	"0x4200000000000000000000000000000000000006",
+	"0x4200000000000000000000000000000000000016",
+	"0x4200000000000000000000000000000000000015",
+	"0x4200000000000000000000000000000000000000",
+	"0x4200000000000000000000000000000000000010",
+	"0x4200000000000000000000000000000000000012",
+	"0x4200000000000000000000000000000000000042",
+	"0x354f3f4ecdca5e0a7ace08d71348cdc1dab48960"	
     ],
     "recipes": [
-        "Claimed",
+    	"ETHDepositInitiated",
+	"ETHBridgeInitiated",
         "ERC20DepositInitiated",
-        "StarNFTV4_call_mint",
+	"ERC20BridgeFinalized",
         "ERC721BridgeFinalized",
-        "createStandardL2Token",
+	"ERC20WithdrawalFinalized",
+	"SentMessage",
+	"SentMessageExtension1",
         "StandardL2TokenCreated"
     ]
 }

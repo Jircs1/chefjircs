@@ -1,0 +1,45 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "seller",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "buyer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "price",
+                "type": "uint256"
+            }
+        ],
+        "name": "GoldBought",
+        "type": "event",
+        "@id": "0x113084ed5417f1f3c96b2d2d0a10414e265fb66f5675667be0a76d24af2d2a87",
+        "signature": "GoldBought(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "seller",
+                "type": "address"
+            }
+        ],
+        "name": "GoldSellOrderCancelled",
+        "type": "event",
+        "@id": "0x129e5c634635a4c038190a8bf5f0a104ce930b2fdd99fb6920d06b32efb3896f",
+        "signature": "GoldSellOrderCancelled(address)"
+    }
+]

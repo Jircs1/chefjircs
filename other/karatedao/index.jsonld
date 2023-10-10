@@ -1,0 +1,209 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "role",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            }
+        ],
+        "name": "RoleGranted",
+        "type": "event",
+        "@id": "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+        "signature": "RoleGranted(bytes32,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "memberAddr",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "string",
+                "name": "ipfs",
+                "type": "string"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "address",
+                        "name": "addr",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "ipfs_metadata",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "isActive",
+                        "type": "bool"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct KarateDAOStorage.Member",
+                "name": "member",
+                "type": "tuple"
+            }
+        ],
+        "name": "NewMember",
+        "type": "event",
+        "@id": "0xff54c21ba80b8aa448e2f0b912a564e7f3cf3067eefd465b0ec24f30471cbc84",
+        "signature": "NewMember(address,string,(address,string,bool))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "memberAddr",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "ipfs",
+                "type": "string"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "eventNum",
+                "type": "uint256"
+            }
+        ],
+        "name": "NewEventResult",
+        "type": "event",
+        "@id": "0x1a475d149065d711c76ccc1c0c7825468ec25670345f7639baeef188d2936bb2",
+        "signature": "NewEventResult(address,string,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "eventNum",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "snapshotId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+            }
+        ],
+        "name": "NewEventSnapshot",
+        "type": "event",
+        "@id": "0xd7ad9d18e3c3fd099dce052a028be71f22b08bebbb03ee00da643916412fccda",
+        "signature": "NewEventSnapshot(uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "_index",
+                "type": "uint256"
+            }
+        ],
+        "name": "Snapshot",
+        "type": "event",
+        "@id": "0x8030e83b04d87bef53480e26263266d6ca66863aa8506aca6f2559d18aa1cb67",
+        "signature": "Snapshot(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "eventNum",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "idx_pos",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "exists",
+                        "type": "bool"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "eventStart",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "info_ipfs",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "results_ipfs",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "snapshotProposalIPFS",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "deleted",
+                        "type": "bool"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "outcomes",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "snapshotId",
+                        "type": "uint256"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct KarateDAOStorage.EventCard",
+                "name": "eventCard",
+                "type": "tuple"
+            }
+        ],
+        "name": "NewFightEvent",
+        "type": "event",
+        "@id": "0x45fb4aac4654c6df463d5df6a02729fb817acf43ea0ca0ab3f14946dd6ec69b4",
+        "signature": "NewFightEvent(uint256,(uint256,bool,uint256,string,string,string,bool,uint64,uint256))"
+    }
+]

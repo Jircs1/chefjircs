@@ -1,0 +1,785 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_lastGoodPrice",
+                "type": "uint256"
+            }
+        ],
+        "name": "LastGoodPriceUpdated",
+        "type": "event",
+        "@id": "0x4d29de21de555af78a62fc82dd4bc05e9ae5b0660a37f04729527e0f22780cd3",
+        "signature": "LastGoodPriceUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "EtherSent",
+        "type": "event",
+        "@id": "0x6109e2559dfa766aaec7118351d48a523f0a4157f49c8d68749c8ac41318ad12",
+        "signature": "EtherSent(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_LUSDDebt",
+                "type": "uint256"
+            }
+        ],
+        "name": "ActivePoolLUSDDebtUpdated",
+        "type": "event",
+        "@id": "0x0d4c964e4ceac5d740869d39789a7b91888a787b9c33e9365b1a658a21ffb696",
+        "signature": "ActivePoolLUSDDebtUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_ETH",
+                "type": "uint256"
+            }
+        ],
+        "name": "ActivePoolETHBalanceUpdated",
+        "type": "event",
+        "@id": "0xca232b5abb988c540b959ff6c3bfae3e97fff964fd098c508f9613c0a6bf1a80",
+        "signature": "ActivePoolETHBalanceUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_borrower",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_debt",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_coll",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "stake",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum BorrowerOperations.BorrowerOperation",
+                "name": "operation",
+                "type": "uint8"
+            }
+        ],
+        "name": "TroveUpdated",
+        "type": "event",
+        "@id": "0xc3770d654ed33aeea6bf11ac8ef05d02a6a04ed4686dd2f624d853bbec43cc8b",
+        "signature": "TroveUpdated(address,uint256,uint256,uint256,uint8)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newTotalStakes",
+                "type": "uint256"
+            }
+        ],
+        "name": "TotalStakesUpdated",
+        "type": "event",
+        "@id": "0x6bac5e0eb3c44eb03a60ab11ec3a2c051771616aecadbcfff2630aabae520382",
+        "signature": "TotalStakesUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_id",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_NICR",
+                "type": "uint256"
+            }
+        ],
+        "name": "NodeAdded",
+        "type": "event",
+        "@id": "0xe02b43adbee0c123de070a04554a71877a0007e2fc161466299cae3c094fe82f",
+        "signature": "NodeAdded(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_borrower",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_LUSDFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "LUSDBorrowingFeePaid",
+        "type": "event",
+        "@id": "0xa55c5f48fd29482ad55f4b59bf070cd1ac1a7132a31f7a136ebe8877ae37e1ff",
+        "signature": "LUSDBorrowingFeePaid(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_id",
+                "type": "address"
+            }
+        ],
+        "name": "NodeRemoved",
+        "type": "event",
+        "@id": "0xcfc24166db4bb677e857cacabd1541fb2b30645021b27c5130419589b84db52b",
+        "signature": "NodeRemoved(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_totalLQTYIssued",
+                "type": "uint256"
+            }
+        ],
+        "name": "TotalLQTYIssuedUpdated",
+        "type": "event",
+        "@id": "0x033068abf93bdec23e781d0a3b3f3e688bfa8471c68b629ad68652cdc63a6e49",
+        "signature": "TotalLQTYIssuedUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_LQTY",
+                "type": "uint256"
+            }
+        ],
+        "name": "LQTYPaidToDepositor",
+        "type": "event",
+        "@id": "0x2608b986a6ac0f6c629ca37018e80af5561e366252ae93602a96d3ab2e73e42d",
+        "signature": "LQTYPaidToDepositor(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_frontEnd",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newFrontEndStake",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_depositor",
+                "type": "address"
+            }
+        ],
+        "name": "FrontEndStakeChanged",
+        "type": "event",
+        "@id": "0x99920012339b5a3368d3a04b8606ce412c46ed92b7dcd8602d41fc8862cb8f25",
+        "signature": "FrontEndStakeChanged(address,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_frontEnd",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_P",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_G",
+                "type": "uint256"
+            }
+        ],
+        "name": "FrontEndSnapshotUpdated",
+        "type": "event",
+        "@id": "0xbb1322f85cc7cc8bac4e172a5bc5dcc0c1959007f9a030032abf9258205f0e45",
+        "signature": "FrontEndSnapshotUpdated(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newDeposit",
+                "type": "uint256"
+            }
+        ],
+        "name": "UserDepositChanged",
+        "type": "event",
+        "@id": "0xbce78369dccab09eec1986f4d409ab09ffbb47d65423e5148fcf98411c5111c9",
+        "signature": "UserDepositChanged(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_P",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_S",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_G",
+                "type": "uint256"
+            }
+        ],
+        "name": "DepositSnapshotUpdated",
+        "type": "event",
+        "@id": "0x2d6cc0bcdf72c9486f6451bde6b80f44066f4558f77f44dbfedbe7d8b295225a",
+        "signature": "DepositSnapshotUpdated(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_ETH",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_ARTHLoss",
+                "type": "uint256"
+            }
+        ],
+        "name": "ETHGainWithdrawn",
+        "type": "event",
+        "@id": "0x51457222ebca92c335c9c86e2baa1cc0e40ffaa9084a51452980d5ba8dec2f63",
+        "signature": "ETHGainWithdrawn(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_G",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "_epoch",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "_scale",
+                "type": "uint128"
+            }
+        ],
+        "name": "G_Updated",
+        "type": "event",
+        "@id": "0x2d6127771b164a9cc8827d24b5955db2a77e7a81dac389107ebb8bce9fb64968",
+        "signature": "G_Updated(uint256,uint128,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newBalance",
+                "type": "uint256"
+            }
+        ],
+        "name": "StabilityPoolLUSDBalanceUpdated",
+        "type": "event",
+        "@id": "0xa8e886449d8f7e765877b4a4f54632da3943ae454d5a272bdccb1781f086ff29",
+        "signature": "StabilityPoolLUSDBalanceUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_baseRate",
+                "type": "uint256"
+            }
+        ],
+        "name": "BaseRateUpdated",
+        "type": "event",
+        "@id": "0xc454ee9b76c52f782a256af821b857ca6e125d1e3333bcede402fec2bed9600c",
+        "signature": "BaseRateUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_lastFeeOpTime",
+                "type": "uint256"
+            }
+        ],
+        "name": "LastFeeOpTimeUpdated",
+        "type": "event",
+        "@id": "0x860f8d2f0c74dd487e89e2883e3b25b8159ce1e1b3433a291cba7b82c508f3bc",
+        "signature": "LastFeeOpTimeUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_F_LUSD",
+                "type": "uint256"
+            }
+        ],
+        "name": "F_LUSDUpdated",
+        "type": "event",
+        "@id": "0xdc043c079acfe2ef669592e1598aa8f95877fa0ba0e91d06c214a9f73d3521f9",
+        "signature": "F_LUSDUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_F_COL",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_F_BAI",
+                "type": "uint256"
+            }
+        ],
+        "name": "StakerSnapshotsUpdated",
+        "type": "event",
+        "@id": "0x6b5cf27595af4428271524e0a5abd2b63f6fee1a61e31970490f5a10e257a1cd",
+        "signature": "StakerSnapshotsUpdated(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "BAIGain",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "COLGain",
+                "type": "uint256"
+            }
+        ],
+        "name": "StakingGainsWithdrawn",
+        "type": "event",
+        "@id": "0xf744d34ca1cb25acfa4180df5f09a67306107110a9f4b6ed99bb3be259738215",
+        "signature": "StakingGainsWithdrawn(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_frontEnd",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_LQTY",
+                "type": "uint256"
+            }
+        ],
+        "name": "LQTYPaidToFrontEnd",
+        "type": "event",
+        "@id": "0xcd2cdc1a4af71051394e9c6facd9a266b2ac5bd65d219a701eeda009f47682bf",
+        "signature": "LQTYPaidToFrontEnd(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_totalLQTYStaked",
+                "type": "uint256"
+            }
+        ],
+        "name": "TotalLQTYStakedUpdated",
+        "type": "event",
+        "@id": "0x1fb085b6fe1998bfcd59bfb91fb9a84d3a3a8c63a97b2b5c43247235a5ca1df7",
+        "signature": "TotalLQTYStakedUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newStake",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "StakeChanged",
+        "type": "event",
+        "@id": "0x39df0e5286a3ef2f42a0bf52f32cfe2c58e5b0405f47fe512f2c2439e4cfe204",
+        "signature": "StakeChanged(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newBalance",
+                "type": "uint256"
+            }
+        ],
+        "name": "StabilityPoolETHBalanceUpdated",
+        "type": "event",
+        "@id": "0xceb6d671277d4354fd29977ada70695fbd93a16612abf765d6b0e25c28dc6db3",
+        "signature": "StabilityPoolETHBalanceUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_L_collateral",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_L_debt",
+                "type": "uint256"
+            }
+        ],
+        "name": "TroveSnapshotsUpdated",
+        "type": "event",
+        "@id": "0xc437f324d85e369394148dd9d62f98f534b382e01ed3dd2eb98138fb6d3ab49a",
+        "signature": "TroveSnapshotsUpdated(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_borrower",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "arrayIndex",
+                "type": "uint256"
+            }
+        ],
+        "name": "TroveCreated",
+        "type": "event",
+        "@id": "0x59cfd0cd754bc5748b6770e94a4ffa5f678d885cb899dcfadc5734edb97c67ab",
+        "signature": "TroveCreated(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_borrower",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newIndex",
+                "type": "uint256"
+            }
+        ],
+        "name": "TroveIndexUpdated",
+        "type": "event",
+        "@id": "0x02b04ae5f7be9ca7c103293a2aa15f3c339d15d6eda53b721fef7b0e609c831a",
+        "signature": "TroveIndexUpdated(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_depositor",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_frontEnd",
+                "type": "address"
+            }
+        ],
+        "name": "FrontEndTagSet",
+        "type": "event",
+        "@id": "0x094c08e96a8890877a8390b4f967180a7507ad8622244d05fcd0f9f8e086564e",
+        "signature": "FrontEndTagSet(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newBalance",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "CollBalanceUpdated",
+        "type": "event",
+        "@id": "0xf0393a34d05e6567686ad4e097f9d9d2781565957394f1f0d984e5d8e6378f20",
+        "signature": "CollBalanceUpdated(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_attemptedDebtAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_actualDebtAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_collateralSent",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_collateralFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "Redemption",
+        "type": "event",
+        "@id": "0x43a3f4082a4dbc33d78e317d2497d3a730bc7fc3574159dcea1056e62e5d9ad8",
+        "signature": "Redemption(uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_F_ETH",
+                "type": "uint256"
+            }
+        ],
+        "name": "F_ETHUpdated",
+        "type": "event",
+        "@id": "0x4c56a0cf74da9899410b818edf6758c8af9b7b3070da97d2dcb6a5b1bf96317e",
+        "signature": "F_ETHUpdated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_borrower",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_debt",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_coll",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum TroveManager.TroveManagerOperation",
+                "name": "_operation",
+                "type": "uint8"
+            }
+        ],
+        "name": "TroveLiquidated",
+        "type": "event",
+        "@id": "0xea67486ed7ebe3eea8ab3390efd4a3c8aae48be5bea27df104a8af786c408434",
+        "signature": "TroveLiquidated(address,uint256,uint256,uint8)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_frontEnd",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_kickbackRate",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "FrontEndRegistered",
+        "type": "event",
+        "@id": "0x19bc932fb9e16a8b5a1e41be9f4c2de59d5ddd7567b8b81405f532ca00a9880e",
+        "signature": "FrontEndRegistered(address,uint256)"
+    }
+]

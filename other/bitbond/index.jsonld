@@ -1,0 +1,143 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "guildId",
+                "type": "uint256"
+            }
+        ],
+        "name": "TokensBought",
+        "type": "event",
+        "@id": "0x6ac79300fdc15433d6baf4670095e0ccb0ea9ce0e461056a51b917f25165188c",
+        "signature": "TokensBought(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "LiquidityAdded",
+        "type": "event",
+        "@id": "0x9d278c56ba6dc86a12eefe6b43112bd6e06648eb4ec0b950ee2d783d40e2acb4",
+        "signature": "LiquidityAdded(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "addr",
+                "type": "address"
+            }
+        ],
+        "name": "UserBlacklisted",
+        "type": "event",
+        "@id": "0x7f8b7dc89dae85811a7a85800b892b5816ad5d381c856f1b56490f8fc470c9cb",
+        "signature": "UserBlacklisted(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "updatedAddresses",
+                "type": "address[]"
+            }
+        ],
+        "name": "UsersWhitelisted",
+        "type": "event",
+        "@id": "0x6141feff42f24e29d1af3d91bffa3d40521e53485e9c92e358c4d946c0adbd38",
+        "signature": "UsersWhitelisted(address[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokensDeposited",
+        "type": "event",
+        "@id": "0x77acf75e237f9aae98f997395832d522bdb695e4a9bd07704936aa889a3667d1",
+        "signature": "TokensDeposited(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newMaxTokenAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "MaxTokenAmountPerSet",
+        "type": "event",
+        "@id": "0x2905481c6fd1a037492016c4760435a52203d82a6f34dc3de40f464c1bf42d59",
+        "signature": "MaxTokenAmountPerSet(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "TokensWithdrawn",
+        "type": "event",
+        "@id": "0x9c6393f251205f9e03559951cab4c9ae71767b6174f77944a5b0c2fa51fbda9f",
+        "signature": "TokensWithdrawn(uint256)"
+    }
+]

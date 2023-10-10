@@ -1,0 +1,669 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "src",
+                "type": "address"
+            },
+            {
+                "name": "dst",
+                "type": "address"
+            },
+            {
+                "name": "wad",
+                "type": "uint256"
+            }
+        ],
+        "name": "move",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xbb35783b",
+        "signature": "move(address,address,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "i",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "address",
+                "name": "u",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "v",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "w",
+                "type": "address"
+            },
+            {
+                "internalType": "int256",
+                "name": "dink",
+                "type": "int256"
+            },
+            {
+                "internalType": "int256",
+                "name": "dart",
+                "type": "int256"
+            }
+        ],
+        "name": "frob",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x76088703",
+        "signature": "frob(bytes32,address,address,address,int256,int256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_to",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amnt",
+                "type": "uint256"
+            }
+        ],
+        "name": "mint",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x40c10f19",
+        "signature": "mint(address,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_from",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "burn",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x9dc29fac",
+        "signature": "burn(address,uint256)"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "cdp",
+                "type": "uint256"
+            },
+            {
+                "internalType": "int256",
+                "name": "dink",
+                "type": "int256"
+            },
+            {
+                "internalType": "int256",
+                "name": "dart",
+                "type": "int256"
+            }
+        ],
+        "name": "frob",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x45e6bdcd",
+        "signature": "frob(uint256,int256,int256)"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "ilk",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "what",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "data",
+                "type": "uint256"
+            }
+        ],
+        "name": "file",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x1a0b287e",
+        "signature": "file(bytes32,bytes32,uint256)"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "u",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "v",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "rad",
+                "type": "uint256"
+            }
+        ],
+        "name": "suck",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xf24e23eb",
+        "signature": "suck(address,address,uint256)"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "i",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "address",
+                "name": "u",
+                "type": "address"
+            },
+            {
+                "internalType": "int256",
+                "name": "rate",
+                "type": "int256"
+            }
+        ],
+        "name": "fold",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xb65337df",
+        "signature": "fold(bytes32,address,int256)"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "cdp",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "dst",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "rad",
+                "type": "uint256"
+            }
+        ],
+        "name": "move",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xf9f30db6",
+        "signature": "move(uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "balancer:lender",
+                "name": "lender",
+                "type": "address",
+                "features": {
+                    "balancer": {
+                        "is_erc20": 0.01,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 46917,
+                        "sampleAddress": "0xf2bdcb1ec8810c35bf9b947371820c199bd775db",
+                        "sampleTxHash": "0x0001a89688adf5848b6a1ccf8f7e6db9111f62167d11e05607f2a60f348834b4",
+                        "found": 100,
+                        "samples": 100
+                    },
+                    "maker": {
+                        "is_erc20": 0.05,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 6135,
+                        "sampleAddress": "0x2a49eae5cca3f050ebec729cf90cc910fadaf7a2",
+                        "sampleTxHash": "0x000f331ec0a8cfaeab302d108cb431da54f73509139497a4189441a7a0870c8c",
+                        "found": 60,
+                        "samples": 60
+                    }
+                }
+            },
+            {
+                "@type": "erc20:token",
+                "name": "token",
+                "type": "address",
+                "features": {
+                    "balancer": {
+                        "is_erc20": 0.926829,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 50392,
+                        "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                        "sampleTxHash": "0x0002a84b9a078bfcc9c9980c125f57e02794b986a24cb68101e5a5acd14786dc",
+                        "found": 82,
+                        "samples": 82
+                    },
+                    "maker": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 6135,
+                        "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                        "sampleTxHash": "0x000c2a146f302964423a936636e5338d351a3986d2534c91d31611c332633aa8",
+                        "found": 1,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "name": "amountLoaned",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "name": "amountRepayed",
+                "type": "uint256"
+            }
+        ],
+        "name": "FlashLoan",
+        "type": "event",
+        "@id": "0x0d7d75e01ab95780d3cd1c8ec0dd6c2ce19e3a20427eec8bf53283b6fb8e95f0",
+        "signature": "FlashLoan(address,address,uint256,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "what",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "data",
+                "type": "uint256"
+            }
+        ],
+        "name": "file",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x29ae8114",
+        "signature": "file(bytes32,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "i",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "address",
+                "name": "u",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "v",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "w",
+                "type": "address"
+            },
+            {
+                "internalType": "int256",
+                "name": "dink",
+                "type": "int256"
+            },
+            {
+                "internalType": "int256",
+                "name": "dart",
+                "type": "int256"
+            }
+        ],
+        "name": "grab",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x7bab3f40",
+        "signature": "grab(bytes32,address,address,address,int256,int256)"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tab",
+                "type": "uint256"
+            }
+        ],
+        "name": "fess",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x697efb78",
+        "signature": "fess(uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_pid",
+                "type": "uint256"
+            }
+        ],
+        "name": "vest",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x6a760b80",
+        "signature": "vest(uint256)"
+    },
+    {
+        "inputs": [],
+        "name": "create",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "voteDelegate",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xefc81a8c",
+        "signature": "create()"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "manager",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "cdp",
+                "type": "uint256"
+            },
+            {
+                "internalType": "int256",
+                "name": "dink",
+                "type": "int256"
+            },
+            {
+                "internalType": "int256",
+                "name": "dart",
+                "type": "int256"
+            }
+        ],
+        "name": "frob",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x96e8d72c",
+        "signature": "frob(address,uint256,int256,int256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_maxAmt",
+                "type": "uint256"
+            }
+        ],
+        "name": "vest",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xbb7c46f3",
+        "signature": "vest(uint256,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_usr",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_tot",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_bgn",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_tau",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_eta",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "_mgr",
+                "type": "address"
+            }
+        ],
+        "name": "create",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xdb64ff8f",
+        "signature": "create(address,uint256,uint256,uint256,uint256,address)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            }
+        ],
+        "name": "yank",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x26e027f1",
+        "signature": "yank(uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "ilk",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "what",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "address",
+                "name": "pip_",
+                "type": "address"
+            }
+        ],
+        "name": "file",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xebecb39d",
+        "signature": "file(bytes32,bytes32,address)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "quantity",
+                "type": "uint256"
+            }
+        ],
+        "name": "mint",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xa0712d68",
+        "signature": "mint(uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "_dst",
+                "type": "address"
+            }
+        ],
+        "name": "move",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xd8a8e03a",
+        "signature": "move(uint256,address)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_end",
+                "type": "uint256"
+            }
+        ],
+        "name": "yank",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x509aaa1d",
+        "signature": "yank(uint256,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "what",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "address",
+                "name": "data",
+                "type": "address"
+            }
+        ],
+        "name": "file",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xd4e8be83",
+        "signature": "file(bytes32,address)"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "manager",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "cdp",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "dst",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "rad",
+                "type": "uint256"
+            }
+        ],
+        "name": "move",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x25cf37d0",
+        "signature": "move(address,uint256,address,uint256)"
+    }
+]

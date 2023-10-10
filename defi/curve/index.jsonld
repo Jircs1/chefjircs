@@ -1,160 +1,978 @@
-{
-  "@context": {
-    "@vocab": "http://example.com/ethereum-ontology/",
-    "curve": "http://caladandao.org/curve/",
-    "erc20": "http://caladandao.org/erc20/"
-  },
-  "@graph": [
+[
     {
-      "@id": "curve:tokenID",
-      "@type": "rdf:Class",
-      "rdfs:label": "Token ID",
-      "rdfs:comment": "Represents a unique ID associated with a token in the Curve system."
-    },
-    {
-      "@id": "erc20:address",
-      "@type": "rdf:Class",
-      "rdfs:label": "ERC20 Token Address",
-      "rdfs:comment": "Represents the address of an ERC20 token on the Ethereum blockchain."
-    },
-    {
-      "@id": "curve:tokenSoldID",
-      "@type": ["rdf:Property", "curve:tokenID"],
-      "rdfs:label": "Token Sold ID",
-      "rdfs:comment": "Represents the ID of the token sold in the Curve system."
-    },
-    {
-      "@id": "curve:tokenBoughtID",
-      "@type": ["rdf:Property", "curve:tokenID"],
-      "rdfs:label": "Token Bought ID",
-      "rdfs:comment": "Represents the ID of the token bought in the Curve system."
-    },
-    {
-      "@id": "curve:tokenAddressMapping",
-      "@type": "rdf:Property",
-      "rdfs:label": "Token Address Mapping",
-      "rdfs:comment": "Represents a mapping between a token ID and an ERC20 Token Address.",
-      "javascript:abi": {
-        "@type": "rdf:Class",
-        "rdfs:label": "MappingFunction",
-        "javascript:function": {
-          "@type": "rdf:Property",
-          "rdfs:label": "getAddress",
-          "rdfs:comment": "A function to get the ERC20 Token Address associated with a token ID.",
-          "javascript:inputs": [
+        "anonymous": false,
+        "inputs": [
             {
-              "@type": "curve:tokenID",
-              "rdfs:label": "tokenId",
-              "rdfs:comment": "The token ID for which the ERC20 Token Address is required."
-            }
-          ],
-          "javascript:outputs": [
+                "indexed": true,
+                "internalType": "address",
+                "name": "buyer",
+                "type": "address"
+            },
             {
-              "@type": "erc20:address",
-              "rdfs:label": "tokenAddress",
-              "rdfs:comment": "The ERC20 Token Address associated with the given token ID."
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sold_id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokens_sold",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "bought_id",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokens_bought",
+                "type": "uint256"
             }
-          ]
-        }
-      }
-    },
-    {
-      "@id": "curve:curve_price_ratio",
-      "@type": "javascript:abi",
-      "rdfs:label": "Curve Price Ratio",
-      "rdfs:comment": "Represents a mapping function to calculate the price ratio of tokens sold to tokens bought.",
-      "javascript:function": {
-        "@type": "rdf:Property",
-        "rdfs:label": "calculatePriceRatio",
-        "rdfs:comment": "A function to calculate the price ratio of tokens sold to tokens bought.",
-        "javascript:inputs": [
-          {
-            "@type": "rdf:Property",
-            "rdfs:label": "tokensSold",
-            "rdfs:comment": "The number of tokens sold."
-          },
-          {
-            "@type": "rdf:Property",
-            "rdfs:label": "tokensBought",
-            "rdfs:comment": "The number of tokens bought."
-          }
         ],
-        "javascript:outputs": [
-          {
-            "@type": "xsd:float",
-            "rdfs:label": "price_ratio",
-            "rdfs:comment": "The calculated price ratio."
-          }
-        ]
-      }
+        "name": "TokenExchange",
+        "type": "event",
+        "@id": "0xb2e76ae99761dc136e598d4a629bb347eccb9532a5f8bbd72e18467c3c34cc98",
+        "signature": "TokenExchange(address,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "name": "TokenExchange",
+        "inputs": [
+            {
+                "name": "buyer",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "sold_id",
+                "type": "int128",
+                "indexed": false
+            },
+            {
+                "name": "tokens_sold",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "bought_id",
+                "type": "int128",
+                "indexed": false
+            },
+            {
+                "name": "tokens_bought",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x8b3e96f2b889fa771c53c981b40daf005f63f637f1869f707052d15a3dd97140",
+        "signature": "TokenExchange(address,int128,uint256,int128,uint256)"
+    },
+    {
+        "name": "TokenExchangeUnderlying",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "buyer",
+                "indexed": true
+            },
+            {
+                "type": "int128",
+                "name": "sold_id",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "tokens_sold",
+                "indexed": false
+            },
+            {
+                "type": "int128",
+                "name": "bought_id",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "tokens_bought",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xd013ca23e77a65003c2c659c5442c00c805371b7fc1ebd4c206c41d1536bd90b",
+        "signature": "TokenExchangeUnderlying(address,int128,uint256,int128,uint256)"
+    },
+    {
+        "name": "RemoveLiquidityOne",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "provider",
+                "indexed": true
+            },
+            {
+                "type": "uint256",
+                "name": "token_amount",
+                "indexed": false,
+                "@type": "erc20:tokenAmount",
+                "@token": "$0:token1",
+                "validationSuccess": true
+            },
+            {
+                "type": "uint256",
+                "name": "coin_amount",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x9e96dd3b997a2a257eec4df9bb6eaf626e206df5f543bd963682d143300be310",
+        "signature": "RemoveLiquidityOne(address,uint256,uint256)"
+    },
+    {
+        "name": "coins",
+        "outputs": [
+            {
+                "type": "address",
+                "name": ""
+            }
+        ],
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "arg0"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "gas": 2280,
+        "@id": "0xc6610657",
+        "signature": "coins(uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[2]",
+                "indexed": false
+            },
+            {
+                "name": "fees",
+                "type": "uint256[2]",
+                "indexed": false
+            },
+            {
+                "name": "invariant",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x26f55a85081d24974e85c6c00045d0f0453991e95873f52bff0d21af4079a768",
+        "signature": "AddLiquidity(address,uint256[2],uint256[2],uint256,uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "provider",
+                "indexed": true
+            },
+            {
+                "type": "uint256[3]",
+                "name": "token_amounts",
+                "indexed": false
+            },
+            {
+                "type": "uint256[3]",
+                "name": "fees",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "invariant",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "token_supply",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x423f6495a08fc652425cf4ed0d1f9e37e571d9b9529b1c1c23cce780b2e7df0d",
+        "signature": "AddLiquidity(address,uint256[3],uint256[3],uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "provider",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "token_amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "coin_amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "RemoveLiquidityOne",
+        "type": "event",
+        "@id": "0x5ad056f2e28a8cec232015406b843668c1e36cda598127ec3b8c59b8c72773a0",
+        "signature": "RemoveLiquidityOne(address,uint256,uint256,uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[2]",
+                "indexed": false
+            },
+            {
+                "name": "fee",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x540ab385f9b5d450a27404172caade516b3ba3f4be88239ac56a2ad1de2a1f5a",
+        "signature": "AddLiquidity(address,uint256[2],uint256,uint256)"
+    },
+    {
+        "name": "TokenExchange",
+        "inputs": [
+            {
+                "name": "buyer",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "sold_id",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "tokens_sold",
+                "type": "uint256",
+                "indexed": false,
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "name": "bought_id",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "tokens_bought",
+                "type": "uint256",
+                "indexed": false,
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "name": "fee",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "packed_price_scale",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x143f1f8e861fbdeddd5b46e844b7d3ac7b86a122f36e8c463859ee6811b1f29c",
+        "signature": "TokenExchange(address,uint256,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "name": "RemoveLiquidity",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "provider",
+                "indexed": true
+            },
+            {
+                "type": "uint256[2]",
+                "name": "token_amounts",
+                "indexed": false
+            },
+            {
+                "type": "uint256[2]",
+                "name": "fees",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "token_supply",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x7c363854ccf79623411f8995b362bce5eddff18c927edc6f5dbbb5e05819a82c",
+        "signature": "RemoveLiquidity(address,uint256[2],uint256[2],uint256)"
+    },
+    {
+        "name": "RemoveLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[2]",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xdd3c0336a16f1b64f172b7bb0dad5b2b3c7c76f91e8c4aafd6aae60dce800153",
+        "signature": "RemoveLiquidity(address,uint256[2],uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[3]",
+                "indexed": false
+            },
+            {
+                "name": "fee",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x96b486485420b963edd3fdec0b0195730035600feb7de6f544383d7950fa97ee",
+        "signature": "AddLiquidity(address,uint256[3],uint256,uint256)"
+    },
+    {
+        "name": "TokenExchange",
+        "inputs": [
+            {
+                "name": "buyer",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "receiver",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "pool",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_sold",
+                "type": "address",
+                "indexed": false
+            },
+            {
+                "name": "token_bought",
+                "type": "address",
+                "indexed": false
+            },
+            {
+                "name": "amount_sold",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "amount_bought",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xbd3eb7bcfdd1721a4eb4f00d0df3ed91bd6f17222f82b2d7bce519d8cab3fe46",
+        "signature": "TokenExchange(address,address,address,address,address,uint256,uint256)"
+    },
+    {
+        "name": "RemoveLiquidity",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "provider",
+                "indexed": true
+            },
+            {
+                "type": "uint256[3]",
+                "name": "token_amounts",
+                "indexed": false
+            },
+            {
+                "type": "uint256[3]",
+                "name": "fees",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "token_supply",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xa49d4cf02656aebf8c771f5a8585638a2a15ee6c97cf7205d4208ed7c1df252d",
+        "signature": "RemoveLiquidity(address,uint256[3],uint256[3],uint256)"
+    },
+    {
+        "name": "RemoveLiquidityImbalance",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[4]",
+                "indexed": false
+            },
+            {
+                "name": "fees",
+                "type": "uint256[4]",
+                "indexed": false
+            },
+            {
+                "name": "invariant",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xb964b72f73f5ef5bf0fdc559b2fab9a7b12a39e47817a547f1f0aee47febd602",
+        "signature": "RemoveLiquidityImbalance(address,uint256[4],uint256[4],uint256,uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[4]",
+                "indexed": false
+            },
+            {
+                "name": "fees",
+                "type": "uint256[4]",
+                "indexed": false
+            },
+            {
+                "name": "invariant",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x3f1915775e0c9a38a57a7bb7f1f9005f486fb904e1f84aa215364d567319a58d",
+        "signature": "AddLiquidity(address,uint256[4],uint256[4],uint256,uint256)"
+    },
+    {
+        "name": "AddLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[3]",
+                "indexed": false
+            },
+            {
+                "name": "fee",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "packed_price_scale",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xe1b60455bd9e33720b547f60e4e0cfbf1252d0f2ee0147d53029945f39fe3c1a",
+        "signature": "AddLiquidity(address,uint256[3],uint256,uint256,uint256)"
+    },
+    {
+        "name": "RemoveLiquidityImbalance",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "provider",
+                "indexed": true
+            },
+            {
+                "type": "uint256[2]",
+                "name": "token_amounts",
+                "indexed": false
+            },
+            {
+                "type": "uint256[2]",
+                "name": "fees",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "invariant",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "token_supply",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x2b5508378d7e19e0d5fa338419034731416c4f5b219a10379956f764317fd47e",
+        "signature": "RemoveLiquidityImbalance(address,uint256[2],uint256[2],uint256,uint256)"
+    },
+    {
+        "name": "RemoveLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[3]",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xd6cc314a0b1e3b2579f8e64248e82434072e8271290eef8ad0886709304195f5",
+        "signature": "RemoveLiquidity(address,uint256[3],uint256)"
+    },
+    {
+        "name": "coins",
+        "outputs": [
+            {
+                "type": "address",
+                "name": "out"
+            }
+        ],
+        "inputs": [
+            {
+                "type": "int128",
+                "name": "arg0"
+            }
+        ],
+        "constant": true,
+        "payable": false,
+        "type": "function",
+        "gas": 2040,
+        "@id": "0x23746eb8",
+        "signature": "coins(int128)"
+    },
+    {
+        "name": "RemoveLiquidityImbalance",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "provider",
+                "indexed": true
+            },
+            {
+                "type": "uint256[3]",
+                "name": "token_amounts",
+                "indexed": false
+            },
+            {
+                "type": "uint256[3]",
+                "name": "fees",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "invariant",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "token_supply",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x173599dbf9c6ca6f7c3b590df07ae98a45d74ff54065505141e7de6c46a624c2",
+        "signature": "RemoveLiquidityImbalance(address,uint256[3],uint256[3],uint256,uint256)"
+    },
+    {
+        "name": "RemoveLiquidity",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amounts",
+                "type": "uint256[4]",
+                "indexed": false
+            },
+            {
+                "name": "fees",
+                "type": "uint256[4]",
+                "indexed": false
+            },
+            {
+                "name": "token_supply",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x9878ca375e106f2a43c3b599fc624568131c4c9a4ba66a14563715763be9d59d",
+        "signature": "RemoveLiquidity(address,uint256[4],uint256[4],uint256)"
+    },
+    {
+        "name": "RemoveLiquidityOne",
+        "inputs": [
+            {
+                "name": "provider",
+                "type": "address",
+                "indexed": true
+            },
+            {
+                "name": "token_amount",
+                "type": "uint256",
+                "indexed": false,
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "name": "coin_index",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "coin_amount",
+                "type": "uint256",
+                "indexed": false,
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "name": "approx_fee",
+                "type": "uint256",
+                "indexed": false
+            },
+            {
+                "name": "packed_price_scale",
+                "type": "uint256",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0xe200e24d4a4c7cd367dd9befe394dc8a14e6d58c88ff5e2f512d65a9e0aa9c5c",
+        "signature": "RemoveLiquidityOne(address,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "deploy_plain_pool",
+        "inputs": [
+            {
+                "name": "_name",
+                "type": "string"
+            },
+            {
+                "name": "_symbol",
+                "type": "string"
+            },
+            {
+                "name": "_coins",
+                "type": "address[4]"
+            },
+            {
+                "name": "_A",
+                "type": "uint256"
+            },
+            {
+                "name": "_fee",
+                "type": "uint256"
+            },
+            {
+                "name": "_asset_type",
+                "type": "uint256"
+            },
+            {
+                "name": "_implementation_idx",
+                "type": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "@id": "0x52f2db69",
+        "signature": "deploy_plain_pool(string,string,address[4],uint256,uint256,uint256,uint256)"
+    },
+    {
+        "name": "MetaPoolDeployed",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "coin",
+                "indexed": false
+            },
+            {
+                "type": "address",
+                "name": "base_pool",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "A",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "fee",
+                "indexed": false
+            },
+            {
+                "type": "address",
+                "name": "deployer",
+                "indexed": false
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x01f31cd2abdeb4e5e10ba500f2db0f937d9e8c735ab04681925441b4ea37eda5",
+        "signature": "MetaPoolDeployed(address,address,uint256,uint256,address)"
+    },
+    {
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "deploy_plain_pool",
+        "inputs": [
+            {
+                "name": "_name",
+                "type": "string"
+            },
+            {
+                "name": "_symbol",
+                "type": "string"
+            },
+            {
+                "name": "_coins",
+                "type": "address[4]"
+            },
+            {
+                "name": "_A",
+                "type": "uint256"
+            },
+            {
+                "name": "_fee",
+                "type": "uint256"
+            },
+            {
+                "name": "_asset_type",
+                "type": "uint256"
+            },
+            {
+                "name": "_implementation_idx",
+                "type": "uint256"
+            },
+            {
+                "name": "_ma_exp_time",
+                "type": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "@id": "0xd4b9e214",
+        "signature": "deploy_plain_pool(string,string,address[4],uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "deploy_plain_pool",
+        "inputs": [
+            {
+                "name": "_name",
+                "type": "string"
+            },
+            {
+                "name": "_symbol",
+                "type": "string"
+            },
+            {
+                "name": "_coins",
+                "type": "address[4]"
+            },
+            {
+                "name": "_A",
+                "type": "uint256"
+            },
+            {
+                "name": "_fee",
+                "type": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "@id": "0xcd419bb5",
+        "signature": "deploy_plain_pool(string,string,address[4],uint256,uint256)"
+    },
+    {
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "deploy_plain_pool",
+        "inputs": [
+            {
+                "name": "_name",
+                "type": "string"
+            },
+            {
+                "name": "_symbol",
+                "type": "string"
+            },
+            {
+                "name": "_coins",
+                "type": "address[4]"
+            },
+            {
+                "name": "_A",
+                "type": "uint256"
+            },
+            {
+                "name": "_fee",
+                "type": "uint256"
+            },
+            {
+                "name": "_asset_type",
+                "type": "uint256"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "@id": "0x5c16487b",
+        "signature": "deploy_plain_pool(string,string,address[4],uint256,uint256,uint256)"
     }
-  ]
-}
-
-
-{
-  "@context": {
-    "@vocab": "http://example.com/ethereum-ontology/",
-    "eth": "http://caladandao.org/ethereum/",
-    "web3": "http://caladandao.org/web3-semantics/",
-    "dex": "http://caladandao.org/dex/",
-    "curve": "http://caladandao.org/curve/",
-    "schema": "https://schema.org/"
-  },
-  "@type": "eth:Event",
-  "eth:anonymous": false,
-  "eth:inputs": [
-    {
-      "@type": "dex:Taker",
-      "eth:internalType": "address",
-      "eth:name": "buyer",
-      "eth:type": "address",
-      "web3:web3Semantics": "web3.eth.sender",
-      "schema:label": "Buyer"
-    },
-    {
-      "@type": "curve:tokenSoldID",
-      "eth:internalType": "uint256",
-      "eth:name": "soldId",
-      "eth:type": "uint256",
-      "web3:web3Semantics": "web3.eth.dex.curve.tokenSoldID",
-      "schema:label": "Sold ID"
-    },
-    {
-      "@type": "schema:MonetaryAmount",
-      "eth:internalType": "uint256",
-      "eth:name": "tokensSold",
-      "eth:type": "uint256",
-      "web3:web3Semantics": "web3.eth.dex.curve.tokenAmountSold",
-      "schema:label": "Tokens Sold"
-    },
-    {
-      "@type": "curve:tokenBoughtID",
-      "eth:internalType": "uint256",
-      "eth:name": "boughtId",
-      "eth:type": "uint256",
-      "web3:web3Semantics": "web3.eth.dex.curve.tokenBoughtID",
-      "schema:label": "Bought ID"
-    },
-    {
-      "@type": "schema:MonetaryAmount",
-      "eth:internalType": "uint256",
-      "eth:name": "tokensBought",
-      "eth:type": "uint256",
-      "web3:web3Semantics": "web3.eth.tokenAmountBought",
-      "schema:label": "Tokens Bought"
-    }
-  ],
-  "eth:name": "TokenExchange",
-  "eth:type": "event",
-  "web3semantics": {
-    "web3.eth.dex.swap.curve_coins_lookup": {
-      "soldId": ["tokensSold"],
-      "boughtId": ["tokensBought"]
-    },
-    "web3.eth.dex.swap.curve_price_ratio": {
-      "soldId": ["tokensSold"],
-      "boughtId": ["tokensBought"]
-    }
-  }
-}
+]

@@ -1,0 +1,269 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "vectorId",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bool",
+                "name": "onChainVector",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numMinted",
+                "type": "uint256"
+            }
+        ],
+        "name": "NumTokenMint",
+        "type": "event",
+        "@id": "0x981414aed4973b05aa301314dc13a5a4077f24490497b98bc270852581c1c578",
+        "signature": "NumTokenMint(bytes32,address,bool,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "paymentRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "vectorId",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountToCreator",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "percentageBPSOfTotal",
+                "type": "uint32"
+            }
+        ],
+        "name": "NativeGasTokenPayment",
+        "type": "event",
+        "@id": "0x9363885e28e7ba67b096932f9f00dff44742731d6cb4fa26ccd4424e78e41e13",
+        "signature": "NativeGasTokenPayment(address,bytes32,uint256,uint32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "blueprintID",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "artist",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "purchaser",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "tokenId",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "newCapacity",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "seedPrefix",
+                "type": "bytes32"
+            }
+        ],
+        "name": "BlueprintMinted",
+        "type": "event",
+        "@id": "0xbe53bef0e08aa61aa51091a6fa77b4a68c6da179f64097fa01f92beda583eecc",
+        "signature": "BlueprintMinted(uint256,address,address,uint128,uint64,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "saleId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "purchaser",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "numPurchases",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "tokenIds",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "SimpleExpansionPackPurchased",
+        "type": "event",
+        "@id": "0x575579fb1f0ad1ed7cc76bf03eb7ce3af535a09d132fd5836c09d4d913c0115f",
+        "signature": "SimpleExpansionPackPurchased(uint256,address,uint32,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "saleId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "purchaser",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "quantity",
+                "type": "uint32"
+            }
+        ],
+        "name": "DBPPurchased",
+        "type": "event",
+        "@id": "0x659ad67f9507d8fdc7b7c81d156a69d01306685cdc3838bacd84481c49e67815",
+        "signature": "DBPPurchased(uint256,address,uint32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "purchaseId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "saleId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "purchaseQuantity",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "requestingPurchaser",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "nftRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isAllocatedForFree",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "prefixHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "gasSurcharge",
+                "type": "uint256"
+            }
+        ],
+        "name": "RandomExpansionPackPurchaseRequest",
+        "type": "event",
+        "@id": "0xa739b5cf9a081e182e40a9300dbd1768c7abb9fbc126ad75b8c75b9f12dc5dda",
+        "signature": "RandomExpansionPackPurchaseRequest(uint256,uint256,uint32,address,address,bool,bytes32,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "intentsFile",
+                "type": "string"
+            }
+        ],
+        "name": "CollatedIntents",
+        "type": "event",
+        "@id": "0x0e6189959ce7798443f3e395537a54968d66774b7a08bea790469032295cd90c",
+        "signature": "CollatedIntents(string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "deployer",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+            }
+        ],
+        "name": "GenerativeSeriesDeployed",
+        "type": "event",
+        "@id": "0x315017f18deeaa9ad60efd0ae64aca323068cccffeec24c8a932e9b1ca0cb011",
+        "signature": "GenerativeSeriesDeployed(address,address)"
+    }
+]

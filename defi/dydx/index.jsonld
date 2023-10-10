@@ -1,0 +1,309 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "locker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "lockTime",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockType",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+            }
+        ],
+        "name": "LogDeposit",
+        "type": "event",
+        "@id": "0x5b5dbc6c64043a15d3fe6943a6e443a826b78755edc257b2ec890c022225dbcf",
+        "signature": "LogDeposit(address,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "dydx:depositorEthKey",
+                "name": "depositorEthKey",
+                "type": "address",
+                "features": {
+                    "dydx": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 107846,
+                        "sampleAddress": "0x8e8bd01b5a9eb272cc3892a2e40e64a716aa2a40",
+                        "sampleTxHash": "0x000082c415d1c1adeccd77f0e0abfee33e1b52a9b11f7a662e1493f24e150966",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "deversifi": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1480,
+                        "sampleAddress": "0xed9d63a96c27f87b07115b56b2e3572827f21646",
+                        "sampleTxHash": "0x003a6287514910d3ae614106a059127542490b3cf854045fb493f788ae5faad6",
+                        "found": 1,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "dydx:starkKey",
+                "name": "starkKey",
+                "type": "uint256"
+            },
+            {
+                "@type": "dydx:vaultId",
+                "name": "vaultId",
+                "type": "uint256"
+            },
+            {
+                "@type": "dydx:assetType",
+                "name": "assetType",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": null,
+                "name": "nonQuantizedAmount",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "quantizedAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "LogDeposit",
+        "type": "event",
+        "@id": "0x06724742ccc8c330a39a641ef02a0b419bd09248360680bb38159b0a8c2635d6",
+        "signature": "LogDeposit(address,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "LogDeposit",
+        "type": "event",
+        "@id": "0x9dbb0e7dda3e09710ce75b801addc87cf9d9c6c581641b3275fca409ad086c62",
+        "signature": "LogDeposit(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "voter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "support",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "votingPower",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "VoteEmitted",
+        "type": "event",
+        "@id": "0x0c611e7b6ae0de26f4772260e1bbdb5f58cbb7c275fe2de14671968d29add8d6",
+        "signature": "VoteEmitted(uint256,address,bool,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_id",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_executor",
+                "type": "address"
+            }
+        ],
+        "name": "ProposalExecuted",
+        "type": "event",
+        "@id": "0x9c85b616f29fca57a17eafe71cf9ff82ffef41766e2cf01ea7f8f7878dd3ec24",
+        "signature": "ProposalExecuted(uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "contract IExecutorWithTimelock",
+                "name": "executor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "targets",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "values",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "string[]",
+                "name": "signatures",
+                "type": "string[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes[]",
+                "name": "calldatas",
+                "type": "bytes[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool[]",
+                "name": "withDelegatecalls",
+                "type": "bool[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startBlock",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "endBlock",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "strategy",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "ipfsHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "ProposalCreated",
+        "type": "event",
+        "@id": "0xd272d67d2c8c66de43c1d2515abb064978a5020c173e15903b6a2ab3bf7440ec",
+        "signature": "ProposalCreated(uint256,address,address,address[],uint256[],string[],bytes[],bool[],uint256,uint256,address,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "proposalId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "executionTime",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "initiatorQueueing",
+                "type": "address"
+            }
+        ],
+        "name": "ProposalQueued",
+        "type": "event",
+        "@id": "0x11a0b38e70585e4b09b794bd1d9f9b1a51a802eb8ee2101eeee178d0349e73fe",
+        "signature": "ProposalQueued(uint256,uint256,address)"
+    }
+]

@@ -1,0 +1,181 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "editionId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "quantity",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            }
+        ],
+        "name": "EditionMinted",
+        "type": "event",
+        "@id": "0x2974dcc018eac8a0cea38a8688ad4a3cc7686e4edd75be71818e23d62ef2265f",
+        "signature": "EditionMinted(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "address",
+                        "name": "target",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "enum IDiamondWritableInternal.FacetCutAction",
+                        "name": "action",
+                        "type": "uint8"
+                    },
+                    {
+                        "internalType": "bytes4[]",
+                        "name": "selectors",
+                        "type": "bytes4[]"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct IDiamondWritableInternal.FacetCut[]",
+                "name": "facetCuts",
+                "type": "tuple[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+            }
+        ],
+        "name": "DiamondCut",
+        "type": "event",
+        "@id": "0x8faa70878671ccd212d20771b795c50af8fd3ff6cf27f4bde57e5d4de0aeb673",
+        "signature": "DiamondCut((address,uint8,bytes4[])[],address,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "diamondAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "collectionId",
+                "type": "string"
+            }
+        ],
+        "name": "DiamondCreated",
+        "type": "event",
+        "@id": "0xc0d721c6df448044cc0d6d8e96fd439aca86c1444d96de57611262f629687dbd",
+        "signature": "DiamondCreated(address,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "revenueSplitAddress",
+                "type": "address"
+            }
+        ],
+        "name": "RevenueSplitCreated",
+        "type": "event",
+        "@id": "0x88a9be256896e1e711ca9fc9a87c1d32078afd3ba0fa26160d93ee0c1e8d7735",
+        "signature": "RevenueSplitCreated(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_editionId",
+                "type": "uint256"
+            }
+        ],
+        "name": "EditionCreated",
+        "type": "event",
+        "@id": "0x962bb64b059ad60d491bef43125921210925c52b11ff1cc093409113c8c5fe37",
+        "signature": "EditionCreated(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "referral",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "feeRate",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "feeAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "ReferralSale",
+        "type": "event",
+        "@id": "0x2029f20f02f00eda15ef9da1abb8ad3191f51dc4fcc5c8bb30527550e771cfb7",
+        "signature": "ReferralSale(address,uint256,uint256)"
+    }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "srcAddress",
+                "type": "bytes"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "dstAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "nonce",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "payloadHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "PacketReceived",
+        "type": "event",
+        "@id": "0x2bd2d8a84b748439fd50d79a49502b4eb5faa25b864da6a9ab5c150704be9a4d",
+        "signature": "PacketReceived(uint16,bytes,address,uint64,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "oracle",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "lookupHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "blockData",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "confirmations",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "HashReceived",
+        "type": "event",
+        "@id": "0x74bbc026808dcba59692d6a8bb20596849ca718e10e2432c6cdf48af865bc5d9",
+        "signature": "HashReceived(uint16,address,bytes32,bytes32,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "payload",
+                "type": "bytes"
+            }
+        ],
+        "name": "Packet",
+        "type": "event",
+        "@id": "0xe9bded5f24a4168e4f3bf44e00298c993b22376aad8c58c7dda9718a54cbea82",
+        "signature": "Packet(bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "adapterParams",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "outboundProofType",
+                "type": "uint16"
+            }
+        ],
+        "name": "RelayerParams",
+        "type": "event",
+        "@id": "0xb0c632f55f1e1b3b2c3d82f41ee4716bb4c00f0f5d84cdafc141581bb8757a4f",
+        "signature": "RelayerParams(bytes,uint16)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "to",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountLD",
+                "type": "uint256"
+            }
+        ],
+        "name": "Send",
+        "type": "event",
+        "@id": "0xbe6ff12fec5087498d44bc85f1a83235a630944a1e2d5a7938afe810370a5867",
+        "signature": "Send(address,address,bytes32,uint256)"
+    }
+]

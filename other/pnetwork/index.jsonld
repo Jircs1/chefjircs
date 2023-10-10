@@ -1,0 +1,213 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            }
+        ],
+        "name": "VaultTransfer",
+        "type": "event",
+        "@id": "0x239e7f6cdac8fb35a788a46b431b54da87de90b82448a2c294be5e92a6e579af",
+        "signature": "VaultTransfer(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "vault",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Unstaked",
+        "type": "event",
+        "@id": "0x0f5bb82176feb1b5e747e28471aa92156a04d9f3ab9f45f28e2d704232b93f75",
+        "signature": "Unstaked(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "voteId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "name": "voter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "supports",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "name": "stake",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "CastVote",
+        "type": "event",
+        "@id": "0xb34ee265e3d4f5ec4e8b52d59b2a9be8fceca2f274ebc080d8fba797fea9391f",
+        "signature": "CastVote(uint256,address,bool,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "transactionId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "name": "incoming",
+                "type": "bool"
+            },
+            {
+                "indexed": true,
+                "name": "entity",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "name": "reference",
+                "type": "string"
+            }
+        ],
+        "name": "NewTransaction",
+        "type": "event",
+        "@id": "0x5b2c6f4cb53711ae51d600df17fa68f8239b4a704f766c99642f667d1d7bd40e",
+        "signature": "NewTransaction(uint256,bool,address,uint256,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "periodId",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "name": "periodStarts",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "name": "periodEnds",
+                "type": "uint64"
+            }
+        ],
+        "name": "NewPeriod",
+        "type": "event",
+        "@id": "0xe183df4530c4b573af76d47f020d4b86e418cef40ed4c9ce924b563e791b832c",
+        "signature": "NewPeriod(uint64,uint64,uint64)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "voteId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "metadata",
+                "type": "string"
+            }
+        ],
+        "name": "StartVote",
+        "type": "event",
+        "@id": "0x4d72fe0577a3a3f7da968d7b892779dde102519c25527b29cf7054f245c791b9",
+        "signature": "StartVote(uint256,address,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "voteId",
+                "type": "uint256"
+            }
+        ],
+        "name": "ExecuteVote",
+        "type": "event",
+        "@id": "0xbf8e2b108bb7c980e08903a8a46527699d5e84905a082d56dacb4150725c8cab",
+        "signature": "ExecuteVote(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "executor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "script",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "name": "input",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "name": "returnData",
+                "type": "bytes"
+            }
+        ],
+        "name": "ScriptResult",
+        "type": "event",
+        "@id": "0x5229a5dba83a54ae8cb5b51bdd6de9474cacbe9dd332f5185f3a4f4f2e3f4ad9",
+        "signature": "ScriptResult(address,bytes,bytes,bytes)"
+    }
+]

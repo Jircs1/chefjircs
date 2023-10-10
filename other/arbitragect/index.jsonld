@@ -1,0 +1,111 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "erc20:token",
+                "name": "_fromToken",
+                "type": "address",
+                "features": {
+                    "bancor": {
+                        "is_erc20": 0.97,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 129127,
+                        "sampleAddress": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
+                        "sampleTxHash": "0x000003d5b6ebf765e46f69afe24fe727e451291e3b46d2bcc673b7bafaffb4fd",
+                        "found": 100,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:token",
+                "name": "_toToken",
+                "type": "address",
+                "features": {
+                    "bancor": {
+                        "is_erc20": 0.97,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 129213,
+                        "sampleAddress": "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
+                        "sampleTxHash": "0x000003d5b6ebf765e46f69afe24fe727e451291e3b46d2bcc673b7bafaffb4fd",
+                        "found": 100,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "dex:trader",
+                "name": "_trader",
+                "type": "address",
+                "features": {
+                    "bancor": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 126308,
+                        "sampleAddress": "0x0eae044f00b0af300500f090ea00027097d03000",
+                        "sampleTxHash": "0x0000588266f24511d6c0e780c8f1d96484b44f8b76214fa924367c46d2ce104a",
+                        "found": 80,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "_amount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "name": "_return",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": null,
+                "name": "_conversionFee",
+                "type": "int256"
+            }
+        ],
+        "name": "Conversion",
+        "type": "event",
+        "@id": "0x276856b36cbc45526a0ba64f44611557a2a8b68662c5388e9fe6d72e86e1c8cb",
+        "signature": "Conversion(address,address,address,uint256,uint256,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "_connectorToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "_tokenSupply",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "_connectorBalance",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "_connectorWeight",
+                "type": "uint32"
+            }
+        ],
+        "name": "PriceDataUpdate",
+        "type": "event",
+        "@id": "0x8a6a7f53b3c8fa1dc4b83e3f1be668c1b251ff8d44cdcb83eb3acec3fec6a788",
+        "signature": "PriceDataUpdate(address,uint256,uint256,uint32)"
+    }
+]

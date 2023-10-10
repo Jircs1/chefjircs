@@ -1,0 +1,242 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "minter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "referer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numTokens",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lastTokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "Minted",
+        "type": "event",
+        "@id": "0x03f17d66ad3bf18e9412eb06582908831508cdb9b8da9cddb1431f645a5b8632",
+        "signature": "Minted(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "nextTokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "quantity",
+                "type": "uint256"
+            }
+        ],
+        "name": "BatchMinted",
+        "type": "event",
+        "@id": "0x59f9fb6d992d2aee0ed338bb4c504a17fd3f67ae91a3135bc2ef947e308c41b2",
+        "signature": "BatchMinted(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "_srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes",
+                "name": "_srcAddress",
+                "type": "bytes"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_toAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "_tokenIds",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "ReceiveFromChain",
+        "type": "event",
+        "@id": "0x5b821db8a46f8ecbe1941ba2f51cfeea9643268b56631f70d45e2a745d990265",
+        "signature": "ReceiveFromChain(uint16,bytes,address,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "collection",
+                "type": "address"
+            }
+        ],
+        "name": "Created",
+        "type": "event",
+        "@id": "0x1449abf21e49fd025f33495e77f7b1461caefdd3d4bb646424a3f445c4576a5b",
+        "signature": "Created(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "_dstChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes",
+                "name": "_toAddress",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "_tokenIds",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "SendToChain",
+        "type": "event",
+        "@id": "0xe1b87c47fdeb4f9cbadbca9df3af7aba453bb6e501075d0440d88125b711522a",
+        "signature": "SendToChain(uint16,address,bytes,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "_remoteChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "_remoteAddress",
+                "type": "bytes"
+            }
+        ],
+        "name": "SetTrustedRemoteAddress",
+        "type": "event",
+        "@id": "0x8c0400cfe2d1199b1a725c78960bcc2a344d869b80590d0f2bd005db15a572ce",
+        "signature": "SetTrustedRemoteAddress(uint16,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "_srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes",
+                "name": "_srcAddress",
+                "type": "bytes"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_toAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "_nonce",
+                "type": "uint64"
+            }
+        ],
+        "name": "ReceiveFromChain",
+        "type": "event",
+        "@id": "0x64e10c37f404d128982dce114f5d233c14c5c7f6d8db93099e3d99dacb9e27ba",
+        "signature": "ReceiveFromChain(uint16,bytes,address,uint256,uint64)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "_dstChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes",
+                "name": "_toAddress",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "_nonce",
+                "type": "uint64"
+            }
+        ],
+        "name": "SendToChain",
+        "type": "event",
+        "@id": "0x024797cc77ce15dc717112d54fb1df125fdfd8c81344fb046c5e074427ce1543",
+        "signature": "SendToChain(address,uint16,bytes,uint256,uint64)"
+    }
+]

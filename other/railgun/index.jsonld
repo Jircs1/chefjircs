@@ -1,0 +1,366 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "treeNumber",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32[]",
+                "name": "nullifier",
+                "type": "bytes32[]"
+            }
+        ],
+        "name": "Nullified",
+        "type": "event",
+        "@id": "0x781745c57906dc2f175fec80a9c691744c91c48a34a83672c41c2604774eb11f",
+        "signature": "Nullified(uint16,bytes32[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "treeNumber",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startPosition",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32[]",
+                "name": "hash",
+                "type": "bytes32[]"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "bytes32[4]",
+                        "name": "ciphertext",
+                        "type": "bytes32[4]"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "blindedSenderViewingKey",
+                        "type": "bytes32"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "blindedReceiverViewingKey",
+                        "type": "bytes32"
+                    },
+                    {
+                        "internalType": "bytes",
+                        "name": "annotationData",
+                        "type": "bytes"
+                    },
+                    {
+                        "internalType": "bytes",
+                        "name": "memo",
+                        "type": "bytes"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct CommitmentCiphertext[]",
+                "name": "ciphertext",
+                "type": "tuple[]"
+            }
+        ],
+        "name": "Transact",
+        "type": "event",
+        "@id": "0x56a618cda1e34057b7f849a5792f6c8587a2dbe11c83d0254e72cb3daffda7d1",
+        "signature": "Transact(uint256,uint256,bytes32[],(bytes32[4],bytes32,bytes32,bytes,bytes)[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "enum TokenType",
+                        "name": "tokenType",
+                        "type": "uint8"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "tokenAddress",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "tokenSubID",
+                        "type": "uint256"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct TokenData",
+                "name": "token",
+                "type": "tuple"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "fee",
+                "type": "uint256"
+            }
+        ],
+        "name": "Unshield",
+        "type": "event",
+        "@id": "0xd93cf895c7d5b2cd7dc7a098b678b3089f37d91f48d9b83a0800a91cbdf05284",
+        "signature": "Unshield(address,(uint8,address,uint256),uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "treeNumber",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startPosition",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "bytes32",
+                        "name": "npk",
+                        "type": "bytes32"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "enum TokenType",
+                                "name": "tokenType",
+                                "type": "uint8"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "tokenAddress",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenSubID",
+                                "type": "uint256"
+                            }
+                        ],
+                        "internalType": "struct TokenData",
+                        "name": "token",
+                        "type": "tuple"
+                    },
+                    {
+                        "internalType": "uint120",
+                        "name": "value",
+                        "type": "uint120"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct CommitmentPreimage[]",
+                "name": "commitments",
+                "type": "tuple[]"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "bytes32[3]",
+                        "name": "encryptedBundle",
+                        "type": "bytes32[3]"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "shieldKey",
+                        "type": "bytes32"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct ShieldCiphertext[]",
+                "name": "shieldCiphertext",
+                "type": "tuple[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "fees",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "Shield",
+        "type": "event",
+        "@id": "0x3a5b9dc26075a3801a6ddccf95fec485bb7500a91b44cec1add984c21ee6db3b",
+        "signature": "Shield(uint256,uint256,(bytes32,(uint8,address,uint256),uint120)[],(bytes32[3],bytes32)[],uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract IERC20",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startInterval",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "endInterval",
+                "type": "uint256"
+            }
+        ],
+        "name": "Claim",
+        "type": "event",
+        "@id": "0x9137e112a187039f8a3291c0a66fce97153d25ec42036e82360d5d0106d19a6e",
+        "signature": "Claim(address,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "share",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Stake",
+        "type": "event",
+        "@id": "0x5af417134f72a9d41143ace85b0a26dce6f550f894f2cbc1eeee8810603d91b6",
+        "signature": "Stake(address,uint256,uint256)"
+    },
+    {
+        "name": "Claim",
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "receiver",
+                "type": "address",
+                "features": {
+                    "linq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1274,
+                        "sampleAddress": "0x77f50f963d55c7c7dc2b5a44767299c02af76a66",
+                        "sampleTxHash": "0x0c4669d271719e50efcc89b29caefdc92591192e0a573a23c234584bee63dce6",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "ooki": {
+                        "is_erc20": 0.571429,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.285714,
+                        "numLogs": 526,
+                        "sampleAddress": "0x8f7cfa2c864c0ba87b678804803946f82cb1e37c",
+                        "sampleTxHash": "0x007930cbf4fd741eb1191ff8693b73888b0c51e359a001f83c7094c62f13c8df",
+                        "found": 7,
+                        "samples": 90
+                    },
+                    "ethlinq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 312,
+                        "sampleAddress": "0x122720e148118e05eb023f97f35c08336f874da0",
+                        "sampleTxHash": "0x00f50267811c27f868002541781109b974437d4adf044beb1fa69e4f189d4568",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "asap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 263,
+                        "sampleAddress": "0x34c4e9eb2e0cfc05818a98fe9762380ff6c97fa1",
+                        "sampleTxHash": "0x0250ed96f1a359948d9ebb9b9e835f7b2c0975b92bb0324e38f21bc44030d25e",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "hop": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 100,
+                        "sampleAddress": "0x8725f93a02e641add9232f9d1e580f0bd3cf0771",
+                        "sampleTxHash": "0x8801a29cc9eb8f8888c2d323e9c996ea587c9ad252e70fe64d6fc12819cb347a",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "anonymous": false,
+        "type": "event",
+        "@id": "0x47cee97cb7acd717b3c0aa1435d004cd5b3c8c57d70dbceb4e4458bbd60e39d4",
+        "signature": "Claim(address,uint256)"
+    }
+]

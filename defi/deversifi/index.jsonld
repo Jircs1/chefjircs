@@ -1,0 +1,198 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "dydx:depositorEthKey",
+                "name": "depositorEthKey",
+                "type": "address",
+                "features": {
+                    "dydx": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 107846,
+                        "sampleAddress": "0x8e8bd01b5a9eb272cc3892a2e40e64a716aa2a40",
+                        "sampleTxHash": "0x000082c415d1c1adeccd77f0e0abfee33e1b52a9b11f7a662e1493f24e150966",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "deversifi": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1480,
+                        "sampleAddress": "0xed9d63a96c27f87b07115b56b2e3572827f21646",
+                        "sampleTxHash": "0x003a6287514910d3ae614106a059127542490b3cf854045fb493f788ae5faad6",
+                        "found": 1,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "dydx:starkKey",
+                "name": "starkKey",
+                "type": "uint256"
+            },
+            {
+                "@type": "dydx:vaultId",
+                "name": "vaultId",
+                "type": "uint256"
+            },
+            {
+                "@type": "dydx:assetType",
+                "name": "assetType",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": null,
+                "name": "nonQuantizedAmount",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "quantizedAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "LogDeposit",
+        "type": "event",
+        "@id": "0x06724742ccc8c330a39a641ef02a0b419bd09248360680bb38159b0a8c2635d6",
+        "signature": "LogDeposit(address,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "starkKey",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "assetType",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "nonQuantizedAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "quantizedAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            }
+        ],
+        "name": "LogWithdrawalPerformed",
+        "type": "event",
+        "@id": "0xb7477a7b93b2addc5272bbd7ad0986ef1c0d0bd265f26c3dc4bbe42727c2ac0c",
+        "signature": "LogWithdrawalPerformed(uint256,uint256,uint256,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "stateTransitionFact",
+                "type": "bytes32"
+            }
+        ],
+        "name": "LogStateTransitionFact",
+        "type": "event",
+        "@id": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
+        "signature": "LogStateTransitionFact(bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "starkKey",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "assetType",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "nonQuantizedAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "quantizedAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "LogWithdrawalAllowed",
+        "type": "event",
+        "@id": "0x03c10a82c955f7bcd0c934147fb39cafca947a4294425b1751d884c8ac954287",
+        "signature": "LogWithdrawalAllowed(uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "sequenceNumber",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "batchId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "validiumVaultRoot",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rollupVaultRoot",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "orderRoot",
+                "type": "uint256"
+            }
+        ],
+        "name": "LogRootUpdate",
+        "type": "event",
+        "@id": "0x54fe7a67f8957a96919a0d1b81eeb25ea8c06f96ad528671da17a4a840040664",
+        "signature": "LogRootUpdate(uint256,uint256,uint256,uint256,uint256)"
+    }
+]

@@ -1,0 +1,344 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "edition",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint128",
+                "name": "mintId",
+                "type": "uint128"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "buyer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "fromTokenId",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "quantity",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "requiredEtherValue",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "platformFee",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "affiliateFee",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "affiliate",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "affiliated",
+                "type": "bool"
+            }
+        ],
+        "name": "Minted",
+        "type": "event",
+        "@id": "0x3d73a0206d94d61b7038abcd0eb766a5de22f9844b38a78449054d19a4f1b58a",
+        "signature": "Minted(address,uint128,address,uint32,uint32,uint128,uint128,uint128,address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "vestingId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Minted",
+        "type": "event",
+        "@id": "0x25b428dfde728ccfaddad7e29e4ac23c24ed7fd1a6e3e3f91894a9a073f5dfff",
+        "signature": "Minted(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "caller",
+                "type": "address"
+            }
+        ],
+        "name": "ETHWithdrawn",
+        "type": "event",
+        "@id": "0x134d6e96840903022b8e4b57aa0644e9eb6ca6fe65a25205b0857fe918c2bcc6",
+        "signature": "ETHWithdrawn(address,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "soundEdition",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "deployer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "initData",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "contracts",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes[]",
+                "name": "data",
+                "type": "bytes[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes[]",
+                "name": "results",
+                "type": "bytes[]"
+            }
+        ],
+        "name": "SoundEditionCreated",
+        "type": "event",
+        "@id": "0x405098db99342b699216d8150e930dbbf2f686f5a43485aed1e69219dafd4935",
+        "signature": "SoundEditionCreated(address,address,bytes,address[],bytes[],bytes[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "roles",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RolesUpdated",
+        "type": "event",
+        "@id": "0x715ad5ce61fc9595c7b415289d59cf203f23a94fa06f04af7e489a0a76e1fe26",
+        "signature": "RolesUpdated(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "edition_",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "name_",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "symbol_",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "metadataModule_",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "baseURI_",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "contractURI_",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "fundingRecipient_",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "royaltyBPS_",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "editionMaxMintableLower_",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "editionMaxMintableUpper_",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "editionCutoffTime_",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "flags_",
+                "type": "uint8"
+            }
+        ],
+        "name": "SoundEditionInitialized",
+        "type": "event",
+        "@id": "0x81fb8daf8a05fc760e25f1447b0ca819bcf138a168ec6c1aaa0bd62b170bf32a",
+        "signature": "SoundEditionInitialized(address,string,string,address,string,string,address,uint16,uint32,uint32,uint32,uint8)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sam_",
+                "type": "address"
+            }
+        ],
+        "name": "SAMSet",
+        "type": "event",
+        "@id": "0xf3df069390edc6f593bb15b58d186516e59e1c90b25a23f65a1f80ae2078c6df",
+        "signature": "SAMSet(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "baseURI",
+                "type": "string"
+            }
+        ],
+        "name": "BaseURISet",
+        "type": "event",
+        "@id": "0xf9c7803e94e0d3c02900d8a90893a6d5e90dd04d32a4cfe825520f82bf9f32f6",
+        "signature": "BaseURISet(string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "contractURI",
+                "type": "string"
+            }
+        ],
+        "name": "ContractURISet",
+        "type": "event",
+        "@id": "0xaf497693a87db12ca89131a31edbb3db4bb5702dfb284e8ae7427d185f09112d",
+        "signature": "ContractURISet(string)"
+    }
+]

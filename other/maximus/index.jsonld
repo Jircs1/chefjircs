@@ -1,0 +1,122 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "current_period",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "stakeID",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "is_initial",
+                "type": "bool"
+            }
+        ],
+        "name": "Stake",
+        "type": "event",
+        "@id": "0x9427353240d93cb4f15e429717c3e4e45b6f499959900935e731d6c0d2f11014",
+        "signature": "Stake(address,uint256,uint256,uint256,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "staking_period",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "stakeID",
+                "type": "uint256"
+            }
+        ],
+        "name": "ExtendStake",
+        "type": "event",
+        "@id": "0xa8066869490ef421f05bad45cd697329771b6cf22e60b0fbfebc1f6dbee85679",
+        "signature": "ExtendStake(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "staker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "staking_period",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "stakeID",
+                "type": "uint256"
+            }
+        ],
+        "name": "EarlyEndStake",
+        "type": "event",
+        "@id": "0xd024fb5309d60d56df8339015fd653666f4e9f5eec9985b62bdeb4c38be45623",
+        "signature": "EarlyEndStake(address,uint256,uint256,uint256)"
+    }
+]

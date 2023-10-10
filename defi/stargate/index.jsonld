@@ -1,0 +1,1141 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "chainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "srcPoolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountSD",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "idealBalance",
+                "type": "uint256"
+            }
+        ],
+        "name": "CreditChainPath",
+        "type": "event",
+        "@id": "0xdbdd25248751feb2f3b66721dfdd11662a68bc155af3771e661aabec92fba814",
+        "signature": "CreditChainPath(uint16,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountSD",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "protocolFee",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "dstFee",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "SwapRemote",
+        "type": "event",
+        "@id": "0xfb2b592367452f1c437675bed47f5e1e6c25188c17d7ba01a12eb030bc41ccef",
+        "signature": "SwapRemote(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "src",
+                "type": "address",
+                "features": {
+                    "stargate": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 443978,
+                        "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
+                        "sampleTxHash": "0x00000af4dce7e471dace87ad21133a76019fccecc7e085d77f1eff60e6abcea4",
+                        "found": 2,
+                        "samples": 2
+                    },
+                    "layerzero": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 436890,
+                        "sampleAddress": "0x28fc411f9e1c480ad312b3d9c60c22b965015c6b",
+                        "sampleTxHash": "0x00000af4dce7e471dace87ad21133a76019fccecc7e085d77f1eff60e6abcea4",
+                        "found": 2,
+                        "samples": 2
+                    }
+                }
+            },
+            {
+                "@type": "transfer:to",
+                "name": "dst",
+                "type": "address",
+                "features": {
+                    "stargate": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12721,
+                        "sampleAddress": "0xf314fa27066bdde92e6122059b103e8899d0a096",
+                        "sampleTxHash": "0x000bb62473dc53b3da3694541dccd3708c2cd9247d69e25060614e413f504e68",
+                        "found": 4,
+                        "samples": 100
+                    },
+                    "layerzero": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12681,
+                        "sampleAddress": "0xf314fa27066bdde92e6122059b103e8899d0a096",
+                        "sampleTxHash": "0x000bb62473dc53b3da3694541dccd3708c2cd9247d69e25060614e413f504e68",
+                        "found": 4,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "name": "wad",
+                "type": "uint256",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TransferNative",
+        "type": "event",
+        "@id": "0xb4a87134099d10c48345145381989042ab07dc53e6e62a6511fca55438562e26",
+        "signature": "TransferNative(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "dstChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "dstPoolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "credits",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "idealBalance",
+                "type": "uint256"
+            }
+        ],
+        "name": "SendCredits",
+        "type": "event",
+        "@id": "0x6939f93e3f21cf1362eb17155b740277de5687dae9a83a85909fd71da95944e7",
+        "signature": "SendCredits(uint16,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "msgType",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "nonce",
+                "type": "uint64"
+            }
+        ],
+        "name": "SendMsg",
+        "type": "event",
+        "@id": "0x8d3ee0df6a4b7e82a7f20a763f1c6826e6176323e655af64f32318827d2112d4",
+        "signature": "SendMsg(uint8,uint64)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "chainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "dstPoolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountSD",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "eqReward",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "eqFee",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "protocolFee",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lpFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "Swap",
+        "type": "event",
+        "@id": "0x34660fc8af304464529f48a778e03d03e4d34bcd5f9b6f0cfbf3cd238c642f7f",
+        "signature": "Swap(uint16,uint256,address,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "maker": {
+                        "is_erc20": 0.01,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.04,
+                        "numLogs": 25653321,
+                        "sampleAddress": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                        "sampleTxHash": "0x000007001d6c5bd0cf28c85964d036ab41a4aa5329203a9ec3da80822e103b7d",
+                        "found": 100,
+                        "samples": 100
+                    },
+                    "stargate": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 242115,
+                        "sampleAddress": "0x150f94b44927f078737562f0fcf3c95c01cc2376",
+                        "sampleTxHash": "0x000022e50e9593c9d998cb352ae35960389c842e06c06be0400350f9f39f9843",
+                        "found": 26,
+                        "samples": 26
+                    },
+                    "curve": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 30667,
+                        "sampleAddress": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+                        "sampleTxHash": "0x00018ecd2b7baffd11a9dd0dd467764d37e94f7b3280e73d087e149123e45f43",
+                        "found": 10,
+                        "samples": 100
+                    },
+                    "dackieswap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1475,
+                        "sampleAddress": "0xfb4d71c55642aa8169ac64a14e8b34f9676bc596",
+                        "sampleTxHash": "0x03b123b72a331b8520e5b28bd6e75165d62c03c8dd339ba666cfaf96694200a5",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c",
+        "signature": "Deposit(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "stargate:chainID",
+                "name": "srcChainId",
+                "type": "uint16"
+            },
+            {
+                "@type": "evm:nonce",
+                "name": "nonce",
+                "type": "uint64"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "qty",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "ReceiveFromChain",
+        "type": "event",
+        "@id": "0x831bc68226f8d1f734ffcca73602efc4eca13711402ba1d2cc05ee17bb54f631",
+        "signature": "ReceiveFromChain(uint16,uint64,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "prevSupply",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "supply",
+                "type": "uint256"
+            }
+        ],
+        "name": "Supply",
+        "type": "event",
+        "@id": "0x5e2aa66efd74cce82b21852e317e5490d9ecc9e6bb953ae24d90851258cc2f5c",
+        "signature": "Supply(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "provider",
+                "type": "address",
+                "features": {
+                    "stargate": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 706,
+                        "sampleAddress": "0xa23e3e1c97b7f776ac43a4566ff4e97be0a2a859",
+                        "sampleTxHash": "0x0c46064b6d6e4cdaa39c8105148091f64f3e9947248f6c8100d3b9fd2e7c52ea",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "value",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "evm:timestamp",
+                "name": "locktime",
+                "type": "uint256"
+            },
+            {
+                "@type": "stargate:action",
+                "name": "action",
+                "type": "uint8"
+            },
+            {
+                "@type": "evm:timestamp",
+                "name": "ts",
+                "type": "uint256",
+                "validationFailure": true
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0xbe9cf0e939c614fad640a623a53ba0a807c8cb503c4c4c8dacabe27b86ff2dd5",
+        "signature": "Deposit(address,uint256,uint256,uint8,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "dstChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "to",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "qty",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "SendToChain",
+        "type": "event",
+        "@id": "0x664e26797cde1146ddfcb9a5d3f4de61179f9c11b2698599bb09e686f442172b",
+        "signature": "SendToChain(uint16,bytes,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "to",
+                "type": "address",
+                "features": {
+                    "stargate": {
+                        "is_erc20": 0.259259,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1734,
+                        "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                        "sampleTxHash": "0x000c86fe4d89da7af903ada9e1818077dcf5b5d690641e264188f34204fc6864",
+                        "found": 27,
+                        "samples": 100
+                    },
+                    "pendle": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1335,
+                        "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                        "sampleTxHash": "0x000c86fe4d89da7af903ada9e1818077dcf5b5d690641e264188f34204fc6864",
+                        "found": 4,
+                        "samples": 100
+                    },
+                    "solidly": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 34,
+                        "sampleAddress": "0x777034fef3ccbed74536ea1002faec9620deae0a",
+                        "sampleTxHash": "0x0b885809377d46e6e94f9d78cd93eaab5090b9697385557101d77d8c4f160056",
+                        "found": 1,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amountLP",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": null,
+                "name": "amountSD",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": null,
+                "name": "mintFeeAmountSD",
+                "type": "uint256"
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0xb4c03061fb5b7fed76389d5af8f2e0ddb09f8c70d1333abbb62582835e10accb",
+        "signature": "Mint(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15",
+        "signature": "Deposit(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.0588235,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 19144,
+                        "sampleAddress": "0x777777c9898d384f785ee44acfe945efdff5f3e0",
+                        "sampleTxHash": "0x000a54ea60832324b3a946e4b71e716372b6bb5a283ddc5cbc0595ccc9122fb3",
+                        "found": 34,
+                        "samples": 100
+                    },
+                    "bend": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 8808,
+                        "sampleAddress": "0xed2ab4948ba6a909a7751dec4f34f303eb8c7236",
+                        "sampleTxHash": "0x01845cce625f17bda1b4a6472d29d61799f60323e3219f978975a71bf02b6c98",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "stargate": {
+                        "is_erc20": 0.133333,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1434,
+                        "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                        "sampleTxHash": "0x06dd08077b82af9361a03af6c11cdf0989962589307228c3d4aa7a94ec70927e",
+                        "found": 15,
+                        "samples": 100
+                    },
+                    "solv": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 421,
+                        "sampleAddress": "0x092314c3c7aab1f890facd3cec28cb3a4295d67d",
+                        "sampleTxHash": "0x0558b8f7d627bac3ff1a984ce1b43221cb6a4de9884f7edbd2e8d144c4451726",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "party": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 137,
+                        "sampleAddress": "0x9fa0d9d784e752b35c26ffb5592a24997ac9187f",
+                        "sampleTxHash": "0x01bc2fadaad2de9b056d05cf822c6fa9ea8b15773745adea4e88c886eb4cc4b7",
+                        "found": 21,
+                        "samples": 43
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amountLP",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amountSD",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Burn",
+        "type": "event",
+        "@id": "0x49995e5dd6158cf69ad3e9777c46755a1a826a446c6416992167462dad033b2a",
+        "signature": "Burn(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Withdraw",
+        "type": "event",
+        "@id": "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568",
+        "signature": "Withdraw(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "stargate": {
+                        "is_erc20": 0.111111,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 778,
+                        "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                        "sampleTxHash": "0x06dd08077b82af9361a03af6c11cdf0989962589307228c3d4aa7a94ec70927e",
+                        "found": 18,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": null,
+                "name": "amountLP",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amountSD",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "transfer:to",
+                "name": "to",
+                "type": "address",
+                "features": {
+                    "stargate": {
+                        "is_erc20": 0.15,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 713,
+                        "sampleAddress": "0x267a1d1cf03e7514254edde262d229d02ff56a7d",
+                        "sampleTxHash": "0x02565b30f13f4d84a9562b1fed27ca89408b8a75cb94bf2ba96f620173a494db",
+                        "found": 20,
+                        "samples": 100
+                    }
+                }
+            }
+        ],
+        "name": "InstantRedeemLocal",
+        "type": "event",
+        "@id": "0x2125a70154569bd1686edd3cf981bb23dea7c1fa1637909dbb3c9a967cb0c2f2",
+        "signature": "InstantRedeemLocal(address,uint256,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "_sender",
+                "type": "address",
+                "features": {
+                    "stargate": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 7368,
+                        "sampleAddress": "0xf4627cec6ea1c46963942c076f39746814b7aa9e",
+                        "sampleTxHash": "0x0006eab4b5547ed1ab1717da80417f765d7e28a90079dff666cce54760f0babc",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "_astgAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": null,
+                "name": "_stgAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Redeemed",
+        "type": "event",
+        "@id": "0xf3a670cd3af7d64b488926880889d08a8585a138ff455227af6737339a1ec262",
+        "signature": "Redeemed(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes2",
+                "name": "partnerId",
+                "type": "bytes2"
+            }
+        ],
+        "name": "PartnerSwap",
+        "type": "event",
+        "@id": "0x85ce809fd9fd62b920fadc9d3a3a8e642d3969bf635276bfbdde866acce409fc",
+        "signature": "PartnerSwap(bytes2)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes2",
+                "name": "partnerId",
+                "type": "bytes2"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tenthBps",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "widgetFee",
+                "type": "uint256"
+            }
+        ],
+        "name": "WidgetSwapped",
+        "type": "event",
+        "@id": "0xe005092a469280dafcad91e38921cc6f96eac91d73413489fd8719634163345e",
+        "signature": "WidgetSwapped(bytes2,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "poolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "priceSD",
+                "type": "uint256"
+            }
+        ],
+        "name": "PriceUpdated",
+        "type": "event",
+        "@id": "0x945c1c4e99aa89f648fbfe3df471b916f719e16d960fcec0737d4d56bd696838",
+        "signature": "PriceUpdated(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0x0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885",
+        "signature": "Mint(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "chainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "dstPoolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountLP",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountSD",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "RedeemRemote",
+        "type": "event",
+        "@id": "0xa33f5c0b76f00f6737b1780a8a7f18e19c3fe8fe9ee01a6c1b8ce1eae5ed54f9",
+        "signature": "RedeemRemote(uint16,uint256,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_srcPoolId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_dstPoolId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "to",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "redeemAmountSD",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintAmountSD",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes",
+                "name": "srcAddress",
+                "type": "bytes"
+            }
+        ],
+        "name": "RevertRedeemLocal",
+        "type": "event",
+        "@id": "0x6ace246fa15cf1d5decabf654b1e8581a4422e0fcf4c1ed4bf83f41687caec19",
+        "signature": "RevertRedeemLocal(uint16,uint256,uint256,bytes,uint256,uint256,uint256,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "srcPoolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "swapAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "WithdrawRemote",
+        "type": "event",
+        "@id": "0x44d3575fd94f9e0a41d7ebbc7e952f9b615c3f8d1faf924e1e9e98c0edf0d380",
+        "signature": "WithdrawRemote(uint16,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amountSD",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amountToMintSD",
+                "type": "uint256"
+            }
+        ],
+        "name": "RedeemLocalCallback",
+        "type": "event",
+        "@id": "0xa97166013ecf5305dd9a58d6d867f05e646d4275f52d2bd52a5c7f00a690ad1b",
+        "signature": "RedeemLocalCallback(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "srcChainId",
+                "type": "uint16"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes",
+                "name": "srcAddress",
+                "type": "bytes"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "srcPoolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "dstPoolId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountSD",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintAmountSD",
+                "type": "uint256"
+            }
+        ],
+        "name": "RedeemLocalCallback",
+        "type": "event",
+        "@id": "0xc7379a02e530fbd0a46ea1ce6fd91987e96535798231a796bdc0e1a688a50873",
+        "signature": "RedeemLocalCallback(uint16,bytes,uint256,uint256,uint256,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "circle": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 49369,
+                        "sampleAddress": "0x55fe002aeff02f77364de339a1292923a15844b8",
+                        "sampleTxHash": "0x0003606b3af531647e18ef10c7760e06646a6043082cf45a80a7490f53ef0a5b",
+                        "found": 1,
+                        "samples": 5
+                    },
+                    "synthetix": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1422,
+                        "sampleAddress": "0x6db77ee44688fc7e59fb005592b0a904d0ad4e9c",
+                        "sampleTxHash": "0x00b2c47fd41afe912fd8f873eadbfe32f45c6787e201a7e54ae37f45deb07b9e",
+                        "found": 1,
+                        "samples": 100
+                    },
+                    "kyberswap": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 630,
+                        "sampleAddress": "0xdefa4e8a7bcba345f687a2f1456f5edd9ce97202",
+                        "sampleTxHash": "0x00320cace2bbdef413741e8cc88e8e5adb472ae2670e261481a5176228a8993c",
+                        "found": 1,
+                        "samples": 2
+                    },
+                    "dodo": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 374,
+                        "sampleAddress": "0x8dd0fea5fa2f7df535f87f312641cc15d8b151ba",
+                        "sampleTxHash": "0x05e39fed84b92b2fca86ff642016a1c8798172c27ece8fd570908482c742bf4b",
+                        "found": 8,
+                        "samples": 100
+                    },
+                    "neworder": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 128,
+                        "sampleAddress": "0xe5c80a7963c0d8f4ab9c0bb8d854e47594cf9394",
+                        "sampleTxHash": "0x0b16738d6ec5fc6ea9b051a79aa9173f6e93a2b9f678802190dba09fd9ff1049",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Burn",
+        "type": "event",
+        "@id": "0xcc16f5dbb4873280815c1ee09dbd06736cffcc184412cf7a71a0fdb75d397ca5",
+        "signature": "Burn(address,uint256)"
+    }
+]

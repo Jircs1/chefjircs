@@ -1,0 +1,318 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "sequenceId",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint80",
+                "name": "data",
+                "type": "uint80"
+            }
+        ],
+        "name": "RecordCreated",
+        "type": "event",
+        "@id": "0x309d706ccfa16f4de27619e33808b4439484c67998e9a545f4ca492cbc975e61",
+        "signature": "RecordCreated(uint256,uint16,uint80)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint64",
+                "name": "id",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "topic",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "message",
+                "type": "string"
+            }
+        ],
+        "name": "NodeBroadcast",
+        "type": "event",
+        "@id": "0xbdf912301251108e1ce48c21891c6b55ef5b631e74813780d1e9b17840fa24b2",
+        "signature": "NodeBroadcast(uint64,string,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint64",
+                "name": "id",
+                "type": "uint64"
+            },
+            {
+                "indexed": true,
+                "internalType": "enum NodeType",
+                "name": "nodeType",
+                "type": "uint8"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint64",
+                "name": "owner",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "parent",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "groupNode",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "metadata",
+                "type": "string"
+            }
+        ],
+        "name": "NodeCreated",
+        "type": "event",
+        "@id": "0xa9fa87f158c16d47abbd8c5e1e09a1215dfce4a2bcaa1e0e1538ff7478880b78",
+        "signature": "NodeCreated(uint64,uint8,uint64,uint64,uint64,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint16",
+                "name": "sequenceId",
+                "type": "uint16"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint64",
+                        "name": "sealedBeforeTimestamp",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "sealedAfterTimestamp",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "maxSupply",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "minted",
+                        "type": "uint64"
+                    },
+                    {
+                        "internalType": "contract IEngine",
+                        "name": "engine",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "dropNodeId",
+                        "type": "uint64"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct SequenceData",
+                "name": "sequenceData",
+                "type": "tuple"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "engineData",
+                "type": "bytes"
+            }
+        ],
+        "name": "SequenceConfigured",
+        "type": "event",
+        "@id": "0x2c9830eb4cdee6707c8730aa9aeb6d4102336f1180122d56a593b3dfeb60f93b",
+        "signature": "SequenceConfigured(uint16,(uint64,uint64,uint64,uint64,address,uint64),bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "collection",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "sequenceId",
+                "type": "uint16"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint96",
+                        "name": "price",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "uint16",
+                        "name": "royaltyBps",
+                        "type": "uint16"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "allowContractMints",
+                        "type": "bool"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "randomizeMetadataVariants",
+                        "type": "bool"
+                    },
+                    {
+                        "internalType": "uint8",
+                        "name": "maxRecordsPerTransaction",
+                        "type": "uint8"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "revenueRecipient",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint16",
+                        "name": "primarySaleFeeBps",
+                        "type": "uint16"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "priceDecayPerDay",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "uint64",
+                        "name": "decayStopTimestamp",
+                        "type": "uint64"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct DropData",
+                "name": "dropData",
+                "type": "tuple"
+            }
+        ],
+        "name": "DropCreated",
+        "type": "event",
+        "@id": "0xc64b0f1a277fb0efdf2ed63e3c5a529f5c80920863464b9b44695ad9c041fa0a",
+        "signature": "DropCreated(address,uint16,(uint96,uint16,bool,bool,uint8,address,uint16,uint96,uint64))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint64",
+                "name": "metalabelNodeId",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "subdomain",
+                "type": "string"
+            }
+        ],
+        "name": "SubdomainReserved",
+        "type": "event",
+        "@id": "0xd168d2c258876bcf10da068836c0dcaa8d7d7a189326a19e8b73f2365128848a",
+        "signature": "SubdomainReserved(uint64,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "allowlistRoot",
+                "type": "bytes32"
+            }
+        ],
+        "name": "AllowlistRootUpdated",
+        "type": "event",
+        "@id": "0x3acc3a8ccad9989eb960fa656ab3fe7c50873af2f06d0e4eeddd7081890e7e5e",
+        "signature": "AllowlistRootUpdated(bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint64",
+                "name": "id",
+                "type": "uint64"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "controller",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isAuthorized",
+                "type": "bool"
+            }
+        ],
+        "name": "NodeControllerSet",
+        "type": "event",
+        "@id": "0x5fe1326a5161ca47042a7f643842e04356c668a48c8495cb0ffdbc707c17bebf",
+        "signature": "NodeControllerSet(uint64,address,bool)"
+    }
+]

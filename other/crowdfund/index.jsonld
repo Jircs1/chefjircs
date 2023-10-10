@@ -1,0 +1,512 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "contributor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "delegate",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "previousTotalContributions",
+                "type": "uint256"
+            }
+        ],
+        "name": "Contributed",
+        "type": "event",
+        "@id": "0x5982c40d76f99ce7f7cb2138b9af68857259da5d9da4f06ccbc884d861e8f58f",
+        "signature": "Contributed(address,address,uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "burnAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0Out",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1Out",
+                "type": "uint256"
+            }
+        ],
+        "name": "Burned",
+        "type": "event",
+        "@id": "0x4c60206a5c1de41f3376d1d60f0949d96cb682033c90b1c2d9d9a62d4c4120c0",
+        "signature": "Burned(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract CollectionBatchBuyCrowdfund",
+                "name": "crowdfund",
+                "type": "address"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "customizationPresetId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "contract IERC721",
+                        "name": "nftContract",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bytes32",
+                        "name": "nftTokenIdsMerkleRoot",
+                        "type": "bytes32"
+                    },
+                    {
+                        "internalType": "uint40",
+                        "name": "duration",
+                        "type": "uint40"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "maximumPrice",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "splitRecipient",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint16",
+                        "name": "splitBps",
+                        "type": "uint16"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "initialContributor",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "initialDelegate",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "minContribution",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "maxContribution",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "contract IGateKeeper",
+                        "name": "gateKeeper",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bytes12",
+                        "name": "gateKeeperId",
+                        "type": "bytes12"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "address[]",
+                                "name": "hosts",
+                                "type": "address[]"
+                            },
+                            {
+                                "internalType": "uint40",
+                                "name": "voteDuration",
+                                "type": "uint40"
+                            },
+                            {
+                                "internalType": "uint40",
+                                "name": "executionDelay",
+                                "type": "uint40"
+                            },
+                            {
+                                "internalType": "uint16",
+                                "name": "passThresholdBps",
+                                "type": "uint16"
+                            },
+                            {
+                                "internalType": "uint16",
+                                "name": "feeBps",
+                                "type": "uint16"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "feeRecipient",
+                                "type": "address"
+                            }
+                        ],
+                        "internalType": "struct Crowdfund.FixedGovernanceOpts",
+                        "name": "governanceOpts",
+                        "type": "tuple"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct CollectionBatchBuyCrowdfund.CollectionBatchBuyCrowdfundOptions",
+                "name": "opts",
+                "type": "tuple"
+            }
+        ],
+        "name": "CollectionBatchBuyCrowdfundCreated",
+        "type": "event",
+        "@id": "0x33c54d2499ff6f131950d0acc7d38c3a3286495ae73db741423e5f6625ad9d37",
+        "signature": "CollectionBatchBuyCrowdfundCreated(address,(string,string,uint256,address,bytes32,uint40,uint96,address,uint16,address,address,uint96,uint96,address,bytes12,(address[],uint40,uint40,uint16,uint16,address)))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract Party",
+                "name": "party",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "contract IERC721[]",
+                "name": "tokens",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "tokenIds",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "settledPrice",
+                "type": "uint256"
+            }
+        ],
+        "name": "Won",
+        "type": "event",
+        "@id": "0x139324ee0c9d8324da2602ed90fb064f661cd2e2498417dbd964903d19bf3c32",
+        "signature": "Won(address,address[],uint256[],uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract BuyCrowdfund",
+                "name": "crowdfund",
+                "type": "address"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "customizationPresetId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "contract IERC721",
+                        "name": "nftContract",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "nftTokenId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint40",
+                        "name": "duration",
+                        "type": "uint40"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "maximumPrice",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "splitRecipient",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint16",
+                        "name": "splitBps",
+                        "type": "uint16"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "initialContributor",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "initialDelegate",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "contract IGateKeeper",
+                        "name": "gateKeeper",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bytes12",
+                        "name": "gateKeeperId",
+                        "type": "bytes12"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "onlyHostCanBuy",
+                        "type": "bool"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "address[]",
+                                "name": "hosts",
+                                "type": "address[]"
+                            },
+                            {
+                                "internalType": "uint40",
+                                "name": "voteDuration",
+                                "type": "uint40"
+                            },
+                            {
+                                "internalType": "uint40",
+                                "name": "executionDelay",
+                                "type": "uint40"
+                            },
+                            {
+                                "internalType": "uint16",
+                                "name": "passThresholdBps",
+                                "type": "uint16"
+                            },
+                            {
+                                "internalType": "uint16",
+                                "name": "feeBps",
+                                "type": "uint16"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "feeRecipient",
+                                "type": "address"
+                            }
+                        ],
+                        "internalType": "struct Crowdfund.FixedGovernanceOpts",
+                        "name": "governanceOpts",
+                        "type": "tuple"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct BuyCrowdfund.BuyCrowdfundOptions",
+                "name": "opts",
+                "type": "tuple"
+            }
+        ],
+        "name": "BuyCrowdfundCreated",
+        "type": "event",
+        "@id": "0x5fabd0e651269e7435edcc5f99915a834e00e22b264627a34d3f880ff03d030d",
+        "signature": "BuyCrowdfundCreated(address,(string,string,uint256,address,uint256,uint40,uint96,address,uint16,address,address,address,bytes12,bool,(address[],uint40,uint40,uint16,uint16,address)))"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "contract BuyCrowdfund",
+                "name": "crowdfund",
+                "type": "address"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "customizationPresetId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "contract IERC721",
+                        "name": "nftContract",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "nftTokenId",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint40",
+                        "name": "duration",
+                        "type": "uint40"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "maximumPrice",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "splitRecipient",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint16",
+                        "name": "splitBps",
+                        "type": "uint16"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "initialContributor",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "initialDelegate",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "minContribution",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "uint96",
+                        "name": "maxContribution",
+                        "type": "uint96"
+                    },
+                    {
+                        "internalType": "contract IGateKeeper",
+                        "name": "gateKeeper",
+                        "type": "address"
+                    },
+                    {
+                        "internalType": "bytes12",
+                        "name": "gateKeeperId",
+                        "type": "bytes12"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "onlyHostCanBuy",
+                        "type": "bool"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "address[]",
+                                "name": "hosts",
+                                "type": "address[]"
+                            },
+                            {
+                                "internalType": "uint40",
+                                "name": "voteDuration",
+                                "type": "uint40"
+                            },
+                            {
+                                "internalType": "uint40",
+                                "name": "executionDelay",
+                                "type": "uint40"
+                            },
+                            {
+                                "internalType": "uint16",
+                                "name": "passThresholdBps",
+                                "type": "uint16"
+                            },
+                            {
+                                "internalType": "uint16",
+                                "name": "feeBps",
+                                "type": "uint16"
+                            },
+                            {
+                                "internalType": "address payable",
+                                "name": "feeRecipient",
+                                "type": "address"
+                            }
+                        ],
+                        "internalType": "struct Crowdfund.FixedGovernanceOpts",
+                        "name": "governanceOpts",
+                        "type": "tuple"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct BuyCrowdfund.BuyCrowdfundOptions",
+                "name": "opts",
+                "type": "tuple"
+            }
+        ],
+        "name": "BuyCrowdfundCreated",
+        "type": "event",
+        "@id": "0x6034aacebfbc5f00c39fd9a47c45b285444626f19f840d547caab3530025f4f4",
+        "signature": "BuyCrowdfundCreated(address,(string,string,uint256,address,uint256,uint40,uint96,address,uint16,address,address,uint96,uint96,address,bytes12,bool,(address[],uint40,uint40,uint16,uint16,address)))"
+    }
+]

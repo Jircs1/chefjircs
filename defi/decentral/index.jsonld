@@ -1,0 +1,32 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "scraper",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "scrapedAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokensScraped",
+        "type": "event",
+        "@id": "0xf4c6297f72d4e746c679dde16c732ea9af03893c22fe2ca98037465dd6a3bb2b",
+        "signature": "tokensScraped(address,uint256,uint256)"
+    }
+]

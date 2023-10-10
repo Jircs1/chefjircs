@@ -1,0 +1,262 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "to",
+                "type": "address",
+                "features": {
+                    "zora": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 8125,
+                        "sampleAddress": "0x17cd072cbd45031efc21da538c783e0ed3b25dcc",
+                        "sampleTxHash": "0x00b9de740625da815dcc9103bb00361312a8e48eb647fea3088bf953e92ebf3c",
+                        "found": 4,
+                        "samples": 100
+                    },
+                    "holograph": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 383,
+                        "sampleAddress": "0xd80f0d03579d1cae085ba34c3e909c33e710a52d",
+                        "sampleTxHash": "0x39663a51eb6a4eceeccf9bb72a8dfcdf2f2cc31354509ecb9f0a57165eaff913",
+                        "found": 0,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "quantity",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "dex:price",
+                "name": "pricePerToken",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc721:tokenID",
+                "name": "firstPurchasedTokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "Sale",
+        "type": "event",
+        "@id": "0x4e26b0356a15833a75d497ecc40ebbb716b99466ed0dba9454f1fff451e25a90",
+        "signature": "Sale(address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintFeeAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "mintFeeRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "name": "MintFeePayout",
+        "type": "event",
+        "@id": "0x6f8da53cfedb8cc4f7935c3629624e50b63053c93bb2cad246aa4d3a2ba7d4ce",
+        "signature": "MintFeePayout(uint256,address,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "hash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "BridgeableContractDeployed",
+        "type": "event",
+        "@id": "0xa802207d4c618b40db3b25b7b90e6f483e16b2c1f8d3610b15b345a718c6b41b",
+        "signature": "BridgeableContractDeployed(address,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address[]",
+                "name": "recipients",
+                "type": "address[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "bps",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "SecondarySaleFees",
+        "type": "event",
+        "@id": "0x99aba1d63749cfd5ad1afda7c4663840924d54eb5f005bbbeadedc6ec13674b2",
+        "signature": "SecondarySaleFees(uint256,address[],uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "messageHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "CrossChainMessageSent",
+        "type": "event",
+        "@id": "0x0f5759b4182507dcfc771071166f98d7ca331262e5134eaa74b676adce2138b7",
+        "signature": "CrossChainMessageSent(bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "jobHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "payload",
+                "type": "bytes"
+            }
+        ],
+        "name": "AvailableOperatorJob",
+        "type": "event",
+        "@id": "0x4422a85db963f113e500bc4ada8f9e9f1a7bcd57cbec6907fbb2bf6aaf5878ff",
+        "signature": "AvailableOperatorJob(bytes32,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "jobHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+            }
+        ],
+        "name": "FinishedOperatorJob",
+        "type": "event",
+        "@id": "0xfc3963369d694e97f35e33cc03fcd382bfa4dbb688ae43d318fcf344f479425e",
+        "signature": "FinishedOperatorJob(bytes32,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "imageURI",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "animationURI",
+                "type": "string"
+            }
+        ],
+        "name": "EditionInitialized",
+        "type": "event",
+        "@id": "0xf889a5cdc62274389379cbfade0f225b1d30b7395177fd6aeaab61662b1c6edf",
+        "signature": "EditionInitialized(address,string,string,string)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "withdrawnBy",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "withdrawnTo",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "feeRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "feeAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "FundsWithdrawn",
+        "type": "event",
+        "@id": "0x8a95554e4c9dcaaf33f247387f2ee77390780487d3365e3a804788791a1df500",
+        "signature": "FundsWithdrawn(address,address,uint256,address,uint256)"
+    }
+]

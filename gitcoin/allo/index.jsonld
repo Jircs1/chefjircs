@@ -1,71 +1,209 @@
-{
-  "@context": {
-    "@vocab": "http://example.com/ethereum-ontology/",
-    "eth": "http://caladandao.org/ethereum/",
-    "allo": "http://caladandao.org/allocation/",
-    "schema": "https://schema.org/"
-  },
-  "@type": "eth:Function",
-  "eth:inputs": [
+[
     {
-      "@type": "eth:InputParameter",
-      "eth:components": [
-        {
-          "@type": "allo:protocol",
-          "eth:internalType": "uint256",
-          "eth:name": "protocol",
-          "eth:type": "uint256",
-          "schema:label": "Protocol"
-        },
-        {
-          "@type": "allo:projectpointer",
-          "eth:internalType": "string",
-          "eth:name": "pointer",
-          "eth:type": "string",
-          "schema:label": "Pointer"
-        }
-      ],
-      "@type": "allo:projectmetadata",
-      "eth:internalType": "struct MetaPtr",
-      "eth:name": "metadata",
-      "eth:type": "tuple",
-      "schema:label": "Metadata"
-    }
-  ],
-  "eth:name": "createProject",
-  "eth:outputs": [],
-  "eth:stateMutability": "nonpayable",
-  "eth:type": "function"
-}
-
-
-
-
-{
-  "@context": {
-    "@vocab": "http://example.com/ethereum-ontology/",
-    "eth": "http://caladandao.org/ethereum/",
-    "allo": "http://caladandao.org/allocation/",
-    "schema": "https://schema.org/"
-  },
-  "@type": "eth:Event",
-  "eth:anonymous": false,
-  "eth:inputs": [
-    {
-      "@type": "allo:projectID",
-      "eth:internalType": "uint256",
-      "eth:name": "projectID",
-      "eth:type": "uint256",
-      "schema:label": "Project ID"
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "projectID",
+                "type": "uint256"
+            },
+            {
+                "components": [
+                    {
+                        "internalType": "uint256",
+                        "name": "protocol",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "pointer",
+                        "type": "string"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct MetaPtr",
+                "name": "metaPtr",
+                "type": "tuple"
+            }
+        ],
+        "name": "MetadataUpdated",
+        "type": "event",
+        "@id": "0xf92c2639c25d6a22c38e6d6b293f74a9b22491273b1dbb67fc1255222696be5b",
+        "signature": "MetadataUpdated(uint256,(uint256,string))"
     },
     {
-      "@type": "allo:projectOwner",
-      "eth:internalType": "address",
-      "eth:name": "owner",
-      "eth:type": "address",
-      "schema:label": "Owner"
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "projectID",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            }
+        ],
+        "name": "ProjectCreated",
+        "type": "event",
+        "@id": "0x63c92f9505d420bff631cb9df33be952bdc11e2118da36a850b43e6bcc4ce4de",
+        "signature": "ProjectCreated(uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "programContractAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "programImplementation",
+                "type": "address"
+            }
+        ],
+        "name": "ProgramCreated",
+        "type": "event",
+        "@id": "0x75c1d3f36bb0928522da6c9e9c8d8f4706b7fe8ba337c8adb9ed61ce3571dfb9",
+        "signature": "ProgramCreated(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "version",
+                "type": "uint8"
+            }
+        ],
+        "name": "Initialized",
+        "type": "event",
+        "@id": "0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498",
+        "signature": "Initialized(uint8)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "votingContractAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "votingImplementation",
+                "type": "address"
+            }
+        ],
+        "name": "VotingContractCreated",
+        "type": "event",
+        "@id": "0x6cf444e1bbf9068b76bcb01b51c4a796a44b52c884e215391ec5b70601430676",
+        "signature": "VotingContractCreated(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "payoutContractAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "payoutImplementation",
+                "type": "address"
+            }
+        ],
+        "name": "PayoutContractCreated",
+        "type": "event",
+        "@id": "0xe4831cb465cd5bce7e2d12214c68314e4f42a292fbd191ffa80eb253435200f9",
+        "signature": "PayoutContractCreated(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "impl",
+                "type": "address"
+            }
+        ],
+        "name": "Upgraded",
+        "type": "event",
+        "@id": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+        "signature": "Upgraded(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lastOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event",
+        "@id": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+        "signature": "OwnershipTransferred(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "oldAdmin",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newAdmin",
+                "type": "address"
+            }
+        ],
+        "name": "AdminChanged",
+        "type": "event",
+        "@id": "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f",
+        "signature": "AdminChanged(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "merklePayoutStrategyAddress",
+                "type": "address"
+            }
+        ],
+        "name": "PayoutImplementationUpdated",
+        "type": "event",
+        "@id": "0x785ae511b845c3faa66613fcc7e279e8a41bc40154641ebdfe3c1fcaf609cfc8",
+        "signature": "PayoutImplementationUpdated(address)"
     }
-  ],
-  "eth:name": "ProjectCreated",
-  "eth:type": "event"
-}
+]

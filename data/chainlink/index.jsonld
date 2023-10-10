@@ -1,0 +1,122 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "requestId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "outputSeed",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "payment",
+                "type": "uint96"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "name": "RandomWordsFulfilled",
+        "type": "event",
+        "@id": "0x7dffc5ae5ee4e2e4df1651cf6ad329a73cebdb728f37ea0187b9b17e036756e4",
+        "signature": "RandomWordsFulfilled(uint256,uint256,uint96,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "keyHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "requestId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "preSeed",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint64",
+                "name": "subId",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint16",
+                "name": "minimumRequestConfirmations",
+                "type": "uint16"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "callbackGasLimit",
+                "type": "uint32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "numWords",
+                "type": "uint32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            }
+        ],
+        "name": "RandomWordsRequested",
+        "type": "event",
+        "@id": "0x63373d1c4696214b898952999c9aaec57dac1ee2723cec59bea6888f489a9772",
+        "signature": "RandomWordsRequested(bytes32,uint256,uint256,uint64,uint16,uint32,uint32,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint64",
+                "name": "subId",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "oldBalance",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newBalance",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "SubscriptionFunded",
+        "type": "event",
+        "@id": "0xd39ec07f4e209f627a4c427971473820dc129761ba28de8906bd56f57101d4f8",
+        "signature": "SubscriptionFunded(uint64,uint256,uint256)"
+    }
+]

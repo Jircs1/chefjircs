@@ -1,0 +1,348 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "toAddress",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "selector",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "payload",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "sendMessageToL2",
+        "outputs": [
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0x3e3aa6c5",
+        "signature": "sendMessageToL2(uint256,uint256,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "fromAddress",
+                "type": "address",
+                "features": {
+                    "starknet": {
+                        "is_erc20": 0.0833333,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 953005,
+                        "sampleAddress": "0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419",
+                        "sampleTxHash": "0x00002729c5f7ec56d8b335c5c0cadb51446bafb25b9869a1e4d7bd0b54866971",
+                        "found": 24,
+                        "samples": 25
+                    }
+                }
+            },
+            {
+                "@type": "transfer:to",
+                "name": "toAddress",
+                "type": "uint256"
+            },
+            {
+                "@type": "starknet:selector",
+                "name": "selector",
+                "type": "uint256"
+            },
+            {
+                "@type": "starknet:payload",
+                "name": "payload",
+                "type": "uint256[]"
+            },
+            {
+                "@type": "evm:nonce",
+                "name": "nonce",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "name": "fee",
+                "type": "uint256",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "LogMessageToL2",
+        "type": "event",
+        "@id": "0xdb80dd488acf86d17c747445b0eabb5d57c541d3bd7b6b87af987858e5066b2b",
+        "signature": "LogMessageToL2(address,uint256,uint256,uint256[],uint256,uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256[]",
+                "name": "programOutput",
+                "type": "uint256[]"
+            },
+            {
+                "internalType": "uint256",
+                "name": "onchainDataHash",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "onchainDataSize",
+                "type": "uint256"
+            }
+        ],
+        "name": "updateState",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0x77552641",
+        "signature": "updateState(uint256[],uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "stateTransitionFact",
+                "type": "bytes32"
+            }
+        ],
+        "name": "LogStateTransitionFact",
+        "type": "event",
+        "@id": "0x9866f8ddfe70bb512b2f2b28b49d4017c43f7ba775f1a20c61c13eea8cdac111",
+        "signature": "LogStateTransitionFact(bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "globalRoot",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "blockNumber",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "blockHash",
+                "type": "uint256"
+            }
+        ],
+        "name": "LogStateUpdate",
+        "type": "event",
+        "@id": "0xd342ddf7a308dec111745b00315c14b7efb2bdae570a6856e088ed0c65a3576c",
+        "signature": "LogStateUpdate(uint256,int256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fromAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "toAddress",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "selector",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "payload",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ],
+        "name": "ConsumedMessageToL2",
+        "type": "event",
+        "@id": "0x9592d37825c744e33fa80c469683bbd04d336241bb600b574758efd182abe26a",
+        "signature": "ConsumedMessageToL2(address,uint256,uint256,uint256[],uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "fromAddress",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "toAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "payload",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "ConsumedMessageToL1",
+        "type": "event",
+        "@id": "0x7a06c571aa77f34d9706c51e5d8122b5595aebeaa34233bfe866f22befb973b1",
+        "signature": "ConsumedMessageToL1(uint256,address,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "fromAddress",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "toAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "payload",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "LogMessageToL1",
+        "type": "event",
+        "@id": "0x4264ac208b5fde633ccdd42e0f12c3d6d443a4f3779bbf886925b94665b63a22",
+        "signature": "LogMessageToL1(uint256,address,uint256[])"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tranche",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "deposit",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "@id": "0xe2bbb158",
+        "signature": "deposit(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "LogDeposit",
+        "type": "event",
+        "@id": "0x9dbb0e7dda3e09710ce75b801addc87cf9d9c6c581641b3275fca409ad086c62",
+        "signature": "LogDeposit(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "LogWithdrawal",
+        "type": "event",
+        "@id": "0xb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e91",
+        "signature": "LogWithdrawal(address,uint256)"
+    },
+    {
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "withdraw",
+        "inputs": [
+            {
+                "name": "maxShares",
+                "type": "uint256"
+            },
+            {
+                "name": "recipient",
+                "type": "address"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "@id": "0x00f714ce",
+        "signature": "withdraw(uint256,address)"
+    }
+]

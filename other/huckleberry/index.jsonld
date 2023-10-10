@@ -1,0 +1,195 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "iterations",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "claims",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lastProcessedIndex",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "bool",
+                "name": "automatic",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "gas",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "processor",
+                "type": "address"
+            }
+        ],
+        "name": "ProcessedDividendTracker",
+        "type": "event",
+        "@id": "0xc864333d6121033635ab41b29ae52f10a22cf4438c3e4f1c4c68518feb2f8a98",
+        "signature": "ProcessedDividendTracker(uint256,uint256,uint256,bool,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:to",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "linq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1274,
+                        "sampleAddress": "0x77f50f963d55c7c7dc2b5a44767299c02af76a66",
+                        "sampleTxHash": "0x0c4669d271719e50efcc89b29caefdc92591192e0a573a23c234584bee63dce6",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "dubbz": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 874,
+                        "sampleAddress": "0x04f1b9baed24a69679328c70719688f6162fce58",
+                        "sampleTxHash": "0x0297925d5e0a7c56b01b12dad452ded822dde13f9aa246c38e9c144fda56c07f",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "tenshi": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 365,
+                        "sampleAddress": "0x562680a4dc50ed2f14d75bf31f494cfe0b8d10a1",
+                        "sampleTxHash": "0x03207e0d6cf15e190262b80e6049b033a56ea1832f4fc9a15fa9ffa927745498",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "ethlinq": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 312,
+                        "sampleAddress": "0x122720e148118e05eb023f97f35c08336f874da0",
+                        "sampleTxHash": "0x00f50267811c27f868002541781109b974437d4adf044beb1fa69e4f189d4568",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "expo": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 161,
+                        "sampleAddress": "0x7fd16176d86727c895b6d3f97b20c1903c827696",
+                        "sampleTxHash": "0x3f0f4381a00f80b2122eb5cc5c7b5251cfdbb558171b0d55b75c8a7e7faa10da",
+                        "found": 1,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DividendWithdrawn",
+        "type": "event",
+        "@id": "0xee503bee2bb6a87e57bc57db795f98137327401a0e7b7ce42e37926cc1a9ca4d",
+        "signature": "DividendWithdrawn(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "bool",
+                "name": "automatic",
+                "type": "bool"
+            }
+        ],
+        "name": "Claim",
+        "type": "event",
+        "@id": "0xa2c38e2d2fb7e3e1912d937fd1ca11ed6d51864dee4cfa7a7bf02becd7acf092",
+        "signature": "Claim(address,uint256,bool)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokensSwapped",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "SendDividends",
+        "type": "event",
+        "@id": "0x80195cc573b02cc48460cbca6e6e4cc85ddb91959d946e1c3025ea3d87942dc3",
+        "signature": "SendDividends(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DividendsDistributed",
+        "type": "event",
+        "@id": "0xa493a9229478c3fcd73f66d2cdeb7f94fd0f341da924d1054236d78454116511",
+        "signature": "DividendsDistributed(address,uint256)"
+    }
+]

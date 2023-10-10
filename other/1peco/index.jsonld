@@ -1,0 +1,55 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            }
+        ],
+        "name": "Freeze",
+        "type": "event",
+        "@id": "0xaf85b60d26151edd11443b704d424da6c43d0468f2235ebae3d1904dbc323049",
+        "signature": "Freeze(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "holder",
+                "type": "address"
+            }
+        ],
+        "name": "Unfreeze",
+        "type": "event",
+        "@id": "0xca5069937e68fd197927055037f59d7c90bf75ac104e6e375539ef480c3ad6ee",
+        "signature": "Unfreeze(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "stakeID",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Unlock",
+        "type": "event",
+        "@id": "0x6381d9813cabeb57471b5a7e05078e64845ccdb563146a6911d536f24ce960f1",
+        "signature": "Unlock(address,uint256)"
+    }
+]

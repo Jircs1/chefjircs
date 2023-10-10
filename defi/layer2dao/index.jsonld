@@ -1,0 +1,410 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "amount0",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "amount1",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint160",
+                "name": "price",
+                "type": "uint160"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "int24",
+                "name": "tick",
+                "type": "int24"
+            }
+        ],
+        "name": "Swap",
+        "type": "event",
+        "@id": "0xc42079f94a6350d7e6235f29174924f928cc2ac818eb64fed8004e115fbcca67",
+        "signature": "Swap(address,address,int256,int256,uint160,uint128,int24)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "sender",
+                "type": "address",
+                "features": {
+                    "uniswap": {
+                        "is_erc20": 0.54,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 337719,
+                        "sampleAddress": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+                        "sampleTxHash": "0x000030188de410a6ad662a97e1b0ba2b1e9868863b80501cf0da0f13ed59c888",
+                        "found": 100,
+                        "samples": 100
+                    },
+                    "dackieswap": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 11177,
+                        "sampleAddress": "0xcfb05ab06d338fd85bbf4486e69809d96a906b77",
+                        "sampleTxHash": "0x00056e46bd5d30143fe4e8859a22c11fc0779ec586367743cf6389ccad1a4cd8",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "sushiswap": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 7481,
+                        "sampleAddress": "0x80c7dd17b01855a6d2347444a0fcc36136a314de",
+                        "sampleTxHash": "0x000120636abee3ba410afe17c560cced5ccdcd8896b0cffc71ddddf1bf6f55d6",
+                        "found": 8,
+                        "samples": 8
+                    },
+                    "pancakeswap": {
+                        "is_erc20": 0.5,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 3864,
+                        "sampleAddress": "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364",
+                        "sampleTxHash": "0x0018947ff6524a4863d679a536d2e6dfcc8797d36226a88ff7af1f5b7232c068",
+                        "found": 2,
+                        "samples": 2
+                    },
+                    "horizondex": {
+                        "is_erc20": 0,
+                        "is_erc721": 1,
+                        "is_erc20lp": 0,
+                        "numLogs": 2132,
+                        "sampleAddress": "0xb3cc484a60bc300719aaefbd158a4e8e59d84555",
+                        "sampleTxHash": "0x002b92da6de8b20af6d74742a4cb220968dee17e61eb2ea0b67dc40039aabec0",
+                        "found": 1,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "transfer:to",
+                "name": "owner",
+                "type": "address",
+                "features": {
+                    "uniswap": {
+                        "is_erc20": 0.54,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 337692,
+                        "sampleAddress": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+                        "sampleTxHash": "0x000030188de410a6ad662a97e1b0ba2b1e9868863b80501cf0da0f13ed59c888",
+                        "found": 100,
+                        "samples": 100
+                    },
+                    "dackieswap": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 11177,
+                        "sampleAddress": "0xcfb05ab06d338fd85bbf4486e69809d96a906b77",
+                        "sampleTxHash": "0x00056e46bd5d30143fe4e8859a22c11fc0779ec586367743cf6389ccad1a4cd8",
+                        "found": 1,
+                        "samples": 1
+                    },
+                    "sushiswap": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 7481,
+                        "sampleAddress": "0x80c7dd17b01855a6d2347444a0fcc36136a314de",
+                        "sampleTxHash": "0x000120636abee3ba410afe17c560cced5ccdcd8896b0cffc71ddddf1bf6f55d6",
+                        "found": 8,
+                        "samples": 8
+                    },
+                    "pancakeswap": {
+                        "is_erc20": 0.5,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 3864,
+                        "sampleAddress": "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364",
+                        "sampleTxHash": "0x0018947ff6524a4863d679a536d2e6dfcc8797d36226a88ff7af1f5b7232c068",
+                        "found": 2,
+                        "samples": 2
+                    },
+                    "horizondex": {
+                        "is_erc20": 0,
+                        "is_erc721": 1,
+                        "is_erc20lp": 0,
+                        "numLogs": 2132,
+                        "sampleAddress": "0xb3cc484a60bc300719aaefbd158a4e8e59d84555",
+                        "sampleTxHash": "0x002b92da6de8b20af6d74742a4cb220968dee17e61eb2ea0b67dc40039aabec0",
+                        "found": 1,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "dex:tick",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "@type": "dex:tick",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "qty",
+                "type": "uint128"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "name": "qty0",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "name": "qty1",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0x7a53080ba414158be7ec69b987b5fb7d07dee101fe85488f0853ae16239d0bde",
+        "signature": "Mint(address,address,int24,int24,uint128,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "bottomTick",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "topTick",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "liquidityAmount",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1",
+                "type": "uint256"
+            }
+        ],
+        "name": "Burn",
+        "type": "event",
+        "@id": "0x0c396cd989a39f4459b5fa1aed6a9a8dcdbc45908acfd67e028cd568da98982c",
+        "signature": "Burn(address,int24,int24,uint128,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "bottomTick",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "topTick",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "amount0",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "amount1",
+                "type": "uint128"
+            }
+        ],
+        "name": "Collect",
+        "type": "event",
+        "@id": "0x70935338e69775456a85ddef226c395fb668b63fa0115f5f20610b388e6ca9c0",
+        "signature": "Collect(address,address,int24,int24,uint128,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newRoyaltyRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newRoyaltyBps",
+                "type": "uint256"
+            }
+        ],
+        "name": "DefaultRoyalty",
+        "type": "event",
+        "@id": "0x90d7ec04bcb8978719414f82e52e4cb651db41d0e6f8cea6118c2191e6183adb",
+        "signature": "DefaultRoyalty(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startTokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "endTokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "baseURI",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "encryptedBaseURI",
+                "type": "bytes"
+            }
+        ],
+        "name": "TokensLazyMinted",
+        "type": "event",
+        "@id": "0x2a0365091ef1a40953c670dce28177e37520648a6fdc91506bffac0ab045570d",
+        "signature": "TokensLazyMinted(uint256,uint256,string,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint160",
+                "name": "sqrtP",
+                "type": "uint160"
+            },
+            {
+                "indexed": false,
+                "internalType": "int24",
+                "name": "tick",
+                "type": "int24"
+            }
+        ],
+        "name": "Initialize",
+        "type": "event",
+        "@id": "0x98636036cb66a9c19a37435efc1e90142190214e8abeb821bdba3f2990dd4c95",
+        "signature": "Initialize(uint160,int24)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "contract IERC20",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "userTokenTimeCursor",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokensClaimed",
+        "type": "event",
+        "@id": "0xff097c7d8b1957a4ff09ef1361b5fb54dcede3941ba836d0beb9d10bec725de6",
+        "signature": "TokensClaimed(address,address,uint256,uint256)"
+    }
+]

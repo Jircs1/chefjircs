@@ -1,0 +1,143 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "voter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "newVotes",
+                "type": "uint256"
+            }
+        ],
+        "name": "UpdatedVotes",
+        "type": "event",
+        "@id": "0xd1b0c5e03e405cea97403894c17af4610d6d851ffe4baa03de1ca5e7c700cd75",
+        "signature": "UpdatedVotes(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            }
+        ],
+        "name": "BaseValueTransfer",
+        "type": "event",
+        "@id": "0xd62d118ec9618b21ba50e6814f78a20bf1e5b6fa0206ffe661a0ca53ce22874f",
+        "signature": "BaseValueTransfer(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "delegator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "delegatee",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "DelegatedVotes",
+        "type": "event",
+        "@id": "0x98dafce09283426336da94838681d1fe723dcd8d49f67902076eebf3e2d1ddd6",
+        "signature": "DelegatedVotes(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "delegator",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "primaryDelegate",
+                "type": "address"
+            }
+        ],
+        "name": "NewPrimaryDelegate",
+        "type": "event",
+        "@id": "0x88a6f95a94556f83d3752aaa691040ea5c04d9db823566be9f2f325eb866c9ae",
+        "signature": "NewPrimaryDelegate(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+            }
+        ],
+        "name": "PolicyDecisionStart",
+        "type": "event",
+        "@id": "0x3964a29267eae478a6d0c0c73cd9c6c037624d8bc7bdb41caff291dee09f8ad1",
+        "signature": "PolicyDecisionStart(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_newGeneration",
+                "type": "uint256"
+            }
+        ],
+        "name": "NewGeneration",
+        "type": "event",
+        "@id": "0x23e596c8e4eec426ab54ee98a8c255dd81072555379496f971fe5b1210089324",
+        "signature": "NewGeneration(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "inflationMultiplier",
+                "type": "uint256"
+            }
+        ],
+        "name": "NewInflationMultiplier",
+        "type": "event",
+        "@id": "0xb91f92f869a4caa45d223bc27bba633a4d27e87e75c3d48e3a8628ccea054824",
+        "signature": "NewInflationMultiplier(uint256)"
+    }
+]

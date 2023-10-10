@@ -1,0 +1,101 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "data0",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "data1",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint40",
+                "name": "minerId",
+                "type": "uint40"
+            }
+        ],
+        "name": "MinerStart",
+        "type": "event",
+        "@id": "0xb835eb6eed5c55377b86134b41c9354047e0fc6c7582efe59648572fff81b364",
+        "signature": "MinerStart(uint256,uint256,address,uint40)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "data0",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "data1",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "accountant",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint40",
+                "name": "minerId",
+                "type": "uint40"
+            }
+        ],
+        "name": "MinerEnd",
+        "type": "event",
+        "@id": "0xd3fd340b2f03159ddf95049eedb22400dec3358e9293504346f648c551086520",
+        "signature": "MinerEnd(uint256,uint256,address,uint40)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "data0",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint40",
+                "name": "atmId",
+                "type": "uint40"
+            }
+        ],
+        "name": "ATMEnd",
+        "type": "event",
+        "@id": "0x4ceede7ab397298db4e08659a00eb98042f4db567612eedce6c678c34fe175af",
+        "signature": "ATMEnd(uint256,address,uint40)"
+    }
+]

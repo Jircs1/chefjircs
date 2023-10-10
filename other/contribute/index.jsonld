@@ -1,0 +1,104 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "reserveAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokensBurned",
+                "type": "uint256"
+            }
+        ],
+        "name": "MintAndBurn",
+        "type": "event",
+        "@id": "0xb45bec251e7cc7ea3c70bc8e06e41e98eb17ee06599d07b74165a9ee7bd98658",
+        "signature": "MintAndBurn(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "initerestAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "InterestClaimed",
+        "type": "event",
+        "@id": "0xf9984c8173c4b4ff9cc454f76ed19c053f4490ccb224fd9ddffeb4ef4bea3530",
+        "signature": "InterestClaimed(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokensSold",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountReceived",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "TokensSold",
+        "type": "event",
+        "@id": "0x2dcf9433d75db0d8b1c172641f85e319ffe4ad22e108a95d1847ceb906e5195d",
+        "signature": "TokensSold(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountInvested",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokensMinted",
+                "type": "uint256"
+            }
+        ],
+        "name": "TokensBought",
+        "type": "event",
+        "@id": "0x8442948036198f1146d3a63c3db355d7e0295c2cc5676c755990445da4fdc1c9",
+        "signature": "TokensBought(address,uint256,uint256)"
+    }
+]

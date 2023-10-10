@@ -1,0 +1,693 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "balance",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+            }
+        ],
+        "name": "BalanceUpdated",
+        "type": "event",
+        "@id": "0x526824944047da5b81071fb6349412005c5da81380b336103fbe5dd34556c776",
+        "signature": "BalanceUpdated(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "reserve",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "liquidityRate",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "stableBorrowRate",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "variableBorrowRate",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "liquidityIndex",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "variableBorrowIndex",
+                "type": "uint256"
+            }
+        ],
+        "name": "ReserveDataUpdated",
+        "type": "event",
+        "@id": "0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a",
+        "signature": "ReserveDataUpdated(address,uint256,uint256,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "minter",
+                "type": "address",
+                "features": {
+                    "uniswap": {
+                        "is_erc20": 0.285714,
+                        "is_erc721": 0.0102041,
+                        "is_erc20lp": 0,
+                        "numLogs": 577544,
+                        "sampleAddress": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+                        "sampleTxHash": "0x00003f9c21c7f631474c1bbc12f0946b3f093b520fb707d9cc661a25b58e4ccd",
+                        "found": 98,
+                        "samples": 100
+                    },
+                    "pancakeswap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 20576,
+                        "sampleAddress": "0x327df1e6de05895d2ab08513aadd9313fe505d86",
+                        "sampleTxHash": "0x000dedc7c0ac33f148335f3a811407c5a60a70c119619f7c0c514cb00d5c4127",
+                        "found": 17,
+                        "samples": 19
+                    },
+                    "rocketswap": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 15944,
+                        "sampleAddress": "0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e",
+                        "sampleTxHash": "0x000a77db507328cea9e3af4051c8dfd8099973543ee7a7f6eea9bf2bc9248202",
+                        "found": 4,
+                        "samples": 4
+                    },
+                    "alien": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10203,
+                        "sampleAddress": "0x7f2ff89d3c45010c976ea6bb7715dc7098af786e",
+                        "sampleTxHash": "0x000f92b6fe36d6678e203dafb4b2db8c70e0331343a98b4ea69ae0ec1fc42bae",
+                        "found": 2,
+                        "samples": 2
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "name": "mintAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "name": "mintTokens",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0x4c209b5fc8ad50758f13e2e1088ba56a560dff690a1c6fef26394f4c03821c4f",
+        "signature": "Mint(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+            }
+        ],
+        "name": "BalanceTransfer",
+        "type": "event",
+        "@id": "0x4beccb90f994c31aced7a23b5611020728a23d8ec5cddd1a3e9d97b96fda8666",
+        "signature": "BalanceTransfer(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1",
+                "type": "uint256"
+            }
+        ],
+        "name": "Burn",
+        "type": "event",
+        "@id": "0x5d624aa9c148153ab3446c1b154f660ee7701e549fe9b62dab7171b1c80e6fa2",
+        "signature": "Burn(address,address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "erc20:token",
+                "name": "reserve",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.94,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.1,
+                        "numLogs": 115668,
+                        "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                        "sampleTxHash": "0x0000559f4baea7f5a570b2745bd904f8852073f961c161988fafa3987f1b2e73",
+                        "found": 50,
+                        "samples": 50
+                    },
+                    "para.space": {
+                        "is_erc20": 0.928571,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10084,
+                        "sampleAddress": "0xc5c9fb6223a989208df27dcee33fc59ff5c26fff",
+                        "sampleTxHash": "0x00106e9bef6d13e431436a80a5505f607a3ef85ac4db43165ca309cad35b72e5",
+                        "found": 14,
+                        "samples": 14
+                    },
+                    "lendingpool": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4317,
+                        "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                        "sampleTxHash": "0x0028ebb58ae1292576833c19ea89415130302de978ceae30e569b333d319411c",
+                        "found": 14,
+                        "samples": 14
+                    },
+                    "energon": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 38,
+                        "sampleAddress": "0xa65ea719d5a4aa03c685761827a1b7c0b18b5ad0",
+                        "sampleTxHash": "0x02a10cd6ddea4cb1e9ec62169b524076eb96597ef8ff0ac05c73e67500ea4470",
+                        "found": 1,
+                        "samples": 1
+                    }
+                }
+            },
+            {
+                "@type": "transfer:to",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.0759494,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.0253165,
+                        "numLogs": 64185,
+                        "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                        "sampleTxHash": "0x0000edbdb49c712198e1d25d7260fc321c97001814b8e20ffe60b32735133302",
+                        "found": 79,
+                        "samples": 100
+                    },
+                    "lendingpool": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2807,
+                        "sampleAddress": "0x31d3243cfb54b34fc9c73e1cb1137124bd6b13e1",
+                        "sampleTxHash": "0x00193f6952d21ab431239bac778400e23e8ece3ff21259b0f4df20b2b3a054b9",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "para.space": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2420,
+                        "sampleAddress": "0x92d6c316cde81f6a179a60ee4a3ea8a76d40508a",
+                        "sampleTxHash": "0x004cafabc87385d8bdb7858688154b7efa198ace6422106aa7cb4ee0943c30f0",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "energon": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 38,
+                        "sampleAddress": "0x2f2e8c0b1c8546bf94c27630476fac165450e34e",
+                        "sampleTxHash": "0x0c8ac02a8d2907778a8a544acd6a683d36df88267042a7ffc7517cc847cf5613",
+                        "found": 0,
+                        "samples": 21
+                    }
+                }
+            },
+            {
+                "@type": "transfer:to",
+                "name": "to",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.0246914,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 63310,
+                        "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                        "sampleTxHash": "0x0000edbdb49c712198e1d25d7260fc321c97001814b8e20ffe60b32735133302",
+                        "found": 81,
+                        "samples": 100
+                    },
+                    "lendingpool": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2806,
+                        "sampleAddress": "0x31d3243cfb54b34fc9c73e1cb1137124bd6b13e1",
+                        "sampleTxHash": "0x00193f6952d21ab431239bac778400e23e8ece3ff21259b0f4df20b2b3a054b9",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "para.space": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2405,
+                        "sampleAddress": "0x92d6c316cde81f6a179a60ee4a3ea8a76d40508a",
+                        "sampleTxHash": "0x004cafabc87385d8bdb7858688154b7efa198ace6422106aa7cb4ee0943c30f0",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "energon": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.5,
+                        "numLogs": 38,
+                        "sampleAddress": "0x7a7923281b5e56c41b11393689be1d74e79098c0",
+                        "sampleTxHash": "0x06a7dd40424200411a55b63b6fe271b29024136ab213f7203ed1be5ad819b4e4",
+                        "found": 4,
+                        "samples": 4
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Withdraw",
+        "type": "event",
+        "@id": "0x3115d1449a7b732c986cba18244e897a450f61e1bb8d589cd2e69e6c8924f9f7",
+        "signature": "Withdraw(address,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "erc20:token",
+                "name": "reserve",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.916667,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 113942,
+                        "sampleAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+                        "sampleTxHash": "0x00001ed05b2ebadc3ec01932e2862fd3746d9a48d91830252d8658c9d0c29d87",
+                        "found": 36,
+                        "samples": 36
+                    },
+                    "lendingpool": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 11708,
+                        "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                        "sampleTxHash": "0x0031ac54388b309c79772c394a3ed7fd522f239d5840d4e610f8c40c4eb5afc2",
+                        "found": 14,
+                        "samples": 14
+                    }
+                }
+            },
+            {
+                "@type": "transfer:from",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.0909091,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.030303,
+                        "numLogs": 60120,
+                        "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                        "sampleTxHash": "0x000854f73feb67b5a4100fa6793ece830c6e2d9cc31ab726561064d6ad296a2c",
+                        "found": 66,
+                        "samples": 100
+                    },
+                    "lendingpool": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10945,
+                        "sampleAddress": "0x38972f4bc20dbf2eb2a4cb0593414e7f1bc73c2d",
+                        "sampleTxHash": "0x02361451422120fca8b672c02f4a87d09cd6ce6d95def48cf3e13bc29b4aed8c",
+                        "found": 5,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "name": "onBehalfOf",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.106383,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0.0425532,
+                        "numLogs": 33745,
+                        "sampleAddress": "0x777777c9898d384f785ee44acfe945efdff5f3e0",
+                        "sampleTxHash": "0x000b8d53f332735b81b2ebeaffe6a94401f044af74efe81f6e54eb7d58ed00ca",
+                        "found": 47,
+                        "samples": 100
+                    },
+                    "lendingpool": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 8684,
+                        "sampleAddress": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+                        "sampleTxHash": "0x07e8eea355f7338200a93d9765a10c2c83fa407b510f231a1ebb5737d30d5b68",
+                        "found": 3,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "referrer:referral",
+                "name": "referral",
+                "type": "uint16"
+            }
+        ],
+        "name": "Deposit",
+        "type": "event",
+        "@id": "0xde6857219544bb5b7746f48ed30be6386fefc61b2f864cacf559893bf50fd951",
+        "signature": "Deposit(address,address,address,uint256,uint16)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "transfer:from",
+                "name": "from",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.0588235,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 19144,
+                        "sampleAddress": "0x777777c9898d384f785ee44acfe945efdff5f3e0",
+                        "sampleTxHash": "0x000a54ea60832324b3a946e4b71e716372b6bb5a283ddc5cbc0595ccc9122fb3",
+                        "found": 34,
+                        "samples": 100
+                    },
+                    "bend": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 8808,
+                        "sampleAddress": "0xed2ab4948ba6a909a7751dec4f34f303eb8c7236",
+                        "sampleTxHash": "0x01845cce625f17bda1b4a6472d29d61799f60323e3219f978975a71bf02b6c98",
+                        "found": 0,
+                        "samples": 100
+                    },
+                    "stargate": {
+                        "is_erc20": 0.133333,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1434,
+                        "sampleAddress": "0x3025680925349c9c01c0f01cf300ec963832ec64",
+                        "sampleTxHash": "0x06dd08077b82af9361a03af6c11cdf0989962589307228c3d4aa7a94ec70927e",
+                        "found": 15,
+                        "samples": 100
+                    },
+                    "solv": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 421,
+                        "sampleAddress": "0x092314c3c7aab1f890facd3cec28cb3a4295d67d",
+                        "sampleTxHash": "0x0558b8f7d627bac3ff1a984ce1b43221cb6a4de9884f7edbd2e8d144c4451726",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "party": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 137,
+                        "sampleAddress": "0x9fa0d9d784e752b35c26ffb5592a24997ac9187f",
+                        "sampleTxHash": "0x01bc2fadaad2de9b056d05cf822c6fa9ea8b15773745adea4e88c886eb4cc4b7",
+                        "found": 21,
+                        "samples": 43
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amountLP",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "amountSD",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Burn",
+        "type": "event",
+        "@id": "0x49995e5dd6158cf69ad3e9777c46755a1a826a446c6416992167462dad033b2a",
+        "signature": "Burn(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "erc20:token",
+                "name": "reserve",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.971429,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 51072,
+                        "sampleAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                        "sampleTxHash": "0x000199a4f5f0c778caa9a95395a8198045c78551dbaf3153ce94ad4524c0567c",
+                        "found": 35,
+                        "samples": 35
+                    },
+                    "lendingpool": {
+                        "is_erc20": 1,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 2767,
+                        "sampleAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                        "sampleTxHash": "0x012871bb664dc7a553c2e5305e24b9ebf0080768099c153ae480a54ead9674ca",
+                        "found": 14,
+                        "samples": 14
+                    }
+                }
+            },
+            {
+                "@type": "lending:user",
+                "name": "user",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.0588235,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 18869,
+                        "sampleAddress": "0x777777c9898d384f785ee44acfe945efdff5f3e0",
+                        "sampleTxHash": "0x000a54ea60832324b3a946e4b71e716372b6bb5a283ddc5cbc0595ccc9122fb3",
+                        "found": 34,
+                        "samples": 100
+                    },
+                    "lendingpool": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1985,
+                        "sampleAddress": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+                        "sampleTxHash": "0x00be58cb4004db85375daf7be03f51c32472a68ee7fe5c950902067a93efeae6",
+                        "found": 3,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "lending:repayer",
+                "name": "repayer",
+                "type": "address",
+                "features": {
+                    "aave": {
+                        "is_erc20": 0.0666667,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 28530,
+                        "sampleAddress": "0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+                        "sampleTxHash": "0x001023001ee5968650beb0d9072a8451050c7a01dc1d5ed7cddd2a33e155fddc",
+                        "found": 45,
+                        "samples": 100
+                    },
+                    "lendingpool": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 1997,
+                        "sampleAddress": "0xf2df969f59b2c86e4b230da88918cdebcfc4ccbc",
+                        "sampleTxHash": "0x00be58cb4004db85375daf7be03f51c32472a68ee7fe5c950902067a93efeae6",
+                        "found": 3,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "amount",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Repay",
+        "type": "event",
+        "@id": "0x4cdde6e09bb755c9a5589ebaec640bbfedff1362d4b255ebf8339782b9942faa",
+        "signature": "Repay(address,address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "minter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "mintTokens",
+                "type": "uint256"
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0x2f00e3cdd69a77be7ed215ec7b2a36784dd158f921fca79ac29deffa353fe6ee",
+        "signature": "Mint(address,address,uint256,uint256)"
+    }
+]

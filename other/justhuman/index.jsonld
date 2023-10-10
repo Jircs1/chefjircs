@@ -1,0 +1,368 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "_liquidity",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "margin",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "fixedTokenBalance",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "variableTokenBalance",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "accumulatedFees",
+                "type": "uint256"
+            }
+        ],
+        "name": "PositionUpdate",
+        "type": "event",
+        "@id": "0x4a0dd77e6cb2be1847de991681f679a59bbe3e047ecb337a8426980861f82c0f",
+        "signature": "PositionUpdate(address,int24,int24,uint128,int256,int256,int256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "marginDelta",
+                "type": "int256"
+            }
+        ],
+        "name": "PositionMarginUpdate",
+        "type": "event",
+        "@id": "0x58fda8ef9050967ebeb4f3bc6baea53d849c21755d63a2abb4507c5db1b118ec",
+        "signature": "PositionMarginUpdate(address,address,int24,int24,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "int24",
+                "name": "tick",
+                "type": "int24"
+            }
+        ],
+        "name": "VAMMPriceChange",
+        "type": "event",
+        "@id": "0x3de48b885df0271268324c099733a36a802c1cbb40c7272796b2b28addf04cd2",
+        "signature": "VAMMPriceChange(int24)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "desiredNotional",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint160",
+                "name": "sqrtPriceLimitX96",
+                "type": "uint160"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "cumulativeFeeIncurred",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "fixedTokenDelta",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "variableTokenDelta",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "fixedTokenDeltaUnbalanced",
+                "type": "int256"
+            }
+        ],
+        "name": "Swap",
+        "type": "event",
+        "@id": "0xa24f288a343811d26ac1ec29998e37b87ff6503cefe399a3c8fb747eb0464e58",
+        "signature": "Swap(address,address,int24,int24,int256,uint160,uint256,int256,int256,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "amount",
+                "type": "uint128"
+            }
+        ],
+        "name": "Mint",
+        "type": "event",
+        "@id": "0x712faa344eac6399174fdfa887d9e1451e9b55ce58ee440c91c660229962a5a6",
+        "signature": "Mint(address,address,int24,int24,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "settlementCashflow",
+                "type": "int256"
+            }
+        ],
+        "name": "PositionSettlement",
+        "type": "event",
+        "@id": "0x970071e0d424aa8ce645bd8034df7db5eec3ce8fb9d83833a84320fb29b2c9fc",
+        "signature": "PositionSettlement(address,int24,int24,int256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "value",
+                "type": "uint256"
+            }
+        ],
+        "name": "HistoricalApy",
+        "type": "event",
+        "@id": "0xa54badf52ad5c1729ee2a0e934e6b23e9a3a037d7a761ccd78b01a8db4bf3f14",
+        "signature": "HistoricalApy(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "amount",
+                "type": "uint128"
+            }
+        ],
+        "name": "Burn",
+        "type": "event",
+        "@id": "0xf57f161c6404e7a58d089003a260456719af3caac502550a59509b4c9d8d4628",
+        "signature": "Burn(address,address,int24,int24,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickLower",
+                "type": "int24"
+            },
+            {
+                "indexed": true,
+                "internalType": "int24",
+                "name": "tickUpper",
+                "type": "int24"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "liquidator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "int256",
+                "name": "notionalUnwound",
+                "type": "int256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "liquidatorReward",
+                "type": "uint256"
+            }
+        ],
+        "name": "PositionLiquidation",
+        "type": "event",
+        "@id": "0x743fc9c78420f1cdcbbcb2ed0928d77e4a043cf392481c7e9edbf27bf7a3cea1",
+        "signature": "PositionLiquidation(address,int24,int24,address,int256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "impl",
+                "type": "address"
+            }
+        ],
+        "name": "Upgraded",
+        "type": "event",
+        "@id": "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b",
+        "signature": "Upgraded(address)"
+    }
+]

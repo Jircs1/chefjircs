@@ -1,0 +1,393 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "newSpotPrice",
+                "type": "uint128"
+            }
+        ],
+        "name": "SpotPriceUpdate",
+        "type": "event",
+        "@id": "0xf06180fdbe95e5193df4dcd1352726b1f04cb58599ce58552cc952447af2ffbb",
+        "signature": "SpotPriceUpdate(uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [],
+        "name": "SwapNFTOutPair",
+        "type": "event",
+        "@id": "0xbc479dfc6cb9c1a9d880f987ee4b30fa43dd7f06aec121db685b67d587c93c93",
+        "signature": "SwapNFTOutPair()"
+    },
+    {
+        "anonymous": false,
+        "inputs": [],
+        "name": "SwapNFTInPair",
+        "type": "event",
+        "@id": "0x3614eb567740a0ee3897c0e2b11ad6a5720d2e4438f9c8accf6c95c24af3a470",
+        "signature": "SwapNFTInPair()"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "TokenDeposit",
+        "type": "event",
+        "@id": "0xf1b3be8dace0fecfbdb6fb0fa1cc014c612bcb1b46db027c1ece5fc11fff09d6",
+        "signature": "TokenDeposit(uint256)"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC721",
+                "name": "_nft",
+                "type": "address"
+            },
+            {
+                "internalType": "contract ICurve",
+                "name": "_bondingCurve",
+                "type": "address"
+            },
+            {
+                "internalType": "address payable",
+                "name": "_assetRecipient",
+                "type": "address"
+            },
+            {
+                "internalType": "enum LSSVMPair.PoolType",
+                "name": "_poolType",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint128",
+                "name": "_delta",
+                "type": "uint128"
+            },
+            {
+                "internalType": "uint96",
+                "name": "_fee",
+                "type": "uint96"
+            },
+            {
+                "internalType": "uint128",
+                "name": "_spotPrice",
+                "type": "uint128"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "_initialNFTIDs",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "createPairETH",
+        "outputs": [
+            {
+                "internalType": "contract LSSVMPairETH",
+                "name": "pair",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "payable",
+        "type": "function",
+        "@id": "0xce9c095d",
+        "signature": "createPairETH(address,address,address,uint8,uint128,uint96,uint128,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "newDelta",
+                "type": "uint128"
+            }
+        ],
+        "name": "DeltaUpdate",
+        "type": "event",
+        "@id": "0xc958ae052d28f8d17bc2c4ddbabb699a3cab5cccefd034d0fc971efdadc01da5",
+        "signature": "DeltaUpdate(uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [],
+        "name": "NFTWithdrawal",
+        "type": "event",
+        "@id": "0x242b9b8fb5c0e6298454fcf80a0fbcbb7308620133d92b50091a1f64cee790e8",
+        "signature": "NFTWithdrawal()"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "TokenWithdrawal",
+        "type": "event",
+        "@id": "0x0e266e8f38544aa1480d73762386eb10df55b1b8453d935762e891c44b69a1e6",
+        "signature": "TokenWithdrawal(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "delegation:delegated",
+                "name": "delegate",
+                "type": "address",
+                "features": {
+                    "ens": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12219,
+                        "sampleAddress": "0x983110309620d911731ac0932219af06091b6744",
+                        "sampleTxHash": "0x002c0aa2ca0e1b3197d2f1a26519cf6d60bd8fbe50902ae32cdeb378e13483cf",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "hop": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10017,
+                        "sampleAddress": "0xf4b0556b9b6f53e00a1fdd2b0478ce841991d8fa",
+                        "sampleTxHash": "0x0056b32ae5bf449b472856cde231f4598585286ec2cdbdc0999f9b6ce179b169",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "uniswap": {
+                        "is_erc20": 0.166667,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 6235,
+                        "sampleAddress": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+                        "sampleTxHash": "0x00544c5ab5f8d61573aa0aeba299842536bad21364df83af57417ab8fd07ea90",
+                        "found": 12,
+                        "samples": 100
+                    },
+                    "gitcoin": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4673,
+                        "sampleAddress": "0x4be88f63f919324210ea3a2ccad4ff0734425f91",
+                        "sampleTxHash": "0x00cbdf04133512aed9e5ca000993973394f39996829179016f21afb4ac3b1139",
+                        "found": 2,
+                        "samples": 100
+                    },
+                    "bitdao": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4513,
+                        "sampleAddress": "0x853edd954dd508117cb957918378c976ac390d8e",
+                        "sampleTxHash": "0x0043f4388dc409e84ea71513979034896e558ee41a1bb354570e0649653da733",
+                        "found": 4,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "previousBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "newBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DelegateVotesChanged",
+        "type": "event",
+        "@id": "0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724",
+        "signature": "DelegateVotesChanged(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "newFee",
+                "type": "uint96"
+            }
+        ],
+        "name": "FeeUpdate",
+        "type": "event",
+        "@id": "0x66c55c30868c51e7ad52e3d85d1403576a9967614e67c48e25b55a10baa650c0",
+        "signature": "FeeUpdate(uint96)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "claimer",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Claimed",
+        "type": "event",
+        "@id": "0x4ec90e965519d92681267467f775ada5bd214aa92c0dc93d90a5e880ce9ed026",
+        "signature": "Claimed(uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "ids",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "SwapNFTInPair",
+        "type": "event",
+        "@id": "0x7a0e7e58d91fd23a96b0008604db1b2d1cee4aae434e3aad9a20fdd7c0995f89",
+        "signature": "SwapNFTInPair(uint256,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "ids",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "SwapNFTOutPair",
+        "type": "event",
+        "@id": "0xa13c46268c53408442d94eb370f2e476cb7f0fbe027ae5bad73ce13d4469c8b9",
+        "signature": "SwapNFTOutPair(uint256,uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numNFTs",
+                "type": "uint256"
+            }
+        ],
+        "name": "SwapNFTOutPair",
+        "type": "event",
+        "@id": "0xd9c2402e1a067734ae78dab98f06d5b28e8a2d2c6370ec0e6ff8cc2749d050f1",
+        "signature": "SwapNFTOutPair(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "ids",
+                "type": "uint256[]"
+            }
+        ],
+        "name": "NFTWithdrawal",
+        "type": "event",
+        "@id": "0x840318695eadabb7c175aa7b9a9b3f9bbd1cb2dd11e9374a159a090d7125f8c8",
+        "signature": "NFTWithdrawal(uint256[])"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numNFTs",
+                "type": "uint256"
+            }
+        ],
+        "name": "NFTWithdrawal",
+        "type": "event",
+        "@id": "0xd26d84b7e96b5b61cbb9f851a5a2953408c61abc7502e33a59d3e6146c0428b0",
+        "signature": "NFTWithdrawal(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "poolAddress",
+                "type": "address"
+            }
+        ],
+        "name": "TokenDeposit",
+        "type": "event",
+        "@id": "0x831faf3fbb75c9fc66e318de7e95905d24c0430822da168c1c06fd49cba8f5f7",
+        "signature": "TokenDeposit(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "numNFTs",
+                "type": "uint256"
+            }
+        ],
+        "name": "SwapNFTInPair",
+        "type": "event",
+        "@id": "0x58e7e2e8d4c949c019e4fe5f6e2a8f10e4e078a8747730386e9a230da8c969f0",
+        "signature": "SwapNFTInPair(uint256,uint256)"
+    }
+]

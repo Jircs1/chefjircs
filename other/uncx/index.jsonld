@@ -1,0 +1,239 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockDate",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "unlockDate",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "onDeposit",
+        "type": "event",
+        "@id": "0x830357565da6ecfc26d8d9f69df488ed6f70361af9a07e570544aeb5c5e765e5",
+        "signature": "onDeposit(address,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "onWithdraw",
+        "type": "event",
+        "@id": "0xccad973dcd043c7d680389db4378bd6b9775db7124092e9e0422c9e46d7985dc",
+        "signature": "onWithdraw(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockID",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountInTokens",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "startEmission",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "endEmission",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "onLock",
+        "type": "event",
+        "@id": "0x4d0f9887048089b093c92bec885ab529000723bce1a79f4e81a5990619910b96",
+        "signature": "onLock(uint256,address,address,uint256,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "tokenOwner",
+                "type": "address"
+            }
+        ],
+        "name": "tokenRegistered",
+        "type": "event",
+        "@id": "0x9d2826e1995b4858d711097615ac98b9c494de7182020aa7cffbe8d61fc0f7a2",
+        "signature": "tokenRegistered(address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "presaleContract",
+                "type": "address"
+            }
+        ],
+        "name": "presaleRegistered",
+        "type": "event",
+        "@id": "0xa62fce43cb61612c50d7b3485c2fb44000803dacc3472b8ce4c638f235e97a1f",
+        "signature": "presaleRegistered(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockIDFrom",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockIDto",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "oldOwner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "onTransferLock",
+        "type": "event",
+        "@id": "0xc1329eea12893a6eff780df43cf4ec708fdc6ce7fbacf84ee8cf9355a9af1dd8",
+        "signature": "onTransferLock(uint256,uint256,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "lockId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "unlockDate",
+                "type": "uint256"
+            }
+        ],
+        "name": "onRelock",
+        "type": "event",
+        "@id": "0xefaff1b90138281d215452c67f793017f52e456f65c28ac63f5309a89a059b47",
+        "signature": "onRelock(uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "fromLockID",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "toLockID",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amountInTokens",
+                "type": "uint256"
+            }
+        ],
+        "name": "onSplitLock",
+        "type": "event",
+        "@id": "0xbfc02f4250f5e54a31a72371b1932061a0245db2afb5124b547306f6ebffd8ad",
+        "signature": "onSplitLock(uint256,uint256,uint256)"
+    }
+]

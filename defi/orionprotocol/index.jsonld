@@ -1,0 +1,335 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint112",
+                "name": "reserve0",
+                "type": "uint112"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint112",
+                "name": "reserve1",
+                "type": "uint112"
+            }
+        ],
+        "name": "Sync",
+        "type": "event",
+        "@id": "0x1c411e9a96e071241c2f21f7726b17ae89e3cab4c78be50e062b03a9fffbbad1",
+        "signature": "Sync(uint112,uint112)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0In",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1In",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount0Out",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount1Out",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$:token1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            }
+        ],
+        "name": "Swap",
+        "type": "event",
+        "@id": "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+        "signature": "Swap(address,uint256,uint256,uint256,uint256,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "assetAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isDeposit",
+                "type": "bool"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint112",
+                "name": "amount",
+                "type": "uint112"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "timestamp",
+                "type": "uint64"
+            }
+        ],
+        "name": "NewAssetTransaction",
+        "type": "event",
+        "@id": "0x680bf27edbd578e3c9c5afd420badcf2fe53be197a76c602d30480831c2a8587",
+        "signature": "NewAssetTransaction(address,address,bool,uint112,uint64)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "buyer",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "seller",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "baseAsset",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "quoteAsset",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "filledPrice",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint192",
+                "name": "filledAmount",
+                "type": "uint192"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint192",
+                "name": "amountQuote",
+                "type": "uint192"
+            }
+        ],
+        "name": "NewTrade",
+        "type": "event",
+        "@id": "0x2cb48e3cb1f0f27852a167ba54cb02d89bd8bf1beb99be6d42fa9d6535da5ad7",
+        "signature": "NewTrade(address,address,address,address,uint64,uint192,uint192)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "RewardPaid",
+        "type": "event",
+        "@id": "0xe2403640ba68fed3a2f88b7557551d1993f84b99bb10ff833f0cf8db0c5e0486",
+        "signature": "RewardPaid(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "secret",
+                "type": "bytes"
+            }
+        ],
+        "name": "AtomicRedeemed",
+        "type": "event",
+        "@id": "0x62d93a8b1423235bfd6a4737b2e2069ee7c9ef53c8dab794a345f4d988d3f7e5",
+        "signature": "AtomicRedeemed(address,address,address,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "secretHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "AtomicLocked",
+        "type": "event",
+        "@id": "0x8156ea5248573c664d8d0995ccb941c2cd87e2e6fa12d8a56594295bae8d14bb",
+        "signature": "AtomicLocked(address,address,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "secret",
+                "type": "bytes"
+            }
+        ],
+        "name": "AtomicClaimed",
+        "type": "event",
+        "@id": "0xe4efc926785e8287f79fae88209e8625600f4493b87d12e6eff70d9eba5bc755",
+        "signature": "AtomicClaimed(address,address,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_rewardPerToken",
+                "type": "uint256"
+            }
+        ],
+        "name": "TestRewardPerToken",
+        "type": "event",
+        "@id": "0x6e6274e60f152b1f5484c37739c4b887e602755397ce60d647ba408fe2ef8538",
+        "signature": "TestRewardPerToken(uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "balances_account",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rewardPerToken",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "userRewardPerTokenPaid_account",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "rewards_account",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "voting_contract_getPoolRewards",
+                "type": "uint256"
+            }
+        ],
+        "name": "TestEarnedCalc",
+        "type": "event",
+        "@id": "0x5316275da5f9d9828a21c07ad00f16b766158186408e7f9849d1f7b6afe3ab26",
+        "signature": "TestEarnedCalc(uint256,uint256,uint256,uint256,uint256)"
+    }
+]

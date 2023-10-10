@@ -1,0 +1,50 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "marketId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "itemHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "userHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "paymentToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "price",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$4",
+                "validationSuccess": true
+            }
+        ],
+        "name": "MarketItemPurchased",
+        "type": "event",
+        "@id": "0xfa5895e43f290edbd4b57005f70df6eb9a23c25c8913d394b59c602613737323",
+        "signature": "MarketItemPurchased(uint256,bytes32,address,bytes32,address,uint256)"
+    }
+]

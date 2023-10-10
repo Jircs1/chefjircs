@@ -1,0 +1,735 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "underlineContract",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "wrappedTokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "Wrapped",
+        "type": "event",
+        "@id": "0x727200b48f3c812bfb404b578574e1c03694edb122d80fa6dcb352a9e4f8a938",
+        "signature": "Wrapped(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "tTokenAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "wrappedTokenAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Unwrapped",
+        "type": "event",
+        "@id": "0xf64ae1cc3e0e07da9c895b3225439175cab5838aca24c4e74852704858c96a7b",
+        "signature": "Unwrapped(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "stakingProvider",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "application",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "fromAmount",
+                "type": "uint96"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "toAmount",
+                "type": "uint96"
+            }
+        ],
+        "name": "AuthorizationIncreased",
+        "type": "event",
+        "@id": "0x87f9f9f59204f53d57a89a817c6083a17979cd0531791c91e18551a56e3cfdd7",
+        "signature": "AuthorizationIncreased(address,address,uint96,uint96)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "Minted",
+        "type": "event",
+        "@id": "0x30385c845b448a36257a6a1716e6ad2e1bc2cbe333cde1e69fe849ad6511adfe",
+        "signature": "Minted(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "fundingTxHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "fundingOutputIndex",
+                "type": "uint32"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "amount",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes8",
+                "name": "blindingFactor",
+                "type": "bytes8"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes20",
+                "name": "walletPubKeyHash",
+                "type": "bytes20"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes20",
+                "name": "refundPubKeyHash",
+                "type": "bytes20"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes4",
+                "name": "refundLocktime",
+                "type": "bytes4"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "vault",
+                "type": "address"
+            }
+        ],
+        "name": "DepositRevealed",
+        "type": "event",
+        "@id": "0xa7382159a693ed317a024daf0fd1ba30805cdf9928ee09550af517c516e2ef05",
+        "signature": "DepositRevealed(bytes32,uint32,address,uint64,bytes8,bytes20,bytes20,bytes4,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "minter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "depositKey",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "fundingTxHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "fundingOutputIndex",
+                "type": "uint32"
+            }
+        ],
+        "name": "OptimisticMintingRequested",
+        "type": "event",
+        "@id": "0x36f39c606d55d7dd2a05b8c4e41e9a6ca8c501cea10009c1762f6826a146e055",
+        "signature": "OptimisticMintingRequested(address,uint256,address,uint256,bytes32,uint32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "minter",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "depositKey",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "optimisticMintingDebt",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "OptimisticMintingFinalized",
+        "type": "event",
+        "@id": "0x2cffebf26d639426e79514d100febae8b2c63e700e5dc0fa6c88a12963350636",
+        "signature": "OptimisticMintingFinalized(address,uint256,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "delegation:delegated",
+                "name": "delegate",
+                "type": "address",
+                "features": {
+                    "ens": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 12219,
+                        "sampleAddress": "0x983110309620d911731ac0932219af06091b6744",
+                        "sampleTxHash": "0x002c0aa2ca0e1b3197d2f1a26519cf6d60bd8fbe50902ae32cdeb378e13483cf",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "hop": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 10017,
+                        "sampleAddress": "0xf4b0556b9b6f53e00a1fdd2b0478ce841991d8fa",
+                        "sampleTxHash": "0x0056b32ae5bf449b472856cde231f4598585286ec2cdbdc0999f9b6ce179b169",
+                        "found": 3,
+                        "samples": 100
+                    },
+                    "uniswap": {
+                        "is_erc20": 0.166667,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 6235,
+                        "sampleAddress": "0xbbf3f1421d886e9b2c5d716b5192ac998af2012c",
+                        "sampleTxHash": "0x00544c5ab5f8d61573aa0aeba299842536bad21364df83af57417ab8fd07ea90",
+                        "found": 12,
+                        "samples": 100
+                    },
+                    "gitcoin": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4673,
+                        "sampleAddress": "0x4be88f63f919324210ea3a2ccad4ff0734425f91",
+                        "sampleTxHash": "0x00cbdf04133512aed9e5ca000993973394f39996829179016f21afb4ac3b1139",
+                        "found": 2,
+                        "samples": 100
+                    },
+                    "bitdao": {
+                        "is_erc20": 0.25,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 4513,
+                        "sampleAddress": "0x853edd954dd508117cb957918378c976ac390d8e",
+                        "sampleTxHash": "0x0043f4388dc409e84ea71513979034896e558ee41a1bb354570e0649653da733",
+                        "found": 4,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "previousBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "newBalance",
+                "type": "uint256",
+                "validationSuccess": true
+            }
+        ],
+        "name": "DelegateVotesChanged",
+        "type": "event",
+        "@id": "0xdec2bacdd2f05b59de34da9b523dff8be42e5e38e818c82fdb0bae774387a724",
+        "signature": "DelegateVotesChanged(address,uint256,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "BalanceTransferred",
+        "type": "event",
+        "@id": "0x4163d0b06696468b3d7903f482bcd0097bd38a9a9086157479fd6c6561d24261",
+        "signature": "BalanceTransferred(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "stakingProvider",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "operator",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "fromAmount",
+                "type": "uint96"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint96",
+                "name": "toAmount",
+                "type": "uint96"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "decreasingAt",
+                "type": "uint64"
+            }
+        ],
+        "name": "AuthorizationDecreaseRequested",
+        "type": "event",
+        "@id": "0x545cbf267cef6fe43f11f6219417ab43a0e8e345adbaae5f626d9bc325e8535a",
+        "signature": "AuthorizationDecreaseRequested(address,address,uint96,uint96,uint64)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "stakingProvider",
+                "type": "address"
+            }
+        ],
+        "name": "AuthorizationDecreaseApproved",
+        "type": "event",
+        "@id": "0x50270a522c2fef97b6b7385c2aa4a4518adda681530e0a1fe9f5e840f6f2cd9d",
+        "signature": "AuthorizationDecreaseApproved(address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "spender",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "BalanceApproved",
+        "type": "event",
+        "@id": "0x2fe5e8e7796010737e636f63b35a0383dc160b68483984f2df987c78e842b405",
+        "signature": "BalanceApproved(address,address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "Unminted",
+        "type": "event",
+        "@id": "0x68751a4c3821398cb63d11609eca2440742ef19446f0c0261bfa8a13dd0748b8",
+        "signature": "Unminted(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes20",
+                "name": "walletPubKeyHash",
+                "type": "bytes20"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "redeemerOutputScript",
+                "type": "bytes"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "redeemer",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "requestedAmount",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "treasuryFee",
+                "type": "uint64"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint64",
+                "name": "txMaxFee",
+                "type": "uint64"
+            }
+        ],
+        "name": "RedemptionRequested",
+        "type": "event",
+        "@id": "0x97a0199072f487232635d50ab75860891afe0b91c976ed2fc76502c4d82d0d95",
+        "signature": "RedemptionRequested(bytes20,bytes,address,uint64,uint64,uint64)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "bytes20",
+                "name": "walletPubKeyHash",
+                "type": "bytes20"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "redemptionTxHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "RedemptionsCompleted",
+        "type": "event",
+        "@id": "0xa45596c10f758d32ec8cca64a0fbfe776052b08fdb3f026e0a87f52118bf8fbe",
+        "signature": "RedemptionsCompleted(bytes20,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            }
+        ],
+        "name": "BalanceDecreased",
+        "type": "event",
+        "@id": "0x9c6be7c4260e52ea2e41d7f17932147ab78756f1bb2247a2554796d969741aff",
+        "signature": "BalanceDecreased(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_depositContractAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "_requester",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "_digest",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_utxoSize",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "_redeemerOutputScript",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_requestedFee",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "_outpoint",
+                "type": "bytes"
+            }
+        ],
+        "name": "RedemptionRequested",
+        "type": "event",
+        "@id": "0x7959c380174061a21a3ba80243a032ba9cd10dc8bd1736d7e835c94e97a35a98",
+        "signature": "RedemptionRequested(address,address,bytes32,uint256,bytes,uint256,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "bytes20",
+                        "name": "walletPubKeyHash",
+                        "type": "bytes20"
+                    },
+                    {
+                        "components": [
+                            {
+                                "internalType": "bytes32",
+                                "name": "fundingTxHash",
+                                "type": "bytes32"
+                            },
+                            {
+                                "internalType": "uint32",
+                                "name": "fundingOutputIndex",
+                                "type": "uint32"
+                            }
+                        ],
+                        "internalType": "struct WalletCoordinator.DepositKey[]",
+                        "name": "depositsKeys",
+                        "type": "tuple[]"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "sweepTxFee",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256[]",
+                        "name": "depositsRevealBlocks",
+                        "type": "uint256[]"
+                    }
+                ],
+                "indexed": false,
+                "internalType": "struct WalletCoordinator.DepositSweepProposal",
+                "name": "proposal",
+                "type": "tuple"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "coordinator",
+                "type": "address"
+            }
+        ],
+        "name": "DepositSweepProposalSubmitted",
+        "type": "event",
+        "@id": "0x80936884707d12c5d8bb32b32fa91535e4f4200316fb138241181fb647d39fa4",
+        "signature": "DepositSweepProposalSubmitted((bytes20,(bytes32,uint32)[],uint256,uint256[]),address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes20",
+                "name": "walletPubKeyHash",
+                "type": "bytes20"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "sweepTxHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "DepositsSwept",
+        "type": "event",
+        "@id": "0xe50ffdcc0a5f2c1ede5c122b9414ffd7b2c6bc870d2d775194049dc30da95e6a",
+        "signature": "DepositsSwept(bytes20,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "depositor",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "optimisticMintingDebt",
+                "type": "uint256"
+            }
+        ],
+        "name": "OptimisticMintingDebtRepaid",
+        "type": "event",
+        "@id": "0xb30abd1b9e3d58cd8525b3d5c5aa002db1e43a150af5b172a8d16efcc7a141f8",
+        "signature": "OptimisticMintingDebtRepaid(address,uint256)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            }
+        ],
+        "name": "BalanceIncreased",
+        "type": "event",
+        "@id": "0x7a702e80a9c183a6ce9d6732991df2e914555ba35a364a70aed2433984e7544b",
+        "signature": "BalanceIncreased(address,uint256)"
+    }
+]

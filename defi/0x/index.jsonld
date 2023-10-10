@@ -1,0 +1,449 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "orderHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "maker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "taker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "makerToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "takerToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "takerTokenFilledAmount",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "makerTokenFilledAmount",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "pool",
+                "type": "bytes32"
+            }
+        ],
+        "name": "RfqOrderFilled",
+        "type": "event",
+        "@id": "0x829fa99d94dc4636925b38632e625736a614c154d55006b7ab6bea979c210c32",
+        "signature": "RfqOrderFilled(bytes32,address,address,address,address,uint128,uint128,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "orderHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "maker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "taker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "makerToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "takerToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "makerTokenFilledAmount",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "takerTokenFilledAmount",
+                "type": "uint128"
+            }
+        ],
+        "name": "OtcOrderFilled",
+        "type": "event",
+        "@id": "0xac75f773e3a92f1a02b12134d65e1f47f8a14eabe4eaf1e24624918e6a8b269f",
+        "signature": "OtcOrderFilled(bytes32,address,address,address,address,uint128,uint128)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "@type": "erc20:token",
+                "name": "makerAddress",
+                "type": "address",
+                "features": {
+                    "0x": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 125914,
+                        "sampleAddress": "0x56178a0d5f301baf6cf3e1cd53d9863437345bf9",
+                        "sampleTxHash": "0x0000967e8a44591129468a3c47a281e750daf5131816685dd0eddda71606075d",
+                        "found": 3,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "transfer:to",
+                "name": "feeRecipientAddress",
+                "type": "address",
+                "features": {
+                    "0x": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 95212,
+                        "sampleAddress": "0x55662e225a3376759c24331a9aed764f8f0c9fbb",
+                        "sampleTxHash": "0x0000967e8a44591129468a3c47a281e750daf5131816685dd0eddda71606075d",
+                        "found": 1,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:token",
+                "name": "takerAddress",
+                "type": "address",
+                "features": {
+                    "0x": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 125561,
+                        "sampleAddress": "0x8d90113a1e286a5ab3e496fbd1853f265e5913c6",
+                        "sampleTxHash": "0x000396e07aa4557086b41d35abb3641ee5b39ea5d078950cc533f705037a9c06",
+                        "found": 14,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "transfer:from",
+                "name": "senderAddress",
+                "type": "address",
+                "features": {
+                    "0x": {
+                        "is_erc20": 0,
+                        "is_erc721": 0,
+                        "is_erc20lp": 0,
+                        "numLogs": 125561,
+                        "sampleAddress": "0x8d90113a1e286a5ab3e496fbd1853f265e5913c6",
+                        "sampleTxHash": "0x000396e07aa4557086b41d35abb3641ee5b39ea5d078950cc533f705037a9c06",
+                        "found": 14,
+                        "samples": 100
+                    }
+                }
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "makerAssetFilledAmount",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "name": "takerAssetFilledAmount",
+                "type": "uint256",
+                "validationSuccess": true
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "name": "makerFeePaid",
+                "type": "uint256"
+            },
+            {
+                "@type": "erc20:tokenAmount",
+                "@token": "$2",
+                "name": "takerFeePaid",
+                "type": "uint256"
+            },
+            {
+                "@type": "0x:orderHash",
+                "name": "orderHash",
+                "type": "bytes32"
+            },
+            {
+                "@type": "0x:assetData",
+                "name": "makerAssetData",
+                "type": "bytes"
+            },
+            {
+                "@type": "0x:assetData",
+                "name": "takerAssetData",
+                "type": "bytes"
+            }
+        ],
+        "name": "Fill",
+        "type": "event",
+        "@id": "0x0bcc4c97732e47d9946f229edb95f5b6323f601300e4690de719993f3c371129",
+        "signature": "Fill(address,address,address,address,uint256,uint256,uint256,uint256,bytes32,bytes,bytes)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "orderHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "maker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "taker",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "feeRecipient",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "makerToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "takerToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "takerTokenFilledAmount",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "makerTokenFilledAmount",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint128",
+                "name": "takerTokenFeeFilledAmount",
+                "type": "uint128"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "protocolFeePaid",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes32",
+                "name": "pool",
+                "type": "bytes32"
+            }
+        ],
+        "name": "LimitOrderFilled",
+        "type": "event",
+        "@id": "0xab614d2b738543c0ea21f56347cf696a3a0c42a7cbec3212a5ca22a4dcff2124",
+        "signature": "LimitOrderFilled(bytes32,address,address,address,address,address,uint128,uint128,uint128,uint256,bytes32)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "inputToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "outputToken",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "inputTokenAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$0",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "outputTokenAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$1",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "provider",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "recipient",
+                "type": "address"
+            }
+        ],
+        "name": "LiquidityProviderSwap",
+        "type": "event",
+        "@id": "0x40a6ba9513d09e3488135e0e0d10e2d4382b792720155b144cbea89ac9db6d34",
+        "signature": "LiquidityProviderSwap(address,address,uint256,uint256,address,address)"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "makerAddress",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "feeRecipientAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "makerAssetData",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "takerAssetData",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "makerFeeAssetData",
+                "type": "bytes"
+            },
+            {
+                "indexed": false,
+                "internalType": "bytes",
+                "name": "takerFeeAssetData",
+                "type": "bytes"
+            },
+            {
+                "indexed": true,
+                "internalType": "bytes32",
+                "name": "orderHash",
+                "type": "bytes32"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "takerAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "senderAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "makerAssetFilledAmount",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "takerAssetFilledAmount",
+                "type": "uint256",
+                "@type": "erc20:tokenAmount",
+                "@token": "$",
+                "validationSuccess": true
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "makerFeePaid",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "takerFeePaid",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "protocolFeePaid",
+                "type": "uint256"
+            }
+        ],
+        "name": "Fill",
+        "type": "event",
+        "@id": "0x6869791f0a34781b29882982cc39e882768cf2c96995c2a110c577c53bc932d5",
+        "signature": "Fill(address,address,bytes,bytes,bytes,bytes,bytes32,address,address,uint256,uint256,uint256,uint256,uint256)"
+    }
+]
