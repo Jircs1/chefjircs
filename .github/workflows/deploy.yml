@@ -8,7 +8,7 @@ on:
       - .github/workflows/deploy.yml
       - src/analytics
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '30 */4 * * *'
 
 jobs:
   build:
