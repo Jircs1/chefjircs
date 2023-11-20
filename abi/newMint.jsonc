@@ -1,47 +1,26 @@
 {
-    "name": "newMint",
+    "name": "NewMint",
     "abis": [
         {
-            "@id": "0xafc22f2a1b7c8423cb392f3fe7711c08b38f98246adb12e5a041c2fba455ef2a",
+            "@id": "0x52277f0b4a9b555c5aa96900a13546f972bda413737ec164aac947c87eec6024",
             "type": "event",
-            "signature": "newMint(uint256,uint256,uint256,uint256,address,address)",
-            "name": "newMint",
+            "signature": "NewMint(address,uint256)",
+            "name": "NewMint",
             "inputs": [
                 {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "data0",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "data1",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "uint256",
-                    "name": "stakeId",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": true,
-                    "internalType": "uint256",
-                    "name": "bonusType",
-                    "type": "uint256"
-                },
-                {
                     "indexed": true,
                     "internalType": "address",
-                    "name": "senderAddr",
+                    "name": "msgSender",
                     "type": "address"
                 },
                 {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "referrer",
-                    "type": "address"
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "mintQuantity",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null

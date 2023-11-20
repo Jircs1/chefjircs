@@ -1,152 +1,23 @@
 {
-    "name": "Stake",
+    "name": "STAKE",
     "abis": [
         {
-            "@id": "0x5af417134f72a9d41143ace85b0a26dce6f550f894f2cbc1eeee8810603d91b6",
+            "hex_signature": "0xae171a80a1e4927950243bfc2bb6bbe530abba46ec0ebceaf8edbc1e168c5c3b",
             "type": "event",
-            "signature": "Stake(address,uint256,uint256)",
-            "name": "Stake",
+            "signature": "STAKE(address,uint256[])",
+            "name": "STAKE",
             "inputs": [
                 {
                     "indexed": false,
-                    "internalType": "address",
-                    "name": "owner",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "share",
-                    "type": "uint256",
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "validationSuccess": true
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256",
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "validationSuccess": true
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "0x02567b2553aeb44e4ddd5d68462774dc3de158cb0f2c2da1740e729b22086aff",
-            "type": "event",
-            "signature": "Stake(uint256,address,uint256)",
-            "name": "Stake",
-            "inputs": [
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "tokenId",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "by",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "stakedAt",
-                    "type": "uint256",
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "validationSuccess": true
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "0x249b692ff3a1553daecb2b56a807466cab98a0acdca470f0d18c1064e89b5732",
-            "type": "event",
-            "signature": "Stake(address,address,uint256,uint256,uint256,uint256)",
-            "name": "Stake",
-            "inputs": [
-                {
-                    "indexed": true,
-                    "internalType": "address",
-                    "name": "token",
-                    "type": "address"
-                },
-                {
-                    "indexed": true,
                     "internalType": "address",
                     "name": "user",
                     "type": "address"
                 },
                 {
                     "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "averageDepositTime",
-                    "type": "uint256",
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "validationSuccess": true
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "cumulativeBalance",
-                    "type": "uint256"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "tokenCumulativeStaked",
-                    "type": "uint256"
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "0x227a473b70d2f893cc7659219575c030a63b5743024fe1e0c1a680e708b1525a",
-            "type": "event",
-            "signature": "Stake(uint256)",
-            "name": "Stake",
-            "inputs": [
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
-                }
-            ],
-            "outputs": null
-        },
-        {
-            "@id": "0xebedb8b3c678666e7f36970bc8f57abf6d8fa2e828c0da91ea5b75bf68ed101a",
-            "type": "event",
-            "signature": "Stake(address,uint256)",
-            "name": "Stake",
-            "inputs": [
-                {
-                    "indexed": false,
-                    "internalType": "address",
-                    "name": "account",
-                    "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256",
-                    "@type": "erc20:tokenAmount",
-                    "@token": "$",
-                    "validationSuccess": true
+                    "internalType": "uint256[]",
+                    "name": "tokenIds",
+                    "type": "uint256[]"
                 }
             ],
             "outputs": null

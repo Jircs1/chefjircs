@@ -1,17 +1,593 @@
 {
-    "name": "swapped",
+    "name": "Swapped",
     "abis": [
         {
-            "hex_signature": "0x56c1cc0ee18fd18b7913508d06a3a97bb1f19264a63fcbb16e884eb8c083b2ce",
+            "@id": "0xd6d4f5681c246c9f42c203e287975af1601f8df8035a9251f79aab5c8f09e2f8",
             "type": "event",
-            "signature": "swapped(uint256)",
-            "name": "swapped",
+            "signature": "Swapped(address,address,address,address,uint256,uint256)",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "@type": "transfer:from",
+                    "name": "sender",
+                    "type": "address",
+                    "features": {
+                        "kyberswap": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 34966,
+                            "sampleAddress": "0x2f2dd99235cb728fc79af575f1325eaa270f0c99",
+                            "sampleTxHash": "0x007160c7a10ede8dcc02c77061a38cff982d0c969fad84611c5b868fe8796b18",
+                            "found": 7,
+                            "samples": 100
+                        },
+                        "1inch": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 3365,
+                            "sampleAddress": "0x2a0a81e257a2f5d6ed4f07b81dbda09f107bd027",
+                            "sampleTxHash": "0x003632e31263475237995dff11e975ac859b26b9681c2157c882bbba7bd9ef08",
+                            "found": 26,
+                            "samples": 100
+                        }
+                    }
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "srcToken",
+                    "type": "address",
+                    "features": {
+                        "kyberswap": {
+                            "is_erc20": 0.97,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 362105,
+                            "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                            "sampleTxHash": "0x00000dad32cc47133a00e48897b6c864aa7a37f0dda9746dade793d7a875b0f6",
+                            "found": 100,
+                            "samples": 100
+                        },
+                        "1inch": {
+                            "is_erc20": 0.97,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 7876,
+                            "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                            "sampleTxHash": "0x003632e31263475237995dff11e975ac859b26b9681c2157c882bbba7bd9ef08",
+                            "found": 100,
+                            "samples": 100
+                        }
+                    }
+                },
+                {
+                    "@type": "erc20:token",
+                    "name": "dstToken",
+                    "type": "address",
+                    "features": {
+                        "kyberswap": {
+                            "is_erc20": 0.99,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 264470,
+                            "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                            "sampleTxHash": "0x0000841675ceea9af7a4d1e564f0c5f48e1dd05fd98a68877e85f88ccbbfbedd",
+                            "found": 100,
+                            "samples": 100
+                        },
+                        "1inch": {
+                            "is_erc20": 0.96,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 7918,
+                            "sampleAddress": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                            "sampleTxHash": "0x000b3d9e462d3283cef8281b0e684e7f6dc154d63bdcafe196a40f9e0e025d21",
+                            "found": 100,
+                            "samples": 100
+                        }
+                    }
+                },
+                {
+                    "@type": "transfer:to",
+                    "name": "dstReceiver",
+                    "type": "address",
+                    "features": {
+                        "kyberswap": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 35757,
+                            "sampleAddress": "0x2f2dd99235cb728fc79af575f1325eaa270f0c99",
+                            "sampleTxHash": "0x007160c7a10ede8dcc02c77061a38cff982d0c969fad84611c5b868fe8796b18",
+                            "found": 6,
+                            "samples": 100
+                        },
+                        "1inch": {
+                            "is_erc20": 0,
+                            "is_erc721": 0,
+                            "is_erc20lp": 0,
+                            "numLogs": 3355,
+                            "sampleAddress": "0x89b537d4e0de035303dc1bdae18394f7a6c15c36",
+                            "sampleTxHash": "0x0043349ffefc7c457d94de2f15fc4502ab3e9bec7e4ddcef910a4deb3fc7f52d",
+                            "found": 25,
+                            "samples": 100
+                        }
+                    }
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "name": "spentAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                },
+                {
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "name": "returnAmount",
+                    "type": "uint256",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xe87568fe5934cb7524b96e16b225ee2e7e738ccbb706c7bee52ce07bf0360e69",
+            "type": "event",
+            "signature": "Swapped(address,uint256[],address[],uint256[],(address,uint256,address)[],uint256)",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "amountsIn",
+                    "type": "uint256[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address[]",
+                    "name": "tokensIn",
+                    "type": "address[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256[]",
+                    "name": "amountsOut",
+                    "type": "uint256[]"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "tokenAddress",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "relativeValue",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "receiver",
+                            "type": "address"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct OdosRouter.outputToken[]",
+                    "name": "outputs",
+                    "type": "tuple[]"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "valueOutQuote",
+                    "type": "uint256"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xcdee897399ab5e465acb1bd3ed5e32c695f196321764546c59720fa6c9ce4c69",
+            "type": "event",
+            "signature": "Swapped(address,uint256)",
+            "name": "Swapped",
             "inputs": [
                 {
                     "indexed": true,
+                    "internalType": "address",
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xc36ae6e11a161c28ae95fc0f8c0f56d3d0fb7f3a3524499c53fb6733ed86764d",
+            "type": "event",
+            "signature": "Swapped((string,bytes32,uint256,uint256,uint16,uint16),(address,address,address,uint256,uint256,address,address,uint256,uint256))",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "source",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "transactionHash",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "settleAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "receivedAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "feeFactor",
+                            "type": "uint16"
+                        },
+                        {
+                            "internalType": "uint16",
+                            "name": "subsidyFactor",
+                            "type": "uint16"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct AMMWrapper.TxMetaData",
+                    "name": "",
+                    "type": "tuple"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "makerAddr",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "takerAssetAddr",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "makerAssetAddr",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "takerAssetAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "makerAssetAmount",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "userAddr",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address payable",
+                            "name": "receiverAddr",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "salt",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "deadline",
+                            "type": "uint256"
+                        }
+                    ],
+                    "indexed": false,
+                    "internalType": "struct AMMLibEIP712.Order",
+                    "name": "order",
+                    "type": "tuple"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x76af224a143865a50b41496e1a73622698692c565c1214bc862f18e22d829c5e",
+            "type": "event",
+            "signature": "Swapped(address,address,address,address,uint256,uint256,uint256,uint256,uint256,address)",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "srcToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "contract IERC20",
+                    "name": "dstToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "dstReceiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
                     "internalType": "uint256",
                     "name": "amount",
                     "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "spentAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "returnAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "minReturnAmount",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "guaranteedAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "referrer",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x4be05c8d54f5e056ab2cfa033e9f582057001268c3e28561bb999d35d2c8f2c8",
+            "type": "event",
+            "signature": "Swapped(address,address,address,uint256,uint256,bytes)",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "inAsset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "outAsset",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "recipient",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "inAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "outAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bytes",
+                    "name": "auxiliaryData",
+                    "type": "bytes"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0x6782190c91d4a7e8ad2a867deed6ec0a970cab8ff137ae2bd4abd92b3810f4d3",
+            "type": "event",
+            "signature": "Swapped(address,address,address,uint256,uint256)",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "user",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "srcToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "destToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "srcAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "name": "receivedAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xbd99c6719f088aa0abd9e7b7a4a635d1f931601e9f304b538dc42be25d8c65c6",
+            "type": "event",
+            "signature": "Swapped(address,address,address,address,uint256,uint256,uint256,uint256,address)",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "receiver",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "srcToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "dstToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$2",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "result",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "srcAdditionBalance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "dstRemovalBalance",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "referral",
+                    "type": "address"
+                }
+            ],
+            "outputs": null
+        },
+        {
+            "@id": "0xa078c4190abe07940190effc1846be0ccf03ad6007bc9e93f9697d0b460befbb",
+            "type": "event",
+            "signature": "Swapped(address,address,uint256,uint256)",
+            "name": "Swapped",
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "srcToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "dstToken",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "amountIn",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$0",
+                    "validationSuccess": true
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "returnAmount",
+                    "type": "uint256",
+                    "@type": "erc20:tokenAmount",
+                    "@token": "$1",
+                    "validationSuccess": true
                 }
             ],
             "outputs": null
