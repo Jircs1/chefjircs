@@ -20,20 +20,16 @@ A single JSON-LD file `seed.jsonc` holds "seeds" for the EVM-ETL indexer to take
    - `defi_curve`  holds tables for [Curve](https://curve.fi/) based on [`/defi/curve/seed.jsonc`](/defi/curve/seed.jsonc)
    - `gitcoin_allo`  holds tables for [GitCoin Allo](https://allo.gitcoin.co/) across multiple chains
 
-The above design is intended to scale to any project in the Ethereum/EVM ecosystem and others in the fture
+The above design is intended to scale to any project in the Ethereum/EVM ecosystem and others in the future.  We have tested it in Q4 2023 on the following chains from the Ethereum + Substrate ecosystem:
 
-
-* Ethereum (1) - in progress as of September 2023
-* Public Goods (424) - in progress as of September 2023
-* Base (8453) - in progress as of September 2023
-* Optimism (10) - in progress as of September 2023
-* Arbitrum (42161) - in progress as of September 2023
-* Moonbeam (1284) - in progress as of September 2023
-* Astar (592) - in progress as of September 2023
-* Moonriver (1285) - planned Q4 2023
-* Solana - planned Q4 2023
-* Polygon - planned Q4 2023
-* Polkadot/Kusama - planned Q1 2024
+* Ethereum (1)
+* Public Goods (424) 
+* Base (8453) 
+* Optimism (10) 
+* Arbitrum (42161) 
+* Moonbeam (1284) 
+* Astar (592)
+* Moonriver (1285)
 
 ## Contributions
 
@@ -45,10 +41,6 @@ a "seed.jsonc" (jsonc=with comments) containing:
 
 The goal is to have chefs be able to quick and _programmatically_ generate new datasets within minutes of
 addition to this repo via Github Actions.
-
-A ChefTime DAO to build and project models is under design consideration for Fall 2023:
- * Buying [ChefTime NFT](/cheftime) enhance speed and quality of abi-chef generated datasets: inclusion of real-time data, increased frequency of dataset generation, appended labels
- * Revenue from [ChefTime NFTs](/cheftime) flow to chefs who create and maintain recipes models and a Treasury, augmented by Gitcoin Allo
 
 ## License
 
